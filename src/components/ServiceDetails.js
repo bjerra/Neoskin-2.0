@@ -1,7 +1,6 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar } from '@fortawesome/free-solid-svg-icons'
 import boka from '../img/bokadirekt.png'
+import {BsStar} from 'react-icons/bs';
 
     const ServiceCard = ({service}) => {
     
@@ -14,7 +13,7 @@ import boka from '../img/bokadirekt.png'
                         <span style={{margin: '1rem', fontSize: '1rem'}}>
                         ERBJUDANDE!
                         </span>                       
-                            <FontAwesomeIcon icon={faStar} color="gold" />
+                            <BsStar />
                     </div>
                     }                              
                     <div className="columns" style={{display: 'flex',justifyContent: 'center', alignItems: 'center', marginBottom: '-.75rem', marginTop: '-1rem' }}> 

@@ -1,9 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
-
-import Layout from '../components/Layout'
-import Features from '../components/Features'
+import { graphql } from 'gatsby'
+import {StyledIndexPage} from './styles/Styled.Indexpage'
+import {Banner, Features, Layout} from '../components'
 
 export const IndexPageTemplate = ({
   image,
@@ -15,68 +14,15 @@ export const IndexPageTemplate = ({
   description,
   intro,
 }) => (
-  <div>
-    <div
-      className="full-width-image margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `center`,
-        backgroundAttachment: `fixed`,
-      }}
-    >
-      <div
-        style={{
-          display: 'flex',
-          height: '150px',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'left',
-          flexDirection: 'column',
-        }}
-      >
-        <h1
-          className="page-title"      
-        >
-          {title}
-        </h1>    
-        <h2
-          className="page-title"      
-        >
-          {subtitle}
-        </h2>    
-      </div>
-    </div>
-    <section className="section section--gradient">
-      <div className="container">      
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-                </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>   
-                    <p>{subheading}</p>              
-                    <p>{description}</p>
-                  </div>
-                </div>
-                <Features gridItems={intro.blurbs} />
-              </div>
-            </div>
-        </div>
+  <StyledIndexPage>
+    <Banner title={title} />
+   
+    <section className="wrapper">
+      <div className="inner">          
+        <Features gridItems={intro.blurbs} />
       </div>
     </section>
-  </div>
+  </StyledIndexPage>
 )
 
 IndexPageTemplate.propTypes = {

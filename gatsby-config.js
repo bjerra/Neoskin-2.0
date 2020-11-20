@@ -4,6 +4,7 @@ require("dotenv").config({
 
 const {GA_ID, MAILCHIMP_ENDPOINT} = process.env;
 
+
 module.exports = {
 
   siteMetadata: {
@@ -15,7 +16,17 @@ module.exports = {
     },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-plugin-emotion`,
+      options: {
+        // Accepts the following options, all of which are defined by `babel-plugin-emotion` plugin.
+        // The values for each key in this example are the defaults the plugin uses.
+        sourceMap: true,
+        autoLabel: process.env.NODE_ENV !== "production",
+        labelFormat: `[local]`,
+        cssPropOptimization: true,
+      },
+    },
     `gatsby-plugin-sitemap`,
     {
       resolve: 'gatsby-plugin-mailchimp',
@@ -23,35 +34,6 @@ module.exports = {
         endpoint: MAILCHIMP_ENDPOINT,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics-gdpr`,
-      options: {
-        // The property ID; the tracking code won't be generated without it.
-        trackingId: GA_ID, 
-        // Optional parameter (default false) - Enable analytics in development mode.
-        enableDevelopment: false, // default false
-        // Optional parameter (default true) - Some countries (such as Germany) require you to use the _anonymizeIP function for Google Analytics. Otherwise you are not allowed to use it.
-        anonymizeIP: true,
-        // Optional parameter (default false) - Starts google analytics with cookies enabled. In some countries (such as Germany) this is not allowed.
-        autoStartWithCookiesEnabled: false,      
-      },
-    },
-    {
-      resolve: `gatsby-plugin-cookiehub-banner`,
-      options: {
-          // The ID is part of the CookieHub URL: https://cookiehub.net/cc/YOUR_COOKIEHUB_ID.js
-          cookieHubId: "f5727651",
-          // Optional parameter (default false) - Use new v2 API.
-          cookieHubV2Api: true,
-          // Categories configured with CookieHub
-          categories: [
-          { 
-              categoryName: 'analytics', // Unique id of the category which is set by Cookiehub.
-              cookieName: 'gatsby-plugin-google-analytics-gdpr_cookies-enabled' // Your custom cookie name
-          }
-          ]
-      }
-  },
     {
       resolve: `gatsby-plugin-modal-routing`,
       options: {
@@ -79,14 +61,6 @@ module.exports = {
             },
           },
           contentLabel: `Modal`
-        }
-      }
-    },
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Open Sans Condensed', 'Montserrat', 'Josefin Sans']
         }
       }
     },
@@ -156,13 +130,6 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
-    {
-      resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
-      options: {
-        develop: true, // Activates purging in npm run develop
-        purgeOnly: ['/all.sass'], // applies purging only on the bulma css file
-      },
-    }, // must be after other CSS plugins
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }

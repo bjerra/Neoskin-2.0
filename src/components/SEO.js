@@ -8,7 +8,14 @@ const SEO = ({ title, description }) => {
         <html lang="en"/>
         <title>{title}</title>
         <meta name="description" content={description} />
-
+        <link 
+          href="https://fonts.googleapis.com/css?family=Quicksand" 
+          rel="stylesheet"
+          />
+           <link 
+          href="https://fonts.googleapis.com/css?family=Josefin+Sans" 
+          rel="stylesheet"
+          />
         <link
           rel="apple-touch-icon"
           sizes="180x180"

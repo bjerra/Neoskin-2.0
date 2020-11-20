@@ -3,9 +3,8 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { useCategoryData } from '../components/CategoryData'
 
-import Layout from '../components/Layout'
+import {Layout} from '../components'
 import CategoryMenu from '../components/CategoryMenu'
-import CategoryMenuTouch from '../components/CategoryMenuTouch'
 import CategoryCard from '../components/CategoryCard'
 
 export const ServicePageTemplate = ({
@@ -45,7 +44,7 @@ export const ServicePageTemplate = ({
               <div className="column is-6 " style={{padding:0, marginBottom: '2rem'}}>
               <div className="only-touch">
                 <div>                          
-                  <CategoryMenuTouch setData={setData} />
+                 
                 </div>
                 </div> 
                     <CategoryCard 

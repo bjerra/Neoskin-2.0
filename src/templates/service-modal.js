@@ -1,10 +1,9 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { Link } from 'gatsby'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing'
-import { navigate, graphql } from 'gatsby'
+import {  graphql } from 'gatsby'
 import ServiceDetails from '../components/ServiceDetails'
-import Layout from '../components/Layout'
+import {Layout} from '../components'
 
 const ServiceModal = ({data}) => { 
 
