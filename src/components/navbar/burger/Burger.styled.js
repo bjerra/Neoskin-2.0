@@ -1,6 +1,7 @@
 import styled from "@emotion/styled"
 
 export const StyledBurger = styled.button`
+
   position: relative;
   display: flex;
   flex-direction: column;
@@ -40,7 +41,12 @@ export const StyledBurger = styled.button`
     }
   }
 
-  @media (min-width: ${({ theme }) => theme.BREAKPOINTS.MOBILE}) {
-    display: none;   
+  span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
+
 `;

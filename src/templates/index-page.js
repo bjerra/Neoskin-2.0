@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import {StyledIndexPage} from './styles/Styled.Indexpage'
-import {Banner, Features, Layout} from '../components'
+import { Wrapper,Intro, CTA, Services, About} from './styles/Styled.Indexpage'
+import {Banner, Features, Layout, ServiceGrid, Divider, Tour, Portrait} from '../components'
+import EmailList from '../components/EmailList'
 
 export const IndexPageTemplate = ({
   image,
@@ -14,15 +15,50 @@ export const IndexPageTemplate = ({
   description,
   intro,
 }) => (
-  <StyledIndexPage>
+  <Wrapper>
     <Banner title={title} />
    
-    <section className="wrapper">
-      <div className="inner">          
+    <Intro>
+      <div className="inner">     
+      <header>
+        <h2>
+          {subtitle}
+        </h2>
+        <p>
+          {description}
+        </p>
+      </header>     
+      <Divider title="Erbjudanden Just Nu"/>
         <Features gridItems={intro.blurbs} />
       </div>
-    </section>
-  </StyledIndexPage>
+    </Intro>
+    <Services>
+      <div className="inner">   
+        <Divider title="Våra Behandlingar"/>
+        <ServiceGrid />
+      </div>   
+    </Services>
+    <CTA>
+      <div className="inner">          
+        <EmailList />
+      </div>
+    </CTA>
+
+    <About>
+    <div className="inner">     
+      <Divider title="Om"/>
+      <div className="column">
+        <Portrait />
+        <p>Anais blablablabl</p>
+      </div>
+      
+      <Tour />
+      </div>
+    </About>
+
+    
+
+  </Wrapper>
 )
 
 IndexPageTemplate.propTypes = {

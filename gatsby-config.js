@@ -2,7 +2,7 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-const {GA_ID, MAILCHIMP_ENDPOINT} = process.env;
+const {MAILCHIMP_ENDPOINT} = process.env;
 
 
 module.exports = {

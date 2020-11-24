@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
+import {StyledMap} from './Map.styled'
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
@@ -15,7 +16,7 @@ class Map extends Component {
   render() {
     return (
       // Important! Always set the container height explicitly
-      <div style={{ height: '100vh', width: '100%' }}>
+      <StyledMap>
         <GoogleMapReact
           bootstrapURLKeys={{ key: ""}}
           defaultCenter={this.props.center}
@@ -27,7 +28,7 @@ class Map extends Component {
             text="My Marker"
           />
         </GoogleMapReact>
-      </div>
+      </StyledMap>
     );
   }
 }

@@ -6,10 +6,10 @@ import { useTheme  } from '@emotion/react'
 const Burger = ({ open, setOpen }) => {
     const theme = useTheme()
   return (
-    <StyledBurger theme={theme} open={open} onClick={() => setOpen(!open)}>
-      <div />
-      <div />
-      <div />
+    <StyledBurger  theme={theme} open={open} onClick={() => setOpen(!open)}>
+        <div />
+        <div />
+        <div />
     </StyledBurger>
   )
 }

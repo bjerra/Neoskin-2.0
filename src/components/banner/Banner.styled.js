@@ -43,6 +43,8 @@ export const StyledBanner = styled.section`
         opacity: 1;
         position: relative;
         z-index: 3; 
+        display: flex;
+        justify-content: center;
     }
     .inner > :last-child {
           margin-bottom: 0; 

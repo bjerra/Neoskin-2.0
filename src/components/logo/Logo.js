@@ -4,12 +4,12 @@ import { StyledLogo } from './Logo.styled';
 import { useStaticQuery, graphql } from "gatsby"
 import { useTheme  } from '@emotion/react'
 
-const Logo = () => {
+const Logo = ({}) => {
   const data = useStaticQuery(graphql`
     query {
       file(name: { eq: "logo" }, extension: { eq: "png" }) {
         childImageSharp {
-          fluid(maxWidth: 200, pngQuality: 80) {
+          fluid(maxWidth: 750, pngQuality: 80) {
             ...GatsbyImageSharpFluid
           }
         }

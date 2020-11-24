@@ -19,8 +19,21 @@ export const StyledMenu = styled.nav`
     width: 100%;
   }
 
+  div{
+    flex: 1;
+    width: 200px;
+    margin: auto;
+  }
+
+  section {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
   a {
-    font-size: 2rem;
+    font-size: 1.75rem;
     text-transform: uppercase;
     padding: 2rem 0;
     font-weight: bold;

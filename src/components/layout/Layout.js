@@ -11,10 +11,14 @@ const TemplateWrapper = ({ pageTitle, pageDescription, children }) => {
   
   return (
       <Wrapper>    
-        <SEO title={pageTitle || title} description={pageDescription || description}/>     
+        <SEO title={pageTitle || title} description={pageDescription || description}/>    
         <Navbar />
-        <Body>{children}</Body>
+        <Body>
+        {children}
+        </Body>
+        
         <Footer />
+        
       </Wrapper>
   )
 }
