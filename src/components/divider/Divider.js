@@ -5,8 +5,8 @@ import {StyledDivider} from './Divider.styled'
 
 
 const Divider = ({title}) => (
-  <StyledDivider>
-      <h3>{title}</h3>
+  <StyledDivider> 
+      <h3>{title}</h3> 
   </StyledDivider>
 )
 

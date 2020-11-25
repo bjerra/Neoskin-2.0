@@ -1,32 +1,54 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { useCategoryData } from '../CategoryData'
 import {StyledServiceGrid} from './ServiceGrid.styled'
+import { useStaticQuery, graphql } from "gatsby"
 
 
-const ServiceGrid = ({gridItems}) => {
-    const categoryData = useCategoryData()
+const ServiceGrid = () => {
+    const data = useStaticQuery(graphql`
+    query CategoryQuery {
+        allMarkdownRemark(filter: {fields: {slug: {regex: "/(behandlingar/.)/"}}}) {
+            edges {
+              node {
+                frontmatter {
+                  title
+                  image {
+                    childImageSharp {
+                      fluid(maxWidth: 2048, quality: 100) {
+                        ...GatsbyImageSharpFluid
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+      }
+  `)
     return (
 
     <StyledServiceGrid>
-    {categoryData.map(({title, services}, index) => (
-        <section key={title}>
-          <div className="content">      
-             
-              <p>{title}</p>
-          </div>         
-        </section>
-    ))}
+        {data.allMarkdownRemark.edges.map(({node}, index) => {
+            const{ title, image} = node.frontmatter;
+           return (
+            <section key={index}>
+            <div className="content"
+                    style={{
+                    backgroundImage: `url(${
+                        !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+                    })`
+                    }}
+                >
+                    <p>{title}</p>
+
+            </div>         
+            </section>
+        )}
+        )}
   </StyledServiceGrid>
 )}
 
-ServiceGrid.propTypes = {
-  gridItems: PropTypes.arrayOf(
-    PropTypes.shape({
-      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-      text: PropTypes.string,
-    })
-  ),
-}
+
 
 export default ServiceGrid
+

@@ -7,7 +7,7 @@ export const useServiceData = () => {
       allServiceDataJson {
         nodes {
           id
-          title
+          title     
           info {
             text
             title
@@ -18,6 +18,7 @@ export const useServiceData = () => {
           url
           variant
           offer
+          category
         }
       }   
     }

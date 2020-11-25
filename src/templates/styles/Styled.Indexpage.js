@@ -43,6 +43,12 @@ export const Intro = styled.section`
     }
 
 `
+
+export const Highlights = styled.section`
+  
+  
+`
+
 export const CTA = styled.section`
 
     padding: 4rem 0 6rem 0 ;

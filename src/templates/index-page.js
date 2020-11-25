@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import { Wrapper,Intro, CTA, Services, About} from './styles/Styled.Indexpage'
+import { Wrapper,Intro,Highlights, CTA, Services, About} from './styles/Styled.Indexpage'
 import {Banner, Features, Layout, ServiceGrid, Divider, Tour, Portrait} from '../components'
 import EmailList from '../components/EmailList'
 
@@ -28,10 +28,15 @@ export const IndexPageTemplate = ({
           {description}
         </p>
       </header>     
-      <Divider title="Erbjudanden Just Nu"/>
-        <Features gridItems={intro.blurbs} />
       </div>
     </Intro>
+
+    <Divider title="Erbjudanden Just Nu"/>
+
+    <Highlights>
+        <Features gridItems={intro.blurbs} />
+    </Highlights>
+
     <Services>
       <div className="inner">   
         <Divider title="Våra Behandlingar"/>

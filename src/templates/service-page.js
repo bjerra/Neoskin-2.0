@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import { useCategoryData } from '../components/CategoryData'
 
 import {Layout} from '../components'
 import CategoryMenu from '../components/CategoryMenu'
@@ -12,7 +11,7 @@ export const ServicePageTemplate = ({
   title,
 }) => {
   
-  const initalData = useCategoryData()[0]
+  const initalData = {}
   const [data, setData] = useState(initalData)
     
 

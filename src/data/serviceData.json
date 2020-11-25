@@ -6,6 +6,7 @@
   "title": "Köp av rabatterade presentkort! -25% och -20%",
   "slug": "kop-av-rabatterade-presentkort-25-och-20",
   "id": 1,
+  "category": "Erbjudande!",
   "info": [
    {
     "title": "Köp 3 få 4 presentkort med värde av 500",
@@ -26,6 +27,7 @@
   "title": "PLASMALIFT Icke-kirurgiskt ögonlockslyft Ord. Pris 5500:-",
   "slug": "plasmalift-icke-kirurgiskt-ogonlockslyft-ord-pris-5500-",
   "id": 2,
+  "category": "Erbjudande!",
   "info": [
    {
     "title": "För att boka med medlemspris 3500",
@@ -66,6 +68,7 @@
   "title": "Erbjudande PRX-T33 -50% med Fraxium/ Jett Plasma Ord. Pris 1995:-",
   "slug": "erbjudande-prx-t33-50-med-fraxium-jett-plasma-ord-pris-1995-",
   "id": 3,
+  "category": "Erbjudande!",
   "info": [
    {
     "title": "BRA FÖR",
@@ -106,6 +109,7 @@
   "title": "Erbjudande Yumi total makeover Ord. Pris 1550:-",
   "slug": "erbjudande-yumi-total-makeover-ord-pris-1550-",
   "id": 4,
+  "category": "Erbjudande!",
   "info": [
    {
     "title": "BRA FÖR",
@@ -138,6 +142,7 @@
   "title": "Prova på erbjudande PRX-T33 -25% Ord. Pris 1995:-",
   "slug": "prova-pa-erbjudande-prx-t33-25-ord-pris-1995-",
   "id": 5,
+  "category": "Erbjudande!",
   "info": [
    {
     "title": "BRA FÖR",
@@ -178,6 +183,7 @@
   "title": "LED-mask terapi",
   "slug": "led-mask-terapi",
   "id": 6,
+  "category": "Ansiktsbehandlingar och LED-mask",
   "info": [
    {
     "title": "BRA FÖR",
@@ -213,6 +219,7 @@
   "title": "Neoskin Quick-fix - ultraljudsregöring",
   "slug": "neoskin-quick-fix-ultraljudsregoring",
   "id": 7,
+  "category": "Ansiktsbehandlingar och LED-mask",
   "info": [
    {
     "title": "BRA FÖR",
@@ -244,6 +251,7 @@
   "title": "Tebiskin ansiktsbehandling deep Clean med ultraljudsrengöring",
   "slug": "tebiskin-ansiktsbehandling-deep-clean-med-ultraljudsrengoring",
   "id": 8,
+  "category": "Ansiktsbehandlingar och LED-mask",
   "info": [
    {
     "title": "BRA FÖR",
@@ -275,6 +283,7 @@
   "title": "Tebiskin klassisk ansiktsbehandling med ultraljudsrengöring",
   "slug": "tebiskin-klassisk-ansiktsbehandling-med-ultraljudsrengoring",
   "id": 9,
+  "category": "Ansiktsbehandlingar och LED-mask",
   "info": [
    {
     "title": "BRA FÖR",
@@ -306,6 +315,7 @@
   "title": "Tebiskin ansiktsbehandling lyx med ultraljudsrengöring",
   "slug": "tebiskin-ansiktsbehandling-lyx-med-ultraljudsrengoring",
   "id": 10,
+  "category": "Ansiktsbehandlingar och LED-mask",
   "info": [
    {
     "title": "BRA FÖR",
@@ -337,6 +347,7 @@
   "title": "Kemisk peeling GA - Enerpeel",
   "slug": "kemisk-peeling-ga-enerpeel",
   "id": 11,
+  "category": "PRX-T33 och Enerpeel Kemiska peels",
   "info": [
    {
     "title": "BRA FÖR",
@@ -376,6 +387,7 @@
   "title": "Kemisk peeling NECK - Enerpeel",
   "slug": "kemisk-peeling-neck-enerpeel",
   "id": 12,
+  "category": "PRX-T33 och Enerpeel Kemiska peels",
   "info": [
    {
     "title": "BRA FÖR",
@@ -415,6 +427,7 @@
   "title": "Kemisk peeling TCA 25% - Enerpeel",
   "slug": "kemisk-peeling-tca-25-enerpeel",
   "id": 13,
+  "category": "PRX-T33 och Enerpeel Kemiska peels",
   "info": [
    {
     "title": "BRA FÖR",
@@ -454,6 +467,7 @@
   "title": "PRX-T33 Biorevitalisering",
   "slug": "prx-t33-biorevitalisering",
   "id": 14,
+  "category": "PRX-T33 och Enerpeel Kemiska peels",
   "info": [
    {
     "title": "BRA FÖR",
@@ -493,6 +507,7 @@
   "title": "Kemisk peeling Soft TCA Antiage / pigmenteringar - Enerpeel",
   "slug": "kemisk-peeling-soft-tca-antiage-pigmenteringar-enerpeel",
   "id": 15,
+  "category": "PRX-T33 och Enerpeel Kemiska peels",
   "info": [
    {
     "title": "BRA FÖR",
@@ -532,6 +547,7 @@
   "title": "Kemisk peeling HANDS - Enerpeel",
   "slug": "kemisk-peeling-hands-enerpeel",
   "id": 16,
+  "category": "PRX-T33 och Enerpeel Kemiska peels",
   "info": [
    {
     "title": "BRA FÖR",
@@ -571,6 +587,7 @@
   "title": "Kemisk peeling EL Eyes & Lips Plus - Enerpeel",
   "slug": "kemisk-peeling-el-eyes-lips-plus-enerpeel",
   "id": 17,
+  "category": "PRX-T33 och Enerpeel Kemiska peels",
   "info": [
    {
     "title": "BRA FÖR",
@@ -610,6 +627,7 @@
   "title": "Kemisk peeling JR mot pigmenteringar - Enerpeel",
   "slug": "kemisk-peeling-jr-mot-pigmenteringar-enerpeel",
   "id": 18,
+  "category": "PRX-T33 och Enerpeel Kemiska peels",
   "info": [
    {
     "title": "BRA MOT",
@@ -649,6 +667,7 @@
   "title": "Kemisk peeling MA + cryoterapi Ice peel - Enerpeel ",
   "slug": "kemisk-peeling-ma-cryoterapi-ice-peel-enerpeel",
   "id": 19,
+  "category": "PRX-T33 och Enerpeel Kemiska peels",
   "info": [
    {
     "title": "BRA FÖR",
@@ -688,6 +707,7 @@
   "title": "Kemisk peeling SA Acne peel - Enerpeel",
   "slug": "kemisk-peeling-sa-acne-peel-enerpeel",
   "id": 20,
+  "category": "PRX-T33 och Enerpeel Kemiska peels",
   "info": [
    {
     "title": "BRA MOT",
@@ -727,6 +747,7 @@
   "title": "Kemisk peeling PA Oljig hud - Enerpeel",
   "slug": "kemisk-peeling-pa-oljig-hud-enerpeel",
   "id": 21,
+  "category": "PRX-T33 och Enerpeel Kemiska peels",
   "info": [
    {
     "title": "BRA FÖR",
@@ -766,6 +787,7 @@
   "title": "Fraxium hög intensitet 2 zoner x6 (ca 1x i månaden)",
   "slug": "fraxium-hog-intensitet-2-zoner-x6-ca-1x-i-manaden",
   "id": 22,
+  "category": "Top 3 efterfrågade kurer",
   "info": [
    {
     "title": "(ord. Pris 10 270",
@@ -797,6 +819,7 @@
   "title": "Kemisk peeling SA Acne peel x 4 (1 gång i veckan) ",
   "slug": "kemisk-peeling-sa-acne-peel-x-4-1-gang-i-veckan",
   "id": 23,
+  "category": "Top 3 efterfrågade kurer",
   "info": [
    {
     "title": "(ord. Pris 4380",
@@ -828,6 +851,7 @@
   "title": "PRX-T33 x 4 (en gång i veckan) ",
   "slug": "prx-t33-x-4-en-gang-i-veckan",
   "id": 24,
+  "category": "Top 3 efterfrågade kurer",
   "info": [
    {
     "title": "(ord.pris 8000",
@@ -855,6 +879,7 @@
   "title": "Kemisk peeling SA Acne peel x 4 med LED-Mask (1 gång i veckan)",
   "slug": "kemisk-peeling-sa-acne-peel-x-4-med-led-mask-1-gang-i-veckan",
   "id": 25,
+  "category": "Top 3 efterfrågade kombinationsbehandlingar",
   "info": [
    {
     "title": "FÖRDEL",
@@ -882,6 +907,7 @@
   "title": "PRX-T33 med Fraxium mildare intensitet, full face x 4 (ca 1 gång i månaden)",
   "slug": "prx-t33-med-fraxium-mildare-intensitet-full-face-x-4-ca-1-gang-i-manaden",
   "id": 26,
+  "category": "Top 3 efterfrågade kombinationsbehandlingar",
   "info": [
    {
     "title": "FÖRDEL",
@@ -909,6 +935,7 @@
   "title": "PRX-T33 och Lift & Tight ögon eller mun x 4 (en gång i veckan) ",
   "slug": "prx-t33-och-lift-tight-ogon-eller-mun-x-4-en-gang-i-veckan",
   "id": 27,
+  "category": "Top 3 efterfrågade kombinationsbehandlingar",
   "info": [
    {
     "title": "FÖRDEL",
@@ -936,6 +963,7 @@
   "title": "Handla produkter och presentkort",
   "slug": "handla-produkter-och-presentkort",
   "id": 28,
+  "category": "Konsultationer och tilläggstjänster",
   "info": [
    {
     "title": "BRA FÖR",
@@ -959,6 +987,7 @@
   "title": "Återbesök ",
   "slug": "aterbesok",
   "id": 29,
+  "category": "Konsultationer och tilläggstjänster",
   "info": [
    {
     "title": "BRA FÖR",
@@ -978,6 +1007,7 @@
   "title": "Kostnadsfri konsultation ",
   "slug": "kostnadsfri-konsultation",
   "id": 30,
+  "category": "Konsultationer och tilläggstjänster",
   "info": [
    {
     "title": "BRA FÖR",
@@ -1005,6 +1035,7 @@
   "title": "LED-mask tillägg i annan behandling",
   "slug": "led-mask-tillagg-i-annan-behandling",
   "id": 31,
+  "category": "Konsultationer och tilläggstjänster",
   "info": [
    {
     "title": "BRA FÖR",
@@ -1040,6 +1071,7 @@
   "title": "Fraxium mildare intensitet - full face ",
   "slug": "fraxium-mildare-intensitet-full-face",
   "id": 32,
+  "category": "Laserbehandling Fraxium",
   "info": [
    {
     "title": "BRA FÖR",
@@ -1079,6 +1111,7 @@
   "title": "Fraxium hög intensitet 1 zon (tinningar) ",
   "slug": "fraxium-hog-intensitet-1-zon-tinningar",
   "id": 33,
+  "category": "Laserbehandling Fraxium",
   "info": [
    {
     "title": "BRA FÖR",
@@ -1118,6 +1151,7 @@
   "title": "Fraxium hög intensitet 2 zoner (kindben) ",
   "slug": "fraxium-hog-intensitet-2-zoner-kindben",
   "id": 34,
+  "category": "Laserbehandling Fraxium",
   "info": [
    {
     "title": "BRA FÖR",
@@ -1157,6 +1191,7 @@
   "title": "Fraxium hög intensitet 3 zoner (full face) ",
   "slug": "fraxium-hog-intensitet-3-zoner-full-face",
   "id": 35,
+  "category": "Laserbehandling Fraxium",
   "info": [
    {
     "title": "BRA FÖR",
@@ -1196,6 +1231,7 @@
   "title": "COSMEDICAL Lift & Tight Plasmaflöde ögon eller mun",
   "slug": "cosmedical-lift-tight-plasmaflode-ogon-eller-mun",
   "id": 36,
+  "category": "JETT Plasma",
   "info": [
    {
     "title": "BRA FÖR",
@@ -1227,6 +1263,7 @@
   "title": "COSMEDICAL Lift & Tight Plasmaflöde Full Face",
   "slug": "cosmedical-lift-tight-plasmaflode-full-face",
   "id": 37,
+  "category": "JETT Plasma",
   "info": [
    {
     "title": "BRA FÖR",
@@ -1258,6 +1295,7 @@
   "title": "MEDICAL Borttagning av fibrom & pigmentfläckar m. m",
   "slug": "medical-borttagning-av-fibrom-pigmentflackar-m-m",
   "id": 38,
+  "category": "JETT Plasma",
   "info": [
    {
     "title": "PRIS",
@@ -1301,6 +1339,7 @@
   "title": "PLASMALIFT Rynkreducering av överläpp",
   "slug": "plasmalift-rynkreducering-av-overlapp",
   "id": 39,
+  "category": "JETT Plasma",
   "info": [
    {
     "title": "BRA FÖR",
@@ -1340,6 +1379,7 @@
   "title": "PLASMALIFT icke-kirurgiskt ögonlockslyft",
   "slug": "plasmalift-icke-kirurgiskt-ogonlockslyft",
   "id": 40,
+  "category": "JETT Plasma",
   "info": [
    {
     "title": "BRA FÖR",
@@ -1379,6 +1419,7 @@
   "title": "Yumi Total Makeover",
   "slug": "yumi-total-makeover",
   "id": 41,
+  "category": "Fransar och bryn",
   "info": [
    {
     "title": "BRA FÖR",
@@ -1410,6 +1451,7 @@
   "title": "Yumi Lashes - Keratin Lashlift",
   "slug": "yumi-lashes-keratin-lashlift",
   "id": 42,
+  "category": "Fransar och bryn",
   "info": [
    {
     "title": "BRA FÖR",
@@ -1445,6 +1487,7 @@
   "title": "Yumi brows - the original browlift",
   "slug": "yumi-brows-the-original-browlift",
   "id": 43,
+  "category": "Fransar och bryn",
   "info": [
    {
     "title": "BRA FÖR",
@@ -1472,6 +1515,7 @@
   "title": "Brynplock / vax",
   "slug": "brynplock-vax",
   "id": 44,
+  "category": "Fransar och bryn",
   "info": [
    {
     "title": "OM BEHANDLINGEN",
@@ -1495,6 +1539,7 @@
   "title": "Färgning och formning av bryn",
   "slug": "fargning-och-formning-av-bryn",
   "id": 45,
+  "category": "Fransar och bryn",
   "info": [
    {
     "title": "OM BEHANDLINGEN",
@@ -1522,6 +1567,7 @@
   "title": "Fransfärg inkl formning av bryn",
   "slug": "fransfarg-inkl-formning-av-bryn",
   "id": 46,
+  "category": "Fransar och bryn",
   "info": [
    {
     "title": "OM BEHANDLINGEN",
@@ -1549,6 +1595,7 @@
   "title": "Frans- och brynfärg inkl formning",
   "slug": "frans-och-brynfarg-inkl-formning",
   "id": 47,
+  "category": "Fransar och bryn",
   "info": [
    {
     "title": "OM BEHANDLINGEN",
@@ -1576,6 +1623,7 @@
   "title": "Fransfärg",
   "slug": "fransfarg",
   "id": 48,
+  "category": "Fransar och bryn",
   "info": [
    {
     "title": "OM BEHANDLINGEN",
@@ -1603,6 +1651,7 @@
   "title": "1- Ansiktsbehandling hudhälsa inkl.  Ampull",
   "slug": "1-ansiktsbehandling-hudhalsa-inkl-ampull",
   "id": 49,
+  "category": "Esthetica Hudvårdssalong - Nicolinas behandlingar",
   "info": [
    {
     "title": " ",
@@ -1618,6 +1667,7 @@
   "title": "2- Ansiktsbehandling Hudhälsa ",
   "slug": "2-ansiktsbehandling-hudhalsa",
   "id": 50,
+  "category": "Esthetica Hudvårdssalong - Nicolinas behandlingar",
   "info": [
    {
     "title": " ",
@@ -1633,6 +1683,7 @@
   "title": "3- Ansiktsbehandling Hudhälsa inkl.  Ampull",
   "slug": "3-ansiktsbehandling-hudhalsa-inkl-ampull",
   "id": 51,
+  "category": "Esthetica Hudvårdssalong - Nicolinas behandlingar",
   "info": [
    {
     "title": " ",
@@ -1648,6 +1699,7 @@
   "title": "4- Ansiktsbehandling Hudhälsa",
   "slug": "4-ansiktsbehandling-hudhalsa",
   "id": 52,
+  "category": "Esthetica Hudvårdssalong - Nicolinas behandlingar",
   "info": [
    {
     "title": " ",
@@ -1663,6 +1715,7 @@
   "title": "5- Ansiktsbehandling Hudhälsa inkl.  Ampull",
   "slug": "5-ansiktsbehandling-hudhalsa-inkl-ampull",
   "id": 53,
+  "category": "Esthetica Hudvårdssalong - Nicolinas behandlingar",
   "info": [
    {
     "title": " ",
@@ -1678,6 +1731,7 @@
   "title": "6- Vaxning överläpp",
   "slug": "6-vaxning-overlapp",
   "id": 54,
+  "category": "Esthetica Hudvårdssalong - Nicolinas behandlingar",
   "info": [
    {
     "title": " ",
@@ -1693,6 +1747,7 @@
   "title": "7- Vaxning Haka",
   "slug": "7-vaxning-haka",
   "id": 55,
+  "category": "Esthetica Hudvårdssalong - Nicolinas behandlingar",
   "info": [
    {
     "title": " ",
@@ -1708,6 +1763,7 @@
   "title": "8- Vaxning överläpp och haka",
   "slug": "8-vaxning-overlapp-och-haka",
   "id": 56,
+  "category": "Esthetica Hudvårdssalong - Nicolinas behandlingar",
   "info": [
    {
     "title": " ",
@@ -1723,6 +1779,7 @@
   "title": "9- Vaxning överläpp, haka & kinder",
   "slug": "9-vaxning-overlapp-haka-kinder",
   "id": 57,
+  "category": "Esthetica Hudvårdssalong - Nicolinas behandlingar",
   "info": [
    {
     "title": " ",

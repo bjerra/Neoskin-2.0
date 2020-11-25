@@ -8,3 +8,4 @@ export {default as ServiceGrid} from "./serviceGrid/Servicegrid";
 export {default as Map} from "./map/Map";
 export {default as Tour} from "./tour/Tour";
 export {default as Portrait} from "./portrait/Portrait";
+export {default as ServiceCard} from "./serviceCard/ServiceCard";
