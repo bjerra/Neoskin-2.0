@@ -4,7 +4,7 @@ import { useKeywordData } from './KeywordData'
 
 const Menu = ({ setData }) => {
     
-    const categoryData = {}
+    const categoryData = []
     const keywordData = useKeywordData()
 
     const [tab, setTab] = useState(0)
