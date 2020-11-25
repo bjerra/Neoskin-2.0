@@ -31,9 +31,8 @@ export const IndexPageTemplate = ({
       </div>
     </Intro>
 
-    <Divider title="Erbjudanden Just Nu"/>
-
     <Highlights>
+        <Divider title="Erbjudanden Just Nu"/>
         <Features gridItems={intro.blurbs} />
     </Highlights>
 

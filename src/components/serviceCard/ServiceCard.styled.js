@@ -11,13 +11,14 @@ text-align: center;
 color: #fff;
 height:300px;
 background: #3a517d;
-box-shadow: 12px 20px 16px -4px rgba(0,0,0,0.32);
+box-shadow: 0px 10px 28px 4px rgba(0,0,0,0.21);
 padding: 1rem;
 
 .header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 
     img{
         display: block;
@@ -25,10 +26,12 @@ padding: 1rem;
         max-height:30px;
         width: auto;
         height: auto;
+        
     }
     h5{
         margin: 1rem;
     }
+   
 }
 
 .body{

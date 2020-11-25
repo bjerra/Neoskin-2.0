@@ -6,6 +6,7 @@ export const Wrapper =  styled.div`
 
 export const Intro = styled.section`
 
+    
     padding: 4rem 0 6rem 0 ;
     position: relative;
     z-index: 1; 
@@ -45,15 +46,16 @@ export const Intro = styled.section`
 `
 
 export const Highlights = styled.section`
-  
+
   
 `
 
 export const CTA = styled.section`
 
     padding: 4rem 0 6rem 0 ;
+    box-shadow: 0px 10px 33px 16px rgba(0,0,0,0.29);
     background-color: #ce1b28;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(0, 0, 0, 0.75);
     background-attachment: fixed;
     background-image: linear-gradient(#9198e522, #ffffffff), url(/img/CTA.jpg);
     background-position: bottom;
@@ -65,14 +67,16 @@ export const CTA = styled.section`
     input, #cta select, #cta textarea {
       color: #ffffff; }
    
-    .inner {
+    .inner { 
       position: relative;
+      margin: 5% 25%;
       z-index: 3; }
     @media screen and (max-width: 980px) {
         background-attachment: scroll; 
 `
 
 export const Services = styled.section`
+
 
     padding: 4rem 0 6rem 0 ;
 

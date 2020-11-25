@@ -28,10 +28,9 @@ const EmailListForm = () => {
   return (
 
     <form onSubmit={handleSubmit} id="email-list">
-      <h2>Anmäl dig till vårt nyhetsbrev och var först med att ta del av våra härliga erbjudanden!</h2>
+      <h4>Anmäl dig till vårt nyhetsbrev och var först med att ta del av våra härliga erbjudanden!</h4>
       <div>
           <input
-              className="input"
               placeholder="Din e-post"
               name="email"
               type="text"
@@ -39,12 +38,12 @@ const EmailListForm = () => {
               }
             />   
 
-          <button className="button is-link" type="submit">Skicka</button>
+          <button type="submit">Skicka</button>
 
       </div>
     
-      {result === "success" && <p className="success">Tack!</p>} 
-      {result === "error" && <p className="error">Nånting gick fel</p> }
+      {result === "success" && <p>Tack!</p>} 
+      {result === "error" && <p>Nånting gick fel</p> }
    
     </form>
   );
