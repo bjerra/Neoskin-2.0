@@ -83,24 +83,28 @@ const H2 = css`
 `
 
 const H3 = css`
+font-family: Quicksand;
   font-size: 2.369em;
   font-weight: 600;
   margin-bottom: 0.4em;
 `
 
 const H4 = css`
+font-family: Quicksand;
   font-size: 1.777em;
   font-weight: 500;
   margin-bottom: 0.4em;
 `
 
 const H5 = css`
+font-family: Quicksand;
   font-size: 1.333em;
   font-weight: 500;
   margin-bottom: 0.4em;
 `
 
 const H6 = css`
+font-family: Quicksand;
   font-size: 0.75em;
   margin-bottom: 0.4em;
 `

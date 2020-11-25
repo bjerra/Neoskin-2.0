@@ -5,7 +5,7 @@ export const StyledServiceCard = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-margin: 5rem 2rem;
+margin: 1rem 2rem 4rem 2rem;
 
 text-align: center;
 color: #fff;
@@ -16,10 +16,18 @@ padding: 1rem;
 
 .header{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 
     img{
-        width: 150px;
+        display: block;
+        max-width:150px;
+        max-height:30px;
+        width: auto;
+        height: auto;
+    }
+    h5{
+        margin: 1rem;
     }
 }
 
