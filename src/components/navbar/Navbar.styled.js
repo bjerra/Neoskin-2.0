@@ -5,7 +5,7 @@ export const StyledNavbar = styled.div`
   position: fixed;
   top: 0;
   width: 100%;
-  height: 50px;
+  height: 55px;
   display: flex;
   background: ${({ theme }) => theme.COLOR.LIGHT.hex};
   justify-content: space-between;
@@ -31,13 +31,13 @@ export const StyledNavbar = styled.div`
   }
 
   @media screen and (max-width: 1280px) {
-    height: 35px;
+    height: 40px;
     }
   @media screen and (max-width: 736px) {
-    height: 35px;
+    height: 40px;
       } 
   @media screen and (max-width: 480px) {
-    height: 35px;
+    height: 40px;
     }
 
 `;

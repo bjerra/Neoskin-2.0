@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {StyledServiceGrid} from './ServiceGrid.styled'
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 
 const ServiceGrid = () => {
@@ -10,6 +10,9 @@ const ServiceGrid = () => {
         allMarkdownRemark(filter: {fields: {slug: {regex: "/(behandlingar/.)/"}}}) {
             edges {
               node {
+                fields {
+                  slug
+                }
                 frontmatter {
                   title
                   image {
@@ -30,6 +33,7 @@ const ServiceGrid = () => {
     <StyledServiceGrid>
         {data.allMarkdownRemark.edges.map(({node}, index) => {
             const{ title, image} = node.frontmatter;
+            const {slug } = node.fields;
            return (
             <section key={index}>
             <div className="content"
@@ -39,8 +43,9 @@ const ServiceGrid = () => {
                     })`
                     }}
                 >
-                    <p>{title}</p>
-
+                   <Link to={slug}>
+                   {title}
+                  </Link>  
             </div>         
             </section>
         )}

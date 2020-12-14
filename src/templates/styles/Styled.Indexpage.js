@@ -121,6 +121,10 @@ export const About = styled.section`
          * {
             flex: 1;
         }
+
+        @media screen and (max-width: 980px) {
+            flex-direction: column;
+          }
         
     }
 `

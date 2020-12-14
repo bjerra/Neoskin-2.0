@@ -59,9 +59,6 @@ export const IndexPageTemplate = ({
       <Tour />
       </div>
     </About>
-
-    
-
   </Wrapper>
 )
 
