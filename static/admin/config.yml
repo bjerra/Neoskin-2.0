@@ -25,7 +25,7 @@ collections:
   - name: "services"
     label: "Services"
     files:
-      - file: "src/data/categoryData.json"
+      - file: "src/data/test.json"
         label: "Categories"
         name: "categories"
         widget: "list"
