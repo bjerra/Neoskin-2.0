@@ -1,29 +1,17 @@
 
-[
-    {
-     "templateKey": "category-page",
-     "title": "Erbjudande!",
-     "description": "blablablabal",
-     "image": "../../../static/img/img_5644b.jpg",
-     "services": [
-      1,
-      2,
-      3,
-      4,
-      5
-     ]
-    },
-    {
-    "templateKey": "category-page",
-    "title": "Erbjudande!",
-    "description": "blablablabal",
-    "image": "../../../static/img/img_5644b.jpg",
-    "services": [
-        1,
-        2,
-        3,
-        4,
-        5
+{"categories":
+    [
+        {
+        "templateKey": "category-page",
+        "title": "Erbjudande!",
+        "description": "blablablabal",
+        "image": "../../../static/img/img_5644b.jpg"
+        },
+        {
+        "templateKey": "category-page",
+        "title": "Erbjudande!",
+        "description": "blablablabal",
+        "image": "../../../static/img/img_5644b.jpg"
+        }
     ]
-    }
-]
+}
