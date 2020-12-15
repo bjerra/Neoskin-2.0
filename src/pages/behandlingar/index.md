@@ -1,7 +1,7 @@
 ---
 templateKey: service-page
 path: /behandlingar
-title: Behandlingar
+title: Behandlirerer
 image: /img/img_5644b.jpg
 heading: "Resultatinriktad hudvård "
 description: Fraxium laser, Jett Plasma, Ultraljudsrengöring, Enerpeel kemiska
