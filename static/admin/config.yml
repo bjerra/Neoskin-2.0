@@ -14,32 +14,13 @@ public_folder: /img
 collections:
   - name: "serviceCategories"
     label: "ServiceCategories"
-    folder: "src/pages/behandlingar"
+    folder: "src/data/pages/categories"
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "category-page"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: image}
-
-  - name: "services"
-    label: "Services"
-    extension: "json"
-    files:
-      - file: "src/data/test.json"
-        label: "Categories"
-        name: "categories"  
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "category-page"}
-          - name: "categories"
-            label: "Categories"
-            widget: "list"
-            summary: '{{fields.title}}'
-            allow_add: false
-            fields:            
-              - {label: "Title", name: "title", widget: "hidden"}
-              - {label: "Description", name: "description", widget: "text"}
-              - {label: "Image", name: "image", widget: image}
 
   - name: "pages"
     label: "Pages"
