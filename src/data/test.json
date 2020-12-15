@@ -2,16 +2,54 @@
 {"categories":
     [
         {
-        "templateKey": "category-page",
-        "title": "Erbjudande!",
-        "description": "blablablabal",
-        "image": "../../../static/img/img_5644b.jpg"
+         "title": "Erbjudande!",
+         "description": "blablablabal",
+         "image": "../../../static/img/img_5644b.jpg"
         },
         {
-        "templateKey": "category-page",
-        "title": "Erbjudande!",
-        "description": "blablablabal",
-        "image": "../../../static/img/img_5644b.jpg"
+         "title": "Ansiktsbehandlingar och LED-mask",
+         "description": "blablablabal",
+         "image": "../../../static/img/img_5644b.jpg"
+        },
+        {
+         "title": "PRX-T33 och Enerpeel Kemiska peels",
+         "description": "blablablabal",
+         "image": "../../../static/img/img_5644b.jpg"
+        },
+        {
+         "title": "Top 3 efterfrågade kurer",
+         "description": "blablablabal",
+         "image": "../../../static/img/img_5644b.jpg"
+        },
+        {
+         "title": "Top 3 efterfrågade kombinationsbehandlingar",
+         "description": "blablablabal",
+         "image": "../../../static/img/img_5644b.jpg"
+        },
+        {
+         "title": "Konsultationer och tilläggstjänster",
+         "description": "blablablabal",
+         "image": "../../../static/img/img_5644b.jpg"
+        },
+        {
+         "title": "Laserbehandling Fraxium",
+         "description": "blablablabal",
+         "image": "../../../static/img/img_5644b.jpg"
+        },
+        {
+         "title": "JETT Plasma",
+         "description": "blablablabal",
+         "image": "../../../static/img/img_5644b.jpg"
+        },
+        {
+         "title": "Fransar och bryn",
+         "description": "blablablabal",
+         "image": "../../../static/img/img_5644b.jpg"
+        },
+        {
+         "title": "Esthetica Hudvårdssalong - Nicolinas behandlingar",
+         "description": "blablablabal",
+         "image": "../../../static/img/img_5644b.jpg"
         }
-    ]
+       ]
 }
