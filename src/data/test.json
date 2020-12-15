@@ -1,6 +1,6 @@
-<<<<<<< HEAD
 
-{"categories":
+{
+    "categories":
     [
         {
          "title": "Erbjudande!",
@@ -52,36 +52,5 @@
          "description": "blablablabal",
          "image": "../../../static/img/img_5644b.jpg"
         }
-       ]
-=======
-{
-  "categories": [
-    {
-      "templateKey": "category-page",
-      "title": "Erbjudande!",
-      "description": "blablablabal",
-      "image": "../../../static/img/img_5644b.jpg"
-    },
-    {
-      "templateKey": "category-page",
-      "title": "Erbjudande!",
-      "description": "blablablabal",
-      "image": "../../../static/img/img_5644b.jpg"
-    }
-  ],
-  "data": [
-    {
-      "templateKey": "category-page",
-      "title": "fdgdfg",
-      "description": "ddfg",
-      "image": "/img/3.jpg"
-    },
-    {
-      "templateKey": "category-page",
-      "title": "hgfugfh",
-      "description": "fghgf",
-      "image": "/img/3.jpg"
-    }
-  ]
->>>>>>> caf93782ac57d754eb350abc4e6a0550196173d8
+    ]
 }
