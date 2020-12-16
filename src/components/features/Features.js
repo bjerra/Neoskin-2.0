@@ -15,26 +15,10 @@ SwiperCore.use([Navigation, Pagination, A11y, Autoplay]);
 
 const FeatureGrid = ({ gridItems }) => {
   
-  const data = useStaticQuery(graphql`
-  query CategoryQuery {
-    dataJson {
-      categories {
-        title
-        slug
-        description
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-  }
-  `)
+ 
   
   const serviceData = useServiceData();
+  const d = []
 
   return(
   <StyledFeatures>
@@ -62,7 +46,7 @@ const FeatureGrid = ({ gridItems }) => {
         }
       }}
     >
-       {offers.map(service => (
+       {d.map(service => (
           <SwiperSlide key={service.id}>
             <ServiceCard service={service}/>
           </SwiperSlide>
