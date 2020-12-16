@@ -1,6 +1,7 @@
 import React from "react"
 import { StyledServiceCard } from './ServiceCard.styled'
 import { useTheme  } from '@emotion/react'
+import { Link } from 'gatsby'
 
 const ServiceCard = ({service}) => {
 
@@ -28,7 +29,10 @@ const ServiceCard = ({service}) => {
                Boka                                    
             </a>
             </div>
-        
+            <Link to={`/behandlingar/${service.slug}`} state={{
+                      modal: true
+                  }}> mer info
+                  </Link>       
 
      </StyledServiceCard>
   )

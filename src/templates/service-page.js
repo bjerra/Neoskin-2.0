@@ -4,7 +4,6 @@ import { graphql } from 'gatsby'
 
 import {Layout} from '../components'
 import CategoryMenu from '../components/CategoryMenu'
-import CategoryCard from '../components/CategoryCard'
 
 export const ServicePageTemplate = ({
   image,
@@ -46,9 +45,7 @@ export const ServicePageTemplate = ({
                  
                 </div>
                 </div> 
-                    <CategoryCard 
-                    data={data} 
-                    />                      
+                           
               </div>
               <div className="column is-3" style={{padding:0}}>         
              

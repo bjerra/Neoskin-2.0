@@ -2,10 +2,12 @@ import styled from "@emotion/styled"
 
 export const StyledBurger = styled.button`
 
-  position: relative;
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  top: 1rem;
+  right: 2rem;
   width: 2rem;
   height: 2rem;
   background: transparent;

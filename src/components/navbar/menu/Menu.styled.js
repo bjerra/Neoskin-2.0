@@ -4,32 +4,39 @@ export const StyledMenu = styled.nav`
   z-index: 10;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background: ${({ theme }) => theme.COLOR.LIGHT.hex};
+  justify-content: start;
+  background: ${({ theme }) => theme.COLOR.DARK.hex};
   height: 100vh;
   text-align: left;
   padding: 2rem;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
   transition: transform 0.3s ease-in-out;
   
+  ul{
+    display: flex;
+    justify-content: space-around;
+  }
+
   @media (max-width: ${({ theme }) => theme.BREAKPOINTS.MOBILE}) {
     width: 100%;
   }
 
   div{
-    flex: 1;
+    flex: auto;
+  }
+
+  > div:first-of-type {
     width: 200px;
     margin: auto;
   }
 
-  section {
-    flex: 3;
+  > div:last-of-type {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: start;
   }
 
   a {
@@ -38,7 +45,7 @@ export const StyledMenu = styled.nav`
     padding: 2rem 0;
     font-weight: bold;
     letter-spacing: 0.5rem;
-    color: ${({ theme }) => theme.COLOR.DARK.hex};
+    color: ${({ theme }) => theme.COLOR.LIGHT.hex};
     text-decoration: none;
     transition: color 0.3s linear;
     
@@ -50,5 +57,7 @@ export const StyledMenu = styled.nav`
     &:hover {
       color: ${({ theme }) => theme.COLOR.HOVER};
     }
+
+   
   }
 `;

@@ -1,23 +1,32 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import {Layout} from '../components'
-import { Wrapper} from './styles/Styled.categorypage'
+import {Layout, ServiceCard} from '../components'
+import { Wrapper, Header, Body} from './styles/Styled.categorypage'
 
 export const CategoryPageTemplate = ({
+  id,
   image,
   title,
   description,
+  services
 }) => {
       
   return(
-    <Wrapper image={image.childImageSharp.fluid.src}>
-    <div>
-      <h1>
-        {title}
-      </h1>
+    <Wrapper>
+      <Header image={image.childImageSharp.fluid.src}>
+        <h1>{title}</h1>
         <p>{description}</p>
-      </div>  
+      </Header>  
+      <Body>
+        {
+          services.map((service) => (                       
+              <div key={service.id}>  
+              <ServiceCard service={service}/>                         
+              </div>       
+          ))
+          }    
+      </Body>
   </Wrapper>
   )
 }
@@ -30,6 +39,7 @@ CategoryPageTemplate.propTypes = {
 const CategoryPage = ({ data, pageContext }) => {
 
   const category = data.dataJson.categories.find(p=>p.title == pageContext.id)
+  const services = data.allServiceDataJson.edges.map(p=>p.node);
   const {title, image, description} = category;
 
   return (
@@ -38,6 +48,8 @@ const CategoryPage = ({ data, pageContext }) => {
         image={image}
         title={title}     
         description={description}     
+        services={services}
+        id={pageContext.id}
       />
     </Layout>
   )
@@ -54,7 +66,7 @@ CategoryPage.propTypes = {
 export default CategoryPage
 
 export const categoryPageQuery = graphql`
-  query CategoryPage {
+  query CategoryPage($id: String!) {
     dataJson {
       categories {
         title
@@ -64,6 +76,22 @@ export const categoryPageQuery = graphql`
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
             }
+          }
+        }
+      }
+    }
+    allServiceDataJson(filter: {category: {eq: $id}}) {
+      edges {
+        node {
+          url
+          title
+          time
+          slug
+          price
+          id
+          info {
+            text
+            title
           }
         }
       }
