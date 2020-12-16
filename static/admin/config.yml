@@ -32,8 +32,8 @@ collections:
     label: "Services"
     files:
       - file: "src/data/serviceHandleData.json"
-        label: "services"
-        name: "Services"
+        label: "Services"
+        name: "services"
         fields:
           - label: Services
             name: services

@@ -2,26 +2,39 @@ import React, {useState} from 'react'
 import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../../components/PreviewCompatibleImage'
 import {StyledFeatures} from './Features.styled'
-import { useServiceData } from '../ServiceData'
 import SwiperCore, { Navigation, Pagination, A11y, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {ServiceCard} from '../../components'
+import { useStaticQuery, graphql } from "gatsby"
+import { useServiceData } from '../ServiceData'
 
 import 'swiper/swiper-bundle.min.css';
 
 SwiperCore.use([Navigation, Pagination, A11y, Autoplay]);
 
 
- 
-  const FeatureGrid = ({ gridItems }) => {
-
-    const offers = useServiceData().reduce((acc, current) => {
-      if(current.offer){
-        acc.push(current)
+const FeatureGrid = ({ gridItems }) => {
+  
+  const data = useStaticQuery(graphql`
+  query CategoryQuery {
+    dataJson {
+      categories {
+        title
+        slug
+        description
+        image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
-   
-  return acc;
-  },[])
+    }
+  }
+  `)
+  
+  const serviceData = useServiceData();
 
   return(
   <StyledFeatures>
