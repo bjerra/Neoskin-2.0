@@ -42,17 +42,17 @@ collections:
               - {label: "Title", name: "title", widget: "string"}
 
   - name: "test"
+    label: "Test"
+    files:
+    - file: "src/data/test.json"
       label: "Test"
-      files:
-        - file: "src/data/test.json"
-          label: "Test"
-          name: "test"
-          fields:
-            - label: Test
-              name: test
-              widget: list
-              fields:          
-                - {label: "Title", name: "title", widget: "string"}
+      name: "test"
+      fields:
+        - label: Test
+          name: test
+          widget: list
+          fields:          
+            - {label: "Title", name: "title", widget: "string"}
 
   - name: "features"
     label: "Features"
