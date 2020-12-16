@@ -11,7 +11,7 @@ export const CategoryPageTemplate = ({
 }) => {
       
   return(
-    <Wrapper>
+    <Wrapper image={image.childImageSharp.fluid.src}>
     <div>
       <h1>
         {title}

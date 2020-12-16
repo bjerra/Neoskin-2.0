@@ -16,6 +16,11 @@ export const Wrapper =  styled.div`
 
         padding: 2rem 0 0.1rem 0 ; 
     }
+
+    background-image: url(${({ image }) => image});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
     .inner {
         margin: 0 auto;
