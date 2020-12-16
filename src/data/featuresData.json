@@ -1,5 +1,12 @@
-{ "features":
-    [
-       
-    ]
+{
+  "features": [
+    {
+      "ServiceId": 13,
+      "image": "/img/basalmembran.jpg"
+    },
+    {
+      "ServiceId": 2,
+      "image": "/img/a5_diskskylt.jpg"
+    }
+  ]
 }
