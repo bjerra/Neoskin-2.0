@@ -31,37 +31,37 @@ collections:
   - name: "services"
     label: "Services"
     files:
-    - file: "src/data/serviceHandleData.json"
-      label: "services"
-      name: "Services"
-      fields:
-        - label: Services
-          name: services
-          widget: list
-          fields:          
-            - {label: "Title", name: "title", widget: "string"}
-            - {label: "Id", name: "id", widget: "string"}
+      - file: "src/data/serviceHandleData.json"
+        label: "services"
+        name: "Services"
+        fields:
+          - label: Services
+            name: services
+            widget: list
+            fields:          
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Id", name: "id", widget: "string"}
 
   - name: "features"
     label: "Features"
     files:
-       - file: "src/data/featuresData.json"
+      - file: "src/data/featuresData.json"
         label: "features"
         name: "Features"
         fields:
-        - label: Features
-          name: features
-          widget: list
-          fields:                    
-            - label: "serviceId"
-              name: "ServiceId"
-              widget: "relation"
-              collection: "services"
-              file: "services"
-              search_fields: ["services.*.title"]
-              display_fields: ["services.*.title"]
-              value_field: "services.*.id"
-            - {label: "Image", name: "image", widget: image}  
+          - label: Features
+            name: features
+            widget: list
+            fields:                    
+              - label: "serviceId"
+                name: "ServiceId"
+                widget: "relation"
+                collection: "services"
+                file: "services"
+                search_fields: ["services.*.title"]
+                display_fields: ["services.*.title"]
+                value_field: "services.*.id"
+              - {label: "Image", name: "image", widget: image}  
 
   - name: "pages"
     label: "Pages"
