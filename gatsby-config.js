@@ -64,7 +64,6 @@ module.exports = {
         }
       }
     },
-    `gatsby-transformer-json`,
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
@@ -94,16 +93,23 @@ module.exports = {
         name: 'data',
       },
     },
+    `gatsby-transformer-json`,
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    {
+      resolve: `gatsby-plugin-netlify-cms-paths`,
+      options: {
+        cmsConfig: `/static/admin/config.yml`,
+      },
+    },
     {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-relative-images',
+            resolve: `gatsby-plugin-netlify-cms-paths`,
             options: {
-              name: 'uploads',
+              cmsConfig: `/static/admin/config.yml`,
             },
           },
           {
