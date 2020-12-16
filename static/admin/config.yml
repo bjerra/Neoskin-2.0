@@ -28,55 +28,40 @@ collections:
               - {label: "Description", name: "description", widget: "text"}
               - {label: "Image", name: "image", widget: image}  
 
-  - name: "serviceData"
-    label: "ServiceData"
+  - name: "services"
+    label: "Services"
     files:
-      - file: "src/data/serviceData.json"
-        label: "ServiceData"
-        name: "serviceData"
-        fields:
-          - label: ServiceData
-            name: serviceData
-            widget: list
-            fields:          
-              - {label: "Title", name: "title", widget: "string"}
-
-  - name: "test"
-    label: "Test"
-    files:
-    - file: "src/data/test.json"
-      label: "Test"
-      name: "test"
+    - file: "src/data/serviceHandleData.json"
+      label: "services"
+      name: "Services"
       fields:
-        - label: Test
-          name: test
+        - label: Services
+          name: services
           widget: list
           fields:          
             - {label: "Title", name: "title", widget: "string"}
+            - {label: "Id", name: "id", widget: "string"}
 
   - name: "features"
     label: "Features"
-    folder: "src/data/features"
-    create: true 
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - label: "service"
-        name: "Service"
-        widget: "relation"
-        collection: "serviceData"
-        file: "serviceData"
-        search_fields: ["serviceData.*.title"]
-        display_fields: ["serviceData.*.title"]
-        value_field: "serviceData.*.title"
-      - label: "test"
-        name: "Test"
-        widget: "relation"
-        collection: "test"
-        file: "test"
-        search_fields: ["test.*.title"]
-        display_fields: ["test.*.title"]
-        value_field: "test.*.title"
-        
+    files:
+       - file: "src/data/featuresData.json"
+        label: "features"
+        name: "Features"
+        fields:
+        - label: Features
+          name: features
+          widget: list
+          fields:                    
+            - label: "serviceId"
+              name: "ServiceId"
+              widget: "relation"
+              collection: "services"
+              file: "services"
+              search_fields: ["services.*.title"]
+              display_fields: ["services.*.title"]
+              value_field: "services.*.id"
+            - {label: "Image", name: "image", widget: image}  
 
   - name: "pages"
     label: "Pages"
