@@ -2,46 +2,55 @@
  "categories": [
   {
    "title": "Ansiktsbehandlingar och LED-mask",
-   "description": "etset",
+   "slug": "ansiktsbehandlingar-och-led-mask",
+   "description": "",
    "image": ""
   },
   {
    "title": "PRX-T33 och Enerpeel Kemiska peels",
-   "description": "sertsert",
+   "slug": "prx-t33-och-enerpeel-kemiska-peels",
+   "description": "",
    "image": ""
   },
   {
    "title": "Top 3 efterfrågade kurer",
+   "slug": "top-3-efterfragade-kurer",
    "description": "",
    "image": ""
   },
   {
    "title": "Top 3 efterfrågade kombinationsbehandlingar",
+   "slug": "top-3-efterfragade-kombinationsbehandlingar",
    "description": "",
    "image": ""
   },
   {
    "title": "Konsultationer och tilläggstjänster",
+   "slug": "konsultationer-och-tillaggstjanster",
    "description": "",
    "image": ""
   },
   {
    "title": "Laserbehandling Fraxium",
+   "slug": "laserbehandling-fraxium",
    "description": "",
    "image": ""
   },
   {
    "title": "JETT Plasma",
+   "slug": "jett-plasma",
    "description": "",
    "image": ""
   },
   {
    "title": "Fransar och bryn",
+   "slug": "fransar-och-bryn",
    "description": "",
    "image": ""
   },
   {
    "title": "Esthetica Hudvårdssalong - Nicolinas behandlingar",
+   "slug": "esthetica-hudvardssalong-nicolinas-behandlingar",
    "description": "",
    "image": ""
   }
