@@ -21,6 +21,12 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
       }
+      dataJson {
+        categories {
+          title
+          slug
+        }
+      }
       allServiceDataJson {
         edges {
           node {
@@ -52,6 +58,17 @@ exports.createPages = ({ actions, graphql }) => {
       })
     })
 
+    const categories = result.data.dataJson.categories
+    categories.forEach(category => {
+        createPage({
+          path: `/${category.slug}`,
+          component: path.resolve("./src/templates/category-page.js"),
+          context: {
+            id: category.title,
+          },
+        })
+    })
+
     const services = result.data.allServiceDataJson.edges
     services.forEach(edge => {
       const service = edge.node
@@ -63,6 +80,7 @@ exports.createPages = ({ actions, graphql }) => {
           },
         })
     })
+
   })
 }
 

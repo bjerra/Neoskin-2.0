@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import {Layout} from '../components'
+import { Wrapper} from './styles/Styled.categorypage'
 
 export const CategoryPageTemplate = ({
   image,
@@ -10,14 +11,14 @@ export const CategoryPageTemplate = ({
 }) => {
       
   return(
-    <div>
+    <Wrapper>
     <div>
       <h1>
         {title}
       </h1>
         <p>{description}</p>
       </div>  
-  </div>
+  </Wrapper>
   )
 }
 
@@ -26,11 +27,11 @@ CategoryPageTemplate.propTypes = {
   title: PropTypes.string,
 }
 
-const CategoryPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
-  const image = frontmatter.image 
-  const title = frontmatter.title
-  const description = frontmatter.description
+const CategoryPage = ({ data, pageContext }) => {
+
+  const category = data.dataJson.categories.find(p=>p.title == pageContext.id)
+  const {title, image, description} = category;
+
   return (
     <Layout pageTitle={title} pageDescription={description}>
       <CategoryPageTemplate
@@ -53,9 +54,9 @@ CategoryPage.propTypes = {
 export default CategoryPage
 
 export const categoryPageQuery = graphql`
-  query CategoryPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      frontmatter {
+  query CategoryPage {
+    dataJson {
+      categories {
         title
         description
         image {

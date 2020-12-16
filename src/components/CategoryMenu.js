@@ -1,11 +1,8 @@
 import React, { useState } from 'react'
 
-import { useKeywordData } from './KeywordData'
-
 const Menu = ({ setData }) => {
     
     const categoryData = []
-    const keywordData = useKeywordData()
 
     const [tab, setTab] = useState(0)
     const [currentItem, setitem] = useState("");
@@ -51,22 +48,7 @@ const Menu = ({ setData }) => {
                 </ul>    
             ) : (             
                 <ul className="menu-list" style={{margin:0, padding: ' 0 1rem'}}> 
-                {
-                    keywordData.map(({title, services}, index) => {
-                    return(                                        
-                            <li key={index} >
-                            <div className={`category-button ${currentItem === title ? 'is-active' : ''}`}                         
-                                onClick={() => {
-                                    setData({title, services})
-                                    setitem(title)
-                                }}
-                                >
-                                  
-                            {title}                                       
-                            </div>                        
-                            </li>            
-                )})
-                }                   
+                                
                 </ul>   
             ) }   
             </aside>

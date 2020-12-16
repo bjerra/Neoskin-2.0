@@ -16,8 +16,6 @@ export const useServiceData = () => {
           slug
           time
           url
-          variant
-          offer
           category
         }
       }   

@@ -7,33 +7,27 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 const ServiceGrid = () => {
     const data = useStaticQuery(graphql`
     query CategoryQuery {
-        allMarkdownRemark(filter: {fields: {slug: {regex: "/(behandlingar/.)/"}}}) {
-            edges {
-              node {
-                fields {
-                  slug
-                }
-                frontmatter {
-                  title
-                  image {
-                    childImageSharp {
-                      fluid(maxWidth: 2048, quality: 100) {
-                        ...GatsbyImageSharpFluid
-                      }
-                    }
-                  }
-                }
+      dataJson {
+        categories {
+          title
+          slug
+          description
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
               }
             }
           }
+        }
       }
+    }
   `)
     return (
 
     <StyledServiceGrid>
-        {data.allMarkdownRemark.edges.map(({node}, index) => {
-            const{ title, image} = node.frontmatter;
-            const {slug } = node.fields;
+        {data.dataJson.categories.map((category, index) => {
+            const{ title, image, slug} = category;
            return (
             <section key={index}>
             <div className="content"

@@ -95,13 +95,11 @@ export default ServiceModal
 export const query = graphql`
   query($serviceId: String!) {
     serviceDataJson(id: {eq: $serviceId}) {
-        variant
         url
         title
         time
         slug
         price
-        offer
         id
         info {
           text
