@@ -12,10 +12,10 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "services"
-    label: "Services"
+  - name: "categories"
+    label: "Kategorier"
     files:
-      - file: "src/data/serviceData.json"
+      - file: "src/data/categoryData.json"
         label: "Categories"
         name: "categories"
         fields:
