@@ -19,45 +19,74 @@ export const StyledMenu = styled.nav`
     display: flex;
     justify-content: space-around;
   }
+  .expandable{
+    div:first-of-type {
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+    }
+    
+      color: ${({ theme }) => theme.COLOR.LIGHT.hex};
+  }
+
+  #service-menu {
+    height: ${({ servicesExpanded }) => servicesExpanded ? '100px' : '0'};
+    opacity: ${({ servicesExpanded }) => servicesExpanded ? '1' : '0'};
+    transition: 0.2s;
+    overflow: hidden;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+    
+  }
+
+  @media (max-width: ${({ theme }) => theme.BREAKPOINTS.MOBILE}) {
+    font-size: 1.5rem;
+    text-align: center;     
+  }
+  div span {
+    color: white;
+  }
 
   @media (max-width: ${({ theme }) => theme.BREAKPOINTS.MOBILE}) {
     width: 100%;
   }
 
-  div{
+  section{
     flex: auto;
   }
 
-  > div:first-of-type {
+  > section:first-of-type {
     width: 200px;
     margin: auto;
   }
 
-  > div:last-of-type {
+  > section:last-of-type {
     display: flex;
+    flex: 6;
     flex-direction: column;
     justify-content: start;
+
+    > div {
+      margin: 1rem 0;
+    }
+    
   }
 
   a {
     font-size: 1.75rem;
-    text-transform: uppercase;
-    padding: 2rem 0;
+    text-transform: uppercase; 
     font-weight: bold;
     letter-spacing: 0.5rem;
     color: ${({ theme }) => theme.COLOR.LIGHT.hex};
     text-decoration: none;
     transition: color 0.3s linear;
     
-    @media (max-width: ${({ theme }) => theme.BREAKPOINTS.MOBILE}) {
-      font-size: 1.5rem;
-      text-align: center;     
-    }
 
     &:hover {
       color: ${({ theme }) => theme.COLOR.HOVER};
     }
-
-   
-  }
 `;
