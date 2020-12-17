@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import PropTypes from 'prop-types'
-import PreviewCompatibleImage from '../../components/PreviewCompatibleImage'
+import Img from "gatsby-image"
 import {StyledFeatures} from './Features.styled'
 import SwiperCore, { Navigation, Pagination, A11y, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -15,10 +15,7 @@ SwiperCore.use([Navigation, Pagination, A11y, Autoplay]);
 
 const FeatureGrid = ({ gridItems }) => {
   
- 
-  
   const serviceData = useServiceData();
-  const d = []
 
   return(
   <StyledFeatures>
@@ -26,7 +23,7 @@ const FeatureGrid = ({ gridItems }) => {
   <Swiper
       spaceBetween={50}
       slidesPerView={3}
-      loop={true}
+      loop={false}
       navigation
       pagination={{ clickable: true }}
       onSwiper={(swiper) => console.log(swiper)}
@@ -46,8 +43,11 @@ const FeatureGrid = ({ gridItems }) => {
         }
       }}
     >
-       {d.map(service => (
-          <SwiperSlide key={service.id}>
+       {gridItems.map(service => (
+          <SwiperSlide key={service.serviceId}>
+            <div style={{width: '100px', margin: 'auto'}}>
+              <Img fluid={service.image.childImageSharp.fluid} alt="logo" />
+            </div>
             <ServiceCard service={service}/>
           </SwiperSlide>
         ))}

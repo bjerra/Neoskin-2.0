@@ -29,18 +29,17 @@ const ServiceGrid = () => {
         {data.dataJson.categories.map((category, index) => {
             const{ title, image, slug} = category;
            return (
-            <section key={index}>
-            <div className="content"
+            <section key={index}>  
+                <div className="content"
                     style={{
                     backgroundImage: `url(${
                         !!image.childImageSharp ? image.childImageSharp.fluid.src : image
                     })`
                     }}
                 >
-                   <Link to={slug}>
-                   {title}
-                  </Link>  
-            </div>         
+                    <Link to={slug}><h5> {title}</h5></Link>
+                  
+                 </div>      
             </section>
         )}
         )}

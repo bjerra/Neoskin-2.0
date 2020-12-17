@@ -7,13 +7,12 @@ import EmailList from '../components/EmailList'
 
 export const IndexPageTemplate = ({
   image,
+  features,
   title,
   subtitle,
   heading,
   subheading,
-  mainpitch,
   description,
-  intro,
 }) => (
   <Wrapper>
     <Banner title={title} />
@@ -32,8 +31,8 @@ export const IndexPageTemplate = ({
     </Intro>
 
     <Highlights>
-        <Divider title="Erbjudanden Just Nu"/>
-        <Features gridItems={intro.blurbs} />
+        <Divider title=""/>
+        <Features gridItems={features} />
     </Highlights>
 
     <Services>
@@ -64,31 +63,27 @@ export const IndexPageTemplate = ({
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  features: PropTypes.array,
   title: PropTypes.string,
   subtitle: PropTypes.string,
   heading: PropTypes.string,
-  mainpitch: PropTypes.object,
   description: PropTypes.string,
   subheading: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
 }
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-
+  console.log(frontmatter.features)
   return (
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
+        features={frontmatter.features}
         subtitle={frontmatter.subtitle}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
-        intro={frontmatter.intro}
       />
     </Layout>
   )
@@ -117,25 +112,19 @@ export const pageQuery = graphql`
             }
           }
         }
-        heading   
-        subheading     
-        mainpitch {
-          title
-          description
-        }
-        description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
+        features{
+          serviceId 
+          image {
+            childImageSharp {
+              fluid(maxWidth: 240, quality: 64) {
+                ...GatsbyImageSharpFluid
               }
             }
-            text
           }
         }
+        heading   
+        subheading      
+        description
       }
     }
   }

@@ -25,7 +25,7 @@ export const Intro = styled.section`
     .inner {
         margin: 0 auto;
         width: 75rem;
-        max-width: calc(100% - 6rem); 
+        max-width: calc(100% - 3rem); 
         @media screen and (max-width: 480px) {
           .inner {
             max-width: calc(100% - 3rem); 
