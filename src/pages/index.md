@@ -3,6 +3,11 @@ templateKey: index-page
 title: Auktoriserad hudterapeut med Gesällbrev
 subtitle: Skräddarsydd avancerad hudvård med synliga resultat
 image: /img/anais_aesthetica_consulting_blg_9107_6_xx.jpg
+features:
+  - serviceId: 1
+    image: /img/epidermis.jpg
+  - serviceId: 15
+    image: /img/jett_logo_color_basic_159x159.png
 heading: Avancerad hudvård
 subheading: >
   Enerpeel kemiska peels, Fraxium laser, PRX-T33, Ultraljudsrengöring, LED-mask,
