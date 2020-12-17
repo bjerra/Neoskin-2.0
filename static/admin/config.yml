@@ -30,6 +30,7 @@ collections:
 
   - name: "services"
     label: "Services"
+    hide: true
     files:
       - file: "src/data/serviceHandleData.json"
         label: "Services"
