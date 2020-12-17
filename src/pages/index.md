@@ -6,7 +6,7 @@ image: /img/anais_aesthetica_consulting_blg_9107_6_xx.jpg
 features:
   - serviceId: 1
     image: /img/epidermis.jpg
-  - serviceId: 15
+  - serviceId: 33
     image: /img/jett_logo_color_basic_159x159.png
 heading: Avancerad hudvård
 subheading: >
