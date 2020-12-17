@@ -1,17 +1,20 @@
 import React, { useState } from 'react';
 import { bool } from 'prop-types';
 import { Link } from 'gatsby'
-import { StyledMenu } from './Menu.styled';
+import { StyledMenu, ListItem } from './Menu.styled';
 import { useTheme  } from '@emotion/react'
 import {default as Logo} from "../../logo";
 import { FaPhoneSquare } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { ImLocation } from 'react-icons/im';
 import { MdExpandLess, MdExpandMore } from 'react-icons/md';
+import {useCategoryData} from '../../CategoryData'
 
 const Menu = ({ open }) => {
   const [servicesExpanded, setservicesExpanded] = useState(false);
   const theme = useTheme()
+
+const categories = useCategoryData();
   return (
     <StyledMenu theme={theme} open={open} servicesExpanded={servicesExpanded}> 
       <section>
@@ -53,22 +56,16 @@ const Menu = ({ open }) => {
           }
         </div>
         <div id="service-menu">
-        <ul>                
-              <li>
-              <Link to="/om">
-            Om
-          </Link>  
-              </li>
-              <li>
-              <Link to="/om">
-            Om
-          </Link>  
-              </li>
-              <li>
-              <Link to="/om">
-            Om
-          </Link>   
-              </li>    
+        <ul>  
+          {
+            categories.map((category, index) =>(
+              <ListItem servicesExpanded={servicesExpanded} index={index}>
+              <Link to={`/${category.slug}`}>
+              {category.title}
+                </Link>
+                </ListItem>
+            ))
+          }       
           </ul>
           </div>            
       </div>                 

@@ -7,6 +7,7 @@ export const StyledMenu = styled.nav`
   justify-content: start;
   background: ${({ theme }) => theme.COLOR.DARK.hex};
   height: 100vh;
+  overflow-y:auto;
   text-align: left;
   padding: 2rem;
   position: fixed;
@@ -22,25 +23,21 @@ export const StyledMenu = styled.nav`
   .expandable{
     div:first-of-type {
       display: flex;
-      justify-content: space-between;
+      
       align-items:center;
     }
     
       color: ${({ theme }) => theme.COLOR.LIGHT.hex};
   }
 
-  #service-menu {
-    height: ${({ servicesExpanded }) => servicesExpanded ? '100px' : '0'};
-    opacity: ${({ servicesExpanded }) => servicesExpanded ? '1' : '0'};
-    transition: 0.2s;
-    overflow: hidden;
-
+  #service-menu {  
+    max-height: ${({ servicesExpanded }) => servicesExpanded ? '600px' : '0'};
+    transition: 0.4s;
     ul {
       display: flex;
       justify-content: space-around;
       flex-direction: column;
     }
-    
   }
 
   @media (max-width: ${({ theme }) => theme.BREAKPOINTS.MOBILE}) {
@@ -90,3 +87,16 @@ export const StyledMenu = styled.nav`
       color: ${({ theme }) => theme.COLOR.HOVER};
     }
 `;
+
+export const ListItem = styled.li`
+  margin: 0.5rem;
+  border-bottom: 1px solid white;
+  a {
+    font-size: 1rem;
+  }
+  transform: ${({ servicesExpanded }) => servicesExpanded ? 'translateX(0)' : 'translateX(100%)'};
+  opacity: ${({ servicesExpanded }) => servicesExpanded ? '1' : '0'};
+  transition: 0.2s;
+  transition-delay: ${({ index })=> index * 50}ms;
+
+`
