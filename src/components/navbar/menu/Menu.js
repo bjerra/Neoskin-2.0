@@ -46,7 +46,6 @@ const categories = useCategoryData();
         </Link>  
       </div>        
       <div className="expandable" onClick={() => setservicesExpanded(!servicesExpanded)}>
-        <div>
           <Link to="/behandlingar">
             Behandlingar
           </Link> 
@@ -54,22 +53,20 @@ const categories = useCategoryData();
           ? <MdExpandLess size={35}/> 
           : <MdExpandMore size={35}/>   
           }
-        </div>
-        <div id="service-menu">
-        <ul>  
+        </div>    
+         
+        <ul id="service-menu">  
           {
             categories.map((category, index) =>(
-              <ListItem servicesExpanded={servicesExpanded} index={index}>
+              <ListItem servicesExpanded={servicesExpanded} index={servicesExpanded ? index: 0}>
               <Link to={`/${category.slug}`}>
               {category.title}
                 </Link>
                 </ListItem>
             ))
           }       
-          </ul>
-          </div>            
-      </div>                 
-      <div>
+          </ul>                    
+      <div> 
         <Link to="/nyhetsbrev">
           Nyhetsbrev
         </Link> 

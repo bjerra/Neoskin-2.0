@@ -21,23 +21,18 @@ export const StyledMenu = styled.nav`
     justify-content: space-around;
   }
   .expandable{
-    div:first-of-type {
-      display: flex;
-      
+      display: flex;     
       align-items:center;
-    }
-    
       color: ${({ theme }) => theme.COLOR.LIGHT.hex};
   }
 
   #service-menu {  
-    max-height: ${({ servicesExpanded }) => servicesExpanded ? '600px' : '0'};
-    transition: 0.4s;
-    ul {
-      display: flex;
-      justify-content: space-around;
-      flex-direction: column;
-    }
+    flex: ${({ servicesExpanded }) => servicesExpanded ? '1' : '0'};
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    height: auto;
+    justify-content: flex-start;
+    flex-direction: column;   
   }
 
   @media (max-width: ${({ theme }) => theme.BREAKPOINTS.MOBILE}) {
@@ -53,7 +48,9 @@ export const StyledMenu = styled.nav`
   }
 
   section{
-    flex: auto;
+    div{
+      flex: 0;
+    }
   }
 
   > section:first-of-type {
@@ -63,9 +60,9 @@ export const StyledMenu = styled.nav`
 
   > section:last-of-type {
     display: flex;
-    flex: 6;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
+    height: 650px;
 
     > div {
       margin: 1rem 0;
@@ -89,14 +86,14 @@ export const StyledMenu = styled.nav`
 `;
 
 export const ListItem = styled.li`
-  margin: 0.5rem;
-  border-bottom: 1px solid white;
+  padding: 5px 0;  
   a {
     font-size: 1rem;
   }
+  border-bottom: 1px solid #ddd;
   transform: ${({ servicesExpanded }) => servicesExpanded ? 'translateX(0)' : 'translateX(100%)'};
   opacity: ${({ servicesExpanded }) => servicesExpanded ? '1' : '0'};
-  transition: 0.2s;
-  transition-delay: ${({ index })=> index * 50}ms;
+  transition: all 0.2s;
+  transition-delay: ${({ index })=> index * 25}ms;
 
 `
