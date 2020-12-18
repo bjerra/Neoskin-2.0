@@ -20,11 +20,6 @@ export const StyledMenu = styled.nav`
     display: flex;
     justify-content: space-around;
   }
-  .expandable{
-      display: flex;     
-      align-items:center;
-      color: ${({ theme }) => theme.COLOR.LIGHT.hex};
-  }
 
   #service-menu {  
     flex: ${({ servicesExpanded }) => servicesExpanded ? '1' : '0'};
@@ -33,21 +28,29 @@ export const StyledMenu = styled.nav`
     height: auto;
     justify-content: flex-start;
     flex-direction: column;   
+    a {
+      font-weight: 100 !important;
+      font-size: 1.25rem;   
+      margin-left: 1rem;
+      @media (max-width: ${({ theme }) => theme.BREAKPOINTS.MOBILE}) {
+        font-size: 1rem;
+        margin-left: 0;
+      }
+    }
+
   }
 
-  @media (max-width: ${({ theme }) => theme.BREAKPOINTS.MOBILE}) {
-    font-size: 1.5rem;
-    text-align: center;     
-  }
   div span {
     color: white;
   }
 
   @media (max-width: ${({ theme }) => theme.BREAKPOINTS.MOBILE}) {
     width: 100%;
+    text-align: center;   
   }
 
   section{
+    margin: 2rem 0;
     div{
       flex: 0;
     }
@@ -79,6 +82,10 @@ export const StyledMenu = styled.nav`
     text-decoration: none;
     transition: color 0.3s linear;
     
+    @media (max-width: ${({ theme }) => theme.BREAKPOINTS.MOBILE}) {
+      font-size: 1.3rem;
+       
+    }
 
     &:hover {
       color: ${({ theme }) => theme.COLOR.HOVER};
@@ -86,7 +93,7 @@ export const StyledMenu = styled.nav`
 `;
 
 export const ListItem = styled.li`
-  padding: 5px 0;  
+  padding: 5px;  
   a {
     font-size: 1rem;
   }

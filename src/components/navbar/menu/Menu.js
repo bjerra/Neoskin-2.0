@@ -7,7 +7,6 @@ import {default as Logo} from "../../logo";
 import { FaPhoneSquare } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { ImLocation } from 'react-icons/im';
-import { MdExpandLess, MdExpandMore } from 'react-icons/md';
 import {useCategoryData} from '../../CategoryData'
 
 const Menu = ({ open }) => {
@@ -45,14 +44,10 @@ const categories = useCategoryData();
           Om
         </Link>  
       </div>        
-      <div className="expandable" onClick={() => setservicesExpanded(!servicesExpanded)}>
+      <div onClick={() => setservicesExpanded(!servicesExpanded)}>
           <Link to="/behandlingar">
-            Behandlingar
-          </Link> 
-          {servicesExpanded
-          ? <MdExpandLess size={35}/> 
-          : <MdExpandMore size={35}/>   
-          }
+            {`Behandlingar ${servicesExpanded ? '-' : '+'}`}
+          </Link>  
         </div>    
          
         <ul id="service-menu">  
