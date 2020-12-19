@@ -7,6 +7,7 @@ export const StyledMenu = styled.nav`
   justify-content: start;
   background: ${({ theme }) => theme.COLOR.DARK.hex};
   height: 100vh;
+  width: 25%;
   overflow-y:auto;
   text-align: left;
   padding: 2rem;
@@ -16,6 +17,10 @@ export const StyledMenu = styled.nav`
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
   transition: transform 0.3s ease-in-out;
   
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
   ul{
     display: flex;
     justify-content: space-around;
@@ -88,7 +93,7 @@ export const StyledMenu = styled.nav`
     }
 
     &:hover {
-      color: ${({ theme }) => theme.COLOR.HOVER};
+      color: ${({ theme }) => theme.COLOR.HOVER.hex};
     }
 `;
 
@@ -104,3 +109,33 @@ export const ListItem = styled.li`
   transition-delay: ${({ index })=> index * 25}ms;
 
 `
+
+export const Expandable = styled.div`
+  
+  position: relative;
+  cursor: pointer;
+  color: ${({ theme }) => theme.COLOR.LIGHT.hex};
+  
+  div{
+    width: 1.5rem;
+    height: 0.15rem;
+    background: ${({ theme }) =>  theme.COLOR.LIGHT.hex};
+    border-radius: 5px;
+    transition: all 0.2s linear;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    :first-of-type {
+    
+    }
+
+  :nth-of-type(2) {
+    transform: ${({ servicesExpanded }) => servicesExpanded ? 'rotate(0)' : 'rotate(90deg)'};
+  }
+}
+  
+  
+}
+`
+

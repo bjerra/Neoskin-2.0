@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { bool } from 'prop-types';
 import { Link } from 'gatsby'
-import { StyledMenu, ListItem } from './Menu.styled';
+import { StyledMenu, ListItem , Expandable} from './Menu.styled';
 import { useTheme  } from '@emotion/react'
 import {default as Logo} from "../../logo";
 import { FaPhoneSquare } from 'react-icons/fa';
@@ -44,11 +44,13 @@ const categories = useCategoryData();
           Om
         </Link>  
       </div>        
-      <div onClick={() => setservicesExpanded(!servicesExpanded)}>
-          <Link to="/behandlingar">
-            {`Behandlingar ${servicesExpanded ? '-' : '+'}`}
+      <Expandable onClick={() => setservicesExpanded(!servicesExpanded)} theme={theme} servicesExpanded={servicesExpanded}>
+          <Link>
+            Behandlingar
           </Link>  
-        </div>    
+          <div />
+          <div /> 
+        </Expandable>    
          
         <ul id="service-menu">  
           {
