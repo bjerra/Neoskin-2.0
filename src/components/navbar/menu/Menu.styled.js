@@ -10,7 +10,6 @@ export const StyledMenu = styled.nav`
   width: 25%;
   overflow-y:auto;
   text-align: left;
-  padding: 2rem;
   position: fixed;
   top: 0;
   right: 0;
@@ -55,7 +54,7 @@ export const StyledMenu = styled.nav`
   }
 
   section{
-    margin: 2rem 0;
+   
     div{
       flex: 0;
     }
@@ -73,9 +72,13 @@ export const StyledMenu = styled.nav`
     height: 650px;
 
     > div {
-      margin: 1rem 0;
+      margin: 1rem 1rem;
     }
     
+  }
+
+  li{
+    margin: 0.5rem 1rem;
   }
 
   a {
@@ -120,19 +123,20 @@ export const Expandable = styled.div`
   div{
     width: 1.5rem;
     height: 0.15rem;
-    background: ${({ theme }) =>  theme.COLOR.LIGHT.hex};
+    margin-top: -.3rem;
+    top: 50%;
+    background: ${({ theme, servicesExpanded }) => servicesExpanded ? theme.COLOR.HOVER.hex : theme.COLOR.LIGHT.hex};
     border-radius: 5px;
     transition: all 0.2s ease-out;
     position: absolute;
     right: 0;
-    top: 0;
 
     :first-of-type {
-    
+      transform: ${({ servicesExpanded }) => servicesExpanded ? 'rotate(0)' : 'rotate(180deg)'};
     }
 
   :nth-of-type(2) {
-    transform: ${({ servicesExpanded }) => servicesExpanded ? 'rotate(0)' : 'rotate(90deg)'};
+    transform: ${({ servicesExpanded }) => servicesExpanded ? 'rotate(0)' : 'rotate(270deg)'};
   }
 }
   
