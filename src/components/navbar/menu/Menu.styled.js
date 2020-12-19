@@ -5,7 +5,7 @@ export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: start;
-  background: ${({ theme }) => theme.COLOR.DARK.hex};
+  background: ${({ theme }) => theme.COLOR.BLUE.hex};
   height: 100vh;
   width: 25%;
   overflow-y:auto;
@@ -105,7 +105,7 @@ export const ListItem = styled.li`
   border-bottom: 1px solid #ddd;
   transform: ${({ servicesExpanded }) => servicesExpanded ? 'translateX(0)' : 'translateX(100%)'};
   opacity: ${({ servicesExpanded }) => servicesExpanded ? '1' : '0'};
-  transition: all 0.2s;
+  transition: all 0.2s ease-out;
   transition-delay: ${({ index })=> index * 25}ms;
 
 `
@@ -113,6 +113,7 @@ export const ListItem = styled.li`
 export const Expandable = styled.div`
   
   position: relative;
+  -webkit-tap-highlight-color: transparent;
   cursor: pointer;
   color: ${({ theme }) => theme.COLOR.LIGHT.hex};
   
@@ -121,7 +122,7 @@ export const Expandable = styled.div`
     height: 0.15rem;
     background: ${({ theme }) =>  theme.COLOR.LIGHT.hex};
     border-radius: 5px;
-    transition: all 0.2s linear;
+    transition: all 0.2s ease-out;
     position: absolute;
     right: 0;
     top: 0;

@@ -15,8 +15,8 @@ const BABY_POWDER = {
   rgbArray: [253, 255, 252],
 }
 
-const TIFFANY_BLUE = {
-  hex: "#2EC4B6",
+const BLUE = {
+  hex: "#1b2a40",
   rgb: `rgb(46,196,182)`,
   rgbArray: [46, 196, 182],
 }
@@ -42,8 +42,9 @@ const ORANGE_PEEL = {
 const COLOR = {
   LIGHT: BABY_POWDER,
   DARK: RICH_BLACK,
+  BLUE: BLUE,
   HOVER: YELLOW,
-  FEATURE: [TIFFANY_BLUE, ROSE_MADDER, ORANGE_PEEL],
+  FEATURE: [ROSE_MADDER, ORANGE_PEEL],
 }
 
 
