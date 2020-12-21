@@ -4,6 +4,7 @@ import { ModalRoutingContext } from 'gatsby-plugin-modal-routing'
 import {  graphql } from 'gatsby'
 import ServiceDetails from '../components/ServiceDetails'
 import {Layout} from '../components'
+import {Wrapper, Body} from './styles/Styled.servicemodal'
 
 const ServiceModal = ({data}) => { 
 
@@ -20,7 +21,7 @@ const ServiceModal = ({data}) => {
     
     {({ modal, closeTo }) => (
         modal ? (
-            <div className="service-modal" onClick={() =>  window.history.back()}>
+            <Wrapper onClick={() =>  window.history.back()}>
                  <Helmet titleTemplate={`%s | Behandlingar`}>
                         <title>{title}</title>
                         <meta
@@ -29,7 +30,7 @@ const ServiceModal = ({data}) => {
                         />
                     </Helmet>
         
-                <div className="modal-main"> 
+                <Body> 
                    
                     <button className="modal-close is-large" aria-label="close" ></button>    
                     <h1 className="category-title">
@@ -51,8 +52,8 @@ const ServiceModal = ({data}) => {
                     <ServiceDetails service={details}/>     
                         </div>            
                                                             
-                </div>   
-            </div>
+                </Body>   
+            </Wrapper>
         ) : (       
             <Layout>  
             <div className="container">  

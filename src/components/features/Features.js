@@ -16,6 +16,11 @@ SwiperCore.use([Navigation, Pagination, A11y, Autoplay]);
 const FeatureGrid = ({ gridItems }) => {
   
   const serviceData = useServiceData();
+  let data = []
+  gridItems.forEach(item => {
+    const service = serviceData.find(p=>p.id == item.serviceId);
+    data.push({image : item.image, ...service});
+  })
 
   return(
   <StyledFeatures>
@@ -43,7 +48,7 @@ const FeatureGrid = ({ gridItems }) => {
         }
       }}
     >
-       {gridItems.map(service => (
+       {data.map(service => (
           <SwiperSlide key={service.serviceId}>
             <div style={{width: '100px', margin: 'auto'}}>
               <Img fluid={service.image.childImageSharp.fluid} alt="logo" />

@@ -40,6 +40,31 @@ export const wrapRootElement = ({ element }) => {
               font-size: 18px;
             }
           }
+          .ReactModal__Overlay {
+            opacity: 0;
+            transition: opacity 300ms ease-out;
+          }
+          
+          .ReactModal__Overlay--after-open {
+            opacity: 1;
+          }
+          
+          .ReactModal__Overlay--before-close {
+            opacity: 0;
+          }
+           
+          .ReactModal__Content {
+            transform: translateY(50px);
+            transition: transform 300ms ease-out;
+          }
+          
+          .ReactModal__Content--after-open {
+            transform: translateY(0);
+          }
+          
+          .ReactModal__Content--before-close {
+            transform: translateY(50px);
+          }
           a {
             color: inherit;
           }

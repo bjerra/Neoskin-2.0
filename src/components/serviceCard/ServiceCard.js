@@ -29,10 +29,11 @@ const ServiceCard = ({service}) => {
                Boka                                    
             </a>
             </div>
-            <Link to={`/behandlingar/${service.slug}`} state={{
-                      modal: true
-                  }}> mer info
-                  </Link>       
+            <Link 
+              to={`/behandlingar/${service.slug}`} 
+              state={{modal: true}}> 
+              mer info
+            </Link>       
 
      </StyledServiceCard>
   )

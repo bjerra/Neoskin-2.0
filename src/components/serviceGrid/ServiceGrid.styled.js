@@ -5,7 +5,7 @@ import styled from "@emotion/styled"
 export const StyledServiceGrid = styled.div`
 
 width: 100%;
-margin: 2.5rem 0;
+margin: 1.5rem 0;
 display: -moz-flex;
 display: -webkit-flex;
 display: -ms-flex;
@@ -127,6 +127,6 @@ align-items: stretch;
 .content {
   background: #ffffff;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.025); 
-  
+
 }
 `

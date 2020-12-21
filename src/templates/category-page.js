@@ -15,7 +15,7 @@ export const CategoryPageTemplate = ({
   return(
     <Wrapper>
       <Header image={image.childImageSharp.fluid.src}>
-        <h1>{title}</h1>
+        <h1>{}</h1>
         <p>{description}</p>
       </Header>  
       <Body>

@@ -29,7 +29,7 @@ import {BsStar} from 'react-icons/bs';
                     </div>
                     <div className="column">
                         <a href={url} target="_blank" rel="noopener noreferrer">    
-                            <img className="bd-btn" src={boka} alt={url}/>                                      
+                            Boka                                  
                         </a>
                     </div>                                                  
                     </div>   

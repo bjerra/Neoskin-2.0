@@ -55,7 +55,7 @@ const categories = useCategoryData();
         <ul id="service-menu">  
           {
             categories.map((category, index) =>(
-              <ListItem servicesExpanded={servicesExpanded} index={servicesExpanded ? index: 0}>
+              <ListItem key={index} servicesExpanded={servicesExpanded} index={servicesExpanded ? index: 0}>
               <Link to={`/${category.slug}`}>
               {category.title}
                 </Link>
