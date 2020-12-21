@@ -4,7 +4,7 @@ import { ModalRoutingContext } from 'gatsby-plugin-modal-routing'
 import {  graphql } from 'gatsby'
 import ServiceDetails from '../components/ServiceDetails'
 import {Layout} from '../components'
-import {Wrapper, Body} from './styles/Styled.servicemodal'
+import {Wrapper, Body, Close} from './styles/Styled.servicemodal'
 
 const ServiceModal = ({data}) => { 
 
@@ -21,7 +21,7 @@ const ServiceModal = ({data}) => {
     
     {({ modal, closeTo }) => (
         modal ? (
-            <Wrapper onClick={() =>  window.history.back()}>
+            <Wrapper>
                  <Helmet titleTemplate={`%s | Behandlingar`}>
                         <title>{title}</title>
                         <meta
@@ -30,25 +30,24 @@ const ServiceModal = ({data}) => {
                         />
                     </Helmet>
         
-                <Body> 
-                   
-                    <button className="modal-close is-large" aria-label="close" ></button>    
-                    <h1 className="category-title">
+                <Body>                  
+                    <Close to={closeTo} /> 
+                    <h1>
                         {title}                            
                     </h1>                 
-                    <div className="info-card" >                                                                         
+                    <div>                                                                         
                         {info &&
                         info.map(({title, text}) => (
                             <div key={title}>
-                                <h2 className="content" style={{fontSize: '1.25rem', margin: '1rem', borderBottom: '1px solid black', textAlign: 'center'}} dangerouslySetInnerHTML={{__html: title}}/>
+                                <h2 dangerouslySetInnerHTML={{__html: title}}/>
     
-                                <div className="content" style={{fontSize: '1rem', paddingLeft: '2rem'}} dangerouslySetInnerHTML={{__html: text}}/>
+                                <div dangerouslySetInnerHTML={{__html: text}}/>
     
                             </div>
                         ))          
                         }                                                                                                         
                     </div>   
-                    <div style={{padding: '2rem', width: '100%'}}>
+                    <div>
                     <ServiceDetails service={details}/>     
                         </div>            
                                                             

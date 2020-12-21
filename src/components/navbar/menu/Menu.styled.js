@@ -54,7 +54,7 @@ export const StyledMenu = styled.nav`
   }
 
   section{
-   
+    padding-top: 2rem;
     div{
       flex: 0;
     }

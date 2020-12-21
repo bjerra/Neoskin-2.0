@@ -14,4 +14,31 @@ export const StyledFeatures = styled.div`
     color: #00000066;
     left; 0;
   }
+
+  .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+    img{
+        display: block;
+        max-width:150px;
+        max-height:30px;
+        width: auto;
+        height: auto;
+        
+    }
+    h5{
+        margin: 1rem;
+    }
+   
+}
+
+`
+export const FeatureCard = styled.div`
+
+    margin: 1rem;
+    background-color: #eee;
+    box-shadow: 0px 10px 28px 4px rgba(0,0,0,0.21);
 `

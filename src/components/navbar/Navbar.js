@@ -12,7 +12,6 @@ const Navbar = props => {
     const [open, setOpen] = useState(false);
     const node = useRef(); 
     useOnClickOutside(node, () => setOpen(false));
-
     return (     
           <StyledNavbar theme={theme} >  
          

@@ -42,7 +42,7 @@ export const wrapRootElement = ({ element }) => {
           }
           .ReactModal__Overlay {
             opacity: 0;
-            transition: opacity 300ms ease-out;
+            transition: opacity 200ms ease-out;
           }
           
           .ReactModal__Overlay--after-open {
@@ -54,16 +54,16 @@ export const wrapRootElement = ({ element }) => {
           }
            
           .ReactModal__Content {
-            transform: translateY(50px);
-            transition: transform 300ms ease-out;
+            transform: translateX(-100px);
+            transition: transform 200ms ease-out;
           }
           
           .ReactModal__Content--after-open {
-            transform: translateY(0);
+            transform: translateX(0);
           }
           
           .ReactModal__Content--before-close {
-            transform: translateY(50px);
+            transform: translateX(100px);
           }
           a {
             color: inherit;

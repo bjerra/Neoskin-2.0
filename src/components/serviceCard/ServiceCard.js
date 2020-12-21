@@ -11,9 +11,7 @@ const ServiceCard = ({service}) => {
   return (   
       <StyledServiceCard theme={theme}>
             <div className="header">
-                <div>
-                <img src="/img/logo-nav.png" alt="logo" />
-                </div>
+              
                
             <h5>{service.title}</h5>
             </div>      

@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import PropTypes from 'prop-types'
 import Img from "gatsby-image"
-import {StyledFeatures} from './Features.styled'
+import {StyledFeatures, FeatureCard} from './Features.styled'
 import SwiperCore, { Navigation, Pagination, A11y, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {ServiceCard} from '../../components'
@@ -50,10 +50,13 @@ const FeatureGrid = ({ gridItems }) => {
     >
        {data.map(service => (
           <SwiperSlide key={service.serviceId}>
-            <div style={{width: '100px', margin: 'auto'}}>
-              <Img fluid={service.image.childImageSharp.fluid} alt="logo" />
-            </div>
-            <ServiceCard service={service}/>
+            <FeatureCard>
+              <div style={{width: '100px', margin: 'auto'}}>
+                <Img fluid={service.image.childImageSharp.fluid} alt="logo" />
+              </div>
+              <ServiceCard service={service}/>
+            </FeatureCard>
+           
           </SwiperSlide>
         ))}
  
