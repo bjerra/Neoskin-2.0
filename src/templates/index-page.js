@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Wrapper,Intro,Highlights, CTA, Services, About} from './styles/Styled.Indexpage'
-import {Banner, Features, Layout, ServiceGrid, Divider, Tour, Portrait} from '../components'
+import {Banner, Features, Layout, ServiceGrid, Divider, Tour, Portrait,Map} from '../components'
 import EmailList from '../components/EmailList'
 
 export const IndexPageTemplate = ({
@@ -58,6 +58,7 @@ export const IndexPageTemplate = ({
       <Tour />
       </div>
     </About>
+    <Map />
   </Wrapper>
 )
 

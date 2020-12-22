@@ -28,6 +28,7 @@ export const StyledMenu = styled.nav`
   #service-menu {  
     flex: ${({ servicesExpanded }) => servicesExpanded ? '1' : '0'};
     overflow: hidden;
+    margin-left: 1rem;
     transition: all 0.3s ease-out;
     height: auto;
     justify-content: flex-start;
@@ -50,7 +51,7 @@ export const StyledMenu = styled.nav`
 
   @media (max-width: ${({ theme }) => theme.BREAKPOINTS.MOBILE}) {
     width: 100%;
-    text-align: center;   
+    
   }
 
   section{
@@ -105,7 +106,7 @@ export const ListItem = styled.li`
   a {
     font-size: 1rem;
   }
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #dddddd33;
   transform: ${({ servicesExpanded }) => servicesExpanded ? 'translateX(0)' : 'translateX(100%)'};
   opacity: ${({ servicesExpanded }) => servicesExpanded ? '1' : '0'};
   transition: all 0.2s ease-out;
