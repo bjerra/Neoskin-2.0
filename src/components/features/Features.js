@@ -26,34 +26,18 @@ const FeatureGrid = ({ gridItems }) => {
   <StyledFeatures>
     
   <Swiper
-      spaceBetween={50}
-      slidesPerView={3}
-      loop={false}
+      spaceBetween={0}
+      slidesPerView={1}
+      loop={true}
       navigation
       pagination={{ clickable: true }}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
-      breakpoints= {{
-        '@0.00': {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-        '@0.75': {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        '@1.00': {
-          slidesPerView: 3,
-          spaceBetween: 40,
-        }
-      }}
     >
        {data.map(service => (
           <SwiperSlide key={service.serviceId}>
             <FeatureCard>
-              <div style={{width: '100px', margin: 'auto'}}>
                 <Img fluid={service.image.childImageSharp.fluid} alt="logo" />
-              </div>
               <ServiceCard service={service}/>
             </FeatureCard>
            

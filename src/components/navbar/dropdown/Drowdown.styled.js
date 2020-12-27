@@ -1,12 +1,12 @@
 import styled from "@emotion/styled"
 
-export const StyledMenu = styled.nav`
+export const Wrapper = styled.nav`
   z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: start;
   background: ${({ theme }) => theme.COLOR.BLUE.hex};
-  height: 80vh;
+  height: 100vh;
   width: 25%;
   overflow-y:auto;
   text-align: left;
@@ -144,4 +144,3 @@ export const Expandable = styled.div`
   
 }
 `
-

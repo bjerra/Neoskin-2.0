@@ -16,6 +16,7 @@ export const wrapRootElement = ({ element }) => {
             -webkit-font-smoothing: antialiased;
             font-smoothing: antialiased;
           }
+
           html,
           body {       
             font-family: "Josefin Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,

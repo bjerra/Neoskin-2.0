@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {StyledServiceGrid} from './ServiceGrid.styled'
-import { Link } from "gatsby"
+import {StyledServiceGrid, Card, Image} from './ServiceGrid.styled'
 import {useCategoryData} from '../CategoryData'
 
 
@@ -13,18 +12,10 @@ const ServiceGrid = () => {
     <StyledServiceGrid>
         {data.map(({ title, image, slug}, index) => {
            return (
-            <section key={index}>  
-                <div className="content"
-                    style={{
-                    backgroundImage: `url(${
-                        !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-                    })`
-                    }}
-                >
-                    <Link to={slug}><h5> {title}</h5></Link>
-                  
-                 </div>      
-            </section>
+            <Card key={index} to={slug}>      
+                <Image fluid={image.childImageSharp.fluid} alt={title} />    
+                <h4>{title}</h4>           
+            </Card>
         )}
         )}
   </StyledServiceGrid>

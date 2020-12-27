@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Wrapper,Intro,Highlights, CTA, Services, About} from './styles/Styled.Indexpage'
-import {Banner, Features, Layout, ServiceGrid, Divider, Tour, Portrait,Map} from '../components'
+import {Banner, Navbar, Logo, Features, Layout, ServiceGrid, Divider, Tour, Portrait,Map} from '../components'
 import EmailList from '../components/EmailList'
 
 export const IndexPageTemplate = ({
@@ -15,8 +15,13 @@ export const IndexPageTemplate = ({
   description,
 }) => (
   <Wrapper>
-    <Banner title={title} />
-   
+    <Banner image = {image.childImageSharp.fluid.src}>
+        <div className="inner">
+          <Logo />    
+        </div>   
+        <video autoPlay loop muted playsInline src={require("../img/banner.webm")}></video>
+    </Banner>
+    <Navbar />
     <Intro>
       <div className="inner">     
       <header>
@@ -28,19 +33,22 @@ export const IndexPageTemplate = ({
         </p>
       </header>     
       </div>
+      
     </Intro>
-
+    <Divider />
     <Highlights>
-        <Divider title=""/>
-        <Features gridItems={features} />
+        <div className="inner">    
+          <Features gridItems={features} />
+        </div>
     </Highlights>
 
     <Services>
       <div className="inner">   
-        <Divider title="Våra Behandlingar"/>
-        <ServiceGrid />
-      </div>   
+        <h3>Behandlingar</h3>     
+        <ServiceGrid />  
+      </div>       
     </Services>
+    <Divider />
     <CTA>
       <div className="inner">          
         <EmailList />
@@ -48,8 +56,8 @@ export const IndexPageTemplate = ({
     </CTA>
 
     <About>
-    <div className="inner">     
-      <Divider title="Om"/>
+    <div className="inner">  
+       <h3>Om</h3>         
       <div className="column">
         <Portrait />
         <p>Anais blablablabl</p>
@@ -58,6 +66,7 @@ export const IndexPageTemplate = ({
       <Tour />
       </div>
     </About>
+    <Divider />
     <Map />
   </Wrapper>
 )
