@@ -1,146 +1,76 @@
 import styled from "@emotion/styled"
 
-export const Wrapper = styled.nav`
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  background: ${({ theme }) => theme.COLOR.BLUE.hex};
-  height: 100vh;
-  width: 25%;
-  overflow-y:auto;
-  text-align: left;
-  position: fixed;
-  top: 0;
-  right: 0;
-  transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
-  transition: transform 0.3s ease-in-out;
-  
-  ::-webkit-scrollbar {
-    display: none;
-  }
+export const Wrapper = styled.div`
 
-  ul{
-    display: flex;
-    justify-content: space-around;
-  }
-
-  #service-menu {  
-    flex: ${({ servicesExpanded }) => servicesExpanded ? '1' : '0'};
-    overflow: hidden;
-    margin-left: 1rem;
-    transition: all 0.3s ease-out;
-    height: auto;
-    justify-content: flex-start;
-    flex-direction: column;   
-    a {
-      font-weight: 100 !important;
-      font-size: 1.25rem;   
-      margin-left: 1rem;
-      @media (max-width: ${({ theme }) => theme.BREAKPOINTS.MOBILE}) {
-        font-size: 1rem;
-        margin-left: 0;
-      }
-    }
-
-  }
-
-  div span {
-    color: white;
-  }
-
-  @media (max-width: ${({ theme }) => theme.BREAKPOINTS.MOBILE}) {
-    width: 100%;
-    
-  }
-
-  section{
-    padding-top: 2rem;
-    div{
-      flex: 0;
-    }
-  }
-
-  > section:first-of-type {
-    width: 200px;
-    margin: auto;
-  }
-
-  > section:last-of-type {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 650px;
-
-    > div {
-      margin: 1rem 1rem;
-    }
-    
-  }
-
-  li{
-    margin: 0.5rem 1rem;
-  }
-
-  a {
-    font-size: 1.75rem;
-    text-transform: uppercase; 
-    font-weight: bold;
-    letter-spacing: 0.5rem;
-    color: ${({ theme }) => theme.COLOR.LIGHT.hex};
-    text-decoration: none;
-    transition: color 0.3s linear;
-    
-    @media (max-width: ${({ theme }) => theme.BREAKPOINTS.MOBILE}) {
-      font-size: 1.3rem;
-       
-    }
-
-    &:hover {
-      color: ${({ theme }) => theme.COLOR.HOVER.hex};
-    }
-`;
-
-export const ListItem = styled.li`
-  padding: 5px;  
-  a {
-    font-size: 1rem;
-  }
-  border-bottom: 1px solid #dddddd33;
-  transform: ${({ servicesExpanded }) => servicesExpanded ? 'translateX(0)' : 'translateX(100%)'};
-  opacity: ${({ servicesExpanded }) => servicesExpanded ? '1' : '0'};
-  transition: all 0.2s ease-out;
-  transition-delay: ${({ index })=> index * 25}ms;
+  position: relative;
+  display: inline-block;
 
 `
 
-export const Expandable = styled.div`
+export const Content = styled.div`
+
+  position: fixed;
+  background-color: ${({ theme }) => theme.COLOR.DARK.hex};
+  bottom: 50px;
+  left: 0;
+  right:0;
+  z-index: 1;
+  transform: ${({ expanded }) => expanded ? 'scaleY(1)' : 'scaleY(0)'};
+  transition: transform 0.2s ease-in-out;
+  transform-origin: bottom;
+
+`
+
+export const Button = styled.div`
   
+ color: ${({ theme, expanded }) => expanded ? theme.COLOR.HOVER.hex : theme.COLOR.LIGHT.hex};
+    
+  height: 100%;
   position: relative;
   -webkit-tap-highlight-color: transparent;
   cursor: pointer;
-  color: ${({ theme }) => theme.COLOR.LIGHT.hex};
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items: center;
   
-  div{
-    width: 1.5rem;
-    height: 0.15rem;
-    margin-top: -.3rem;
-    top: 50%;
-    background: ${({ theme, servicesExpanded }) => servicesExpanded ? theme.COLOR.HOVER.hex : theme.COLOR.LIGHT.hex};
-    border-radius: 5px;
-    transition: all 0.2s ease-out;
-    position: absolute;
-    right: 0;
+  .icon {
+   
+    div{
+        position: absolute;
+        left: 50%;
+        width: 1.25rem;
+        height: 0.15rem;
+        background: ${({ theme, expanded }) => expanded ? theme.COLOR.HOVER.hex : theme.COLOR.LIGHT.hex};
+        border-radius: 5px;
+        transition: all 0.2s ease-out;
 
-    :first-of-type {
-      transform: ${({ servicesExpanded }) => servicesExpanded ? 'rotate(0)' : 'rotate(180deg)'};
+        :first-of-type {
+            transform: translate(-50%, 0) ${({ expanded }) => expanded ? 'rotate(0)' : 'rotate(180deg)'};
+          }
+      
+          :nth-of-type(2) {
+              transform: translate(-50%, 0) ${({ expanded }) => expanded ? 'rotate(0)' : 'rotate(270deg)'};
+          }
     }
 
-  :nth-of-type(2) {
-    transform: ${({ servicesExpanded }) => servicesExpanded ? 'rotate(0)' : 'rotate(270deg)'};
+}
+`
+
+export const ListItem = styled.div`
+color: ${({ theme }) => theme.COLOR.LIGHT.hex};
+ 
+  a {
+    padding: 1rem;  
+    font-size: 1rem;
+    display:inline-block;
+    width:100%;
+    height:100%;
   }
-}
-  
-  
-}
+  border-bottom: 1px solid #dddddd33;
+  transform: ${({ expanded }) => expanded ? 'translateX(0)' : 'translateX(100%)'};
+  opacity: ${({ expanded }) => expanded ? '1' : '0'};
+  transition: all 0.2s ease;
+  transition-delay: ${({ index })=> index * 25}ms;
+
 `

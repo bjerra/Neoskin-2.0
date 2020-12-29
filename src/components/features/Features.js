@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import PropTypes from 'prop-types'
 import Img from "gatsby-image"
 import {StyledFeatures, FeatureCard} from './Features.styled'
-import SwiperCore, { Navigation, Pagination, A11y, Autoplay } from 'swiper';
+import SwiperCore, { Navigation, Pagination, A11y, Autoplay, EffectCoverflow } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {ServiceCard} from '../../components'
 import { useStaticQuery, graphql } from "gatsby"
@@ -10,7 +10,7 @@ import { useServiceData } from '../ServiceData'
 
 import 'swiper/swiper-bundle.min.css';
 
-SwiperCore.use([Navigation, Pagination, A11y, Autoplay]);
+SwiperCore.use([Navigation, Pagination, A11y, Autoplay, EffectCoverflow]);
 
 
 const FeatureGrid = ({ gridItems }) => {
@@ -28,9 +28,10 @@ const FeatureGrid = ({ gridItems }) => {
   <Swiper
       spaceBetween={0}
       slidesPerView={1}
-      loop={true}
+      loop={false}
       navigation
       pagination={{ clickable: true }}
+      effect={"coverflow"}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
     >

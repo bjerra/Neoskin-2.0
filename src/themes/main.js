@@ -22,8 +22,8 @@ const BLUE = {
   rgbArray: [46, 196, 182],
 }
 
-const YELLOW = {
-  hex: "#ebe134",
+const GRAY = {
+  hex: "#a9a9a9",
   rgb: `rgb(235, 225, 52)`,
   rgbArray: [235, 225, 52],
 }
@@ -44,7 +44,7 @@ const COLOR = {
   LIGHT: BABY_POWDER,
   DARK: RICH_BLACK,
   BLUE: BLUE,
-  HOVER: YELLOW,
+  HOVER: GRAY,
   FEATURE: [ROSE_MADDER, ORANGE_PEEL],
 }
 

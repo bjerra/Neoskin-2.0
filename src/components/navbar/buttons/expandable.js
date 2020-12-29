@@ -5,7 +5,7 @@ import styled from "@emotion/styled"
 const Button = ({ onClick, expanded, title }) => {
   const theme = useTheme()
   return (
-    <StyledExpandable theme={theme} expanded={expanded} onClick={onClick} theme={theme} expanded={expanded}>
+    <StyledExpandable theme={theme} expanded={expanded} onClick={onClick}>
         {title}
         <div />
         <div />       

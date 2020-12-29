@@ -2,6 +2,8 @@ import styled from "@emotion/styled"
 
 export const StyledDesktop = styled.div`
 
+    font-size: 1.5rem;
+    
     .sticky-wrapper{ 
       z-index: 100;  
       position: relative;
