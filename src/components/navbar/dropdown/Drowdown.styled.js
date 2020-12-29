@@ -4,6 +4,8 @@ export const Wrapper = styled.div`
 
   position: relative;
   display: inline-block;
+  height: 100%;
+  width: 100%;
 
 `
 
@@ -11,7 +13,7 @@ export const Content = styled.div`
 
   position: fixed;
   background-color: ${({ theme }) => theme.COLOR.DARK.hex};
-  bottom: 50px;
+  bottom: 100px;
   left: 0;
   right:0;
   z-index: 1;
@@ -58,19 +60,16 @@ export const Button = styled.div`
 `
 
 export const ListItem = styled.div`
-color: ${({ theme }) => theme.COLOR.LIGHT.hex};
+    color: ${({ theme }) => theme.COLOR.LIGHT.hex};
  
   a {
     padding: 1rem;  
     font-size: 1rem;
-    display:inline-block;
-    width:100%;
-    height:100%;
   }
-  border-bottom: 1px solid #dddddd33;
-  transform: ${({ expanded }) => expanded ? 'translateX(0)' : 'translateX(100%)'};
-  opacity: ${({ expanded }) => expanded ? '1' : '0'};
-  transition: all 0.2s ease;
-  transition-delay: ${({ index })=> index * 25}ms;
+    border-bottom: 1px solid #dddddd33;
+    transform: ${({ expanded }) => expanded ? 'translateX(0)' : 'translateX(100%)'};
+    opacity: ${({ expanded }) => expanded ? '1' : '0'};
+    transition: all 0.2s ease;
+    transition-delay: ${({ index })=> index * 25}ms;
 
 `

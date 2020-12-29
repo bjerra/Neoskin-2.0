@@ -8,15 +8,22 @@ import { useTheme  } from '@emotion/react'
 
 
 const Navbar = props => {
-    const [servicesExpanded, setservicesExpanded] = useState(false);
+    const [expanded, setExpanded] = useState(false);
     const theme = useTheme()
     return(
-      <StyledMobile theme={theme} > 
+      <StyledMobile theme={theme} expanded={expanded}> 
+      <div className="row">
             <Button title="Hem" to="/"/>
             <DropDown title={"Behandlingar"}/>
             <Button title="Kontakt" to="/kontakt"/>
-            <Button title="Mer" />
-            <Menu open={servicesExpanded} />
+            <button onClick={() => setExpanded(!expanded)}>
+                Mer
+            </button>
+      </div>
+      <div className="row">
+            <Button title="Om" to="/om"/>  
+            <Button title="Nyhetsbrev" to="/nyhetsbrev"/>
+      </div>          
       </StyledMobile> 
     )
   }
