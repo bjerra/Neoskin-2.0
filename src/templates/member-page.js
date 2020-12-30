@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import {Layout} from '../components'
+import {Layout, Navbar} from '../components'
 import Content, { HTMLContent } from '../components/Content'
 import EmailList from '../components/EmailList'
 
@@ -10,6 +10,7 @@ export const MemberPageTemplate = ({ title, image, content, contentComponent }) 
 
   return (
     <div>
+      <Navbar />
        <div
         className="full-width-image-container margin-top-0"
         style={{

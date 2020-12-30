@@ -1,10 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'gatsby'
 import { StyledMobile } from './MobileNavbar.styled';
-import { Button, Expandable } from '../buttons'
 import DropDown from '../dropdown/Dropdown'
-import Menu from '../menu/Menu'
 import { useTheme  } from '@emotion/react'
+import { BiHomeHeart, BiNews, BiHappy, BiGroup, BiMoveVertical } from 'react-icons/bi';
 
 
 const Navbar = props => {
@@ -13,16 +12,29 @@ const Navbar = props => {
     return(
       <StyledMobile theme={theme} expanded={expanded}> 
       <div className="row">
-            <Button title="Hem" to="/"/>
+            <Link to="/">
+                <BiHomeHeart size={20}/>  
+                Hem
+            </Link> 
             <DropDown title={"Behandlingar"}/>
-            <Button title="Kontakt" to="/kontakt"/>
-            <button onClick={() => setExpanded(!expanded)}>
-                Mer
-            </button>
+            <Link to="/kontakt">
+            <BiNews size={20}/>  
+                Kontakt
+            </Link>
+            <div id="more" onClick={() => setExpanded(!expanded)}>
+                <BiMoveVertical size={20}/> 
+                {expanded ? "Mindre" : "Mer"}
+            </div>
       </div>
       <div className="row">
-            <Button title="Om" to="/om"/>  
-            <Button title="Nyhetsbrev" to="/nyhetsbrev"/>
+            <Link to="/om">
+                <BiHappy size={20}/> 
+                Om
+            </Link>  
+            <Link to="/nyhetsbrev">
+                <BiGroup size={20}/> 
+                Nyhetsbrev
+            </Link>  
       </div>          
       </StyledMobile> 
     )

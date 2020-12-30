@@ -15,7 +15,7 @@ export const StyledMobile = styled.div`
     flex-direction: column;
     justify-content: stretch;
     align-items: stretch;
-    font-size: .75rem;
+    font-size: 12px;
 
     .row {
         height:100%;
@@ -25,12 +25,20 @@ export const StyledMobile = styled.div`
     }
     a{
         color: ${({ theme }) => theme.COLOR.LIGHT.hex};
-        margin: auto;
         width: 100%;
         height: 100%;
-        display: inline-block;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #more{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         align-items: center;
     }
 
