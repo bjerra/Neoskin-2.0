@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 export const Content = styled.div`
 
   position: fixed;
-  
+  background-color: ${({ theme }) => theme.COLOR.DARK.hex};
   bottom: 100px;
   left: 0;
   right:0;
@@ -62,15 +62,15 @@ export const Button = styled.div`
 
 export const ListItem = styled.div`
     color: ${({ theme }) => theme.COLOR.LIGHT.hex};
-    background-color: ${({ theme }) => theme.COLOR.DARK.hex};
+   
   a {
     padding: 1rem;  
     font-size: 1rem;
   }
     border-bottom: 1px solid #dddddd33;
-    
+    transform: ${({ expanded }) => expanded ? 'translateX(0)' : 'translateX(100%)'};
     opacity: ${({ expanded }) => expanded ? '1' : '0'};
     transition: all 0.2s ease;
-    transition-delay: ${({ index })=> index * 25}ms;
+    transition-delay: ${({ index })=> index * 20}ms;
 
 `

@@ -38,8 +38,14 @@ export const StyledMobile = styled.div`
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-around;   
         align-items: center;
+        svg{
+            transform: ${({ expanded }) => expanded ? 'rotate(180deg)' : 'rotate(0)'};
+            transition: transform 0.2s ease-out;
+        }
+        
     }
+   
 
 `;

@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { StyledMobile } from './MobileNavbar.styled';
 import DropDown from '../dropdown/Dropdown'
 import { useTheme  } from '@emotion/react'
-import { BiHomeHeart, BiNews, BiHappy, BiGroup, BiMoveVertical } from 'react-icons/bi';
+import { BiHomeHeart, BiNews, BiHappy, BiGroup, BiUpArrow } from 'react-icons/bi';
 
 
 const Navbar = props => {
@@ -16,13 +16,14 @@ const Navbar = props => {
                 <BiHomeHeart size={20}/>  
                 Hem
             </Link> 
-            <DropDown title={"Behandlingar"}/>
             <Link to="/kontakt">
             <BiNews size={20}/>  
                 Kontakt
             </Link>
+            <DropDown title={"Behandlingar"}/>
+           
             <div id="more" onClick={() => setExpanded(!expanded)}>
-                <BiMoveVertical size={20}/> 
+                <BiUpArrow size={20}/> 
                 {expanded ? "Mindre" : "Mer"}
             </div>
       </div>
