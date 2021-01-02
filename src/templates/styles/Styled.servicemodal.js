@@ -14,7 +14,6 @@ export const Body = styled.div`
     align-items: center;
     justify-items: center;
     flex-direction: column;
-    overflow-y: scroll;
 `
 
 export const Close = styled(Link)`

@@ -15,7 +15,7 @@ export const CategoryPageTemplate = ({
   return(
     <Wrapper>
       <Navbar />
-      <Banner image={image.childImageSharp.fluid.src}>
+      <Banner image={!!image.childImageSharp ? image.childImageSharp.fluid.src : image}>
         <h1>{title}</h1>
         <p>{description}</p>
       </Banner>  
