@@ -7,6 +7,15 @@
    "title": "LED-mask fototerapi",
    "slug": "led-mask-fototerapi",
    "id": 1,
+   "category": "Ansikte"
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/led-mask-fototerapi-355348",
+   "price": "500 kr",
+   "time": "30 minuter",
+   "title": "LED-mask fototerapi",
+   "slug": "led-mask-fototerapi",
+   "id": 1,
    "category": "Ansikte",
    "info": [
     {
@@ -34,6 +43,15 @@
      "text": "Klaustrofobi"
     }
    ]
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/ultraljudsreg%C3%B6ring-353395",
+   "price": "500 kr",
+   "time": "30 minuter",
+   "title": "Ultraljudsregöring",
+   "slug": "ultraljudsregoring",
+   "id": 2,
+   "category": "Ansikte"
   },
   {
    "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/ultraljudsreg%C3%B6ring-353395",
@@ -73,6 +91,15 @@
    "title": "Ansiktsbehandling pureté visage (deep clean)",
    "slug": "ansiktsbehandling-purete-visage-deep-clean",
    "id": 3,
+   "category": "Ansikte"
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/ansiktsbehandling-puret%C3%A9-visage-deep-clean-363189",
+   "price": "900 kr",
+   "time": "45 minuter",
+   "title": "Ansiktsbehandling pureté visage (deep clean)",
+   "slug": "ansiktsbehandling-purete-visage-deep-clean",
+   "id": 3,
    "category": "Ansikte",
    "info": [
     {
@@ -96,6 +123,15 @@
      "text": "Efter behandlingen får du alltid en sammanfattning av mina observationer följt av lite goda tips &amp; råd om hemmavård och rutiner för optimal hudhälsa och förlängt resultat."
     }
    ]
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/ansiktsbehandling-classique-363190",
+   "price": "1 000 kr",
+   "time": "60 minuter",
+   "title": "Ansiktsbehandling Classique",
+   "slug": "ansiktsbehandling-classique",
+   "id": 4,
+   "category": "Ansikte"
   },
   {
    "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/ansiktsbehandling-classique-363190",
@@ -135,6 +171,15 @@
    "title": "Ansiktsbehandling Luxe",
    "slug": "ansiktsbehandling-luxe",
    "id": 5,
+   "category": "Ansikte"
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/ansiktsbehandling-luxe-363191",
+   "price": "1 200 kr",
+   "time": "90 minuter",
+   "title": "Ansiktsbehandling Luxe",
+   "slug": "ansiktsbehandling-luxe",
+   "id": 5,
    "category": "Ansikte",
    "info": [
     {
@@ -158,6 +203,15 @@
      "text": "Efter behandlingen får du alltid en sammanfattning av mina observationer följt av lite goda tips &amp; råd om hemmavård och rutiner för optimal hudhälsa och förlängt resultat."
     }
    ]
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/prx-t33-20-cryoterapi-1077984",
+   "price": "2 000 kr",
+   "time": "45 minuter",
+   "title": "PRX-T33 2. 0 Cryoterapi",
+   "slug": "prx-t33-2-0-cryoterapi",
+   "id": 6,
+   "category": "Ansikte"
   },
   {
    "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/prx-t33-20-cryoterapi-1077984",
@@ -205,6 +259,15 @@
    "title": "Fraxium mildare intensitet - full face ",
    "slug": "fraxium-mildare-intensitet-full-face",
    "id": 7,
+   "category": "Fraktionerad Erbiumlaser"
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/fraxium-mildare-intensitet-full-face--355364",
+   "price": "1 600 kr",
+   "time": "45 minuter",
+   "title": "Fraxium mildare intensitet - full face ",
+   "slug": "fraxium-mildare-intensitet-full-face",
+   "id": 7,
    "category": "Fraktionerad Erbiumlaser",
    "info": [
     {
@@ -236,6 +299,15 @@
      "text": "Graviditet, sår, eksem &amp; rosacea"
     }
    ]
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/fraxium-h%C3%B6g-intensitet-1-zon-tinningar--355365",
+   "price": "1 000 kr",
+   "time": "30 minuter",
+   "title": "Fraxium hög intensitet 1 zon (tinningar) ",
+   "slug": "fraxium-hog-intensitet-1-zon-tinningar",
+   "id": 8,
+   "category": "Fraktionerad Erbiumlaser"
   },
   {
    "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/fraxium-h%C3%B6g-intensitet-1-zon-tinningar--355365",
@@ -283,6 +355,15 @@
    "title": "Fraxium hög intensitet 2 zoner (kindben) ",
    "slug": "fraxium-hog-intensitet-2-zoner-kindben",
    "id": 9,
+   "category": "Fraktionerad Erbiumlaser"
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/fraxium-h%C3%B6g-intensitet-2-zoner-kindben--355367",
+   "price": "1 800 kr",
+   "time": "45 minuter",
+   "title": "Fraxium hög intensitet 2 zoner (kindben) ",
+   "slug": "fraxium-hog-intensitet-2-zoner-kindben",
+   "id": 9,
    "category": "Fraktionerad Erbiumlaser",
    "info": [
     {
@@ -314,6 +395,15 @@
      "text": "Graviditet, sår, eksem &amp; rosacea"
     }
    ]
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/fraxium-h%C3%B6g-intensitet-3-zoner-full-face--355369",
+   "price": "2 400 kr",
+   "time": "75 minuter",
+   "title": "Fraxium hög intensitet 3 zoner (full face) ",
+   "slug": "fraxium-hog-intensitet-3-zoner-full-face",
+   "id": 10,
+   "category": "Fraktionerad Erbiumlaser"
   },
   {
    "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/fraxium-h%C3%B6g-intensitet-3-zoner-full-face--355369",
@@ -361,6 +451,15 @@
    "title": "COSMEDICAL Lift & Tight Plasmaflöde ögon eller mun",
    "slug": "cosmedical-lift-tight-plasmaflode-ogon-eller-mun",
    "id": 11,
+   "category": "Jett Plasma"
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/cosmedical-lift-&-tight-plasmafl%C3%B6de-%C3%B6gon-eller-mun-361939",
+   "price": "1 000 kr",
+   "time": "45 minuter",
+   "title": "COSMEDICAL Lift & Tight Plasmaflöde ögon eller mun",
+   "slug": "cosmedical-lift-tight-plasmaflode-ogon-eller-mun",
+   "id": 11,
    "category": "Jett Plasma",
    "info": [
     {
@@ -392,6 +491,15 @@
    "title": "COSMEDICAL Lift & Tight Plasmaflöde Full Face",
    "slug": "cosmedical-lift-tight-plasmaflode-full-face",
    "id": 12,
+   "category": "Jett Plasma"
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/cosmedical-lift-&-tight-plasmafl%C3%B6de-full-face-361938",
+   "price": "1 500 kr",
+   "time": "75 minuter",
+   "title": "COSMEDICAL Lift & Tight Plasmaflöde Full Face",
+   "slug": "cosmedical-lift-tight-plasmaflode-full-face",
+   "id": 12,
    "category": "Jett Plasma",
    "info": [
     {
@@ -415,6 +523,15 @@
      "text": "-Epilepsi, Metallinplantat"
     }
    ]
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/medical-borttagning-av-fibrom-&-pigmentfl%C3%A4ckar-mm-355355",
+   "price": "Kostnadsfri",
+   "time": "45 minuter",
+   "title": "MEDICAL Borttagning av fibrom & pigmentfläckar m. m",
+   "slug": "medical-borttagning-av-fibrom-pigmentflackar-m-m",
+   "id": 13,
+   "category": "Jett Plasma"
   },
   {
    "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/medical-borttagning-av-fibrom-&-pigmentfl%C3%A4ckar-mm-355355",
@@ -466,6 +583,15 @@
    "title": "PLASMALIFT Rynkreducering av överläpp",
    "slug": "plasmalift-rynkreducering-av-overlapp",
    "id": 14,
+   "category": "Jett Plasma"
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/plasmalift-rynkreducering-av-%C3%B6verl%C3%A4pp-992554",
+   "price": "4 000 kr",
+   "time": "75 minuter",
+   "title": "PLASMALIFT Rynkreducering av överläpp",
+   "slug": "plasmalift-rynkreducering-av-overlapp",
+   "id": 14,
    "category": "Jett Plasma",
    "info": [
     {
@@ -497,6 +623,15 @@
      "text": "-Epilepsi, Metallinplantat,"
     }
    ]
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/plasmalift-icke-kirurgiskt-%C3%B6gonlockslyft-361937",
+   "price": "5 500 kr",
+   "time": "90 minuter",
+   "title": "PLASMALIFT icke-kirurgiskt ögonlockslyft",
+   "slug": "plasmalift-icke-kirurgiskt-ogonlockslyft",
+   "id": 15,
+   "category": "Jett Plasma"
   },
   {
    "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/plasmalift-icke-kirurgiskt-%C3%B6gonlockslyft-361937",
@@ -544,6 +679,15 @@
    "title": "Enerpeel GA - Glykolsyra, antiage & lyster",
    "slug": "enerpeel-ga-glykolsyra-antiage-lyster",
    "id": 16,
+   "category": "Kemisk peeling"
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/enerpeel-ga-glykolsyra-antiage-&-lyster-1191453",
+   "price": "1 100 kr",
+   "time": "30 minuter",
+   "title": "Enerpeel GA - Glykolsyra, antiage & lyster",
+   "slug": "enerpeel-ga-glykolsyra-antiage-lyster",
+   "id": 16,
    "category": "Kemisk peeling",
    "info": [
     {
@@ -575,6 +719,15 @@
      "text": "Skadad hud, Graviditet &amp; amning, Roacutane senaste 6 månaderna, Allergi för glycolat."
     }
    ]
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/enerpeel-neck-sammandragande-1191454",
+   "price": "1 100 kr",
+   "time": "30 minuter",
+   "title": "Enerpeel NECK - Sammandragande",
+   "slug": "enerpeel-neck-sammandragande",
+   "id": 17,
+   "category": "Kemisk peeling"
   },
   {
    "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/enerpeel-neck-sammandragande-1191454",
@@ -622,6 +775,15 @@
    "title": "Enerpeel TCA 25 - rynkor, pigment, ice pick ",
    "slug": "enerpeel-tca-25-rynkor-pigment-ice-pick",
    "id": 18,
+   "category": "Kemisk peeling"
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/enerpeel-tca-25-rynkor-pigment-ice-pick--1191452",
+   "price": "3 500 kr",
+   "time": "45 minuter",
+   "title": "Enerpeel TCA 25 - rynkor, pigment, ice pick ",
+   "slug": "enerpeel-tca-25-rynkor-pigment-ice-pick",
+   "id": 18,
    "category": "Kemisk peeling",
    "info": [
     {
@@ -653,6 +815,15 @@
      "text": "Graviditet &amp; amning, Skadad hud, Roacutane senaste 6 månaderna, Känd risk för keloider."
     }
    ]
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/enerpeel-soft-tca-antiage-pigment-ice-pick-1180840",
+   "price": "2 500 kr",
+   "time": "45 minuter",
+   "title": "Enerpeel Soft TCA - antiage, pigment, ice pick",
+   "slug": "enerpeel-soft-tca-antiage-pigment-ice-pick",
+   "id": 19,
+   "category": "Kemisk peeling"
   },
   {
    "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/enerpeel-soft-tca-antiage-pigment-ice-pick-1180840",
@@ -700,6 +871,15 @@
    "title": "Enerpeel HANDS - TCA, antiage",
    "slug": "enerpeel-hands-tca-antiage",
    "id": 20,
+   "category": "Kemisk peeling"
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/enerpeel-hands-tca-antiage-1180843",
+   "price": "1 500 kr",
+   "time": "45 minuter",
+   "title": "Enerpeel HANDS - TCA, antiage",
+   "slug": "enerpeel-hands-tca-antiage",
+   "id": 20,
    "category": "Kemisk peeling",
    "info": [
     {
@@ -731,6 +911,15 @@
      "text": "Skadad hud, Roaccutan senaste 6 mån"
     }
    ]
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/enerpeel-el-eyes-&-lips-plus-1180842",
+   "price": "1 100 kr",
+   "time": "30 minuter",
+   "title": "Enerpeel EL - Eyes & Lips Plus",
+   "slug": "enerpeel-el-eyes-lips-plus",
+   "id": 21,
+   "category": "Kemisk peeling"
   },
   {
    "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/enerpeel-el-eyes-&-lips-plus-1180842",
@@ -778,6 +967,15 @@
    "title": "Enerpeel JR - Jessner´ s solution, pigment",
    "slug": "enerpeel-jr-jessner-s-solution-pigment",
    "id": 22,
+   "category": "Kemisk peeling"
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/enerpeel-jr-jessner-s-solution-pigment-1180839",
+   "price": "1 100 kr",
+   "time": "30 minuter",
+   "title": "Enerpeel JR - Jessner´ s solution, pigment",
+   "slug": "enerpeel-jr-jessner-s-solution-pigment",
+   "id": 22,
    "category": "Kemisk peeling",
    "info": [
     {
@@ -809,6 +1007,15 @@
      "text": "Skadad hud, Roaccutan senaste 6 mån"
     }
    ]
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/enerpeel-ma-ice-peel-glow-355373",
+   "price": "1 200 kr",
+   "time": "45 minuter",
+   "title": "Enerpeel MA -  Ice Peel, glow",
+   "slug": "enerpeel-ma-ice-peel-glow",
+   "id": 23,
+   "category": "Kemisk peeling"
   },
   {
    "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/enerpeel-ma-ice-peel-glow-355373",
@@ -856,6 +1063,15 @@
    "title": "Enerpeel SA - Salicylsyra, acne peel ",
    "slug": "enerpeel-sa-salicylsyra-acne-peel",
    "id": 24,
+   "category": "Kemisk peeling"
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/enerpeel-sa-salicylsyra-acne-peel--355371",
+   "price": "1 100 kr",
+   "time": "30 minuter",
+   "title": "Enerpeel SA - Salicylsyra, acne peel ",
+   "slug": "enerpeel-sa-salicylsyra-acne-peel",
+   "id": 24,
    "category": "Kemisk peeling",
    "info": [
     {
@@ -887,6 +1103,15 @@
      "text": "Skadad hud, Roaccutan senaste 6 mån"
     }
    ]
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/enerpeel-pa-pyrodruvsyra-oljig-hud--1180841",
+   "price": "1 100 kr",
+   "time": "30 minuter",
+   "title": "Enerpeel PA - Pyrodruvsyra, Oljig hud ",
+   "slug": "enerpeel-pa-pyrodruvsyra-oljig-hud",
+   "id": 25,
+   "category": "Kemisk peeling"
   },
   {
    "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/enerpeel-pa-pyrodruvsyra-oljig-hud--1180841",
@@ -934,6 +1159,15 @@
    "title": "LED-mask fototerapi",
    "slug": "led-mask-fototerapi",
    "id": 26,
+   "category": "Tillägstjänster"
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/led-mask-fototerapi-355349",
+   "price": "300 kr",
+   "time": "15 minuter",
+   "title": "LED-mask fototerapi",
+   "slug": "led-mask-fototerapi",
+   "id": 26,
    "category": "Tillägstjänster",
    "info": [
     {
@@ -961,6 +1195,15 @@
      "text": "Klaustrofobi"
     }
    ]
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/prx-t33-20-50-med-fraxium-&-jett-plasma-1078672",
+   "price": "1 000 kr",
+   "time": "15 minuter",
+   "title": "PRX-T33 2. 0 -50% med Fraxium & Jett Plasma",
+   "slug": "prx-t33-2-0-50-med-fraxium-jett-plasma",
+   "id": 27,
+   "category": "Tillägstjänster"
   },
   {
    "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/prx-t33-20-50-med-fraxium-&-jett-plasma-1078672",
@@ -1008,6 +1251,15 @@
    "title": "Yumi Total Makeover",
    "slug": "yumi-total-makeover",
    "id": 28,
+   "category": "Fransar & Bryn"
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/yumi-total-makeover-1010769",
+   "price": "1 500 kr",
+   "time": "90 minuter",
+   "title": "Yumi Total Makeover",
+   "slug": "yumi-total-makeover",
+   "id": 28,
    "category": "Fransar & Bryn",
    "info": [
     {
@@ -1031,6 +1283,15 @@
      "text": "- Färgallergier \r\n- Ögoninflammation\r\n- Vagel\r\n- Hudskada och öppna sår"
     }
    ]
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/yumi-lashes-keratin-lashlift-1010767",
+   "price": "1 000 kr",
+   "time": "75 minuter",
+   "title": "Yumi Lashes - Keratin Lashlift",
+   "slug": "yumi-lashes-keratin-lashlift",
+   "id": 29,
+   "category": "Fransar & Bryn"
   },
   {
    "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/yumi-lashes-keratin-lashlift-1010767",
@@ -1074,6 +1335,15 @@
    "title": "Yumi brows - the original browlift",
    "slug": "yumi-brows-the-original-browlift",
    "id": 30,
+   "category": "Fransar & Bryn"
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/yumi-brows-the-original-browlift-1010768",
+   "price": "600 kr",
+   "time": "45 minuter",
+   "title": "Yumi brows - the original browlift",
+   "slug": "yumi-brows-the-original-browlift",
+   "id": 30,
    "category": "Fransar & Bryn",
    "info": [
     {
@@ -1101,6 +1371,15 @@
    "title": "Brynform",
    "slug": "brynform",
    "id": 31,
+   "category": "Fransar & Bryn"
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/brynform-1052022",
+   "price": "250 kr",
+   "time": "30 minuter",
+   "title": "Brynform",
+   "slug": "brynform",
+   "id": 31,
    "category": "Fransar & Bryn",
    "info": [
     {
@@ -1116,6 +1395,15 @@
      "text": "50:- rabatt i kombination med ansiktsbehandling"
     }
    ]
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/brynf%C3%A4rg-&-form-1180664",
+   "price": "300 kr",
+   "time": "30 minuter",
+   "title": "Brynfärg & Form",
+   "slug": "brynfarg-form",
+   "id": 32,
+   "category": "Fransar & Bryn"
   },
   {
    "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/brynf%C3%A4rg-&-form-1180664",
@@ -1151,6 +1439,15 @@
    "title": "Fransfärg & Brynform ",
    "slug": "fransfarg-brynform",
    "id": 33,
+   "category": "Fransar & Bryn"
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/fransf%C3%A4rg-&-brynform--1052038",
+   "price": "350 kr",
+   "time": "30 minuter",
+   "title": "Fransfärg & Brynform ",
+   "slug": "fransfarg-brynform",
+   "id": 33,
    "category": "Fransar & Bryn",
    "info": [
     {
@@ -1170,6 +1467,15 @@
      "text": "50:- rabatt i kombination med ansiktsbehandling"
     }
    ]
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/fransar-&-bryn-f%C3%A4rg-&-form-1052039",
+   "price": "450 kr",
+   "time": "30 minuter",
+   "title": "Fransar & Bryn: Färg & Form",
+   "slug": "fransar-bryn-farg-form",
+   "id": 34,
+   "category": "Fransar & Bryn"
   },
   {
    "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/fransar-&-bryn-f%C3%A4rg-&-form-1052039",
@@ -1205,6 +1511,15 @@
    "title": "Fransfärg",
    "slug": "fransfarg",
    "id": 35,
+   "category": "Fransar & Bryn"
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/fransf%C3%A4rg-1052024",
+   "price": "300 kr",
+   "time": "30 minuter",
+   "title": "Fransfärg",
+   "slug": "fransfarg",
+   "id": 35,
    "category": "Fransar & Bryn",
    "info": [
     {
@@ -1224,6 +1539,15 @@
      "text": "50:- rabatt i kombination med ansiktsbehandling"
     }
    ]
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/k%C3%B6p-av-produkt-eller-presentkort-1180811",
+   "price": "Kostnadsfri",
+   "time": "15 minuter",
+   "title": "Köp av produkt eller presentkort",
+   "slug": "kop-av-produkt-eller-presentkort",
+   "id": 36,
+   "category": "Konsultation"
   },
   {
    "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/k%C3%B6p-av-produkt-eller-presentkort-1180811",
@@ -1255,6 +1579,15 @@
    "title": "Återbesök ",
    "slug": "aterbesok",
    "id": 37,
+   "category": "Konsultation"
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/%C3%A5terbes%C3%B6k--1180812",
+   "price": "Kostnadsfri",
+   "time": "15 minuter",
+   "title": "Återbesök ",
+   "slug": "aterbesok",
+   "id": 37,
    "category": "Konsultation",
    "info": [
     {
@@ -1266,6 +1599,15 @@
      "text": "Efter en behandling eller behandlingskur kan det vara lämpligt att kolla upp resultat och eller länkning. Detta gäller t.ex Jett plasma medical eller Jett plasmalift. \r\n\r\nKom gärna på ett återbesök efter avslutad kur för att ta efterbilderna! Även om jag inte får tillåtelse att publicera bilderna så är det mycket spännande att jämföra resultaten tillsammans du och jag!\r\n\r\nKunskap ger inte bara makt utan också säkerhet, välj alltid en auktoriserad hudterapeut som är medlem i SHR för dina behandlingar. Hudterapeutyrket är inte skyddat i Sverige vilket betyder att vem som helst kan utföra vilka behandlingar som helst, utan minsta utbildning.  \r\n\r\n“Din hud är min passion!”™ -Anaïs"
     }
    ]
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/kostnadsfri-konsultation--359499",
+   "price": "Kostnadsfri",
+   "time": "15 minuter",
+   "title": "Kostnadsfri konsultation ",
+   "slug": "kostnadsfri-konsultation",
+   "id": 38,
+   "category": "Konsultation"
   },
   {
    "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/kostnadsfri-konsultation--359499",
@@ -1301,6 +1643,15 @@
    "title": "1- Ansiktsbehandling hudhälsa inkl.  Ampull",
    "slug": "1-ansiktsbehandling-hudhalsa-inkl-ampull",
    "id": 39,
+   "category": "Esthetica Hudvårdssalong - Nicolinas behandlingar"
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/1-ansiktsbehandling-hudh%C3%A4lsa-inkl-ampull-1219127",
+   "price": "600 kr",
+   "time": "30 minuter",
+   "title": "1- Ansiktsbehandling hudhälsa inkl.  Ampull",
+   "slug": "1-ansiktsbehandling-hudhalsa-inkl-ampull",
+   "id": 39,
    "category": "Esthetica Hudvårdssalong - Nicolinas behandlingar",
    "info": [
     {
@@ -1308,6 +1659,15 @@
      "text": "Hej! Jag heter Anaïs Schönborg och driver Neoskin i Estheticas lokaler, jag lovar att göra mitt allra bästa för att få Dig att trivas hos mig under denna period så länge Nicolina är sjukskriven. \r\n\r\nDå jag också spenderar mycket tid på mina studier och vidareutveckling av Neoskin har jag tyvärr inte fått möjlighet till att erbjuda alla behandlingarna som fanns på Esthetica. Hoppas att du hittar det du söker efter ändå. \r\n\r\nMycket varmt välkommen till mig, Anaïs Schönborg - Aukt. hudterapeut med Gesällbrev, blivande mästare med Mästarbrev.\r\n\r\nVälkommen att kontakta Nicolina på nicolina@esthetica.se om du har några frågor."
     }
    ]
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/2-ansiktsbehandling-hudh%C3%A4lsa--1219128",
+   "price": "950 kr",
+   "time": "60 minuter",
+   "title": "2- Ansiktsbehandling Hudhälsa ",
+   "slug": "2-ansiktsbehandling-hudhalsa",
+   "id": 40,
+   "category": "Esthetica Hudvårdssalong - Nicolinas behandlingar"
   },
   {
    "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/2-ansiktsbehandling-hudh%C3%A4lsa--1219128",
@@ -1331,6 +1691,15 @@
    "title": "3- Ansiktsbehandling Hudhälsa inkl.  Ampull",
    "slug": "3-ansiktsbehandling-hudhalsa-inkl-ampull",
    "id": 41,
+   "category": "Esthetica Hudvårdssalong - Nicolinas behandlingar"
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/3-ansiktsbehandling-hudh%C3%A4lsa-inkl-ampull-1219129",
+   "price": "1 100 kr",
+   "time": "60 minuter",
+   "title": "3- Ansiktsbehandling Hudhälsa inkl.  Ampull",
+   "slug": "3-ansiktsbehandling-hudhalsa-inkl-ampull",
+   "id": 41,
    "category": "Esthetica Hudvårdssalong - Nicolinas behandlingar",
    "info": [
     {
@@ -1338,6 +1707,15 @@
      "text": "Hej! Jag heter Anaïs Schönborg och driver Neoskin i Estheticas lokaler, jag lovar att göra mitt allra bästa för att få Dig att trivas hos mig under denna period så länge Nicolina är sjukskriven. \r\n\r\nDå jag också spenderar mycket tid på mina studier och vidareutveckling av Neoskin har jag tyvärr inte fått möjlighet till att erbjuda alla behandlingarna som fanns på Esthetica. Hoppas att du hittar det du söker efter ändå. \r\n\r\nMycket varmt välkommen till mig, Anaïs Schönborg - Aukt. hudterapeut med Gesällbrev, blivande mästare med Mästarbrev.\r\n\r\nVälkommen att kontakta Nicolina på nicolina@esthetica.se om du har några frågor."
     }
    ]
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/4-ansiktsbehandling-hudh%C3%A4lsa-1219130",
+   "price": "1 250 kr",
+   "time": "90 minuter",
+   "title": "4- Ansiktsbehandling Hudhälsa",
+   "slug": "4-ansiktsbehandling-hudhalsa",
+   "id": 42,
+   "category": "Esthetica Hudvårdssalong - Nicolinas behandlingar"
   },
   {
    "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/4-ansiktsbehandling-hudh%C3%A4lsa-1219130",
@@ -1361,6 +1739,15 @@
    "title": "5- Ansiktsbehandling Hudhälsa inkl.  Ampull",
    "slug": "5-ansiktsbehandling-hudhalsa-inkl-ampull",
    "id": 43,
+   "category": "Esthetica Hudvårdssalong - Nicolinas behandlingar"
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/5-ansiktsbehandling-hudh%C3%A4lsa-inkl-ampull-1219131",
+   "price": "1 400 kr",
+   "time": "90 minuter",
+   "title": "5- Ansiktsbehandling Hudhälsa inkl.  Ampull",
+   "slug": "5-ansiktsbehandling-hudhalsa-inkl-ampull",
+   "id": 43,
    "category": "Esthetica Hudvårdssalong - Nicolinas behandlingar",
    "info": [
     {
@@ -1368,6 +1755,15 @@
      "text": "Hej! Jag heter Anaïs Schönborg och driver Neoskin i Estheticas lokaler, jag lovar att göra mitt allra bästa för att få Dig att trivas hos mig under denna period så länge Nicolina är sjukskriven. \r\n\r\nDå jag också spenderar mycket tid på mina studier och vidareutveckling av Neoskin har jag tyvärr inte fått möjlighet till att erbjuda alla behandlingarna som fanns på Esthetica. Hoppas att du hittar det du söker efter ändå. \r\n\r\nMycket varmt välkommen till mig, Anaïs Schönborg - Aukt. hudterapeut med Gesällbrev, blivande mästare med Mästarbrev.\r\n\r\nVälkommen att kontakta Nicolina på nicolina@esthetica.se om du har några frågor."
     }
    ]
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/6-vaxning-%C3%B6verl%C3%A4pp-1219123",
+   "price": "220 kr",
+   "time": "15 minuter",
+   "title": "6- Vaxning överläpp",
+   "slug": "6-vaxning-overlapp",
+   "id": 44,
+   "category": "Esthetica Hudvårdssalong - Nicolinas behandlingar"
   },
   {
    "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/6-vaxning-%C3%B6verl%C3%A4pp-1219123",
@@ -1391,6 +1787,15 @@
    "title": "7- Vaxning Haka",
    "slug": "7-vaxning-haka",
    "id": 45,
+   "category": "Esthetica Hudvårdssalong - Nicolinas behandlingar"
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/7-vaxning-haka-1219124",
+   "price": "220 kr",
+   "time": "15 minuter",
+   "title": "7- Vaxning Haka",
+   "slug": "7-vaxning-haka",
+   "id": 45,
    "category": "Esthetica Hudvårdssalong - Nicolinas behandlingar",
    "info": [
     {
@@ -1398,6 +1803,15 @@
      "text": "Hej! Jag heter Anaïs Schönborg och driver Neoskin i Estheticas lokaler, jag lovar att göra mitt allra bästa för att få Dig att trivas hos mig under denna period så länge Nicolina är sjukskriven. \r\n\r\nDå jag också spenderar mycket tid på mina studier och vidareutveckling av Neoskin har jag tyvärr inte fått möjlighet till att erbjuda alla behandlingarna som fanns på Esthetica. Hoppas att du hittar det du söker efter ändå. \r\n\r\nMycket varmt välkommen till mig, Anaïs Schönborg - Aukt. hudterapeut med Gesällbrev, blivande mästare med Mästarbrev.\r\n\r\nVälkommen att kontakta Nicolina på nicolina@esthetica.se om du har några frågor."
     }
    ]
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/8-vaxning-%C3%B6verl%C3%A4pp-och-haka-1219125",
+   "price": "350 kr",
+   "time": "15 minuter",
+   "title": "8- Vaxning överläpp och haka",
+   "slug": "8-vaxning-overlapp-och-haka",
+   "id": 46,
+   "category": "Esthetica Hudvårdssalong - Nicolinas behandlingar"
   },
   {
    "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/8-vaxning-%C3%B6verl%C3%A4pp-och-haka-1219125",
@@ -1421,6 +1835,15 @@
    "title": "9- Vaxning överläpp, haka & kinder",
    "slug": "9-vaxning-overlapp-haka-kinder",
    "id": 47,
+   "category": "Esthetica Hudvårdssalong - Nicolinas behandlingar"
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/9-vaxning-%C3%B6verl%C3%A4pp-haka-&-kinder-1219126",
+   "price": "400 kr",
+   "time": "15 minuter",
+   "title": "9- Vaxning överläpp, haka & kinder",
+   "slug": "9-vaxning-overlapp-haka-kinder",
+   "id": 47,
    "category": "Esthetica Hudvårdssalong - Nicolinas behandlingar",
    "info": [
     {
@@ -1428,6 +1851,15 @@
      "text": "Hej! Jag heter Anaïs Schönborg och driver Neoskin i Estheticas lokaler, jag lovar att göra mitt allra bästa för att få Dig att trivas hos mig under denna period så länge Nicolina är sjukskriven. \r\n\r\nDå jag också spenderar mycket tid på mina studier och vidareutveckling av Neoskin har jag tyvärr inte fått möjlighet till att erbjuda alla behandlingarna som fanns på Esthetica. Hoppas att du hittar det du söker efter ändå. \r\n\r\nMycket varmt välkommen till mig, Anaïs Schönborg - Aukt. hudterapeut med Gesällbrev, blivande mästare med Mästarbrev.\r\n\r\nVälkommen att kontakta Nicolina på nicolina@esthetica.se om du har några frågor."
     }
    ]
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/fraxium-h%C3%B6g-intensitet-2-zoner-x6-1180807",
+   "price": "9 500 kr",
+   "time": "30 minuter",
+   "title": "Fraxium hög intensitet 2 zoner x6",
+   "slug": "fraxium-hog-intensitet-2-zoner-x6",
+   "id": 48,
+   "category": "Kur"
   },
   {
    "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/fraxium-h%C3%B6g-intensitet-2-zoner-x6-1180807",
@@ -1467,6 +1899,15 @@
    "title": "Kemisk peeling SA Acne peel x 4 ",
    "slug": "kemisk-peeling-sa-acne-peel-x-4",
    "id": 49,
+   "category": "Kur"
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/kemisk-peeling-sa-acne-peel-x-4--1180813",
+   "price": "4 000 kr",
+   "time": "30 minuter",
+   "title": "Kemisk peeling SA Acne peel x 4 ",
+   "slug": "kemisk-peeling-sa-acne-peel-x-4",
+   "id": 49,
    "category": "Kur",
    "info": [
     {
@@ -1490,6 +1931,15 @@
      "text": "- Tebiskin Osk clean: Morgon och kväll\r\n-Osk kräm: morgon och kväll\r\n-Osk lotion: Vid behov upp till 6x / dag\r\n\r\n- Vid upplevd torr hud gå över till Tebiskin EGF kräm som verkar återfuktande, barriärstärkande, antiinflammatorisk och lugnande. \r\n\r\nKorrekt eftervård förstärker behandlingseffekten och ökar säkerheten. Tebiskin hemvård är skräddarsytt att samverka med Enerpeel och dess olika indikationer."
     }
    ]
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/prx-t33-x-4-en-g%C3%A5ng-i-veckan--1180806",
+   "price": "6 000 kr",
+   "time": "30 minuter",
+   "title": "PRX-T33 x 4 (en gång i veckan) ",
+   "slug": "prx-t33-x-4-en-gang-i-veckan",
+   "id": 50,
+   "category": "Kur"
   },
   {
    "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/prx-t33-x-4-en-g%C3%A5ng-i-veckan--1180806",
