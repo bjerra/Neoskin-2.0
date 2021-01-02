@@ -2,211 +2,203 @@
  "services": [
   {
    "id": 1,
-   "title": "LED-mask terapi"
+   "title": "LED-mask fototerapi"
   },
   {
    "id": 2,
-   "title": "Neoskin Quick-fix - ultraljudsregöring"
+   "title": "Ultraljudsregöring"
   },
   {
    "id": 3,
-   "title": "Tebiskin ansiktsbehandling deep Clean med ultraljudsrengöring"
+   "title": "Ansiktsbehandling pureté visage (deep clean)"
   },
   {
    "id": 4,
-   "title": "Tebiskin klassisk ansiktsbehandling med ultraljudsrengöring"
+   "title": "Ansiktsbehandling Classique"
   },
   {
    "id": 5,
-   "title": "Tebiskin ansiktsbehandling lyx med ultraljudsrengöring"
+   "title": "Ansiktsbehandling Luxe"
   },
   {
    "id": 6,
-   "title": "Kemisk peeling GA - Enerpeel"
+   "title": "PRX-T33 2. 0 Cryoterapi"
   },
   {
    "id": 7,
-   "title": "Kemisk peeling NECK - Enerpeel"
-  },
-  {
-   "id": 8,
-   "title": "Kemisk peeling TCA 25% - Enerpeel"
-  },
-  {
-   "id": 9,
-   "title": "PRX-T33 Biorevitalisering"
-  },
-  {
-   "id": 10,
-   "title": "Kemisk peeling Soft TCA Antiage / pigmenteringar - Enerpeel"
-  },
-  {
-   "id": 11,
-   "title": "Kemisk peeling HANDS - Enerpeel"
-  },
-  {
-   "id": 12,
-   "title": "Kemisk peeling EL Eyes & Lips Plus - Enerpeel"
-  },
-  {
-   "id": 13,
-   "title": "Kemisk peeling JR mot pigmenteringar - Enerpeel"
-  },
-  {
-   "id": 14,
-   "title": "Kemisk peeling MA + cryoterapi Ice peel - Enerpeel "
-  },
-  {
-   "id": 15,
-   "title": "Kemisk peeling SA Acne peel - Enerpeel"
-  },
-  {
-   "id": 16,
-   "title": "Kemisk peeling PA Oljig hud - Enerpeel"
-  },
-  {
-   "id": 17,
-   "title": "Fraxium hög intensitet 2 zoner x6 (ca 1x i månaden)"
-  },
-  {
-   "id": 18,
-   "title": "Kemisk peeling SA Acne peel x 4 (1 gång i veckan) "
-  },
-  {
-   "id": 19,
-   "title": "PRX-T33 x 4 (en gång i veckan) "
-  },
-  {
-   "id": 20,
-   "title": "Kemisk peeling SA Acne peel x 4 med LED-Mask (1 gång i veckan)"
-  },
-  {
-   "id": 21,
-   "title": "PRX-T33 med Fraxium mildare intensitet, full face x 4 (ca 1 gång i månaden)"
-  },
-  {
-   "id": 22,
-   "title": "PRX-T33 och Lift & Tight ögon eller mun x 4 (en gång i veckan) "
-  },
-  {
-   "id": 23,
-   "title": "Handla produkter och presentkort"
-  },
-  {
-   "id": 24,
-   "title": "Återbesök "
-  },
-  {
-   "id": 25,
-   "title": "Kostnadsfri konsultation "
-  },
-  {
-   "id": 26,
-   "title": "LED-mask tillägg i annan behandling"
-  },
-  {
-   "id": 27,
    "title": "Fraxium mildare intensitet - full face "
   },
   {
-   "id": 28,
+   "id": 8,
    "title": "Fraxium hög intensitet 1 zon (tinningar) "
   },
   {
-   "id": 29,
+   "id": 9,
    "title": "Fraxium hög intensitet 2 zoner (kindben) "
   },
   {
-   "id": 30,
+   "id": 10,
    "title": "Fraxium hög intensitet 3 zoner (full face) "
   },
   {
-   "id": 31,
+   "id": 11,
    "title": "COSMEDICAL Lift & Tight Plasmaflöde ögon eller mun"
   },
   {
-   "id": 32,
+   "id": 12,
    "title": "COSMEDICAL Lift & Tight Plasmaflöde Full Face"
   },
   {
-   "id": 33,
+   "id": 13,
    "title": "MEDICAL Borttagning av fibrom & pigmentfläckar m. m"
   },
   {
-   "id": 34,
+   "id": 14,
    "title": "PLASMALIFT Rynkreducering av överläpp"
   },
   {
-   "id": 35,
+   "id": 15,
    "title": "PLASMALIFT icke-kirurgiskt ögonlockslyft"
   },
   {
-   "id": 36,
+   "id": 16,
+   "title": "Enerpeel GA - Glykolsyra, antiage & lyster"
+  },
+  {
+   "id": 17,
+   "title": "Enerpeel NECK - Sammandragande"
+  },
+  {
+   "id": 18,
+   "title": "Enerpeel TCA 25 - rynkor, pigment, ice pick "
+  },
+  {
+   "id": 19,
+   "title": "Enerpeel Soft TCA - antiage, pigment, ice pick"
+  },
+  {
+   "id": 20,
+   "title": "Enerpeel HANDS - TCA, antiage"
+  },
+  {
+   "id": 21,
+   "title": "Enerpeel EL - Eyes & Lips Plus"
+  },
+  {
+   "id": 22,
+   "title": "Enerpeel JR - Jessner´ s solution, pigment"
+  },
+  {
+   "id": 23,
+   "title": "Enerpeel MA -  Ice Peel, glow"
+  },
+  {
+   "id": 24,
+   "title": "Enerpeel SA - Salicylsyra, acne peel "
+  },
+  {
+   "id": 25,
+   "title": "Enerpeel PA - Pyrodruvsyra, Oljig hud "
+  },
+  {
+   "id": 26,
+   "title": "LED-mask fototerapi"
+  },
+  {
+   "id": 27,
+   "title": "PRX-T33 2. 0 -50% med Fraxium & Jett Plasma"
+  },
+  {
+   "id": 28,
    "title": "Yumi Total Makeover"
   },
   {
-   "id": 37,
+   "id": 29,
    "title": "Yumi Lashes - Keratin Lashlift"
   },
   {
-   "id": 38,
+   "id": 30,
    "title": "Yumi brows - the original browlift"
   },
   {
-   "id": 39,
-   "title": "Brynplock / vax"
+   "id": 31,
+   "title": "Brynform"
   },
   {
-   "id": 40,
-   "title": "Färgning och formning av bryn"
+   "id": 32,
+   "title": "Brynfärg & Form"
   },
   {
-   "id": 41,
-   "title": "Fransfärg inkl formning av bryn"
+   "id": 33,
+   "title": "Fransfärg & Brynform "
   },
   {
-   "id": 42,
-   "title": "Frans- och brynfärg inkl formning"
+   "id": 34,
+   "title": "Fransar & Bryn: Färg & Form"
   },
   {
-   "id": 43,
+   "id": 35,
    "title": "Fransfärg"
   },
   {
-   "id": 44,
+   "id": 36,
+   "title": "Köp av produkt eller presentkort"
+  },
+  {
+   "id": 37,
+   "title": "Återbesök "
+  },
+  {
+   "id": 38,
+   "title": "Kostnadsfri konsultation "
+  },
+  {
+   "id": 39,
    "title": "1- Ansiktsbehandling hudhälsa inkl.  Ampull"
   },
   {
-   "id": 45,
+   "id": 40,
    "title": "2- Ansiktsbehandling Hudhälsa "
   },
   {
-   "id": 46,
+   "id": 41,
    "title": "3- Ansiktsbehandling Hudhälsa inkl.  Ampull"
   },
   {
-   "id": 47,
+   "id": 42,
    "title": "4- Ansiktsbehandling Hudhälsa"
   },
   {
-   "id": 48,
+   "id": 43,
    "title": "5- Ansiktsbehandling Hudhälsa inkl.  Ampull"
   },
   {
-   "id": 49,
+   "id": 44,
    "title": "6- Vaxning överläpp"
   },
   {
-   "id": 50,
+   "id": 45,
    "title": "7- Vaxning Haka"
   },
   {
-   "id": 51,
+   "id": 46,
    "title": "8- Vaxning överläpp och haka"
   },
   {
-   "id": 52,
+   "id": 47,
    "title": "9- Vaxning överläpp, haka & kinder"
+  },
+  {
+   "id": 48,
+   "title": "Fraxium hög intensitet 2 zoner x6"
+  },
+  {
+   "id": 49,
+   "title": "Kemisk peeling SA Acne peel x 4 "
+  },
+  {
+   "id": 50,
+   "title": "PRX-T33 x 4 (en gång i veckan) "
   }
  ]
 }
