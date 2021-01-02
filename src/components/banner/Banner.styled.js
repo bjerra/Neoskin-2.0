@@ -8,12 +8,11 @@ export const StyledBanner = styled.section`
     align-items: center;
     display: flex;
     justify-content: center;
-    background-image: url("/img/banner.jpg");
+    background-image: url(${({ image }) => image});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-top: 0;
-    display: -ms-flexbox;
     height: 35rem !important;
     min-height: 35rem;
     overflow: hidden;

@@ -16,6 +16,7 @@ export const wrapRootElement = ({ element }) => {
             -webkit-font-smoothing: antialiased;
             font-smoothing: antialiased;
           }
+
           html,
           body {       
             font-family: "Josefin Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -39,6 +40,31 @@ export const wrapRootElement = ({ element }) => {
             @media screen and (min-width: 1184px) {
               font-size: 18px;
             }
+          }
+          .ReactModal__Overlay {
+            opacity: 0;
+            transition: opacity 200ms ease-out;
+          }
+          
+          .ReactModal__Overlay--after-open {
+            opacity: 1;
+          }
+          
+          .ReactModal__Overlay--before-close {
+            opacity: 0;
+          }
+           
+          .ReactModal__Content {
+            transform: translateX(-100px);
+            transition: transform 200ms ease-out;
+          }
+          
+          .ReactModal__Content--after-open {
+            transform: translateX(0);
+          }
+          
+          .ReactModal__Content--before-close {
+            transform: translateX(100px);
           }
           a {
             color: inherit;

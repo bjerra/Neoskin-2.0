@@ -38,28 +38,30 @@ module.exports = {
       resolve: `gatsby-plugin-modal-routing`,
       options: {
         modalProps: {
+          closeTimeoutMS: 200,
           style: {
             overlay: {
               position: `fixed`,
+              zIndex: 100,
               top: 0,
               left: 0,
               right: 0,
               bottom: 0,
-              backgroundColor: `rgba(0, 0, 0, 0)`,
+              backgroundColor: `rgba(0, 0, 0, .6)`,
             },
             content: {
               position: `absolute`,
               border: `none`,
               background: `none`,
               padding: 0,
-              top: 0,
-              bottom: 0,
-              right: 0,
-              left: 0,
+              top: '10%',
+              bottom: '10%',
+              right: '10%',
+              left: '10%',
               overflow: `auto`,
               WebkitOverflowScrolling: `touch`,
             },
-          },
+          },      
           contentLabel: `Modal`
         }
       }

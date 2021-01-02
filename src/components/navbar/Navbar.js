@@ -1,28 +1,21 @@
-import React, { useState, useRef } from 'react';
-import {default as Burger} from "./burger";
-import {default as Menu} from "./menu";
-import { useOnClickOutside } from '../../utils/hooks';
-import { StyledNavbar } from './Navbar.styled';
+import React from 'react';
+import { Wrapper } from './Navbar.styled';
 import { useTheme  } from '@emotion/react'
-
-
+import Mobilenavbar from './mobile/MobileNavbar'
+import DesktopNavbar from './dekstop/DesktopNavbar'
+import { useMediaQuery } from 'react-responsive'
 
 const Navbar = props => {
-    const theme = useTheme()
-    const [open, setOpen] = useState(false);
-    const node = useRef(); 
-    useOnClickOutside(node, () => setOpen(false));
 
+  const theme = useTheme();
+
+  const isDesktop = useMediaQuery({ minWidth: 992 })
+  const isTouch = useMediaQuery({ maxWidth: 991 })
     return (     
-          <StyledNavbar theme={theme} >  
-         
-            <div>
-            <div ref={node}>
-              <Burger open={open} setOpen={setOpen} />
-              <Menu open={open} setOpen={setOpen} />
-            </div>     
-          </div>       
-          </StyledNavbar>         
+      <Wrapper theme={theme}>
+        {isDesktop && <DesktopNavbar />}
+        {isTouch && <Mobilenavbar />}
+      </Wrapper>      
     )    
   }
 

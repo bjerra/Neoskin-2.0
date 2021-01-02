@@ -4,15 +4,12 @@ import { FaPhoneSquare } from 'react-icons/fa';
 import { SiFacebook, SiInstagram } from 'react-icons/si';
 import { HiOutlineMail } from 'react-icons/hi';
 import { ImLocation } from 'react-icons/im';
-import Map from '../map/Map'
-
 
 
 const Footer = class extends React.Component {
   render() {
     return (
-      <StyledFooter>
-           <Map />
+      <StyledFooter>       
         <div className="content has-text-centered">
           
           <div className="container">

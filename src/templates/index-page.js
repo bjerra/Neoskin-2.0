@@ -2,22 +2,26 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Wrapper,Intro,Highlights, CTA, Services, About} from './styles/Styled.Indexpage'
-import {Banner, Features, Layout, ServiceGrid, Divider, Tour, Portrait} from '../components'
+import {Banner, Navbar, Logo, Features, Layout, ServiceGrid, Divider, Tour, Portrait,Map} from '../components'
 import EmailList from '../components/EmailList'
 
 export const IndexPageTemplate = ({
   image,
+  features,
   title,
   subtitle,
   heading,
   subheading,
-  mainpitch,
   description,
-  intro,
 }) => (
   <Wrapper>
-    <Banner title={title} />
-   
+    <Banner image = {image.childImageSharp.fluid.src}>
+        <div className="inner">
+          <Logo />    
+        </div>   
+        <video autoPlay loop muted playsInline src={require("../img/banner.webm")}></video>
+    </Banner>
+    <Navbar />
     <Intro>
       <div className="inner">     
       <header>
@@ -29,19 +33,22 @@ export const IndexPageTemplate = ({
         </p>
       </header>     
       </div>
+      
     </Intro>
-
+    <Divider />
     <Highlights>
-        <Divider title="Erbjudanden Just Nu"/>
-        <Features gridItems={intro.blurbs} />
+        <div className="inner">    
+          <Features gridItems={features} />
+        </div>
     </Highlights>
 
     <Services>
       <div className="inner">   
-        <Divider title="Våra Behandlingar"/>
-        <ServiceGrid />
-      </div>   
+        <h3>Behandlingar</h3>     
+        <ServiceGrid />  
+      </div>       
     </Services>
+    <Divider />
     <CTA>
       <div className="inner">          
         <EmailList />
@@ -49,8 +56,8 @@ export const IndexPageTemplate = ({
     </CTA>
 
     <About>
-    <div className="inner">     
-      <Divider title="Om"/>
+    <div className="inner">  
+       <h3>Om</h3>         
       <div className="column">
         <Portrait />
         <p>Anais blablablabl</p>
@@ -59,36 +66,34 @@ export const IndexPageTemplate = ({
       <Tour />
       </div>
     </About>
+    <Divider />
+    <Map />
   </Wrapper>
 )
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  features: PropTypes.array,
   title: PropTypes.string,
   subtitle: PropTypes.string,
   heading: PropTypes.string,
-  mainpitch: PropTypes.object,
   description: PropTypes.string,
   subheading: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
 }
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-
+  console.log(frontmatter.features)
   return (
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
+        features={frontmatter.features}
         subtitle={frontmatter.subtitle}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
-        intro={frontmatter.intro}
       />
     </Layout>
   )
@@ -117,25 +122,19 @@ export const pageQuery = graphql`
             }
           }
         }
-        heading   
-        subheading     
-        mainpitch {
-          title
-          description
-        }
-        description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
+        features{
+          serviceId 
+          image {
+            childImageSharp {
+              fluid(maxWidth: 240, quality: 64) {
+                ...GatsbyImageSharpFluid
               }
             }
-            text
           }
         }
+        heading   
+        subheading      
+        description
       }
     }
   }

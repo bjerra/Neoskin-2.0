@@ -1,57 +1,47 @@
 import React, {useState} from 'react'
 import PropTypes from 'prop-types'
-import PreviewCompatibleImage from '../../components/PreviewCompatibleImage'
-import {StyledFeatures} from './Features.styled'
-import { useServiceData } from '../ServiceData'
-import SwiperCore, { Navigation, Pagination, A11y, Autoplay } from 'swiper';
+import Img from "gatsby-image"
+import {StyledFeatures, FeatureCard} from './Features.styled'
+import SwiperCore, { Navigation, Pagination, A11y, Autoplay, EffectCoverflow } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {ServiceCard} from '../../components'
+import { useStaticQuery, graphql } from "gatsby"
+import { useServiceData } from '../ServiceData'
 
 import 'swiper/swiper-bundle.min.css';
 
-SwiperCore.use([Navigation, Pagination, A11y, Autoplay]);
+SwiperCore.use([Navigation, Pagination, A11y, Autoplay, EffectCoverflow]);
 
 
- 
-  const FeatureGrid = ({ gridItems }) => {
-
-    const offers = useServiceData().reduce((acc, current) => {
-      if(current.offer){
-        acc.push(current)
-      }
-   
-  return acc;
-  },[])
+const FeatureGrid = ({ gridItems }) => {
+  
+  const serviceData = useServiceData();
+  let data = []
+  gridItems.forEach(item => {
+    const service = serviceData.find(p=>p.id == item.serviceId);
+    data.push({image : item.image, ...service});
+  })
 
   return(
   <StyledFeatures>
     
   <Swiper
-      spaceBetween={50}
-      slidesPerView={3}
-      loop={true}
+      spaceBetween={0}
+      slidesPerView={1}
+      loop={false}
       navigation
       pagination={{ clickable: true }}
+      effect={"coverflow"}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
-      breakpoints= {{
-        '@0.00': {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-        '@0.75': {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        '@1.00': {
-          slidesPerView: 3,
-          spaceBetween: 40,
-        }
-      }}
     >
-       {offers.map(service => (
-          <SwiperSlide key={service.id}>
-            <ServiceCard service={service}/>
+       {data.map(service => (
+          <SwiperSlide key={service.serviceId}>
+            <FeatureCard>
+                <Img fluid={service.image.childImageSharp.fluid} alt="logo" />
+              <ServiceCard service={service}/>
+            </FeatureCard>
+           
           </SwiperSlide>
         ))}
  

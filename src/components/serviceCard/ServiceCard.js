@@ -11,9 +11,7 @@ const ServiceCard = ({service}) => {
   return (   
       <StyledServiceCard theme={theme}>
             <div className="header">
-                <div>
-                <img src="/img/logo-nav.png" alt="logo" />
-                </div>
+              
                
             <h5>{service.title}</h5>
             </div>      
@@ -29,10 +27,11 @@ const ServiceCard = ({service}) => {
                Boka                                    
             </a>
             </div>
-            <Link to={`/behandlingar/${service.slug}`} state={{
-                      modal: true
-                  }}> mer info
-                  </Link>       
+            <Link 
+              to={`/behandlingar/${service.slug}`} 
+              state={{modal: true}}> 
+              mer info
+            </Link>       
 
      </StyledServiceCard>
   )

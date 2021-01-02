@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import {Layout, ServiceCard} from '../components'
+import {Layout,Navbar, Banner, ServiceCard} from '../components'
 import { Wrapper, Header, Body} from './styles/Styled.categorypage'
 
 export const CategoryPageTemplate = ({
@@ -14,10 +14,11 @@ export const CategoryPageTemplate = ({
       
   return(
     <Wrapper>
-      <Header image={image.childImageSharp.fluid.src}>
+      <Navbar />
+      <Banner image={image.childImageSharp.fluid.src}>
         <h1>{title}</h1>
         <p>{description}</p>
-      </Header>  
+      </Banner>  
       <Body>
         {
           services.map((service) => (                       

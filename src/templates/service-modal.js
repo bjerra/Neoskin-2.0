@@ -3,7 +3,8 @@ import { Helmet } from 'react-helmet'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing'
 import {  graphql } from 'gatsby'
 import ServiceDetails from '../components/ServiceDetails'
-import {Layout} from '../components'
+import {Layout, Video} from '../components'
+import {Wrapper, Body, Close} from './styles/Styled.servicemodal'
 
 const ServiceModal = ({data}) => { 
 
@@ -20,7 +21,7 @@ const ServiceModal = ({data}) => {
     
     {({ modal, closeTo }) => (
         modal ? (
-            <div className="service-modal" onClick={() =>  window.history.back()}>
+            <Wrapper>
                  <Helmet titleTemplate={`%s | Behandlingar`}>
                         <title>{title}</title>
                         <meta
@@ -29,30 +30,30 @@ const ServiceModal = ({data}) => {
                         />
                     </Helmet>
         
-                <div className="modal-main"> 
-                   
-                    <button className="modal-close is-large" aria-label="close" ></button>    
-                    <h1 className="category-title">
+                <Body>                  
+                    <Close to={closeTo} /> 
+                    <h1>
                         {title}                            
-                    </h1>                 
-                    <div className="info-card" >                                                                         
+                    </h1>         
+                    <Video title="test" url={"https://www.youtube.com/embed/jY9JI4nHCpE"} />        
+                    <div>                                                                         
                         {info &&
                         info.map(({title, text}) => (
                             <div key={title}>
-                                <h2 className="content" style={{fontSize: '1.25rem', margin: '1rem', borderBottom: '1px solid black', textAlign: 'center'}} dangerouslySetInnerHTML={{__html: title}}/>
+                                <h2 dangerouslySetInnerHTML={{__html: title}}/>
     
-                                <div className="content" style={{fontSize: '1rem', paddingLeft: '2rem'}} dangerouslySetInnerHTML={{__html: text}}/>
+                                <div dangerouslySetInnerHTML={{__html: text}}/>
     
                             </div>
                         ))          
                         }                                                                                                         
                     </div>   
-                    <div style={{padding: '2rem', width: '100%'}}>
+                    <div>
                     <ServiceDetails service={details}/>     
                         </div>            
                                                             
-                </div>   
-            </div>
+                </Body>   
+            </Wrapper>
         ) : (       
             <Layout>  
             <div className="container">  
@@ -64,9 +65,9 @@ const ServiceModal = ({data}) => {
                         />
                     </Helmet>
         
-            <h2 className="category-title">
+            <h1>
                 {title}                            
-            </h2>                 
+            </h1>                 
             <div className="info-card" >                                                                         
                 {info &&
                  info.map(({title, text}) => (

@@ -1,47 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {StyledServiceGrid} from './ServiceGrid.styled'
-import { useStaticQuery, graphql, Link } from "gatsby"
+import {StyledServiceGrid, Card, Image} from './ServiceGrid.styled'
+import {useCategoryData} from '../CategoryData'
 
 
 const ServiceGrid = () => {
-    const data = useStaticQuery(graphql`
-    query CategoryQuery {
-      dataJson {
-        categories {
-          title
-          slug
-          description
-          image {
-            childImageSharp {
-              fluid(maxWidth: 2048, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
+    const data = useCategoryData();
+
     return (
 
     <StyledServiceGrid>
-        {data.dataJson.categories.map((category, index) => {
-            const{ title, image, slug} = category;
+        {data.map(({ title, image, slug}, index) => {
            return (
-            <section key={index}>
-            <div className="content"
-                    style={{
-                    backgroundImage: `url(${
-                        !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-                    })`
-                    }}
-                >
-                   <Link to={slug}>
-                   {title}
-                  </Link>  
-            </div>         
-            </section>
+            <Card key={index} to={slug}>      
+                <Image fluid={image.childImageSharp.fluid} alt={title} />    
+                <h4>{title}</h4>           
+            </Card>
         )}
         )}
   </StyledServiceGrid>

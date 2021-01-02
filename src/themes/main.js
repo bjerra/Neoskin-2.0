@@ -3,6 +3,7 @@ import { css } from "@emotion/core"
 // == Colors == //
 // Example from Coolors: https://coolors.co/011627-fdfffc-2ec4b6-e71d36-ff9f1c
 
+
 const RICH_BLACK = {
   hex: "#011627",
   rgb: `rgb(1, 22, 39)`,
@@ -15,14 +16,14 @@ const BABY_POWDER = {
   rgbArray: [253, 255, 252],
 }
 
-const TIFFANY_BLUE = {
-  hex: "#2EC4B6",
+const BLUE = {
+  hex: "#1b2a40",
   rgb: `rgb(46,196,182)`,
   rgbArray: [46, 196, 182],
 }
 
-const YELLOW = {
-  hex: "#ebe134",
+const GRAY = {
+  hex: "#a9a9a9",
   rgb: `rgb(235, 225, 52)`,
   rgbArray: [235, 225, 52],
 }
@@ -42,10 +43,17 @@ const ORANGE_PEEL = {
 const COLOR = {
   LIGHT: BABY_POWDER,
   DARK: RICH_BLACK,
-  HOVER: YELLOW,
-  FEATURE: [TIFFANY_BLUE, ROSE_MADDER, ORANGE_PEEL],
+  BLUE: BLUE,
+  HOVER: GRAY,
+  FEATURE: [ROSE_MADDER, ORANGE_PEEL],
 }
 
+const BREAKPOINTS = {
+  MOBILE: `${600}px`,
+  TABLET: `${768}px`,
+  DESKTOP:`${992}px` ,
+  WIDE: `${1200}px`
+}
 
 // == Units of Measurement == //
 const unit = 1
@@ -73,6 +81,10 @@ const H1 = css`
   font-size: 4.209em;
   font-weight: 500;
   margin-bottom: 0.4em;
+
+  @media screen and (max-width: ${BREAKPOINTS.MOBILE}) {
+    font-size: 2.209em;
+  }
 `
 
 const H2 = css`
@@ -116,13 +128,6 @@ const P = css`
 `
 // == Broad Defaults == //
 const WRAPPER_WIDTH = `${1184}px`
-
-const BREAKPOINTS = {
-  MOBILE: `${600}px`,
-  TABLET: `${768}px`,
-  DESKTOP:`${992}px` ,
-  WIDE: `${1200}px`
-}
 
 
 export default { COLOR,PADDING, MARGIN,BASE_FONT_SIZE,H1, H2, H3, H4, H5, H6,P,WRAPPER_WIDTH, BREAKPOINTS }
