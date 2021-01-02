@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing'
 import {  graphql } from 'gatsby'
 import ServiceDetails from '../components/ServiceDetails'
-import {Layout} from '../components'
+import {Layout, Video} from '../components'
 import {Wrapper, Body, Close} from './styles/Styled.servicemodal'
 
 const ServiceModal = ({data}) => { 
@@ -34,7 +34,8 @@ const ServiceModal = ({data}) => {
                     <Close to={closeTo} /> 
                     <h1>
                         {title}                            
-                    </h1>                 
+                    </h1>         
+                    <Video title="test" url={"https://www.youtube.com/embed/jY9JI4nHCpE"} />        
                     <div>                                                                         
                         {info &&
                         info.map(({title, text}) => (
@@ -64,9 +65,9 @@ const ServiceModal = ({data}) => {
                         />
                     </Helmet>
         
-            <h2 className="category-title">
+            <h1>
                 {title}                            
-            </h2>                 
+            </h1>                 
             <div className="info-card" >                                                                         
                 {info &&
                  info.map(({title, text}) => (

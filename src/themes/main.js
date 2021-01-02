@@ -48,6 +48,12 @@ const COLOR = {
   FEATURE: [ROSE_MADDER, ORANGE_PEEL],
 }
 
+const BREAKPOINTS = {
+  MOBILE: `${600}px`,
+  TABLET: `${768}px`,
+  DESKTOP:`${992}px` ,
+  WIDE: `${1200}px`
+}
 
 // == Units of Measurement == //
 const unit = 1
@@ -75,6 +81,10 @@ const H1 = css`
   font-size: 4.209em;
   font-weight: 500;
   margin-bottom: 0.4em;
+
+  @media screen and (max-width: ${BREAKPOINTS.MOBILE}) {
+    font-size: 2.209em;
+  }
 `
 
 const H2 = css`
@@ -118,13 +128,6 @@ const P = css`
 `
 // == Broad Defaults == //
 const WRAPPER_WIDTH = `${1184}px`
-
-const BREAKPOINTS = {
-  MOBILE: `${600}px`,
-  TABLET: `${768}px`,
-  DESKTOP:`${992}px` ,
-  WIDE: `${1200}px`
-}
 
 
 export default { COLOR,PADDING, MARGIN,BASE_FONT_SIZE,H1, H2, H3, H4, H5, H6,P,WRAPPER_WIDTH, BREAKPOINTS }

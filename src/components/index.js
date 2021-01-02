@@ -10,3 +10,4 @@ export {default as Tour} from "./tour/Tour";
 export {default as Portrait} from "./portrait/Portrait";
 export {default as ServiceCard} from "./serviceCard/ServiceCard";
 export {default as Logo} from "./logo/Logo";
+export {default as Video} from "./video/Video";
