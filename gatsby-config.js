@@ -55,7 +55,7 @@ module.exports = {
               background: `none`,
               padding: 0,
               top: '5%',
-              bottom: '5%',
+              bottom: '10%',
               right: '5%',
               left: '5%',
               maxWidth: '1000px',

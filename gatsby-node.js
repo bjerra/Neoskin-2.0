@@ -20,18 +20,16 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
       }
-      dataJson {
+      categoriesJson {
         categories {
           title
           slug
         }
       }
-      allServiceDataJson {
-        edges {
-          node {
+      servicesJson {
+        services {
             id    
             slug
-          }
         }
       }
     }
@@ -57,7 +55,7 @@ exports.createPages = ({ actions, graphql }) => {
       })
     })
 
-    const categories = result.data.dataJson.categories
+    const categories = result.data.categoriesJson.categories
     categories.forEach(category => {
         createPage({
           path: `/${category.slug}`,
@@ -68,14 +66,13 @@ exports.createPages = ({ actions, graphql }) => {
         })
     })
 
-    const services = result.data.allServiceDataJson.edges
-    services.forEach(edge => {
-      const service = edge.node
+    const services = result.data.servicesJson.services
+    services.forEach(service => {
         createPage({
           path: `/behandlingar/${service.slug}`,
           component: path.resolve("./src/templates/service-modal.js"),
           context: {
-            serviceId: service.id,
+            id: service.id,
           },
         })
     })

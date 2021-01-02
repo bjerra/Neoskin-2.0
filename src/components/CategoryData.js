@@ -1,26 +1,25 @@
 import { graphql, useStaticQuery } from 'gatsby'
 
 export const useCategoryData = () => {
-  const { dataJson } = useStaticQuery(
+  const { categoriesJson } = useStaticQuery(
     graphql`
     {
-        dataJson {
-            categories {
-              title
-              slug
-              description
-              image {
-                childImageSharp {
-                  fluid(maxWidth: 2048, quality: 100) {
-                    ...GatsbyImageSharpFluid
-                  }
+      categoriesJson {
+        categories {
+            title
+            slug
+            description
+            image {
+              childImageSharp {
+                fluid(maxWidth: 2048, quality: 100) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
           }
-    }
-     
+        }
+    } 
     `
   )
-  return dataJson.categories
+  return categoriesJson.categories
 }

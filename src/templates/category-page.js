@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import {Layout,Navbar, Banner, ServiceCard} from '../components'
 import { Wrapper, Header, Body} from './styles/Styled.categorypage'
+import { useServiceData } from '../components/ServiceData'
+import { useCategoryData } from '../components/CategoryData'
 
 export const CategoryPageTemplate = ({
   id,
@@ -37,10 +39,11 @@ CategoryPageTemplate.propTypes = {
   title: PropTypes.string,
 }
 
-const CategoryPage = ({ data, pageContext }) => {
+const CategoryPage = ({ pageContext }) => {
 
-  const category = data.dataJson.categories.find(p=>p.title == pageContext.id)
-  const services = data.allServiceDataJson.edges.map(p=>p.node);
+  const category = useCategoryData().find(p=>p.title == pageContext.id)
+  console.log(category)
+  const services = useServiceData().filter(p => p.category ==  pageContext.id)
   const {title, image, description} = category;
 
   return (
@@ -66,36 +69,3 @@ CategoryPage.propTypes = {
 
 export default CategoryPage
 
-export const categoryPageQuery = graphql`
-  query CategoryPage($id: String!) {
-    dataJson {
-      categories {
-        title
-        description
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-    allServiceDataJson(filter: {category: {eq: $id}}) {
-      edges {
-        node {
-          url
-          title
-          time
-          slug
-          price
-          id
-          info {
-            text
-            title
-          }
-        }
-      }
-    }
-  }
-`
