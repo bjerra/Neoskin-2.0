@@ -1,58 +1,58 @@
 {
- "categories": [
-  {
-   "title": "Ansiktsbehandlingar och LED-mask",
-   "slug": "ansiktsbehandlingar-och-led-mask",
-   "description": "blablablabla",
-   "image": "/img/banner.jpg"
-  },
-  {
-   "title": "PRX-T33 och Enerpeel Kemiska peels",
-   "slug": "prx-t33-och-enerpeel-kemiska-peels",
-   "description": "blablablabla",
-   "image": "/img/dxxdyw5rroudmeahmoxxpw.jpg"
-  },
-  {
-   "title": "Top 3 efterfrågade kurer",
-   "slug": "top-3-efterfragade-kurer",
-   "description": "blablablabla",
-   "image": "/img/nyhetsbrev_autumn.jpg"
-  },
-  {
-   "title": "Top 3 efterfrågade kombinationsbehandlingar",
-   "slug": "top-3-efterfragade-kombinationsbehandlingar",
-   "description": "blablablabla",
-   "image": "/img/img_5550b.jpg"
-  },
-  {
-   "title": "Konsultationer och tilläggstjänster",
-   "slug": "konsultationer-och-tillaggstjanster",
-   "description": "blablablabla",
-   "image": "/img/jett-plasma-logo.jpg"
-  },
-  {
-   "title": "Laserbehandling Fraxium",
-   "slug": "laserbehandling-fraxium",
-   "description": "blablablabla",
-   "image": "../../static/img/img_5644b.jpg"
-  },
-  {
-   "title": "JETT Plasma",
-   "slug": "jett-plasma",
-   "description": "blablablabla",
-   "image": "../../static/img/img_5644b.jpg"
-  },
-  {
-   "title": "Fransar och bryn",
-   "slug": "fransar-och-bryn",
-   "description": "blablablabla",
-   "image": "../../static/img/img_5644b.jpg"
-  },
-  {
-   "title": "Esthetica Hudvårdssalong - Nicolinas behandlingar",
-   "slug": "esthetica-hudvardssalong-nicolinas-behandlingar",
-   "description": "blablablabla",
-   "image": "../../static/img/img_5644b.jpg"
-  }
- ]
+  "categories": [
+    {
+      "title": "Ansiktsbehandlingar och LED-mask",
+      "slug": "ansiktsbehandlingar-och-led-mask",
+      "description": "Hejsan hoppsan falleralera",
+      "image": "/img/banner.jpg"
+    },
+    {
+      "title": "PRX-T33 och Enerpeel Kemiska peels",
+      "slug": "prx-t33-och-enerpeel-kemiska-peels",
+      "description": "blablablabla",
+      "image": "/img/dxxdyw5rroudmeahmoxxpw.jpg"
+    },
+    {
+      "title": "Top 3 efterfrågade kurer",
+      "slug": "top-3-efterfragade-kurer",
+      "description": "blablablabla",
+      "image": "/img/nyhetsbrev_autumn.jpg"
+    },
+    {
+      "title": "Top 3 efterfrågade kombinationsbehandlingar",
+      "slug": "top-3-efterfragade-kombinationsbehandlingar",
+      "description": "blablablabla",
+      "image": "/img/img_5550b.jpg"
+    },
+    {
+      "title": "Konsultationer och tilläggstjänster",
+      "slug": "konsultationer-och-tillaggstjanster",
+      "description": "blablablabla",
+      "image": "/img/jett-plasma-logo.jpg"
+    },
+    {
+      "title": "Laserbehandling Fraxium",
+      "slug": "laserbehandling-fraxium",
+      "description": "blablablabla",
+      "image": "../../static/img/img_5644b.jpg"
+    },
+    {
+      "title": "JETT Plasma",
+      "slug": "jett-plasma",
+      "description": "blablablabla",
+      "image": "../../static/img/img_5644b.jpg"
+    },
+    {
+      "title": "Fransar och bryn",
+      "slug": "fransar-och-bryn",
+      "description": "blablablabla",
+      "image": "../../static/img/img_5644b.jpg"
+    },
+    {
+      "title": "Esthetica Hudvårdssalong - Nicolinas behandlingar",
+      "slug": "esthetica-hudvardssalong-nicolinas-behandlingar",
+      "description": "blablablabla",
+      "image": "../../static/img/img_5644b.jpg"
+    }
+  ]
 }
