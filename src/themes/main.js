@@ -83,7 +83,7 @@ const H1 = css`
   margin-bottom: 0.4em;
 
   @media screen and (max-width: ${BREAKPOINTS.MOBILE}) {
-    font-size: 2.209em;
+    font-size: 2.709em;
   }
 `
 
@@ -92,6 +92,10 @@ const H2 = css`
   font-size: 3.157em;
   font-weight: 500;
   margin-bottom: 0.4em;
+
+  @media screen and (max-width: ${BREAKPOINTS.MOBILE}) {
+    font-size: 1.759em;
+  }
 `
 
 const H3 = css`
@@ -99,6 +103,10 @@ font-family: Quicksand;
   font-size: 2.369em;
   font-weight: 600;
   margin-bottom: 0.4em;
+
+  @media screen and (max-width: ${BREAKPOINTS.MOBILE}) {
+    font-size: 1.509em;
+  }
 `
 
 const H4 = css`
@@ -106,6 +114,10 @@ font-family: Quicksand;
   font-size: 1.777em;
   font-weight: 500;
   margin-bottom: 0.4em;
+
+  @media screen and (max-width: ${BREAKPOINTS.MOBILE}) {
+    font-size: 1.209em;
+  }
 `
 
 const H5 = css`
@@ -113,12 +125,20 @@ font-family: Quicksand;
   font-size: 1.333em;
   font-weight: 500;
   margin-bottom: 0.4em;
+
+  @media screen and (max-width: ${BREAKPOINTS.MOBILE}) {
+    font-size: 1.009em;
+  }
 `
 
 const H6 = css`
 font-family: Quicksand;
   font-size: 0.75em;
   margin-bottom: 0.4em;
+
+  @media screen and (max-width: ${BREAKPOINTS.MOBILE}) {
+    font-size: 2.209em;
+  }
 `
 
 const P = css`
