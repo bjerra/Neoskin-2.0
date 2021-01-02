@@ -15,7 +15,7 @@ collections:
   - name: "categories"
     label: "Kategorier"
     files:
-      - file: "src/data/categoryData.json"
+      - file: "src/data/categories/categoryData.json"
         label: "Categories"
         name: "categories"
         fields:
@@ -32,7 +32,7 @@ collections:
   - name: "services"
     label: "Services"
     files:
-      - file: "src/data/serviceData.json"
+      - file: "src/data/services/serviceData.json"
         label: "Services"
         name: "services"
         fields:
