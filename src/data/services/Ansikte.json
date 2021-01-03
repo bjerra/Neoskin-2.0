@@ -1,0 +1,57 @@
+{
+ "title": "Ansikte",
+ "slug": "ansikte",
+ "description": "",
+ "image": "",
+ "gallery": [],
+ "services": [
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/led-mask-fototerapi-355348",
+   "price": "500 kr",
+   "time": "30 minuter",
+   "title": "LED-mask fototerapi",
+   "slug": "led-mask-fototerapi",
+   "id": 1
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/ultraljudsreg%C3%B6ring-353395",
+   "price": "500 kr",
+   "time": "30 minuter",
+   "title": "Ultraljudsregöring",
+   "slug": "ultraljudsregoring",
+   "id": 2
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/ansiktsbehandling-puret%C3%A9-visage-deep-clean-363189",
+   "price": "900 kr",
+   "time": "45 minuter",
+   "title": "Ansiktsbehandling pureté visage (deep clean)",
+   "slug": "ansiktsbehandling-purete-visage-deep-clean",
+   "id": 3
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/ansiktsbehandling-classique-363190",
+   "price": "1 000 kr",
+   "time": "60 minuter",
+   "title": "Ansiktsbehandling Classique",
+   "slug": "ansiktsbehandling-classique",
+   "id": 4
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/ansiktsbehandling-luxe-363191",
+   "price": "1 200 kr",
+   "time": "90 minuter",
+   "title": "Ansiktsbehandling Luxe",
+   "slug": "ansiktsbehandling-luxe",
+   "id": 5
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/prx-t33-20-cryoterapi-1077984",
+   "price": "2 000 kr",
+   "time": "45 minuter",
+   "title": "PRX-T33 2. 0 Cryoterapi",
+   "slug": "prx-t33-2-0-cryoterapi",
+   "id": 6
+  }
+ ]
+}

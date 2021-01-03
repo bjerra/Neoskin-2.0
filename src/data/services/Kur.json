@@ -1,0 +1,33 @@
+{
+ "title": "Kur",
+ "slug": "kur",
+ "description": "",
+ "image": "",
+ "gallery": [],
+ "services": [
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/fraxium-h%C3%B6g-intensitet-2-zoner-x6-1180807",
+   "price": "9 500 kr",
+   "time": "30 minuter",
+   "title": "Fraxium hög intensitet 2 zoner x6",
+   "slug": "fraxium-hog-intensitet-2-zoner-x6",
+   "id": 48
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/kemisk-peeling-sa-acne-peel-x-4--1180813",
+   "price": "4 000 kr",
+   "time": "30 minuter",
+   "title": "Kemisk peeling SA Acne peel x 4 ",
+   "slug": "kemisk-peeling-sa-acne-peel-x-4",
+   "id": 49
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/prx-t33-x-4-en-g%C3%A5ng-i-veckan--1180806",
+   "price": "6 000 kr",
+   "time": "30 minuter",
+   "title": "PRX-T33 x 4 (en gång i veckan) ",
+   "slug": "prx-t33-x-4-en-gang-i-veckan",
+   "id": 50
+  }
+ ]
+}

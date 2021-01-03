@@ -1,0 +1,81 @@
+{
+ "title": "Esthetica Hudvårdssalong - Nicolinas behandlingar",
+ "slug": "esthetica-hudvardssalong-nicolinas-behandlingar",
+ "description": "",
+ "image": "",
+ "gallery": [],
+ "services": [
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/1-ansiktsbehandling-hudh%C3%A4lsa-inkl-ampull-1219127",
+   "price": "600 kr",
+   "time": "30 minuter",
+   "title": "1- Ansiktsbehandling hudhälsa inkl.  Ampull",
+   "slug": "1-ansiktsbehandling-hudhalsa-inkl-ampull",
+   "id": 39
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/2-ansiktsbehandling-hudh%C3%A4lsa--1219128",
+   "price": "950 kr",
+   "time": "60 minuter",
+   "title": "2- Ansiktsbehandling Hudhälsa ",
+   "slug": "2-ansiktsbehandling-hudhalsa",
+   "id": 40
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/3-ansiktsbehandling-hudh%C3%A4lsa-inkl-ampull-1219129",
+   "price": "1 100 kr",
+   "time": "60 minuter",
+   "title": "3- Ansiktsbehandling Hudhälsa inkl.  Ampull",
+   "slug": "3-ansiktsbehandling-hudhalsa-inkl-ampull",
+   "id": 41
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/4-ansiktsbehandling-hudh%C3%A4lsa-1219130",
+   "price": "1 250 kr",
+   "time": "90 minuter",
+   "title": "4- Ansiktsbehandling Hudhälsa",
+   "slug": "4-ansiktsbehandling-hudhalsa",
+   "id": 42
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/5-ansiktsbehandling-hudh%C3%A4lsa-inkl-ampull-1219131",
+   "price": "1 400 kr",
+   "time": "90 minuter",
+   "title": "5- Ansiktsbehandling Hudhälsa inkl.  Ampull",
+   "slug": "5-ansiktsbehandling-hudhalsa-inkl-ampull",
+   "id": 43
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/6-vaxning-%C3%B6verl%C3%A4pp-1219123",
+   "price": "220 kr",
+   "time": "15 minuter",
+   "title": "6- Vaxning överläpp",
+   "slug": "6-vaxning-overlapp",
+   "id": 44
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/7-vaxning-haka-1219124",
+   "price": "220 kr",
+   "time": "15 minuter",
+   "title": "7- Vaxning Haka",
+   "slug": "7-vaxning-haka",
+   "id": 45
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/8-vaxning-%C3%B6verl%C3%A4pp-och-haka-1219125",
+   "price": "350 kr",
+   "time": "15 minuter",
+   "title": "8- Vaxning överläpp och haka",
+   "slug": "8-vaxning-overlapp-och-haka",
+   "id": 46
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/9-vaxning-%C3%B6verl%C3%A4pp-haka-&-kinder-1219126",
+   "price": "400 kr",
+   "time": "15 minuter",
+   "title": "9- Vaxning överläpp, haka & kinder",
+   "slug": "9-vaxning-overlapp-haka-kinder",
+   "id": 47
+  }
+ ]
+}

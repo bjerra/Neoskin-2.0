@@ -1,0 +1,49 @@
+{
+ "title": "Jett Plasma",
+ "slug": "jett-plasma",
+ "description": "",
+ "image": "",
+ "gallery": [],
+ "services": [
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/cosmedical-lift-&-tight-plasmafl%C3%B6de-%C3%B6gon-eller-mun-361939",
+   "price": "1 000 kr",
+   "time": "45 minuter",
+   "title": "COSMEDICAL Lift & Tight Plasmaflöde ögon eller mun",
+   "slug": "cosmedical-lift-tight-plasmaflode-ogon-eller-mun",
+   "id": 11
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/cosmedical-lift-&-tight-plasmafl%C3%B6de-full-face-361938",
+   "price": "1 500 kr",
+   "time": "75 minuter",
+   "title": "COSMEDICAL Lift & Tight Plasmaflöde Full Face",
+   "slug": "cosmedical-lift-tight-plasmaflode-full-face",
+   "id": 12
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/medical-borttagning-av-fibrom-&-pigmentfl%C3%A4ckar-mm-355355",
+   "price": "Kostnadsfri",
+   "time": "45 minuter",
+   "title": "MEDICAL Borttagning av fibrom & pigmentfläckar m. m",
+   "slug": "medical-borttagning-av-fibrom-pigmentflackar-m-m",
+   "id": 13
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/plasmalift-rynkreducering-av-%C3%B6verl%C3%A4pp-992554",
+   "price": "4 000 kr",
+   "time": "75 minuter",
+   "title": "PLASMALIFT Rynkreducering av överläpp",
+   "slug": "plasmalift-rynkreducering-av-overlapp",
+   "id": 14
+  },
+  {
+   "url": "https://www.bokadirekt.se/boka-tjanst/neoskin-33692/plasmalift-icke-kirurgiskt-%C3%B6gonlockslyft-361937",
+   "price": "5 500 kr",
+   "time": "90 minuter",
+   "title": "PLASMALIFT icke-kirurgiskt ögonlockslyft",
+   "slug": "plasmalift-icke-kirurgiskt-ogonlockslyft",
+   "id": 15
+  }
+ ]
+}
