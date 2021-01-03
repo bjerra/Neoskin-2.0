@@ -14,10 +14,10 @@ public_folder: /img
 collections:
   - name: "categories"
     label: "Kategorier"
+    extension: "json"
     folder: "src/data/categories"
     create: false
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "category-page"}      
+    fields:    
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: image}
@@ -25,6 +25,7 @@ collections:
 
   - label: Services
     name: services
+    extension: "json"
     folder: "src/data/services"
     create: false
     fields:          
