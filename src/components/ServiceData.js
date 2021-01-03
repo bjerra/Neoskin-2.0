@@ -1,27 +1,26 @@
 import { graphql, useStaticQuery } from 'gatsby'
 
 export const useServiceData = () => {
-  const { allServiceDataJson } = useStaticQuery(
+  const { servicesJson } = useStaticQuery(
     graphql`
     {
-      allServiceDataJson {
-        nodes {
-          id
-          title     
-          info {
-            text
-            title
+      servicesJson {
+          services{
+            id
+            title     
+            info {
+              text
+              title
+            }
+            price
+            slug
+            time
+            url
+            category
           }
-          price
-          slug
-          time
-          url
-          category
         }
-      }   
-    }
-     
+      }     
     `
   )
-  return allServiceDataJson.nodes
+  return servicesJson.services
 }
