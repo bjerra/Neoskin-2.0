@@ -37,9 +37,9 @@ export const IndexPageTemplate = ({
     </Intro>
     <Divider />
     <Highlights>
-        <div className="inner">    
+        
           <Features gridItems={features} />
-        </div>
+        
     </Highlights>
 
     <Services>

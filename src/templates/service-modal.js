@@ -5,11 +5,10 @@ import {  graphql } from 'gatsby'
 import ServiceDetails from '../components/ServiceDetails'
 import {Layout, Video} from '../components'
 import {Wrapper, Body, Close} from './styles/Styled.servicemodal'
-import { useServiceData } from '../components/ServiceData'
 
-const ServiceModal = ({pageContext}) => { 
-    const service = useServiceData().find(p=>p.id == pageContext.id)
-    const {info, title, ...details} = service
+const ServiceModal = ({data}) => { 
+
+    const {info, title, ...details} = data.servicesJson
     let description = ""
     if(info != null){
         info.forEach(element => {
@@ -93,3 +92,20 @@ const ServiceModal = ({pageContext}) => {
 )}
 
 export default ServiceModal
+
+export const query = graphql`
+  query($id: String!) {
+    servicesJson(id: {eq: $id}) {
+        url
+        title
+        time
+        slug
+        price
+        id
+        info {
+            text
+            title
+        }
+    }   
+  }
+`
