@@ -1,9 +1,9 @@
 import styled from "@emotion/styled"
 
-export const StyledDesktop = styled.div`
+export const StyledDesktop = styled.nav`
 
     font-size: 1.5rem;
-    
+
     .sticky-wrapper{ 
       z-index: 100;  
       position: relative;
@@ -22,8 +22,27 @@ export const StyledDesktop = styled.div`
       padding: 1rem;  
       display: flex;
       justify-content: space-around;
-      align-items: center;
-     
+      align-items: center;    
       background-color: white;
     }
+
+    a{
+        color: ${({ theme }) => theme.COLOR.DARK.hex};
+    }
 `;
+
+export const Primary = styled.div`
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex:2;
+   
+`;
+
+export const Secondary = styled.div`
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex:1;
+`;
+

@@ -1,13 +1,12 @@
-import React from 'react'
+import React,{ useState } from 'react'
 import { Helmet } from 'react-helmet'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing'
 import {  graphql } from 'gatsby'
-import ServiceDetails from '../components/ServiceDetails'
-import {Layout, Video} from '../components'
-import {Wrapper, Body, Close} from './styles/Styled.servicemodal'
+import {Layout, Video, BokaButton, Navbar} from '../components'
+import {Wrapper, Header, VideoContainer, Body, Close, Footer, ListHeader, ListContent} from './styles/Styled.servicemodal'
 
 const ServiceModal = ({data}) => { 
-
+    const [expanded, setExpanded] = useState("");
     const {info, title, ...details} = data.servicesJson
     let description = ""
     if(info != null){
@@ -22,40 +21,45 @@ const ServiceModal = ({data}) => {
     {({ modal, closeTo }) => (
         modal ? (
             <Wrapper>
-                 <Helmet titleTemplate={`%s | Behandlingar`}>
+                <Helmet titleTemplate={`%s | Behandlingar`}>
                         <title>{title}</title>
                         <meta
                         name="description"
                         content={description}
                         />
-                    </Helmet>
-        
-                <Body>                  
-                    <Close to={closeTo} /> 
+                </Helmet>    
+                <Close to={closeTo}/>   
+                <Header>
                     <h1>
                         {title}                            
                     </h1>         
-                    <Video title="test" url={"https://www.youtube.com/embed/jY9JI4nHCpE"} />        
-                    <div>                                                                         
+                </Header>
+                <VideoContainer>
+                    <Video title="test" url={"https://www.youtube.com/embed/jY9JI4nHCpE"} />     
+                </VideoContainer>
+                <Body>                                                                                              
                         {info &&
-                        info.map(({title, text}) => (
-                            <div key={title}>
-                                <h2 dangerouslySetInnerHTML={{__html: title}}/>
-    
-                                <div dangerouslySetInnerHTML={{__html: text}}/>
-    
-                            </div>
-                        ))          
-                        }                                                                                                         
-                    </div>   
-                    <div>
-                    <ServiceDetails service={details}/>     
-                        </div>            
-                                                            
+                        info.map(({title, text}) => {
+                            const isExpanded = expanded == title
+                            
+                            return(
+                            <React.Fragment key={title}>
+                                <ListHeader isExpanded={isExpanded} onClick={() => {setExpanded(isExpanded ? "" : title)}}>
+                                    <h4 dangerouslySetInnerHTML={{__html: title}}/>  
+                                </ListHeader>               
+                                <ListContent isExpanded={isExpanded} dangerouslySetInnerHTML={{__html: text}}/>
+                            </React.Fragment>
+                        )})          
+                        }                                                                                                                                     
                 </Body>   
+                <Footer>
+                    <BokaButton url={details.url}/>
+                </Footer >  
+                       
             </Wrapper>
         ) : (       
             <Layout>  
+            <Navbar />
             <div className="container">  
             <Helmet titleTemplate={`%s | ${title}`}>
                         <title>{title}</title>
@@ -80,7 +84,7 @@ const ServiceModal = ({data}) => {
                  ))          
                  }                                                                                                         
            </div>  
-            <ServiceDetails service={details}/>  
+        
            
            </div>   
            </Layout>       

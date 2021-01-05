@@ -1,18 +1,9 @@
 ---
 templateKey: index-page
 title: Auktoriserad hudterapeut med Gesällbrev
-subtitle: Skräddarsydd avancerad hudvård med synliga resultat
 image: /img/anais_aesthetica_consulting_blg_9107_6_xx.jpg
-features:
-  - serviceId: 1
-    image: /img/epidermis.jpg
-  - serviceId: 33
-    image: /img/jett_logo_color_basic_159x159.png
-heading: Avancerad hudvård
-subheading: >
-  Enerpeel kemiska peels, Fraxium laser, PRX-T33, Ultraljudsrengöring, LED-mask,
-  JETT Plasma / Plasmalift, Lift & Tight plasmaflöde, Kosmetisk akupunktur,
-  MicroGold m.m...
+image2: /img/blue.jpg
+image3: /img/green.jpg
 description: "Boka gärna din konsultation i samband med första behandlingen om
   du är osäker på vad du ska välja, eller börja med konsultationen om du känner
   dig helt vilsen. Du får en genomtänkt, professionell och skräddarsydd plan som

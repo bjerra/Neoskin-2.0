@@ -83,7 +83,7 @@ const H1 = css`
   margin-bottom: 0.4em;
 
   @media screen and (max-width: ${BREAKPOINTS.MOBILE}) {
-    font-size: 2.709em;
+    font-size: 1.7em;
   }
 `
 

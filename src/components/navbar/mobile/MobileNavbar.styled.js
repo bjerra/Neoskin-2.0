@@ -1,8 +1,9 @@
 import styled from "@emotion/styled"
 
-export const StyledMobile = styled.div`
+export const StyledMobile = styled.nav`
     
-    background: ${({ theme }) => theme.COLOR.DARK.hex};
+    background: ${({ theme }) => theme.COLOR.LIGHT.hex};
+    color: ${({ theme }) => theme.COLOR.DARK.hex};
     z-index: 10;
     position: fixed;
     transform: ${({ expanded }) => expanded ? 'translateY(0)' : 'translateY(50%)'};
@@ -24,7 +25,7 @@ export const StyledMobile = styled.div`
         align-items: center;
     }
     a{
-        color: ${({ theme }) => theme.COLOR.LIGHT.hex};
+        color: ${({ theme }) => theme.COLOR.DARK.hex};
         width: 100%;
         height: 100%;
         display: flex;
@@ -39,6 +40,7 @@ export const StyledMobile = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: space-around;   
+        color: ${({ theme }) => theme.COLOR.DARK.hex};
         align-items: center;
         svg{
             transform: ${({ expanded }) => expanded ? 'rotate(180deg)' : 'rotate(0)'};

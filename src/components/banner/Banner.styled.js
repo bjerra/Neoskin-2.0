@@ -3,6 +3,7 @@ import styled from "@emotion/styled"
 
 
 export const StyledBanner = styled.section`
+  
     background-color: #111111;
     color: rgba(255, 255, 255, 0.5);
     align-items: center;
@@ -19,6 +20,7 @@ export const StyledBanner = styled.section`
     position: relative;
     text-align: center;
     width: 100%; 
+    
 
     video {  
         transform: translateX(50%) translateY(50%);
@@ -82,7 +84,8 @@ export const StyledBanner = styled.section`
       min-height: 30vh; }
     @media screen and (max-width: 1280px) {
        video {
-        display: none; } }
+         
+      } }
     @media screen and (max-width: 736px) {
       
         height: auto !important;

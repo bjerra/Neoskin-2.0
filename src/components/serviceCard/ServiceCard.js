@@ -2,6 +2,7 @@ import React from "react"
 import { StyledServiceCard } from './ServiceCard.styled'
 import { useTheme  } from '@emotion/react'
 import { Link } from 'gatsby'
+import {BokaButton} from '../../components'
 
 const ServiceCard = ({service}) => {
 
@@ -23,9 +24,7 @@ const ServiceCard = ({service}) => {
             <p >
                 {price}
             </p> 
-            <a href={url} target="_blank" rel="noopener noreferrer">    
-               Boka                                    
-            </a>
+            <BokaButton url={url}/>    
             </div>
             <Link 
               to={`/behandlingar/${service.slug}`} 

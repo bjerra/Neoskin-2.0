@@ -25,7 +25,7 @@ export const Content = styled.div`
 
 export const Button = styled.div`
   
- color: ${({ theme, expanded }) => expanded ? theme.COLOR.HOVER.hex : theme.COLOR.LIGHT.hex};
+ color: ${({ theme, expanded }) => expanded ? theme.COLOR.HOVER.hex : theme.COLOR.DARK.hex};
     
   height: 100%;
   width: 100%;
@@ -44,7 +44,7 @@ export const Button = styled.div`
         left: 50%;
         width: 1.25rem;
         height: 0.12rem;
-        background: ${({ theme, expanded }) => expanded ? theme.COLOR.HOVER.hex : theme.COLOR.LIGHT.hex};
+        background: ${({ theme, expanded }) => expanded ? theme.COLOR.HOVER.hex : theme.COLOR.DARK.hex};
         border-radius: 5px;
         transition: all 0.2s ease-out;
 
@@ -61,7 +61,7 @@ export const Button = styled.div`
 `
 
 export const ListItem = styled.div`
-    color: ${({ theme }) => theme.COLOR.LIGHT.hex};
+    color: ${({ theme }) => theme.COLOR.DARK.hex};
    
   a {
     padding: 1rem;  

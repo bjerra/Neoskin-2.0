@@ -7,11 +7,10 @@ import EmailList from '../components/EmailList'
 
 export const IndexPageTemplate = ({
   image,
+  image2,
+  image3,
   features,
   title,
-  subtitle,
-  heading,
-  subheading,
   description,
 }) => (
   <Wrapper>
@@ -25,9 +24,7 @@ export const IndexPageTemplate = ({
     <Intro>
       <div className="inner">     
       <header>
-        <h2>
-          {subtitle}
-        </h2>
+        <h1>{title}</h1>
         <p>
           {description}
         </p>
@@ -36,7 +33,7 @@ export const IndexPageTemplate = ({
       
     </Intro>
     <Divider />
-    <Highlights>
+    <Highlights image = {image2.childImageSharp.fluid.src}>
         
           <Features gridItems={features} />
         
@@ -49,7 +46,7 @@ export const IndexPageTemplate = ({
       </div>       
     </Services>
     <Divider />
-    <CTA>
+    <CTA image = {image3.childImageSharp.fluid.src}>
       <div className="inner">          
         <EmailList />
       </div>
@@ -73,25 +70,24 @@ export const IndexPageTemplate = ({
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   features: PropTypes.array,
   title: PropTypes.string,
-  subtitle: PropTypes.string,
-  heading: PropTypes.string,
   description: PropTypes.string,
-  subheading: PropTypes.string,
 }
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
+  const features = data.allServicesJson.nodes
   return (
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
+        image2={frontmatter.image2}
+        image3={frontmatter.image3}
         title={frontmatter.title}
-        features={frontmatter.features}
-        subtitle={frontmatter.subtitle}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
+        features={features}
         description={frontmatter.description}
       />
     </Layout>
@@ -113,7 +109,6 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        subtitle
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
@@ -121,19 +116,36 @@ export const pageQuery = graphql`
             }
           }
         }
-        features{
-          serviceId 
-          image {
-            childImageSharp {
-              fluid(maxWidth: 240, quality: 64) {
-                ...GatsbyImageSharpFluid
-              }
+        image2 {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
-        heading   
-        subheading      
+        image3 {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }  
         description
+      }
+    }
+    allServicesJson(filter: {feature: {eq: true}}) {
+      nodes {
+        id
+        title     
+        info {
+          text
+          title
+        }
+        price
+        slug
+        time
+        url
+        category
       }
     }
   }

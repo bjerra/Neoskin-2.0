@@ -38,7 +38,7 @@ const FeatureGrid = ({ gridItems }) => {
        {data.map(service => (
           <SwiperSlide key={service.serviceId}>
             <FeatureCard>
-                <Img fluid={service.image.childImageSharp.fluid} alt="logo" />
+               
               <ServiceCard service={service}/>
             </FeatureCard>
            

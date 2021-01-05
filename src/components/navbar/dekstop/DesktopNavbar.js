@@ -1,14 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Menu from "../menu/Menu";
 import { Link } from 'gatsby'
-import { useOnClickOutside } from '../../../utils/hooks';
-import { StyledDesktop, ListItem , Expandable} from './DesktopNavbar.styled';
+import { StyledDesktop, Primary , Secondary} from './DesktopNavbar.styled';
 import { useTheme  } from '@emotion/react'
-import {useCategoryData} from '../../CategoryData'
+import DropDown from '../dropdown/Dropdown'
 
 const Navbar = props => {
-    const categories = useCategoryData();
-    const [servicesExpanded, setservicesExpanded] = useState(false);
     const [isSticky, setSticky] = useState(false);
     const ref = useRef(null);
     const handleScroll = () => {
@@ -25,38 +22,31 @@ const Navbar = props => {
     }, []);
 
     const theme = useTheme()
-    const [open, setOpen] = useState(false);
-    const node = useRef(); 
-    useOnClickOutside(node, () => setOpen(false));
+
     return(
-      <StyledDesktop>
-        <div ref={node}>     
-        <Menu open={open} setOpen={setOpen} />
-        </div>   
+      <StyledDesktop theme={theme}>
         <div className={`sticky-wrapper${isSticky ? ' sticky' : ''}`} ref={ref}>
           <div className="sticky-inner">
+              <Primary>
+                <Link to="/">
+                Hem
+                </Link>  
+                <DropDown title={"Behandlingar"}/>
+                <Link to="/kontakt">
+                    Kontakt
+                </Link>
+              </Primary>
+              <div style={{flex:1}}/>   
+              <Secondary>
+              <Link to="/om">
+                Om
+                </Link>  
+                <Link to="/nyhetsbrev">
+                    Nyhetsbrev
+                </Link> 
 
-          <div> 
-        <Link to="/">
-          Hem
-        </Link>  
-      </div>   
-          <div> 
-        <Link to="/om">
-          Behandlingar
-        </Link>  
-      </div>                     
-      <div> 
-        <Link to="/nyhetsbrev">
-          Kontakt
-        </Link> 
-      </div>  
-     
-      <div>
-        <Link to="/kontakt">
-          Mer
-        </Link>
-      </div>  
+              
+              </Secondary> 
           </div>
         </div>   
       </StyledDesktop>   
