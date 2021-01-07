@@ -1,7 +1,7 @@
 import styled from "@emotion/styled"
 
 export const StyledDesktop = styled.nav`
-
+   
     font-size: 1.5rem;
 
     .sticky-wrapper{ 
@@ -23,7 +23,7 @@ export const StyledDesktop = styled.nav`
       display: flex;
       justify-content: space-around;
       align-items: center;    
-      background-color: white;
+      background-color: ${({ theme }) => theme.COLOR.LIGHT.hex};
     }
 
     a{

@@ -1,26 +1,39 @@
 import styled from "@emotion/styled"
+import { css } from "@emotion/react"
 
 export const Wrapper = styled.div`
 
   position: relative;
   display: inline-block;
   height: 100%;
-  width: 100%;
+  
 
 `
 
 export const Content = styled.div`
 
-  position: fixed;
-  background-color: ${({ theme }) => theme.COLOR.DARK.hex};
-  bottom: 100px;
-  left: 0;
-  right:0;
+
+ 
+  background-color: ${({ theme }) => theme.COLOR.LIGHT.hex};
   z-index: 1;
   transform: ${({ expanded }) => expanded ? 'scaleY(1)' : 'scaleY(0)'};
   transition: transform 0.2s ease-in-out;
-  transform-origin: bottom;
+  
+`
+export const descending = css`
+    position: absolute;
+    top:40px;
+    width: 500px;
+    transform-origin: top;
+`
 
+export const  ascending = css`
+    width: 100%;
+    position: fixed;
+    bottom: 100px;
+    left: 0;
+    right:0;
+    transform-origin: bottom;
 `
 
 export const Button = styled.div`
@@ -31,12 +44,15 @@ export const Button = styled.div`
   width: 100%;
   cursor: pointer;
   display: flex;
-  flex-direction: column;
+  flex-direction: ${({ down }) => down ? 'row-reverse' : 'column'};
   justify-content:space-around;
   align-items: center;
   
+
   .icon {
       height: 20px;
+      width: ${({ down }) => down ? '40px' : ''};
+      
     position: relative;
     div{
         position: absolute;
@@ -68,9 +84,9 @@ export const ListItem = styled.div`
     font-size: 1rem;
   }
     border-bottom: 1px solid #dddddd33;
-    transform: ${({ expanded }) => expanded ? 'translateX(0)' : 'translateX(100%)'};
+    transform: ${({ expanded, down }) => expanded ? 'translateY(0)' : `translateY(${down ? '-100%' : '100%'})`};
     opacity: ${({ expanded }) => expanded ? '1' : '0'};
     transition: all 0.2s ease;
-    transition-delay: ${({ index })=> index * 20}ms;
+    transition-delay: ${({ index })=> index * 30}ms;
 
 `

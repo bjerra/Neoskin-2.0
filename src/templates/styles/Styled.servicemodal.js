@@ -1,11 +1,8 @@
 import styled from "@emotion/styled"
 import { Link } from 'gatsby'
 export const Wrapper = styled.div`
-    position: absolute;
-    top:0;
-    left:0;
-    right: 0;
-    bottom:0;
+    height: 100%;
+    width: 100%;
     padding: .5rem;
     background-color: #fff;
     line-height: 1.25;
@@ -15,6 +12,7 @@ export const Wrapper = styled.div`
     align-items: center;
     justify-items: center;
     flex-direction: column;
+    overflow: scroll; 
 
 `
 
@@ -26,15 +24,14 @@ export const Header = styled.div`
 
 export const Body = styled.div`
     display: flex;
-    flex-direction: column;
-    overflow: scroll;   
-    height: inherit;
+    flex-direction: column;  
+    height: 500px;
     justify-content: flex-start;
 
 `
 
 export const ListHeader = styled.div`
-      
+      flex:0
 `
 export const ListContent = styled.div`
     overflow: hidden;
@@ -45,7 +42,7 @@ export const ListContent = styled.div`
 `
 
 export const VideoContainer = styled.div`
-    height: 10rem;
+    height: 200px;
 `
 
 export const Close = styled(Link)`

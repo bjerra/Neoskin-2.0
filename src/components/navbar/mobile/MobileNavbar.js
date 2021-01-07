@@ -8,6 +8,7 @@ import { BiHomeHeart, BiNews, BiHappy, BiGroup, BiUpArrow } from 'react-icons/bi
 
 const Navbar = props => {
     const [expanded, setExpanded] = useState(false);
+    const [dropDownOpen, setDropDownOpen] = useState(false);
     const theme = useTheme()
     return(
       <StyledMobile theme={theme} expanded={expanded}> 
@@ -20,7 +21,7 @@ const Navbar = props => {
             <BiNews size={20}/>  
                 Kontakt
             </Link>
-            <DropDown title={"Behandlingar"}/>
+            <DropDown title={"Behandlingar"} open={dropDownOpen} setOpen={setDropDownOpen}/>
            
             <div id="more" onClick={() => setExpanded(!expanded)}>
                 <BiUpArrow size={20}/> 

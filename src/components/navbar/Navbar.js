@@ -11,6 +11,7 @@ const Navbar = props => {
 
   const isDesktop = useMediaQuery({ minWidth: 992 })
   const isTouch = useMediaQuery({ maxWidth: 991 })
+
     return (     
       <Wrapper theme={theme}>
         {isDesktop && <DesktopNavbar />}

@@ -6,6 +6,7 @@ import { useTheme  } from '@emotion/react'
 import DropDown from '../dropdown/Dropdown'
 
 const Navbar = props => {
+    const [dropDownOpen, setDropDownOpen] = useState(false);
     const [isSticky, setSticky] = useState(false);
     const ref = useRef(null);
     const handleScroll = () => {
@@ -31,7 +32,15 @@ const Navbar = props => {
                 <Link to="/">
                 Hem
                 </Link>  
-                <DropDown title={"Behandlingar"}/>
+                <div onMouseEnter={() => setDropDownOpen(true)}>
+                    <DropDown 
+                        title={"Behandlingar"} 
+                        open={dropDownOpen} 
+                        setOpen={setDropDownOpen}   
+                        down={true}          
+                    />       
+                </div>
+              
                 <Link to="/kontakt">
                     Kontakt
                 </Link>
