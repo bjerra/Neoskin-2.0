@@ -2,29 +2,43 @@ import styled from "@emotion/styled"
 
 export const StyledServiceCard = styled.div`
 
+background: ${({ theme }) => theme.COLOR.LIGHT.hex};
 display: flex;
-flex-direction: column;
+flex-direction: row;
+align-items: center;
+text-align: left;
 justify-content: space-between;
-margin: 1rem 2rem 1rem 2rem;
+margin: 1rem .5rem;
+box-shadow: 5px 5px 2px -3px #00000044;
+padding: .75rem;
 
-text-align: center;
 color: ${({ theme }) => theme.COLOR.DARK.hex};
-padding: 1rem;
 
-.header{
+h5 {
+    font-weight: 600;
+}
+p {
+    color: #999;
+}
+
+a {
+    color: ${({ theme }) => theme.COLOR.INFO.hex};
+}
+div{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     
-    h5{
-        
-    }
+    flex-direction: column;
    
+    
+    justify-content: space-between;
+
+    :nth-of-type(1) {
+        flex: 1;
+      }
+    :nth-of-type(2) {
+        flex: 0;
+    }
+
 }
 
-.body{
-
-    display: flex;
-    justify-content: space-around;
-}
 `

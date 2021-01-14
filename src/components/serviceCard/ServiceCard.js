@@ -11,27 +11,23 @@ const ServiceCard = ({service}) => {
 
   return (   
       <StyledServiceCard theme={theme}>
-            <div className="header">
-              
-               
-            <h5>{service.title}</h5>
-            </div>      
-         
-          <div className="body">
-            <p>
-                {time}
-            </p>                 
-            <p >
-                {price}
-            </p> 
-            <BokaButton url={url}/>    
-            </div>
-            <Link 
-              to={`/behandlingar/${service.slug}`} 
-              state={{modal: true}}> 
-              mer info
-            </Link>       
-
+        <div>
+          <h5>{service.title}</h5>
+          <div>
+          <p>
+            {time} , {price}
+          </p> 
+          <Link 
+            to={`/behandlingar/${service.slug}`} 
+            state={{modal: true}}> 
+            mer info
+          </Link>  
+          </div>
+       
+        </div>
+        <div>
+          <BokaButton url={url}/>    
+        </div>
      </StyledServiceCard>
   )
 }

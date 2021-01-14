@@ -29,7 +29,7 @@ const GRAY = {
 }
 
 const ROSE_MADDER = {
-  hex: "#E71D36",
+  hex: "#a29090",
   rgb: `rgb(231,29,54)`,
   rgbArray: [231, 29, 54],
 }
@@ -40,11 +40,13 @@ const ORANGE_PEEL = {
   rgbArray: [255, 159, 28],
 }
 
+
 const COLOR = {
   LIGHT: BABY_POWDER,
   DARK: RICH_BLACK,
   BLUE: BLUE,
   HOVER: GRAY,
+  INFO: ROSE_MADDER,
   FEATURE: [ROSE_MADDER, ORANGE_PEEL],
 }
 

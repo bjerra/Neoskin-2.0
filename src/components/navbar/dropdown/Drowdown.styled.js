@@ -6,8 +6,8 @@ export const Wrapper = styled.div`
   position: relative;
   display: inline-block;
   height: 100%;
+  width: 100%;
   
-
 `
 
 export const Content = styled.div`

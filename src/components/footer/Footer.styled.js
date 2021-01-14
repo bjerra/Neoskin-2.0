@@ -9,6 +9,7 @@ export const StyledFooter = styled.footer`
     display: flex;
     justify-content: space-around;
     position: relative;
+    
 
     ul {
 
