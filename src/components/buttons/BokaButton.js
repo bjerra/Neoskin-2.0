@@ -7,10 +7,10 @@ export const StyledButton = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     text-decoration: none;
-    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.10);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.1);
     font-weight: 600;
 
 `

@@ -55,16 +55,16 @@ export const wrapRootElement = ({ element }) => {
           }
            
           .ReactModal__Content {
-            transform: translateX(-100px);
+            transform: translateY(-100px);
             transition: transform 200ms ease-out;
           }
           
           .ReactModal__Content--after-open {
-            transform: translateX(0);
+            transform: translateY(0);
           }
           
           .ReactModal__Content--before-close {
-            transform: translateX(100px);
+            transform: translateY(100px);
           }
           a {
             color: inherit;

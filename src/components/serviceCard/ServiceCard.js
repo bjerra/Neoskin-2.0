@@ -3,6 +3,7 @@ import { StyledServiceCard } from './ServiceCard.styled'
 import { useTheme  } from '@emotion/react'
 import { Link } from 'gatsby'
 import {BokaButton} from '../../components'
+import { BiDownArrow } from 'react-icons/bi';
 
 const ServiceCard = ({service}) => {
 
@@ -11,23 +12,22 @@ const ServiceCard = ({service}) => {
 
   return (   
       <StyledServiceCard theme={theme}>
-        <div>
-          <h5>{service.title}</h5>
+        <Link  
+            to={`/behandlingar/${service.slug}`} 
+            state={{modal: true}}>
+          <h4>{service.title}</h4>
           <div>
           <p>
             {time} , {price}
           </p> 
-          <Link 
-            to={`/behandlingar/${service.slug}`} 
-            state={{modal: true}}> 
-            mer info
-          </Link>  
+        
           </div>
-       
-        </div>
+         
+        </Link>
         <div>
           <BokaButton url={url}/>    
         </div>
+        <BiDownArrow size={20}/> 
      </StyledServiceCard>
   )
 }
