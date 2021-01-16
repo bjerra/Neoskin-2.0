@@ -2,6 +2,7 @@ import styled from "@emotion/styled"
 
 export const StyledServiceCard = styled.div`
 
+height: 65px;
 position: relative;
 background: ${({ theme }) => theme.COLOR.LIGHT.hex};
 display: flex;
@@ -13,7 +14,7 @@ border-bottom: 1px solid #999;
 
 color: ${({ theme }) => theme.COLOR.DARK.hex};
 
-h4 {
+h5 {
     font-weight: 600;
 }
 p {
@@ -23,23 +24,25 @@ p {
 }
 
 > a {
+    height: 100%; 
+    margin-top: .5rem;
     text-decoration: none;
-    padding: .75rem;
+    padding: 0 .75rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
+    position: relative;
     flex: 1;
     
 }
  > div{
-        width: 70px;
-        height: 70px;
+        width: 65px;
+       height: 100%; 
       
 }
 
 svg{
     color: ${({ theme }) => theme.COLOR.INFO.hex};
-  
 }
 
 `

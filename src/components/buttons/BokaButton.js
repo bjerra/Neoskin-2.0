@@ -2,7 +2,7 @@ import React from "react"
 import styled from "@emotion/styled"
 
 export const StyledButton = styled.a`
-    background-color: #a9a9a947;
+    background-color: #bdb5a347;
     color: #9a5959;
     display: flex;
     justify-content: center;
