@@ -4,7 +4,8 @@ import { StyledMobile } from './MobileNavbar.styled';
 import DropDown from '../dropdown/Dropdown'
 import { useTheme  } from '@emotion/react'
 import { BiHomeHeart, BiNews, BiHappy, BiGroup, BiUpArrow } from 'react-icons/bi';
-
+import { FaPhoneSquare } from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi';
 
 const Navbar = props => {
     const [expanded, setExpanded] = useState(false);
@@ -37,6 +38,14 @@ const Navbar = props => {
                 <BiGroup size={20}/> 
                 Nyhetsbrev
             </Link>  
+            <a href="tel:+46722065222" title="+46722065222">
+                <FaPhoneSquare size={20}/>    
+                  Telefon          
+              </a>
+                <a href="mailto:anais@neoskin.se" title="anais@neoskin.se">
+                  <HiOutlineMail size={20}/>   
+                    Email
+                </a> 
       </div>          
       </StyledMobile> 
     )

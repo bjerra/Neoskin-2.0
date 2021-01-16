@@ -40,7 +40,7 @@ export const StyledMobile = styled.nav`
         display: flex;
         flex-direction: column;
         justify-content: space-around;   
-        color: ${({ theme }) => theme.COLOR.DARK.hex};
+        color: ${({ theme }) => theme.COLOR.INFO.hex};
         align-items: center;
         svg{
             transform: ${({ expanded }) => expanded ? 'rotate(180deg)' : 'rotate(0)'};

@@ -2,15 +2,14 @@ import React from "react"
 import styled from "@emotion/styled"
 
 export const StyledButton = styled.a`
-    background-color: antiquewhite;
-    border-radius: 50%;
+    background-color: #a9a9a947;
+    color: #9a5959;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 55px;
-    height: 55px;
+    width: 100%;
+    height: 100%;
     text-decoration: none;
-    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.1);
     font-weight: 600;
 
 `

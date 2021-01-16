@@ -18,16 +18,16 @@ const ServiceCard = ({service}) => {
           <h4>{service.title}</h4>
           <div>
           <p>
-            {time} , {price}
+            {time} , {price} <BiDownArrow size={15}/> 
           </p> 
-        
+         
           </div>
          
         </Link>
         <div>
-          <BokaButton url={url}/>    
+            <BokaButton url={url}/>    
         </div>
-        <BiDownArrow size={20}/> 
+       
      </StyledServiceCard>
   )
 }

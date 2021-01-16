@@ -29,7 +29,7 @@ const GRAY = {
 }
 
 const ROSE_MADDER = {
-  hex: "#dbd5d3",
+  hex: "#748fbf",
   rgb: `rgb(231,29,54)`,
   rgbArray: [231, 29, 54],
 }
