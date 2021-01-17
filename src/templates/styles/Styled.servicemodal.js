@@ -75,5 +75,8 @@ export const Close = styled(Link)`
 `
 
 export const Footer = styled.div`
-    padding-top: .5rem;
+    
+    width: 100%;
+    height: 40px;
+
 `

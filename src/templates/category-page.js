@@ -21,9 +21,7 @@ export const CategoryPageTemplate = ({
       <Body>
         {
           services.map((service) => (                       
-              <div key={service.id}>  
-              <ServiceCard service={service}/>                         
-              </div>       
+              <ServiceCard service={service} key={service.id}/>                          
           ))
           }    
       </Body>

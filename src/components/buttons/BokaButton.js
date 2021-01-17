@@ -2,8 +2,8 @@ import React from "react"
 import styled from "@emotion/styled"
 
 export const StyledButton = styled.a`
-    background-color: #bdb5a347;
-    color: #9a5959;
+    background-color: #e8e8e847;
+    color: #23A994;
     display: flex;
     justify-content: center;
     align-items: center;
