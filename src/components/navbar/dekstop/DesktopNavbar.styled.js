@@ -21,28 +21,20 @@ export const StyledDesktop = styled.nav`
     .sticky-inner {
       padding: 1rem;  
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: center;    
       background-color: ${({ theme }) => theme.COLOR.LIGHT.hex};
+
+      > div {
+        
+      }
     }
 
     a{
         color: ${({ theme }) => theme.COLOR.DARK.hex};
     }
+
+  
 `;
 
-export const Primary = styled.div`
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex:2;
-   
-`;
-
-export const Secondary = styled.div`
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex:1;
-`;
 

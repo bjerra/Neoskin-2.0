@@ -71,7 +71,6 @@ export const Close = styled(Link)`
     :after {
     transform: rotate(-45deg);
     }
-   
 `
 
 export const Footer = styled.div`

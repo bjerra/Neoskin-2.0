@@ -12,12 +12,30 @@ export const Wrapper = styled.div`
 
 export const Content = styled.div`
 
-
- 
   background-color: ${({ theme }) => theme.COLOR.LIGHT.hex};
   z-index: 1;
   transform: ${({ expanded }) => expanded ? 'scaleY(1)' : 'scaleY(0)'};
   transition: transform 0.2s ease-in-out;
+
+  .item {
+    color: ${({ theme }) => theme.COLOR.DARK.hex};
+   
+
+    a {
+      
+      display: flex;
+      padding: 1rem;  
+      padding-left: 2rem;
+      font-size: 1rem;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+      border-bottom: 1px solid #dddddd33;
+      transform: ${({ expanded, down }) => expanded ? 'translateY(0)' : `translateY(${down ? '-100%' : '100%'})`};
+      opacity: ${({ expanded }) => expanded ? '1' : '0'};
+      transition: all 0.2s ease;
+      transition-delay: ${({ index })=> index * 30}ms;
+  }
   
 `
 export const descending = css`
@@ -30,7 +48,7 @@ export const descending = css`
 export const  ascending = css`
     width: 100%;
     position: fixed;
-    bottom: 100px;
+    bottom: 50px;
     left: 0;
     right:0;
     transform-origin: bottom;
@@ -44,16 +62,18 @@ export const Button = styled.div`
   width: 100%;
   cursor: pointer;
   display: flex;
-  flex-direction: ${({ down }) => down ? 'row-reverse' : 'column'};
-  justify-content:space-around;
+  justify-content: ${({ down }) => down ? 'flex-start' : 'space-around'};
   align-items: center;
   
 
   .icon {
       height: 20px;
       width: ${({ down }) => down ? '40px' : ''};
-      
-    position: relative;
+      position:absolute;
+      right:30%;
+      top: 5px;
+    
+    
     div{
         position: absolute;
         top: 50%;
@@ -74,19 +94,4 @@ export const Button = styled.div`
     }
 
 }
-`
-
-export const ListItem = styled.div`
-    color: ${({ theme }) => theme.COLOR.DARK.hex};
-   
-  a {
-    padding: 1rem;  
-    font-size: 1rem;
-  }
-    border-bottom: 1px solid #dddddd33;
-    transform: ${({ expanded, down }) => expanded ? 'translateY(0)' : `translateY(${down ? '-100%' : '100%'})`};
-    opacity: ${({ expanded }) => expanded ? '1' : '0'};
-    transition: all 0.2s ease;
-    transition-delay: ${({ index })=> index * 30}ms;
-
 `

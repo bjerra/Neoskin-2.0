@@ -4,9 +4,16 @@ import { Link } from 'gatsby'
 import { StyledDesktop, Primary , Secondary} from './DesktopNavbar.styled';
 import { useTheme  } from '@emotion/react'
 import DropDown from '../dropdown/Dropdown'
+import ServiceMenu from '../menus/ServiceMenu'
+import ContactMenu from '../menus/ContactMenu'
+import MoreMenu from '../menus/MoreMenu'
+import { useOnClickOutside } from '../../../utils/hooks';
+import {BiChevronDown } from 'react-icons/bi';
+
+
 
 const Navbar = props => {
-    const [dropDownOpen, setDropDownOpen] = useState(false);
+    const [dropDownOpen, setDropDownOpen] = useState("");
     const [isSticky, setSticky] = useState(false);
     const ref = useRef(null);
     const handleScroll = () => {
@@ -24,38 +31,45 @@ const Navbar = props => {
 
     const theme = useTheme()
 
+    const node = useRef(); 
+    useOnClickOutside(node, () => setDropDownOpen(""));
+
     return(
-      <StyledDesktop theme={theme}>
+      <StyledDesktop theme={theme} ref={node}> 
         <div className={`sticky-wrapper${isSticky ? ' sticky' : ''}`} ref={ref}>
           <div className="sticky-inner">
-              <Primary>
-                <Link to="/">
+            <div>
+            <Link to="/">
                 Hem
-                </Link>  
-                <div onMouseEnter={() => setDropDownOpen(true)}>
-                    <DropDown 
-                        title={"Behandlingar"} 
-                        open={dropDownOpen} 
-                        setOpen={setDropDownOpen}   
-                        down={true}          
-                    />       
-                </div>
-              
-                <Link to="/kontakt">
-                    Kontakt
-                </Link>
-              </Primary>
-              <div style={{flex:1}}/>   
-              <Secondary>
-              <Link to="/om">
-                Om
-                </Link>  
-                <Link to="/nyhetsbrev">
-                    Nyhetsbrev
                 </Link> 
+            </div>
+                 
+    
+                <div onMouseEnter={() => setDropDownOpen("Behandlingar")}>
+                    <DropDown     
+                        open={dropDownOpen == "Behandlingar"} 
+                        content={<ServiceMenu />}
+                        setOpen={() => setDropDownOpen(dropDownOpen == "Behandlingar" ? "": "Behandlingar")}
+                        down={true}          
+                    >
+                      Behandlingar
+                      <BiChevronDown size={25}/> 
+                      </DropDown>       
+                </div>
 
-              
-              </Secondary> 
+                <div onMouseEnter={() => setDropDownOpen("Kontakt")}>
+                <DropDown open={dropDownOpen == "Kontakt"}  down={true} content={<ContactMenu />} setOpen={() => setDropDownOpen(dropDownOpen == "Kontakt" ? "": "Kontakt")}>    
+                  Kontakt
+                  <BiChevronDown size={25}/> 
+                </DropDown>
+                </div>
+
+                <div onMouseEnter={() => setDropDownOpen("Mer")}>
+                  <DropDown open={dropDownOpen == "Mer"}  down={true} content={<MoreMenu />} setOpen={() => setDropDownOpen(dropDownOpen == "Mer" ? "": "Mer")}>    
+                    Mer
+                    <BiChevronDown size={25}/> 
+                  </DropDown>
+                </div> 
           </div>
         </div>   
       </StyledDesktop>   

@@ -3,50 +3,43 @@ import { Link } from 'gatsby'
 import { StyledMobile } from './MobileNavbar.styled';
 import DropDown from '../dropdown/Dropdown'
 import { useTheme  } from '@emotion/react'
-import { BiHomeHeart, BiNews, BiHappy, BiGroup, BiUpArrow } from 'react-icons/bi';
-import { FaPhoneSquare } from 'react-icons/fa';
-import { HiOutlineMail } from 'react-icons/hi';
+import { BiHomeHeart, BiNews, BiDotsVertical } from 'react-icons/bi';
+import { FaHandHoldingHeart } from 'react-icons/fa';
+import ServiceMenu from '../menus/ServiceMenu'
+import ContactMenu from '../menus/ContactMenu'
+import MoreMenu from '../menus/MoreMenu'
+import { useOnClickOutside } from '../../../utils/hooks';
+
 
 const Navbar = props => {
-    const [expanded, setExpanded] = useState(false);
-    const [dropDownOpen, setDropDownOpen] = useState(false);
+
+    const [dropDownOpen, setDropDownOpen] = useState("");
     const theme = useTheme()
+    const node = useRef(); 
+    useOnClickOutside(node, () => setDropDownOpen(""));
     return(
-      <StyledMobile theme={theme} expanded={expanded}> 
-      <div className="row">
+      <StyledMobile theme={theme} ref={node}> 
             <Link to="/">
-                <BiHomeHeart size={20}/>  
+                <BiHomeHeart size={25}/>  
                 Hem
             </Link> 
-            <Link to="/kontakt">
-            <BiNews size={20}/>  
-                Kontakt
-            </Link>
-            <DropDown title={"Behandlingar"} open={dropDownOpen} setOpen={setDropDownOpen}/>
-           
-            <div id="more" onClick={() => setExpanded(!expanded)}>
-                <BiUpArrow size={20}/> 
-                {expanded ? "Mindre" : "Mer"}
-            </div>
-      </div>
-      <div className="row">
-            <Link to="/om">
-                <BiHappy size={20}/> 
-                Om
-            </Link>  
-            <Link to="/nyhetsbrev">
-                <BiGroup size={20}/> 
-                Nyhetsbrev
-            </Link>  
-            <a href="tel:+46722065222" title="+46722065222">
-                <FaPhoneSquare size={20}/>    
-                  Telefon          
-              </a>
-                <a href="mailto:anais@neoskin.se" title="anais@neoskin.se">
-                  <HiOutlineMail size={20}/>   
-                    Email
-                </a> 
-      </div>          
+          
+            <DropDown open={dropDownOpen == "Kontakt"} content={<ContactMenu />} setOpen={() => setDropDownOpen(dropDownOpen == "Kontakt" ? "": "Kontakt")}>
+              <BiNews size={25}/> 
+              Kontakt
+            </DropDown>
+
+
+            <DropDown open={dropDownOpen == "Behandlingar"} content={<ServiceMenu />} setOpen={() => setDropDownOpen(dropDownOpen == "Behandlingar" ? "": "Behandlingar")}>
+              <FaHandHoldingHeart size={25}/> 
+              Behandlingar
+            </DropDown>
+
+            <DropDown open={dropDownOpen == "Mer"} content={<MoreMenu />} setOpen={() => setDropDownOpen(dropDownOpen == "Mer" ? "": "Mer")}>
+              <BiDotsVertical size={25}/> 
+              Mer
+            </DropDown>
+
       </StyledMobile> 
     )
   }
