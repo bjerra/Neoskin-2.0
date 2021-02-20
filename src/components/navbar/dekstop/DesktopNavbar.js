@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Menu from "../menu/Menu";
 import { Link } from 'gatsby'
+import {ExpandIcon} from '../../../components'
 import { StyledDesktop, Primary , Secondary} from './DesktopNavbar.styled';
 import { useTheme  } from '@emotion/react'
 import DropDown from '../dropdown/Dropdown'
@@ -44,30 +45,30 @@ const Navbar = props => {
                 </Link> 
             </div>
                  
-    
+                <div onMouseEnter={() => setDropDownOpen("Kontakt")}>
+                <DropDown open={dropDownOpen == "Kontakt"}  down={true} content={<ContactMenu />} setOpen={() => setDropDownOpen("Kontakt")}>    
+                  Kontakt
+                  <ExpandIcon expanded ={dropDownOpen == "Kontakt"}/>   
+                </DropDown>
+                </div>
+
                 <div onMouseEnter={() => setDropDownOpen("Behandlingar")}>
                     <DropDown     
                         open={dropDownOpen == "Behandlingar"} 
                         content={<ServiceMenu />}
-                        setOpen={() => setDropDownOpen(dropDownOpen == "Behandlingar" ? "": "Behandlingar")}
+                        setOpen={() => setDropDownOpen("Behandlingar")}
                         down={true}          
                     >
                       Behandlingar
-                      <BiChevronDown size={25}/> 
-                      </DropDown>       
-                </div>
-
-                <div onMouseEnter={() => setDropDownOpen("Kontakt")}>
-                <DropDown open={dropDownOpen == "Kontakt"}  down={true} content={<ContactMenu />} setOpen={() => setDropDownOpen(dropDownOpen == "Kontakt" ? "": "Kontakt")}>    
-                  Kontakt
-                  <BiChevronDown size={25}/> 
-                </DropDown>
+                      <ExpandIcon expanded ={dropDownOpen == "Behandlingar"}/>   
+                      </DropDown>    
+                     
                 </div>
 
                 <div onMouseEnter={() => setDropDownOpen("Mer")}>
-                  <DropDown open={dropDownOpen == "Mer"}  down={true} content={<MoreMenu />} setOpen={() => setDropDownOpen(dropDownOpen == "Mer" ? "": "Mer")}>    
+                  <DropDown open={dropDownOpen == "Mer"}  down={true} content={<MoreMenu />} setOpen={() => setDropDownOpen("Mer")}>    
                     Mer
-                    <BiChevronDown size={25}/> 
+                    <ExpandIcon expanded ={dropDownOpen == "Mer"}/>   
                   </DropDown>
                 </div> 
           </div>

@@ -1,35 +1,55 @@
 import React from 'react';
 import { Link } from 'gatsby'
 
-import { FaPhoneSquare,FaMapMarkerAlt } from 'react-icons/fa';
-import { HiOutlineMail } from 'react-icons/hi';
+import { FaPhone,FaMapMarkerAlt, FaFacebookF, FaInstagram, FaRegEnvelope } from 'react-icons/fa';
 
 const ContactMenu = () => {
 
   return (
     <React.Fragment >  
       <div className="item">
-      <a href="tel:+46722065222" title="+46722065222">
-                <FaPhoneSquare size={20}/>    
+       <a rel="nofollow noopener noreferrer external" href="http://maps.google.com/?q=Neoskin,+Smedjegatan+38,+553+20+Jönköping" target="_blank">
+                <FaMapMarkerAlt size={20}/>   
                 <div style={{width: '5px'}}></div>
-                  Ring          
-              </a>
+                    Hitta hit
+        </a> 
       </div>
       <div className="item">
-      <a className="item" href="mailto:anais@neoskin.se" title="anais@neoskin.se">
-                  <HiOutlineMail size={20}/>   
+         <a href="tel:+46722065222" title="+46722065222">
+                <FaPhone size={20}/>    
+                <div style={{width: '5px'}}></div>
+                  Ring          
+          </a>
+      </div>
+      <div className="item">
+      <a href="mailto:anais@neoskin.se" title="anais@neoskin.se">
+                  <FaRegEnvelope size={20}/>   
                   <div style={{width: '5px'}}></div>
                     Maila
         </a> 
       </div>
-  
+
+     
       <div className="item">
-        <a href="">
-                <FaMapMarkerAlt size={20}/>   
-                <div style={{width: '5px'}}></div>
-                    Hitta
-        </a> 
+      <a href="https://www.facebook.com/neoskin.se/" target="_blank" rel="noopener noreferrer" title="neoskin.se@facebook">
+      <FaFacebookF size={20}/>   
+                  <div style={{width: '5px'}}></div>
+                  Facebook
+                  
+              </a>  
       </div>
+      <div className="item">
+      <a href="https://instagram.com/neoskin.se" target="_blank" rel="noopener noreferrer" title="neoskin.se@Instagram">
+          
+      <FaInstagram size={20}/>   
+                  <div style={{width: '5px'}}></div>
+                  Instagram
+                  
+                </a>  
+      </div>
+      
+ 
+      
     </React.Fragment>
   )
 }

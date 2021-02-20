@@ -5,9 +5,6 @@ import { useTheme  } from '@emotion/react'
 const Dropdown = ({children, content, open, setOpen, down}) => {
   const theme = useTheme()
 
- 
- 
-
   return (
     <Wrapper theme={theme} expanded={open} >  
      <Button theme={theme} expanded={open} onClick={setOpen} down={down}>   

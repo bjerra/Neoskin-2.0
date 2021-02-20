@@ -6,22 +6,14 @@ import SwiperCore, { Navigation, Pagination, A11y, Autoplay, EffectCoverflow } f
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {ServiceCard} from '../../components'
 import { useStaticQuery, graphql } from "gatsby"
-import { useServiceData } from '../ServiceData'
 
 import 'swiper/swiper-bundle.min.css';
 
 SwiperCore.use([Navigation, Pagination, A11y, Autoplay, EffectCoverflow]);
 
 
-const FeatureGrid = ({ gridItems }) => {
+const FeatureGrid = ({ services }) => {
   
-  const serviceData = useServiceData();
-  let data = []
-  gridItems.forEach(item => {
-    const service = serviceData.find(p=>p.id == item.serviceId);
-    data.push({image : item.image, ...service});
-  })
-
   return(
   <StyledFeatures>
     
@@ -35,7 +27,7 @@ const FeatureGrid = ({ gridItems }) => {
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
     >
-       {data.map(service => (
+       {services.map(service => (
           <SwiperSlide key={service.serviceId}>
             <FeatureCard>
                

@@ -10,7 +10,7 @@ const ServiceMenu = () => {
           {
             categories.map((category, index) => {   
                 return(
-              <div className="item">
+              <div className="item" key={index}>
                 <Link to={`/${category.slug}`}>
                     {category.title}
                 </Link>

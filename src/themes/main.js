@@ -40,6 +40,18 @@ const ORANGE_PEEL = {
   rgbArray: [255, 159, 28],
 }
 
+const MENU = {
+  hex: "#fbf0f0",
+  rgb: `rgb(255,159,28)`,
+  rgbArray: [255, 159, 28],
+}
+
+const MENU_INVERT = {
+  hex: "#000",
+  rgb: `rgb(255,159,28)`,
+  rgbArray: [255, 159, 28],
+}
+
 
 const COLOR = {
   LIGHT: BABY_POWDER,
@@ -47,6 +59,8 @@ const COLOR = {
   BLUE: BLUE,
   HOVER: GRAY,
   INFO: ROSE_MADDER,
+  MENU: MENU,
+  MENU_INVERT:MENU_INVERT,
   FEATURE: [ROSE_MADDER, ORANGE_PEEL],
 }
 

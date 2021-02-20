@@ -35,7 +35,7 @@ export const IndexPageTemplate = ({
     <Divider />
     <Highlights image = {image2.childImageSharp.fluid.src}>
         
-          <Features gridItems={features} />
+          <Features services={features} />
         
     </Highlights>
 
@@ -64,7 +64,6 @@ export const IndexPageTemplate = ({
       </div>
     </About>
     <Divider />
-    <Map />
   </Wrapper>
 )
 
