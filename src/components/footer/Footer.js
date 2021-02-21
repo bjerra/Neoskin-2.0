@@ -1,10 +1,11 @@
 import React from 'react'
 import {StyledFooter} from './Footer.styled'
+import { useTheme  } from '@emotion/react'
 
-const Footer = class extends React.Component {
-  render() {
-    return (
-      <StyledFooter>       
+const Footer = props => {
+  const theme = useTheme()
+  return(
+      <StyledFooter theme={theme}>       
           <ul>      
           <li>
                 <a rel="nofollow noopener noreferrer external" href="https://www.google.com/maps/search/?api=1&amp;query=57.7815209,14.1746004" target="_blank">
@@ -15,6 +16,9 @@ const Footer = class extends React.Component {
                   </p>
                 </a>   
               </li>            
+            </ul>
+            <ul>      
+                  
             <li>
               <a href="tel:+46722065222" title="+46722065222">
                
@@ -31,37 +35,11 @@ const Footer = class extends React.Component {
                   </p>  
                 </a> 
              </li>
-              
-            <li>
-              <a href="https://www.facebook.com/neoskin.se/" target="_blank" rel="noopener noreferrer" title="neoskin.se@facebook">
-                <p>
-                  facebook
-                  </p>
-              </a>  
-            </li>
-             <li>
-              <a href="https://instagram.com/neoskin.se" target="_blank" rel="noopener noreferrer" title="neoskin.se@Instagram">
           
-                <p>
-                  instagram
-                  </p>
-                </a>  
-             </li>
-             <li>
-             <a                        
-                href="/admin/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                  <p>
-                  Admin
-                  </p>
-              </a>
-             </li>
             </ul>
         </StyledFooter>
     )
   }
-}
+
 
 export default Footer

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Wrapper,Intro,Highlights, CTA, Services, About} from './styles/Styled.Indexpage'
-import {Banner, Navbar, Logo, Features, Layout, ServiceGrid, Divider, Tour, Portrait,Map} from '../components'
+import {Banner, Logo, Features, Layout, ServiceGrid, Divider, Tour, Portrait} from '../components'
 import EmailList from '../components/EmailList'
 
 export const IndexPageTemplate = ({
@@ -14,13 +14,15 @@ export const IndexPageTemplate = ({
   description,
 }) => (
   <Wrapper>
+   
     <Banner image = {image.childImageSharp.fluid.src}>
         <div className="inner">
           <Logo />    
         </div>   
-        <video autoPlay loop muted playsInline src={require("../img/banner.webm")}></video>
+        {//<video autoPlay loop muted playsInline src={require("../img/banner.webm")}></video>
+        }
     </Banner>
-    <Navbar />
+   
     <Intro>
       <div className="inner">     
       <header>

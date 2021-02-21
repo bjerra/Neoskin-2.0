@@ -12,8 +12,6 @@ export const Wrapper = styled.div`
 `
 
 export const Content = styled.div`
-  padding-bottom: 1rem;
-  padding-top: 1rem;
   background-color: ${({ theme }) => theme.COLOR.MENU.hex};
   z-index: 1;
   transform: ${({ expanded }) => expanded ? 'scaleY(1)' : 'scaleY(0)'};
@@ -21,8 +19,11 @@ export const Content = styled.div`
   .item {
     color: ${({ theme }) => theme.COLOR.MENU_INVERT.hex};
     :hover{
-      background-color:#00000011;
-
+      background-color:#00000009;
+      a{
+        color: ${({ theme }) => theme.COLOR.HOVER.hex};
+      }
+     
     }  
 
     a {
@@ -34,27 +35,14 @@ export const Content = styled.div`
         height:1px;
         width: 10px;
         background:#00000044;
-        left:1rem;
+        left:.75rem;
         z-index:1;
       }    
-      :after {
-        content:'';
-        position:absolute;
-        display:block;
-        top:50%;
-        margin-top: -10px;
-        height:20px;
-        width: 20px;
-        border-radius: 10px;
-        background:#00000011;
-        right: 1rem;
-        z-index:1;
-      }
+    
    
       display: flex;
-      padding: .75rem;  
-      padding-left: 2rem;
-      font-size: 1.15rem;
+      padding: 1rem 0 1rem 2rem;  
+      font-size: 1.25rem;
       flex-direction: row;
       justify-content: flex-start;
     }
@@ -71,18 +59,25 @@ export const descending = css`
     width: 100%;
     transform-origin: top;
     box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.15);
-    border-top: 1px solid #00000022;
+  
+    a {
+      border-top: 1px solid #00000022;
+      }    
 `
 
 export const  ascending = css`
-    border-bottom: 1px solid #00000022;
+  
     width: 100%;
     position: fixed;
-    bottom: 50px;
+    bottom: 55px;
     left: 0;
     right:0;
     transform-origin: bottom;
     box-shadow: 0 -5px 5px 1px rgba(0,0,0,0.15);
+
+    a {
+      border-bottom: 1px solid #00000022;
+      }   
 `
 
 export const Button = styled.div`

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import {Layout, Navbar,Banner} from '../components'
+import {Layout,Banner} from '../components'
 import Content, { HTMLContent } from '../components/Content'
 
 export const AboutPageTemplate = ({ title, image, content, contentComponent }) => {
@@ -9,7 +9,6 @@ export const AboutPageTemplate = ({ title, image, content, contentComponent }) =
 
   return (
     <div>
-      <Navbar />
        <Banner image={image.childImageSharp.fluid.src}>
         <h1
           className="page-title"

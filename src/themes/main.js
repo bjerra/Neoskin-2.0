@@ -22,8 +22,8 @@ const BLUE = {
   rgbArray: [46, 196, 182],
 }
 
-const GRAY = {
-  hex: "#a9a9a9",
+const HOVER = {
+  hex: "#904949",
   rgb: `rgb(235, 225, 52)`,
   rgbArray: [235, 225, 52],
 }
@@ -57,7 +57,7 @@ const COLOR = {
   LIGHT: BABY_POWDER,
   DARK: RICH_BLACK,
   BLUE: BLUE,
-  HOVER: GRAY,
+  HOVER: HOVER,
   INFO: ROSE_MADDER,
   MENU: MENU,
   MENU_INVERT:MENU_INVERT,

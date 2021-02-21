@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import {Layout,Navbar, Banner, ServiceCard} from '../components'
+import {Layout, Banner, ServiceCard} from '../components'
 import { Wrapper, Header, Body} from './styles/Styled.categorypage'
 
 export const CategoryPageTemplate = ({
@@ -13,7 +13,6 @@ export const CategoryPageTemplate = ({
       
   return(
     <Wrapper>
-      <Navbar />
       <Banner image={!!image.childImageSharp ? image.childImageSharp.fluid.src : image}>
         <h1>{title}</h1>
         <p>{description}</p>

@@ -1,6 +1,6 @@
 import styled from "@emotion/styled"
 import React, {useState, useRef} from 'react';
-
+import { useTheme  } from '@emotion/react'
 
 const StyledExpandIcon = styled.div`
 
@@ -13,7 +13,7 @@ margin-left: 1rem;
       left: 50%;
       width: 1.25rem;
       height: 0.12rem;
-      background: #333;
+      background-color: ${({ theme, expanded }) => expanded ? theme.COLOR.HOVER.hex : theme.COLOR.MENU_INVERT.hex};
       border-radius: 5px;
       transition: all 0.2s ease-out;
 
@@ -29,9 +29,9 @@ margin-left: 1rem;
 `
 
 const ExpandIcon = ({expanded}) => {
- 
+    const theme = useTheme()
   return (
-        <StyledExpandIcon expanded={expanded}>
+        <StyledExpandIcon expanded={expanded} theme={theme}>
             <div />
             <div />   
         </StyledExpandIcon>   

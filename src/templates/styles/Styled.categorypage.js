@@ -27,6 +27,8 @@ text-align: center;
 
 export const Body = styled.section`
     
-    
+margin: auto;
+max-width: 900px; 
+
 
 `

@@ -5,38 +5,39 @@ import { Link } from "gatsby"
 
 export const StyledServiceGrid = styled.div`
 
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  display: flex;
+  flex-direction: column;
   @media screen and (max-width: 980px) {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    
   }
 `
 
 export const Card = styled(Link)`
-    position: relative;
-    overflow: hidden;
-    display: grid;
-    ::before {
-      grid-area: 1 / 1 / 2 / 2;
-      content: "";
-      padding-bottom: 100%;
-      display: block;
+box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.25);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  :nth-of-type(odd) {
+    flex-direction: row-reverse;
+  }
+  margin-top: .5rem;
+  text-align:center;
+  text-decoration: none;
+    h4 {
+      font-weight: 600;
+      margin: 0 1rem;
+      color: black;
+      flex: 1;
     }
 
-    h4 {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
 }
 `
 
 
 export const Image = styled(Img)`
-      grid-area: 1 / 1 / 2 / 2;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-
+      height: 225px;
+      width 40%;
+      @media screen and (max-width: 980px) {
+        height: 100px;
+      }
 `

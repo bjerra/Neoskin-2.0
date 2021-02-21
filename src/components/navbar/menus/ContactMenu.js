@@ -25,25 +25,16 @@ const ContactMenu = () => {
       <a href="mailto:anais@neoskin.se" title="anais@neoskin.se">
                   <FaRegEnvelope size={20}/>   
                   <div style={{width: '5px'}}></div>
-                    Maila
+                    Skicka ett mail
         </a> 
       </div>
 
-     
-      <div className="item">
-      <a href="https://www.facebook.com/neoskin.se/" target="_blank" rel="noopener noreferrer" title="neoskin.se@facebook">
-      <FaFacebookF size={20}/>   
-                  <div style={{width: '5px'}}></div>
-                  Facebook
-                  
-              </a>  
-      </div>
       <div className="item">
       <a href="https://instagram.com/neoskin.se" target="_blank" rel="noopener noreferrer" title="neoskin.se@Instagram">
           
       <FaInstagram size={20}/>   
                   <div style={{width: '5px'}}></div>
-                  Instagram
+                  Följ oss på Instagram
                   
                 </a>  
       </div>

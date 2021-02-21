@@ -2,32 +2,34 @@ import styled from "@emotion/styled"
 
 
 export const StyledFooter = styled.footer`
-    height: 250px;
+
+    height: 400px;
     padding: 20px 0 60px 0;
-    background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(228,228,228,1) 0%, rgba(255,255,255,1) 100%, rgba(0,0,0,1) 100%);
+    border-top: 2px solid #e0e0e0;
+    background-color: ##e0e0e0;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23c1c1c1' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");    
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     position: relative;
-    
+    color: black;
+    font-size: 2rem;
+    @media screen and (max-width: 736px) {
+        font-size: 1.5rem;
+        flex-direction: column;
+     }
 
     ul {
-
+       
+        text-align: left;
+        margin-top: 2rem;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: center;    
     }
-
-    a {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    svg{
-        height: 20px;
-        width: 20px;
-    }
+a{
+    text-decoration: none;
+}
+   
 `

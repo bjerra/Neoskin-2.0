@@ -2,38 +2,27 @@ import styled from "@emotion/styled"
 
 export const StyledDesktop = styled.nav`
    
+    z-index:100;
     font-size: 1.5rem;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    padding: 0 3rem;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    background-color: ${({ theme }) => theme.COLOR.MENU.hex};
+    box-shadow: 0 5px 5px 1px rgba(0,0,0,0.15);
 
-    .sticky-wrapper{ 
-      z-index: 100;  
-      position: relative;
-
-    }
-  
-    .sticky .sticky-inner {
-      position: fixed; 
-      top: 0;
-      left: 0;
-      right: 0;
-
-    }
-
-    .sticky-inner {
-      height: 60px;
-      padding: 0 3rem;  
+    > div {
+      flex: 1;
+      width: 100%;
+      height: 100%;
       display: flex;
-      justify-content: space-evenly;
-      align-items: center;    
-      background-color: ${({ theme }) => theme.COLOR.MENU.hex};
-      box-shadow: 0 5px 5px 1px rgba(0,0,0,0.15);
+      align-items: center;
 
-      > div {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-
-      }
     }
 
     a{
