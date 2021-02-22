@@ -14,6 +14,7 @@ export const StyledServiceGrid = styled.div`
 
 export const Card = styled(Link)`
 box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.25);
+
   width: 100%;
   display: flex;
   align-items: center;
@@ -36,7 +37,7 @@ box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.25);
 
 export const Image = styled(Img)`
       height: 250px;
-      width 40%;
+      width 60%;
       @media screen and (max-width: 980px) {
         height: 150px;
       }
