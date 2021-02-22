@@ -20,7 +20,7 @@ box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.25);
   :nth-of-type(odd) {
     flex-direction: row-reverse;
   }
-  margin-top: .5rem;
+  margin-top: .75rem;
   text-align:center;
   text-decoration: none;
     h4 {
@@ -35,9 +35,9 @@ box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.25);
 
 
 export const Image = styled(Img)`
-      height: 225px;
+      height: 250px;
       width 40%;
       @media screen and (max-width: 980px) {
-        height: 100px;
+        height: 150px;
       }
 `
