@@ -1,9 +1,7 @@
 ---
 templateKey: index-page
 title: Auktoriserad hudterapeut med Gesällbrev
-image: /img/anais_aesthetica_consulting_blg_9107_6_xx.jpg
-image2: /img/blue.jpg
-image3: /img/green.jpg
+image: /img/chemex.jpg
 description: "Boka gärna din konsultation i samband med första behandlingen om
   du är osäker på vad du ska välja, eller börja med konsultationen om du känner
   dig helt vilsen. Du får en genomtänkt, professionell och skräddarsydd plan som
@@ -12,6 +10,8 @@ description: "Boka gärna din konsultation i samband med första behandlingen om
   Bokar du en behandling som inte är optimal med tanke på din hudtyp, tillstånd
   eller önskemål kan vi självklart bestämma att göra en annan behandling
   istället, bättre anpassad för dig. "
+image2: /img/blue.jpg
+image3: /img/green.jpg
 mainpitch:
   title: Hudvård och skönhet
   description: >
