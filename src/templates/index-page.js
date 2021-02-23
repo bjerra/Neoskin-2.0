@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import { Wrapper,Intro,Highlights, CTA, Services, About} from './styles/Styled.Indexpage'
 import {Banner, Logo, Features, Layout, ServiceGrid, Divider, Tour, Portrait} from '../components'
 import EmailList from '../components/EmailList'
+import {useCategoryData} from '../components/CategoryData'
 
 export const IndexPageTemplate = ({
   image,
@@ -11,8 +12,11 @@ export const IndexPageTemplate = ({
   image3,
   features,
   title,
-  description,
-}) => (
+  description
+}) => {
+
+  const categories= useCategoryData();
+  return(
   <Wrapper>
    
     <Banner image = {image.childImageSharp.fluid.src}>
@@ -43,8 +47,8 @@ export const IndexPageTemplate = ({
 
     <Services>
       <div className="inner">   
-        <h3>Behandlingar</h3>     
-        <ServiceGrid />  
+        <h3>Våra Behandlingar</h3>     
+        <ServiceGrid data={categories}/>  
       </div>       
     </Services>
     <Divider />
@@ -67,7 +71,7 @@ export const IndexPageTemplate = ({
     </About>
     <Divider />
   </Wrapper>
-)
+)}
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),

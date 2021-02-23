@@ -3,7 +3,8 @@ import { Helmet } from 'react-helmet'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing'
 import {  graphql } from 'gatsby'
 import {Layout, Video, BokaButton, Navbar} from '../components'
-import {Wrapper, Header, VideoContainer, Body, Close, Footer, ListHeader, ListContent} from './styles/Styled.servicemodal'
+import {Wrapper, Header, VideoContainer, Body, Close, Footer, ListHeader, ListContent, ListItem} from './styles/Styled.servicemodal'
+
 
 const ServiceModal = ({data}) => { 
     const [expanded, setExpanded] = useState("");
@@ -43,12 +44,10 @@ const ServiceModal = ({data}) => {
                             const isExpanded = expanded == title
                             
                             return(
-                            <React.Fragment key={title}>
-                                <ListHeader isExpanded={isExpanded} onClick={() => {setExpanded(isExpanded ? "" : title)}}>
-                                    <h4 dangerouslySetInnerHTML={{__html: title}}/>  
-                                </ListHeader>               
+                            <ListItem key={title} isExpanded={isExpanded} onClick={() => {setExpanded(isExpanded ? "" : title)}}>
+                                <ListHeader dangerouslySetInnerHTML={{__html: title}}/>              
                                 <ListContent isExpanded={isExpanded} dangerouslySetInnerHTML={{__html: text}}/>
-                            </React.Fragment>
+                            </ListItem>
                         )})          
                         }                                                                                                                                     
                 </Body>   

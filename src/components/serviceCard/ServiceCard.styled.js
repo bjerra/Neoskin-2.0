@@ -2,7 +2,9 @@ import styled from "@emotion/styled"
 
 export const StyledServiceCard = styled.div`
 
-height: 80px;
+height: 100px;
+border-radius: 10px;
+transition: transform .2s ease;
 position: relative;
 background: ${({ theme }) => theme.COLOR.LIGHT.hex};
 display: flex;
@@ -10,10 +12,19 @@ flex-direction: row;
 align-items: center;
 text-align: left;
 justify-content: space-between;
-border-bottom: 2px solid #ddd;
+margin: 1rem 0;
+box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.21);
+
+
 
 color: ${({ theme }) => theme.COLOR.DARK.hex};
 
+@media screen and (min-width: 980px) {
+    height: 150px;
+    :hover {
+        transform: scale(1.05, 1.05);
+      }
+  }
 
 
 > a {
@@ -26,10 +37,11 @@ color: ${({ theme }) => theme.COLOR.DARK.hex};
     flex-direction: column;
     position: relative;
     flex: 1;
+    
+   
 
-
-    div {
-        
+    span {
+        transition: transform .2s ease;
     }
     h5 {
         font-weight: 600;
@@ -39,18 +51,50 @@ color: ${({ theme }) => theme.COLOR.DARK.hex};
         color: #999;
         display: flex;
         align-items: center;
-        
+        font-size: 1.4rem;
+        > span {
+            padding-left: 1rem;
+            color: ${({ theme }) => theme.COLOR.INFO.hex};
+        }
+
+        @media screen and (max-width: 980px) {
+            font-size: 1rem;
+          }
     }
+
+    @media screen and (min-width: 980px) {
+        :hover {
+            background: #fafafa;
+            span, svg{
+                transform: scale(1.2, 1.2);
+            }
+          }
+      }
+
+  
     
 }
  > div{
         width: 65px;
        height: 100%; 
+       font-size: 1.4rem;
+
+       @media screen and (min-width: 980px) {
+        width: 150px;
+        font-size: 1.75rem;
+
+        :hover {
+            >a {
+                font-size: 2rem;
+                background: #eee;
+            }
+         
+         }
+      }
+
+     
       
 }
 
-svg{
-    color: ${({ theme }) => theme.COLOR.INFO.hex};
-}
 
 `

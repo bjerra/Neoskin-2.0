@@ -29,16 +29,18 @@ export const Body = styled.div`
     justify-content: flex-start;
 
 `
-
-export const ListHeader = styled.div`
-      flex:0
+export const ListItem = styled.div`
+     
+`
+export const ListHeader = styled.h4`
+     
 `
 export const ListContent = styled.div`
     overflow: hidden;
     transition: all 0.3s ease-out;
     height: auto;
     margin: .5rem;
-    flex: ${({ isExpanded }) => isExpanded ? '1' : '0'};   
+    display: ${({ isExpanded }) => isExpanded ? 'block' : 'none'};   
 `
 
 export const VideoContainer = styled.div`

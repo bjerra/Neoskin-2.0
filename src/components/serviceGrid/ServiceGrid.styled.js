@@ -10,11 +10,12 @@ export const StyledServiceGrid = styled.div`
   @media screen and (max-width: 980px) {
     
   }
+ 
 `
 
 export const Card = styled(Link)`
-box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.25);
-
+  box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.25);
+  transition: transform .2s ease;
   width: 100%;
   display: flex;
   align-items: center;
@@ -30,8 +31,12 @@ box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.25);
       color: black;
       flex: 1;
     }
+  
+    :hover {
+      opacity: .8;
+      transform: scale(1.05, 1.05);
+    }
 
-}
 `
 
 

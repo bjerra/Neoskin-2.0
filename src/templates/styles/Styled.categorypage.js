@@ -2,16 +2,6 @@ import styled from "@emotion/styled"
 
 export const Wrapper =  styled.div`
 
-    .inner {
-        margin: 0 auto;
-        width: 75rem;
-        max-width: calc(100% - 2rem); 
-        @media screen and (max-width: 480px) {
-          .inner {
-            max-width: calc(100% - 1rem); 
-            } 
-        }
-    }
 
 `
 export const Header = styled.section`
@@ -27,8 +17,13 @@ text-align: center;
 
 export const Body = styled.section`
     
-margin: auto;
-max-width: 900px; 
 
+margin: 0 auto;
+max-width: 900px; 
+padding: 3rem;
+
+@media screen and (max-width: 980px) {
+    padding: 1rem 0;
+  }
 
 `

@@ -3,7 +3,6 @@ import { StyledServiceCard } from './ServiceCard.styled'
 import { useTheme  } from '@emotion/react'
 import { Link } from 'gatsby'
 import {BokaButton} from '../../components'
-import { RiArrowDropDownLine } from 'react-icons/ri';
 
 const ServiceCard = ({service}) => {
 
@@ -18,7 +17,7 @@ const ServiceCard = ({service}) => {
           <h5>{service.title}</h5>
           <div>
           <p>
-            {time} , {price}  <RiArrowDropDownLine size={25}/>
+            {time} , {price} <span>mer info</span> 
           </p> 
         
           </div>

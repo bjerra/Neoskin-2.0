@@ -1,12 +1,13 @@
 import styled from "@emotion/styled"
-
+import Img from "gatsby-image"
 
 export const StyledFeatures = styled.div`
 
   height: 100%;
-  padding: 2rem 0;
-  display: flex;
-   
+  width: 50%;
+  margin: 0 auto;
+  padding: 1rem;
+  
   .swiper-button-next{
     color: #00000066;
     right: 0;
@@ -17,23 +18,34 @@ export const StyledFeatures = styled.div`
     left; 0;
   }
 
-}
+  @media screen and (max-width: 980px) {
+    width: 100%;
+  }
 
 `
 export const FeatureCard = styled.div`
 
     margin: auto;
-    max-width: 80%;
+    margin-bottom: 40px;
+    height: 100%;
+    width 800px;
     background-color: #eee;
     box-shadow: 8px 11px 14px 5px rgba(0,0,0,0.29);
+    @media screen and (max-width: 980px) {
+      width: 75%;
+    }
+  
+`
 
-    img{
-      display: block;
-      max-width:150px;
-      max-height:30px;
-      width: auto;
-      height: auto;
-      
-  }
+export const Image = styled(Img)`
+      height: 100%;
+      width 100%;
+`
 
+export const VideoContainer = styled.div`
+    height: 500px;
+    width 100%;
+    @media screen and (max-width: 980px) {
+      height: 100%;
+    }
 `

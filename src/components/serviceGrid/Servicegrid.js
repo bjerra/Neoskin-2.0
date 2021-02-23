@@ -1,12 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {StyledServiceGrid, Card, Image} from './ServiceGrid.styled'
-import {useCategoryData} from '../CategoryData'
 
-
-const ServiceGrid = () => {
-    const data = useCategoryData();
-
+const ServiceGrid = ({data}) => {
+   
     return (
 
     <StyledServiceGrid>

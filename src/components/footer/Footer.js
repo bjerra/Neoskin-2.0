@@ -1,5 +1,6 @@
 import React from 'react'
 import {StyledFooter} from './Footer.styled'
+import { Link } from 'gatsby'
 import { useTheme  } from '@emotion/react'
 
 const Footer = props => {
@@ -20,6 +21,7 @@ const Footer = props => {
             <ul>      
                   
             <li>
+              
               <a href="tel:+46722065222" title="+46722065222">
                
                 <p>
@@ -35,7 +37,13 @@ const Footer = props => {
                   </p>  
                 </a> 
              </li>
-          
+             <li>
+              <Link to="/nyhetsbrev">
+              <p>
+                  Nyhetsbrev
+                  </p>  
+              </Link>  
+             </li>
             </ul>
         </StyledFooter>
     )

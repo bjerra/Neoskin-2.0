@@ -61,6 +61,10 @@ export const Highlights = styled.section`
     @media screen and (max-width: 480px) {
         background-attachment: scroll;
       }
+
+      @media screen and (min-width: 980px) {
+        height: 700px;
+      }
    
 `
 
