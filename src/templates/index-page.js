@@ -115,7 +115,14 @@ export const pageQuery = graphql`
         title
         features{
           id
-          title     
+          title   
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }  
           info {
             text
             title
