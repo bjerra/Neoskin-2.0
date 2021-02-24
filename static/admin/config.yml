@@ -48,14 +48,7 @@ collections:
           - {label: Title, name: title, widget: string}    
           - {label: Image, name: image, widget: image}
           - {label: Description, name: description, widget: text}   
-          - label: "Features"
-              name: "features"
-              widget: "relation"
-              collection: "services"
-              search_fields: ["title", "category"]
-              value_field: "id"
-              mulitple: true
-              display_fields: ["title"] 
+          - {label: "Features", name: "features", widget: "relation", collection: "services", search_fields: ["title", "category"], value_field: "id",mulitple: true, display_fields: ["title"]}
           - {label: Image2, name: image2, widget: image}
           - {label: Image3, name: image3, widget: image}
           
