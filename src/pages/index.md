@@ -47,7 +47,7 @@ description: "Boka gärna din konsultation i samband med första behandlingen om
 features:
   - Ultraljudsregöring
   - Fransfärg
-  - MEDICAL Borttagning av fibrom & pigmentfläckar m. m
+  - COSMETICAL Lift & Tight Plasmaflöde ögon eller mun
 image2: /img/blue.jpg
 image3: /img/green.jpg
 ---
