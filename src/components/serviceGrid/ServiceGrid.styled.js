@@ -6,9 +6,10 @@ import { Link } from "gatsby"
 export const StyledServiceGrid = styled.div`
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap:wrap;
   @media screen and (max-width: 980px) {
-    
+    flex-direction: column;
   }
  
 `
@@ -32,9 +33,16 @@ export const Card = styled(Link)`
       flex: 1;
     }
   
-    :hover {
-      opacity: .8;
-      transform: scale(1.05, 1.05);
+    @media screen and (min-width: 980px) {
+      width: 400px;
+      :nth-of-type(odd) {
+        margin-right: 50px;
+      }
+      
+      :hover {
+        opacity: .8;
+        transform: scale(1.05, 1.05);
+      }
     }
 
 `

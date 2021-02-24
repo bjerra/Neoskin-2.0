@@ -94,7 +94,7 @@ const BASE_FONT_SIZE = `${18}px`
 
 const H1 = css`
   font-family: Quicksand;
-  font-size: 4.209em;
+  font-size: 3.209em;
   font-weight: 500;
   margin-bottom: 0.4em;
 
@@ -105,29 +105,29 @@ const H1 = css`
 
 const H2 = css`
   font-family: Quicksand;
-  font-size: 3.157em;
+  font-size: 2.157em;
   font-weight: 500;
   margin-bottom: 0.4em;
 
   @media screen and (max-width: ${BREAKPOINTS.MOBILE}) {
-    font-size: 1.759em;
+    font-size: 1.559em;
   }
 `
 
 const H3 = css`
 font-family: Quicksand;
-  font-size: 2.369em;
+  font-size: 1.769em;
   font-weight: 600;
   margin-bottom: 0.4em;
 
   @media screen and (max-width: ${BREAKPOINTS.MOBILE}) {
-    font-size: 1.509em;
+    font-size: 1.309em;
   }
 `
 
 const H4 = css`
 font-family: Quicksand;
-  font-size: 1.777em;
+  font-size: 1.377em;
   font-weight: 500;
   margin-bottom: 0.4em;
 
@@ -137,8 +137,8 @@ font-family: Quicksand;
 `
 
 const H5 = css`
-font-family: Quicksand;
-  font-size: 1.333em;
+  font-family: Quicksand;
+  font-size: 1em;
   font-weight: 500;
   margin-bottom: 0.4em;
 

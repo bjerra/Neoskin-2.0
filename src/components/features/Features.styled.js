@@ -1,51 +1,62 @@
 import styled from "@emotion/styled"
 import Img from "gatsby-image"
+import { Link } from 'gatsby'
 
 export const StyledFeatures = styled.div`
 
-  height: 100%;
-  width: 50%;
+
   margin: 0 auto;
-  padding: 1rem;
   
   .swiper-button-next{
-    color: #00000066;
+    color: #ffffff66;
     right: 0;
   }
 
   .swiper-button-prev{
-    color: #00000066;
+    color: #ffffff66;
     left; 0;
   }
 
-  @media screen and (max-width: 980px) {
+  .swiper-container {
     width: 100%;
+    height: 100%;
   }
 
-`
-export const FeatureCard = styled.div`
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
 
-    margin: auto;
+`
+export const FeatureCard = styled(Link)`
+    border: 2px solid black;
+    margin: 1rem;
     margin-bottom: 40px;
     height: 100%;
-    width 800px;
+    width: 50%;
     background-color: #eee;
     box-shadow: 8px 11px 14px 5px rgba(0,0,0,0.29);
     @media screen and (max-width: 980px) {
-      width: 75%;
+      width: 100%;
     }
-  
+
+    h3{
+      position: absolute;
+      top: 1.5rem;
+      left: 0;
+      right:0;
+      z-index: 1;
+    }
+
+
 `
 
 export const Image = styled(Img)`
       height: 100%;
       width 100%;
-`
-
-export const VideoContainer = styled.div`
-    height: 500px;
-    width 100%;
-    @media screen and (max-width: 980px) {
-      height: 100%;
-    }
 `

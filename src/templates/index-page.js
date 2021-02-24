@@ -47,7 +47,7 @@ export const IndexPageTemplate = ({
 
     <Services>
       <div className="inner">   
-        <h3>Våra Behandlingar</h3>     
+        <h2>Våra Behandlingar</h2>     
         <ServiceGrid data={categories}/>  
       </div>       
     </Services>
@@ -60,7 +60,7 @@ export const IndexPageTemplate = ({
 
     <About>
     <div className="inner">  
-       <h3>Om</h3>         
+       <h2>Om</h2>         
       <div className="column">
         <Portrait />
         <p>Anais blablablabl</p>

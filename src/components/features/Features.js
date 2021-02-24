@@ -1,9 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {StyledFeatures, FeatureCard, Image, VideoContainer} from './Features.styled'
+import {StyledFeatures, FeatureCard, Image} from './Features.styled'
 import SwiperCore, { Navigation, Pagination, A11y, Autoplay, EffectCoverflow } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import {ServiceCard, Video} from '../../components'
 
 import 'swiper/swiper-bundle.min.css';
 
@@ -18,22 +17,22 @@ const FeatureGrid = ({ services }) => {
   <Swiper
       spaceBetween={0}
       slidesPerView={1}
-      loop={false}
+      loop={true}
+      autoplay= {{
+        delay: 3500,
+        disableOnInteraction: true,
+      }}
       navigation
       pagination={{ clickable: true }}
      
+     
     >
        {services.map(service => (
-          <SwiperSlide key={service.serviceId}>      
-            <FeatureCard>
-              <VideoContainer>
+          <SwiperSlide key={service.serviceId} >
+            <FeatureCard to={`/behandlingar/${service.slug}`} state={{modal: true}}>
+                <h3>{service.title}</h3>
               <Image fluid={service.image?.childImageSharp.fluid} alt={service.category}/>
-              </VideoContainer>
-           
-              <ServiceCard service={service}/>
-    
             </FeatureCard>
-           
           </SwiperSlide>
         ))}
  
