@@ -114,6 +114,19 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
+        features{
+          id
+          title     
+          info {
+            text
+            title
+          }
+          price
+          slug
+          time
+          url
+          category
+        }
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
@@ -136,21 +149,6 @@ export const pageQuery = graphql`
           }
         }  
         description
-      }
-    }
-    allServicesJson(filter: {feature: {eq: true}}) {
-      nodes {
-        id
-        title     
-        info {
-          text
-          title
-        }
-        price
-        slug
-        time
-        url
-        category
       }
     }
   }

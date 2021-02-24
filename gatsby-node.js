@@ -5,12 +5,19 @@ const { createFilePath } = require('gatsby-source-filesystem')
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
   const typeDefs = `
-    type allServicesJson implements Node {
-      feature: Boolean
+
+    type MarkdownRemark implements Node {
+      frontmatter: Frontmatter
     }
+    type Frontmatter {
+      features: ServicesJson @link(by: "title") 
+      
+    }
+
   `
   createTypes(typeDefs)
 }
+
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions

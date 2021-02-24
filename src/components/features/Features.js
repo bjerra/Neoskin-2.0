@@ -1,6 +1,5 @@
-import React, {useState} from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
-import Img from "gatsby-image"
 import {StyledFeatures, FeatureCard, Image, VideoContainer} from './Features.styled'
 import SwiperCore, { Navigation, Pagination, A11y, Autoplay, EffectCoverflow } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -12,7 +11,7 @@ SwiperCore.use([Navigation, Pagination, A11y, Autoplay, EffectCoverflow]);
 
 
 const FeatureGrid = ({ services }) => {
-  
+
   return(
   <StyledFeatures>
     
