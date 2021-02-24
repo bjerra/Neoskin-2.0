@@ -3,7 +3,6 @@ import styled from "@emotion/styled"
 export const StyledServiceCard = styled.div`
 
 height: 100px;
-border-radius: 10px;
 transition: transform .2s ease;
 position: relative;
 background: ${({ theme }) => theme.COLOR.LIGHT.hex};
@@ -12,17 +11,15 @@ flex-direction: row;
 align-items: center;
 text-align: left;
 justify-content: space-between;
-margin: 1rem 0;
-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.21);
-
-
+margin-top: 2px;
+box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.21);
 
 color: ${({ theme }) => theme.COLOR.DARK.hex};
 
 @media screen and (min-width: 980px) {
     height: 150px;
-    :hover {
-        transform: scale(1.05, 1.05);
+    :hover {   
+        transform: scale(0.98, 0.98);
       }
   }
 
@@ -38,10 +35,10 @@ color: ${({ theme }) => theme.COLOR.DARK.hex};
     position: relative;
     flex: 1;
     
-   
-
     span {
         transition: transform .2s ease;
+        color: ${({ theme }) => theme.COLOR.INFO.hex};
+        transform-origin: left;
     }
     h5 {
         font-weight: 600;
@@ -52,10 +49,6 @@ color: ${({ theme }) => theme.COLOR.DARK.hex};
         display: flex;
         align-items: center;
         font-size: 1.4rem;
-        > span {
-            padding-left: 1rem;
-            color: ${({ theme }) => theme.COLOR.INFO.hex};
-        }
 
         @media screen and (max-width: 980px) {
             font-size: 1rem;
@@ -64,9 +57,9 @@ color: ${({ theme }) => theme.COLOR.DARK.hex};
 
     @media screen and (min-width: 980px) {
         :hover {
-            background: #fafafa;
-            span, svg{
-                transform: scale(1.2, 1.2);
+            background: #fbfbfb;
+            span{
+                transform: scale(1.5, 1.5);
             }
           }
       }

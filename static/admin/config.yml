@@ -32,10 +32,9 @@ collections:
     fields:          
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Id", name: "id", widget: "string"}
-      - {label: "Image", name: "image", widget: image}
-      - {label: "Video", name: "video", widget: "string"}
+      - {label: "Image", name: "image", required: false, widget: image}
+      - {label: "Video", name: "video", required: false, widget: "string"}
       - {label: Info, name: info ,widget: list,fields: [{label: "Title",name: "title", widget: "string"}, {label: "Text",name: "text", widget: "text"}]} 
-      - {label: "Feature", name: "feature", widget: "boolean", default: false}
   
 
   - name: "pages"
@@ -48,7 +47,15 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
           - {label: Title, name: title, widget: string}    
           - {label: Image, name: image, widget: image}
-          - {label: Description, name: description, widget: text}    
+          - {label: Description, name: description, widget: text}   
+          - label: "Features"
+              name: "features"
+              widget: "relation"
+              collection: "services"
+              search_fields: ["title", "category"]
+              value_field: "id"
+              mulitple: true
+              display_fields: ["title"] 
           - {label: Image2, name: image2, widget: image}
           - {label: Image3, name: image3, widget: image}
           

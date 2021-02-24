@@ -2,6 +2,7 @@ import React from "react"
 import styled from "@emotion/styled"
 
 export const StyledButton = styled.a`
+transition: all .2s ease;
     background-color: #e8e8e847;
     color: #23A994;
     display: flex;

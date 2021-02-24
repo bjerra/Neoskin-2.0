@@ -28,10 +28,7 @@ const FeatureGrid = ({ services }) => {
           <SwiperSlide key={service.serviceId}>      
             <FeatureCard>
               <VideoContainer>
-                <Video title={service.title} url={"https://www.youtube.com/embed/jY9JI4nHCpE"} />
-                { service.image &&  
-              <Image fluid={service.image.childImageSharp.fluid} alt={service.category}/>
-              }
+              <Image fluid={service.image?.childImageSharp.fluid} alt={service.category}/>
               </VideoContainer>
            
               <ServiceCard service={service}/>

@@ -16,12 +16,12 @@ const ServiceCard = ({service}) => {
             state={{modal: true}}>
           <h5>{service.title}</h5>
           <div>
-          <p>
-            {time} , {price} <span>mer info</span> 
-          </p> 
-        
+            <p>
+              {time} , {price} 
+            </p> 
+            
           </div>
-          
+          <span>mer info</span> 
         </Link>
         <div>
             <BokaButton url={url}/>    
