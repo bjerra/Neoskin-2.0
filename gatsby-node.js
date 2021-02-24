@@ -10,7 +10,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       frontmatter: Frontmatter
     }
     type Frontmatter {
-      features: ServicesJson @link(by: "title") 
+      features: [ServicesJson] @link(by: "title") 
       
     }
 

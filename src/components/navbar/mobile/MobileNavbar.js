@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Link } from 'gatsby'
 import { StyledMobile } from './MobileNavbar.styled';
 import DropDown from '../dropdown/Dropdown'
@@ -24,18 +24,18 @@ const Navbar = props => {
                 Hem
             </Link> 
           
-            <DropDown open={dropDownOpen == "Kontakt"} content={<ContactMenu />} setOpen={() => setDropDownOpen(dropDownOpen == "Kontakt" ? "": "Kontakt")}>
+            <DropDown open={dropDownOpen === "Kontakt"} content={<ContactMenu />} setOpen={() => setDropDownOpen(dropDownOpen === "Kontakt" ? "": "Kontakt")}>
               <BiNews size={25}/> 
               Kontakt
             </DropDown>
 
 
-            <DropDown open={dropDownOpen == "Behandlingar"} content={<ServiceMenu />} setOpen={() => setDropDownOpen(dropDownOpen == "Behandlingar" ? "": "Behandlingar")}>
+            <DropDown open={dropDownOpen === "Behandlingar"} content={<ServiceMenu />} setOpen={() => setDropDownOpen(dropDownOpen === "Behandlingar" ? "": "Behandlingar")}>
               <FaHandHoldingHeart size={25}/> 
               Behandlingar
             </DropDown>
 
-            <DropDown open={dropDownOpen == "Mer"} content={<MoreMenu />} setOpen={() => setDropDownOpen(dropDownOpen == "Mer" ? "": "Mer")}>
+            <DropDown open={dropDownOpen === "Mer"} content={<MoreMenu />} setOpen={() => setDropDownOpen(dropDownOpen === "Mer" ? "": "Mer")}>
               <BiDotsVertical size={25}/> 
               Mer
             </DropDown>
