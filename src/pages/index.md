@@ -1,17 +1,5 @@
 ---
 templateKey: index-page
-title: Auktoriserad hudterapeut med Gesällbrev
-image: /img/chemex.jpg
-description: "Boka gärna din konsultation i samband med första behandlingen om
-  du är osäker på vad du ska välja, eller börja med konsultationen om du känner
-  dig helt vilsen. Du får en genomtänkt, professionell och skräddarsydd plan som
-  lägger allt fokus på dig, dina individuella förutsättningar och dina önskemål
-  för att tillsammans förbättra din vardag, självkänsla eller livskvalitet.
-  Bokar du en behandling som inte är optimal med tanke på din hudtyp, tillstånd
-  eller önskemål kan vi självklart bestämma att göra en annan behandling
-  istället, bättre anpassad för dig. "
-image2: /img/blue.jpg
-image3: /img/green.jpg
 mainpitch:
   title: Hudvård och skönhet
   description: >
@@ -46,4 +34,20 @@ intro:
 
         Vårt emblem är din trygghet – välj en hudterapeut som är medlem i SHR.
   description: x
+title: Auktoriserad hudterapeut med Gesällbrev
+image: /img/chemex.jpg
+description: "Boka gärna din konsultation i samband med första behandlingen om
+  du är osäker på vad du ska välja, eller börja med konsultationen om du känner
+  dig helt vilsen. Du får en genomtänkt, professionell och skräddarsydd plan som
+  lägger allt fokus på dig, dina individuella förutsättningar och dina önskemål
+  för att tillsammans förbättra din vardag, självkänsla eller livskvalitet.
+  Bokar du en behandling som inte är optimal med tanke på din hudtyp, tillstånd
+  eller önskemål kan vi självklart bestämma att göra en annan behandling
+  istället, bättre anpassad för dig. "
+features:
+  - 38
+  - 43
+  - 12
+image2: /img/blue.jpg
+image3: /img/green.jpg
 ---
