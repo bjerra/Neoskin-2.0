@@ -19,7 +19,7 @@ const Navbar = props => {
     useOnClickOutside(node, () => setDropDownOpen(""));
 
     return(
-      <StyledDesktop theme={theme} ref={node}> 
+      <StyledDesktop theme={theme} ref={node} onMouseLeave={() => setDropDownOpen("")}> 
             <div>
               <Link to="/">
                 Hem

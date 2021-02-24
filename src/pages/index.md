@@ -45,15 +45,9 @@ description: "Boka gärna din konsultation i samband med första behandlingen om
   eller önskemål kan vi självklart bestämma att göra en annan behandling
   istället, bättre anpassad för dig. "
 features:
-<<<<<<< HEAD
   - Ultraljudsregöring
   - Fransfärg
   - MEDICAL Borttagning av fibrom & pigmentfläckar m. m
- 
-=======
-  - Ansiktsbehandling Classique
-  - "Fraxium mildare intensitet - full face "
->>>>>>> 071d22928da3cf12a3ba151b9e84f2949ae0f82d
 image2: /img/blue.jpg
 image3: /img/green.jpg
 ---
