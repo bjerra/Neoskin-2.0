@@ -45,9 +45,8 @@ description: "Boka gärna din konsultation i samband med första behandlingen om
   eller önskemål kan vi självklart bestämma att göra en annan behandling
   istället, bättre anpassad för dig. "
 features:
-  - 38
-  - 43
-  - 12
+  - Ansiktsbehandling Classique
+  - "Fraxium mildare intensitet - full face "
 image2: /img/blue.jpg
 image3: /img/green.jpg
 ---
