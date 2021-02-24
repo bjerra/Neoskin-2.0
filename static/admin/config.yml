@@ -18,6 +18,7 @@ collections:
     extension: "json"
     folder: "src/data/categories"
     create: false
+    delete: false
     fields:    
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
@@ -29,6 +30,11 @@ collections:
     extension: "json"
     folder: "src/data/services"
     create: false
+    delete: false
+    view_filters:
+      - label: "Kategori"
+        field: category
+        pattern: 'Ansikte'
     fields:          
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Id", name: "id", widget: "string"}
