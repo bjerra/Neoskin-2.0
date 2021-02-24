@@ -40,8 +40,8 @@ export const IndexPageTemplate = ({
     </Intro>
     <Divider />
     <Highlights image = {image2.childImageSharp.fluid.src}>
-        
-          <Features services={features} />
+        {features && <Features services={features} />}
+          
         
     </Highlights>
 
@@ -84,7 +84,6 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-  const features = data.allServicesJson.nodes
   return (
     <Layout>
       <IndexPageTemplate
@@ -92,7 +91,7 @@ const IndexPage = ({ data }) => {
         image2={frontmatter.image2}
         image3={frontmatter.image3}
         title={frontmatter.title}
-        features={features}
+        features={ frontmatter.features}
         description={frontmatter.description}
       />
     </Layout>
