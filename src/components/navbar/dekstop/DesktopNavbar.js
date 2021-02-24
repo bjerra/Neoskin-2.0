@@ -21,7 +21,7 @@ const Navbar = props => {
     return(
       <StyledDesktop theme={theme} ref={node}> 
             <div>
-            <Link to="/">
+              <Link to="/">
                 Hem
                 </Link> 
             </div>
