@@ -84,7 +84,7 @@ export const CTA = styled.section`
 
 export const Services = styled.section`
 
-    padding: 4rem 1rem 6rem 1rem ;
+    padding: 4rem 0 6rem 0 ;
 
     .inner {
         margin: 0 auto;

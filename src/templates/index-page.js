@@ -35,21 +35,16 @@ export const IndexPageTemplate = ({
           {description}
         </p>
       </header>     
-      </div>
-      
+      </div>  
     </Intro>
     <Divider />
     <Highlights image = {image2.childImageSharp.fluid.src}>
         {features && <Features services={features} />}
-          
-        
     </Highlights>
 
     <Services>
-      <div className="inner">   
         <h2>Våra Behandlingar</h2>     
-        <ServiceGrid data={categories}/>  
-      </div>       
+        <ServiceGrid data={categories}/>       
     </Services>
     <Divider />
     <CTA image = {image3.childImageSharp.fluid.src}>

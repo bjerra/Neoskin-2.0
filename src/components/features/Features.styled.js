@@ -12,16 +12,6 @@ export const StyledFeatures = styled.div`
     right: 0;
   }
 
-  .swiper-button-prev{
-    color: #ffffff66;
-    left; 0;
-  }
-
-  .swiper-container {
-    width: 100%;
-    height: 100%;
-  }
-
   .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -34,20 +24,25 @@ export const StyledFeatures = styled.div`
 
 `
 export const FeatureCard = styled(Link)`
+    position: relative;
     border: 2px solid black;
     margin: 1rem;
     margin-bottom: 40px;
     height: 100%;
-    width: 50%;
+    width: 30%;
     background-color: #eee;
     box-shadow: 8px 11px 14px 5px rgba(0,0,0,0.29);
     @media screen and (max-width: 980px) {
       width: 100%;
+      h3{
+        font-size: 1.25rem;
+      }
     }
 
     h3{
       position: absolute;
-      top: 1.5rem;
+      font-size: 1.75rem;
+      top: .5rem;
       left: 0;
       right:0;
       z-index: 1;

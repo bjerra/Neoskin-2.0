@@ -6,21 +6,30 @@ import { Link } from "gatsby"
 export const StyledServiceGrid = styled.div`
 
   display: flex;
-  flex-direction: row;
-  flex-wrap:wrap;
+  margin: auto;
+  padding: 0 .5rem;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  width: 1000px; 
+  max-width: 90%;
   @media screen and (max-width: 980px) {
-    flex-direction: column;
+    width: 100%; 
+    max-width: 100%;
   }
  
 `
 
 export const Card = styled(Link)`
-  box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.25);
+  background: #fbf4ec;
+  box-shadow: 0 0 2px 1px rgba(0,0,0,0.5);
   transition: transform .2s ease;
+  border-radius: 0 50px 50px 0;
   width: 100%;
   display: flex;
   align-items: center;
   :nth-of-type(odd) {
+    border-radius: 50px 0 0 50px;
     flex-direction: row-reverse;
   }
   margin-top: .75rem;
@@ -34,11 +43,7 @@ export const Card = styled(Link)`
     }
   
     @media screen and (min-width: 980px) {
-      width: 400px;
-      :nth-of-type(odd) {
-        margin-right: 50px;
-      }
-      
+      margin: 1rem;
       :hover {
         opacity: .8;
         transform: scale(1.05, 1.05);
@@ -49,7 +54,7 @@ export const Card = styled(Link)`
 
 
 export const Image = styled(Img)`
-      height: 250px;
+      height: 200px;
       width 60%;
       @media screen and (max-width: 980px) {
         height: 150px;
