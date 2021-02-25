@@ -132,7 +132,7 @@ font-family: Quicksand;
   margin-bottom: 0.4em;
 
   @media screen and (max-width: ${BREAKPOINTS.MOBILE}) {
-    font-size: 1.209em;
+    font-size: 1.109em;
   }
 `
 

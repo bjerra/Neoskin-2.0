@@ -82,7 +82,7 @@ export const Close = styled(Link)`
 
 export const Footer = styled.div`
     
-    width: 100%;
-    height: 40px;
+    width: 60px;
+    height: 60px;
 
 `

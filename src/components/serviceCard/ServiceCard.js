@@ -14,7 +14,7 @@ const ServiceCard = ({service}) => {
         <Link  
             to={`/behandlingar/${service.slug}`} 
             state={{modal: true}}>
-          <h5>{service.title}</h5>
+          <h4>{service.title}</h4>
           <div>
             <p>
               {time} , {price} 
