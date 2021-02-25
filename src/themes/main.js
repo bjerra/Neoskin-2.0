@@ -127,7 +127,7 @@ font-family: Quicksand;
 
 const H4 = css`
 font-family: Quicksand;
-  font-size: 1.377em;
+  font-size: 1.177em;
   font-weight: 500;
   margin-bottom: 0.4em;
 

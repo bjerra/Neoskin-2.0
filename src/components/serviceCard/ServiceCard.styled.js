@@ -2,7 +2,7 @@ import styled from "@emotion/styled"
 
 export const StyledServiceCard = styled.div`
 
-height: 90px;
+height: 80px;
 transition: transform .2s ease;
 position: relative;
 background: ${({ theme }) => theme.COLOR.LIGHT.hex};
@@ -36,9 +36,9 @@ color: ${({ theme }) => theme.COLOR.DARK.hex};
     flex: 1;
     border-right: 1px solid #ddd;
     span {
+        transform-origin: left;
         transition: transform .2s ease;
         color: ${({ theme }) => theme.COLOR.INFO.hex};
-        transform-origin: left;
     }
     h4 {
         font-weight: 600;

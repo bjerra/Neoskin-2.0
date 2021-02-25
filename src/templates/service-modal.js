@@ -2,19 +2,22 @@ import React,{ useState } from 'react'
 import { Helmet } from 'react-helmet'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing'
 import {  graphql } from 'gatsby'
+import { useTheme  } from '@emotion/react'
 import {Layout, Video, BokaButton, Navbar} from '../components'
-import {Wrapper, Header, VideoContainer, Body, Close, Footer, ListHeader, ListContent, ListItem} from './styles/Styled.servicemodal'
+import {Wrapper, Header, VideoContainer, Body, Close, Footer, ListHeader, ListContent} from './styles/Styled.servicemodal'
 
 
 const ServiceModal = ({data}) => { 
-    const [expanded, setExpanded] = useState("");
+    const [expanded, setExpanded] = useState({title:"", height: 300});
     const {info, title, ...details} = data.servicesJson
+    const theme = useTheme()
     let description = ""
     if(info != null){
         info.forEach(element => {
             description += element.text
         });
     } 
+
     
     return(
   <ModalRoutingContext.Consumer>
@@ -29,25 +32,28 @@ const ServiceModal = ({data}) => {
                         content={description}
                         />
                 </Helmet>    
-                <Close to={closeTo}/>   
+             
                 <Header>
                     <h1>
                         {title}                            
-                    </h1>         
+                    </h1>    
+                    <Close to={closeTo}/>        
                 </Header>
                 <VideoContainer>
                     <Video title="test" url={"https://www.youtube.com/embed/jY9JI4nHCpE"} />     
                 </VideoContainer>
-                <Body>                                                                                              
+                <Body h={50 + info.length *40 + ((expanded.height/50) * 20)}>                                                                                              
                         {info &&
                         info.map(({title, text}) => {
-                            const isExpanded = expanded == title
+                            const isExpanded = expanded.title === title
                             
                             return(
-                            <ListItem key={title} isExpanded={isExpanded} onClick={() => {setExpanded(isExpanded ? "" : title)}}>
-                                <ListHeader dangerouslySetInnerHTML={{__html: title}}/>              
-                                <ListContent isExpanded={isExpanded} dangerouslySetInnerHTML={{__html: text}}/>
-                            </ListItem>
+                                <React.Fragment>
+                                    <ListHeader dangerouslySetInnerHTML={{__html: title}} key={title} isExpanded={isExpanded} onClick={() => {setExpanded(isExpanded ? {title: "", height: 300} : {title: title, height: text.length})}}/>            
+                                    <ListContent isExpanded={isExpanded} dangerouslySetInnerHTML={{__html: text}}/>
+                                </React.Fragment>
+                               
+                        
                         )})          
                         }                                                                                                                                     
                 </Body>   

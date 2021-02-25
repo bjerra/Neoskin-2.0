@@ -3,8 +3,8 @@ import styled from "@emotion/styled"
 
 export const StyledButton = styled.a`
     transition: all .2s ease;
-    color: #fff;
-    background-color: #23A994;
+
+    background-color: #afcbea;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,8 +12,8 @@ export const StyledButton = styled.a`
     height: 100%;
     border-radius: 50%;
     text-decoration: none;
-    font-weight: 600;
-    box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.21);
+    box-shadow: 0px 0px 0 2px rgba(0,0,0,0.21);
+    font-size: 1.25rem;
 
 `
 
