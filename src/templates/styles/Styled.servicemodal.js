@@ -20,6 +20,7 @@ export const Header = styled.div`
    text-align:center;
    height: 3rem;
    margin-right: 2rem;
+   margin-bottom: .5rem;
 `
 
 export const Body = styled.div`
@@ -44,7 +45,11 @@ export const ListContent = styled.div`
 `
 
 export const VideoContainer = styled.div`
-    height: 200px;
+    height: 50%;
+    width: 100%;
+    @media screen and (min-width: 980px) {
+        
+      }
 `
 
 export const Close = styled(Link)`

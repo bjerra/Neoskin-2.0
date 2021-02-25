@@ -58,7 +58,7 @@ module.exports = {
               bottom: '10%',
               right: '5%',
               left: '5%',
-              maxWidth: '1000px',
+              maxWidth: '600px',
               margin: 'auto',
               overflow: `hidden`,
               WebkitOverflowScrolling: `touch`,

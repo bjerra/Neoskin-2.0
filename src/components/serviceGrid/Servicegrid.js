@@ -18,10 +18,10 @@ const ServiceGrid = ({data}) => {
                     alt={title} 
                   
                     />    
-                <h4  
+                <h5  
                    >
                     {title}
-                </h4>           
+                </h5>           
             </Card>
         )}
         )}

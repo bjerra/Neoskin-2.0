@@ -8,7 +8,8 @@ export const StyledServiceGrid = styled.div`
   display: flex;
   margin: auto;
   padding: 0 .5rem;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content:space-around;
   align-items: center;
   width: 1000px; 
@@ -16,6 +17,7 @@ export const StyledServiceGrid = styled.div`
   @media screen and (max-width: 980px) {
     width: 100%; 
     max-width: 100%;
+    flex-direction: column;
   }
  
 `
@@ -35,7 +37,7 @@ export const Card = styled(Link)`
   margin-top: .75rem;
   text-align:center;
   text-decoration: none;
-    h4 {
+    h5 {
       font-weight: 600;
       margin: 0 1rem;
       color: black;
@@ -43,6 +45,7 @@ export const Card = styled(Link)`
     }
   
     @media screen and (min-width: 980px) {
+      width: 400px; 
       margin: 1rem;
       :hover {
         opacity: .8;

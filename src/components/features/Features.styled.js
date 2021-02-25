@@ -4,11 +4,10 @@ import { Link } from 'gatsby'
 
 export const StyledFeatures = styled.div`
 
-background: #eee;
   margin: 0 auto;
-  
-
+  background: #eee;
   .swiper-slide {
+   
     text-align: center;
     font-size: 18px;
     display: flex;
@@ -19,28 +18,18 @@ background: #eee;
 
 `
 export const FeatureCard = styled(Link)`
+    
     position: relative;
-    box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.5);
-    margin: 1rem;
-    margin-bottom: 40px;
+    margin: .5rem 1rem 2rem 1rem;
     height: 100%;
     width: 30%;
-    
-
+    text-decoration: none;
+  
     @media screen and (max-width: 980px) {
       width: 100%;
       h3{
         font-size: 1.25rem;
       }
-    }
-
-    h3{
-      position: absolute;
-      font-size: 1.75rem;
-      top: .5rem;
-      left: 0;
-      right:0;
-      z-index: 1;
     }
 
 
