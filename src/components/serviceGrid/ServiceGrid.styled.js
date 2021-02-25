@@ -9,7 +9,7 @@ export const StyledServiceGrid = styled.div`
   margin: auto;
   padding: 0 .5rem;
   flex-direction: column;
-  justify-content:center;
+  justify-content:space-around;
   align-items: center;
   width: 1000px; 
   max-width: 90%;
@@ -24,12 +24,12 @@ export const Card = styled(Link)`
   background: #fbf4ec;
   box-shadow: 0 0 2px 1px rgba(0,0,0,0.5);
   transition: transform .2s ease;
-  border-radius: 0 50px 50px 0;
+
   width: 100%;
   display: flex;
   align-items: center;
   :nth-of-type(odd) {
-    border-radius: 50px 0 0 50px;
+
     flex-direction: row-reverse;
   }
   margin-top: .75rem;
