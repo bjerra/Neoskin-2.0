@@ -33,7 +33,7 @@ export const ListItem = styled.div`
     cursor: pointer;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
-    box-shadow: 0 2px 10px 0 rgba(0,0,0,1); 
+    box-shadow: 0 0px 3px 0 rgba(0,0,0,.3); 
     transition: all 0.3s ease;
     position: relative;
     background: #fff;
@@ -96,7 +96,7 @@ export const Close = styled(Link)`
 `
 
 export const Footer = styled.div`
-    box-shadow: 0 2px 10px 0 rgba(0,0,0,1); 
+box-shadow: 0 0px 5px 0 rgba(0,0,0,.3); 
     position: absolute;
     bottom:0;
     left: 0;
