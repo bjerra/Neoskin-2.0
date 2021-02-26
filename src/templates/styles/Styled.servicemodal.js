@@ -4,12 +4,13 @@ import { Link } from 'gatsby'
 export const Wrapper = styled.div`
     height: 100%;
     width: 100%;
-    padding: .5rem;
     background-color: #fff;
     line-height: 1.25;
     border-radius: .5rem; 
     border: 3px solid black;
-    overflow-y: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 `
 
 export const Header = styled.div`
@@ -21,26 +22,40 @@ export const Header = styled.div`
 
 export const Body = styled.div`
    
+    background: #fff;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height:  ${({ h }) => h}px;
-    margin-bottom: 100px;
+    height: 100%;
+    position: relative;
 
+`
+
+export const ListItem = styled.div`
+    cursor: pointer;
+    box-shadow: 0 -1px 5px 0 rgba(0,0,0,0.5); 
+    transition: all 0.3s ease;
+    position: relative;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    right:0;
+    top: ${({ index }) => index * 40}px;
+    z-index: ${({ index }) => index};
+    transform:  translateY(${({ isExpanded }) => isExpanded ? 'calc(-100% + 40px)' : '0'});  
+
+   
 `
 export const ListHeader = styled.h4`
-    box-shadow: 0 1px 0 0 rgba(0,0,0,0.21);
-    height: 40px;
     display: flex;
     align-items: center;
-
+    justify-content: center;
+    height: 40px;
 `
 export const ListContent = styled.div`
-    overflow: hidden;
-    transition: all 0.3s ease-out;
-    height: auto;
-    flex: ${({ isExpanded }) => isExpanded ? '1' : '0'};   
+    
+    margin: .5rem 0;
+    padding  .5rem 1rem;
+    height:auto;
+  
 `
 
 export const VideoContainer = styled.div`
@@ -79,17 +94,27 @@ export const Close = styled(Link)`
 `
 
 export const Footer = styled.div`
-    
+    box-shadow: 0 -2px 0 0 rgba(0,0,0,0.21); 
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 1rem;
-    width: 60px;
-    height: 60px;
+    bottom:0;
+    left: 0;
+    right:0;
+    background: #fff;
+    top: ${({ index }) => index * 40}px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    div{
+        width: 60px;
+        height: 60px;
 
-    @media screen and (min-width: 980px) {
-        width: 90px;
-        height: 90px;
+        @media screen and (min-width: 980px) {
+            width: 90px;
+            height: 90px;
+        }
     }
-
+    
+  
 `

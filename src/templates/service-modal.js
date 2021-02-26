@@ -4,11 +4,11 @@ import { ModalRoutingContext } from 'gatsby-plugin-modal-routing'
 import {  graphql } from 'gatsby'
 import { useTheme  } from '@emotion/react'
 import {Layout, Video, BokaButton, Navbar} from '../components'
-import {Wrapper, Header, VideoContainer, Body, Close, Footer, ListHeader, ListContent} from './styles/Styled.servicemodal'
+import {Wrapper, Header, VideoContainer, Body, Close, Footer, ListHeader, ListContent, ListItem} from './styles/Styled.servicemodal'
 
 
 const ServiceModal = ({data}) => { 
-    const [expanded, setExpanded] = useState({title:"", height: 300});
+    const [expanded, setExpanded] = useState("");
     const {info, title, ...details} = data.servicesJson
     const theme = useTheme()
     let description = ""
@@ -42,25 +42,26 @@ const ServiceModal = ({data}) => {
                 <VideoContainer>
                     <Video title="test" url={"https://www.youtube.com/embed/jY9JI4nHCpE"} />     
                 </VideoContainer>
-                <Body h={50 + info.length *40 + ((expanded.height/50) * 20)}>                                                                                              
+                <Body>                                                                                              
                         {info &&
-                        info.map(({title, text}) => {
-                            const isExpanded = expanded.title === title
+                        info.map(({title, text}, index) => {
+                            const isExpanded = expanded === title
                             
                             return(
-                                <React.Fragment>
-                                    <ListHeader dangerouslySetInnerHTML={{__html: title}} key={title} isExpanded={isExpanded} onClick={() => {setExpanded(isExpanded ? {title: "", height: 300} : {title: title, height: text.length})}}/>            
-                                    <ListContent isExpanded={isExpanded} dangerouslySetInnerHTML={{__html: text}}/>
-                                </React.Fragment>
-                               
-                        
+                                <ListItem key={title} isExpanded={isExpanded} index={index} onClick={() => {setExpanded(isExpanded ?  "": title)}}>
+                                    <ListHeader dangerouslySetInnerHTML={{__html: title}}  isExpanded={isExpanded} />            
+                                    <ListContent  dangerouslySetInnerHTML={{__html: text}} />
+                                </ListItem>
                         )})          
-                        }                                                                                                                                     
-                </Body>   
-                <Footer>
+                        }      
+                               <Footer index={info.length}>
+                    <div>
                     <BokaButton url={details.url}/>
-                </Footer >  
-                       
+                    </div>
+                    
+                </Footer >                                                                                                             
+                </Body>   
+              
             </Wrapper>
         ) : (       
             <Layout>  
