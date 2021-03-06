@@ -19,7 +19,7 @@ color: ${({ theme }) => theme.COLOR.DARK.hex};
 @media screen and (min-width: 980px) {
     height: 125px;
     :hover {   
-        background-color: #eee;
+        background-color: #fbfbfb;
       }
   }
 

@@ -17,7 +17,7 @@ export const StyledMobile = styled.nav`
     font-size: 14px;
 
     a{
-        color: ${({ theme }) => theme.COLOR.MENU_INVERT.hex};
+       
         width: 100%;
         height: 100%;
         display: flex;

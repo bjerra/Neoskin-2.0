@@ -5,7 +5,7 @@ import {  graphql } from 'gatsby'
 import { useTheme  } from '@emotion/react'
 import {Layout, Video, BokaButton, Navbar} from '../components'
 import {Wrapper, Header, VideoContainer, Body, Close, Footer, ListHeader, ListContent, ListItem} from './styles/Styled.servicemodal'
-
+import { MdExpandLess } from 'react-icons/md';
 
 const ServiceModal = ({data}) => { 
     const [expanded, setExpanded] = useState("");
@@ -32,16 +32,15 @@ const ServiceModal = ({data}) => {
                         content={description}
                         />
                 </Helmet>    
-             
-                <Header>
-                    <h1>
-                        {title}                            
-                    </h1>    
-                    <Close to={closeTo}/>        
-                </Header>
                 <VideoContainer>
                     <Video title="test" url={"https://www.youtube.com/embed/jY9JI4nHCpE"} />     
                 </VideoContainer>
+                <Header>
+                    <h3>
+                        {title}                            
+                    </h3>    
+                        
+                </Header>
                 <Body>                                                                                              
                         {info &&
                         info.map(({title, text}, index) => {
@@ -49,19 +48,25 @@ const ServiceModal = ({data}) => {
                             
                             return(
                                 <ListItem key={title} isExpanded={isExpanded} index={index} onClick={() => {setExpanded(isExpanded ?  "": title)}}>
-                                    <ListHeader dangerouslySetInnerHTML={{__html: title}}  isExpanded={isExpanded} />            
+                                 
+                                    <ListHeader isExpanded={isExpanded}>
+                                        <h4>{title}</h4>
+                                        <MdExpandLess size={28}/>         
+                                    </ListHeader>     
                                     <ListContent  dangerouslySetInnerHTML={{__html: text}} />
                                 </ListItem>
                         )})          
                         }      
-                               <Footer index={info.length}>
+
+                <ListItem index={info.length} />                                                                                
+                </Body>   
+                <Footer index={info.length}>
+                  
+                    <Close to={closeTo}>Stäng</Close>   
                     <div>
                     <BokaButton url={details.url}/>
                     </div>
-                    
-                </Footer >                                                                                                             
-                </Body>   
-              
+                </Footer >   
             </Wrapper>
         ) : (       
             <Layout>  

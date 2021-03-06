@@ -54,31 +54,7 @@ export const StyledBanner = styled.section`
         font-size: 4rem;
         margin-bottom: 1rem; 
     }
-    ::before {
-      transition: opacity 3s ease;
-      transition-delay: 1.25s;
-      background: #111111;
-      content: '';
-      display: block;
-      height: 100%;
-      left: 0;
-      opacity: 0.45;
-      position: absolute;
-      top: 0;
-      width: 100%;
-      z-index: 1; }
-    ::after {
-      background: linear-gradient(#ffffff, #9198e5);
-      content: ' ';
-      display: block;
-      height: 100%;
-      left: 0;
-      opacity: 0.6;
-      position: absolute;
-      top: 0;
-      webkit-linear-gradientidth: 100%;
-      width: 100%;
-      z-index: 1; }
+    
     #banner.small {
       height: 30vh !important;
       min-height: 30vh; }

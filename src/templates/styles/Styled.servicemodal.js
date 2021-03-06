@@ -17,7 +17,6 @@ export const Header = styled.div`
    text-align:center;
    height: 3rem;
    margin-bottom: .5rem;
-   display: flex;
 `
 
 export const Body = styled.div`
@@ -26,7 +25,6 @@ export const Body = styled.div`
     width: 100%;
     height: 100%;
     position: relative;
-
 `
 
 export const ListItem = styled.div`
@@ -35,7 +33,6 @@ export const ListItem = styled.div`
     -webkit-tap-highlight-color: transparent;
     box-shadow: 0 0px 3px 0 rgba(0,0,0,.3); 
     transition: all 0.3s ease;
-    position: relative;
     background: #fff;
     position: absolute;
     left: 0;
@@ -43,14 +40,29 @@ export const ListItem = styled.div`
     top: ${({ index }) => index * 40}px;
     z-index: ${({ index }) => index};
     transform:  translateY(${({ isExpanded }) => isExpanded ? 'calc(-100% + 40px)' : '0'});  
+    
 
+    :last-of-type {
+        bottom:0;
+        left: 0;
+        right:0;
+        top: ${({ index }) => index * 40}px;
+        z-index: 100;
+    }
    
 `
-export const ListHeader = styled.h4`
+export const ListHeader = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
     height: 40px;
+
+    svg{
+        color: #ccc;
+        transform:  rotate(${({ isExpanded }) => isExpanded ? '180DEG' : '0'});  
+        position: absolute;
+        right: .5rem;
+    }
 `
 export const ListContent = styled.div`
     
@@ -70,44 +82,21 @@ export const VideoContainer = styled.div`
 
 export const Close = styled(Link)`
     
-    position: relative;
-    float: right;
-    width: 32px;
-    height: 32px;
     opacity: 1;
+    font-size: 1.2rem;
     }
     :hover {
     opacity: .8;
     }
-    :before, :after {
-    position: absolute;
-    left: 15px;
-    content: ' ';
-    height: 33px;
-    width: 2px;
-    background-color: #333;
-    }
-    :before {
-    transform: rotate(45deg);
-    }
-    :after {
-    transform: rotate(-45deg);
-    }
 `
 
 export const Footer = styled.div`
-box-shadow: 0 0px 5px 0 rgba(0,0,0,.3); 
-    position: absolute;
-    bottom:0;
-    left: 0;
-    right:0;
-    background: #fff;
-    top: ${({ index }) => index * 40}px;
-    z-index: 100;
+    z-index:100;
+    background-color: #fff;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    
+    padding: 0 2rem;
     div{
         width: 60px;
         height: 60px;

@@ -23,9 +23,10 @@ export const StyledDesktop = styled.nav`
       display: flex;
       align-items: center;
 
+
     }
 
-    a{
+    > a{
       flex: 1;
         color: ${({ theme }) => theme.COLOR.MENU_INVERT.hex};
         :hover {

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'gatsby'
-import {ExpandIcon} from '../../../components'
+import {ExpandIcon } from '../../../components'
 import { StyledDesktop} from './DesktopNavbar.styled';
 import { useTheme  } from '@emotion/react'
 import DropDown from '../dropdown/Dropdown'
@@ -20,7 +20,7 @@ const Navbar = props => {
 
     return(
       <StyledDesktop theme={theme} ref={node} onMouseLeave={() => setDropDownOpen("")}> 
-            <div>
+            <div onMouseEnter={() => setDropDownOpen("")}>
               <Link to="/">
                 Hem
                 </Link> 
