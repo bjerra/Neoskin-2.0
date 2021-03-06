@@ -11,11 +11,11 @@ export const StyledButton = styled.a`
     width: 100%;
     height: 100%;
     text-decoration: none;
-    font-size: 1.25rem;
+    font-size:  ${({ size }) => size ? size : '1.25rem' };
 `
 
-const Button = ({ url }) => (
-    <StyledButton href={url} target="_blank" rel="noopener noreferrer">    
+const Button = ({ url, size }) => (
+    <StyledButton href={url} size={size} target="_blank" rel="noopener noreferrer">    
         Boka                                    
     </StyledButton>
 )

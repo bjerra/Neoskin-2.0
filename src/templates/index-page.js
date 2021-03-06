@@ -38,6 +38,7 @@ export const IndexPageTemplate = ({
       </div>  
     </Intro>
     <Divider />
+    <h2>Favoriter</h2>    
     <Highlights image = {image2.childImageSharp.fluid.src}>
         {features && <Features services={features} />}
     </Highlights>
@@ -60,11 +61,12 @@ export const IndexPageTemplate = ({
         <Portrait />
         <p>Anais blablablabl</p>
       </div>
-      
-      <Tour />
       </div>
     </About>
     <Divider />
+
+    <h2>Salongen</h2> 
+      <Tour />
   </Wrapper>
 )}
 

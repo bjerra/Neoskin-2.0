@@ -1,15 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import {Layout} from '../components'
-import { Wrapper} from './styles/Styled.memberpage'
+import {Layout, Banner} from '../components'
+import { Wrapper, Body} from './styles/Styled.memberpage'
 import EmailList from '../components/EmailList'
 
 export const MemberPageTemplate = ({ image }) => {
 
   return (
-    <Wrapper image={!!image.childImageSharp ? image.childImageSharp.fluid.src : image}>
-        <EmailList/>
+    <Wrapper>
+      <Banner image = {image.childImageSharp.fluid.src}>
+      <h1>Nyhetsbrev</h1>
+    </Banner>
+    <Body>
+    <EmailList/>
+      </Body>
+     
     </Wrapper>
     
   )

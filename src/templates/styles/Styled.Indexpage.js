@@ -77,7 +77,7 @@ export const CTA = styled.section`
 
     .inner { 
       position: relative;
-      margin: 5% 25%;
+      margin: 5% auto;
       z-index: 3; }
 
 `

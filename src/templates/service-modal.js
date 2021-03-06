@@ -4,7 +4,7 @@ import { ModalRoutingContext } from 'gatsby-plugin-modal-routing'
 import {  graphql } from 'gatsby'
 import { useTheme  } from '@emotion/react'
 import {Layout, Video, BokaButton, Navbar} from '../components'
-import {Wrapper, Header, VideoContainer, Body, Close, Footer, ListHeader, ListContent, ListItem} from './styles/Styled.servicemodal'
+import {Container, ModalContainer, Header, VideoContainer, Body, Close, Footer, ListHeader, ListContent, ListItem} from './styles/Styled.servicemodal'
 import { MdExpandLess } from 'react-icons/md';
 
 const ServiceModal = ({data}) => { 
@@ -24,23 +24,24 @@ const ServiceModal = ({data}) => {
     
     {({ modal, closeTo }) => (
         modal ? (
-            <Wrapper>
+            <ModalContainer>
                 <Helmet titleTemplate={`%s | Behandlingar`}>
                         <title>{title}</title>
                         <meta
                         name="description"
                         content={description}
                         />
-                </Helmet>    
-                <VideoContainer>
-                    <Video title="test" url={"https://www.youtube.com/embed/jY9JI4nHCpE"} />     
-                </VideoContainer>
+                </Helmet>   
                 <Header>
                     <h3>
                         {title}                            
                     </h3>    
                         
-                </Header>
+                </Header> 
+                <VideoContainer>
+                    <Video title="test" url={"https://www.youtube.com/embed/jY9JI4nHCpE"} />     
+                </VideoContainer>
+              
                 <Body>                                                                                              
                         {info &&
                         info.map(({title, text}, index) => {
@@ -62,42 +63,59 @@ const ServiceModal = ({data}) => {
                 </Body>   
                 <Footer index={info.length}>
                   
+                <div>
                     <Close to={closeTo}>Stäng</Close>   
+                    </div>
                     <div>
-                    <BokaButton url={details.url}/>
+                    <BokaButton url={details.url} size={'1.75rem'}/>
                     </div>
                 </Footer >   
-            </Wrapper>
+            </ModalContainer>
         ) : (       
             <Layout>  
-            <Navbar />
-            <div className="container">  
-            <Helmet titleTemplate={`%s | ${title}`}>
+                  <Container>
+                <Helmet titleTemplate={`%s | Behandlingar`}>
                         <title>{title}</title>
                         <meta
                         name="description"
                         content={description}
                         />
-                    </Helmet>
-        
-            <h1>
-                {title}                            
-            </h1>                 
-            <div className="info-card" >                                                                         
-                {info &&
-                 info.map(({title, text}) => (
-                     <div key={title}>
-                         <div className="content" style={{fontSize: '1.25rem', margin: '0', borderBottom: '1px solid black', textAlign: 'center'}} dangerouslySetInnerHTML={{__html: title}}/>
+                </Helmet>   
+                <Header>
+                    <h3>
+                        {title}                            
+                    </h3>    
+                        
+                </Header> 
+                <VideoContainer>
+                    <Video title="test" url={"https://www.youtube.com/embed/jY9JI4nHCpE"} />     
+                </VideoContainer>
+              
+                <Body>                                                                                              
+                        {info &&
+                        info.map(({title, text}, index) => {
+                            const isExpanded = expanded === title
+                            
+                            return(
+                                <ListItem key={title} isExpanded={isExpanded} index={index} onClick={() => {setExpanded(isExpanded ?  "": title)}}>
+                                 
+                                    <ListHeader isExpanded={isExpanded}>
+                                        <h4>{title}</h4>
+                                        <MdExpandLess size={28}/>         
+                                    </ListHeader>     
+                                    <ListContent  dangerouslySetInnerHTML={{__html: text}} />
+                                </ListItem>
+                        )})          
+                        }      
 
-                          <div className="content" style={{fontSize: '1rem', paddingLeft: '2rem'}} dangerouslySetInnerHTML={{__html: text}}/>
-
-                     </div>
-                 ))          
-                 }                                                                                                         
-           </div>  
-        
-           
-           </div>   
+                <ListItem index={info.length} />                                                                                
+                </Body>   
+                <Footer index={info.length}> 
+                    <div>
+                    <BokaButton url={details.url} size={'1.75rem'}/>
+                    </div>
+                </Footer >   
+            </Container>
            </Layout>       
         )
 

@@ -1,13 +1,29 @@
 import styled from "@emotion/styled"
 import { Link } from 'gatsby'
 
-export const Wrapper = styled.div`
+
+
+export const Container = styled.div`
+    height: calc(100vh - 55px);
+    width: 100%;
+    max-width: 1000px;
+    background-color: #fff;
+    line-height: 1.25;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    @media screen and (min-width: 980px) {
+        margin-top: 60px;
+      }
+`
+
+export const ModalContainer = styled.div `
     height: 100%;
     width: 100%;
     background-color: #fff;
     line-height: 1.25;
-    border-radius: .5rem; 
-    border: 3px solid black;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -15,8 +31,7 @@ export const Wrapper = styled.div`
 
 export const Header = styled.div`
    text-align:center;
-   height: 3rem;
-   margin-bottom: .5rem;
+   padding: 1rem;
 `
 
 export const Body = styled.div`
@@ -31,23 +46,20 @@ export const ListItem = styled.div`
     cursor: pointer;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
-    box-shadow: 0 0px 3px 0 rgba(0,0,0,.3); 
+    box-shadow: 0 0px 3px 0 rgba(0,0,0,.1); 
     transition: all 0.3s ease;
     background: #fff;
     position: absolute;
     left: 0;
     right:0;
-    top: ${({ index }) => index * 40}px;
+    top: ${({ index }) => index * 50}px;
     z-index: ${({ index }) => index};
-    transform:  translateY(${({ isExpanded }) => isExpanded ? 'calc(-100% + 40px)' : '0'});  
+    transform:  translateY(${({ isExpanded }) => isExpanded ? 'calc(-100% + 50px)' : '0'});  
     
 
     :last-of-type {
+        cursor: auto;
         bottom:0;
-        left: 0;
-        right:0;
-        top: ${({ index }) => index * 40}px;
-        z-index: 100;
     }
    
 `
@@ -55,7 +67,7 @@ export const ListHeader = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
+    height: 50px;
 
     svg{
         color: #ccc;
@@ -76,7 +88,7 @@ export const VideoContainer = styled.div`
     height: 175px;
     width: 100%;
     @media screen and (min-width: 980px) {
-        height: 250px;
+        height: 300px;
       }
 `
 
@@ -96,10 +108,13 @@ export const Footer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
     div{
-        width: 60px;
+        flex: 1;
+
         height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         @media screen and (min-width: 980px) {
             width: 90px;

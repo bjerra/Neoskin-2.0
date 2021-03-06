@@ -6,7 +6,8 @@ import { useTheme  } from '@emotion/react'
 const Footer = props => {
   const theme = useTheme()
   return(
-      <StyledFooter theme={theme}>       
+      <StyledFooter theme={theme}>      
+      <ul/> 
           <ul>      
           <li>
                 <a rel="nofollow noopener noreferrer external" href="https://www.google.com/maps/search/?api=1&amp;query=57.7815209,14.1746004" target="_blank">
@@ -16,35 +17,41 @@ const Footer = props => {
                     Jönköping City  
                   </p>
                 </a>   
-              </li>            
+              </li>     
+            
             </ul>
+            <ul/> 
             <ul>      
                   
+          
             <li>
               
               <a href="tel:+46722065222" title="+46722065222">
-               
-                <p>
-                 Telefon: 072-2065222     
-                </p>       
-              </a>
-            </li>
-             <li>
-                <a href="mailto:anais@neoskin.se" title="anais@neoskin.se">
-                  
-                  <p>
-                  Email: anais@neoskin.se    
-                  </p>  
-                </a> 
-             </li>
-             <li>
-              <Link to="/nyhetsbrev">
               <p>
-                  Nyhetsbrev
-                  </p>  
-              </Link>  
+                 tel: 072-2065222     
+                 </p>
+              </a>
+            </li>      
+            <li>
+                <a href="mailto:anais@neoskin.se" title="anais@neoskin.se">
+                <p>
+                mail: anais@neoskin.se    
+ 
+                 </p>
+                 
+                </a> 
+             </li> 
+             <li>
+      <a href="https://instagram.com/neoskin.se" target="_blank" rel="noopener noreferrer" title="neoskin.se@Instagram">
+      <p>
+      instagram: @neoskin.se
+                 </p>
+                 
+                  
+                </a>  
              </li>
             </ul>
+            <ul/> 
         </StyledFooter>
     )
   }

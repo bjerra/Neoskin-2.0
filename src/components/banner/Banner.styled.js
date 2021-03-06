@@ -14,8 +14,8 @@ export const StyledBanner = styled.section`
     background-repeat: no-repeat;
     background-size: cover;
     border-top: 0;
-    height: 35rem !important;
-    min-height: 35rem;
+    height: 25rem !important;
+    min-height: 25rem;
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -64,8 +64,8 @@ export const StyledBanner = styled.section`
       } }
     @media screen and (max-width: 736px) {
       
-        height: auto !important;
-        min-height: 0;
+      height: 15rem !important;
+      min-height: 15rem;
         padding: 4rem 2rem 4rem 2rem; }
         .inner {
           width: 100%; }

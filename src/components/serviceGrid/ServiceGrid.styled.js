@@ -37,7 +37,7 @@ export const Card = styled(Link)`
   margin-top: .75rem;
   text-align:center;
   text-decoration: none;
-    h5 {
+    h3 {
       font-weight: 600;
       margin: 0 1rem;
       color: black;

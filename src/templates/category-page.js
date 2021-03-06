@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import {Layout, Banner, ServiceCard} from '../components'
-import { Wrapper, Header, Body} from './styles/Styled.categorypage'
+import { graphql, Link } from 'gatsby'
+import {Layout, Banner, BokaButton} from '../components'
+import { Wrapper, ServiceCard, Body} from './styles/Styled.categorypage'
+import { useTheme  } from '@emotion/react'
 
 export const CategoryPageTemplate = ({
   image,
@@ -10,17 +11,35 @@ export const CategoryPageTemplate = ({
   description,
   services
 }) => {
-      
+
+  const theme = useTheme()
   return(
     <Wrapper>
       <Banner image={!!image.childImageSharp ? image.childImageSharp.fluid.src : image}>
         <h1>{title}</h1>
-        <p>{description}</p>
       </Banner>  
       <Body>
+        <p>{description}</p>
         {
-          services.map((service) => (                       
-              <ServiceCard service={service} key={service.id}/>                          
+          services.map((service) => (                            
+              <ServiceCard key={service.id} theme={theme}>
+              <Link  
+                  to={`/behandlingar/${service.slug}`} 
+                  state={{modal: true}}>
+                <h4>{service.title}</h4>
+                <div>
+                  <p>
+                    {service.time} , {service.price} 
+                  </p> 
+                  
+                </div>
+                <span>mer info</span> 
+              </Link>
+              <div>
+                  <BokaButton url={service.url}/>    
+              </div>
+             
+           </ServiceCard>                   
           ))
           }    
       </Body>

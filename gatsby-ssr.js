@@ -55,6 +55,7 @@ export const wrapRootElement = ({ element }) => {
           }
            
           .ReactModal__Content {
+            box-shadow: 0 0 5px 5px rgba(0,0,0,.3); 
             transform: translateY(-100px);
             transition: transform 200ms ease-out;
           }
