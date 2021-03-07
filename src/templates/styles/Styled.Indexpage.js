@@ -58,6 +58,7 @@ export const Highlights = styled.section`
 
 export const CTA = styled.section`
 
+    margin: 5rem 0;
     padding: 4rem 0 6rem 0 ;
     background-image: url(${({ image }) => image});
     background-attachment: fixed;
@@ -84,8 +85,6 @@ export const CTA = styled.section`
 
 export const Services = styled.section`
 
-    padding: 4rem 0 6rem 0 ;
-
     .inner {
         margin: 0 auto;
         width: 100%;
@@ -100,33 +99,32 @@ export const Services = styled.section`
 
 export const About = styled.section`
 
-    padding: 4rem 0 6rem 0 ;
-
 
     .inner {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        @media screen and (max-width: 480px) {
-          .inner {
-            max-width: calc(100% - 3rem); 
-            } 
+        flex-direction: row;
+        justify-content: space-around;
+        @media screen and (max-width: 980px) {
+            flex-direction: column;
         }
+    }
 
-       
+    .gatsby-image-wrapper {
+        width: 300px;
+        height: 300px;
     }
 
     .column{        
+      
         display: flex;
-        flex-direction: row;
-
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
          * {
             flex: 1;
         }
 
-        @media screen and (max-width: 980px) {
-            flex-direction: column;
-          }
+     
         
     }
 `

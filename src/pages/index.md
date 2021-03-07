@@ -50,4 +50,6 @@ features:
   - MEDICAL Borttagning av fibrom & pigmentfläckar m. m
 image2: /img/blue.jpg
 image3: /img/green.jpg
+portrait: /img/anais.jpg
+about: "Hej jag heter anais"
 ---

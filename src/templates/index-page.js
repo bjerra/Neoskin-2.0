@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
+import Img from "gatsby-image"
 import { Wrapper,Intro,Highlights, CTA, Services, About} from './styles/Styled.Indexpage'
-import {Banner, Logo, Features, Layout, ServiceGrid, Divider, Tour, Portrait} from '../components'
+import {Banner, Logo, Features, Layout, ServiceGrid, Divider, Tour} from '../components'
 import EmailList from '../components/EmailList'
 import {useCategoryData} from '../components/CategoryData'
 
@@ -10,9 +11,11 @@ export const IndexPageTemplate = ({
   image,
   image2,
   image3,
+  portrait,
   features,
   title,
-  description
+  description,
+  about
 }) => {
 
   const categories= useCategoryData();
@@ -37,35 +40,46 @@ export const IndexPageTemplate = ({
       </header>     
       </div>  
     </Intro>
-    <Divider />
-    <h2>Favoriter</h2>    
+    <Divider>
+      <h2>Favoriter</h2> 
+     </Divider>
     <Highlights image = {image2.childImageSharp.fluid.src}>
         {features && <Features services={features} />}
     </Highlights>
 
+    <Divider>
+    <h2>Behandlingar</h2>  
+     </Divider>
     <Services>
-        <h2>Våra Behandlingar</h2>     
+          
         <ServiceGrid data={categories}/>       
     </Services>
-    <Divider />
     <CTA image = {image3.childImageSharp.fluid.src}>
       <div className="inner">          
         <EmailList />
       </div>
     </CTA>
 
+    <Divider>
+    <h2>Om Mig</h2>     
+     </Divider>
     <About>
     <div className="inner">  
-       <h2>Om</h2>         
+          
       <div className="column">
-        <Portrait />
-        <p>Anais blablablabl</p>
+        <Img fluid={portrait.childImageSharp.fluid} alt="Anais" />
+      </div>
+      <div className="column">
+        <p>{about}</p>
+        <Link to="/om">  
+              Läs mer
+        </Link> 
       </div>
       </div>
     </About>
-    <Divider />
-
+    <Divider>
     <h2>Salongen</h2> 
+     </Divider>
       <Tour />
   </Wrapper>
 )}
@@ -74,9 +88,11 @@ IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  portrait: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   features: PropTypes.array,
   title: PropTypes.string,
   description: PropTypes.string,
+  about: PropTypes.string,
 }
 
 const IndexPage = ({ data }) => {
@@ -87,9 +103,11 @@ const IndexPage = ({ data }) => {
         image={frontmatter.image}
         image2={frontmatter.image2}
         image3={frontmatter.image3}
+        portrait={frontmatter.portrait}
         title={frontmatter.title}
         features={ frontmatter.features}
         description={frontmatter.description}
+        about={frontmatter.about}
       />
     </Layout>
   )
@@ -151,7 +169,15 @@ export const pageQuery = graphql`
             }
           }
         }  
+        portrait {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }  
         description
+        about
       }
     }
   }

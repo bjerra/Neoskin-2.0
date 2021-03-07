@@ -56,7 +56,10 @@ collections:
           - {label: "Features", name: "features", widget: "relation", collection: "services", search_fields: ["title", "category"], value_field: "title",multiple: true,display_fields: ["title"]}
           - {label: Image2, name: image2, widget: image}
           - {label: Image3, name: image3, widget: image}
-          
+          - {label: Portrait, name: portrait, widget: image}
+          - {label: About, name: about, widget: text}   
+
+           
       - file: "src/pages/om/index.md"
         label: "Om"
         name: "om"

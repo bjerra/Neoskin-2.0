@@ -31,6 +31,7 @@ const FeatureGrid = ({ services }) => {
             <FeatureCard to={`/behandlingar/${service.slug}`} state={{modal: true}}>
                 <h3>{service.title}</h3>
               <Image fluid={service.image?.childImageSharp.fluid} alt={service.category}/>
+              <button>Läs Mer</button>
             </FeatureCard>
           </SwiperSlide>
         ))}

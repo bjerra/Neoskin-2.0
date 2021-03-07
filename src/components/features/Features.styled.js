@@ -7,7 +7,6 @@ export const StyledFeatures = styled.div`
   margin: 0 auto;
   background: #eee;
   .swiper-slide {
-   
     text-align: center;
     font-size: 18px;
     display: flex;
@@ -30,6 +29,16 @@ export const FeatureCard = styled(Link)`
       h3{
         font-size: 1.25rem;
       }
+    }
+
+    button {
+        background-color: white;
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
     }
 
 
