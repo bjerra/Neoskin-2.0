@@ -12,7 +12,7 @@ export const StyledServiceGrid = styled.div`
   flex-wrap: wrap;
   justify-content:space-around;
   align-items: center;
-  width: 1000px; 
+  width: 1200px; 
   max-width: 90%;
   @media screen and (max-width: 980px) {
     width: 100%; 
@@ -23,8 +23,8 @@ export const StyledServiceGrid = styled.div`
 `
 
 export const Card = styled(Link)`
-  background: #fbf4ec;
-  box-shadow: 0 0 2px 1px rgba(0,0,0,0.5);
+ 
+  
   transition: transform .2s ease;
 
   width: 100%;
@@ -45,7 +45,7 @@ export const Card = styled(Link)`
     }
   
     @media screen and (min-width: 980px) {
-      width: 400px; 
+      width: 500px; 
       margin: 1rem;
       :hover {
         opacity: .8;

@@ -10,15 +10,14 @@ export const StyledFooter = styled.footer`
     justify-content: flex-start;
     position: relative;
     color: #ddd;
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     @media screen and (max-width: 736px) {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
      }
 
     ul {
        
         text-align: left;
-        margin-top: 2rem;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -26,8 +25,13 @@ export const StyledFooter = styled.footer`
     }
 
 a{
-    text-decoration: none;
-   
+
+    align-items: center;
+    justify-content: flex-start; 
+    display: flex;
+    span {
+        padding: .5rem;
+    }
 }
    
 `

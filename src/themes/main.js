@@ -116,7 +116,7 @@ const H2 = css`
 
 const H3 = css`
 font-family: Quicksand;
-  font-size: 1.769em;
+  font-size: 1.469em;
   font-weight: 600;
   margin-bottom: 0.4em;
 
