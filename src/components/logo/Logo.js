@@ -6,10 +6,12 @@ import { Link } from "gatsby"
 
 export const StyledLogo = styled(Link)`
   margin: auto;
-  height: 200px;
-  width: 200px;
-  display: flex;
   background-color: transparent;
+
+  .gatsby-image-wrapper {
+    height: 200px;
+     width: 200px;
+}
 
 `
 
