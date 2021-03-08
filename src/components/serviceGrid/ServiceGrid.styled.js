@@ -1,6 +1,5 @@
 
 import styled from "@emotion/styled"
-import Img from "gatsby-image"
 import { Link } from "gatsby"
 
 export const StyledServiceGrid = styled.div`
@@ -56,10 +55,16 @@ export const Card = styled(Link)`
 `
 
 
-export const Image = styled(Img)`
+export const Image = styled.div`
       height: 200px;
-      width 60%;
+      flex: 2;
       @media screen and (max-width: 980px) {
         height: 150px;
       }
+
+      div{
+        height: 100%;
+        width: 100%;
+      }
+      
 `

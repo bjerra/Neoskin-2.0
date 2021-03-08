@@ -1,14 +1,24 @@
 import React from 'react';
-import { Link } from 'gatsby'
-import {useCategoryData} from '../../CategoryData'
+import { Link, useStaticQuery, graphql } from 'gatsby'
 
 const ServiceMenu = () => {
 
-  const categories = useCategoryData();
+  const { allCategoriesJson  } = useStaticQuery(
+    graphql`
+    {
+      allCategoriesJson {
+        nodes {
+          title
+          slug
+        }
+      }
+    } 
+    `
+  )
   return (
     <React.Fragment>  
           {
-            categories.map((category, index) => {   
+            allCategoriesJson.nodes.map((category, index) => {   
                 return(
               <div className="item" key={index}>
                 <Link to={`/${category.slug}`}>

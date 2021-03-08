@@ -1,27 +1,24 @@
 import React from "react"
-import Img from "gatsby-image"
-import { StyledLogo } from './Logo.styled';
-import { useStaticQuery, graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 import { useTheme  } from '@emotion/react'
+import styled from "@emotion/styled"
+import { Link } from "gatsby"
 
-const Logo = ({}) => {
-  const data = useStaticQuery(graphql`
-    query {
-      file(name: { eq: "logo" }, extension: { eq: "png" }) {
-        childImageSharp {
-          fluid(maxWidth: 750, pngQuality: 80) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
+export const StyledLogo = styled(Link)`
+  margin: auto;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  background-color: transparent;
 
+`
+
+const Logo = () => {
   const theme = useTheme()
 
   return (   
-      <StyledLogo theme={theme} to="/" title="Logo" >
-            <Img fluid={data.file.childImageSharp.fluid} alt="logo" />
+    <StyledLogo theme={theme} to="/" title="Logo" >
+        <StaticImage src="../../img/logo.png" alt="Logo" placeholder="blurred"/>
     </StyledLogo>
   )
 }

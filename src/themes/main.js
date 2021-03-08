@@ -1,4 +1,4 @@
-import { css } from "@emotion/core"
+import { css } from "@emotion/react"
 
 // == Colors == //
 // Example from Coolors: https://coolors.co/011627-fdfffc-2ec4b6-e71d36-ff9f1c
@@ -165,5 +165,6 @@ const P = css`
 // == Broad Defaults == //
 const WRAPPER_WIDTH = `${1184}px`
 
+const theme = { COLOR,PADDING, MARGIN,BASE_FONT_SIZE,H1, H2, H3, H4, H5, H6,P,WRAPPER_WIDTH, BREAKPOINTS }
 
-export default { COLOR,PADDING, MARGIN,BASE_FONT_SIZE,H1, H2, H3, H4, H5, H6,P,WRAPPER_WIDTH, BREAKPOINTS }
+export default theme

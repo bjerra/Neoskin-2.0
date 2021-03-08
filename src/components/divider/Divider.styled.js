@@ -6,7 +6,7 @@ export const StyledDivider = styled.div`
     
         display: flex;
         width: 100%;
-        margin: auto;
+        margin: 1rem auto;
         margin-top: 4rem;
         max-width: 900px;
         text-align: center;

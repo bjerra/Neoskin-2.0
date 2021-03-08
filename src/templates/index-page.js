@@ -1,13 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Wrapper,Intro,Highlights, CTA, Services, About} from './styles/Styled.Indexpage'
 import {Banner, Logo, Features, Layout, ServiceGrid, Divider, Tour} from '../components'
 import EmailList from '../components/EmailList'
-import {useCategoryData} from '../components/CategoryData'
 
-export const IndexPageTemplate = ({
+const IndexPageTemplate = ({
   image,
   image2,
   image3,
@@ -15,17 +14,15 @@ export const IndexPageTemplate = ({
   features,
   title,
   description,
-  about
+  about,
+  categories
 }) => {
 
-  const categories= useCategoryData();
   return(
   <Wrapper>
    
-    <Banner image = {image.childImageSharp.fluid.src}>
-        <div className="inner">
+    <Banner image = {image} alt="Neoskin">
           <Logo />    
-        </div>   
         {//<video autoPlay loop muted playsInline src={require("../img/banner.webm")}></video>
         }
     </Banner>
@@ -43,7 +40,7 @@ export const IndexPageTemplate = ({
     <Divider>
       <h2>Favoriter</h2> 
      </Divider>
-    <Highlights image = {image2.childImageSharp.fluid.src}>
+    <Highlights>
         {features && <Features services={features} />}
     </Highlights>
 
@@ -51,10 +48,12 @@ export const IndexPageTemplate = ({
     <h2>Behandlingar</h2>  
      </Divider>
     <Services>
-          
         <ServiceGrid data={categories}/>       
     </Services>
-    <CTA image = {image3.childImageSharp.fluid.src}>
+    <CTA>
+     
+        <GatsbyImage image={getImage(image3)} alt={"nyhetsbrev"} />
+   
       <div className="inner">          
         <EmailList />
       </div>
@@ -67,7 +66,7 @@ export const IndexPageTemplate = ({
     <div className="inner">  
           
       <div className="column">
-        <Img fluid={portrait.childImageSharp.fluid} alt="Anais" />
+      <GatsbyImage image={getImage(portrait)} alt={"Anais"} />
       </div>
       <div className="column">
         <p>{about}</p>
@@ -93,6 +92,7 @@ IndexPageTemplate.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   about: PropTypes.string,
+  categories: PropTypes.array,
 }
 
 const IndexPage = ({ data }) => {
@@ -108,6 +108,7 @@ const IndexPage = ({ data }) => {
         features={ frontmatter.features}
         description={frontmatter.description}
         about={frontmatter.about}
+        categories = {data.allCategoriesJson.nodes}
       />
     </Layout>
   )
@@ -133,9 +134,9 @@ export const pageQuery = graphql`
           title   
           image {
             childImageSharp {
-              fluid(maxWidth: 2048, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData(
+                placeholder: BLURRED
+              )
             }
           }  
           info {
@@ -148,36 +149,55 @@ export const pageQuery = graphql`
           url
           category
         }
+        
         image {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(
+              layout: FULL_WIDTH
+              placeholder: BLURRED
+            )
           }
         }
         image2 {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(
+              layout: FULL_WIDTH
+              placeholder: BLURRED
+            )
           }
         }
         image3 {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(
+              layout: FULL_WIDTH
+              placeholder: BLURRED
+            )
           }
         }  
         portrait {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(
+              width: 2048
+              placeholder: BLURRED
+            )
           }
         }  
         description
         about
+      }
+    }
+    allCategoriesJson {
+      nodes {
+        title
+        slug
+        description
+        image {
+          childImageSharp {
+            gatsbyImageData(
+              placeholder: BLURRED
+            )
+          }
+        }
       }
     }
   }

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import {StyledFeatures, FeatureCard, Image} from './Features.styled'
 import SwiperCore, { Navigation, Pagination, A11y, Autoplay, EffectCoverflow } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import 'swiper/swiper-bundle.min.css';
 
@@ -30,7 +31,10 @@ const FeatureGrid = ({ services }) => {
           <SwiperSlide key={service.serviceId} >
             <FeatureCard to={`/behandlingar/${service.slug}`} state={{modal: true}}>
                 <h3>{service.title}</h3>
-              <Image fluid={service.image?.childImageSharp.fluid} alt={service.category}/>
+                
+              <Image>
+                <GatsbyImage image={getImage(service.image)} alt={service.category} />
+              </Image>
               <button>Läs Mer</button>
             </FeatureCard>
           </SwiperSlide>

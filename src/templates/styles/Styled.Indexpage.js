@@ -60,22 +60,19 @@ export const CTA = styled.section`
 
     margin: 5rem 0;
     padding: 4rem 0 6rem 0 ;
-    background-image: url(${({ image }) => image});
-    background-attachment: fixed;
-    box-shadow: inset 0px 50px 40px -30px rgba(0,0,0,0.6), inset 0px -50px 40px -30px rgba(0,0,0,0.6);
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 400px;
    
     position: relative;
     text-align: center;
-    z-index: 1; }
-    input, #cta select, #cta textarea {
-      color: #ffffff; }
-   
-      @media screen and (max-width: 480px) {
-        background-attachment: scroll;
-      }
-
+    .gatsby-image-wrapper {
+        position: absolute;
+        top:0;
+        bottom:0;
+        left: 0;
+        right:0;
+        overflow: hidden;
+        
+    }
     .inner { 
       position: relative;
       margin: 5% auto;

@@ -5,11 +5,11 @@ import {Layout, Banner} from '../components'
 import { Wrapper, Body} from './styles/Styled.memberpage'
 import EmailList from '../components/EmailList'
 
-export const MemberPageTemplate = ({ image }) => {
+const MemberPageTemplate = ({ image }) => {
 
   return (
     <Wrapper>
-      <Banner image = {image.childImageSharp.fluid.src}>
+      <Banner image = {image} alt={"nyhetsbrev"}>
       <h1>Nyhetsbrev</h1>
     </Banner>
     <Body>
@@ -49,9 +49,10 @@ export const aboutPageQuery = graphql`
       frontmatter {
         image {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(
+              layout: FULL_WIDTH
+              placeholder: BLURRED
+            )
           }
         }
       }

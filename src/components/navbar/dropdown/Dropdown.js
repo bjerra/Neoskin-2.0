@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import { Wrapper, Button, Content, ascending, descending} from './Drowdown.styled';
 import { useTheme  } from '@emotion/react'
 

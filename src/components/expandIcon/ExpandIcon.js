@@ -1,5 +1,5 @@
 import styled from "@emotion/styled"
-import React, {useState, useRef} from 'react';
+import React from 'react';
 import { useTheme  } from '@emotion/react'
 
 const StyledExpandIcon = styled.div`

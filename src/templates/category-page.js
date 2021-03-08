@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 import {Layout, Banner, BokaButton} from '../components'
 import { Wrapper, ServiceCard, Body} from './styles/Styled.categorypage'
 import { useTheme  } from '@emotion/react'
 
-export const CategoryPageTemplate = ({
+const CategoryPageTemplate = ({
   image,
   title,
   description,
@@ -15,7 +15,7 @@ export const CategoryPageTemplate = ({
   const theme = useTheme()
   return(
     <Wrapper>
-      <Banner image={!!image.childImageSharp ? image.childImageSharp.fluid.src : image}>
+      <Banner image={image} alt={title}>
         <h1>{title}</h1>
       </Banner>  
       <Body>
@@ -87,9 +87,10 @@ export const categoryPageQuery = graphql`
       description
       image {
         childImageSharp {
-          fluid(maxWidth: 2048, quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(
+            layout: FULL_WIDTH
+            placeholder: BLURRED
+          )
         }
       }
     }

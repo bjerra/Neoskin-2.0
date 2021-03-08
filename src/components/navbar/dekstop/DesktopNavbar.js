@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Link } from 'gatsby'
 import {ExpandIcon } from '../../../components'
 import { StyledDesktop} from './DesktopNavbar.styled';
@@ -20,36 +20,36 @@ const Navbar = props => {
 
     return(
       <StyledDesktop theme={theme} ref={node} onMouseLeave={() => setDropDownOpen("")}> 
-            <div onMouseEnter={() => setDropDownOpen("")}>
+            <div role = "button" tabIndex={0} onMouseEnter={() => setDropDownOpen("")}>
               <Link to="/">
                 Hem
                 </Link> 
             </div>
                  
-                <div onMouseEnter={() => setDropDownOpen("Kontakt")}>
-                <DropDown open={dropDownOpen == "Kontakt"}  down={true} content={<ContactMenu />} setOpen={() => setDropDownOpen("Kontakt")}>    
+                <div role = "button" tabIndex={0} onMouseEnter={() => setDropDownOpen("Kontakt")}>
+                <DropDown open={dropDownOpen === "Kontakt"}  down={true} content={<ContactMenu />} setOpen={() => setDropDownOpen("Kontakt")}>    
                   Kontakt
-                  <ExpandIcon expanded ={dropDownOpen == "Kontakt"}/>   
+                  <ExpandIcon expanded ={dropDownOpen === "Kontakt"}/>   
                 </DropDown>
                 </div>
 
-                <div onMouseEnter={() => setDropDownOpen("Behandlingar")}>
+                <div role = "button" tabIndex={0} onMouseEnter={() => setDropDownOpen("Behandlingar")}>
                     <DropDown     
-                        open={dropDownOpen == "Behandlingar"} 
+                        open={dropDownOpen === "Behandlingar"} 
                         content={<ServiceMenu />}
                         setOpen={() => setDropDownOpen("Behandlingar")}
                         down={true}          
                     >
                       Behandlingar
-                      <ExpandIcon expanded ={dropDownOpen == "Behandlingar"}/>   
+                      <ExpandIcon expanded ={dropDownOpen === "Behandlingar"}/>   
                       </DropDown>    
                      
                 </div>
 
-                <div onMouseEnter={() => setDropDownOpen("Mer")}>
-                  <DropDown open={dropDownOpen == "Mer"}  down={true} content={<MoreMenu />} setOpen={() => setDropDownOpen("Mer")}>    
+                <div role = "button" tabIndex={0} onMouseEnter={() => setDropDownOpen("Mer")}>
+                  <DropDown open={dropDownOpen === "Mer"}  down={true} content={<MoreMenu />} setOpen={() => setDropDownOpen("Mer")}>    
                     Mer
-                    <ExpandIcon expanded ={dropDownOpen == "Mer"}/>   
+                    <ExpandIcon expanded ={dropDownOpen === "Mer"}/>   
                   </DropDown>
                 </div> 
       </StyledDesktop>   

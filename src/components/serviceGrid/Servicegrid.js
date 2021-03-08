@@ -1,23 +1,21 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import {StyledServiceGrid, Card, Image} from './ServiceGrid.styled'
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const ServiceGrid = ({data}) => {
    
     return (
 
     <StyledServiceGrid>
-        {data.map(({ title, image, slug}, index) => {
+        {data.map(({ title, image, slug}, index) => { 
            return (
             <Card 
                 key={index} 
                 to={slug} 
                 >      
-                <Image 
-                    fluid={image.childImageSharp.fluid} 
-                    alt={title} 
-                  
-                    />    
+                <Image>
+                    <GatsbyImage image={getImage(image)} alt={title} />
+                </Image>    
                 <h3>
                     {title}
                 </h3>           

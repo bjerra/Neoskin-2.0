@@ -1,5 +1,4 @@
 import styled from "@emotion/styled"
-import Img from "gatsby-image"
 import { Link } from 'gatsby'
 
 export const StyledFeatures = styled.div`
@@ -44,7 +43,7 @@ export const FeatureCard = styled(Link)`
 
 `
 
-export const Image = styled(Img)`
+export const Image = styled.div`
       height: 100%;
       width 100%;
 `

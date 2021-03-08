@@ -2,15 +2,13 @@ import React,{ useState } from 'react'
 import { Helmet } from 'react-helmet'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing'
 import {  graphql } from 'gatsby'
-import { useTheme  } from '@emotion/react'
-import {Layout, Video, BokaButton, Navbar} from '../components'
+import {Layout, Video, BokaButton} from '../components'
 import {Container, ModalContainer, Header, VideoContainer, Body, Close, Footer, ListHeader, ListContent, ListItem} from './styles/Styled.servicemodal'
 import { MdExpandLess } from 'react-icons/md';
 
 const ServiceModal = ({data}) => { 
     const [expanded, setExpanded] = useState("");
     const {info, title, ...details} = data.servicesJson
-    const theme = useTheme()
     let description = ""
     if(info != null){
         info.forEach(element => {

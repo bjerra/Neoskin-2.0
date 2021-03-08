@@ -1,6 +1,5 @@
 import React from 'react'
 import {StyledFooter} from './Footer.styled'
-import { Link } from 'gatsby'
 import { useTheme  } from '@emotion/react'
 import {AiOutlineMail, AiOutlineInstagram, AiOutlinePhone, AiOutlineEnvironment} from 'react-icons/ai';
 
