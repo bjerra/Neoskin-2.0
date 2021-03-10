@@ -103,7 +103,7 @@ export const Close = styled(Link)`
 `
 
 export const Footer = styled.div`
-    z-index:100;
+    z-index:20;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
