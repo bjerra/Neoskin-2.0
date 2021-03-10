@@ -3,8 +3,8 @@ import { Link } from 'gatsby'
 
 export const StyledFeatures = styled.div`
 
+box-shadow: 0px 5px 10px -10px rgba(0,0,0,0.75) inset, 0px -5px 10px -10px rgba(0,0,0,0.75) inset;
   margin: 0 auto;
-  background: #eee;
   .swiper-slide {
     text-align: center;
     font-size: 18px;
