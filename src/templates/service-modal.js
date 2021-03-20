@@ -10,11 +10,7 @@ const ServiceModal = ({data}) => {
     const [expanded, setExpanded] = useState("");
     const {info, title, ...details} = data.servicesJson
     let description = ""
-    if(info != null){
-        info.forEach(element => {
-            description += element.text
-        });
-    } 
+  
 
     
     return(
@@ -41,7 +37,7 @@ const ServiceModal = ({data}) => {
                 </VideoContainer>
               
                 <Body>                                                                                              
-                        {info &&
+                        {Array.isArray(info) &&
                         info.map(({title, text}, index) => {
                             const isExpanded = expanded === title
                             
@@ -90,7 +86,7 @@ const ServiceModal = ({data}) => {
                 </VideoContainer>
               
                 <Body>                                                                                              
-                        {info &&
+                        {Array.isArray(info) &&
                         info.map(({title, text}, index) => {
                             const isExpanded = expanded === title
                             
@@ -133,6 +129,14 @@ export const query = graphql`
         slug
         price
         id
+        image {
+            childImageSharp {
+              gatsbyImageData(
+                placeholder: BLURRED
+              )
+            }
+          }  
+        video
         info {
             text
             title

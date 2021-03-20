@@ -11,9 +11,7 @@ description: "Boka gärna din konsultation i samband med första behandlingen om
   eller önskemål kan vi självklart bestämma att göra en annan behandling
   istället, bättre anpassad för dig. "
 features:
-  - Ultraljudsregöring
-  - Fransfärg
-  - MEDICAL Borttagning av fibrom & pigmentfläckar m. m
+  - Acne paketet, värde 5300:-
 image2: /img/blue.jpg
 image3: /img/green.jpg
 portrait: /img/anais.jpg
