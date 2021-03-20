@@ -1,32 +1,45 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import {Layout,Navbar, Banner, ServiceCard} from '../components'
-import { Wrapper, Header, Body} from './styles/Styled.categorypage'
-import { useServiceData } from '../components/ServiceData'
-import { useCategoryData } from '../components/CategoryData'
+import { graphql, Link } from 'gatsby'
+import {Layout, Banner, BokaButton} from '../components'
+import { Wrapper, ServiceCard, Body} from './styles/Styled.categorypage'
+import { useTheme  } from '@emotion/react'
 
-export const CategoryPageTemplate = ({
-  id,
+const CategoryPageTemplate = ({
   image,
   title,
   description,
   services
 }) => {
-      
+
+  const theme = useTheme()
   return(
     <Wrapper>
-      <Navbar />
-      <Banner image={!!image.childImageSharp ? image.childImageSharp.fluid.src : image}>
+      <Banner image={image} alt={title}>
         <h1>{title}</h1>
-        <p>{description}</p>
       </Banner>  
       <Body>
+        <p>{description}</p>
         {
-          services.map((service) => (                       
-              <div key={service.id}>  
-              <ServiceCard service={service}/>                         
-              </div>       
+          services.map((service) => (                            
+              <ServiceCard key={service.id} theme={theme}>
+              <Link  
+                  to={`/behandlingar/${service.slug}`} 
+                  state={{modal: true}}>
+                <h4>{service.title}</h4>
+                <div>
+                  <p>
+                    {service.time} , {service.price} 
+                  </p> 
+                  
+                </div>
+                <span>mer info</span> 
+              </Link>
+              <div>
+                  <BokaButton url={service.url}/>    
+              </div>
+             
+           </ServiceCard>                   
           ))
           }    
       </Body>
@@ -39,11 +52,10 @@ CategoryPageTemplate.propTypes = {
   title: PropTypes.string,
 }
 
-const CategoryPage = ({ pageContext }) => {
+const CategoryPage = ({ data }) => {
 
-  const category = useCategoryData().find(p=>p.title == pageContext.id)
-  console.log(category)
-  const services = useServiceData().filter(p => p.category ==  pageContext.id)
+  const category = data.categoriesJson
+  const services = data.allServicesJson.nodes;
   const {title, image, description} = category;
 
   return (
@@ -53,7 +65,6 @@ const CategoryPage = ({ pageContext }) => {
         title={title}     
         description={description}     
         services={services}
-        id={pageContext.id}
       />
     </Layout>
   )
@@ -69,3 +80,33 @@ CategoryPage.propTypes = {
 
 export default CategoryPage
 
+export const categoryPageQuery = graphql`
+  query CategoryPage($id: String!) {
+    categoriesJson(title: {eq: $id}) {
+      title
+      description
+      image {
+        childImageSharp {
+          gatsbyImageData(
+            layout: FULL_WIDTH
+            placeholder: BLURRED
+          )
+        }
+      }
+    }
+    allServicesJson(filter: {category: {eq: $id}}) {
+      nodes {
+          url
+          title
+          time
+          slug
+          price
+          id
+          info {
+            text
+            title
+          }
+        }
+      }
+  }
+`

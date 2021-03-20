@@ -1,64 +1,57 @@
-import React, { useEffect, useRef, useState } from 'react';
-import Menu from "../menu/Menu";
+import React, { useRef, useState } from 'react';
 import { Link } from 'gatsby'
-import { useOnClickOutside } from '../../../utils/hooks';
-import { StyledDesktop, ListItem , Expandable} from './DesktopNavbar.styled';
+import {ExpandIcon } from '../../../components'
+import { StyledDesktop} from './DesktopNavbar.styled';
 import { useTheme  } from '@emotion/react'
-import {useCategoryData} from '../../CategoryData'
+import DropDown from '../dropdown/Dropdown'
+import ServiceMenu from '../menus/ServiceMenu'
+import ContactMenu from '../menus/ContactMenu'
+import MoreMenu from '../menus/MoreMenu'
+import { useOnClickOutside } from '../../../utils/hooks';
+
+
 
 const Navbar = props => {
-    const categories = useCategoryData();
-    const [servicesExpanded, setservicesExpanded] = useState(false);
-    const [isSticky, setSticky] = useState(false);
-    const ref = useRef(null);
-    const handleScroll = () => {
-      if (ref.current) {
-        setSticky(ref.current.getBoundingClientRect().top <= -0);
-      }
-    };
-    useEffect(() => {
-      window.addEventListener('scroll', handleScroll);
-  
-      return () => {
-        window.removeEventListener('scroll', () => handleScroll);
-      };
-    }, []);
-
+    const [dropDownOpen, setDropDownOpen] = useState("");
     const theme = useTheme()
-    const [open, setOpen] = useState(false);
-    const node = useRef(); 
-    useOnClickOutside(node, () => setOpen(false));
-    return(
-      <StyledDesktop>
-        <div ref={node}>     
-        <Menu open={open} setOpen={setOpen} />
-        </div>   
-        <div className={`sticky-wrapper${isSticky ? ' sticky' : ''}`} ref={ref}>
-          <div className="sticky-inner">
 
-          <div> 
-        <Link to="/">
-          Hem
-        </Link>  
-      </div>   
-          <div> 
-        <Link to="/om">
-          Behandlingar
-        </Link>  
-      </div>                     
-      <div> 
-        <Link to="/nyhetsbrev">
-          Kontakt
-        </Link> 
-      </div>  
-     
-      <div>
-        <Link to="/kontakt">
-          Mer
-        </Link>
-      </div>  
-          </div>
-        </div>   
+    const node = useRef(); 
+    useOnClickOutside(node, () => setDropDownOpen(""));
+
+    return(
+      <StyledDesktop theme={theme} ref={node} onMouseLeave={() => setDropDownOpen("")}> 
+            <div role = "button" tabIndex={0} onMouseEnter={() => setDropDownOpen("")}>
+              <Link to="/">
+                Hem
+                </Link> 
+            </div>
+                 
+                <div role = "button" tabIndex={0} onMouseEnter={() => setDropDownOpen("Kontakt")}>
+                <DropDown open={dropDownOpen === "Kontakt"}  down={true} content={<ContactMenu />} setOpen={() => setDropDownOpen("Kontakt")}>    
+                  Kontakt
+                  <ExpandIcon expanded ={dropDownOpen === "Kontakt"}/>   
+                </DropDown>
+                </div>
+
+                <div role = "button" tabIndex={0} onMouseEnter={() => setDropDownOpen("Behandlingar")}>
+                    <DropDown     
+                        open={dropDownOpen === "Behandlingar"} 
+                        content={<ServiceMenu />}
+                        setOpen={() => setDropDownOpen("Behandlingar")}
+                        down={true}          
+                    >
+                      Behandlingar
+                      <ExpandIcon expanded ={dropDownOpen === "Behandlingar"}/>   
+                      </DropDown>    
+                     
+                </div>
+
+                <div role = "button" tabIndex={0} onMouseEnter={() => setDropDownOpen("Mer")}>
+                  <DropDown open={dropDownOpen === "Mer"}  down={true} content={<MoreMenu />} setOpen={() => setDropDownOpen("Mer")}>    
+                    Mer
+                    <ExpandIcon expanded ={dropDownOpen === "Mer"}/>   
+                  </DropDown>
+                </div> 
       </StyledDesktop>   
     )
   }

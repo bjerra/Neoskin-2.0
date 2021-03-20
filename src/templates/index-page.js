@@ -1,84 +1,98 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Wrapper,Intro,Highlights, CTA, Services, About} from './styles/Styled.Indexpage'
-import {Banner, Navbar, Logo, Features, Layout, ServiceGrid, Divider, Tour, Portrait,Map} from '../components'
+import {Banner, Logo, Features, Layout, ServiceGrid, Divider, Tour} from '../components'
 import EmailList from '../components/EmailList'
 
-export const IndexPageTemplate = ({
+const IndexPageTemplate = ({
   image,
+  image2,
+  image3,
+  portrait,
   features,
   title,
-  subtitle,
-  heading,
-  subheading,
   description,
-}) => (
+  about,
+  categories
+}) => {
+
+  return(
   <Wrapper>
-    <Banner image = {image.childImageSharp.fluid.src}>
-        <div className="inner">
+   
+    <Banner image = {image} alt="Neoskin">
           <Logo />    
-        </div>   
-        <video autoPlay loop muted playsInline src={require("../img/banner.webm")}></video>
+        {//<video autoPlay loop muted playsInline src={require("../img/banner.webm")}></video>
+        }
     </Banner>
-    <Navbar />
+   
     <Intro>
       <div className="inner">     
       <header>
-        <h2>
-          {subtitle}
-        </h2>
+        <h1>{title}</h1>
         <p>
           {description}
         </p>
       </header>     
-      </div>
-      
+      </div>  
     </Intro>
-    <Divider />
+    <Divider>
+      <h2>Favoriter</h2> 
+     </Divider>
     <Highlights>
-        <div className="inner">    
-          <Features gridItems={features} />
-        </div>
+        {features && <Features services={features} />}
     </Highlights>
 
+    <Divider>
+    <h2>Behandlingar</h2>  
+     </Divider>
     <Services>
-      <div className="inner">   
-        <h3>Behandlingar</h3>     
-        <ServiceGrid />  
-      </div>       
+        <ServiceGrid data={categories}/>       
     </Services>
-    <Divider />
     <CTA>
+     
+        <GatsbyImage image={getImage(image3)} alt={"nyhetsbrev"} />
+   
       <div className="inner">          
         <EmailList />
       </div>
     </CTA>
 
+    <Divider>
+    <h2>Om Mig</h2>     
+     </Divider>
     <About>
     <div className="inner">  
-       <h3>Om</h3>         
+          
       <div className="column">
-        <Portrait />
-        <p>Anais blablablabl</p>
+      <GatsbyImage image={getImage(portrait)} alt={"Anais"} />
       </div>
-      
-      <Tour />
+      <div className="column">
+        <p>{about}</p>
+        <Link to="/om">  
+              Läs mer
+        </Link> 
+      </div>
       </div>
     </About>
-    <Divider />
-    <Map />
+    <Divider>
+    <h2>Salongen</h2> 
+     </Divider>
+      <Tour />
   </Wrapper>
-)
+)}
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  portrait: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   features: PropTypes.array,
   title: PropTypes.string,
-  subtitle: PropTypes.string,
-  heading: PropTypes.string,
   description: PropTypes.string,
-  subheading: PropTypes.string,
+  about: PropTypes.string,
+  categories: PropTypes.array,
 }
 
 const IndexPage = ({ data }) => {
@@ -87,12 +101,14 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
+        image2={frontmatter.image2}
+        image3={frontmatter.image3}
+        portrait={frontmatter.portrait}
         title={frontmatter.title}
-        features={frontmatter.features}
-        subtitle={frontmatter.subtitle}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
+        features={ frontmatter.features}
         description={frontmatter.description}
+        about={frontmatter.about}
+        categories = {data.allCategoriesJson.nodes}
       />
     </Layout>
   )
@@ -113,27 +129,75 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        subtitle
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
         features{
-          serviceId 
+          id
+          title   
           image {
             childImageSharp {
-              fluid(maxWidth: 240, quality: 64) {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData(
+                placeholder: BLURRED
+              )
             }
+          }  
+          info {
+            text
+            title
+          }
+          price
+          slug
+          time
+          url
+          category
+        }
+        
+        image {
+          childImageSharp {
+            gatsbyImageData(
+              layout: FULL_WIDTH
+              placeholder: BLURRED
+            )
           }
         }
-        heading   
-        subheading      
+        image2 {
+          childImageSharp {
+            gatsbyImageData(
+              layout: FULL_WIDTH
+              placeholder: BLURRED
+            )
+          }
+        }
+        image3 {
+          childImageSharp {
+            gatsbyImageData(
+              layout: FULL_WIDTH
+              placeholder: BLURRED
+            )
+          }
+        }  
+        portrait {
+          childImageSharp {
+            gatsbyImageData(
+              width: 2048
+              placeholder: BLURRED
+            )
+          }
+        }  
         description
+        about
+      }
+    }
+    allCategoriesJson {
+      nodes {
+        title
+        slug
+        description
+        image {
+          childImageSharp {
+            gatsbyImageData(
+              placeholder: BLURRED
+            )
+          }
+        }
       }
     }
   }

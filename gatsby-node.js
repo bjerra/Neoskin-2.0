@@ -2,6 +2,23 @@ const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+
+    type MarkdownRemark implements Node {
+      frontmatter: Frontmatter
+    }
+    type Frontmatter {
+      features: [ServicesJson] @link(by: "title") 
+      
+    }
+
+  `
+  createTypes(typeDefs)
+}
+
+
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
@@ -20,14 +37,14 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
       }
-      categoriesJson {
-        categories {
+      allCategoriesJson {
+        nodes {
           title
           slug
         }
       }
-      servicesJson {
-        services {
+      allServicesJson {
+        nodes {
             id    
             slug
         }
@@ -55,7 +72,7 @@ exports.createPages = ({ actions, graphql }) => {
       })
     })
 
-    const categories = result.data.categoriesJson.categories
+    const categories = result.data.allCategoriesJson.nodes
     categories.forEach(category => {
         createPage({
           path: `/${category.slug}`,
@@ -66,7 +83,7 @@ exports.createPages = ({ actions, graphql }) => {
         })
     })
 
-    const services = result.data.servicesJson.services
+    const services = result.data.allServicesJson.nodes
     services.forEach(service => {
         createPage({
           path: `/behandlingar/${service.slug}`,

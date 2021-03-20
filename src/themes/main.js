@@ -1,4 +1,4 @@
-import { css } from "@emotion/core"
+import { css } from "@emotion/react"
 
 // == Colors == //
 // Example from Coolors: https://coolors.co/011627-fdfffc-2ec4b6-e71d36-ff9f1c
@@ -22,14 +22,14 @@ const BLUE = {
   rgbArray: [46, 196, 182],
 }
 
-const GRAY = {
-  hex: "#a9a9a9",
+const HOVER = {
+  hex: "#904949",
   rgb: `rgb(235, 225, 52)`,
   rgbArray: [235, 225, 52],
 }
 
 const ROSE_MADDER = {
-  hex: "#E71D36",
+  hex: "#748fbf",
   rgb: `rgb(231,29,54)`,
   rgbArray: [231, 29, 54],
 }
@@ -40,11 +40,27 @@ const ORANGE_PEEL = {
   rgbArray: [255, 159, 28],
 }
 
+const MENU = {
+  hex: "#fbf0f0",
+  rgb: `rgb(255,159,28)`,
+  rgbArray: [255, 159, 28],
+}
+
+const MENU_INVERT = {
+  hex: "#000",
+  rgb: `rgb(255,159,28)`,
+  rgbArray: [255, 159, 28],
+}
+
+
 const COLOR = {
   LIGHT: BABY_POWDER,
   DARK: RICH_BLACK,
   BLUE: BLUE,
-  HOVER: GRAY,
+  HOVER: HOVER,
+  INFO: ROSE_MADDER,
+  MENU: MENU,
+  MENU_INVERT:MENU_INVERT,
   FEATURE: [ROSE_MADDER, ORANGE_PEEL],
 }
 
@@ -78,51 +94,51 @@ const BASE_FONT_SIZE = `${18}px`
 
 const H1 = css`
   font-family: Quicksand;
-  font-size: 4.209em;
+  font-size: 2.509em;
   font-weight: 500;
   margin-bottom: 0.4em;
 
   @media screen and (max-width: ${BREAKPOINTS.MOBILE}) {
-    font-size: 2.709em;
+    font-size: 1.7em;
   }
 `
 
 const H2 = css`
   font-family: Quicksand;
-  font-size: 3.157em;
+  font-size: 2.157em;
   font-weight: 500;
   margin-bottom: 0.4em;
 
   @media screen and (max-width: ${BREAKPOINTS.MOBILE}) {
-    font-size: 1.759em;
+    font-size: 1.559em;
   }
 `
 
 const H3 = css`
 font-family: Quicksand;
-  font-size: 2.369em;
+  font-size: 1.469em;
   font-weight: 600;
   margin-bottom: 0.4em;
 
   @media screen and (max-width: ${BREAKPOINTS.MOBILE}) {
-    font-size: 1.509em;
+    font-size: 1.309em;
   }
 `
 
 const H4 = css`
 font-family: Quicksand;
-  font-size: 1.777em;
+  font-size: 1.177em;
   font-weight: 500;
   margin-bottom: 0.4em;
 
   @media screen and (max-width: ${BREAKPOINTS.MOBILE}) {
-    font-size: 1.209em;
+    font-size: 1.109em;
   }
 `
 
 const H5 = css`
-font-family: Quicksand;
-  font-size: 1.333em;
+  font-family: Quicksand;
+  font-size: 1em;
   font-weight: 500;
   margin-bottom: 0.4em;
 
@@ -149,5 +165,6 @@ const P = css`
 // == Broad Defaults == //
 const WRAPPER_WIDTH = `${1184}px`
 
+const theme = { COLOR,PADDING, MARGIN,BASE_FONT_SIZE,H1, H2, H3, H4, H5, H6,P,WRAPPER_WIDTH, BREAKPOINTS }
 
-export default { COLOR,PADDING, MARGIN,BASE_FONT_SIZE,H1, H2, H3, H4, H5, H6,P,WRAPPER_WIDTH, BREAKPOINTS }
+export default theme

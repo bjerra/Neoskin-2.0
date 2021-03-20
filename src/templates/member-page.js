@@ -1,53 +1,28 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import {Layout, Navbar} from '../components'
-import Content, { HTMLContent } from '../components/Content'
+import {Layout, Banner} from '../components'
+import { Wrapper, Body} from './styles/Styled.memberpage'
 import EmailList from '../components/EmailList'
 
-export const MemberPageTemplate = ({ title, image, content, contentComponent }) => {
-  const PageContent = contentComponent || Content
+const MemberPageTemplate = ({ image }) => {
 
   return (
-    <div>
-      <Navbar />
-       <div
-        className="full-width-image-container margin-top-0"
-        style={{
-          backgroundImage: `url(${
-            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-          })`
-        }}
-      >
-        <h1
-          className="page-title"
-        >
-          {title}
-        </h1>
-        </div>
-        <section className="section section--gradient">
-      <div className="container">
-        <div className="content">
-        <EmailList />   
-        </div>
-        <div className="columns">
-          <div className="column is-10 is-offset-1">    
-                          
-              <PageContent className="content" content={content} />
-            </div>
-
-        </div>
-      </div>
-    </section>
-    </div>
+    <Wrapper>
+      <Banner image = {image} alt={"nyhetsbrev"}>
+      <h1>Nyhetsbrev</h1>
+    </Banner>
+    <Body>
+    <EmailList/>
+      </Body>
+     
+    </Wrapper>
     
   )
 }
 
 MemberPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
+ 
 }
 
 const MemberPage = ({ data }) => {
@@ -56,10 +31,7 @@ const MemberPage = ({ data }) => {
   return (
     <Layout>
       <MemberPageTemplate
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
         image={post.frontmatter.image}
-        content={post.html}
       />
     </Layout>
   )
@@ -74,14 +46,13 @@ export default MemberPage
 export const aboutPageQuery = graphql`
   query MemberPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
-      html
       frontmatter {
-        title
         image {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(
+              layout: FULL_WIDTH
+              placeholder: BLURRED
+            )
           }
         }
       }

@@ -1,16 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import {Layout, Navbar,Banner} from '../components'
+import {Layout,Banner} from '../components'
 import Content, { HTMLContent } from '../components/Content'
 
-export const AboutPageTemplate = ({ title, image, content, contentComponent }) => {
+const AboutPageTemplate = ({ title, image, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
     <div>
-      <Navbar />
-       <Banner image={image.childImageSharp.fluid.src}>
+       <Banner image={image} alt={"Anais"}>
         <h1
           className="page-title"
         >
@@ -67,9 +66,10 @@ export const aboutPageQuery = graphql`
         title
         image {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(
+              layout: FULL_WIDTH
+              placeholder: BLURRED
+            )
           }
         }
       }

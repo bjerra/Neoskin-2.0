@@ -1,46 +1,49 @@
 import styled from "@emotion/styled"
-
+import { Link } from 'gatsby'
 
 export const StyledFeatures = styled.div`
 
-
-  display: flex;
-   
-  .swiper-button-next{
-    color: #00000066;
-    right: 0;
-  }
-
-  .swiper-button-prev{
-    color: #00000066;
-    left; 0;
-  }
-
-  .header{
+box-shadow: 0px 5px 10px -10px rgba(0,0,0,0.75) inset, 0px -5px 10px -10px rgba(0,0,0,0.75) inset;
+  margin: 0 auto;
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-
-    img{
-        display: block;
-        max-width:150px;
-        max-height:30px;
-        width: auto;
-        height: auto;
-        
-    }
-    h5{
-        margin: 1rem;
-    }
-   
-}
+    justify-content: center;
+    align-items: center;
+  }
+  
 
 `
-export const FeatureCard = styled.div`
+export const FeatureCard = styled(Link)`
+    
+    position: relative;
+    margin: .5rem 1rem 2rem 1rem;
+    height: 100%;
+    width: 30%;
+    text-decoration: none;
+  
+    @media screen and (max-width: 980px) {
+      width: 100%;
+      h3{
+        font-size: 1.25rem;
+      }
+    }
 
-    margin: auto;
-    max-width: 200px;
-    background-color: #eee;
-    box-shadow: 8px 11px 14px 5px rgba(0,0,0,0.29);
+    button {
+        background-color: white;
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+    }
+
+
+`
+
+export const Image = styled.div`
+      height: 100%;
+      width 100%;
 `

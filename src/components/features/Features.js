@@ -1,26 +1,16 @@
-import React, {useState} from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
-import Img from "gatsby-image"
-import {StyledFeatures, FeatureCard} from './Features.styled'
+import {StyledFeatures, FeatureCard, Image} from './Features.styled'
 import SwiperCore, { Navigation, Pagination, A11y, Autoplay, EffectCoverflow } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import {ServiceCard} from '../../components'
-import { useStaticQuery, graphql } from "gatsby"
-import { useServiceData } from '../ServiceData'
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import 'swiper/swiper-bundle.min.css';
 
 SwiperCore.use([Navigation, Pagination, A11y, Autoplay, EffectCoverflow]);
 
 
-const FeatureGrid = ({ gridItems }) => {
-  
-  const serviceData = useServiceData();
-  let data = []
-  gridItems.forEach(item => {
-    const service = serviceData.find(p=>p.id == item.serviceId);
-    data.push({image : item.image, ...service});
-  })
+const FeatureGrid = ({ services }) => {
 
   return(
   <StyledFeatures>
@@ -28,20 +18,25 @@ const FeatureGrid = ({ gridItems }) => {
   <Swiper
       spaceBetween={0}
       slidesPerView={1}
-      loop={false}
-      navigation
+      loop={true}
+      autoplay= {{
+        delay: 3500,
+        disableOnInteraction: true,
+      }}
       pagination={{ clickable: true }}
-      effect={"coverflow"}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
+     
+     
     >
-       {data.map(service => (
-          <SwiperSlide key={service.serviceId}>
-            <FeatureCard>
-                <Img fluid={service.image.childImageSharp.fluid} alt="logo" />
-              <ServiceCard service={service}/>
+       {services.map(service => (
+          <SwiperSlide key={service.serviceId} >
+            <FeatureCard to={`/behandlingar/${service.slug}`} state={{modal: true}}>
+                <h3>{service.title}</h3>
+                
+              <Image>
+                <GatsbyImage image={getImage(service.image)} alt={service.category} />
+              </Image>
+              <button>Läs Mer</button>
             </FeatureCard>
-           
           </SwiperSlide>
         ))}
  

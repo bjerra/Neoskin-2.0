@@ -1,42 +1,70 @@
 
 import styled from "@emotion/styled"
-import Img from "gatsby-image"
 import { Link } from "gatsby"
 
 export const StyledServiceGrid = styled.div`
 
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  display: flex;
+  margin: auto;
+  padding: 0 .5rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items: center;
+  width: 1200px; 
+  max-width: 90%;
   @media screen and (max-width: 980px) {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    width: 100%; 
+    max-width: 100%;
+    flex-direction: column;
   }
+ 
 `
 
 export const Card = styled(Link)`
-    position: relative;
-    overflow: hidden;
-    display: grid;
-    ::before {
-      grid-area: 1 / 1 / 2 / 2;
-      content: "";
-      padding-bottom: 100%;
-      display: block;
+ 
+  
+  transition: transform .2s ease;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  :nth-of-type(odd) {
+
+    flex-direction: row-reverse;
+  }
+  margin-top: .75rem;
+  text-align:center;
+  text-decoration: none;
+    h3 {
+      font-weight: 600;
+      margin: 0 1rem;
+      color: black;
+      flex: 1;
+    }
+  
+    @media screen and (min-width: 980px) {
+      width: 500px; 
+      margin: 1rem;
+      :hover {
+        opacity: .8;
+        transform: scale(1.05, 1.05);
+      }
     }
 
-    h4 {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-}
 `
 
 
-export const Image = styled(Img)`
-      grid-area: 1 / 1 / 2 / 2;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
+export const Image = styled.div`
+      height: 200px;
+      flex: 2;
+      @media screen and (max-width: 980px) {
+        height: 150px;
+      }
 
+      div{
+        height: 100%;
+        width: 100%;
+      }
+      
 `
