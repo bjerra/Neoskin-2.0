@@ -8,7 +8,6 @@ backend:
     uploadMedia: '[skip ci] Upload “{{path}}”'
     deleteMedia: '[skip ci] Delete “{{path}}”'
 
-publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: /img
 
@@ -23,7 +22,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: image}
-      - {label: Gallery, name: gallery ,widget: list,fields: [{label: "Image",name: "image", widget: "image"}]}  
+      - {label: SubCategories, name: subCategories, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: "Image", name: "image", widget: image},{label: "Video", name: "video", required: false, widget: "string"},{label: "Services", name: "services", widget: "relation", collection: "services", search_fields: ["title", "category"], value_field: "title",multiple: true,display_fields: ["title"]}]} 
 
   - label: Services
     name: services

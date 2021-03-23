@@ -7,7 +7,6 @@ exports.createSchemaCustomization = ({ actions }) => {
   const typeDefs = `
   type ServicesJson implements Node {
     info: Info
-    image: File
   }
 
   type Info implements Node {
@@ -15,9 +14,6 @@ exports.createSchemaCustomization = ({ actions }) => {
     title: String
   }
 
-  type CategoriesJson implements Node {
-    image: File
-  }
 
     type MarkdownRemark implements Node {
       frontmatter: Frontmatter

@@ -1,6 +1,6 @@
 import React,{ useState } from 'react'
 import { Helmet } from 'react-helmet'
-import { ModalRoutingContext } from 'gatsby-plugin-modal-routing'
+import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 import {  graphql } from 'gatsby'
 import {Layout, Video, BokaButton} from '../components'
 import {Container, ModalContainer, Header, VideoContainer, Body, Close, Footer, ListHeader, ListContent, ListItem} from './styles/Styled.servicemodal'
@@ -81,9 +81,7 @@ const ServiceModal = ({data}) => {
                     </h3>    
                         
                 </Header> 
-                <VideoContainer>
-                    <Video title="test" url={"https://www.youtube.com/embed/jY9JI4nHCpE"} />     
-                </VideoContainer>
+               
               
                 <Body>                                                                                              
                         {Array.isArray(info) &&
