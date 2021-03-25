@@ -1,6 +1,18 @@
 {
- "title": "Avancerad Hudvård - Apparatur",
- "slug": "avancerad-hudvard-apparatur",
- "description": "",
- "gallery": []
+  "title": "Avancerad Hudvård - Apparatur",
+  "slug": "avancerad-hudvard-apparatur",
+  "description": "Avancerade gjejer",
+  "gallery": [],
+  "subCategories": [
+    {
+      "title": "Jet Plasma",
+      "description": "Plasma grejer",
+      "image": "/img/jett-plasma-logo.jpg",
+      "services": [
+        "Plasmalift acneärr",
+        "Plasmalift hamsterpåsar"
+      ]
+    }
+  ],
+  "image": "/img/anais_aesthetica_consulting_blg_9107_6_xx.jpg"
 }
