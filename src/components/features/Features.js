@@ -28,7 +28,7 @@ const FeatureGrid = ({ services }) => {
      
     >
        {services.map(service => (
-          <SwiperSlide key={service.serviceId} >
+          <SwiperSlide key={service.id} >
             <FeatureCard to={`/behandlingar/${service.slug}`} state={{modal: true}}>
                 <h3>{service.title}</h3>
                 

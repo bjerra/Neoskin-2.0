@@ -35,7 +35,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-modal-routing`,
+      resolve: `gatsby-plugin-modal-routing-3`,
       options: {
         modalProps: {
           closeTimeoutMS: 200,

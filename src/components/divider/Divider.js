@@ -5,13 +5,13 @@ import {StyledDivider} from './Divider.styled'
 
 const Divider = ({children}) => (
   <StyledDivider> 
-      <div />
-      <div />
-      <div/>
+    <div />
+    <div />
+    <div/>
      {children}
-     <div />
-     <div />
-     <div />
+    <div />
+    <div />
+    <div />
   </StyledDivider>
 )
 

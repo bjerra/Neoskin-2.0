@@ -8,7 +8,6 @@ import EmailList from '../components/EmailList'
 
 const IndexPageTemplate = ({
   image,
-  image2,
   image3,
   portrait,
   features,
@@ -85,7 +84,6 @@ const IndexPageTemplate = ({
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   portrait: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   features: PropTypes.array,
@@ -101,7 +99,6 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
-        image2={frontmatter.image2}
         image3={frontmatter.image3}
         portrait={frontmatter.portrait}
         title={frontmatter.title}
@@ -151,14 +148,6 @@ export const pageQuery = graphql`
         }
         
         image {
-          childImageSharp {
-            gatsbyImageData(
-              layout: FULL_WIDTH
-              placeholder: BLURRED
-            )
-          }
-        }
-        image2 {
           childImageSharp {
             gatsbyImageData(
               layout: FULL_WIDTH

@@ -1,6 +1,6 @@
 import React,{ useState } from 'react'
 import { Helmet } from 'react-helmet'
-import { ModalRoutingContext } from 'gatsby-plugin-modal-routing'
+import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 import {  graphql } from 'gatsby'
 import {Layout, Video, BokaButton} from '../components'
 import {Container, ModalContainer, Header, VideoContainer, Body, Close, Footer, ListHeader, ListContent, ListItem} from './styles/Styled.servicemodal'
@@ -10,11 +10,7 @@ const ServiceModal = ({data}) => {
     const [expanded, setExpanded] = useState("");
     const {info, title, ...details} = data.servicesJson
     let description = ""
-    if(info != null){
-        info.forEach(element => {
-            description += element.text
-        });
-    } 
+  
 
     
     return(
@@ -41,7 +37,7 @@ const ServiceModal = ({data}) => {
                 </VideoContainer>
               
                 <Body>                                                                                              
-                        {info &&
+                        {Array.isArray(info) &&
                         info.map(({title, text}, index) => {
                             const isExpanded = expanded === title
                             
@@ -85,12 +81,10 @@ const ServiceModal = ({data}) => {
                     </h3>    
                         
                 </Header> 
-                <VideoContainer>
-                    <Video title="test" url={"https://www.youtube.com/embed/jY9JI4nHCpE"} />     
-                </VideoContainer>
+               
               
                 <Body>                                                                                              
-                        {info &&
+                        {Array.isArray(info) &&
                         info.map(({title, text}, index) => {
                             const isExpanded = expanded === title
                             
@@ -133,6 +127,14 @@ export const query = graphql`
         slug
         price
         id
+        image {
+            childImageSharp {
+              gatsbyImageData(
+                placeholder: BLURRED
+              )
+            }
+          }  
+        video
         info {
             text
             title
