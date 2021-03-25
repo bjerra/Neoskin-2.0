@@ -22,7 +22,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: image}
-      - {label: SubCategories, name: subCategories, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: "Image", name: "image", widget: image},{label: "Video", name: "video", required: false, widget: "string"},{label: "Services", name: "services", widget: "relation", collection: "services", search_fields: ["title", "category"], value_field: "title",multiple: true,display_fields: ["title"]}]} 
+      - {label: SubCategories, name: subCategories, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: "Image", name: "image", widget: image},{label: "Video", name: "video", required: false, widget: "string"},{label: "Services", name: "services", widget: "relation", collection: "services", search_fields: ["title", "category"], value_field: "id",multiple: true,display_fields: ["title"]}]} 
 
   - label: Services
     name: services
@@ -35,7 +35,7 @@ collections:
         field: category
         pattern: 'Ansikte'
     fields:          
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Title", name: "title", widget: "hidden"}
       - {label: "Image", name: "image", required: false, widget: image}
       - {label: "Video", name: "video", required: false, widget: "string"}
       - {label: Info, name: info ,widget: list,fields: [{label: "Title",name: "title", widget: "string"}, {label: "Text",name: "text", widget: "text"}]} 
@@ -49,11 +49,10 @@ collections:
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: Title, name: title, widget: string}    
+          - {label: Title, name: title, widget: hidden}    
           - {label: Image, name: image, widget: image}
           - {label: Description, name: description, widget: text}   
           - {label: "Features", name: "features", widget: "relation", collection: "services", search_fields: ["title", "category"], value_field: "title",multiple: true,display_fields: ["title"]}
-          - {label: Image2, name: image2, widget: image}
           - {label: Image3, name: image3, widget: image}
           - {label: Portrait, name: portrait, widget: image}
           - {label: About, name: about, widget: text}   

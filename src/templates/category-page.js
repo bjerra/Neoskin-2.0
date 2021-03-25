@@ -93,6 +93,19 @@ export const categoryPageQuery = graphql`
           )
         }
       }
+      subCategories {
+          title
+          description
+          image {
+            childImageSharp {
+              gatsbyImageData(
+                layout: FULL_WIDTH
+                placeholder: BLURRED
+              )
+            }
+          }
+          services 
+        }
     }
     allServicesJson(filter: {category: {eq: $id}}) {
       nodes {

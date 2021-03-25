@@ -12,7 +12,6 @@ description: "Boka gärna din konsultation i samband med första behandlingen om
   istället, bättre anpassad för dig. "
 features:
   - Acne paketet, värde 5300:-
-image2: /img/blue.jpg
 image3: /img/green.jpg
 portrait: /img/anais.jpg
 about: "Hej jag heter anais"
