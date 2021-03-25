@@ -9,7 +9,8 @@
       "description": "Plasma grejer",
       "image": "/img/jett-plasma-logo.jpg",
       "services": [
-        26,
+        21,
+        28,
         27
       ]
     }
