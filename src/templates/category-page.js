@@ -109,7 +109,6 @@ export const categoryPageQuery = graphql`
     }
     allServicesJson(filter: {category: {eq: $id}}) {
       nodes {
-          url
           title
           time
           slug

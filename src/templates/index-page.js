@@ -143,7 +143,6 @@ export const pageQuery = graphql`
           price
           slug
           time
-          url
           category
         }
         
