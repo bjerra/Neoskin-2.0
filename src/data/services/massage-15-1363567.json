@@ -6,6 +6,9 @@
  "slug": "massage-15-1363567",
  "category": "Tilläggstjänster ",
  "info": [
-  "Bokas ENDAST som TILLÄGG i en annan behandling, du kan tyvärr inte boka denna behandlingen helt för sig själv."
+  {
+   "title": "",
+   "info": "Bokas ENDAST som TILLÄGG i en annan behandling, du kan tyvärr inte boka denna behandlingen helt för sig själv."
+  }
  ]
 }

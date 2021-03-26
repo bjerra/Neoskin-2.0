@@ -6,6 +6,9 @@
  "slug": "6x-lift-&-tight-full-face-värde-9000--1364881",
  "category": "Kur",
  "info": [
-  "Boka denna om du vill eller har köpt en kur. Skriv gärna i rabattkodsfältet vilken vilken behandling du är på för varje bokning. (1/6, 2/6....)"
+  {
+   "title": "",
+   "info": "Boka denna om du vill eller har köpt en kur. Skriv gärna i rabattkodsfältet vilken vilken behandling du är på för varje bokning. (1/6, 2/6....)"
+  }
  ]
 }
