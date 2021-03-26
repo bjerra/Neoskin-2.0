@@ -3,5 +3,6 @@
  "id": 6,
  "description": "",
  "image": "/img/default.jpg",
- "slug": "formanliga-paket-inkl-hemvard"
+ "slug": "formanliga-paket-inkl-hemvard",
+ "subCategories": []
 }

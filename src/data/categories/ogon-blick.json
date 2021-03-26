@@ -3,5 +3,6 @@
  "id": 9,
  "description": "",
  "image": "/img/default.jpg",
- "slug": "ogon-blick"
+ "slug": "ogon-blick",
+ "subCategories": []
 }

@@ -3,5 +3,6 @@
  "id": 1,
  "description": "",
  "image": "/img/default.jpg",
- "slug": "ansiktsbehandlingar"
+ "slug": "ansiktsbehandlingar",
+ "subCategories": []
 }

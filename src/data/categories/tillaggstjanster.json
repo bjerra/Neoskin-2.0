@@ -3,5 +3,6 @@
  "id": 3,
  "description": "",
  "image": "/img/default.jpg",
- "slug": "tillaggstjanster"
+ "slug": "tillaggstjanster",
+ "subCategories": []
 }

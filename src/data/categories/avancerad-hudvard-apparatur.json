@@ -3,5 +3,6 @@
  "id": 4,
  "description": "",
  "image": "/img/default.jpg",
- "slug": "avancerad-hudvard-apparatur"
+ "slug": "avancerad-hudvard-apparatur",
+ "subCategories": []
 }
