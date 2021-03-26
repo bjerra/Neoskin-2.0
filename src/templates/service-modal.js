@@ -37,8 +37,12 @@ const ServiceModal = ({data}) => {
                 </VideoContainer>
               
                 <Body>                                                                                              
-                        {Array.isArray(info) &&
+                        {info &&
                         info.map(({title, text}, index) => {
+
+                            if(title === ""){
+                                return(<ListContent>{text}</ListContent>)
+                            }
                             const isExpanded = expanded === title
                             
                             return(
@@ -48,7 +52,7 @@ const ServiceModal = ({data}) => {
                                         <h4>{title}</h4>
                                         <MdExpandLess size={28}/>         
                                     </ListHeader>     
-                                    <ListContent  dangerouslySetInnerHTML={{__html: text}} />
+                                    <ListContent>{text}</ListContent> 
                                 </ListItem>
                         )})          
                         }      
@@ -84,7 +88,7 @@ const ServiceModal = ({data}) => {
                
               
                 <Body>                                                                                              
-                        {Array.isArray(info) &&
+                        {info &&
                         info.map(({title, text}, index) => {
                             const isExpanded = expanded === title
                             
@@ -95,7 +99,7 @@ const ServiceModal = ({data}) => {
                                         <h4>{title}</h4>
                                         <MdExpandLess size={28}/>         
                                     </ListHeader>     
-                                    <ListContent  dangerouslySetInnerHTML={{__html: text}} />
+                                    <ListContent>{text}</ListContent>
                                 </ListItem>
                         )})          
                         }      
@@ -120,8 +124,7 @@ export default ServiceModal
 
 export const query = graphql`
   query($id: String!) {
-    servicesJson(id: {eq: $id}) {
-        url
+    servicesJson(id: {eq: $id}) { 
         title
         time
         slug
@@ -134,7 +137,6 @@ export const query = graphql`
               )
             }
           }  
-        video
         info {
             text
             title

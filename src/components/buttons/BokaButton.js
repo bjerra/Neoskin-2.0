@@ -14,8 +14,8 @@ export const StyledButton = styled.a`
     font-size:  ${({ size }) => size ? size : '1.25rem' };
 `
 
-const Button = ({ url, size }) => (
-    <StyledButton href={url} size={size} target="_blank" rel="noopener noreferrer">    
+const Button = ({ slug, size }) => (
+    <StyledButton href={`https://www.bokadirekt.se/places/neoskin-33692/${slug}`} size={size} target="_blank" rel="noopener noreferrer">    
         Boka                                    
     </StyledButton>
 )
