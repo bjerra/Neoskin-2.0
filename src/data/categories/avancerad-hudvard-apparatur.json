@@ -1,8 +1,7 @@
 {
- "id": 5,
  "title": "Avancerad Hudvård - Apparatur",
- "slug": "avancerad-hudvard-apparatur",
+ "id": 4,
  "description": "",
- "image": "",
- "gallery": []
+ "image": "/img/default.jpg",
+ "slug": "avancerad-hudvard-apparatur"
 }

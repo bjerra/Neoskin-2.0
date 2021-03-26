@@ -1,8 +1,7 @@
 {
- "id": 9,
  "title": "Konsultationer",
- "slug": "konsultationer",
+ "id": 8,
  "description": "",
- "image": "",
- "gallery": []
+ "image": "/img/default.jpg",
+ "slug": "konsultationer"
 }
