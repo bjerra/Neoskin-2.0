@@ -8,11 +8,11 @@
  "info": [
   {
    "title": "VAD GÖR BEHANDLINGEN?",
-   "info": "En lite längre ansiktsbehandling som skräddarsys efter Din hud, Dina önskemål och Dina behov."
+   "text": "En lite längre ansiktsbehandling som skräddarsys efter Din hud, Dina önskemål och Dina behov."
   },
   {
    "title": "VAD INGÅR I BEHANDLINGEN?",
-   "info": "Dubbelrengöring, Scrub, AHA, Ultraljudsrengöring, Massage ca 30 min och Mask med infraröd behandling, Tebiskin serum (inkl. ca 5 dagars eftervård), ögonkräm, kräm, SPF vid behov."
+   "text": "Dubbelrengöring, Scrub, AHA, Ultraljudsrengöring, Massage ca 30 min och Mask med infraröd behandling, Tebiskin serum (inkl. ca 5 dagars eftervård), ögonkräm, kräm, SPF vid behov."
   }
  ]
 }
