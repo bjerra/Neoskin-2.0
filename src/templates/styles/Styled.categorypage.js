@@ -49,7 +49,8 @@ color: ${({ theme }) => theme.COLOR.DARK.hex};
   }
 
 
-> a {
+
+> a, .test{
     height: 100%; 
     
     text-decoration: none;
@@ -79,21 +80,20 @@ color: ${({ theme }) => theme.COLOR.DARK.hex};
             font-size: 1rem;
           }
     }
-
-    @media screen and (min-width: 980px) {
-        :hover {       
-          background-color: #fbfbfb;
-            span{
-                transform: scale(1.5, 1.5);
-               
-            }
-          }
-      }
-
-  
-    
 }
- > div{
+
+> a {
+  @media screen and (min-width: 980px) {
+    :hover {       
+      background-color: #fbfbfb;
+        span{
+            transform: scale(1.5, 1.5);
+           
+        }
+      }
+  }
+}
+ .boka{
         width: 70px;
         height: 100%;
         font-size: 1.4rem;

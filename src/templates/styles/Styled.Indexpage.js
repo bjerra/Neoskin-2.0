@@ -6,14 +6,17 @@ h2{
     text-align: center;   
 }
 
+section {
+    position: relative;
+}
 
 `
 
 export const Intro = styled.section`
 
-    
+    background-color: ${({ color }) => color}; 
     padding: 4rem 0 6rem 0 ;
-    position: relative;
+   
     z-index: 1; 
     @media screen and (max-width: 1280px) {
         padding: 4rem 0 2rem 0 ; 
@@ -51,18 +54,17 @@ export const Intro = styled.section`
 `
 
 export const Highlights = styled.section`
-
-    
+    background-color: ${({ color }) => color}; 
+    height: 300px;
    
 `
 
 export const CTA = styled.section`
+padding: 5rem 0;
 
-    margin: 5rem 0;
-    padding: 4rem 0 6rem 0 ;
+background-color: ${({ color }) => color}; 
     height: 400px;
    
-    position: relative;
     text-align: center;
     .gatsby-image-wrapper {
         position: absolute;
@@ -81,7 +83,8 @@ export const CTA = styled.section`
 `
 
 export const Services = styled.section`
-
+    padding-bottom: 2rem;
+    background-color: ${({ color }) => color}; 
     .inner {
         margin: 0 auto;
         width: 100%;
@@ -96,7 +99,7 @@ export const Services = styled.section`
 
 export const About = styled.section`
 
-
+    background-color: ${({ color }) => color}; 
     .inner {
         display: flex;
         flex-direction: row;
@@ -124,4 +127,9 @@ export const About = styled.section`
      
         
     }
+`
+export const Salon = styled.section`
+
+    background-color: ${({ color }) => color}; 
+   
 `

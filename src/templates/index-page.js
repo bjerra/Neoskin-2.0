@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { Wrapper,Intro,Highlights, CTA, Services, About} from './styles/Styled.Indexpage'
+import { Wrapper,Intro,Highlights, CTA, Services, About, Salon} from './styles/Styled.Indexpage'
 import {Banner, Logo, Features, Layout, ServiceGrid, Divider, Tour} from '../components'
 import EmailList from '../components/EmailList'
 
@@ -26,7 +26,7 @@ const IndexPageTemplate = ({
         }
     </Banner>
    
-    <Intro>
+    <Intro color={"#fff"}>
       <div className="inner">     
       <header>
         <h1>{title}</h1>
@@ -36,33 +36,19 @@ const IndexPageTemplate = ({
       </header>     
       </div>  
     </Intro>
-    <Divider>
-      <h2>Favoriter</h2> 
-     </Divider>
-    <Highlights>
+    <Divider fromColor={"#fff"} toColor={"#d2e0f1"} text={"Favoriter"} height={30}/>
+    <Highlights color={"#d2e0f1"}>
         {features && <Features services={features} />}
     </Highlights>
-
-    <Divider>
-    <h2>Behandlingar</h2>  
-     </Divider>
-    <Services>
-        <ServiceGrid data={categories}/>       
+    <Divider fromColor={"#d2e0f1"} toColor={"#fffbe3"} text={"Behandlingar"} height={10}/>
+    <Services color={"#fffbe3"}>
+      <ServiceGrid data={categories}/>       
     </Services>
-    <CTA>
-     
-        <GatsbyImage image={getImage(image3)} alt={"nyhetsbrev"} />
-   
-      <div className="inner">          
-        <EmailList />
-      </div>
-    </CTA>
 
-    <Divider>
-    <h2>Om Mig</h2>     
-     </Divider>
-    <About>
-    <div className="inner">  
+    <Divider fromColor={"#fffbe3"} toColor={"#e0f9e8"} text={"Om Mig"} height={20}/>
+    <About color={"#e0f9e8"}>
+
+      <div className="inner">  
           
       <div className="column">
       <GatsbyImage image={getImage(portrait)} alt={"Anais"} />
@@ -75,10 +61,17 @@ const IndexPageTemplate = ({
       </div>
       </div>
     </About>
-    <Divider>
-    <h2>Salongen</h2> 
-     </Divider>
-      <Tour />
+    <CTA color={"#e0f9e8"}>
+        <GatsbyImage image={getImage(image3)} alt={"nyhetsbrev"} />
+      <div className="inner">          
+        <EmailList />
+      </div>
+    </CTA>
+    
+    <Divider fromColor={"#e0f9e8"} toColor={"#fff"} text={"Salongen"} height={0}/>
+    <Salon color={"#fff"}>
+        <Tour/>
+    </Salon>
   </Wrapper>
 )}
 

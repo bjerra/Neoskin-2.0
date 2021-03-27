@@ -40,7 +40,7 @@ export const Card = styled(Link)`
       font-weight: 600;
       margin: 0 1rem;
       color: black;
-      flex: 1;
+      flex: 2;
     }
   
     @media screen and (min-width: 980px) {
@@ -57,7 +57,7 @@ export const Card = styled(Link)`
 
 export const Image = styled.div`
       height: 200px;
-      flex: 2;
+      flex: 3;
       @media screen and (max-width: 980px) {
         height: 150px;
       }

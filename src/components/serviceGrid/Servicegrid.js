@@ -17,7 +17,7 @@ const ServiceGrid = ({data}) => {
                     <GatsbyImage image={getImage(image)} alt={title} />
                 </Image>    
                 <h3>
-                    {title}
+                    {title.replace('behandlingar', '-behandlingar')}
                 </h3>           
             </Card>
         )}
