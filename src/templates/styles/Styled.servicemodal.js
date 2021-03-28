@@ -1,8 +1,6 @@
 import styled from "@emotion/styled"
 import { Link } from 'gatsby'
 
-
-
 export const Container = styled.div`
     height: calc(100vh - 55px);
     width: 100%;
@@ -78,7 +76,7 @@ export const ListHeader = styled.div`
 `
 export const ListContent = styled.div`
     
-    margin: .5rem 0;
+    margin: .5rem 1rem;
     padding  .5rem 1rem;
     height:auto;
   

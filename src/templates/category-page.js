@@ -23,9 +23,22 @@ const CategoryPageTemplate = ({
         {
           services.map((service) => (                            
               <ServiceCard key={service.id} theme={theme}>
-              <Link  
-                  to={`/behandlingar/${service.slug}`} 
-                  state={{modal: true}}>
+                {service.info ? (
+                   <Link  
+                   to={`/behandlingar/${service.slug}`} 
+                   state={{modal: true}}>
+                 <h4>{service.title}</h4>
+                 <div>
+                   <p>
+                     {service.time} , {service.price} 
+                   </p> 
+                   
+                 </div>
+                 <span>mer info</span> 
+               </Link>
+
+                ) : (
+                  <div className="test">
                 <h4>{service.title}</h4>
                 <div>
                   <p>
@@ -33,10 +46,12 @@ const CategoryPageTemplate = ({
                   </p> 
                   
                 </div>
-                <span>mer info</span> 
-              </Link>
-              <div>
-                  <BokaButton url={service.url}/>    
+              </div>
+
+                )}
+             
+              <div className="boka">
+                  <BokaButton slug={service.slug}/>    
               </div>
              
            </ServiceCard>                   

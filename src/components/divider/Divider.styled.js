@@ -4,60 +4,59 @@ import styled from "@emotion/styled"
 
 export const StyledDivider = styled.div`
     
-        display: flex;
-        width: 100%;
-        margin: 1rem auto;
-        margin-top: 4rem;
-        max-width: 900px;
-        text-align: center;
-        justify-content: space-around;
-        align-items: center;
-        h2{
-            margin: 0;
-        }
-        div{
-            :nth-of-type(1){
-                background-color: #30669022;
-                height: 10px; 
-                width: 10px;
-                border-radius: 5px;
-            }
-            :nth-of-type(2){
-                background-color: #30669044;
-                height: 12px; 
-                width: 12px;
-                border-radius: 6px;
-            }
-            :nth-of-type(3){
-                background-color: #30669066;
-                height: 14px; 
-                width: 14px;
-                border-radius: 7px;
-            }
+    position: relative;
+    height: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: ${({ fromColor, toColor }) => `linear-gradient(${toColor}, ${toColor})`};
+   
+    h3{
+        
+    }
+`
 
-            :nth-of-type(4){
-                background-color: #30669066;
-                height: 14px; 
-                width: 14px;
-                border-radius: 7px;
-            }
-            :nth-of-type(5){
-                background-color: #30669044;
-                height: 12px; 
-                width: 12px;
-                border-radius: 6px;
-            }
-            :nth-of-type(6){
-                background-color: #30669022;
-                height: 10px; 
-                width: 10px;
-                border-radius: 5px;
-            }
-
-            
-        }
-  
+export const StartShape = styled.div`
     
- 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+    svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: ${({ height }) => height}px;
+    }
+    
+    .shape-fill {
+        fill: ${({ color }) => color};
+    }
+        
+
+`
+export const EndShape = styled.div`
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    svg {
+        position: relative;
+        display: block;
+        width: calc(126% + 1.3px);
+        height: 96px;
+    }
+    
+    .shape-fill {
+        fill: ${({ color }) => color};
+    }
+        
 
 `
