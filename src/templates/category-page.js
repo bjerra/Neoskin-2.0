@@ -36,7 +36,6 @@ const CategoryPageTemplate = ({
                  </div>
                  <span>mer info</span> 
                </Link>
-
                 ) : (
                   <div className="test">
                 <h4>{service.title}</h4>

@@ -56,7 +56,7 @@ const ServiceModal = ({data}) => {
                                 </ListItem>
                         )})          
                         }      
-                {(info.length > 0 && info[0].title !== "") &&
+                {(info && info.length > 0 && info[0].title !== "") &&
                 <ListItem index={info.length} />     
                 }
                                                                                            
@@ -106,9 +106,11 @@ const ServiceModal = ({data}) => {
                         )})          
                         }      
 
-                <ListItem index={info.length} />                                                                                
+                {(info && info.length > 0 && info[0].title !== "") &&
+                <ListItem index={info.length} />     
+                }                                                                             
                 </Body>   
-                <Footer index={info.length}> 
+                <Footer> 
                     <div>
                     <BokaButton slug={details.slug} size={'1.75rem'}/>
                     </div>
