@@ -36,7 +36,7 @@ export const Card = styled(Link)`
   margin-top: .75rem;
   text-decoration: none;
     @media screen and (min-width: 980px) {
-      width: 300px; 
+      width: 350px; 
       margin: 1rem;
       :hover {
         transform: scale(1.05, 1.05);
@@ -55,6 +55,7 @@ export const Image = styled.div`
       position: relative;
       display:flex;
       height: 200px;
+      width: 100%; 
       @media screen and (max-width: 980px) {
         height: 150px;
       }
@@ -82,7 +83,7 @@ export const Image = styled.div`
           height: 100%;
           background-image:  linear-gradient(
             rgba(0, 0, 0, 1),
-            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, .5),
             rgba(0, 0, 0, 0)
           );
           opacity: .7;

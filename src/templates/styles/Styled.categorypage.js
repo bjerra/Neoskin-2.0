@@ -117,3 +117,14 @@ color: ${({ theme }) => theme.COLOR.DARK.hex};
 
 
 `
+
+export const SubCategory = styled.section`
+    
+
+.content {
+  display: ${({ expanded }) => expanded ? 'block' : 'none'};
+}
+
+    
+
+`

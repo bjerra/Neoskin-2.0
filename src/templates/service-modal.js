@@ -11,8 +11,6 @@ const ServiceModal = ({data}) => {
     const {info, title, ...details} = data.servicesJson
     let description = ""
   
-
-    
     return(
   <ModalRoutingContext.Consumer>
     
