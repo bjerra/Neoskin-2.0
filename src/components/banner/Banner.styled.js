@@ -51,7 +51,10 @@ export const StyledBanner = styled.section`
         left: 0;
         width: 100%;
         height: 100%;
-        background-image:  linear-gradient( rgb(42 65 144 / 29%), rgb(103 103 103) );
+        background-image:  linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, .5)
+          );
         opacity: .7;
     }
 

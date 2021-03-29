@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
+import { useTheme  } from '@emotion/react'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Wrapper,Intro,Highlights, CTA, Services, About, Salon} from './styles/Styled.Indexpage'
 import {Banner, Logo, Features, Layout, ServiceGrid, Divider, Tour} from '../components'
@@ -17,15 +18,16 @@ const IndexPageTemplate = ({
   categories
 }) => {
 
+  const theme = useTheme();
   return(
-  <Wrapper>
+  <Wrapper theme={theme}>
     <Banner image = {image} alt="Neoskin">
           <Logo />    
         {//<video autoPlay loop muted playsInline src={require("../img/banner.webm")}></video>
         }
     </Banner>
    
-    <Intro color={"#fff"}>
+    <Intro theme={theme}>
       <div className="inner">     
       <header>
         <h1>{title}</h1>
@@ -35,18 +37,20 @@ const IndexPageTemplate = ({
       </header>     
       </div>  
     </Intro>
-    <Divider fromColor={"#fff"} toColor={"#d2e0f1"} text={"Favoriter"} height={50}/>
-    <Highlights color={"#d2e0f1"}>
+    <Divider fillColor={theme.COLOR.LIGHT.hex} fromColor={"#050505"} toColor={"#252525"} height={30}/>
+    <Highlights color={"#252525"}>
+    <h2>Favoriter</h2>
         {features && <Features services={features} />}
     </Highlights>
-    <Divider fromColor={"#d2e0f1"} toColor={"#fff9f9"} text={"Behandlingar"} height={60}/>
-    <Services color={"#fff9f9"}>
+    <Divider fillColor={"#926767"} fromColor={"#252525"} toColor={"#151515"} height={30} invert={true}/>
+    <Services color={"#926767"}>
+    <h2>Behandlingar</h2>
       <ServiceGrid data={categories}/>       
     </Services>
 
-    <Divider fromColor={"#fff9f9"} toColor={"#e0f9e8"} text={"Om Mig"} height={40}/>
-    <About color={"#e0f9e8"}>
-
+    <Divider fillColor="#9cb5a4" fromColor={"#926767"} toColor={"#926767"} text={"Om Mig"} height={20} invert/>
+    <About color={"#9cb5a4"}>
+      <h2>Om Mig</h2>
       <div className="inner">  
           
       <div className="column">
@@ -60,9 +64,10 @@ const IndexPageTemplate = ({
       </div>
       </div>
     </About>
-    <Divider fromColor={"#e0f9e8"} toColor={"#fff"} text={"Salongen"} height={30}/>
+    <Divider fillColor={"#fff"} fromColor={"#9cb5a4"} toColor={"#9cb5a4"} text={"Salongen"} height={30} invert/>
     <Salon color={"#fff"}>
-        <Tour/>
+    <h2>Salongen</h2>
+      <Tour/>
     </Salon>
     <CTA color={"#e0f9e8"}>
         <GatsbyImage image={getImage(image3)} alt={"nyhetsbrev"} />
@@ -173,9 +178,13 @@ export const pageQuery = graphql`
         image {
           childImageSharp {
             gatsbyImageData(
+              width: 1024
               placeholder: BLURRED
             )
           }
+        }
+        subCategories{
+          title
         }
       }
     }

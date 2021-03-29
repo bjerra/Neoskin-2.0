@@ -22,7 +22,6 @@ box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.21);
 color: ${({ theme }) => theme.COLOR.DARK.hex};
 
 @media screen and (min-width: 980px) {
-  
   }
 
 > a, .test{

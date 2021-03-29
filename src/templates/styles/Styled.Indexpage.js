@@ -2,6 +2,8 @@ import styled from "@emotion/styled"
 
 export const Wrapper =  styled.div`
     
+background-color: ${({ theme }) => theme.COLOR.DARK.hex}; 
+color: ${({ theme }) => theme.COLOR.LIGHT.hex}; 
 h2{
     text-align: center;   
 }
@@ -14,7 +16,8 @@ section {
 
 export const Intro = styled.section`
 
-    background-color: ${({ color }) => color}; 
+    background-color: ${({ theme }) => theme.COLOR.LIGHT.hex}; 
+    color: ${({ theme }) => theme.COLOR.DARK.hex}; 
     padding: 4rem 0 6rem 0 ;
    
     z-index: 1; 
@@ -54,6 +57,7 @@ export const Intro = styled.section`
 `
 
 export const Highlights = styled.section`
+    padding: 2rem 0;
     background-color: ${({ color }) => color}; 
    
 `
