@@ -1,9 +1,8 @@
-import React,{useState} from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import {Layout, Banner, BokaButton} from '../components'
-import { Wrapper, ServiceCard, Body, SubCategory} from './styles/Styled.categorypage'
+import { Wrapper, ServiceCard, SubCategory} from './styles/Styled.categorypage'
 import { useTheme  } from '@emotion/react'
 
 const serviceCard = (service, theme) => (
@@ -12,28 +11,14 @@ const serviceCard = (service, theme) => (
                    <Link  
                    to={`/behandlingar/${service.slug}`} 
                    state={{modal: true, noScroll: true}}>
-                 <h4>{service.title}</h4>
-                 <div>
-                   <p>
-                     {service.time} , {service.price} 
-                   </p> 
-                   
-                 </div>
+                 <h5>{service.title}</h5>
                  <span>mer info</span> 
                </Link>
                 ) : (
                   <div className="test">
-                <h4>{service.title}</h4>
-                <div>
-                  <p>
-                    {service.time} , {service.price} 
-                  </p> 
-                  
-                </div>
+                <h4>{service.title}</h4>  
               </div>
-
                 )}
-             
               <div className="boka">
                   <BokaButton slug={service.slug}/>    
               </div>
@@ -62,43 +47,53 @@ const CategoryPageTemplate = ({
   })
 
   const theme = useTheme()
-  const [expanded, setExpanded] = useState("");
   return(
     <Wrapper>
-      <Banner image={image} alt={title}>
-        <h1>{title}</h1>
-      </Banner>  
-      <Body>
-        <p>{description}</p>
+      <SubCategory>    
+        <Banner image = {image} alt="Neoskin">
+              <h1>{title}</h1>
+              </Banner>
+              <div className="content">               
+                      <p>
+                        {description}
+                      </p>
+                      <ul>
+                      {
+                        serviceData.map((service) => (                            
+                          serviceCard(service, theme)        
+                        ))
+                        }  
+                      </ul>
+                     
+               </div>  
+     
+           </SubCategory>   
         {
           subCategories.map((subCategory) => (   
-            <SubCategory expanded={expanded === subCategory.title}>     
-              <button onClick={() => setExpanded(expanded === subCategory.title ? "" : subCategory.title)}>
-              <h3>{subCategory.title}</h3>
-              </button>
-              
-              <div className="content">               
-                        <GatsbyImage image={getImage(subCategory.image)} alt={subCategory.title} />
-                        <p>
-                          {subCategory.description}
-                        </p>
-                        {
+            <SubCategory>     
+                <Banner image = {subCategory.image} alt="Neoskin">
+                  <h1>{subCategory.title}</h1>
+                </Banner>
+           
+              <div className="content">                
+                      <p>
+                        {subCategory.description}
+                      </p>
+                      <ul>
+
+                      {
                         subCategory.serviceData.map((service) => (                            
                           serviceCard(service, theme)            
                         ))
                         }
+                      </ul>
+                     
                </div>  
             </SubCategory>                         
                             
           ))
           }   
-
-        {
-          serviceData.map((service) => (                            
-            serviceCard(service, theme)        
-          ))
-          }   
-      </Body>
+      
   </Wrapper>
   )
 }
@@ -157,7 +152,7 @@ export const categoryPageQuery = graphql`
           image {
             childImageSharp {
               gatsbyImageData(    
-                width: 400
+                layout: FULL_WIDTH
                 placeholder: BLURRED
               )
             }
