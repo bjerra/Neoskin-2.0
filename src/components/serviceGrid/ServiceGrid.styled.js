@@ -23,8 +23,8 @@ export const StyledServiceGrid = styled.div`
 
 export const Card = styled(Link)`
  
-  
   transition: transform .2s ease;
+
 
   width: 100%;
   display: flex;
@@ -34,21 +34,17 @@ export const Card = styled(Link)`
     flex-direction: row-reverse;
   }
   margin-top: .75rem;
-  text-align:center;
   text-decoration: none;
-    h3 {
-      font-weight: 600;
-      margin: 0 1rem;
-      color: black;
-      flex: 2;
-    }
-  
     @media screen and (min-width: 980px) {
-      width: 500px; 
+      width: 300px; 
       margin: 1rem;
       :hover {
-        opacity: .8;
         transform: scale(1.05, 1.05);
+
+        div: after { opacity:0;}
+        h4 {
+          opacity: .5;
+        }
       }
     }
 
@@ -56,15 +52,41 @@ export const Card = styled(Link)`
 
 
 export const Image = styled.div`
+      position: relative;
+      display:flex;
       height: 200px;
-      flex: 3;
       @media screen and (max-width: 980px) {
         height: 150px;
       }
 
+      h4 {
+        transition: opacity .3s;
+        z-index: 10;
+        position: absolute;
+        color: white;
+        top:.5rem;
+        left: 1rem;
+      }
+
       div{
+        border-radius: 2px;
         height: 100%;
         width: 100%;
+        :after {
+          transition: opacity .3s;
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image:  linear-gradient(
+            rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0)
+          );
+          opacity: .7;
+      }
       }
       
 `

@@ -55,7 +55,6 @@ export const Intro = styled.section`
 
 export const Highlights = styled.section`
     background-color: ${({ color }) => color}; 
-    height: 300px;
    
 `
 
@@ -99,6 +98,7 @@ export const Services = styled.section`
 
 export const About = styled.section`
 
+    padding-bottom: 2rem;
     background-color: ${({ color }) => color}; 
     .inner {
         display: flex;

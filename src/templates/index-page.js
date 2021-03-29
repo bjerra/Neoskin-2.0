@@ -19,7 +19,6 @@ const IndexPageTemplate = ({
 
   return(
   <Wrapper>
-   
     <Banner image = {image} alt="Neoskin">
           <Logo />    
         {//<video autoPlay loop muted playsInline src={require("../img/banner.webm")}></video>
@@ -36,16 +35,16 @@ const IndexPageTemplate = ({
       </header>     
       </div>  
     </Intro>
-    <Divider fromColor={"#fff"} toColor={"#d2e0f1"} text={"Favoriter"} height={30}/>
+    <Divider fromColor={"#fff"} toColor={"#d2e0f1"} text={"Favoriter"} height={50}/>
     <Highlights color={"#d2e0f1"}>
         {features && <Features services={features} />}
     </Highlights>
-    <Divider fromColor={"#d2e0f1"} toColor={"#fffbe3"} text={"Behandlingar"} height={10}/>
-    <Services color={"#fffbe3"}>
+    <Divider fromColor={"#d2e0f1"} toColor={"#fff9f9"} text={"Behandlingar"} height={60}/>
+    <Services color={"#fff9f9"}>
       <ServiceGrid data={categories}/>       
     </Services>
 
-    <Divider fromColor={"#fffbe3"} toColor={"#e0f9e8"} text={"Om Mig"} height={20}/>
+    <Divider fromColor={"#fff9f9"} toColor={"#e0f9e8"} text={"Om Mig"} height={40}/>
     <About color={"#e0f9e8"}>
 
       <div className="inner">  
@@ -61,17 +60,16 @@ const IndexPageTemplate = ({
       </div>
       </div>
     </About>
+    <Divider fromColor={"#e0f9e8"} toColor={"#fff"} text={"Salongen"} height={30}/>
+    <Salon color={"#fff"}>
+        <Tour/>
+    </Salon>
     <CTA color={"#e0f9e8"}>
         <GatsbyImage image={getImage(image3)} alt={"nyhetsbrev"} />
       <div className="inner">          
         <EmailList />
       </div>
     </CTA>
-    
-    <Divider fromColor={"#e0f9e8"} toColor={"#fff"} text={"Salongen"} height={0}/>
-    <Salon color={"#fff"}>
-        <Tour/>
-    </Salon>
   </Wrapper>
 )}
 
