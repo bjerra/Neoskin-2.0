@@ -39,41 +39,42 @@ const IndexPageTemplate = ({
     </Intro>
     <Divider fillColor={theme.COLOR.LIGHT.hex} fromColor={"#050505"} toColor={"#252525"} height={30}/>
     <Highlights color={"#252525"}>
-    <h2>Favoriter</h2>
+    <h1>Favoriter</h1>
         {features && <Features services={features} />}
     </Highlights>
-    <Divider fillColor={"#926767"} fromColor={"#252525"} toColor={"#151515"} height={30} invert={true}/>
-    <Services color={"#926767"}>
-    <h2>Behandlingar</h2>
+    <Divider fillColor={theme.COLOR.LIGHT.hex} fromColor={"#252525"} toColor={"#151515"} height={20} invert={true}/>
+    <Services theme={theme}>
+    <h1>Behandlingar</h1>
       <ServiceGrid data={categories}/>       
     </Services>
 
-    <Divider fillColor="#9cb5a4" fromColor={"#926767"} toColor={"#926767"} text={"Om Mig"} height={20} invert/>
-    <About color={"#9cb5a4"}>
-      <h2>Om Mig</h2>
-      <div className="inner">  
-          
-      <div className="column">
-      <GatsbyImage image={getImage(portrait)} alt={"Anais"} />
-      </div>
-      <div className="column">
-        <p>{about}</p>
-        <Link to="/om">  
-              Läs mer
-        </Link> 
+    <Divider fillColor={theme.COLOR.LIGHT.hex} fromColor={"#050505"} toColor={"#252525"} height={25}/>
+    <About theme={theme} color={"#252525"}>
+      <h1>Om Mig</h1>
+      <div className="inner">   
+        <div className="column">
+        <GatsbyImage image={getImage(portrait)} alt={"Anais"} />
+        </div>
+        <div className="column">
+          <p>{about}</p>
+          <Link to="/om">  
+                Läs mer
+          </Link> 
       </div>
       </div>
     </About>
-    <Divider fillColor={"#fff"} fromColor={"#9cb5a4"} toColor={"#9cb5a4"} text={"Salongen"} height={30} invert/>
-    <Salon color={"#fff"}>
-    <h2>Salongen</h2>
+    <Divider fillColor={theme.COLOR.LIGHT.hex} fromColor={"#252525"} toColor={"#151515"} height={15} invert={true}/>
+
+    <Salon theme={theme}>
+    <h1>Salongen</h1>
       <Tour/>
     </Salon>
-    <CTA color={"#e0f9e8"}>
+    <CTA theme={theme}>
         <GatsbyImage image={getImage(image3)} alt={"nyhetsbrev"} />
       <div className="inner">          
         <EmailList />
       </div>
+      
     </CTA>
   </Wrapper>
 )}

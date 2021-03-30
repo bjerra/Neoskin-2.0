@@ -22,11 +22,13 @@ export const FeatureCard = styled(Link)`
     height: 100%;
     width: 30%;
     text-decoration: none;
+    text-align: left;
 
-    h5{
+    h3{
       position: absolute;
-      bottom: 5px;
-      left: 10px;
+      bottom: 25px;
+      left: 25px;
+      right: 30%;
       color: white;
       z-index: 10;
     }

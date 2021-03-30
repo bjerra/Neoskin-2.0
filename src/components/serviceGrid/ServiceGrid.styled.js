@@ -76,7 +76,7 @@ export const Image = styled.div`
       }
 
       div{
-        border: 3px solid white;
+        border: 2px solid white;
           border-radius: 5px;
           box-shadow: 0 18px 24px -10px rgba(0,0,0,1);
         height: 100%;

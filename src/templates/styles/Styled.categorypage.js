@@ -17,7 +17,7 @@ align-items: center;
 text-align: left;
 justify-content: space-between;
 margin-top: 2px;
-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.21);
+border-bottom: 1px solid #bbb;
 
 color: ${({ theme }) => theme.COLOR.DARK.hex};
 

@@ -23,13 +23,13 @@ const BLUE = {
 }
 
 const HOVER = {
-  hex: "#904949",
+  hex: "#846363",
   rgb: `rgb(235, 225, 52)`,
   rgbArray: [235, 225, 52],
 }
 
 const ROSE_MADDER = {
-  hex: "#748fbf",
+  hex: "#7e9ed6",
   rgb: `rgb(231,29,54)`,
   rgbArray: [231, 29, 54],
 }
@@ -41,13 +41,13 @@ const ORANGE_PEEL = {
 }
 
 const MENU = {
-  hex: "#fbf0f0",
+  hex: "#FDFFFC",
   rgb: `rgb(255,159,28)`,
   rgbArray: [255, 159, 28],
 }
 
 const MENU_INVERT = {
-  hex: "#000",
+  hex: "#011627",
   rgb: `rgb(255,159,28)`,
   rgbArray: [255, 159, 28],
 }

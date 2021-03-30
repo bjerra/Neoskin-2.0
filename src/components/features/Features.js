@@ -34,7 +34,7 @@ const FeatureGrid = ({ services }) => {
          
               <Image>
                 <GatsbyImage image={getImage(service.image)} alt={service.category} />
-                <h5>{service.title}</h5>
+                <h3>{service.title}</h3>
               </Image>
              
               <button>Läs Mer</button>

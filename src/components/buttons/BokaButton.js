@@ -4,7 +4,7 @@ import styled from "@emotion/styled"
 export const StyledButton = styled.a`
     transition: all .2s ease;
 
-    color: #5a8abf;
+    color: #7e9ed6;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -4,7 +4,7 @@ export const Wrapper =  styled.div`
     
 background-color: ${({ theme }) => theme.COLOR.DARK.hex}; 
 color: ${({ theme }) => theme.COLOR.LIGHT.hex}; 
-h2{
+h1{
     text-align: center;   
 }
 
@@ -64,8 +64,7 @@ export const Highlights = styled.section`
 
 export const CTA = styled.section`
 padding: 5rem 0;
-
-background-color: ${({ color }) => color}; 
+color: ${({ theme }) => theme.COLOR.DARK.hex}; 
     height: 400px;
    
     text-align: center;
@@ -87,7 +86,8 @@ background-color: ${({ color }) => color};
 
 export const Services = styled.section`
     padding-bottom: 2rem;
-    background-color: ${({ color }) => color}; 
+    color: ${({ theme }) => theme.COLOR.DARK.hex}; 
+    background-color: ${({ theme }) => theme.COLOR.LIGHT.hex}; 
     .inner {
         margin: 0 auto;
         width: 100%;
@@ -134,6 +134,7 @@ export const About = styled.section`
 `
 export const Salon = styled.section`
 
-    background-color: ${({ color }) => color}; 
+    color: ${({ theme }) => theme.COLOR.DARK.hex}; 
+    background-color: ${({ theme }) => theme.COLOR.LIGHT.hex}; 
    
 `
