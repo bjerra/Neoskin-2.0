@@ -38,7 +38,7 @@ export const Card = styled(Link)`
       margin: 1rem;
       :hover {
         transform: scale(1.05, 1.05);
-
+       
         div: after { opacity:0;}
         span {
           opacity: .5;

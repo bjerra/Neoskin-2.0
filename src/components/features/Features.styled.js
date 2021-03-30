@@ -16,6 +16,7 @@ export const StyledFeatures = styled.div`
 `
 export const FeatureCard = styled(Link)`
     
+   
     background: #fff;
     position: relative;
     margin: .5rem 1rem 2rem 1rem;
@@ -26,7 +27,7 @@ export const FeatureCard = styled(Link)`
 
     h3{
       position: absolute;
-      bottom: 25px;
+      bottom: 15px;
       left: 25px;
       right: 30%;
       color: white;
@@ -58,7 +59,8 @@ export const Image = styled.div`
       display: flex;
       height: 100%;
       width 100%;
-
+      border: 2px solid black;
+      box-shadow: 0 18px 24px -10px rgba(0,0,0,1);
       :after {
         content: "";
         position: absolute;

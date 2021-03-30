@@ -16,9 +16,9 @@ const ServiceGrid = ({data}) => {
                 <Image>
                     <GatsbyImage image={getImage(image)} alt={title} />
                     <span className="info">  
-                        <h4>
+                        <h3>
                             {title}
-                        </h4>   
+                        </h3>   
                             {
                                 subCategories.map(element => (
                                     <p>  - {element.title} </p>
