@@ -23,7 +23,7 @@ export const StyledBanner = styled.section`
 
    
     h1 {
-        font-size: 4rem;
+        font-size: 2rem;
         margin-bottom: 1rem; 
     }
 
@@ -38,6 +38,24 @@ export const StyledBanner = styled.section`
     @media screen and (min-width: 980px) {
         height: 25rem !important;
         min-height: 25rem;
+        h1 {
+            font-size: 3rem;
+
+        }
       }
+      :after {
+        transition: opacity .3s;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image:  linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, .5)
+          );
+        opacity: .7;
+    }
 
 `

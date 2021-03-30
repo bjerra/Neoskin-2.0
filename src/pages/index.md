@@ -12,6 +12,7 @@ description: "Boka gärna din konsultation i samband med första behandlingen om
   istället, bättre anpassad för dig. "
 features:
   - Acne paketet, värde 5300:-
+  - 4x Enerpeel hands, värde 6000
 image3: /img/green.jpg
 portrait: /img/anais.jpg
 about: "Hej jag heter anais"

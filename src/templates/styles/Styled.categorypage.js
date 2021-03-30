@@ -4,33 +4,10 @@ export const Wrapper =  styled.div`
 
 
 `
-export const Header = styled.section`
-    
-background-image: url(${({ image }) => image});
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
 
-text-align: center;
+export const ServiceCard = styled.li`
 
-`
-
-export const Body = styled.section`
-    
-
-margin: 0 auto;
-max-width: 900px; 
-padding: 3rem;
-
-@media screen and (max-width: 980px) {
-    padding: 1rem 0;
-  }
-
-`
-
-export const ServiceCard = styled.div`
-
-height: 80px;
+height: 50px;
 transition: transform .2s ease;
 position: relative;
 background: ${({ theme }) => theme.COLOR.LIGHT.hex};
@@ -40,15 +17,12 @@ align-items: center;
 text-align: left;
 justify-content: space-between;
 margin-top: 2px;
-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.21);
+border-bottom: 1px solid #bbb;
 
 color: ${({ theme }) => theme.COLOR.DARK.hex};
 
 @media screen and (min-width: 980px) {
-    height: 125px;
   }
-
-
 
 > a, .test{
     height: 100%; 
@@ -66,9 +40,8 @@ color: ${({ theme }) => theme.COLOR.DARK.hex};
         transition: transform .2s ease;
         color: ${({ theme }) => theme.COLOR.INFO.hex};
     }
-    h4 {
+    h5 {
         font-weight: 600;
-        margin-top: .75rem;
     }
     p {
         color: #999;
@@ -87,7 +60,7 @@ color: ${({ theme }) => theme.COLOR.DARK.hex};
     :hover {       
       background-color: #fbfbfb;
         span{
-            transform: scale(1.5, 1.5);
+            transform: scale(1.2, 1.2);
            
         }
       }
@@ -115,5 +88,39 @@ color: ${({ theme }) => theme.COLOR.DARK.hex};
       
 }
 
+
+`
+
+export const SubCategory = styled.div`
+    
+  text-align: center;
+
+  
+  @media screen and (min-width: 980px) {
+    ul{
+      padding: 2rem 5rem 0 5rem;
+    }
+  }
+
+  h1 {
+    z-index: 10;
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+  }
+
+  .content {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  ui{
+    padding-top: 2rem;
+  }
 
 `

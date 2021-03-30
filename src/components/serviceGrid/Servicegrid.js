@@ -7,7 +7,7 @@ const ServiceGrid = ({data}) => {
     return (
 
     <StyledServiceGrid>
-        {data.map(({ title, image, slug}, index) => { 
+        {data.map(({ title, image, slug, subCategories}, index) => { 
            return (
             <Card 
                 key={index} 
@@ -15,10 +15,18 @@ const ServiceGrid = ({data}) => {
                 >      
                 <Image>
                     <GatsbyImage image={getImage(image)} alt={title} />
-                </Image>    
-                <h3>
-                    {title.replace('behandlingar', '-behandlingar')}
-                </h3>           
+                    <span className="info">  
+                        <h3>
+                            {title}
+                        </h3>   
+                            {
+                                subCategories.map(element => (
+                                    <p>  - {element.title} </p>
+                                ))
+                            }        
+                    </span>
+                  
+                </Image>               
             </Card>
         )}
         )}

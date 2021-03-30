@@ -4,8 +4,7 @@ import styled from "@emotion/styled"
 export const StyledFooter = styled.footer`
 
     padding: 50px 0 120px 0;
-    border-top: 2px solid #e0e0e0;
-    background-color: #404040;
+    background-color: #252525;
     display: flex;
     justify-content: flex-start;
     position: relative;

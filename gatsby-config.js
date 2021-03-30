@@ -28,12 +28,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
-    {
-      resolve: 'gatsby-plugin-mailchimp',
-      options: {
-        endpoint: MAILCHIMP_ENDPOINT,
-      },
-    },
+  
     {
       resolve: `gatsby-plugin-modal-routing-3`,
       options: {

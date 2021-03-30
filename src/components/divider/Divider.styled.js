@@ -5,15 +5,12 @@ import styled from "@emotion/styled"
 export const StyledDivider = styled.div`
     
     position: relative;
-    height: 100px;
+    height: 35px;
     display:flex;
     justify-content: center;
     align-items: center;
-    background: ${({ fromColor, toColor }) => `linear-gradient(${toColor}, ${toColor})`};
+    background: ${({ fromColor, toColor }) => `linear-gradient(${fromColor}, ${toColor})`};
    
-    h3{
-        
-    }
 `
 
 export const StartShape = styled.div`
@@ -38,6 +35,7 @@ export const StartShape = styled.div`
         
 
 `
+
 export const EndShape = styled.div`
     
     position: absolute;
@@ -46,12 +44,12 @@ export const EndShape = styled.div`
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    transform: rotate(180deg);
+
     svg {
         position: relative;
         display: block;
-        width: calc(126% + 1.3px);
-        height: 96px;
+        width: calc(100% + 1.3px);
+        height: ${({ height }) => height}px;
     }
     
     .shape-fill {

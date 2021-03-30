@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
+import { useTheme  } from '@emotion/react'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Wrapper,Intro,Highlights, CTA, Services, About, Salon} from './styles/Styled.Indexpage'
 import {Banner, Logo, Features, Layout, ServiceGrid, Divider, Tour} from '../components'
@@ -17,16 +18,16 @@ const IndexPageTemplate = ({
   categories
 }) => {
 
+  const theme = useTheme();
   return(
-  <Wrapper>
-   
+  <Wrapper theme={theme}>
     <Banner image = {image} alt="Neoskin">
           <Logo />    
         {//<video autoPlay loop muted playsInline src={require("../img/banner.webm")}></video>
         }
     </Banner>
    
-    <Intro color={"#fff"}>
+    <Intro theme={theme}>
       <div className="inner">     
       <header>
         <h1>{title}</h1>
@@ -36,42 +37,45 @@ const IndexPageTemplate = ({
       </header>     
       </div>  
     </Intro>
-    <Divider fromColor={"#fff"} toColor={"#d2e0f1"} text={"Favoriter"} height={30}/>
-    <Highlights color={"#d2e0f1"}>
+    <Divider fillColor={theme.COLOR.LIGHT.hex} fromColor={"#050505"} toColor={"#252525"} height={30}/>
+    <Highlights color={"#252525"}>
+    <h1>Favoriter</h1>
         {features && <Features services={features} />}
     </Highlights>
-    <Divider fromColor={"#d2e0f1"} toColor={"#fffbe3"} text={"Behandlingar"} height={10}/>
-    <Services color={"#fffbe3"}>
+    <Divider fillColor={theme.COLOR.LIGHT.hex} fromColor={"#252525"} toColor={"#151515"} height={20} invert={true}/>
+    <Services theme={theme}>
+    <h1>Behandlingar</h1>
       <ServiceGrid data={categories}/>       
     </Services>
 
-    <Divider fromColor={"#fffbe3"} toColor={"#e0f9e8"} text={"Om Mig"} height={20}/>
-    <About color={"#e0f9e8"}>
-
-      <div className="inner">  
-          
-      <div className="column">
-      <GatsbyImage image={getImage(portrait)} alt={"Anais"} />
-      </div>
-      <div className="column">
-        <p>{about}</p>
-        <Link to="/om">  
-              Läs mer
-        </Link> 
+    <Divider fillColor={theme.COLOR.LIGHT.hex} fromColor={"#050505"} toColor={"#252525"} height={25}/>
+    <About theme={theme} color={"#252525"}>
+      <h1>Om Mig</h1>
+      <div className="inner">   
+        <div className="column">
+        <GatsbyImage image={getImage(portrait)} alt={"Anais"} />
+        </div>
+        <div className="column">
+          <p>{about}</p>
+          <Link to="/om">  
+                Läs mer
+          </Link> 
       </div>
       </div>
     </About>
-    <CTA color={"#e0f9e8"}>
+    <Divider fillColor={theme.COLOR.LIGHT.hex} fromColor={"#252525"} toColor={"#151515"} height={15} invert={true}/>
+
+    <Salon theme={theme}>
+    <h1>Salongen</h1>
+      <Tour/>
+    </Salon>
+    <CTA theme={theme}>
         <GatsbyImage image={getImage(image3)} alt={"nyhetsbrev"} />
       <div className="inner">          
         <EmailList />
       </div>
+      
     </CTA>
-    
-    <Divider fromColor={"#e0f9e8"} toColor={"#fff"} text={"Salongen"} height={0}/>
-    <Salon color={"#fff"}>
-        <Tour/>
-    </Salon>
   </Wrapper>
 )}
 
@@ -175,9 +179,13 @@ export const pageQuery = graphql`
         image {
           childImageSharp {
             gatsbyImageData(
+              width: 1024
               placeholder: BLURRED
             )
           }
+        }
+        subCategories{
+          title
         }
       }
     }

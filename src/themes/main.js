@@ -23,13 +23,13 @@ const BLUE = {
 }
 
 const HOVER = {
-  hex: "#904949",
+  hex: "#846363",
   rgb: `rgb(235, 225, 52)`,
   rgbArray: [235, 225, 52],
 }
 
 const ROSE_MADDER = {
-  hex: "#748fbf",
+  hex: "#7e9ed6",
   rgb: `rgb(231,29,54)`,
   rgbArray: [231, 29, 54],
 }
@@ -41,13 +41,13 @@ const ORANGE_PEEL = {
 }
 
 const MENU = {
-  hex: "#fbf0f0",
+  hex: "#FDFFFC",
   rgb: `rgb(255,159,28)`,
   rgbArray: [255, 159, 28],
 }
 
 const MENU_INVERT = {
-  hex: "#000",
+  hex: "#011627",
   rgb: `rgb(255,159,28)`,
   rgbArray: [255, 159, 28],
 }
@@ -94,8 +94,7 @@ const BASE_FONT_SIZE = `${18}px`
 
 const H1 = css`
   font-family: Quicksand;
-  font-size: 2.509em;
-  font-weight: 500;
+  font-size: 2.109em;
   margin-bottom: 0.4em;
 
   @media screen and (max-width: ${BREAKPOINTS.MOBILE}) {
@@ -106,7 +105,6 @@ const H1 = css`
 const H2 = css`
   font-family: Quicksand;
   font-size: 2.157em;
-  font-weight: 500;
   margin-bottom: 0.4em;
 
   @media screen and (max-width: ${BREAKPOINTS.MOBILE}) {
@@ -117,7 +115,6 @@ const H2 = css`
 const H3 = css`
 font-family: Quicksand;
   font-size: 1.469em;
-  font-weight: 600;
   margin-bottom: 0.4em;
 
   @media screen and (max-width: ${BREAKPOINTS.MOBILE}) {
@@ -128,7 +125,6 @@ font-family: Quicksand;
 const H4 = css`
 font-family: Quicksand;
   font-size: 1.177em;
-  font-weight: 500;
   margin-bottom: 0.4em;
 
   @media screen and (max-width: ${BREAKPOINTS.MOBILE}) {
@@ -139,7 +135,6 @@ font-family: Quicksand;
 const H5 = css`
   font-family: Quicksand;
   font-size: 1em;
-  font-weight: 500;
   margin-bottom: 0.4em;
 
   @media screen and (max-width: ${BREAKPOINTS.MOBILE}) {

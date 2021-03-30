@@ -2,62 +2,98 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 import {Layout, Banner, BokaButton} from '../components'
-import { Wrapper, ServiceCard, Body} from './styles/Styled.categorypage'
+import { Wrapper, ServiceCard, SubCategory} from './styles/Styled.categorypage'
 import { useTheme  } from '@emotion/react'
+
+const serviceCard = (service, theme) => (
+  <ServiceCard key={service.id} theme={theme}>
+                {service.info ? (
+                   <Link  
+                   to={`/behandlingar/${service.slug}`} 
+                   state={{modal: true, noScroll: true}}>
+                 <h5>{service.title}</h5>
+                 <span>mer info</span> 
+               </Link>
+                ) : (
+                  <div className="test">
+                <h4>{service.title}</h4>  
+              </div>
+                )}
+              <div className="boka">
+                  <BokaButton slug={service.slug}/>    
+              </div>
+             
+        </ServiceCard> 
+)
 
 const CategoryPageTemplate = ({
   image,
   title,
   description,
-  services
+  services,
+  subCategories
 }) => {
+
+  const serviceData = [...services]
+  subCategories.forEach(subCategory => {
+    subCategory.serviceData = []
+    subCategory.services.forEach(s => {
+      const i = services.findIndex(p=>p.id == s)
+      if(i !== -1){
+        subCategory.serviceData.push(services[i])
+        serviceData.splice(i, 1)
+      } 
+    })
+  })
 
   const theme = useTheme()
   return(
     <Wrapper>
-      <Banner image={image} alt={title}>
-        <h1>{title}</h1>
-      </Banner>  
-      <Body>
-        <p>{description}</p>
+      <SubCategory>    
+        <Banner image = {image} alt="Neoskin">
+              <h1>{title}</h1>
+              </Banner>
+              <div className="content">               
+                      <p>
+                        {description}
+                      </p>
+                      <ul>
+                      {
+                        serviceData.map((service) => (                            
+                          serviceCard(service, theme)        
+                        ))
+                        }  
+                      </ul>
+                     
+               </div>  
+     
+           </SubCategory>   
         {
-          services.map((service) => (                            
-              <ServiceCard key={service.id} theme={theme}>
-                {service.info ? (
-                   <Link  
-                   to={`/behandlingar/${service.slug}`} 
-                   state={{modal: true}}>
-                 <h4>{service.title}</h4>
-                 <div>
-                   <p>
-                     {service.time} , {service.price} 
-                   </p> 
-                   
-                 </div>
-                 <span>mer info</span> 
-               </Link>
+          subCategories.map((subCategory) => (   
+            <SubCategory>     
+                <Banner image = {subCategory.image} alt="Neoskin">
+                  <h1>{subCategory.title}</h1>
+                </Banner>
+           
+              <div className="content">                
+                      <p>
+                        {subCategory.description}
+                      </p>
+                      <ul>
 
-                ) : (
-                  <div className="test">
-                <h4>{service.title}</h4>
-                <div>
-                  <p>
-                    {service.time} , {service.price} 
-                  </p> 
-                  
-                </div>
-              </div>
-
-                )}
-             
-              <div className="boka">
-                  <BokaButton slug={service.slug}/>    
-              </div>
-             
-           </ServiceCard>                   
+                      {
+                        subCategory.serviceData.map((service) => (                            
+                          serviceCard(service, theme)            
+                        ))
+                        }
+                      </ul>
+                     
+               </div>  
+            </SubCategory>                         
+                            
           ))
-          }    
-      </Body>
+          }   
+      
   </Wrapper>
   )
 }
@@ -65,13 +101,14 @@ const CategoryPageTemplate = ({
 CategoryPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
+  subCategories: PropTypes.array
 }
 
 const CategoryPage = ({ data }) => {
 
   const category = data.categoriesJson
   const services = data.allServicesJson.nodes;
-  const {title, image, description} = category;
+  const {title, image, description, subCategories} = category;
 
   return (
     <Layout pageTitle={title} pageDescription={description}>
@@ -80,6 +117,7 @@ const CategoryPage = ({ data }) => {
         title={title}     
         description={description}     
         services={services}
+        subCategories={subCategories}
       />
     </Layout>
   )
@@ -99,7 +137,7 @@ export const categoryPageQuery = graphql`
   query CategoryPage($id: String!) {
     categoriesJson(title: {eq: $id}) {
       title
-      description
+      description 
       image {
         childImageSharp {
           gatsbyImageData(
@@ -113,7 +151,7 @@ export const categoryPageQuery = graphql`
           description
           image {
             childImageSharp {
-              gatsbyImageData(
+              gatsbyImageData(    
                 layout: FULL_WIDTH
                 placeholder: BLURRED
               )

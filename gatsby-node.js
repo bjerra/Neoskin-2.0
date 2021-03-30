@@ -12,7 +12,6 @@ exports.createSchemaCustomization = ({ actions }) => {
       features: [ServicesJson] @link(by: "title") 
       
     }
-
   `
   createTypes(typeDefs)
 }

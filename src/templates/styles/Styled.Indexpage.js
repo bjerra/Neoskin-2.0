@@ -2,7 +2,9 @@ import styled from "@emotion/styled"
 
 export const Wrapper =  styled.div`
     
-h2{
+background-color: ${({ theme }) => theme.COLOR.DARK.hex}; 
+color: ${({ theme }) => theme.COLOR.LIGHT.hex}; 
+h1{
     text-align: center;   
 }
 
@@ -14,7 +16,8 @@ section {
 
 export const Intro = styled.section`
 
-    background-color: ${({ color }) => color}; 
+    background-color: ${({ theme }) => theme.COLOR.LIGHT.hex}; 
+    color: ${({ theme }) => theme.COLOR.DARK.hex}; 
     padding: 4rem 0 6rem 0 ;
    
     z-index: 1; 
@@ -54,15 +57,14 @@ export const Intro = styled.section`
 `
 
 export const Highlights = styled.section`
+    padding: 2rem 0;
     background-color: ${({ color }) => color}; 
-    height: 300px;
    
 `
 
 export const CTA = styled.section`
 padding: 5rem 0;
-
-background-color: ${({ color }) => color}; 
+color: ${({ theme }) => theme.COLOR.DARK.hex}; 
     height: 400px;
    
     text-align: center;
@@ -84,7 +86,8 @@ background-color: ${({ color }) => color};
 
 export const Services = styled.section`
     padding-bottom: 2rem;
-    background-color: ${({ color }) => color}; 
+    color: ${({ theme }) => theme.COLOR.DARK.hex}; 
+    background-color: ${({ theme }) => theme.COLOR.LIGHT.hex}; 
     .inner {
         margin: 0 auto;
         width: 100%;
@@ -99,6 +102,7 @@ export const Services = styled.section`
 
 export const About = styled.section`
 
+    padding-bottom: 2rem;
     background-color: ${({ color }) => color}; 
     .inner {
         display: flex;
@@ -130,6 +134,7 @@ export const About = styled.section`
 `
 export const Salon = styled.section`
 
-    background-color: ${({ color }) => color}; 
+    color: ${({ theme }) => theme.COLOR.DARK.hex}; 
+    background-color: ${({ theme }) => theme.COLOR.LIGHT.hex}; 
    
 `
