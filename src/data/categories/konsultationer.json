@@ -4,10 +4,5 @@
  "description": "",
  "image": "/img/default.jpg",
  "slug": "konsultationer",
- "subCategories": [],
- "services": [
-  1180811,
-  1379572,
-  1180812
- ]
+ "subCategories": []
 }
