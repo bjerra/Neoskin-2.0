@@ -1,8 +1,11 @@
 {
  "title": "NY KUND",
- "id": 0,
+ "id": 1,
  "description": "",
  "image": "/img/default.jpg",
  "slug": "ny-kund",
- "subCategories": []
+ "subCategories": [],
+ "services": [
+  1364460
+ ]
 }

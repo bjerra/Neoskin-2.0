@@ -1,10 +1,9 @@
 {
  "id": 1362855,
  "title": "Ultraljudsrengöring",
- "price": "500 kr",
- "time": "30 minuter",
+ "price": 500,
+ "time": 1800,
  "slug": "ultraljudsrengöring-1362855",
- "category": "Ansiktsbehandlingar",
  "info": [
   {
    "title": "VAD GÖR BEHANDLINGEN?",

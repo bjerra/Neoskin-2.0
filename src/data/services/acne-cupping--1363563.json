@@ -1,11 +1,9 @@
 {
  "id": 1363563,
  "title": "*Acne cupping ",
- "price": "200 kr",
- "time": "",
+ "price": 200,
+ "time": 300,
  "slug": "acne-cupping--1363563",
- "category": "Tilläggstjänster ",
- "image": "/img/default.jpg",
  "info": [
   {
    "title": "",

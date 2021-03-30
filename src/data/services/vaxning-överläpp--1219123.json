@@ -1,10 +1,9 @@
 {
  "id": 1219123,
  "title": "*Vaxning överläpp ",
- "price": "200 kr",
- "time": "",
+ "price": 200,
+ "time": 300,
  "slug": "vaxning-överläpp--1219123",
- "category": "Tilläggstjänster ",
  "info": [
   {
    "title": "",

@@ -1,30 +1,29 @@
 {
-    "title": "Avancerad Hudvård - Apparatur",
-    "id": 4,
-    "description": "Avancerad Hudvård o grejer",
-    "image": "/img/default.jpg",
-    "slug": "avancerad-hudvard-apparatur",
-    "subCategories": [
-       {
-         "title": "Jet Plasma",
-         "description": "Plasma grejer",
-         "image": "/img/jett-plasma-logo.jpg",
-         "services": [
-           1364788,
-           1364885,
-           1364887
-         ]
-       },
-       {
-        "title": "Fraxium",
-        "description": "Fraxium grejer",
-        "image": "/img/jett-plasma-logo.jpg",
-        "services": [
-            1364769,
-            1364770,
-            1364771,
-            1364772
-        ]
-      }
-     ]
-   }
+ "title": "Avancerad Hudvård - Apparatur",
+ "id": 5,
+ "description": "",
+ "image": "/img/default.jpg",
+ "slug": "avancerad-hudvard-apparatur",
+ "subCategories": [],
+ "services": [
+  1379356,
+  1364773,
+  1364774,
+  1364797,
+  1364796,
+  1364885,
+  1364888,
+  1364886,
+  1364887,
+  1364889,
+  1364788,
+  1364787,
+  1364784,
+  1364785,
+  1364786,
+  1364772,
+  1364770,
+  1364771,
+  1364769
+ ]
+}

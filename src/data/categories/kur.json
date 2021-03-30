@@ -1,8 +1,17 @@
 {
  "title": "Kur",
- "id": 7,
+ "id": 8,
  "description": "",
  "image": "/img/default.jpg",
  "slug": "kur",
- "subCategories": []
+ "subCategories": [],
+ "services": [
+  1364876,
+  1364877,
+  1364878,
+  1364879,
+  1364880,
+  1364881,
+  1364882
+ ]
 }

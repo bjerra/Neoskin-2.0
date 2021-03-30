@@ -1,8 +1,17 @@
 {
  "title": "Massage & Kroppsbehandlingar",
- "id": 2,
+ "id": 3,
  "description": "",
- "image": "/img/img_5688b.jpg",
+ "image": "/img/default.jpg",
  "slug": "massage-kroppsbehandlingar",
- "subCategories": []
+ "subCategories": [],
+ "services": [
+  1364905,
+  1364907,
+  1364906,
+  1364902,
+  1364904,
+  1364903,
+  1364908
+ ]
 }

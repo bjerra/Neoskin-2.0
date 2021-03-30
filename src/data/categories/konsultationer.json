@@ -1,8 +1,13 @@
 {
  "title": "Konsultationer",
- "id": 8,
+ "id": 9,
  "description": "",
- "image": "/img/img_5688b.jpg",
+ "image": "/img/default.jpg",
  "slug": "konsultationer",
- "subCategories": []
+ "subCategories": [],
+ "services": [
+  1180811,
+  1379572,
+  1180812
+ ]
 }

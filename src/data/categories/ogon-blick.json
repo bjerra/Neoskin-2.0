@@ -1,8 +1,18 @@
 {
  "title": "Ögon-Blick",
- "id": 9,
+ "id": 10,
  "description": "",
  "image": "/img/default.jpg",
  "slug": "ogon-blick",
- "subCategories": []
+ "subCategories": [],
+ "services": [
+  1364916,
+  1364915,
+  1364914,
+  1364909,
+  1364910,
+  1364913,
+  1364911,
+  1364912
+ ]
 }

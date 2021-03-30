@@ -1,8 +1,14 @@
 {
  "title": "Förmånliga paket inkl. hemvård",
- "id": 6,
+ "id": 7,
  "description": "",
  "image": "/img/default.jpg",
  "slug": "formanliga-paket-inkl-hemvard",
- "subCategories": []
+ "subCategories": [],
+ "services": [
+  1379358,
+  1364899,
+  1364900,
+  1364901
+ ]
 }

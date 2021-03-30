@@ -1,10 +1,9 @@
 {
  "id": 1363567,
  "title": "*Massage 15´",
- "price": "300 kr",
- "time": "",
+ "price": 300,
+ "time": 600,
  "slug": "massage-15-1363567",
- "category": "Tilläggstjänster ",
  "info": [
   {
    "title": "",

@@ -1,11 +1,9 @@
 {
  "id": 1364899,
  "title": "Acne paketet, värde 5300:-",
- "price": "3,900 kr",
- "time": "90 minuter",
+ "price": 3900,
+ "time": 5400,
  "slug": "acne-paketet-värde-5300--1364899",
- "category": "Förmånliga paket inkl. hemvård",
- "image": "/img/default.jpg",
  "info": [
   {
    "title": "VAD GÖR BEHANDLINGEN?",

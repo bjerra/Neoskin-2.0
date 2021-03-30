@@ -1,10 +1,9 @@
 {
  "id": 1364909,
  "title": "Brynform",
- "price": "250 kr",
- "time": "15 minuter",
+ "price": 250,
+ "time": 900,
  "slug": "brynform-1364909",
- "category": "Ögon-Blick",
  "info": [
   {
    "title": "VAD GÖR BEHANDLINGEN?",
