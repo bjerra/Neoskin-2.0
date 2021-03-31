@@ -4,5 +4,27 @@
  "description": "",
  "image": "/img/default.jpg",
  "slug": "avancerad-hudvard-apparatur",
- "subCategories": []
+ "subCategories": [
+    {
+      "title": "Jet Plasma",
+      "description": "Plasma grejer",
+      "image": "/img/jett-plasma-logo.jpg",
+      "services": [
+        1364788,
+        1364885,
+        1364887
+      ]
+    },
+    {
+     "title": "Fraxium",
+     "description": "Fraxium grejer",
+     "image": "/img/jett-plasma-logo.jpg",
+     "services": [
+         1364769,
+         1364770,
+         1364771,
+         1364772
+     ]
+   }
+  ]
 }

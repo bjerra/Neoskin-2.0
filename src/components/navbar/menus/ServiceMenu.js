@@ -6,7 +6,7 @@ const ServiceMenu = () => {
   const { allCategoriesJson  } = useStaticQuery(
     graphql`
     {
-      allCategoriesJson {
+      allCategoriesJson(sort: {fields: id}) {
         nodes {
           title
           slug
