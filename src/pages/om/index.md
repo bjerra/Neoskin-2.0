@@ -32,19 +32,21 @@ Varmt välkommen till oss i centrala Jönköping!
 
 2020 - COVID-19 utbrott i Europa: fördjupningskurs i hygien och egenkontroll för optimal kundsäkerhet.
 
-2020 - Nytt Samarbete med Esthetica Hudvårdssalong under namnet Neoskïn Jkpg
+2020 - Inhyrd på Esthetica Hudvårdssalong under namnet Neoskin
 
 2019 - Kosmetisk akupunktur hos MB muskelrehab & Akupunktur.
 
-2018 - Först i Jönköping city med JETT Plasma behandlingar.
+2018 - Först ut i Jönköping med JETT Plasma behandlingar.
 
-2017 - Först i Småland med Fraktionerad Erbiumlaser : Fraxium 1550 Fusion
+2017 - Först ut i Småland med Fraktionerad Erbiumlaser
 
-2017 - Först ut med att indrocudera Ultraljudsrengöring / portömning till Jönköping.
+2017- Först ut i Jönköping med LED-mask terapi
+
+2017 - Först ut med att indrocudera Ultraljudsrengöring som skonsam och effektiv exfoliering och portömning till Jönköping.
 
 2017 - Mars-April 2020 : inhyrd på Salong 5 sinnen under namnet Aesthetica Life
 
-2017 - SHR kurs i estetisk apparaturbehandling. Kursansvarig: PA Torstensson
+2017 - SHR kurs i estetisk apparaturbehandling. Kursansvarig: PA Torstensson - Stockholm
 
 2016 - Naturo-Esthétique Kurgivare: Laboratoires Phyt´s - i Bryssel
 
@@ -58,7 +60,7 @@ Varmt välkommen till oss i centrala Jönköping!
 
 2013 - Masters för utbildade hudterapeuter 1 år på Le Centre Européen De l´ Esthétique Belgique. - i Bryssel
 
-2011-2013 - Tvåårig hudterapeututbildning på då CEDEB som inkluderade 900h praktik på SPASIBA ( nu Dip Nature). - i Bryssel.
+2011-2013 - Tvåårig hudterapeututbildning på då CEDEB som inkluderade 900h praktik på SPASIBA. - i Bryssel.
 
 2010-2011 - Communication på Vesalius College of Brussels. En erfarenhet som fortfarande visar sig vara av stor nytta än idag.
 
