@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Auktoriserad hudterapeut med Gesällbrev
-image: /img/chemex.jpg
+image: /img/CTA.jpg
 description: "Boka gärna din konsultation i samband med första behandlingen om
   du är osäker på vad du ska välja, eller börja med konsultationen om du känner
   dig helt vilsen. Du får en genomtänkt, professionell och skräddarsydd plan som
@@ -15,5 +15,5 @@ features:
   - 4x Enerpeel hands, värde 6000
 image3: /img/green.jpg
 portrait: /img/anais.jpg
-about: "Hej jag heter anais"
+about: Hej jag heter anais
 ---
