@@ -1,8 +1,8 @@
 {
- "title": "Ansiktsbehandlingar",
- "id": 2,
- "description": "",
- "image": "/img/default.jpg",
- "slug": "ansiktsbehandlingar",
- "subCategories": []
+  "title": "Ansiktsbehandling - Biologique Recherche",
+  "id": 2,
+  "description": "Neoskin är en av få utvalda spa och kliniker i Sverige som får jobba med detta högkvalitativa märke. Behandlingarna och produkterna skräddarsys efter din Skin Instant så du får maximala resultat efter varje besök hos oss.",
+  "image": "/img/default.jpg",
+  "slug": "ansiktsbehandlingar",
+  "subCategories": []
 }
