@@ -8,26 +8,12 @@
     {
       "title": "Signatur behandling utan boosters",
       "services": [
-        1364876
+        1364876,
+        1364877,
+        1363563,
+        1364880
       ],
       "description": "Behandling på 60 min \n1190:-",
-      "image": "/img/Neoskïn logo gold-white.jpg"
-    },
-    {
-      "title": "Signatur behandling med 1 booster",
-      "description": "en timme med 1 booster\n1990:-",
-      "services": [
-        1364899
-      ],
-      "image": "/img/Neoskïn logo gold-white.jpg"
-    },
-    {
-      "services": [
-        1364882
-      ],
-      "video": "h",
-      "description": "n",
-      "title": "y",
       "image": "/img/Neoskïn logo gold-white.jpg"
     }
   ]
