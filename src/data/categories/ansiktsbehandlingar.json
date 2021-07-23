@@ -4,5 +4,22 @@
   "description": "Neoskin är en av få utvalda spa och kliniker i Sverige som får jobba med detta högkvalitativa märke. Behandlingarna och produkterna skräddarsys efter din Skin Instant så du får maximala resultat efter varje besök hos oss.",
   "image": "/img/default.jpg",
   "slug": "ansiktsbehandlingar",
-  "subCategories": []
+  "subCategories": [
+    {
+      "title": "Signatur behandling utan boosters",
+      "services": [
+        1364876
+      ],
+      "description": "Behandling på 60 min \n1190:-",
+      "image": "/img/Neoskïn logo gold-white.jpg"
+    },
+    {
+      "title": "Signatur behandling med 1 booster",
+      "description": "en timme med 1 booster\n1990:-",
+      "services": [
+        1364899
+      ],
+      "image": "/img/Neoskïn logo gold-white.jpg"
+    }
+  ]
 }
