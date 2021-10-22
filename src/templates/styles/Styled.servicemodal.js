@@ -2,10 +2,11 @@ import styled from "@emotion/styled"
 import { Link } from 'gatsby'
 
 export const Container = styled.div`
+
     height: calc(100vh - 55px);
     width: 100%;
     max-width: 1000px;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.COLOR.LIGHT.hex};
     line-height: 1.25;
     overflow: hidden;
     display: flex;
@@ -20,7 +21,7 @@ export const Container = styled.div`
 export const ModalContainer = styled.div `
     height: 100%;
     width: 100%;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.COLOR.LIGHT.hex};
     line-height: 1.25;
     overflow: hidden;
     display: flex;
@@ -90,8 +91,14 @@ export const VideoContainer = styled.div`
       }
 `
 
-export const Close = styled(Link)`
-    
+export const Close = styled.button`
+   
+    border: none;
+    background: none;
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    right: 5px;
     opacity: 1;
     font-size: 1.2rem;
     }
@@ -102,10 +109,13 @@ export const Close = styled(Link)`
 
 export const Footer = styled.div`
     z-index:20;
-    background-color: #fff;
+    background-color: #ddd;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size:1.25rem;
+    line-height: 2rem;
+    text-align: left;
     div{
         flex: 1;
 
@@ -113,12 +123,12 @@ export const Footer = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
 
         @media screen and (min-width: 980px) {
             width: 90px;
             height: 90px;
         }
+
     }
-    
-  
 `

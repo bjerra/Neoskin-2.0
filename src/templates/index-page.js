@@ -171,7 +171,7 @@ export const pageQuery = graphql`
         about
       }
     }
-    allCategoriesJson {
+    allCategoriesJson(sort: {fields: id}) {
       nodes {
         title
         slug

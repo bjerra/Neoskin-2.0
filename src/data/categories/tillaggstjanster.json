@@ -1,8 +1,8 @@
 {
- "title": "Tilläggstjänster ",
- "id": 4,
- "description": "",
- "image": "/img/default.jpg",
- "slug": "tillaggstjanster",
- "subCategories": []
+  "title": "Boosters",
+  "id": 4,
+  "description": "text",
+  "image": "/img/default.jpg",
+  "slug": "tillaggstjanster",
+  "subCategories": []
 }

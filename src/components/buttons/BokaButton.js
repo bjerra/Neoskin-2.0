@@ -15,7 +15,7 @@ export const StyledButton = styled.a`
 `
 
 const Button = ({ slug, size }) => (
-    <StyledButton href={`https://www.bokadirekt.se/places/neoskin-33692/${slug}`} size={size} target="_blank" rel="noopener noreferrer">    
+    <StyledButton href={`https://www.bokadirekt.se/boka-tjanst/neoskin-33692/${slug}`} size={size} target="_blank" rel="noopener noreferrer">    
         Boka                                    
     </StyledButton>
 )

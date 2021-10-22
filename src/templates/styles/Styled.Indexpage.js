@@ -75,12 +75,28 @@ color: ${({ theme }) => theme.COLOR.DARK.hex};
         left: 0;
         right:0;
         overflow: hidden;
+
+        :after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:  linear-gradient(
+              rgba(255, 255, 255, 1),
+              rgba(255, 255, 255, 0)
+            );
+            opacity: 1;
+        }
         
     }
     .inner { 
       position: relative;
       margin: 5% auto;
-      z-index: 3; }
+      z-index: 3; 
+      
+    }
 
 `
 
