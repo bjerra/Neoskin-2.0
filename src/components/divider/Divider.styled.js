@@ -5,7 +5,7 @@ import styled from "@emotion/styled"
 export const StyledDivider = styled.div`
     
     position: relative;
-    height: 25px;
+    height: ${({ size }) => size}px;
     display:flex;
     justify-content: center;
     align-items: center;

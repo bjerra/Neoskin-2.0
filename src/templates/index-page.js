@@ -42,14 +42,6 @@ const IndexPageTemplate = ({
       </div>  
      
     </Intro>
-        
-   
-    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.INFO} height={20}/>
-    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.INFO} height={20} invert={true}/>
-    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.DIM_BLUE} height={20}/>
-    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.DIM_BLUE} height={20} invert={true}/>
-    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.MISTY_BLUE} height={20}/>
-    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.MISTY_BLUE} height={20} invert={true}/>
 
     <Highlights color={theme.COLOR.BACKGROUND}>
       {features && <Features services={features} />}
@@ -65,15 +57,15 @@ const IndexPageTemplate = ({
      
     </CTA>
 
-    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.MENU_BACKGROUND} height={20}/>
-    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.MENU_BACKGROUND} height={20} invert={true}/>
-    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.OAK} height={20}/>
-    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.OAK} height={20} invert={true}/>
+    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.LIGHT} height={5} size={5}/>
 
-    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.MUSTARD} height={20}/>
-    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.MUSTARD} height={20} invert={true}/>
+    <Divider fillColor={theme.COLOR.LIGHT} color={theme.COLOR.INFO} height={10} size={30}/>
 
-    <Divider fillColor={theme.COLOR.FOOTER} color={theme.COLOR.BACKGROUND} height={20} invert={true}/>
+
+    <Divider fillColor={theme.COLOR.INFO} color={theme.COLOR.DIM_BLUE} height={20} size={60}/>
+  
+
+    <Divider fillColor={theme.COLOR.DIM_BLUE} color={theme.COLOR.FOOTER} height={35} size={90}/>
 
   </Wrapper>
 )}
