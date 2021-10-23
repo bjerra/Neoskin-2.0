@@ -2,8 +2,6 @@ import styled from "@emotion/styled"
 
 export const Wrapper =  styled.div`
     
-background-color: ${({ theme }) => theme.COLOR.DARK.hex}; 
-color: ${({ theme }) => theme.COLOR.LIGHT.hex}; 
 h1{
     text-align: center;   
 }
@@ -16,8 +14,6 @@ section {
 
 export const Intro = styled.section`
 
-    background-color: ${({ theme }) => theme.COLOR.LIGHT.hex}; 
-    color: ${({ theme }) => theme.COLOR.DARK.hex}; 
     padding: 4rem 0 6rem 0 ;
    
     z-index: 1; 
@@ -34,7 +30,7 @@ export const Intro = styled.section`
     }
     
     .inner {
-        margin: 0 auto;
+        margin: 2rem auto;
         width: 75rem;
         max-width: calc(100% - 3rem); 
         @media screen and (max-width: 480px) {
@@ -43,8 +39,12 @@ export const Intro = styled.section`
             } 
         }
     }
+    h1{
+        color: ${({ theme }) => theme.COLOR.LIGHT}; 
+    }
 
     header{
+        
         text-align: center;
         margin-bottom: 4rem; 
     }
@@ -54,18 +54,23 @@ export const Intro = styled.section`
         margin-right: auto;
     }
 
+    .button{
+        display: flex;
+        justify-content: center;
+    }
+
 `
 
 export const Highlights = styled.section`
-    padding: 2rem 0;
+    padding: 1rem 0;
     background-color: ${({ color }) => color}; 
    
 `
 
 export const CTA = styled.section`
-padding: 5rem 0;
-color: ${({ theme }) => theme.COLOR.DARK.hex}; 
-    height: 400px;
+
+        padding: 1rem 0;
+    
    
     text-align: center;
     .gatsby-image-wrapper {
@@ -98,59 +103,4 @@ color: ${({ theme }) => theme.COLOR.DARK.hex};
       
     }
 
-`
-
-export const Services = styled.section`
-    padding-bottom: 2rem;
-    color: ${({ theme }) => theme.COLOR.DARK.hex}; 
-    background-color: ${({ theme }) => theme.COLOR.LIGHT.hex}; 
-    .inner {
-        margin: 0 auto;
-        width: 100%;
-        @media screen and (max-width: 480px) {
-          .inner {
-            max-width: calc(100% - 3rem); 
-            } 
-        }
-    }
-`
-
-
-export const About = styled.section`
-
-    padding-bottom: 2rem;
-    background-color: ${({ color }) => color}; 
-    .inner {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        @media screen and (max-width: 980px) {
-            flex-direction: column;
-        }
-    }
-
-    .gatsby-image-wrapper {
-        width: 300px;
-        height: 300px;
-    }
-
-    .column{        
-      
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-         * {
-            flex: 1;
-        }
-
-     
-        
-    }
-`
-export const Salon = styled.section`
-
-    color: ${({ theme }) => theme.COLOR.DARK.hex}; 
-    background-color: ${({ theme }) => theme.COLOR.LIGHT.hex}; 
-   
 `

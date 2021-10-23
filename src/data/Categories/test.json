@@ -1,0 +1,18 @@
+
+          {
+            "title": "Konsultationer",
+            "price": 0,
+            "time": 1200,
+            "image": "/img/default.jpg",
+            "slug": "konsultationer",
+            "description": "Konsultationer",
+            "subCategories": [
+                {
+                  "title": "Signatur behandling utan boosters",
+                  "services": [
+                    1180812
+                  ],
+                  "description": "Behandling på 60 min \n1190:-",
+                  "image": "/img/Neoskïn logo gold-white.jpg"
+                }]
+        } 

@@ -7,9 +7,6 @@ const MoreMenu = () => {
   return (
     <React.Fragment >  
       <div className="item">
-        <BokaButton url="https://www.bokadirekt.se/places/neoskin-33692" />
-      </div>
-      <div className="item">
         <Link to="/om">  
               Om
         </Link>  

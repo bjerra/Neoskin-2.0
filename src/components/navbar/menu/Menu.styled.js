@@ -5,7 +5,7 @@ export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: start;
-  background: ${({ theme }) => theme.COLOR.BLUE.hex};
+  background: ${({ theme }) => theme.COLOR.MENU_BACKGROUND};
   height: 80vh;
   width: 25%;
   overflow-y:auto;
@@ -87,7 +87,7 @@ export const StyledMenu = styled.nav`
     text-transform: uppercase; 
     font-weight: bold;
     letter-spacing: 0.5rem;
-    color: ${({ theme }) => theme.COLOR.LIGHT.hex};
+    color: ${({ theme }) => theme.COLOR.LIGHT};
     text-decoration: none;
     transition: color 0.3s linear;
     
@@ -97,7 +97,7 @@ export const StyledMenu = styled.nav`
     }
 
     &:hover {
-      color: ${({ theme }) => theme.COLOR.HOVER.hex};
+      color: ${({ theme }) => theme.COLOR.HOVER};
     }
 `;
 
@@ -119,14 +119,14 @@ export const Expandable = styled.div`
   position: relative;
   -webkit-tap-highlight-color: transparent;
   cursor: pointer;
-  color: ${({ theme }) => theme.COLOR.LIGHT.hex};
+  color: ${({ theme }) => theme.COLOR.LIGHT};
   
   div{
     width: 1.5rem;
     height: 0.15rem;
     margin-top: -.3rem;
     top: 50%;
-    background: ${({ theme, servicesExpanded }) => servicesExpanded ? theme.COLOR.HOVER.hex : theme.COLOR.LIGHT.hex};
+    background: ${({ theme, servicesExpanded }) => servicesExpanded ? theme.COLOR.HOVER : theme.COLOR.LIGHT};
     border-radius: 5px;
     transition: all 0.2s ease-out;
     position: absolute;

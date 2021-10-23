@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import {StyledDivider, StartShape, EndShape} from './Divider.styled'
 
 
-const Divider = ({fillColor, fromColor, toColor, height, invert}) => (
-  <StyledDivider fromColor={fromColor} toColor={toColor} invert> 
+const Divider = ({fillColor, color, height, invert}) => (
+  <StyledDivider color={color} invert> 
   {invert ? (
     <EndShape color={fillColor} height={height}>
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

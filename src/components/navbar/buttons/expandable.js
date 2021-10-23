@@ -17,7 +17,7 @@ const StyledExpandable = styled.div`
   
     font-size: 1.5rem;
     font-weight: bold;
-    color: ${({ theme }) => theme.COLOR.DARK.hex};
+    color: ${({ theme }) => theme.COLOR.DARK};
     text-decoration: none;
     transition: color 0.3s linear;
 
@@ -35,7 +35,7 @@ const StyledExpandable = styled.div`
     height: 0.15rem;
     margin-top: -.3rem;
     top: 50%;
-    background: ${({ theme, expanded }) => expanded ? theme.COLOR.HOVER.hex : theme.COLOR.LIGHT.hex};
+    background: ${({ theme, expanded }) => expanded ? theme.COLOR.HOVER : theme.COLOR.LIGHT};
     border-radius: 5px;
     transition: all 0.2s ease-out;
     position: absolute;

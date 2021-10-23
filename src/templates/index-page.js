@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 import { useTheme  } from '@emotion/react'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { Wrapper,Intro,Highlights, CTA, Services, About, Salon} from './styles/Styled.Indexpage'
-import {Banner, Logo, Features, Layout, ServiceGrid, Divider, Tour} from '../components'
+import { Wrapper,Intro,Highlights, CTA} from './styles/Styled.Indexpage'
+import {Banner, Logo, Features, Layout, Divider, BokaButton} from '../components'
 import EmailList from '../components/EmailList'
 
 const IndexPageTemplate = ({
@@ -22,12 +22,13 @@ const IndexPageTemplate = ({
   return(
   <Wrapper theme={theme}>
     <Banner image = {image} alt="Neoskin">
-          <Logo />    
+          <Logo size={300}/>    
         {//<video autoPlay loop muted playsInline src={require("../img/banner.webm")}></video>
         }
     </Banner>
-   
+
     <Intro theme={theme}>
+    
       <div className="inner">     
       <header>
         <h1>{title}</h1>
@@ -35,47 +36,45 @@ const IndexPageTemplate = ({
           {description}
         </p>
       </header>     
+      <div className="button">
+        <BokaButton large url="https://www.bokadirekt.se/places/neoskin-33692" />
+      </div>
       </div>  
+     
     </Intro>
-    <Divider fillColor={theme.COLOR.LIGHT.hex} fromColor={"#050505"} toColor={"#252525"} height={30}/>
-    <Highlights color={"#252525"}>
-    <h1>Favoriter</h1>
-        {features && <Features services={features} />}
+        
+   
+    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.INFO} height={20}/>
+    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.INFO} height={20} invert={true}/>
+    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.DIM_BLUE} height={20}/>
+    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.DIM_BLUE} height={20} invert={true}/>
+    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.MISTY_BLUE} height={20}/>
+    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.MISTY_BLUE} height={20} invert={true}/>
+
+    <Highlights color={theme.COLOR.BACKGROUND}>
+      {features && <Features services={features} />}
     </Highlights>
-    <Divider fillColor={theme.COLOR.LIGHT.hex} fromColor={"#252525"} toColor={"#151515"} height={20} invert={true}/>
-    <Services theme={theme}>
-    <h1>Behandlingar</h1>
-      <ServiceGrid data={categories}/>       
-    </Services>
+    
+   
 
-    <Divider fillColor={theme.COLOR.LIGHT.hex} fromColor={"#050505"} toColor={"#252525"} height={25}/>
-    <About theme={theme} color={"#252525"}>
-      <h1>Om Mig</h1>
-      <div className="inner">   
-        <div className="column">
-        <GatsbyImage image={getImage(portrait)} alt={"Anais"} />
-        </div>
-        <div className="column">
-          <p>{about}</p>
-          <Link to="/om">  
-                Läs mer
-          </Link> 
-      </div>
-      </div>
-    </About>
-    <Divider fillColor={theme.COLOR.LIGHT.hex} fromColor={"#252525"} toColor={"#151515"} height={15} invert={true}/>
-
-    <Salon theme={theme}>
-    <h1>Salongen</h1>
-      <Tour/>
-    </Salon>
     <CTA theme={theme}>
-        <GatsbyImage image={getImage(image3)} alt={"nyhetsbrev"} />
-      <div className="inner">          
-        <EmailList />
-      </div>
-      
+
+     <div className="inner">          
+       <EmailList />
+     </div>
+     
     </CTA>
+
+    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.MENU_BACKGROUND} height={20}/>
+    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.MENU_BACKGROUND} height={20} invert={true}/>
+    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.OAK} height={20}/>
+    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.OAK} height={20} invert={true}/>
+
+    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.MUSTARD} height={20}/>
+    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.MUSTARD} height={20} invert={true}/>
+
+    <Divider fillColor={theme.COLOR.FOOTER} color={theme.COLOR.BACKGROUND} height={20} invert={true}/>
+
   </Wrapper>
 )}
 

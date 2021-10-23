@@ -13,7 +13,7 @@ export const StyledDesktop = styled.nav`
     display: flex;
     justify-content: space-around;
     align-items: center;    
-    background-color: ${({ theme }) => theme.COLOR.MENU.hex};
+    background-color: ${({ theme }) => theme.COLOR.MENU_BACKGROUND};
     box-shadow: 0 5px 5px 1px rgba(0,0,0,0.15);
 
     > div {
@@ -28,9 +28,9 @@ export const StyledDesktop = styled.nav`
 
     > a{
       flex: 1;
-        color: ${({ theme }) => theme.COLOR.MENU_INVERT.hex};
+        color: ${({ theme }) => theme.COLOR.MENU_TEXT};
         :hover {
-          color: ${({ theme }) => theme.COLOR.MENU_INVERT.hex};
+          color: ${({ theme }) => theme.COLOR.MENU_TEXT};
         }
     }
 

@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Auktoriserad hudterapeut med Gesällbrev
-image: /img/CTA.jpg
+image: /img/bg.jpg
 description: Vi lägger inte bara fokus på yttre skönhet utan kombinerar
   avancerad hudvård med  vårdande  massage och djupt avslappnande behandlingar
   för en holistisk upplevelse.

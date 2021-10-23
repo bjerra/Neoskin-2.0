@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { Link } from 'gatsby'
 import { StyledMobile } from './MobileNavbar.styled';
+import { Logo } from '../../../components'
 import DropDown from '../dropdown/Dropdown'
 import { useTheme  } from '@emotion/react'
 import { BiHomeHeart, BiNews, BiDotsVertical } from 'react-icons/bi';
@@ -20,8 +21,7 @@ const Navbar = props => {
     return(
       <StyledMobile theme={theme} ref={node}> 
             <Link to="/">
-                <BiHomeHeart size={25}/>  
-                Hem
+              <Logo size={50}/>
             </Link> 
           
             <DropDown open={dropDownOpen === "Kontakt"} content={<ContactMenu />} setOpen={() => setDropDownOpen(dropDownOpen === "Kontakt" ? "": "Kontakt")}>

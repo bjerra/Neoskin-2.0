@@ -12,17 +12,21 @@ export const Wrapper = styled.div`
 `
 
 export const Content = styled.div`
-  background-color: ${({ theme }) => theme.COLOR.MENU.hex};
+  background-color: ${({ theme }) => theme.COLOR.MENU_BACKGROUND};
   z-index: 1;
   transform: ${({ expanded }) => expanded ? 'scaleY(1)' : 'scaleY(0)'};
   transition: transform 0.2s ease-in-out;
   .item {
-    color: ${({ theme }) => theme.COLOR.MENU_INVERT.hex};
+    color: ${({ theme }) => theme.COLOR.MENU_TEXT};
     :hover{
-      background-color:#00000009;
+     
       a{
-        color: ${({ theme }) => theme.COLOR.HOVER.hex};
+        color: ${({ theme }) => theme.COLOR.HOVER};
+        :before{
+          background-color: ${({ theme }) =>  theme.COLOR.HOVER};
+        }
       }
+     
      
     }  
 
@@ -34,9 +38,11 @@ export const Content = styled.div`
         top:50%;
         height:1px;
         width: 10px;
-        background:#00000044;
+        background-color: ${({ theme }) => theme.COLOR.MENU_TEXT};
         left:.75rem;
         z-index:1;
+
+        
       }    
     
    
@@ -82,7 +88,7 @@ export const  ascending = css`
 
 export const Button = styled.div`
   
-  color: ${({ theme, expanded }) => expanded ? theme.COLOR.HOVER.hex : theme.COLOR.MENU_INVERT.hex};
+  color: ${({ theme, expanded }) => expanded ? theme.COLOR.HOVER : theme.COLOR.MENU_TEXT};
   height: 100%;
   width: 100%;
   cursor: pointer;

@@ -38,7 +38,7 @@ const CategoryPageTemplate = ({
   subCategories.forEach(subCategory => {
     subCategory.serviceData = []
     subCategory.services.forEach(s => {
-      const i = services.findIndex(p=>p.id == s)
+      const i = services.findIndex(p=>p.id === s)
       if(i !== -1){
         subCategory.serviceData.push(services[i])
         serviceData.splice(i, 1)
@@ -149,14 +149,6 @@ export const categoryPageQuery = graphql`
       subCategories {
           title
           description
-          image {
-            childImageSharp {
-              gatsbyImageData(    
-                layout: FULL_WIDTH
-                placeholder: BLURRED
-              )
-            }
-          }
           services 
         }
     }

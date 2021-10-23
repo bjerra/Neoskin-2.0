@@ -23,8 +23,8 @@ export const wrapRootElement = ({ element }) => {
               Helvetica, Arial, sans-serif, "Apple Color Emoji",
               "Segoe UI Emoji", "Segoe UI Symbol";
             font-size: ${theme.BASE_FONT_SIZE};
-            background: ${theme.COLOR.LIGHT.hex};
-            color: ${theme.COLOR.DARK.hex};
+            background: ${theme.COLOR.BACKGROUND};
+            color: ${theme.COLOR.TEXT};
             @media screen and (min-width: 240px) {
               font-size: 14px;
             }

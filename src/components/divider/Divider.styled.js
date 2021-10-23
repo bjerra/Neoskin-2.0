@@ -5,11 +5,11 @@ import styled from "@emotion/styled"
 export const StyledDivider = styled.div`
     
     position: relative;
-    height: 35px;
+    height: 25px;
     display:flex;
     justify-content: center;
     align-items: center;
-    background: ${({ fromColor, toColor }) => `linear-gradient(${fromColor}, ${toColor})`};
+    background: ${({ color }) => color};
    
 `
 

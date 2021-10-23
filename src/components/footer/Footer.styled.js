@@ -4,7 +4,8 @@ import styled from "@emotion/styled"
 export const StyledFooter = styled.footer`
 
     padding: 50px 0 120px 0;
-    background-color: #252525;
+    background-color: ${({ theme }) => theme.COLOR.FOOTER}; 
+    color: ${({ theme }) => theme.COLOR.MENU_TEXT}; 
     display: flex;
     justify-content: flex-start;
     position: relative;
