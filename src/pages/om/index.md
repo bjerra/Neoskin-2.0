@@ -5,7 +5,7 @@ title: Om mig
 image: /img/img_5688b.jpg
 ---
 
-
+<br>
 *“Everyone sees what you appear to be, few experience what you really are” 
 
 - Niccolò Machiavelli*       

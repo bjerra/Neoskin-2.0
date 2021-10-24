@@ -1,13 +1,37 @@
 {"data":
+    [
     {
-    "id": 1180812,
-    "title": "Återbesök / kostnadsfri konsultation ",
-    "price": 0,
-    "time": 1200,
-    "image": "/img/default.jpg",
-    "slug": "återbesök-kostnadsfri-konsultation--1180812",
-    "category": "Biologique Recherche",
-    "info": [{"text": "",
-        "title": ""}]
-    }
+        "id": 1180812,
+        "title": "Återbesök / kostnadsfri konsultation ",
+        "price": 0,
+        "time": 1200,
+        "image": "/img/default.jpg",
+        "slug": "återbesök-kostnadsfri-konsultation--1180812",
+        "category": "Biologique Recherche",
+        "info": [{"text": "",
+            "title": ""}]
+    },
+    {
+        "id": 1180810,
+        "title": "Återbesök / kostnadsfri konsultation ",
+        "price": 0,
+        "time": 1200,
+        "image": "/img/default.jpg",
+        "slug": "återbesök-kostnadsfri-konsultation--1180812",
+        "category": "Biologique Recherche",
+        "info": [{"text": "",
+            "title": ""}]
+        },
+        {
+        "id": 1180811,
+        "title": "Återbesök / kostnadsfri konsultation ",
+        "price": 0,
+        "time": 1200,
+        "image": "/img/default.jpg",
+        "slug": "återbesök-kostnadsfri-konsultation--1180812",
+        "category": "test",
+        "info": [{"text": "",
+            "title": ""}]
+        }
+]
 } 

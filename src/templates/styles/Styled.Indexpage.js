@@ -30,7 +30,7 @@ export const Intro = styled.section`
     header{
         
         text-align: center;
-        margin-bottom: 4rem; 
+        margin-bottom: 2rem; 
     }
         p {
         margin-left: auto;

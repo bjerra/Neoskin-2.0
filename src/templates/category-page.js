@@ -49,6 +49,7 @@ const CategoryPageTemplate = ({
                       </p>
                       <Info>
                       {
+                        info &&
                         info.map((item) => (    
                           <Fragment>
                              <h2>{item.title}</h2>

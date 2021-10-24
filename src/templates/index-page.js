@@ -31,30 +31,19 @@ const IndexPageTemplate = ({
         <h1>{title}</h1>
        
         <h5>{subtitle}</h5>
-        <Divider fillColor={theme.COLOR.INFO} color={theme.COLOR.BACKGROUND} height={5} size={5} invert/>
-        <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.INFO} height={6} size={5} invert/>
+        <Divider fillColor={theme.COLOR.DIM_BLUE} color={theme.COLOR.BACKGROUND} height={5} size={5} invert/>
+        <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.DIM_BLUE} height={6} size={5} invert/>
+
       </header>     
       <PageContent content={content} />
      
       </div>  
-      <Divider fillColor={theme.COLOR.INFO} color={theme.COLOR.BACKGROUND} height={5} size={25} invert/>
-        <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.INFO} height={6} size={5} invert/>
+      
         <div className="button">
         <BokaButton large url="https://www.bokadirekt.se/places/neoskin-33692" />
       </div>
     </Intro>
    
-
-        
-
-    <CTA theme={theme}>
-
-     <div className="inner">          
-       <EmailList />
-     </div>
-     
-    </CTA>
-
   </Wrapper>
 )}
 

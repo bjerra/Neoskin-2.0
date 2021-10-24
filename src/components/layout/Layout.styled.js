@@ -10,7 +10,7 @@ margin: 0;
 
     h5{
         text-align: center;   
-        color: ${({ theme }) => theme.COLOR.MISTY_BLUE}; 
+        color: ${({ theme }) => theme.COLOR.DIM_BLUE}; 
     }
 `
 
