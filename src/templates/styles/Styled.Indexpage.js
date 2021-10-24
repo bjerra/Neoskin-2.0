@@ -2,16 +2,6 @@ import styled from "@emotion/styled"
 
 export const Wrapper =  styled.div`
     
-h1{
-    text-align: center;   
-    color: ${({ theme }) => theme.COLOR.LIGHT}; 
-}
-
-h5{
-    text-align: center;   
-    color: ${({ theme }) => theme.COLOR.MISTY_BLUE}; 
-}
-
 
 section {
     position: relative;
@@ -21,20 +11,9 @@ section {
 
 export const Intro = styled.section`
 
-    padding: 4rem 0 6rem 0 ;
+    padding: 1rem 1rem; 6rem 1rem;
    
-    z-index: 1; 
-    @media screen and (max-width: 1280px) {
-        padding: 4rem 0 2rem 0 ; 
-    }
-    @media screen and (max-width: 736px) {
-
-        padding: 3rem 0 1rem 0 ; 
-     }
-    @media screen and (max-width: 480px) {
-
-        padding: 2rem 0 0.1rem 0 ; 
-    }
+    
     
     .inner {
         margin: 0rem auto;
@@ -54,12 +33,12 @@ export const Intro = styled.section`
         margin-bottom: 4rem; 
     }
         p {
-        max-width: 75%;
         margin-left: auto;
         margin-right: auto;
     }
 
     .button{
+        margin-top: 4rem;
         display: flex;
         justify-content: center;
     }

@@ -31,20 +31,7 @@ const CategoryPageTemplate = ({
   title,
   description,
   services,
-  subCategories
 }) => {
-
-  const serviceData = [...services]
-  subCategories.forEach(subCategory => {
-    subCategory.serviceData = []
-    subCategory.services.forEach(s => {
-      const i = services.findIndex(p=>p.id === s)
-      if(i !== -1){
-        subCategory.serviceData.push(services[i])
-        serviceData.splice(i, 1)
-      } 
-    })
-  })
 
   const theme = useTheme()
   return(
@@ -59,7 +46,7 @@ const CategoryPageTemplate = ({
                       </p>
                       <ul>
                       {
-                        serviceData.map((service) => (                            
+                        services.map((service) => (                            
                           serviceCard(service, theme)        
                         ))
                         }  
@@ -68,32 +55,6 @@ const CategoryPageTemplate = ({
                </div>  
      
            </SubCategory>   
-        {
-          subCategories.map((subCategory) => (   
-            <SubCategory>     
-                <Banner image = {subCategory.image} alt="Neoskin">
-                  <h1>{subCategory.title}</h1>
-                </Banner>
-           
-              <div className="content">                
-                      <p>
-                        {subCategory.description}
-                      </p>
-                      <ul>
-
-                      {
-                        subCategory.serviceData.map((service) => (                            
-                          serviceCard(service, theme)            
-                        ))
-                        }
-                      </ul>
-                     
-               </div>  
-            </SubCategory>                         
-                            
-          ))
-          }   
-      
   </Wrapper>
   )
 }
@@ -101,14 +62,13 @@ const CategoryPageTemplate = ({
 CategoryPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-  subCategories: PropTypes.array
 }
 
 const CategoryPage = ({ data }) => {
 
   const category = data.categoriesJson
   const services = data.allServicesJson.nodes;
-  const {title, image, description, subCategories} = category;
+  const {title, image, description} = category;
 
   return (
     <Layout pageTitle={title} pageDescription={description}>
@@ -117,7 +77,6 @@ const CategoryPage = ({ data }) => {
         title={title}     
         description={description}     
         services={services}
-        subCategories={subCategories}
       />
     </Layout>
   )
@@ -146,11 +105,6 @@ export const categoryPageQuery = graphql`
           )
         }
       }
-      subCategories {
-          title
-          description
-          services 
-        }
     }
     allServicesJson(filter: {category: {eq: $id}}) {
       nodes {

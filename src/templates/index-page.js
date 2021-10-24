@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import { useTheme  } from '@emotion/react'
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import Content, { HTMLContent } from '../components/Content'
 import { Wrapper,Intro,Highlights, CTA} from './styles/Styled.Indexpage'
 import {Banner, Logo, Features, Layout, BokaButton} from '../components'
 import EmailList from '../components/EmailList'
@@ -12,9 +12,10 @@ const IndexPageTemplate = ({
   features,
   title,
   subtitle,
-  description,
+  content,
+  contentComponent,
 }) => {
-
+  const PageContent = contentComponent || Content
   const theme = useTheme();
   return(
   <Wrapper theme={theme}>
@@ -31,9 +32,7 @@ const IndexPageTemplate = ({
         <h1>{title}</h1>
         <h5>{subtitle}</h5>
       </header>     
-      <p>
-          {description}
-      </p>
+      <PageContent content={content} />
       <div className="button">
         <BokaButton large url="https://www.bokadirekt.se/places/neoskin-33692" />
       </div>
@@ -63,19 +62,21 @@ IndexPageTemplate.propTypes = {
   features: PropTypes.array,
   title: PropTypes.string,
   subtitle: PropTypes.string,
-  description: PropTypes.string,
+  content: PropTypes.string,
+  contentComponent: PropTypes.func,
 }
 
 const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { frontmatter, html } = data.markdownRemark
   return (
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
         subtitle={frontmatter.subtitle}
-        description={frontmatter.description}
         features={ frontmatter.features}
+        contentComponent={HTMLContent}
+        content={html}
       />
     </Layout>
   )
@@ -94,6 +95,7 @@ export default IndexPage
 export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+      html
       frontmatter {
         title
         subtitle
@@ -125,7 +127,6 @@ export const pageQuery = graphql`
             )
           }
         }
-        description  
       }
     }
     allCategoriesJson(sort: {fields: id}) {

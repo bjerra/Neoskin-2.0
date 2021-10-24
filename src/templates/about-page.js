@@ -3,30 +3,26 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import {Layout,Banner} from '../components'
 import Content, { HTMLContent } from '../components/Content'
+import { Wrapper, Body} from './styles/StyledAboutPage'
 
 const AboutPageTemplate = ({ title, image, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <div>
-       <Banner image={image} alt={"Anais"}>
-        <h1
-          className="page-title"
-        >
-          {title}
-        </h1>
-        </Banner>
-        <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">                   
-              <PageContent className="content" content={content} />
-            </div>
+    <Wrapper>
+       <Banner image={image} alt={"Metod"}>
 
-        </div>
-      </div>
-    </section>
-    </div>
+       </Banner>
+       <h1>
+            {title}
+        </h1>  
+       <Body>
+        <div className="inner">   
+        
+          <PageContent content={content} />
+        </div>  
+      </Body>
+    </Wrapper>
     
   )
 }
