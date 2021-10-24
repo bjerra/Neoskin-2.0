@@ -93,7 +93,7 @@ export const Button = styled.div`
   width: 100%;
   cursor: pointer;
   display: flex;
-  justify-content: ${({ down }) => down ? 'flex-start' : 'space-around'};
+  justify-content: center;
   align-items: center;
   flex-direction: ${({ down }) => down ? 'row' : 'column'};
 
