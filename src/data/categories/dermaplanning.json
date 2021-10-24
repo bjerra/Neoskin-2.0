@@ -1,66 +1,66 @@
 {
- "title": "Dermaplanning",
- "id": 4,
- "description": "",
- "image": "/img/default.jpg",
- "slug": "dermaplanning",
- "info": [],
- "services": [
-  {
-   "id": 1564764,
-   "title": "Dermaplane PRO & Ultraljudsrengöring",
-   "price": 1450,
-   "time": 2700,
-   "slug": "dermaplane-pro-&-ultraljudsrengöring-1564764",
-   "category": "Dermaplanning",
-   "info": [
+  "title": "Dermaplanning",
+  "id": 4,
+  "description": "Dermaplaning är en fysisk exfoliering (peeling) av ansiktshud där det allra yttersta hudlager samt det fina vellus håret (fjunet) tas bort med ett speciellt skalpellblad. Dermaplaning är en behaglig och avslappnande behandling som kan utföras som en separat behandling eller i kombination med andra ansiktsbehandlingar. Effekten av behandlingen blir att man ökar absorption av närande och aktiva ingredienser samt får man omedelbart en mjukare och jämnare hudstruktur. \n\nBehandlingen kan utföras på alla hudtyper, även på gravida. \n\nVi utför inte behandlingen på dig som har aktiv akne, diabetes, aktivt munsår eller blödarsjuka. ",
+  "image": "/img/default.jpg",
+  "slug": "dermaplanning",
+  "info": [],
+  "services": [
     {
-     "title": "",
-     "text": "Dermaplanning utförs av speciellt utbildad hudterapeut med en särskild scalpell ifrån Dermaplane Pro och är en antiage-behandling som exfolierar huden och tar bort vellushår (fjun).Resultatet blir en jämnare hudton, mindre synliga linjer och acneärr, lyster, mjuk och len hud.Behandlingen är skapad till att på en gång förbättra hudens utseende, men också maximera upptag av följande produkter eller kombinationsbehandlingar.I denna behandling ingår rengöring, dermaplanning av hela ansiktet, ultraljudsrengöring och avslutande produkt(er). Mask ingår om tiden tillåter."
-    }
-   ]
-  },
-  {
-   "id": 1629272,
-   "title": "Dermaplane PRO Mini",
-   "price": 990,
-   "time": 1800,
-   "slug": "dermaplane-pro-mini-1629272",
-   "category": "Dermaplanning",
-   "info": [
+      "id": 1564764,
+      "title": "Dermaplane PRO & Ultraljudsrengöring",
+      "price": 1450,
+      "time": 2700,
+      "slug": "dermaplane-pro-&-ultraljudsrengöring-1564764",
+      "category": "Dermaplanning",
+      "info": [
+        {
+          "title": "",
+          "text": "Dermaplanning utförs av speciellt utbildad hudterapeut med en särskild scalpell ifrån Dermaplane Pro och är en antiage-behandling som exfolierar huden och tar bort vellushår (fjun).Resultatet blir en jämnare hudton, mindre synliga linjer och acneärr, lyster, mjuk och len hud.Behandlingen är skapad till att på en gång förbättra hudens utseende, men också maximera upptag av följande produkter eller kombinationsbehandlingar.I denna behandling ingår rengöring, dermaplanning av hela ansiktet, ultraljudsrengöring och avslutande produkt(er). Mask ingår om tiden tillåter."
+        }
+      ]
+    },
     {
-     "title": "",
-     "text": "Dermaplanning utförs av speciellt utbildad hudterapeut med en särskild scalpell ifrån Dermaplane Pro och är en antiage-behandling som exfolierar huden och tar bort vellushår (fjun).Resultatet blir en jämnare hudton, mindre synliga linjer och acneärr, lyster, mjuk och len hud.Behandlingen är skapad till att på en gång förbättra hudens utseende, men också maximera upptag av följande produkter eller kombinationsbehandlingar.I denna behandling ingår rengöring, dermaplanning av hela ansiktet samt avslutande mask."
-    }
-   ]
-  },
-  {
-   "id": 1522929,
-   "title": "Dermaplane PRO Maxi",
-   "price": 2150,
-   "time": 5400,
-   "slug": "dermaplane-pro-maxi-1522929",
-   "category": "Dermaplanning",
-   "info": [
+      "id": 1629272,
+      "title": "Dermaplane PRO Mini",
+      "price": 990,
+      "time": 1800,
+      "slug": "dermaplane-pro-mini-1629272",
+      "category": "Dermaplanning",
+      "info": [
+        {
+          "title": "",
+          "text": "Dermaplanning utförs av speciellt utbildad hudterapeut med en särskild scalpell ifrån Dermaplane Pro och är en antiage-behandling som exfolierar huden och tar bort vellushår (fjun).Resultatet blir en jämnare hudton, mindre synliga linjer och acneärr, lyster, mjuk och len hud.Behandlingen är skapad till att på en gång förbättra hudens utseende, men också maximera upptag av följande produkter eller kombinationsbehandlingar.I denna behandling ingår rengöring, dermaplanning av hela ansiktet samt avslutande mask."
+        }
+      ]
+    },
     {
-     "title": "",
-     "text": "Dermaplanning utförs av speciellt utbildad hudterapeut med en särskild scalpell ifrån Dermaplane Pro och är en antiage-behandling som exfolierar huden och tar bort vellushår (fjun).Resultatet blir en jämnare hudton, mindre synliga linjer och acneärr, lyster, mjuk och len hud.Behandlingen är skapad till att på en gång förbättra hudens utseende, men också maximera upptag av följande produkter eller kombinationsbehandlingar.I denna behandling ingår allt som Anaïs hinner med i det som är lämpligast för din hud och dina önskemål."
-    }
-   ]
-  },
-  {
-   "id": 1362854,
-   "title": "DermaFirming",
-   "price": 1750,
-   "time": 3600,
-   "slug": "dermafirming-1362854",
-   "category": "Dermaplanning",
-   "info": [
+      "id": 1522929,
+      "title": "Dermaplane PRO Maxi",
+      "price": 2150,
+      "time": 5400,
+      "slug": "dermaplane-pro-maxi-1522929",
+      "category": "Dermaplanning",
+      "info": [
+        {
+          "title": "",
+          "text": "Dermaplanning utförs av speciellt utbildad hudterapeut med en särskild scalpell ifrån Dermaplane Pro och är en antiage-behandling som exfolierar huden och tar bort vellushår (fjun).Resultatet blir en jämnare hudton, mindre synliga linjer och acneärr, lyster, mjuk och len hud.Behandlingen är skapad till att på en gång förbättra hudens utseende, men också maximera upptag av följande produkter eller kombinationsbehandlingar.I denna behandling ingår allt som Anaïs hinner med i det som är lämpligast för din hud och dina önskemål."
+        }
+      ]
+    },
     {
-     "title": "",
-     "text": "Dermaplanning utförs av speciellt utbildad hudterapeut med en särskild scalpell ifrån Dermaplane Pro och är en antiage-behandling som exfolierar huden och tar bort vellushår (fjun).Resultatet blir en jämnare hudton, mindre synliga linjer och acneärr, lyster, mjuk och len hud.Behandlingen är skapad till att på en gång förbättra hudens utseende, men också maximera upptag av följande produkter eller kombinationsbehandlingar.Ultraljudsrengöringen tömmer skonsamt porerna på pormaskar, smuts och sebum utan att skada eller klämma huden.Behandlingen avslutas med lugnande och uppstramande firming peptidmask och post peel balm."
+      "id": 1362854,
+      "title": "DermaFirming",
+      "price": 1750,
+      "time": 3600,
+      "slug": "dermafirming-1362854",
+      "category": "Dermaplanning",
+      "info": [
+        {
+          "title": "",
+          "text": "Dermaplanning utförs av speciellt utbildad hudterapeut med en särskild scalpell ifrån Dermaplane Pro och är en antiage-behandling som exfolierar huden och tar bort vellushår (fjun).Resultatet blir en jämnare hudton, mindre synliga linjer och acneärr, lyster, mjuk och len hud.Behandlingen är skapad till att på en gång förbättra hudens utseende, men också maximera upptag av följande produkter eller kombinationsbehandlingar.Ultraljudsrengöringen tömmer skonsamt porerna på pormaskar, smuts och sebum utan att skada eller klämma huden.Behandlingen avslutas med lugnande och uppstramande firming peptidmask och post peel balm."
+        }
+      ]
     }
-   ]
-  }
- ]
+  ]
 }
