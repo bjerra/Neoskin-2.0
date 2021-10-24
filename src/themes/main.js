@@ -63,7 +63,7 @@ const MARGIN = { ...units }
 const BASE_FONT_SIZE = `${18}px`
 
 const H1 = css`
-  font-family: Quicksand;
+  font-family: "Niveau Grotesk";
   font-size: 2.509em;
   margin-bottom: 0.4em;
 
