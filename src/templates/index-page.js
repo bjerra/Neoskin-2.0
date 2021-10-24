@@ -9,13 +9,10 @@ import EmailList from '../components/EmailList'
 
 const IndexPageTemplate = ({
   image,
-  image3,
-  portrait,
   features,
   title,
+  subtitle,
   description,
-  about,
-  categories
 }) => {
 
   const theme = useTheme();
@@ -27,15 +24,27 @@ const IndexPageTemplate = ({
         }
     </Banner>
 
+    <Divider fillColor={theme.COLOR.TEXT} color={theme.COLOR.TEXT} height={5} size={2} invert/>
+
+    <Divider fillColor={theme.COLOR.MUSTARD} color={theme.COLOR.TEXT} height={10} size={10} invert/>
+
+
+    <Divider fillColor={theme.COLOR.OAK} color={theme.COLOR.MUSTARD} height={20} size={20} invert/>
+
+
+    <Divider fillColor={theme.COLOR.LIGHT} color={theme.COLOR.OAK} height={35} size={30} invert/>
+    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.LIGHT} height={35} size={10} invert/>
+
     <Intro theme={theme}>
     
       <div className="inner">     
       <header>
         <h1>{title}</h1>
-        <p>
-          {description}
-        </p>
+        <h5>{subtitle}</h5>
       </header>     
+      <p>
+          {description}
+      </p>
       <div className="button">
         <BokaButton large url="https://www.bokadirekt.se/places/neoskin-33692" />
       </div>
@@ -57,28 +66,27 @@ const IndexPageTemplate = ({
      
     </CTA>
 
-    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.LIGHT} height={5} size={5}/>
+    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.LIGHT} height={5} size={3}/>
 
-    <Divider fillColor={theme.COLOR.LIGHT} color={theme.COLOR.INFO} height={10} size={30}/>
+    <Divider fillColor={theme.COLOR.LIGHT} color={theme.COLOR.INFO} height={10} size={10}/>
 
 
-    <Divider fillColor={theme.COLOR.INFO} color={theme.COLOR.DIM_BLUE} height={20} size={60}/>
+    <Divider fillColor={theme.COLOR.INFO} color={theme.COLOR.DIM_BLUE} height={15} size={20}/>
   
 
-    <Divider fillColor={theme.COLOR.DIM_BLUE} color={theme.COLOR.FOOTER} height={35} size={90}/>
+    <Divider fillColor={theme.COLOR.DIM_BLUE} color={theme.COLOR.MISTY_BLUE} height={15} size={15}/>
+
+    <Divider fillColor={theme.COLOR.MISTY_BLUE} color={theme.COLOR.FOOTER} height={30} size={50}/>
 
   </Wrapper>
 )}
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  portrait: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   features: PropTypes.array,
   title: PropTypes.string,
+  subtitle: PropTypes.string,
   description: PropTypes.string,
-  about: PropTypes.string,
-  categories: PropTypes.array,
 }
 
 const IndexPage = ({ data }) => {
@@ -87,13 +95,10 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
-        image3={frontmatter.image3}
-        portrait={frontmatter.portrait}
         title={frontmatter.title}
-        features={ frontmatter.features}
+        subtitle={frontmatter.subtitle}
         description={frontmatter.description}
-        about={frontmatter.about}
-        categories = {data.allCategoriesJson.nodes}
+        features={ frontmatter.features}
       />
     </Layout>
   )
@@ -114,6 +119,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
+        subtitle
         features{
           id
           title   
@@ -142,24 +148,7 @@ export const pageQuery = graphql`
             )
           }
         }
-        image3 {
-          childImageSharp {
-            gatsbyImageData(
-              layout: FULL_WIDTH
-              placeholder: BLURRED
-            )
-          }
-        }  
-        portrait {
-          childImageSharp {
-            gatsbyImageData(
-              width: 2048
-              placeholder: BLURRED
-            )
-          }
-        }  
-        description
-        about
+        description  
       }
     }
     allCategoriesJson(sort: {fields: id}) {

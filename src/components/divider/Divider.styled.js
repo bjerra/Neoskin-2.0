@@ -25,16 +25,24 @@ export const StartShape = styled.div`
     svg {
         position: relative;
         display: block;
-        width: calc(100% + 1.3px);
+        transform-origin: bottom;
+        width: calc(100% + ${({ offset }) => 1.3+ offset || 0}px);
         height: ${({ height }) => height}px;
+        
     }
     
     .shape-fill {
         fill: ${({ color }) => color};
     }
-        
+
+    @keyframes hideshow {
+        0% { transform: translateY(0%); }
+        50% { transform:  translateY(10%);}
+        100% { transform:  translateY(0%);}
+      } 
 
 `
+
 
 export const EndShape = styled.div`
     
@@ -48,13 +56,12 @@ export const EndShape = styled.div`
     svg {
         position: relative;
         display: block;
-        width: calc(100% + 1.3px);
+        width: calc(100% + ${({ offset }) => 1.3+ offset || 0}px);
         height: ${({ height }) => height}px;
+
     }
     
     .shape-fill {
         fill: ${({ color }) => color};
     }
-        
-
 `

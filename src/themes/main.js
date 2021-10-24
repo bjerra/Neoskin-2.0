@@ -4,7 +4,6 @@ import { css } from "@emotion/react"
 // Example from Coolors: https://coolors.co/011627-fdfffc-2ec4b6-e71d36-ff9f1c
 
 
-const RICH_BLACK = "#011627";
 const Off_WHITE = "#fffdf6"
 const CREAMY = "#e4d8be"
 const OAK = "#d6c796"
@@ -20,15 +19,15 @@ const INDIGO = "#374750"
 const COLOR = {
   LIGHT: Off_WHITE,
   DARK: INDIGO,
-  HOVER: Off_WHITE,
+  HOVER: DIM_BLUE,
   INFO: SOFT_BLUE,
   HIGHLIGHT: APRICOT_STING,
-  MENU_BACKGROUND: MISTY_BLUE,
+  MENU_BACKGROUND: INDIGO,
   MENU_TEXT:SOFT_BLUE,
   FEATURE: OAK,
   TEXT: TOBACCO,
   BACKGROUND: CREAMY,
-  FOOTER: MISTY_BLUE,
+  FOOTER: INDIGO,
   DIM_BLUE: DIM_BLUE,
   MISTY_BLUE: MISTY_BLUE,
   OAK: OAK,

@@ -4,7 +4,14 @@ export const Wrapper =  styled.div`
     
 h1{
     text-align: center;   
+    color: ${({ theme }) => theme.COLOR.LIGHT}; 
 }
+
+h5{
+    text-align: center;   
+    color: ${({ theme }) => theme.COLOR.MISTY_BLUE}; 
+}
+
 
 section {
     position: relative;
@@ -30,7 +37,7 @@ export const Intro = styled.section`
     }
     
     .inner {
-        margin: 2rem auto;
+        margin: 0rem auto;
         width: 75rem;
         max-width: calc(100% - 3rem); 
         @media screen and (max-width: 480px) {
@@ -39,9 +46,7 @@ export const Intro = styled.section`
             } 
         }
     }
-    h1{
-        color: ${({ theme }) => theme.COLOR.LIGHT}; 
-    }
+   
 
     header{
         
