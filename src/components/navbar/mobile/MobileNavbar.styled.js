@@ -1,10 +1,10 @@
 import styled from "@emotion/styled"
 
 export const StyledMobile = styled.nav`
-    box-shadow: 0 -5px 5px 1px rgba(0,0,0,0.15);
+   
     overflow: hidden;
-    background: ${({ theme }) => theme.COLOR.MENU.hex};
-    color: ${({ theme }) => theme.COLOR.MENU_INVERT.hex};
+    background: ${({ theme }) => theme.COLOR.MENU_BACKGROUND};
+    color: ${({ theme }) => theme.COLOR.MENU_TEXT};
     z-index: 100;
     position: fixed;
     bottom: 0;

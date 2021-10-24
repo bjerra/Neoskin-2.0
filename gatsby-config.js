@@ -2,7 +2,7 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-const {MAILCHIMP_ENDPOINT} = process.env;
+const {MAILCHIMP_ENDPOINT, TYPEKIT_ID} = process.env;
 
 
 module.exports = {
@@ -27,42 +27,15 @@ module.exports = {
         cssPropOptimization: true,
       },
     },
-    `gatsby-plugin-sitemap`,
-  
     {
-      resolve: `gatsby-plugin-modal-routing-3`,
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
-        modalProps: {
-          closeTimeoutMS: 200,
-          style: {
-            overlay: {
-              position: `fixed`,
-              zIndex: 100,
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              backgroundColor: `rgba(0, 0, 0, .6)`,
-            },
-            content: {
-              position: `absolute`,
-              border: `none`,
-              background: `none`,
-              padding: 0,
-              top: '5%',
-              bottom: '10%',
-              right: '5%',
-              left: '5%',
-              maxWidth: '600px',
-              margin: 'auto',
-              overflow: `hidden`,
-              WebkitOverflowScrolling: `touch`,
-            },
-          },      
-          contentLabel: `Modal`
-        }
-      }
+        typekit: {
+          id: TYPEKIT_ID,
+        },
+      },
     },
+    `gatsby-plugin-sitemap`,
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',

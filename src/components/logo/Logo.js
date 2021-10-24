@@ -9,17 +9,16 @@ export const StyledLogo = styled(Link)`
   background-color: transparent;
 
   .gatsby-image-wrapper {
-    height: 200px;
-     width: 200px;
+     width: ${({ size }) => size}px; 
 }
 
 `
 
-const Logo = () => {
+const Logo = ({size}) => {
   const theme = useTheme()
 
   return (   
-    <StyledLogo theme={theme} to="/" title="Logo" >
+    <StyledLogo theme={theme} size={size} to="/" title="Logo" >
         <StaticImage src="../../img/logo.png" alt="Logo" placeholder="blurred"/>
     </StyledLogo>
   )

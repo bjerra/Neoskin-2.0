@@ -34,8 +34,8 @@ export const StyledEmailList = styled.form`
         border-radius: 2px;
         
         box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.25);
-        background-color: ${({ theme }) => theme.COLOR.LIGHT.hex};
-        color: ${({ theme }) => theme.COLOR.DARK.hex};
+        background-color: ${({ theme }) => theme.COLOR.LIGHT};
+        color: ${({ theme }) => theme.COLOR.DARK};
         font-size: 1.35rem;
       }
     }

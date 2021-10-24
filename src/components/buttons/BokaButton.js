@@ -4,18 +4,20 @@ import styled from "@emotion/styled"
 export const StyledButton = styled.a`
     transition: all .2s ease;
 
-    color: #7e9ed6;
+    background-color:  ${({ theme }) => theme.COLOR.HIGHLIGHT};
+    color:  ${({ theme }) => theme.COLOR.LIGHT};
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    height: ${({ large }) => large ? '60' : '40' }px;
+    width: ${({ large }) => large ? '60' : '40' }px;
     text-decoration: none;
+    border-radius: ${({ large }) => large ? '30' : '20' }px;
     font-size:  ${({ size }) => size ? size : '1.25rem' };
 `
 
-const Button = ({ slug, size }) => (
-    <StyledButton href={`https://www.bokadirekt.se/boka-tjanst/neoskin-33692/${slug}`} size={size} target="_blank" rel="noopener noreferrer">    
+const Button = ({ url, slug, size, large }) => (
+    <StyledButton href={url || `https://www.bokadirekt.se/boka-tjanst/neoskin-33692/${slug}`} size={size} large={large} target="_blank" rel="noopener noreferrer">    
         Boka                                    
     </StyledButton>
 )

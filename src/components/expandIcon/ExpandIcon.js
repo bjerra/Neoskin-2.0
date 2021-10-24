@@ -13,7 +13,7 @@ margin-left: 1rem;
       left: 50%;
       width: 1rem;
       height: 0.05rem;
-      background-color: ${({ theme, expanded }) => expanded ? theme.COLOR.HOVER.hex : theme.COLOR.MENU_INVERT.hex};
+      background-color: ${({ theme, expanded }) => expanded ? theme.COLOR.HOVER : theme.COLOR.MENU_TEXT};
       border-radius: 5px;
       transition: all 0.2s ease-out;
 

@@ -4,64 +4,34 @@ import { css } from "@emotion/react"
 // Example from Coolors: https://coolors.co/011627-fdfffc-2ec4b6-e71d36-ff9f1c
 
 
-const RICH_BLACK = {
-  hex: "#011627",
-  rgb: `rgb(1, 22, 39)`,
-  rgbArray: [1, 22, 39],
-}
-
-const BABY_POWDER = {
-  hex: "#FDFFFC",
-  rgb: `rgb(253, 255, 252)`,
-  rgbArray: [253, 255, 252],
-}
-
-const BLUE = {
-  hex: "#1b2a40",
-  rgb: `rgb(46,196,182)`,
-  rgbArray: [46, 196, 182],
-}
-
-const HOVER = {
-  hex: "#846363",
-  rgb: `rgb(235, 225, 52)`,
-  rgbArray: [235, 225, 52],
-}
-
-const ROSE_MADDER = {
-  hex: "#7e9ed6",
-  rgb: `rgb(231,29,54)`,
-  rgbArray: [231, 29, 54],
-}
-
-const ORANGE_PEEL = {
-  hex: "#FF9F1C",
-  rgb: `rgb(255,159,28)`,
-  rgbArray: [255, 159, 28],
-}
-
-const MENU = {
-  hex: "#FDFFFC",
-  rgb: `rgb(255,159,28)`,
-  rgbArray: [255, 159, 28],
-}
-
-const MENU_INVERT = {
-  hex: "#011627",
-  rgb: `rgb(255,159,28)`,
-  rgbArray: [255, 159, 28],
-}
+const Off_WHITE = "#fffdf6"
+const CREAMY = "#e4d8be"
+const OAK = "#d6c796"
+const MUSTARD = "#a18a5b"
+const TOBACCO = "#363330"
+const APRICOT_STING = "#fe9a66"
+const SOFT_BLUE = "#b2c9d6"
+const DIM_BLUE = "#80a5bc"
+const MISTY_BLUE = "#495e6b"
+const INDIGO = "#374750"
 
 
 const COLOR = {
-  LIGHT: BABY_POWDER,
-  DARK: RICH_BLACK,
-  BLUE: BLUE,
-  HOVER: HOVER,
-  INFO: ROSE_MADDER,
-  MENU: MENU,
-  MENU_INVERT:MENU_INVERT,
-  FEATURE: [ROSE_MADDER, ORANGE_PEEL],
+  LIGHT: Off_WHITE,
+  DARK: INDIGO,
+  HOVER: CREAMY,
+  INFO: SOFT_BLUE,
+  HIGHLIGHT: APRICOT_STING,
+  MENU_BACKGROUND: TOBACCO,
+  MENU_TEXT:Off_WHITE,
+  FEATURE: OAK,
+  TEXT: TOBACCO,
+  BACKGROUND: CREAMY,
+  FOOTER: TOBACCO,
+  DIM_BLUE: DIM_BLUE,
+  MISTY_BLUE: MISTY_BLUE,
+  OAK: OAK,
+  MUSTARD: MUSTARD
 }
 
 const BREAKPOINTS = {
@@ -94,11 +64,11 @@ const BASE_FONT_SIZE = `${18}px`
 
 const H1 = css`
   font-family: Quicksand;
-  font-size: 2.109em;
+  font-size: 2.509em;
   margin-bottom: 0.4em;
 
   @media screen and (max-width: ${BREAKPOINTS.MOBILE}) {
-    font-size: 1.7em;
+    font-size: 2.1em;
   }
 `
 

@@ -9,9 +9,9 @@ export const Wrapper =  styled.div`
 export const Body = styled.section`
     
 
-    margin: 5rem auto;
+    margin: 0 auto;
     max-width: 900px; 
-    padding: 3rem;
+    padding: 1rem;
 
 
 `

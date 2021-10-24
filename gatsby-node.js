@@ -40,13 +40,7 @@ exports.createPages = ({ actions, graphql }) => {
           title
           slug
         }
-      }
-      allServicesJson {
-        nodes {
-            id    
-            slug
-        }
-      }
+      } 
     }
   `).then(result => {
     if (result.errors) {
@@ -80,18 +74,6 @@ exports.createPages = ({ actions, graphql }) => {
           },
         })
     })
-
-    const services = result.data.allServicesJson.nodes
-    services.forEach(service => {
-        createPage({
-          path: `/behandlingar/${service.slug}`,
-          component: path.resolve("./src/templates/service-modal.js"),
-          context: {
-            id: service.id,
-          },
-        })
-    })
-
   })
 }
 

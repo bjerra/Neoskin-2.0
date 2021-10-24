@@ -16,31 +16,24 @@ collections:
     label: "Kategorier"
     extension: "json"
     folder: "src/data/categories"
-    create: false
+    create: true
     delete: false
     fields:    
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: image}
-      - {label: SubCategories, name: subCategories, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: "Image", name: "image", widget: image},{label: "Video", name: "video", required: false, widget: "string"},{label: "Services", name: "services", widget: "relation", collection: "services", search_fields: ["title", "category"], value_field: "id",multiple: true,display_fields: ["title"]}]} 
-
+      - {label: Info, name: info, widget: list, fields: [{label: Title, name: title, widget: string},{label: "Body", name: "body", widget: "markdown"}]} 
+      - {label: "Services", name: "services", widget: list, fields: [{label: Title, name: title, widget: hidden}]}
   - label: Services
     name: services
     extension: "json"
-    folder: "src/data/services"
-    create: false
+    file: "src/data/Services/services.json"
+    create: true
     delete: false
-    view_filters:
-      - label: "Kategori"
-        field: category
-        pattern: 'Ansikte'
     fields:          
-      - {label: "Title", name: "title", widget: "hidden"}
-      - {label: "Image", name: "image", required: false, widget: image}
-      - {label: "Video", name: "video", required: false, widget: "string"}
-      - {label: Info, name: info ,widget: list,fields: [{label: "Title",name: "title", widget: "string"}, {label: "Text",name: "text", widget: "text"}]} 
-  
-
+      - {label: "Title", name: "title", widget: "text"}
+      - {label: "Category", name: "category", widget: text}
+     
   - name: "pages"
     label: "Pages"
     files:
@@ -49,15 +42,11 @@ collections:
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: Title, name: title, widget: hidden}    
+          - {label: Title, name: title, widget: hidden}   
+          - {label: Subtitle, name: subtitle, widget: hidden}     
           - {label: Image, name: image, widget: image}
-          - {label: Description, name: description, widget: text}   
-          - {label: "Features", name: "features", widget: "relation", collection: "services", search_fields: ["title", "category"], value_field: "title",multiple: true,display_fields: ["title"]}
-          - {label: Image3, name: image3, widget: image}
-          - {label: Portrait, name: portrait, widget: image}
-          - {label: About, name: about, widget: text}   
-
-           
+          - {label: Body, name: body, widget: markdown}   
+          - {label: "Features", name: "features", widget: "relation", collection: "services", search_fields: ["title", "category"], value_field: "title",multiple: true,display_fields: ["title"]}       
       - file: "src/pages/om/index.md"
         label: "Om"
         name: "om"
@@ -66,6 +55,14 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: Image, name: image, widget: image}
           - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/metod/index.md"
+        label: "Metod"
+        name: "metod"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "method-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: Image, name: image, widget: image}
+          - {label: "Body", name: "body", widget: "markdown"}    
       - file: "src/pages/behandlingar/index.md"
         label: "Behandlingar"
         name: "behandlingar"
