@@ -1,6 +1,6 @@
 ---
 templateKey: about-page
-path: /om
+path: /metod
 title: Metod 
 image: /img/img_5688b.jpg
 ---

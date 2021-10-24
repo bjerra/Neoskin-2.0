@@ -4,7 +4,7 @@ import { graphql, Link } from 'gatsby'
 import { useTheme  } from '@emotion/react'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Wrapper,Intro,Highlights, CTA} from './styles/Styled.Indexpage'
-import {Banner, Logo, Features, Layout, Divider, BokaButton} from '../components'
+import {Banner, Logo, Features, Layout, BokaButton} from '../components'
 import EmailList from '../components/EmailList'
 
 const IndexPageTemplate = ({
@@ -19,21 +19,10 @@ const IndexPageTemplate = ({
   return(
   <Wrapper theme={theme}>
     <Banner image = {image} alt="Neoskin">
-          <Logo size={300}/>    
+        <Logo size={300}/>    
         {//<video autoPlay loop muted playsInline src={require("../img/banner.webm")}></video>
         }
     </Banner>
-
-    <Divider fillColor={theme.COLOR.TEXT} color={theme.COLOR.TEXT} height={5} size={2} invert/>
-
-    <Divider fillColor={theme.COLOR.MUSTARD} color={theme.COLOR.TEXT} height={10} size={10} invert/>
-
-
-    <Divider fillColor={theme.COLOR.OAK} color={theme.COLOR.MUSTARD} height={20} size={20} invert/>
-
-
-    <Divider fillColor={theme.COLOR.LIGHT} color={theme.COLOR.OAK} height={35} size={30} invert/>
-    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.LIGHT} height={35} size={10} invert/>
 
     <Intro theme={theme}>
     
@@ -65,18 +54,6 @@ const IndexPageTemplate = ({
      </div>
      
     </CTA>
-
-    <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.LIGHT} height={5} size={3}/>
-
-    <Divider fillColor={theme.COLOR.LIGHT} color={theme.COLOR.INFO} height={10} size={10}/>
-
-
-    <Divider fillColor={theme.COLOR.INFO} color={theme.COLOR.DIM_BLUE} height={15} size={20}/>
-  
-
-    <Divider fillColor={theme.COLOR.DIM_BLUE} color={theme.COLOR.MISTY_BLUE} height={15} size={15}/>
-
-    <Divider fillColor={theme.COLOR.MISTY_BLUE} color={theme.COLOR.FOOTER} height={30} size={50}/>
 
   </Wrapper>
 )}
