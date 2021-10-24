@@ -4,7 +4,7 @@ path: /metod
 title: Metod
 image: /img/bg.jpg
 ---
-### ABONNEMANG 
+## ABONNEMANG 
 
 <br>
 
@@ -28,7 +28,7 @@ Vill du köpa en serie av någon specifik behandling gäller dem specifika villk
 
  <br>
 
-### ÖPPEN TID LÖSNINGEN
+## ÖPPEN TID LÖSNINGEN
 <br>
 
 Öppen tid lösningen är både till för Dig som har köpt ett abonnemang och för Dig som är osäker på vad du vill eller behöver. När du bokar en “öppen tid” väljer du hur lång behandling du vill ha. Om du inte har ett abonnemang pratar vi en stund när du kommer till kliniken om dina önskemål och du förmedlar din max-budget. Behandlingen skräddarsys inom tid och budget för just Dig och ditt aktuella hudtillstånd.

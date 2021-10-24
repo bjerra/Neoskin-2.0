@@ -1,5 +1,6 @@
 {
-  "title": "Biologique Recherche ",
+  "title": "Biologique Recherche",
+  "slug": "biologique-recherche",
   "info": [
     {
       "title": "Historik ",
@@ -19,5 +20,13 @@
     }
   ],
   "description": "Description",
-  "image": "/img/epidermis.jpg"
+  "image": "/img/epidermis.jpg",
+  "services" : [{
+    "title" : "test",
+    "time" : "60",
+    "slug" : "",
+    "price" : "100",
+    "id" : "11",
+    "info": ""
+  }]
 }

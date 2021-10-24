@@ -4,12 +4,11 @@ import { graphql } from 'gatsby'
 import { useTheme  } from '@emotion/react'
 import Content, { HTMLContent } from '../components/Content'
 import { Wrapper,Intro,Highlights, CTA} from './styles/Styled.Indexpage'
-import {Banner, Logo, Features, Layout, BokaButton} from '../components'
+import {Banner, Logo, Divider, Layout, BokaButton} from '../components'
 import EmailList from '../components/EmailList'
 
 const IndexPageTemplate = ({
   image,
-  features,
   title,
   subtitle,
   content,
@@ -30,21 +29,23 @@ const IndexPageTemplate = ({
       <div className="inner">     
       <header>
         <h1>{title}</h1>
+       
         <h5>{subtitle}</h5>
+        <Divider fillColor={theme.COLOR.INFO} color={theme.COLOR.BACKGROUND} height={5} size={5} invert/>
+        <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.INFO} height={6} size={5} invert/>
       </header>     
       <PageContent content={content} />
-      <div className="button">
+     
+      </div>  
+      <Divider fillColor={theme.COLOR.INFO} color={theme.COLOR.BACKGROUND} height={5} size={25} invert/>
+        <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.INFO} height={6} size={5} invert/>
+        <div className="button">
         <BokaButton large url="https://www.bokadirekt.se/places/neoskin-33692" />
       </div>
-      </div>  
-     
     </Intro>
-
-    <Highlights color={theme.COLOR.BACKGROUND}>
-      {features && <Features services={features} />}
-    </Highlights>
-    
    
+
+        
 
     <CTA theme={theme}>
 
@@ -59,7 +60,6 @@ const IndexPageTemplate = ({
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  features: PropTypes.array,
   title: PropTypes.string,
   subtitle: PropTypes.string,
   content: PropTypes.string,
@@ -74,7 +74,6 @@ const IndexPage = ({ data }) => {
         image={frontmatter.image}
         title={frontmatter.title}
         subtitle={frontmatter.subtitle}
-        features={ frontmatter.features}
         contentComponent={HTMLContent}
         content={html}
       />
@@ -99,26 +98,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         subtitle
-        features{
-          id
-          title   
-          image {
-            childImageSharp {
-              gatsbyImageData(
-                placeholder: BLURRED
-              )
-            }
-          }  
-          info {
-            text
-            title
-          }
-          price
-          slug
-          time
-          category
-        }
-        
         image {
           childImageSharp {
             gatsbyImageData(
@@ -126,24 +105,6 @@ export const pageQuery = graphql`
               placeholder: BLURRED
             )
           }
-        }
-      }
-    }
-    allCategoriesJson(sort: {fields: id}) {
-      nodes {
-        title
-        slug
-        description
-        image {
-          childImageSharp {
-            gatsbyImageData(
-              width: 1024
-              placeholder: BLURRED
-            )
-          }
-        }
-        subCategories{
-          title
         }
       }
     }

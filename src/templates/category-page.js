@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 import {Layout, Banner, BokaButton} from '../components'
-import { Wrapper, ServiceCard, SubCategory} from './styles/Styled.categorypage'
+import Content, { HTMLContent } from '../components/Content'
+import { Wrapper, ServiceCard, Body, Info} from './styles/Styled.categorypage'
 import { useTheme  } from '@emotion/react'
 
 const serviceCard = (service, theme) => (
@@ -30,31 +31,46 @@ const CategoryPageTemplate = ({
   image,
   title,
   description,
+  info,
   services,
 }) => {
 
   const theme = useTheme()
   return(
     <Wrapper>
-      <SubCategory>    
         <Banner image = {image} alt="Neoskin">
-              <h1>{title}</h1>
-              </Banner>
-              <div className="content">               
+        </Banner>
+      <Body>    
+       
+              <div className="content">  
+              <h1>{title}</h1>             
                       <p>
                         {description}
                       </p>
+                      <Info>
+                      {
+                        info.map((item) => (    
+                          <Fragment>
+                             <h2>{item.title}</h2>
+                             {
+                               false && <HTMLContent content={item.body} />
+                             }
+                          
+                          </Fragment>                             
+                        ))
+                      }  
+                      </Info>
                       <ul>
                       {
                         services.map((service) => (                            
                           serviceCard(service, theme)        
                         ))
-                        }  
+                      }  
                       </ul>
                      
                </div>  
      
-           </SubCategory>   
+          </Body>   
   </Wrapper>
   )
 }
@@ -62,13 +78,12 @@ const CategoryPageTemplate = ({
 CategoryPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
+  info: PropTypes.array
 }
 
 const CategoryPage = ({ data }) => {
 
-  const category = data.categoriesJson
-  const services = data.allServicesJson.nodes;
-  const {title, image, description} = category;
+  const {title, image, description, services, info} = data.categoriesJson;
 
   return (
     <Layout pageTitle={title} pageDescription={description}>
@@ -77,6 +92,7 @@ const CategoryPage = ({ data }) => {
         title={title}     
         description={description}     
         services={services}
+        info={info}
       />
     </Layout>
   )
@@ -105,19 +121,19 @@ export const categoryPageQuery = graphql`
           )
         }
       }
-    }
-    allServicesJson(filter: {category: {eq: $id}}) {
-      nodes {
-          title
-          time
-          slug
-          price
-          id
-          info {
-            text
-            title
-          }
-        }
+      info{
+        title
+        body
       }
+      services{
+        title
+        time
+        slug
+        price
+        id
+        info 
+      }
+     
+    }
   }
 `

@@ -23,24 +23,17 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: image}
       - {label: Info, name: info, widget: list, fields: [{label: Title, name: title, widget: string},{label: "Body", name: "body", widget: "markdown"}]} 
-
+      - {label: "Services", name: "services", widget: list, fields: [{label: Title, name: title, widget: hidden}]}
   - label: Services
     name: services
     extension: "json"
-    folder: "src/data/services"
-    create: false
+    file: "src/data/Services/services.json"
+    create: true
     delete: false
-    view_filters:
-      - label: "Kategori"
-        field: category
-        pattern: 'Ansikte'
     fields:          
-      - {label: "Title", name: "title", widget: "hidden"}
-      - {label: "Image", name: "image", required: false, widget: image}
-      - {label: "Video", name: "video", required: false, widget: "string"}
-      - {label: Info, name: info ,widget: list,fields: [{label: "Title",name: "title", widget: "string"}, {label: "Text",name: "text", widget: "text"}]} 
-  
-
+      - {label: "Title", name: "title", widget: "text"}
+      - {label: "Category", name: "category", widget: text}
+     
   - name: "pages"
     label: "Pages"
     files:

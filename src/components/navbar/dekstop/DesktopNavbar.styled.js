@@ -3,7 +3,7 @@ import styled from "@emotion/styled"
 export const StyledDesktop = styled.nav`
    
     z-index:100;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     position: fixed; 
     top: 0;
     left: 0;

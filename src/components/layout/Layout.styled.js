@@ -5,6 +5,7 @@ margin: 0;
     h1, h2{
         text-align: center;   
         color: ${({ theme }) => theme.COLOR.LIGHT}; 
+        font-weight: 600;
     }
 
     h5{
