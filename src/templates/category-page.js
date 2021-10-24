@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 import {Layout, Banner, BokaButton} from '../components'
-import Content, { HTMLContent } from '../components/Content'
+import { HTMLContent } from '../components/Content'
 import { Wrapper, ServiceCard, Body, Info} from './styles/Styled.categorypage'
 import { useTheme  } from '@emotion/react'
 
@@ -132,7 +132,10 @@ export const categoryPageQuery = graphql`
         slug
         price
         id
-        info 
+        info {
+          title
+          text
+        }
       }
      
     }

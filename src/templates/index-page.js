@@ -3,9 +3,8 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { useTheme  } from '@emotion/react'
 import Content, { HTMLContent } from '../components/Content'
-import { Wrapper,Intro,Highlights, CTA} from './styles/Styled.Indexpage'
+import { Wrapper,Intro} from './styles/Styled.Indexpage'
 import {Banner, Logo, Divider, Layout, BokaButton} from '../components'
-import EmailList from '../components/EmailList'
 
 const IndexPageTemplate = ({
   image,

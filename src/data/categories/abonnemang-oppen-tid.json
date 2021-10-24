@@ -4,7 +4,7 @@
  "description": "",
  "image": "/img/default.jpg",
  "slug": "abonnemang-oppen-tid",
- "info": [],
+ "info": [{"title":"", "body" : ""}],
  "services": [
   {
    "id": 1629009,
