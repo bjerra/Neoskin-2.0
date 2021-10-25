@@ -16,6 +16,7 @@ export const StyledMobile = styled.nav`
     align-items: center;
     font-size: 15px;
 
+
     a{
        
         width: 100%;
@@ -25,9 +26,8 @@ export const StyledMobile = styled.nav`
         justify-content: space-around;
         align-items: center;
 
-       
     }
-   
+
 
 
 `;
