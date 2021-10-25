@@ -50,13 +50,11 @@ const CategoryPageTemplate = ({
        
         { 
             ecpandedService.info.map((item) => (    
-              <Fragment>
-                 
+              <Fragment>   
                   <h4>{item.title}</h4>
                   {
                     <p>{item.text}</p>
                   }
-              
               </Fragment>                             
             ))
           }  

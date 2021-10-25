@@ -163,6 +163,7 @@ export const Modal = styled.div`
 overflow-x: hidden;
 overflow-y: auto;
 height: fit-content;
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -181,7 +182,8 @@ border-radius: 10px;
  margin: auto;
 
  > div{
-  display: block;
+  flex-direction: column;
+  display: flex;
   max-width: -webkit-fill-available;
    justify-content:center;
    align-items: center;
@@ -192,6 +194,7 @@ border-radius: 10px;
  .body{
    margin-top: 2rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding-bottom: 1rem;
 }
