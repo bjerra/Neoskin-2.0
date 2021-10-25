@@ -48,7 +48,7 @@ export const Content = styled.div`
       display: flex;
       padding: .75rem 0 1rem 1.5rem;  
       font-size: 1.1rem;
-      font-weight: 200;
+
       flex-direction: row;
       justify-content: flex-start;
 
@@ -76,6 +76,7 @@ export const descending = css`
     position: absolute;
     top:60px;
     width: 100%;
+    font-weight: 200;
     transform-origin: top;
     box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.15);
   
@@ -89,6 +90,7 @@ export const  ascending = css`
     width: 100%;
     position: fixed;
     bottom: 55px;
+    font-weight: 400;
     left: 0;
     right:0;
     transform-origin: bottom;
