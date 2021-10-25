@@ -67,23 +67,24 @@ const H1 = css`
   font-size: 2.509em;
   margin-bottom: 0.4em;
 
+
   @media screen and (max-width: ${BREAKPOINTS.MOBILE}) {
     font-size: 2.1em;
   }
 `
 
 const H2 = css`
-  font-family: Quicksand;
+font-family: "Niveau Grotesk";
   font-size: 2.157em;
   margin-bottom: 0.4em;
 
   @media screen and (max-width: ${BREAKPOINTS.MOBILE}) {
-    font-size: 1.559em;
+    font-size: 1.859em;
   }
 `
 
 const H3 = css`
-font-family: Quicksand;
+font-family: "Niveau Grotesk";
   font-size: 1.469em;
   margin-bottom: 0.4em;
 
@@ -93,7 +94,7 @@ font-family: Quicksand;
 `
 
 const H4 = css`
-font-family: Quicksand;
+font-family: "Niveau Grotesk";
   font-size: 1.177em;
   margin-bottom: 0.4em;
 
@@ -103,7 +104,7 @@ font-family: Quicksand;
 `
 
 const H5 = css`
-  font-family: Quicksand;
+font-family: "Niveau Grotesk";
   font-size: 1em;
   margin-bottom: 0.4em;
 
@@ -113,7 +114,7 @@ const H5 = css`
 `
 
 const H6 = css`
-font-family: Quicksand;
+font-family: "Niveau Grotesk";
   font-size: 0.75em;
   margin-bottom: 0.4em;
 
@@ -123,6 +124,7 @@ font-family: Quicksand;
 `
 
 const P = css`
+  font-family: "Niveau Grotesk";
   font-size: 1em;
   line-height: 1.4;
   margin-bottom: 0.4em;

@@ -10,12 +10,12 @@ const Banner = ({ children, image, alt }) => {
     const theme = useTheme();
    return(
      <div>
-        <StyledBanner image={image}>
+        <StyledBanner image={image} theme={theme}>
           <GatsbyImage image={img} alt={alt} />  
           {children}      
   
         </StyledBanner>
-      
+        <Divider fillColor={theme.COLOR.MISTY_BLUE} color={theme.COLOR.DARK} height={5} size={10} invert/>
         <Divider fillColor={theme.COLOR.DIM_BLUE} color={theme.COLOR.MISTY_BLUE} height={10} size={15} invert/>
         <Divider fillColor={theme.COLOR.INFO} color={theme.COLOR.DIM_BLUE} height={20} size={30} invert/>
         <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.INFO} height={35} size={40} invert/>

@@ -1,31 +1,27 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState, useRef } from 'react'
 import PropTypes from 'prop-types'
-import { graphql, Link } from 'gatsby'
-import {Layout, Banner, BokaButton} from '../components'
+import { graphql } from 'gatsby'
+import {Layout, Banner, Divider} from '../components'
 import { HTMLContent } from '../components/Content'
-import { Wrapper, ServiceCard, Body, Info} from './styles/Styled.categorypage'
+import { Wrapper, ServiceCard, Body, Info, ServiceList, BokaButton, Modal} from './styles/Styled.categorypage'
 import { useTheme  } from '@emotion/react'
+import { useOnClickOutside } from '../utils/hooks';
 
-const serviceCard = (service, theme) => (
-  <ServiceCard key={service.id} theme={theme}>
-                {service.info ? (
-                   <Link  
-                   to={`/behandlingar/${service.slug}`} 
-                   state={{modal: true, noScroll: true}}>
-                 <h5>{service.title}</h5>
-                 <span>mer info</span> 
-               </Link>
-                ) : (
-                  <div className="test">
-                <h4>{service.title}</h4>  
-              </div>
-                )}
+const serviceCard = (service, theme, onClick, clickable) => (
+  
+  <ServiceCard key={service.id} theme={theme} clickable={clickable}>    
+              <div className={service.info ? "info" : "noInfo"} onClick={ service.info ? () => onClick(service.info) : () => {}}>  
+                 <h4>{service.title}</h4>
+                 {service.info &&  <span>mer info</span> }
+                
+               </div> 
               <div className="boka">
-                  <BokaButton slug={service.slug}/>    
+                  <BokaButton href={`https://www.bokadirekt.se/boka-tjanst/neoskin-33692/${service.slug}`}>Boka</BokaButton>    
               </div>
              
         </ServiceCard> 
 )
+
 
 const CategoryPageTemplate = ({
   image,
@@ -35,12 +31,31 @@ const CategoryPageTemplate = ({
   services,
 }) => {
 
+  const [expanded, setExpanded] = useState(null);
   const theme = useTheme()
+  const node = useRef(); 
+  useOnClickOutside(node, () => setExpanded(null));
   return(
     <Wrapper>
+      <Modal ref={node} theme={theme} open={expanded !== null}>
+        <div>
+        { Array.isArray(expanded) &&
+            expanded.map((item) => (    
+              <Fragment>
+                  <h2>{item.title}</h2>
+                  {
+                    <p>{item.text}</p>
+                  }
+              
+              </Fragment>                             
+            ))
+          }  
+        </div>
+        </Modal>
         <Banner image = {image} alt="Neoskin">
         </Banner>
-      <Body>    
+          <Body>    
+            
        
               <div className="content">  
               <h1>{title}</h1>             
@@ -49,7 +64,7 @@ const CategoryPageTemplate = ({
                       </p>
                       <Info>
                       {
-                        info &&
+                        false &&
                         info.map((item) => (    
                           <Fragment>
                              <h2>{item.title}</h2>
@@ -61,13 +76,16 @@ const CategoryPageTemplate = ({
                         ))
                       }  
                       </Info>
-                      <ul>
+                      <h2>Behandlingar</h2>   
+                      <Divider fillColor={theme.COLOR.DIM_BLUE} color={theme.COLOR.BACKGROUND} height={5} size={5} invert/>
+                      <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.DIM_BLUE} height={6} size={5} invert/>
+                      <ServiceList>
                       {
                         services.map((service) => (                            
-                          serviceCard(service, theme)        
+                          serviceCard(service, theme, setExpanded, expanded == null)        
                         ))
                       }  
-                      </ul>
+                      </ServiceList>
                      
                </div>  
      

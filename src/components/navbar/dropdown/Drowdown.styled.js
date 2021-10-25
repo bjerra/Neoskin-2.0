@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   display: inline-block;
   height: 100%;
   width: 100%;
-  
+
   
 `
 
@@ -16,6 +16,7 @@ export const Content = styled.div`
   z-index: 1;
   transform: ${({ expanded }) => expanded ? 'scaleY(1)' : 'scaleY(0)'};
   transition: transform 0.2s ease-in-out;
+  padding-bottom: 1rem;
   .item {
     color: ${({ theme }) => theme.COLOR.MENU_TEXT};
     :hover{
@@ -39,7 +40,7 @@ export const Content = styled.div`
         height:1px;
         width: 10px;
         background-color: ${({ theme }) => theme.COLOR.MENU_TEXT};
-        left:.75rem;
+        left:.5rem;
         z-index:1;
 
         
@@ -47,8 +48,9 @@ export const Content = styled.div`
     
    
       display: flex;
-      padding: 1rem 0 1rem 2rem;  
-      font-size: 1.25rem;
+      padding: .75rem 0 .5rem 1.5rem;  
+      font-size: 1.1rem;
+      font-weight: 200;
       flex-direction: row;
       justify-content: flex-start;
     }
