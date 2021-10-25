@@ -13,6 +13,16 @@ margin: 0;
         font-weight: 300;
     }
 
+    h3{
+        text-align: center;   
+        color: ${({ theme }) => theme.COLOR.LIGHT}; 
+        font-weight: 300;
+    }
+    h4{
+        color: ${({ theme }) => theme.COLOR.LIGHT}; 
+        font-weight: 300;
+    }
+
     h5{
         text-align: center;   
         color: ${({ theme }) => theme.COLOR.DIM_BLUE};

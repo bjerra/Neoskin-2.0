@@ -1,5 +1,5 @@
 import React, { Fragment, useState, useRef } from 'react'
-import PropTypes from 'prop-types'
+import PropTypes, { exact } from 'prop-types'
 import { graphql } from 'gatsby'
 import {Layout, Banner, Divider} from '../components'
 import { HTMLContent } from '../components/Content'
@@ -10,8 +10,12 @@ import { useOnClickOutside } from '../utils/hooks';
 const serviceCard = (service, theme, onClick, clickable) => (
   
   <ServiceCard key={service.id} theme={theme} clickable={clickable}>    
-              <div className={service.info ? "info" : "noInfo"} onClick={ service.info ? () => onClick(service.info) : () => {}}>  
-                 <h4>{service.title}</h4>
+              <div className={service.info ? "info" : "noInfo"} onClick={ service.info ? () => onClick(service.id) : () => {}}>  
+                 <h3>{service.title}</h3>
+                 <div className="pricing">              
+                   <p>{service.time/60} minuter</p>
+                   <p>{service.price} kr</p>
+                 </div>
                  {service.info &&  <span>mer info</span> }
                 
                </div> 
@@ -35,14 +39,19 @@ const CategoryPageTemplate = ({
   const theme = useTheme()
   const node = useRef(); 
   useOnClickOutside(node, () => setExpanded(null));
+  const ecpandedService = services.find(p=>p.id == expanded) || {title: "", info: []};
   return(
     <Wrapper>
       <Modal ref={node} theme={theme} open={expanded !== null}>
         <div>
-        { Array.isArray(expanded) &&
-            expanded.map((item) => (    
+        <h2>{ecpandedService.title}</h2>
+       
+        <Divider fillColor={theme.COLOR.INFO} color={theme.COLOR.DIM_BLUE} height={6} size={3} invert/>
+        { 
+            ecpandedService.info.map((item) => (    
               <Fragment>
-                  <h2>{item.title}</h2>
+                 
+                  <h4>{item.title}</h4>
                   {
                     <p>{item.text}</p>
                   }
@@ -50,6 +59,7 @@ const CategoryPageTemplate = ({
               </Fragment>                             
             ))
           }  
+         
         </div>
         </Modal>
         <Banner image = {image} alt="Neoskin">

@@ -8,6 +8,7 @@ h1{
 `
 
 export const ServiceCard = styled.li`
+box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.25);
 pointer-events: ${({ clickable }) => clickable ? 'all' : 'none'};
 -webkit-tap-highlight-color: transparent;
 -webkit-touch-callout: none;
@@ -22,6 +23,18 @@ padding-left: 1rem;
 transition: transform .2s ease;
 position: relative;
 background: ${({ theme }) => theme.COLOR.LIGHT};
+
+.pricing {
+  display:flex;
+  justify-content: space-between;
+  width: 70%;
+  color: ${({ theme }) => theme.COLOR.MUSTARD};
+}
+
+h3{
+  color: ${({ theme }) => theme.COLOR.DARK};
+  text-align: left;
+ }
 
 display: flex;
 flex-direction: row;
@@ -38,13 +51,14 @@ color: ${({ theme }) => theme.COLOR.DARK};
 .noInfo, .info{
   height: 100%; 
   text-decoration: none;
-  padding: 0 .75rem;
+  padding: 1rem .75rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
   position: relative;
   flex: 1;
-  border-right: 1px solid #ddd;
+  border-right: 2px dotted ${({ theme }) => theme.COLOR.BACKGROUND};;
+
 }
   p {
       display: flex;
@@ -58,7 +72,7 @@ color: ${({ theme }) => theme.COLOR.DARK};
   span {
     transform-origin: left;
     transition: transform .2s ease;
-    color: ${({ theme }) => theme.COLOR.INFO};
+    color: ${({ theme }) => theme.COLOR.DIM_BLUE};
 }
 
  .info{
@@ -75,6 +89,7 @@ color: ${({ theme }) => theme.COLOR.DARK};
 @media screen and (min-width: 980px) {
   max-width: 500px;
   min-width: 400px;
+  height: 120px;
   }
 
  .boka{
@@ -135,6 +150,7 @@ overflow-y: auto;
 ::-webkit-scrollbar {
   display: none;
 }
+border-radius: 10px;
  transition: transform .2s ease;
  transform:  scaleY(${({ open }) => open ? '1' : '0'});  
   position: fixed;
@@ -152,7 +168,7 @@ overflow-y: auto;
   display: block;
    justify-content:center;
    align-items: center;
-  margin: 2rem;
+  margin: 1rem 1.5rem;
 
  }
 
