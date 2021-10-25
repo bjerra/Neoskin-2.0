@@ -53,6 +53,10 @@ export const Content = styled.div`
       font-weight: 200;
       flex-direction: row;
       justify-content: flex-start;
+
+      @media screen and (max-width: 980px) {
+        padding: .75rem 0 1rem 1.5rem;  
+      }
     }
       transform: ${({ expanded, down }) => expanded ? 'translateY(0)' : `translateY(${down ? '-100%' : '100%'})`};
       opacity: ${({ expanded }) => expanded ? '1' : '0'};

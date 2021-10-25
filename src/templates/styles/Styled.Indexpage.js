@@ -13,7 +13,9 @@ export const Intro = styled.section`
 
     padding: 1rem 1rem; 6rem 1rem;
    
-    
+    h5 {
+        font-style: italic;
+    }
     
     .inner {
         margin: 0rem auto;
