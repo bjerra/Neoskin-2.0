@@ -20,7 +20,9 @@ const AboutPageTemplate = ({ title, image, content, contentComponent }) => {
         <div className="inner">   
         
           <PageContent content={content} />
+         
         </div>  
+        <p className="signature">Anaïs</p>
       </Body>
     </Wrapper>
     

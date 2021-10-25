@@ -1,9 +1,9 @@
 import React, { Fragment, useState, useRef } from 'react'
 import PropTypes, { exact } from 'prop-types'
 import { graphql } from 'gatsby'
-import {Layout, Banner, Divider} from '../components'
+import {Layout, Banner, Divider, BokaButton} from '../components'
 import { HTMLContent } from '../components/Content'
-import { Wrapper, ServiceCard, Body, Info, ServiceList, BokaButton, Modal} from './styles/Styled.categorypage'
+import { Wrapper, ServiceCard, Body, Info, ServiceList, StyledBokaButton, Modal} from './styles/Styled.categorypage'
 import { useTheme  } from '@emotion/react'
 import { useOnClickOutside } from '../utils/hooks';
 
@@ -15,12 +15,11 @@ const serviceCard = (service, theme, onClick, clickable) => (
                  <div className="pricing">              
                    <p>{service.time/60} minuter</p>
                    <p>{service.price} kr</p>
+                  <span> {service.info ? "Mer info" : " "}</span>
                  </div>
-                 {service.info &&  <span>mer info</span> }
-                
                </div> 
               <div className="boka">
-                  <BokaButton href={`https://www.bokadirekt.se/boka-tjanst/neoskin-33692/${service.slug}`}>Boka</BokaButton>    
+                  <StyledBokaButton href={`https://www.bokadirekt.se/boka-tjanst/neoskin-33692/${service.slug}`}>Boka</StyledBokaButton>    
               </div>
              
         </ServiceCard> 
@@ -39,7 +38,7 @@ const CategoryPageTemplate = ({
   const theme = useTheme()
   const node = useRef(); 
   useOnClickOutside(node, () => setExpanded(null));
-  const ecpandedService = services.find(p=>p.id == expanded) || {title: "", info: []};
+  const ecpandedService = services.find(p=>p.id === expanded) || {title: "", info: []};
   return(
     <Wrapper>
       <Modal ref={node} theme={theme} open={expanded !== null}>
@@ -59,8 +58,12 @@ const CategoryPageTemplate = ({
               </Fragment>                             
             ))
           }  
-         
+          <div className="footer">
+           <BokaButton slug={ecpandedService.slug} large size={"22px"}/>
+          </div>
+        
         </div>
+       
         </Modal>
         <Banner image = {image} alt="Neoskin">
         </Banner>

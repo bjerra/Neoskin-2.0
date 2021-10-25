@@ -27,8 +27,14 @@ background: ${({ theme }) => theme.COLOR.LIGHT};
 .pricing {
   display:flex;
   justify-content: space-between;
-  width: 70%;
+  margin-right: 2rem;
   color: ${({ theme }) => theme.COLOR.MUSTARD};
+  p{
+    flex: 1;
+  }
+  span{
+    flex: 1;
+  }
 }
 
 h3{
@@ -61,18 +67,27 @@ color: ${({ theme }) => theme.COLOR.DARK};
 
 }
   p {
-      display: flex;
-      align-items: center;
-      font-size: 1.2rem;
+     
+      font-size: 1.1rem;
       @media screen and (max-width: 980px) {
           font-size: 1rem;
         }
   }
 
+  h3 {
+    word-break: break-word;
+      font-weight: 600;
+    @media screen and (min-width: 980px) {
+      font-size: 1.1rem;
+      }
+}
+
   span {
     transform-origin: left;
     transition: transform .2s ease;
     color: ${({ theme }) => theme.COLOR.DIM_BLUE};
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
  .info{
@@ -166,15 +181,22 @@ border-radius: 10px;
 
  div{
   display: block;
+  max-width: -webkit-fill-available;
    justify-content:center;
    align-items: center;
   margin: 1rem 1.5rem;
 
  }
 
+ .footer{
+   display: flex;
+   justify-content: center;
+   padding-bottom: 1rem;
+ }
+
 `
 
-export const BokaButton = styled.a`
+export const StyledBokaButton = styled.a`
     transition: all .2s ease;
 
     background-color:  ${({ theme }) => theme.COLOR.LIGHT};

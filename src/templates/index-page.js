@@ -39,7 +39,7 @@ const IndexPageTemplate = ({
       </div>  
       
         <div className="button">
-        <BokaButton large url="https://www.bokadirekt.se/places/neoskin-33692" />
+        <BokaButton large url="https://www.bokadirekt.se/places/neoskin-33692" size={"22px"}/>
       </div>
     </Intro>
    

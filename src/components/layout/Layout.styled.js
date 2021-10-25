@@ -28,6 +28,13 @@ margin: 0;
         color: ${({ theme }) => theme.COLOR.HIGHLIGHT};
         font-weight: 700; 
     }
+    .numbers {
+        font-family: gill-sans-nova, sans-serif;
+
+        font-weight: 500;
+
+        font-style: normal;
+   }
 `
 
 export const Body = styled.div`
