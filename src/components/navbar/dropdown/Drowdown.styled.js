@@ -30,6 +30,7 @@ export const Content = styled.div`
      
      
     }  
+   
 
     a {
       :before{
@@ -42,21 +43,27 @@ export const Content = styled.div`
         background-color: ${({ theme }) => theme.COLOR.MENU_TEXT};
         left:.5rem;
         z-index:1;
-
-        
       }    
-    
-   
+
       display: flex;
-      padding: .75rem 0 .5rem 1.5rem;  
+      padding: .75rem 0 1rem 1.5rem;  
       font-size: 1.1rem;
       font-weight: 200;
       flex-direction: row;
       justify-content: flex-start;
 
       @media screen and (max-width: 980px) {
-        padding: .75rem 0 1rem 1.5rem;  
+        
       }
+    }
+
+    .boka{
+      color: ${({ theme }) => theme.COLOR.HIGHLIGHT};
+      :before{
+       
+        background-color: ${({ theme }) => theme.COLOR.HIGHLIGHT};
+
+      }    
     }
       transform: ${({ expanded, down }) => expanded ? 'translateY(0)' : `translateY(${down ? '-100%' : '100%'})`};
       opacity: ${({ expanded }) => expanded ? '1' : '0'};
