@@ -24,6 +24,8 @@ export const StyledMobile = styled.nav`
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+
+       
     }
    
 
