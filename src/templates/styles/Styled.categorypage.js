@@ -140,6 +140,10 @@ export const Body = styled.div`
     padding-top: 2rem;
   }
 
+  .description{
+    
+  }
+
 `
 
 export const Info = styled.div`
@@ -147,7 +151,58 @@ export const Info = styled.div`
   margin: 2rem 0;
   h2{
     margin: 1rem;
+    text-align: left;
+    
   }
+  h3{
+    color: ${({ theme }) => theme.COLOR.DARK};
+    font-weight: 600;
+    border-bottom: 2px solid ${({ theme }) => theme.COLOR.DARK};
+  }
+
+  width: 100%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    max-width: 800px;
+    .tab {
+      flex-wrap: wrap;
+      display: flex;
+      margin: auto;
+      align-items: center;
+      justify-content: center;
+      flex-direction:row;
+
+    }
+
+    .header {
+      -webkit-tap-highlight-color: transparent;
+      margin-left: 1rem;
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+    }
+    
+    .body{
+      font-size: 1.2rem;
+      text-align: left;
+      word-break: break-word;
+      margin: auto;
+      padding: 1rem .5rem;
+      transition: transform .2s ease;
+      transform:  translateY(${({ expanded }) => expanded ? '1' : '0'});  
+    }
+
+    .current{
+      h3{
+        color: ${({ theme }) => theme.COLOR.LIGHT};
+        border-bottom: 2px solid ${({ theme }) => theme.COLOR.LIGHT};
+      }
+      
+    }
 
 `
 
@@ -158,7 +213,6 @@ export const ServiceList = styled.ul`
   flex-direction: column;
   align-items: center;
   display: flex;
-
 
 `
 
@@ -195,7 +249,7 @@ border-radius: 10px;
  }
 
  .body{
-   margin-top: 2rem;
+   margin-top: .5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

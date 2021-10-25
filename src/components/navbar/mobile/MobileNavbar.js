@@ -4,8 +4,7 @@ import { StyledMobile } from './MobileNavbar.styled';
 import { Logo } from '../../../components'
 import DropDown from '../dropdown/Dropdown'
 import { useTheme  } from '@emotion/react'
-import { BiNews, BiDotsVertical } from 'react-icons/bi';
-import { FaHandHoldingHeart } from 'react-icons/fa';
+import { BiDotsVertical } from 'react-icons/bi';
 import ServiceMenu from '../menus/ServiceMenu'
 import ContactMenu from '../menus/ContactMenu'
 import MoreMenu from '../menus/MoreMenu'

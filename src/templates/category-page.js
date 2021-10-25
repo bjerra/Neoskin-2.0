@@ -1,28 +1,28 @@
 import React, { Fragment, useState, useRef } from 'react'
 import PropTypes, { exact } from 'prop-types'
 import { graphql } from 'gatsby'
-import {Layout, Banner, Divider, BokaButton} from '../components'
+import { Layout, Banner, Divider, BokaButton } from '../components'
 import { HTMLContent } from '../components/Content'
-import { Wrapper, ServiceCard, Body, Info, ServiceList, StyledBokaButton, Modal} from './styles/Styled.categorypage'
-import { useTheme  } from '@emotion/react'
+import { Wrapper, ServiceCard, Body, Info, ServiceList, StyledBokaButton, Modal } from './styles/Styled.categorypage'
+import { useTheme } from '@emotion/react'
 import { useOnClickOutside } from '../utils/hooks';
 
 const serviceCard = (service, theme, onClick, clickable) => (
-  
-  <ServiceCard key={service.id} theme={theme} clickable={clickable}>    
-              <div className={service.info ? "info" : "noInfo"} onClick={ service.info ? () => onClick(service.id) : () => {}}>  
-                 <h3>{service.title}</h3>
-                 <div className="pricing">              
-                   <p>{service.time/60} minuter</p>
-                   <p>{service.price} kr</p>
-                  <span> {service.info ? "Mer info" : " "}</span>
-                 </div>
-               </div> 
-              <div className="boka">
-                  <StyledBokaButton href={`https://www.bokadirekt.se/boka-tjanst/neoskin-33692/${service.slug}`}>Boka</StyledBokaButton>    
-              </div>
-             
-        </ServiceCard> 
+
+  <ServiceCard key={service.id} theme={theme} clickable={clickable}>
+    <div className={service.info ? "info" : "noInfo"} onClick={service.info ? () => onClick(service.id) : () => { }}>
+      <h3>{service.title}</h3>
+      <div className="pricing">
+        <p>{service.time / 60} minuter</p>
+        <p>{service.price} kr</p>
+        <span> {service.info ? "Mer info" : " "}</span>
+      </div>
+    </div>
+    <div className="boka">
+      <StyledBokaButton href={`https://www.bokadirekt.se/boka-tjanst/neoskin-33692/${service.slug}`}>Boka</StyledBokaButton>
+    </div>
+
+  </ServiceCard>
 )
 
 
@@ -34,76 +34,84 @@ const CategoryPageTemplate = ({
   services,
 }) => {
 
-  const [expanded, setExpanded] = useState(null);
+  const [expanded, setExpanded] = useState(-1);
+  const [modal, setModal] = useState(null);
   const theme = useTheme()
-  const node = useRef(); 
-  useOnClickOutside(node, () => setExpanded(null));
-  const ecpandedService = services.find(p=>p.id === expanded) || {title: "", info: []};
-  return(
+  const node = useRef();
+  useOnClickOutside(node, () => setModal(null));
+  const modalService = services.find(p => p.id === modal) || { title: "", info: [] };
+
+  return (
     <Wrapper>
-      <Modal ref={node} theme={theme} open={expanded !== null}>
+      <Modal ref={node} theme={theme} open={modal !== null}>
         <div>
-        <h2>{ecpandedService.title}</h2>
-       
-        <Divider fillColor={theme.COLOR.INFO} color={theme.COLOR.HOVER} height={3} size={6} invert/>
-        <div className="body">
-       
-        { 
-            ecpandedService.info.map((item) => (    
-              <Fragment>   
+          <h2>{modalService.title}</h2>
+
+          <div className="body">
+          <Divider fillColor={theme.COLOR.INFO} color={theme.COLOR.HOVER} height={2} size={3} invert />
+            {
+              modalService.info.map((item) => (
+                <Fragment>
                   <h4>{item.title}</h4>
                   {
                     <p>{item.text}</p>
                   }
-              </Fragment>                             
-            ))
-          }  
-           </div>
+                </Fragment>
+              ))
+            }
+             <Divider fillColor={theme.COLOR.INFO} color={theme.COLOR.HOVER} height={2} size={3} invert />
+          </div>
           <div className="footer">
-           <BokaButton slug={ecpandedService.slug} large size={"22px"}/>
+            <BokaButton slug={modalService.slug} large size={"22px"} />
+          </div>
+
+        </div>
+
+      </Modal>
+      <Banner image={image} alt="Neoskin" position={"50% 20%"}>
+      </Banner>
+      <Body>
+
+
+        <div className="content">
+          <h1>{title}</h1>
+          <div className="description">
+          <p>
+            {description}
+          </p>
           </div>
         
+          {info &&
+            <Info theme={theme} expanded={expanded !== -1}>
+              <div className="tab">
+              {
+                info.map((item, i) => (
+                  <div className={`header ${expanded === i ? 'current' : ''}`} onClick={() => setExpanded(i === expanded ? -1 : i)}>
+                    <h3>{item.title}</h3>
+                  </div>
+                ))
+              }  
+              </div>
+              <div className="body"> 
+                <HTMLContent content={expanded !== -1 ? info[expanded].body : null}/>
+              </div>  
+            </Info>
+          }
+          <h2>Behandlingar</h2>
+          <Divider fillColor={theme.COLOR.DIM_BLUE} color={theme.COLOR.BACKGROUND} height={5} size={5} invert />
+          <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.DIM_BLUE} height={6} size={5} invert />
+          <ServiceList theme={theme}>
+            {
+              services.map((service) => (
+                serviceCard(service, theme, setModal, modal == null)
+              ))
+            }
+          </ServiceList>
+
         </div>
-       
-        </Modal>
-        <Banner image = {image} alt="Neoskin" position={"50% 20%"}>
-        </Banner>
-          <Body>    
-            
-       
-              <div className="content">  
-              <h1>{title}</h1>             
-                      <p>
-                        {description}
-                      </p>
-                      <Info>
-                      {
-                        info.map((item) => (    
-                          <Fragment>
-                             <h2>{item.title}</h2>
-                             {
-                               <HTMLContent content={item.body} />
-                             }
-                          
-                          </Fragment>                             
-                        ))
-                      }  
-                      </Info>
-                      <h2>Behandlingar</h2>   
-                      <Divider fillColor={theme.COLOR.DIM_BLUE} color={theme.COLOR.BACKGROUND} height={5} size={5} invert/>
-                      <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.DIM_BLUE} height={6} size={5} invert/>
-                      <ServiceList>
-                      {
-                        services.map((service) => (                            
-                          serviceCard(service, theme, setExpanded, expanded == null)        
-                        ))
-                      }  
-                      </ServiceList>
-                     
-               </div>  
-     
-          </Body>   
-  </Wrapper>
+
+      </Body>
+    </Wrapper>
   )
 }
 
@@ -115,14 +123,14 @@ CategoryPageTemplate.propTypes = {
 
 const CategoryPage = ({ data }) => {
 
-  const {title, image, description, services, info} = data.categoriesJson;
+  const { title, image, description, services, info } = data.categoriesJson;
 
   return (
     <Layout pageTitle={title} pageDescription={description}>
       <CategoryPageTemplate
         image={image}
-        title={title}     
-        description={description}     
+        title={title}
+        description={description}
         services={services}
         info={info}
       />
