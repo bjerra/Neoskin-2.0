@@ -145,6 +145,9 @@ export const Body = styled.div`
 export const Info = styled.div`
     
   margin: 2rem 0;
+  h2{
+    margin: 1rem;
+  }
 
 `
 

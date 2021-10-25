@@ -78,12 +78,11 @@ const CategoryPageTemplate = ({
                       </p>
                       <Info>
                       {
-                        false &&
                         info.map((item) => (    
                           <Fragment>
                              <h2>{item.title}</h2>
                              {
-                               false && <HTMLContent content={item.body} />
+                               <HTMLContent content={item.body} />
                              }
                           
                           </Fragment>                             
