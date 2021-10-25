@@ -10,7 +10,7 @@ const MethodPageTemplate = ({ title, image, content, contentComponent }) => {
 
   return (
         <Wrapper>
-            <Banner image={image} alt={"Anaïs"}>
+            <Banner image={image} alt={"Anaïs"} position={"50% 10%"}>
 
             </Banner>
             <h1>

@@ -1,8 +1,8 @@
 ---
-templateKey: about-page
+templateKey: method-page
 path: /metod
 title: Metod
-image: /img/bg.jpg
+image: /img/Salon.jpg
 ---
 ## ABONNEMANG 
 

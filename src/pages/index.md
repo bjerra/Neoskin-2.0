@@ -2,7 +2,7 @@
 templateKey: index-page
 title: The Neoskin Method 
 subtitle: Upplev hudvård på nytt med Anaïs 
-image: /img/bg.jpg
+image: /img/Salon.jpg
 features:
   - Acne paketet, värde 5300:-
   - 4x Enerpeel hands, värde 6000

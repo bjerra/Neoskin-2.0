@@ -2,7 +2,7 @@
 templateKey: about-page
 path: /om
 title: Om mig
-image: /img/img_5688b.jpg
+image: /img/WaitingRoom.jpg
 ---
 
 <br>

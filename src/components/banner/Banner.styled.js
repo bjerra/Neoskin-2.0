@@ -7,8 +7,8 @@ export const StyledBanner = styled.section`
     position: relative;
     color: rgba(255, 255, 255, 0.5);
     border-top: 0;
-    height: 20rem !important;
-    min-height: 20rem;
+    height: ${({ height }) => height} !important;
+    min-height: ${({ height }) => height};
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -22,6 +22,8 @@ export const StyledBanner = styled.section`
         color: #ffffff; 
     }
 
+
+   
    
     h1 {
         font-size: 2rem;

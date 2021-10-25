@@ -45,7 +45,9 @@ const CategoryPageTemplate = ({
         <div>
         <h2>{ecpandedService.title}</h2>
        
-        <Divider fillColor={theme.COLOR.INFO} color={theme.COLOR.DIM_BLUE} height={6} size={3} invert/>
+        <Divider fillColor={theme.COLOR.INFO} color={theme.COLOR.HOVER} height={3} size={6} invert/>
+        <div className="body">
+       
         { 
             ecpandedService.info.map((item) => (    
               <Fragment>
@@ -58,6 +60,7 @@ const CategoryPageTemplate = ({
               </Fragment>                             
             ))
           }  
+           </div>
           <div className="footer">
            <BokaButton slug={ecpandedService.slug} large size={"22px"}/>
           </div>
@@ -65,7 +68,7 @@ const CategoryPageTemplate = ({
         </div>
        
         </Modal>
-        <Banner image = {image} alt="Neoskin">
+        <Banner image = {image} alt="Neoskin" position={"50% 20%"}>
         </Banner>
           <Body>    
             

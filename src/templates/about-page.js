@@ -10,7 +10,7 @@ const AboutPageTemplate = ({ title, image, content, contentComponent }) => {
 
   return (
     <Wrapper>
-       <Banner image={image} alt={"Metod"}>
+       <Banner image={image} alt={"Metod"} position={"50% 70%"}>
 
        </Banner>
        <h1>

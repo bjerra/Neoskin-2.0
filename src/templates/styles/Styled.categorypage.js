@@ -162,6 +162,7 @@ export const ServiceList = styled.ul`
 export const Modal = styled.div`
 overflow-x: hidden;
 overflow-y: auto;
+height: fit-content;
 ::-webkit-scrollbar {
   display: none;
 }
@@ -179,7 +180,7 @@ border-radius: 10px;
  max-width: 600px;
  margin: auto;
 
- div{
+ > div{
   display: block;
   max-width: -webkit-fill-available;
    justify-content:center;
@@ -187,6 +188,13 @@ border-radius: 10px;
   margin: 1rem 1.5rem;
 
  }
+
+ .body{
+   margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
 
  .footer{
    display: flex;

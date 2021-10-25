@@ -17,7 +17,7 @@ const IndexPageTemplate = ({
   const theme = useTheme();
   return(
   <Wrapper theme={theme}>
-    <Banner image = {image} alt="Neoskin">
+    <Banner image = {image} alt="Neoskin" position={"50% 10%"} height="20rem">
         <Logo size={300}/>    
         {//<video autoPlay loop muted playsInline src={require("../img/banner.webm")}></video>
         }

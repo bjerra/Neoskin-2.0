@@ -9,7 +9,7 @@ const MemberPageTemplate = ({ image }) => {
 
   return (
     <Wrapper>
-      <Banner image = {image} alt={"nyhetsbrev"}>
+      <Banner image = {image} alt={"nyhetsbrev"} position={"50% 10%"}>
       <h1>Nyhetsbrev</h1>
     </Banner>
     <Body>

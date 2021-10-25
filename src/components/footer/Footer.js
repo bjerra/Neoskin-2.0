@@ -8,8 +8,8 @@ const Footer = props => {
   const theme = useTheme()
   return(
     <div>
-        <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.OAK} height={15} size={20}/>
-        <Divider fillColor={theme.COLOR.OAK} color={theme.COLOR.MUSTARD} height={15} size={15}/>
+        <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.OAK} height={15} size={50}/>
+        <Divider fillColor={theme.COLOR.OAK} color={theme.COLOR.MUSTARD} height={35} size={45}/>
         <Divider fillColor={theme.COLOR.MUSTARD} color={theme.COLOR.FOOTER} height={30} size={50}/>
 
         <StyledFooter theme={theme}>  
