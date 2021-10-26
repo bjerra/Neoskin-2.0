@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {StyledFeatures, FeatureCard, Image} from './Features.styled'
+import {StyledFeatures} from './Features.styled'
 
 
 
