@@ -3,6 +3,8 @@
  "id": 11,
  "description": "",
  "image": "/img/default.jpg",
+ "brandLogo": "/img/logo_BR.svg",
+ "brandUrl": "https://www.biologique-recherche.com/en-se/",
  "slug": "avlagsna-flackar-fibrom-karl-xantelasma",
  "info": [],
  "services": [

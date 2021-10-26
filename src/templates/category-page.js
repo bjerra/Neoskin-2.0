@@ -44,8 +44,8 @@ const CategoryPageTemplate = ({
   return (
     <Wrapper>
       <Modal ref={node} theme={theme} open={modal !== null}>
-        <div>
-        <div className="header">
+        <div>  
+        <div className="header">  
           <h2>{modalService.title}</h2>
           <Divider fillColor={theme.COLOR.INFO} color={theme.COLOR.HOVER} height={2} size={3} invert />
         </div>
@@ -74,12 +74,13 @@ const CategoryPageTemplate = ({
 
       </Modal>
       <Banner image={image} alt="Neoskin" position={"50% 20%"}>
+         
       </Banner>
       <Body>
 
 
         <div className="content">
-          <h1>{title}</h1>
+            <h1>{title}</h1>
           <div className="description">
           <p>
             {description}
@@ -171,7 +172,7 @@ export const categoryPageQuery = graphql`
             placeholder: BLURRED
           )
         }
-      }
+      } 
       info{
         title
         body

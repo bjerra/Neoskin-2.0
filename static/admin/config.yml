@@ -22,6 +22,8 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: image}
+      - {label: "BrandLogo", name: "brandLogo", widget: image}
+      - {label: "BrandUrl", name: "BrandUrl", widget: "string"}
       - {label: Info, name: info, widget: list, fields: [{label: Title, name: title, widget: string},{label: "Body", name: "body", widget: "markdown"}]} 
       - {label: "Services", name: "services", widget: list, fields: [{label: Title, name: title, widget: hidden}]}
  

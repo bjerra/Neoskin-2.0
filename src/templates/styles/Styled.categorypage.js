@@ -145,6 +145,16 @@ export const Body = styled.div`
     
   }
 
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .brand{
+    width: 150px;
+    float: right;
+  }
+
 `
 
 export const Info = styled.div`
