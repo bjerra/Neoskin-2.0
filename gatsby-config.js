@@ -64,7 +64,12 @@ module.exports = {
         name: 'data',
       },
     },
-   
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: MAILCHIMP_ENDPOINT,
+      },
+    },
     `gatsby-plugin-image`,
     `gatsby-transformer-json`,
     'gatsby-plugin-sharp',
