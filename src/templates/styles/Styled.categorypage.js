@@ -127,8 +127,9 @@ color: ${({ theme }) => theme.COLOR.DARK};
 export const Body = styled.div`
     
   text-align: center;
+  margin: auto;
   padding: 1rem;
-
+  max-width: 800px;
   .content {
     
     display: flex;
@@ -148,23 +149,23 @@ export const Body = styled.div`
 
 export const Info = styled.div`
     
-  margin: 2rem 0;
+ 
   h2{
-    margin: 1rem;
+    
     text-align: left;
     
   }
   h3{
-    color: ${({ theme }) => theme.COLOR.DARK};
+    color: ${({ theme }) => theme.COLOR.MISTY_BLUE};
     font-weight: 600;
-    border-bottom: 2px solid ${({ theme }) => theme.COLOR.DARK};
+    border-bottom: 2px solid ${({ theme }) => theme.COLOR.MISTY_BLUE};
   }
 
   width: 100%;
     height: 100%;
     position: relative;
-    margin: auto;
-    max-width: 800px;
+    
+  
     .tab {
       flex-wrap: wrap;
       display: flex;
@@ -187,13 +188,17 @@ export const Info = styled.div`
     }
     
     .body{
+     
+     
       font-size: 1.2rem;
       text-align: left;
       word-break: break-word;
       margin: auto;
-      padding: 1rem .5rem;
-      transition: transform .2s ease;
-      transform:  translateY(${({ expanded }) => expanded ? '1' : '0'});  
+      transform-origin: top;
+      transform:  scaleY(${({ expanded }) => expanded ? '1' : '0'});  
+      .content{
+        padding: 1rem; 
+      }
     }
 
     .current{
@@ -203,6 +208,18 @@ export const Info = styled.div`
       }
       
     }
+  }
+
+  @keyframes show {
+    0% {
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0);
+    }
+    100% {
+        transform: scaleY(2.0);
+        -webkit-transform: scaleY(2.0);
+    }
+}
 
 `
 
@@ -217,8 +234,7 @@ export const ServiceList = styled.ul`
 `
 
 export const Modal = styled.div`
-overflow-x: hidden;
-overflow-y: auto;
+max-height: 80%;
 height: fit-content;
 
 ::-webkit-scrollbar {
@@ -239,6 +255,7 @@ border-radius: 10px;
  margin: auto;
 
  > div{
+  
   flex-direction: column;
   display: flex;
   max-width: -webkit-fill-available;
@@ -247,19 +264,25 @@ border-radius: 10px;
   margin: 1rem 1.5rem;
 
  }
+ .header {
+
+ }
 
  .body{
-   margin-top: .5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-bottom: 1rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  > * {
+    padding-top: .5rem;
+  }
 }
 
  .footer{
-   display: flex;
-   justify-content: center;
-   padding-bottom: 1rem;
+   width: 100%;
+   a{
+     margin: auto;
+     margin-top: .5rem
+   }
+ 
  }
 
 `

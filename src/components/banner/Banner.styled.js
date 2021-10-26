@@ -16,7 +16,7 @@ export const StyledBanner = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: ${({ theme }) => theme.COLOR.DARK}; 
+    background-color: ${({ theme }) => theme.COLOR.DIM_BLUE}; 
 
     h1, h2, h3, h4, h5, h6 {
         color: #ffffff; 

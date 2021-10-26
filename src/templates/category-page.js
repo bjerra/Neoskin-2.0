@@ -45,10 +45,13 @@ const CategoryPageTemplate = ({
     <Wrapper>
       <Modal ref={node} theme={theme} open={modal !== null}>
         <div>
+        <div className="header">
           <h2>{modalService.title}</h2>
-
-          <div className="body">
           <Divider fillColor={theme.COLOR.INFO} color={theme.COLOR.HOVER} height={2} size={3} invert />
+        </div>
+        
+          <div className="body">
+         
             {
               modalService.info.map((item) => (
                 <Fragment>
@@ -59,9 +62,11 @@ const CategoryPageTemplate = ({
                 </Fragment>
               ))
             }
-             <Divider fillColor={theme.COLOR.INFO} color={theme.COLOR.HOVER} height={2} size={3} invert />
+             
           </div>
+          
           <div className="footer">
+            <Divider fillColor={theme.COLOR.INFO} color={theme.COLOR.HOVER} height={2} size={3} />
             <BokaButton slug={modalService.slug} large size={"22px"} />
           </div>
 
@@ -92,14 +97,20 @@ const CategoryPageTemplate = ({
                 ))
               }  
               </div>
+              <Divider fillColor={theme.COLOR.DIM_BLUE} color={theme.COLOR.BACKGROUND} height={5} size={5} invert />
+              <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.DIM_BLUE} height={6} size={5} invert />
+            
               <div className="body"> 
-                <HTMLContent content={expanded !== -1 ? info[expanded].body : null}/>
+             
+              <HTMLContent content={expanded !== -1 ? info[expanded].body : ""} className={"content"}/>
+              <Divider fillColor={theme.COLOR.DIM_BLUE} color={theme.COLOR.BACKGROUND} height={5} size={5} invert />
+              <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.DIM_BLUE} height={6} size={5} invert />
               </div>  
+              
             </Info>
           }
           <h2>Behandlingar</h2>
-          <Divider fillColor={theme.COLOR.DIM_BLUE} color={theme.COLOR.BACKGROUND} height={5} size={5} invert />
-          <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.DIM_BLUE} height={6} size={5} invert />
+        
           <ServiceList theme={theme}>
             {
               services.map((service) => (

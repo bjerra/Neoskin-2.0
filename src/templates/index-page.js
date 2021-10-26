@@ -34,7 +34,7 @@ const IndexPageTemplate = ({
         <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.DIM_BLUE} height={6} size={5} invert/>
 
       </header>     
-      <PageContent content={content} />
+      <PageContent content={content} className={"body"}/>
      
       </div>  
       
