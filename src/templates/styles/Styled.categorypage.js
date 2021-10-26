@@ -265,7 +265,7 @@ border-radius: 10px;
 
  }
  .header {
-
+  width: 100%;
  }
 
  .body{
