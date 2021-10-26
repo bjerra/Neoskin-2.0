@@ -2,7 +2,7 @@
  "title": "Avancerad hudvård övrigt",
  "id": 8,
  "description": "",
- "image": "/img/default.jpg",
+ "image": "../../../static/img/default.jpg",
  "brandLogo": "/img/logo_BR.svg",
  "brandUrl": "https://www.biologique-recherche.com/en-se/",
  "slug": "avancerad-hudvard-ovrigt",
