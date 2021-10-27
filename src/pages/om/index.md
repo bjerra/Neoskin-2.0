@@ -2,7 +2,7 @@
 templateKey: about-page
 path: /om
 title: Om mig
-image: /img/WaitingRoom.jpg
+image: /img/Salon.jpg
 ---
 #### 
 *“Everyone sees what you appear to be, few experience what you really are”* 
