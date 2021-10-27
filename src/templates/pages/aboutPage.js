@@ -9,7 +9,7 @@ const AboutPage = ({ title, image, content, contentComponent }) => {
   return (
     <Layout>
         <Wrapper>
-            <Banner image={image} alt={"Metod"} position={"50% 70%"}>
+            <Banner image={image} alt={"Metod"} position={"50% 10%"}>
 
             </Banner>
             <h1>
