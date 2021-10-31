@@ -43,13 +43,13 @@ export const wrapRootElement = ({ element }) => {
           } 
           a {
             color: inherit;
-            font-family: 'niveau-grotesk';
+           
           }
           div{
-            font-family: 'niveau-grotesk';
+            
           }
           span{
-            font-family: 'niveau-grotesk';
+          
           }
           h1 {
             ${theme.H1};
@@ -73,7 +73,7 @@ export const wrapRootElement = ({ element }) => {
             ${theme.P};
           }
           pre {
-            font-family: monospace;
+            
           }
         `}
       />

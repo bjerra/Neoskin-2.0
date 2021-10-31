@@ -63,7 +63,7 @@ const MARGIN = { ...units }
 const BASE_FONT_SIZE = `${18}px`
 
 const H1 = css`
-  font-family: "Niveau Grotesk";
+
   font-size: 2.509em;
   margin-bottom: 0.4em;
 
@@ -74,7 +74,7 @@ const H1 = css`
 `
 
 const H2 = css`
-font-family: "Niveau Grotesk";
+
   font-size: 2.157em;
   margin-bottom: 0.4em;
 
@@ -84,7 +84,7 @@ font-family: "Niveau Grotesk";
 `
 
 const H3 = css`
-font-family: "Niveau Grotesk";
+
   font-size: 1.469em;
   margin-bottom: 0.4em;
 
@@ -94,7 +94,7 @@ font-family: "Niveau Grotesk";
 `
 
 const H4 = css`
-font-family: "Niveau Grotesk";
+
   font-size: 1.177em;
   margin-bottom: 0.4em;
 
@@ -104,7 +104,7 @@ font-family: "Niveau Grotesk";
 `
 
 const H5 = css`
-font-family: "Niveau Grotesk";
+
   font-size: 1em;
   margin-bottom: 0.4em;
 
@@ -114,7 +114,7 @@ font-family: "Niveau Grotesk";
 `
 
 const H6 = css`
-font-family: "Niveau Grotesk";
+
   font-size: 0.75em;
   margin-bottom: 0.4em;
 
@@ -124,7 +124,7 @@ font-family: "Niveau Grotesk";
 `
 
 const P = css`
-  font-family: "Niveau Grotesk";
+
   font-size: 1em;
   line-height: 1.4;
   margin-bottom: 0.4em;

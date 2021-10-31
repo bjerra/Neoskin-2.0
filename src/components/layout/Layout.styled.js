@@ -1,6 +1,7 @@
 import styled from "@emotion/styled"
 
 export const Wrapper = styled.div`
+font-family: "Niveau Grotesk";
 margin: 0;
 
     h1{
