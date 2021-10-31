@@ -4,19 +4,10 @@ path: /om
 title: Om mig
 image: /img/Salon.jpg
 ---
-#### 
 *“Everyone sees what you appear to be, few experience what you really are”* 
 
-<<<<<<< HEAD
-<br>
-“Everyone sees what you appear to be, few experience what you really are” 
 
-- Niccolò Machiavelli     
-=======
-\- Niccolò Machiavelli      
-
->>>>>>> db58af36a2d625decbed9350586e3abdfd4d3328
-
+\- Niccolò Machiavelli
 
 Jag heter Anaïs Schönborg och är en av två Auktoriserade, specialiserade hudterapeutmästare i Jönköping. Min skönhetskarriär startade år 2013 efter fullgjord tvåårig utbildning i Bryssel. Efteråt gjorde jag en masters degree för hudterapeuter på ytterligare ett år där jag bl.a kunde fördjupa min basmedicinska kunskap men även utbilda mig till “Image consultant”. Idag är jag en av få certifierade “Image consultants” med godkänd AICI utbildning i Sverige.
 
