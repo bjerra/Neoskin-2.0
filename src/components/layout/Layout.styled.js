@@ -42,7 +42,7 @@ margin: 0;
 export const Body = styled.div`
 .inner {
     margin:    0 auto;
-    max-width: 1000px;
+    max-width: 800px;
   
 }
 `

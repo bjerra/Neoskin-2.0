@@ -13,18 +13,6 @@ export const Body = styled.section`
 
     padding: 0 1rem;
 
-    .inner {
-        margin: 0rem auto;
-        width: 75rem;
-        max-width: calc(100% - 3rem); 
-        @media screen and (max-width: 480px) {
-          .inner {
-            max-width: calc(100% - 1rem); 
-            } 
-        }
-
-        
-    }
     .signature{
         color: ${({ theme }) => theme.COLOR.HIGHLIGHT};
         font-style: italic;

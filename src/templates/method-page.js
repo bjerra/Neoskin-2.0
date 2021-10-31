@@ -1,12 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import {Layout,Banner} from '../components'
+import {Layout,Banner, Divider} from '../components'
 import Content, { HTMLContent } from '../components/Content'
 import { Wrapper, Body} from './styles/StyledMethodPage'
+import { useTheme } from '@emotion/react'
 
 const MethodPageTemplate = ({ title, image, content, contentComponent }) => {
   const PageContent = contentComponent || Content
+  const theme = useTheme()
 
   return (
         <Wrapper>
@@ -17,8 +19,10 @@ const MethodPageTemplate = ({ title, image, content, contentComponent }) => {
                         {title}
             </h1>  
             <Body>
+              
                 <div className="inner">   
-                   
+                <Divider fillColor={theme.COLOR.DIM_BLUE} color={theme.COLOR.BACKGROUND} height={5} size={5} invert />
+              <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.DIM_BLUE} height={6} size={5} invert />
                     <PageContent content={content} />
                 </div>  
             </Body>
