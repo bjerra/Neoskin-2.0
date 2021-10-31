@@ -2,7 +2,7 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-const {MAILCHIMP_ENDPOINT, TYPEKIT_ID} = process.env;
+const {MAILCHIMP_ENDPOINT} = process.env;
 
 
 module.exports = {
@@ -30,8 +30,9 @@ module.exports = {
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
-        typekit: {
-          id: TYPEKIT_ID,
+        custom: {
+          families: ["Niveau Grotesk"],
+          urls: ["/fonts/fonts.css"],
         },
       },
     },

@@ -40,6 +40,7 @@ background: ${({ theme }) => theme.COLOR.LIGHT};
 h3{
   color: ${({ theme }) => theme.COLOR.DARK};
   text-align: left;
+  font-weight: 500; 
  }
 
 display: flex;
@@ -76,7 +77,6 @@ color: ${({ theme }) => theme.COLOR.DARK};
 
   h3 {
     word-break: break-word;
-      font-weight: 600;
     @media screen and (min-width: 980px) {
       font-size: 1.1rem;
       }
@@ -86,7 +86,6 @@ color: ${({ theme }) => theme.COLOR.DARK};
     transform-origin: left;
     transition: transform .2s ease;
     color: ${({ theme }) => theme.COLOR.DIM_BLUE};
-    font-weight: 500;
     font-size: 1.1rem;
 }
 

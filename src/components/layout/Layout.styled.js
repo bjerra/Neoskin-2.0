@@ -7,7 +7,7 @@ margin: 0;
     h1{
         text-align: center;   
         color: ${({ theme }) => theme.COLOR.LIGHT}; 
-        font-weight: 600;
+        font-weight: 500;
     }
     h2{
         text-align: center;   
@@ -28,7 +28,11 @@ margin: 0;
     h5{
         text-align: center;   
         color: ${({ theme }) => theme.COLOR.HIGHLIGHT};
-        font-weight: 700; 
+        font-weight: 300; 
+    }
+
+    p {
+        font-weight: 300; 
     }
     .numbers {
         font-family: gill-sans-nova, sans-serif;
