@@ -52,7 +52,7 @@ const EmailListForm = () => {
 
     addToMailchimp(email)
       .then((data) => {
-          console.log(data);
+
           let msg = ""
           if(data.result === "error"){
             if(data.msg.includes("already"))
