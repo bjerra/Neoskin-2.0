@@ -12,6 +12,6 @@ Jag heter Anaïs Schönborg och är en av två Auktoriserade, specialiserad
 
 På kliniken erbjuder jag skräddarsydda ansiktsbehandlingar och rådgivning, högkvalitativa produkter och apparatur samt avancerad, resultatinriktad hudvård i ett unikt koncept. 
 
-Jag brinner för mitt yrke och är övertygad om att jag har vad som krävs för att lyckas göra en positiv skillnad i människors liv via en förbättrad, förfinad, optimerad och/eller . 
+Jag brinner för mitt yrke och är övertygad om att jag har vad som krävs för att lyckas göra en positiv skillnad i människors liv via en förbättrad, förfinad och optimerad hudhälsa.
 
 Det var inte en självklarhet för mig att bli hudterapeut, jag visste knappt vad det var och hade inget intresse av hudvård över huvudtaget när jag vad tonåring. Jag skulle bli psykolog för att hjälpa människor att må bättre, jag skulle bli bildlärare för att förmedla viktiga värden till ungdomar som behövde självförtroende, turism, tolk/ översättare, kommunikation… Alla dessa saker jag påbörjade innan att äntligen hitta det som var rätt för mig. Mer får du veta om du är nyfiken, vi ses på kliniken!
