@@ -9,24 +9,31 @@ features:
   - 6x Lift & Tight Ögon eller Mun, värde 6000
 portrait: /img/anais_aesthetica_consulting_blg_9107_6_xx.jpg
 ---
-
 ## Filosofi
 
 <br>
 
-Varje hud är unik och en förtjänar att bli bemött och omhändertagen som så, utan standard metod. 
+Kärnan i vårt fokus är din hud och hudens olika behov i takt med årstidsväxlingar och åldrande.\
+Vi har hela Dig i åtanke i en holistisk grundfilosofi, där huden är en av komponenterna i Ditt liv.
+
+Hudens olika behov i olika stadier, kräver nya lösningar och produkter och där vet vi att vi kan vara ett gott stöd och till hjälp i Din huds utveckling.
 
 <br>
 
-## Tro
+## Vision
 
 <br>
 
-En frisk och vacker hud uppnås tack vare ett välbefinnande i en hälsosam livsstil, daglig hudvård och kontinuerlig uppföljning hos den Auktoriserade hudterapeuten. 
+Att alltid finnas där och lösa kundens alla behov som uppstår kring hud.\
+Vi vill vara den stabila extra familjemedlemmen. En erfaren hand som skapar trygghet och ordning i tillvaron. Din hud är min passion!
 <br>
 
-## Metod
+## Värderingar
 
 <br>
 
-Anaïs unika koncept går ut på att kunden kan slippa försöka boka rätt behandling själv utan istället boka en “öppen-tid” och låta experten på bästa möjliga sätt skräddarsy i tid och budget efter hudens behov.  
+Kunnighet, Harmoni, Genuinitet, Passion
+
+Dessa ledord fungerar som en vägvisare och måttstock för allt vi gör; från hur hälsar Dig välkommen till kliniken, till hur vi arbetar tillsammans, mot både kortsiktiga och långsiktiga mål.
+
+Våra värderingar, kort och gott, genomsyrar allt.
