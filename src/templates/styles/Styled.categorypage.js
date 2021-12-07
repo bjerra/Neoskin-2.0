@@ -1,7 +1,7 @@
 import styled from "@emotion/styled"
 
 export const Wrapper =  styled.div`
-position:relative;
+
 h1{
   word-break: break-word;
 }
@@ -125,12 +125,14 @@ color: ${({ theme }) => theme.COLOR.DARK};
 `
 export const Body = styled.div`
     
+  background-color: ${({ theme }) => theme.COLOR.HOVER};
   text-align: center;
-  margin: auto;
+  position: relative;
   padding: 1rem;
-  max-width: 800px;
+ 
   .content {
-    
+    margin: auto;
+    max-width: 800px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -197,8 +199,7 @@ export const Info = styled.div`
     }
     
     .body{
-     
-     
+ 
       font-size: 1.2rem;
       text-align: left;
       word-break: break-word;

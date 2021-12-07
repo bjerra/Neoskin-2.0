@@ -9,7 +9,7 @@ export const StyledLogo = styled(Link)`
   background-color: transparent;
 
   .gatsby-image-wrapper {
-     width: ${({ size }) => size}px; 
+     width: ${({ size }) => size}rem; 
 }
 
 `

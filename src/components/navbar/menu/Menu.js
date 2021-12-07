@@ -17,7 +17,7 @@ const categories = useCategoryData();
   return (
     <StyledMenu theme={theme} open={open} servicesExpanded={servicesExpanded}> 
       <section>
-        <Logo />
+        <Logo size={1.5}/>
       </section>
       <section>
         <ul>                

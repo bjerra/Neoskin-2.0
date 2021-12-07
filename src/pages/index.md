@@ -26,6 +26,7 @@ Hudens olika behov i olika stadier, kräver nya lösningar och produkter och d
 
 Att alltid finnas där och lösa kundens alla behov som uppstår kring hud.\
 Vi vill vara den stabila extra familjemedlemmen. En erfaren hand som skapar trygghet och ordning i tillvaron. Din hud är min passion!
+
 <br>
 
 ## Värderingar

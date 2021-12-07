@@ -19,13 +19,7 @@ const MoreMenu = () => {
         <Link to="/metod">
               Metod
         </Link>  
-      </div>
-      <div className="item">
-        <Link to="/nyhetsbrev">
-              Nyhetsbrev
-        </Link>  
-      </div>
-     
+      </div>   
     </React.Fragment>
   )
 }

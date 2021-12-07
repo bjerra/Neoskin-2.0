@@ -20,7 +20,7 @@ const Navbar = props => {
     return(
       <StyledMobile theme={theme} ref={node}> 
             <Link to="/">
-              <Logo size={50}/>
+              <Logo size={5}/>
             </Link> 
           
             <DropDown open={dropDownOpen === "Kontakt"} content={<ContactMenu />} setOpen={() => setDropDownOpen(dropDownOpen === "Kontakt" ? "": "Kontakt")}>

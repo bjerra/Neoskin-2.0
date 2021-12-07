@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { Link } from 'gatsby'
-import {ExpandIcon, Logo } from '../../../components'
+import { Logo } from '../../../components'
 import { StyledDesktop} from './DesktopNavbar.styled';
 import { useTheme  } from '@emotion/react'
 import DropDown from '../dropdown/Dropdown'
@@ -22,14 +22,13 @@ const Navbar = props => {
       <StyledDesktop theme={theme} ref={node} onMouseLeave={() => setDropDownOpen("")}> 
             <div role = "button" tabIndex={0} onMouseEnter={() => setDropDownOpen("")}>
               <Link to="/">
-                <Logo size={100}/>
+                <Logo size={5}/>
                 </Link> 
             </div>
                  
                 <div role = "button" tabIndex={0} onMouseEnter={() => setDropDownOpen("Kontakt")}>
                 <DropDown open={dropDownOpen === "Kontakt"}  down={true} content={<ContactMenu />} setOpen={() => setDropDownOpen("Kontakt")}>    
-                  Kontakt
-                  <ExpandIcon expanded ={dropDownOpen === "Kontakt"}/>   
+                  Kontakt 
                 </DropDown>
                 </div>
 
@@ -40,8 +39,7 @@ const Navbar = props => {
                         setOpen={() => setDropDownOpen("Behandlingar")}
                         down={true}          
                     >
-                      Behandlingar
-                      <ExpandIcon expanded ={dropDownOpen === "Behandlingar"}/>   
+                      Behandlingar 
                       </DropDown>    
                      
                 </div>
@@ -49,7 +47,6 @@ const Navbar = props => {
                 <div role = "button" tabIndex={0} onMouseEnter={() => setDropDownOpen("Mer")}>
                   <DropDown open={dropDownOpen === "Mer"}  down={true} content={<MoreMenu />} setOpen={() => setDropDownOpen("Mer")}>    
                     Mer
-                    <ExpandIcon expanded ={dropDownOpen === "Mer"}/>   
                   </DropDown>
                 </div> 
       </StyledDesktop>   

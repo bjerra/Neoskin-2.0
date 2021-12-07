@@ -2,16 +2,19 @@ import styled from "@emotion/styled"
 
 export const Wrapper =  styled.div`
 
-padding-bottom: 3rem;
+
 `
 
 
 export const Body = styled.section`
+
+    padding-top: 1rem;
     
+    background-color: ${({ theme }) => theme.COLOR.HOVER};
+    text-align: center;
+    position: relative;
 
-   
 
-    padding: 0 1rem;
 
     .signature{
         color: ${({ theme }) => theme.COLOR.HIGHLIGHT};
@@ -20,6 +23,14 @@ export const Body = styled.section`
         float:right;
         font-size: 1.4rem;
         margin-right: 3rem;
+       }
+
+       .inner{
+        margin: auto;
+        max-width: 800px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
        }
 
 `

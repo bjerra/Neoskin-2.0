@@ -31,7 +31,7 @@ export const StyledBanner = styled.section`
     }
 
     > .gatsby-image-wrapper {
-        position: absolute;
+        position: fixed;
         left: 0;
         right: 0;
         top:0;
@@ -39,8 +39,8 @@ export const StyledBanner = styled.section`
     }
 
     @media screen and (min-width: 980px) {
-        height: 25rem !important;
-        min-height: 25rem;
+        height: ${({ height }) => height} !important;
+        min-height: ${({ height }) => height};
         h1 {
             font-size: 3rem;
 

@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useRef } from 'react'
-import PropTypes, { exact } from 'prop-types'
+import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import { Layout, Banner, Divider, BokaButton } from '../components'
+import { Layout, Banner, BokaButton } from '../components'
 import { HTMLContent } from '../components/Content'
 import { Wrapper, ServiceCard, Body, Info, ServiceList, StyledBokaButton, Modal } from './styles/Styled.categorypage'
 import { useTheme } from '@emotion/react'
@@ -47,7 +47,7 @@ const CategoryPageTemplate = ({
         <div>  
         <div className="header">  
           <h2>{modalService.title}</h2>
-          <Divider fillColor={theme.COLOR.INFO} color={theme.COLOR.HOVER} height={2} size={3} invert />
+         
         </div>
         
           <div className="body">
@@ -66,19 +66,17 @@ const CategoryPageTemplate = ({
           </div>
           
           <div className="footer">
-            <Divider fillColor={theme.COLOR.INFO} color={theme.COLOR.HOVER} height={2} size={3} />
+         
             <BokaButton slug={modalService.slug} large size={"22px"} />
           </div>
 
         </div>
 
       </Modal>
-      <Banner image={image} alt="Neoskin" position={"50% 20%"}>
+      <Banner image={image} alt="Neoskin" position={"50% 50%"} height={"20rem"}>
          
       </Banner>
       <Body>
-
-
         <div className="content">
             <h1>{title}</h1>
           <div className="description">
@@ -98,14 +96,11 @@ const CategoryPageTemplate = ({
                 ))
               }  
               </div>
-              <Divider fillColor={theme.COLOR.DIM_BLUE} color={theme.COLOR.BACKGROUND} height={5} size={5} invert />
-              <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.DIM_BLUE} height={6} size={5} invert />
-            
+             
               <div className="body"> 
              
               <HTMLContent content={expanded !== -1 ? info[expanded].body : ""} className={"content"}/>
-              <Divider fillColor={theme.COLOR.DIM_BLUE} color={theme.COLOR.BACKGROUND} height={5} size={5} invert />
-              <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.DIM_BLUE} height={6} size={5} invert />
+             
               </div>  
               
             </Info>

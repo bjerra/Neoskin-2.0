@@ -7,16 +7,18 @@ export const Wrapper =  styled.div`
 export const Body = styled.section`
     
 
-    margin: 0rem auto;
-    padding: 0 1rem;
+    padding-top: 1rem;
+    
+    background-color: ${({ theme }) => theme.COLOR.HOVER};
+    text-align: center;
+    position: relative;
 
     .inner {
-        margin: 0rem auto;
-        @media screen and (max-width: 480px) {
-          .inner {
-           
-            } 
-        }
+            margin: auto;
+            max-width: 800px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
     }
 
 

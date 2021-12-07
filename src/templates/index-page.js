@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import { useTheme  } from '@emotion/react'
 import Content, { HTMLContent } from '../components/Content'
 import { Wrapper,Intro} from './styles/Styled.Indexpage'
-import {Banner, Logo, Divider, Layout, BokaButton} from '../components'
+import {Banner, Logo, Layout, BokaButton} from '../components'
 
 const IndexPageTemplate = ({
   image,
@@ -17,8 +17,8 @@ const IndexPageTemplate = ({
   const theme = useTheme();
   return(
   <Wrapper theme={theme}>
-    <Banner image = {image} alt="Neoskin" position={"50% 10%"} height="20rem">
-        <Logo size={300}/>    
+    <Banner image = {image} alt="Neoskin" position={"50% 30%"} height="30rem">
+        <Logo size={15}/>    
         {//<video autoPlay loop muted playsInline src={require("../img/banner.webm")}></video>
         }
     </Banner>
@@ -30,8 +30,7 @@ const IndexPageTemplate = ({
         <h1>{title}</h1>
        
         <h5>{subtitle}</h5>
-        <Divider fillColor={theme.COLOR.DIM_BLUE} color={theme.COLOR.BACKGROUND} height={5} size={5} invert/>
-        <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.DIM_BLUE} height={6} size={5} invert/>
+      
 
       </header>     
       <PageContent content={content} className={"body"}/>

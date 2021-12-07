@@ -10,6 +10,7 @@ export const StyledFooter = styled.footer`
     justify-content: flex-start;
     position: relative;
     font-size: 1.2rem;
+    font-weight: 300;
     @media screen and (max-width: 736px) {
         font-size: 1.2rem;
      }
