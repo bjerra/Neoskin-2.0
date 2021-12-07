@@ -1,10 +1,10 @@
 ---
 templateKey: method-page
 path: /metod
-title: Metod
+title: Abonnemang
 image: /img/Salon.jpg
 ---
-## Abonnemang 
+## Metoden
 
 <br>
 
@@ -22,13 +22,12 @@ De olika paketen motsvarar olika antal timmar per år som du kommer på behand
 * M- 8 timmar / år  18.000 :- inklusive hemvård värd upp till 5000:- 
 * L- 10 timmar / år  23.000 :- inklusive hemvård värd upp till 7.000:- 
 
-
-
 Vill du köpa en serie av någon specifik behandling gäller dem specifika villkoren för just den behandlingen. 
 
  <br>
 
 ## Öppen tid är lösningen
+
 <br>
 
 Öppen tid lösningen är både till för Dig som har köpt ett abonnemang och för Dig som är osäker på vad du vill eller behöver. När du bokar en “öppen tid” väljer du hur lång behandling du vill ha. Om du inte har ett abonnemang pratar vi en stund när du kommer till kliniken om dina önskemål och du förmedlar din max-budget. Behandlingen skräddarsys inom tid och budget för just Dig och ditt aktuella hudtillstånd.
