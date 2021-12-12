@@ -16,7 +16,7 @@ export const Intro = styled.section`
  
    
     h5 {
-        font-style: italic;
+        
     }
     
     .inner {
