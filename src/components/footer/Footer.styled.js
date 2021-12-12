@@ -9,10 +9,10 @@ export const StyledFooter = styled.footer`
     display: flex;
     justify-content: flex-start;
     position: relative;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 300;
     @media screen and (max-width: 736px) {
-        font-size: 1.2rem;
+        font-size: 1rem;
      }
 
     ul {
@@ -25,7 +25,7 @@ export const StyledFooter = styled.footer`
     }
 
 a{
-
+    text-decoration: none;
     align-items: center;
     justify-content: flex-start; 
     display: flex;
