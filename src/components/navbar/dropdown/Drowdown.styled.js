@@ -33,17 +33,6 @@ export const Content = styled.div`
    
 
     a {
-      :before{
-        content:'';
-        position:absolute;
-        display:block;
-        top:50%;
-        height:1px;
-        width: 10px;
-        background-color: ${({ theme }) => theme.COLOR.MENU_TEXT};
-        left:.5rem;
-        z-index:1;
-      }    
 
       display: flex;
       padding: .75rem 0 1rem 1.5rem;  
