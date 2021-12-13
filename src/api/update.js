@@ -1,6 +1,3 @@
-exports.handler = async function () {
-    return {
-      statusCode: 200,
-      body: 'Updated!',
-    };
-  };
+export default function handler(req, res) {
+  res.status(200).json({ hello: `updated` })
+}
