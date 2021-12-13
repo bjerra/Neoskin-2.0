@@ -5,16 +5,22 @@ const cheerio = require('cheerio');
 const axios = require("axios").default;
 var esprima = require('esprima');
 const uppercaseletters = /[A-ZÅÄÖ\s]{5}/;  
+const url = "https://www.bokadirekt.se/places/neoskin-jkpg-33692";
 
 export default async function postNewPersonHandler(req, res) {
- 
-  try {
-    const result = await Update()
-    
-    res.json(result)
-  } catch (error) {
-    res.status(500).send(error)
-  }
+  
+  if(req._parsedUrl.query !== "neo") 
+  res.status(500).send("Access Denied!")
+    try { 
+      const html = await fetchHtml(url);
+      const parsedData = await parseData(html);
+      const result = await UpdateRemote(parsedData)
+      res.json(result)
+    } catch (error) {
+      res.status(500).send(error)
+    }
+  
+
 }
 
 const fetchHtml = async url => {
@@ -98,16 +104,9 @@ const parseData = async html => {
   return data;
 }
 
-const Update = async () => {
-
-  const url =
-    "https://www.bokadirekt.se/places/neoskin-jkpg-33692";
-  const html = await fetchHtml(url);
-  const parsedData = parseData(html);
+const UpdateRemote = async (parsedData) => {
 
     //----------------------------------------    GIT STUFF  ----------------------------------------------
-
-    
 
     await octokit.request('POST /repos/{owner}/{repo}/merges', {
       owner: 'bjerra',
@@ -115,6 +114,7 @@ const Update = async () => {
       base: 'Scrape',
       head: 'main'
     })
+
 
     const garbage = []
     const newData = []
@@ -149,11 +149,11 @@ const Update = async () => {
        
       }
 
-      //newData.push({path: `src/data/services.json`, data: parsedData.services})  
-    
+
        //-------------UPDATE REMOTE-----------------------
-      const didChange = newData.length !== 0 && garbage.length !== 0;
-      if(!didChange) return false;
+      const didChange = newData.length != 0 && garbage.length != 0;
+
+      if(!didChange) return "Already up to date";
 
        for (const item of garbage) {
         await octokit.request('DELETE /repos/{owner}/{repo}/contents/{path}', {
