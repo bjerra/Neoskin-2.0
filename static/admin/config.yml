@@ -24,8 +24,17 @@ collections:
       - {label: "Image", name: "image", widget: image}
       - {label: "BrandLogo", name: "brandLogo", widget: image}
       - {label: "BrandUrl", name: "BrandUrl", widget: "string"}
-      - {label: Info, name: info, widget: list, fields: [{label: Title, name: title, widget: string},{label: "Body", name: "body", widget: "markdown"}]} 
       - {label: "Services", name: "services", widget: list, fields: [{label: Title, name: title, widget: hidden}]}
+  - name: "info"
+    label: "Info"
+    folder: "src/pages/info"
+    create: true
+    delete: true
+    fields:    
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "info-page"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Image", name: "image", widget: image}
+      - {label: "Body", name: "body", widget: "markdown"}
  
   - name: "pages"
     label: "Pages"
@@ -40,22 +49,6 @@ collections:
           - {label: Image, name: image, widget: image}
           - {label: Body, name: body, widget: markdown}   
           - {label: "Features", name: "features", widget: "relation", collection: "services", search_fields: ["title", "category"], value_field: "title",multiple: true,display_fields: ["title"]}       
-      - file: "src/pages/om/index.md"
-        label: "Om"
-        name: "om"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: Image, name: image, widget: image}
-          - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/metod/index.md"
-        label: "Metod"
-        name: "metod"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "method-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: Image, name: image, widget: image}
-          - {label: "Body", name: "body", widget: "markdown"}    
       - file: "src/pages/behandlingar/index.md"
         label: "Behandlingar"
         name: "behandlingar"

@@ -1,18 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import {Layout,Banner, Divider} from '../components'
+import {Layout,Banner} from '../components'
 import Content, { HTMLContent } from '../components/Content'
-import { Wrapper, Body} from './styles/StyledMethodPage'
+import { Wrapper, Body} from './styles/StyledInfoPage'
 import { useTheme } from '@emotion/react'
 
-const MethodPageTemplate = ({ title, image, content, contentComponent }) => {
+const InfoPageTemplate = ({ title, image, content, contentComponent }) => {
   const PageContent = contentComponent || Content
   const theme = useTheme()
 
   return (
         <Wrapper>
-            <Banner image={image} alt={"Anaïs"} position={"50% 30%"} height={"30rem"}>
+            <Banner image={image} alt={title} position={"50% 30%"} height={"30rem"}>
 
             </Banner>
          
@@ -22,7 +22,7 @@ const MethodPageTemplate = ({ title, image, content, contentComponent }) => {
               </h1>  
                 <div className="inner">   
               
-                    <PageContent content={content} />
+                   <PageContent content={content} />
                 </div>  
             </Body>
         </Wrapper>
@@ -30,18 +30,18 @@ const MethodPageTemplate = ({ title, image, content, contentComponent }) => {
   )
 }
 
-MethodPageTemplate.propTypes = {
+InfoPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
 
-const MethodPage = ({ data }) => {
+const InfoPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
     <Layout>
-      <MethodPageTemplate
+      <InfoPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         image={post.frontmatter.image}
@@ -51,13 +51,13 @@ const MethodPage = ({ data }) => {
   )
 }
 
-MethodPage.propTypes = {
+InfoPage.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-export default MethodPage
+export default InfoPage
 
-export const methodPageQuery = graphql`
+export const infoPageQuery = graphql`
   query MethodPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html

@@ -16,7 +16,6 @@ export const Content = styled.div`
   z-index: 1;
   transform: ${({ expanded }) => expanded ? 'scaleY(1)' : 'scaleY(0)'};
   transition: transform 0.2s ease-in-out;
-  padding-bottom: 1rem;
   .item {
     color: ${({ theme }) => theme.COLOR.MENU_TEXT};
     :hover{
@@ -63,31 +62,36 @@ export const Content = styled.div`
 `
 export const descending = css`
     position: absolute;
+    padding-top: .5rem;
     top:60px;
     width: 100%;
     font-weight: 200;
     transform-origin: top;
-    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.15);
+    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.15), 2px 16px 4px -14px rgba(0,0,0,0.5) inset;
   
     a {
-      border-top: 1px solid #00000022;
+      border-bottom: 1px solid #00000022;
       }    
 `
 
 export const  ascending = css`
   
     width: 100%;
+    padding-bottom: .5rem;
     position: fixed;
     bottom: 55px;
     font-weight: 400;
     left: 0;
     right:0;
     transform-origin: bottom;
-    box-shadow: 0 -5px 5px 1px rgba(0,0,0,0.15);
+    box-shadow: 0 -5px 5px 1px rgba(0,0,0,0.15), 2px -15px 4px -13px rgba(0,0,0,0.28) inset;
 
     a {
-      border-bottom: 1px solid #00000022;
+      border-top: 1px solid #00000022;
+     
       }   
+ 
+
 `
 
 export const Button = styled.div`

@@ -13,7 +13,7 @@ export const StyledDesktop = styled.nav`
     display: flex;
     justify-content: space-around;
     align-items: center;    
-    background-color: ${({ theme }) => theme.COLOR.MENU_BACKGROUND};
+    background-color: ${({ theme }) => theme.COLOR.BACKGROUND};
     box-shadow: 0 5px 5px 1px rgba(0,0,0,0.15);
 
     > div {

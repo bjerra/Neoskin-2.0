@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Layout, Banner, BokaButton } from '../components'
 import { HTMLContent } from '../components/Content'
-import { Wrapper, ServiceCard, Body, Info, ServiceList, StyledBokaButton, Modal } from './styles/Styled.categorypage'
+import { Wrapper, ServiceCard, Body, ServiceList, StyledBokaButton, Modal } from './styles/Styled.categorypage'
 import { useTheme } from '@emotion/react'
 import { useOnClickOutside } from '../utils/hooks';
 
@@ -84,29 +84,7 @@ const CategoryPageTemplate = ({
             {description}
           </p>
           </div>
-        
-          {info &&
-            <Info theme={theme} expanded={expanded !== -1}>
-              <div className="tab">
-              {
-                info.map((item, i) => (
-                  <div className={`header ${expanded === i ? 'current' : ''}`} onClick={() => setExpanded(i === expanded ? -1 : i)}>
-                    <h3>{item.title}</h3>
-                  </div>
-                ))
-              }  
-              </div>
-             
-              <div className="body"> 
-             
-              <HTMLContent content={expanded !== -1 ? info[expanded].body : ""} className={"content"}/>
-             
-              </div>  
-              
-            </Info>
-          }
-          <h2>Behandlingar</h2>
-        
+  
           <ServiceList theme={theme}>
             {
               services.map((service) => (
