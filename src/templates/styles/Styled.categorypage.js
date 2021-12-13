@@ -125,7 +125,7 @@ color: ${({ theme }) => theme.COLOR.DARK};
 `
 export const Body = styled.div`
     
-  background-color: ${({ theme }) => theme.COLOR.HOVER};
+  background-color: ${({ theme }) => theme.COLOR.BACKGROUND};
   text-align: center;
   position: relative;
   padding: 1rem;
@@ -155,81 +155,6 @@ export const Body = styled.div`
     width: 150px;
     float: right;
   }
-
-`
-
-export const Info = styled.div`
-    
- 
-  h2{
-    
-    text-align: left;
-    
-  }
-  h3{
-    color: ${({ theme }) => theme.COLOR.MISTY_BLUE};
-    font-weight: 600;
-    border-bottom: 2px solid ${({ theme }) => theme.COLOR.MISTY_BLUE};
-  }
-
-  width: 100%;
-    height: 100%;
-    position: relative;
-    
-  
-    .tab {
-      flex-wrap: wrap;
-      display: flex;
-      margin: auto;
-      align-items: center;
-      justify-content: center;
-      flex-direction:row;
-
-    }
-
-    .header {
-      -webkit-tap-highlight-color: transparent;
-      margin-left: 1rem;
-      cursor: pointer;
-      user-select: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    
-    }
-    
-    .body{
- 
-      font-size: 1.2rem;
-      text-align: left;
-      word-break: break-word;
-      margin: auto;
-      transform-origin: top;
-      transform:  scaleY(${({ expanded }) => expanded ? '1' : '0'});  
-      .content{
-        padding: 1rem; 
-      }
-    }
-
-    .current{
-      h3{
-        color: ${({ theme }) => theme.COLOR.LIGHT};
-        border-bottom: 2px solid ${({ theme }) => theme.COLOR.LIGHT};
-      }
-      
-    }
-  }
-
-  @keyframes show {
-    0% {
-        transform: scaleY(1.0);
-        -webkit-transform: scaleY(1.0);
-    }
-    100% {
-        transform: scaleY(2.0);
-        -webkit-transform: scaleY(2.0);
-    }
-}
 
 `
 

@@ -1,18 +1,16 @@
 import styled from "@emotion/styled"
 
 export const Wrapper =  styled.div`
-    
 
 section {
     position: relative;
 }
-
 `
 
 export const Intro = styled.section`
 
     padding: 1rem 1rem; 6rem 1rem;
-    background-color: ${({ theme }) => theme.COLOR.HOVER};
+    background-color: ${({ theme }) => theme.COLOR.BACKGROUND};
  
    
     h5 {

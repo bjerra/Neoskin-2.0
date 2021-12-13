@@ -5,7 +5,7 @@ import { StyledDesktop} from './DesktopNavbar.styled';
 import { useTheme  } from '@emotion/react'
 import DropDown from '../dropdown/Dropdown'
 import ServiceMenu from '../menus/ServiceMenu'
-import ContactMenu from '../menus/ContactMenu'
+import Information from '../menus/Information'
 import MoreMenu from '../menus/MoreMenu'
 import { useOnClickOutside } from '../../../utils/hooks';
 
@@ -26,9 +26,9 @@ const Navbar = props => {
                 </Link> 
             </div>
                  
-                <div role = "button" tabIndex={0} onMouseEnter={() => setDropDownOpen("Kontakt")}>
-                <DropDown open={dropDownOpen === "Kontakt"}  down={true} content={<ContactMenu />} setOpen={() => setDropDownOpen("Kontakt")}>    
-                  Kontakt 
+                <div role = "button" tabIndex={0} onMouseEnter={() => setDropDownOpen("Information")}>
+                <DropDown open={dropDownOpen === "Information"}  down={true} content={<Information />} setOpen={() => setDropDownOpen("Information")}>    
+                  Info
                 </DropDown>
                 </div>
 

@@ -6,7 +6,7 @@ import DropDown from '../dropdown/Dropdown'
 import { useTheme  } from '@emotion/react'
 import { BiDotsVertical } from 'react-icons/bi';
 import ServiceMenu from '../menus/ServiceMenu'
-import ContactMenu from '../menus/ContactMenu'
+import Information from '../menus/Information'
 import MoreMenu from '../menus/MoreMenu'
 import { useOnClickOutside } from '../../../utils/hooks';
 
@@ -23,9 +23,9 @@ const Navbar = props => {
               <Logo size={5}/>
             </Link> 
           
-            <DropDown open={dropDownOpen === "Kontakt"} content={<ContactMenu />} setOpen={() => setDropDownOpen(dropDownOpen === "Kontakt" ? "": "Kontakt")}>
+            <DropDown open={dropDownOpen === "Information"} content={<Information />} setOpen={() => setDropDownOpen(dropDownOpen === "Information" ? "": "Information")}>
              
-              Kontakt
+              Info
             </DropDown>
 
 
