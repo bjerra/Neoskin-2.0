@@ -1,6 +1,6 @@
 
-const { Octokit } = require("@octokit/core");
-
+//const { Octokit } = require("@octokit/core");
+import { Octokit } from "@octokit/core";
 const cheerio = require('cheerio');
 const axios = require("axios").default;
 var esprima = require('esprima');
