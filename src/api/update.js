@@ -1,6 +1,6 @@
 
-//const { Octokit } = require("@octokit/core");
-import { Octokit } from "@octokit/core";
+const { Octokit } = require("@octokit/core");
+const octokit = new Octokit({ auth: process.env.GIT_KEY });
 const cheerio = require('cheerio');
 const axios = require("axios").default;
 var esprima = require('esprima');
@@ -107,7 +107,7 @@ const Update = async () => {
 
     //----------------------------------------    GIT STUFF  ----------------------------------------------
 
-    const octokit = new Octokit({ auth: process.env.GIT_KEY });
+    
 
     await octokit.request('POST /repos/{owner}/{repo}/merges', {
       owner: 'bjerra',
