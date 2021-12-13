@@ -97,7 +97,7 @@ const parseData = async html => {
   return data;
 }
 
-const Update = () => {
+const Update = async () => {
 
   const url =
     "https://www.bokadirekt.se/places/neoskin-jkpg-33692";
