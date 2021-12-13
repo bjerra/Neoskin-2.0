@@ -1,6 +1,6 @@
 
-const { Octokit } = require("@octokit/core");
-const octokit = new Octokit({ auth: process.env.GIT_KEY });
+//const { Octokit } = require("@octokit/core");
+//const octokit = new Octokit({ auth: process.env.GIT_KEY });
 const cheerio = require('cheerio');
 const axios = require("axios").default;
 var esprima = require('esprima');
