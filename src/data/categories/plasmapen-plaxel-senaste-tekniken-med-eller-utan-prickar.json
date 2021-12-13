@@ -1,12 +1,9 @@
 {
- "title": "Plasmapen",
- "id": 7,
+ "title": "Plasmapen Plaxel+ Senaste tekniken med eller utan prickar",
+ "id": 6,
  "description": "",
- "image": "../../../static/img/default.jpg",
- "brandLogo": "/img/logo_BR.svg",
- "brandUrl": "https://www.biologique-recherche.com/en-se/",
- "slug": "plasmapen",
- "info": [],
+ "image": "/img/default.jpg",
+ "slug": "plasmapen-plaxel-senaste-tekniken-med-eller-utan-prickar",
  "services": [
   {
    "id": 1364889,
@@ -14,7 +11,7 @@
    "price": 2450,
    "time": 2700,
    "slug": "plasmalift-öra-1364889",
-   "category": "Plasmapen",
+   "category": "Plasmapen Plaxel+ Senaste tekniken med eller utan prickar",
    "info": [
     {
      "title": "VAD GÖR BEHANDLINGEN?",
@@ -32,7 +29,7 @@
    "price": 2450,
    "time": 2700,
    "slug": "plasmalift-pusslinjer-1364786",
-   "category": "Plasmapen",
+   "category": "Plasmapen Plaxel+ Senaste tekniken med eller utan prickar",
    "info": [
     {
      "title": "VAD GÖR BEHANDLINGEN?",
@@ -46,11 +43,11 @@
   },
   {
    "id": 1364784,
-   "title": "Plasmalift ögonlockslyft",
-   "price": 4150,
-   "time": 3600,
-   "slug": "plasmalift-ögonlockslyft-1364784",
-   "category": "Plasmapen",
+   "title": "Plasmalift ögonlockslyft ERBJUDANDE! Ord.4500:-",
+   "price": 2500,
+   "time": 4500,
+   "slug": "plasmalift-ögonlockslyft-erbjudande-ord4500--1364784",
+   "category": "Plasmapen Plaxel+ Senaste tekniken med eller utan prickar",
    "info": [
     {
      "title": "VAD GÖR BEHANDLINGEN?",
@@ -64,11 +61,11 @@
   },
   {
    "id": 1364785,
-   "title": "Plasmalift ögonlockslyft över & under ögonen.",
-   "price": 5950,
+   "title": "Plasmalift ögonlockslyft över & under ögonen. ERBJUDANDE ord.pris 5950:-",
+   "price": 4500,
    "time": 5400,
-   "slug": "plasmalift-ögonlockslyft-över-&-under-ögonen-1364785",
-   "category": "Plasmapen",
+   "slug": "plasmalift-ögonlockslyft-över-&-under-ögonen-erbjudande-ordpris-5950--1364785",
+   "category": "Plasmapen Plaxel+ Senaste tekniken med eller utan prickar",
    "info": [
     {
      "title": "VAD GÖR BEHANDLINGEN?",
@@ -86,7 +83,7 @@
    "price": 7450,
    "time": 7200,
    "slug": "plasmalift-ledsen-navel-1364787",
-   "category": "Plasmapen",
+   "category": "Plasmapen Plaxel+ Senaste tekniken med eller utan prickar",
    "info": [
     {
      "title": "VAD GÖR BEHANDLINGEN?",
