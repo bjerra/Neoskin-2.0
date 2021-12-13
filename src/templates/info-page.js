@@ -22,7 +22,7 @@ const InfoPageTemplate = ({ title, image, content, contentComponent }) => {
               </h1>  
                 <div className="inner">   
               
-                   {false && <PageContent content={content} />}
+                   <PageContent content={content} />
                 </div>  
             </Body>
         </Wrapper>
