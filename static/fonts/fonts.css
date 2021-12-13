@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "Niveau Grotesk";
+    src: url("NGR.woff");
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "Niveau Grotesk";
+    src: url("NGL.woff");
+    font-style: normal;
+    font-weight: 300 ;
+  }
+
+  @font-face {
+    font-family: "Niveau Grotesk";
+    src: url("NGEL.woff");
+    font-style: normal;
+    font-weight: 200 ;
+  }
+
+  @font-face {
+    font-family: "Niveau Grotesk";
+    src: url("NGM.woff");
+    font-style: normal;
+    font-weight: 500  ;
+  }

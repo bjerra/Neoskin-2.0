@@ -14,7 +14,8 @@ export const StyledMobile = styled.nav`
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    font-size: 14px;
+    font-size: 15px;
+
 
     a{
        
@@ -24,8 +25,9 @@ export const StyledMobile = styled.nav`
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+
     }
-   
+
 
 
 `;

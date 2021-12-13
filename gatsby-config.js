@@ -2,7 +2,7 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-const {MAILCHIMP_ENDPOINT, TYPEKIT_ID} = process.env;
+const {MAILCHIMP_ENDPOINT} = process.env;
 
 
 module.exports = {
@@ -30,12 +30,12 @@ module.exports = {
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
-        typekit: {
-          id: TYPEKIT_ID,
+        custom: {
+          families: ["Niveau Grotesk"],
+          urls: ["/fonts/fonts.css"],
         },
       },
     },
-    `gatsby-plugin-sitemap`,
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
@@ -63,6 +63,12 @@ module.exports = {
       options: {
         path: `${__dirname}/src/data`,
         name: 'data',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: MAILCHIMP_ENDPOINT,
       },
     },
     `gatsby-plugin-image`,

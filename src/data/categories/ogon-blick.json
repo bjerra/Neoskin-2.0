@@ -2,7 +2,9 @@
  "title": "Ögon-Blick",
  "id": 10,
  "description": "",
- "image": "/img/default.jpg",
+ "image": "../../../static/img/default.jpg",
+ "brandLogo": "/img/logo_BR.svg",
+ "brandUrl": "https://www.biologique-recherche.com/en-se/",
  "slug": "ogon-blick",
  "info": [],
  "services": [

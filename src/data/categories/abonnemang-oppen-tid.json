@@ -2,9 +2,11 @@
  "title": "ABONNEMANG/Öppen tid ",
  "id": 1,
  "description": "",
- "image": "/img/default.jpg",
+ "image": "../../../static/img/default.jpg",
+ "brandLogo": "/img/logo_BR.svg",
+ "brandUrl": "https://www.biologique-recherche.com/en-se/",
  "slug": "abonnemang-oppen-tid",
- "info": [],
+ "info": [{"title":"", "body" : ""}],
  "services": [
   {
    "id": 1629009,

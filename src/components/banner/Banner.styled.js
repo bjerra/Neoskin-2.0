@@ -7,8 +7,8 @@ export const StyledBanner = styled.section`
     position: relative;
     color: rgba(255, 255, 255, 0.5);
     border-top: 0;
-    height: 20rem !important;
-    min-height: 20rem;
+    height: ${({ height }) => height} !important;
+    min-height: ${({ height }) => height};
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -16,11 +16,14 @@ export const StyledBanner = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: ${({ theme }) => theme.COLOR.DIM_BLUE}; 
 
     h1, h2, h3, h4, h5, h6 {
         color: #ffffff; 
     }
 
+
+   
    
     h1 {
         font-size: 2rem;
@@ -28,7 +31,7 @@ export const StyledBanner = styled.section`
     }
 
     > .gatsby-image-wrapper {
-        position: absolute;
+        position: fixed;
         left: 0;
         right: 0;
         top:0;
@@ -36,8 +39,8 @@ export const StyledBanner = styled.section`
     }
 
     @media screen and (min-width: 980px) {
-        height: 25rem !important;
-        min-height: 25rem;
+        height: ${({ height }) => height} !important;
+        min-height: ${({ height }) => height};
         h1 {
             font-size: 3rem;
 

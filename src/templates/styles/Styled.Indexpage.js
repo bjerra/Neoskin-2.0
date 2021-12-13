@@ -12,30 +12,40 @@ section {
 export const Intro = styled.section`
 
     padding: 1rem 1rem; 6rem 1rem;
+    background-color: ${({ theme }) => theme.COLOR.HOVER};
+ 
    
-    
+    h5 {
+        
+    }
     
     .inner {
         margin: 0rem auto;
         width: 75rem;
         max-width: calc(100% - 3rem); 
-        @media screen and (max-width: 480px) {
-          .inner {
-            max-width: calc(100% - 3rem); 
-            } 
-        }
+     
+        @media screen and (min-width: ${({ theme }) => theme.BREAKPOINTS.DESKTOP}) {
+                max-width: 900px; 
+                .body {
+                    margin: auto;
+                    max-width: 500px; 
+       
+                }   
+          }
     }
    
 
     header{
         
         text-align: center;
-        margin-bottom: 4rem; 
+        margin-bottom: 2rem; 
     }
         p {
         margin-left: auto;
         margin-right: auto;
     }
+
+  
 
     .button{
         margin-top: 4rem;
@@ -82,6 +92,7 @@ export const CTA = styled.section`
     }
     .inner { 
       position: relative;
+    
       margin: 5% auto;
       z-index: 3; 
       

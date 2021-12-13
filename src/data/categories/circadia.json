@@ -1,140 +1,142 @@
 {
- "title": "Circadia",
- "id": 3,
- "description": "",
- "image": "/img/default.jpg",
- "slug": "circadia",
- "info": [],
- "services": [
-  {
-   "id": 1522926,
-   "title": "Oxygen RX",
-   "price": 1250,
-   "time": 2700,
-   "slug": "oxygen-rx-1522926",
-   "category": "Circadia",
-   "info": [
+  "title": "Circadia",
+  "id": 3,
+  "description": "Circadia grundades av den världsberömda, och globalt erkänd, Dr. Peter T. Pugliese. Före lanseringen av Circadia 2001 spenderade Dr. Pugliese 30 år att utveckla och tillverka produkter för stora varumärken inom branschen. \n\n \n\nPå 70-talet gick han med i Society of Cosmetic Chemistry för att han ville veta mer och behandla de åkommor som han ofta kom i kontakt med såsom eksem, solskador och psoriasis. Där fick han kontakt med andra kemister som tillsammans forskade och tog fram ingredienser till hudvårdsprodukter. \n\nPå 70 och 80-talet var Dr Pugliese ”the go to guy” när det kom till innovativa ingredienser och produkter. Han genomförde bl.a. de första studierna på koppar peptider, topisk vitamin E och Beta Glukan. \n\n \n\n1996 fick Dr Pugliese en utmärkelse från SCC för hans betydande roll inom kosmetisk vetenskap. \n\n2001 grundade han, tillsammans med hans dotter och son, hudvårdsmärket Circadia.  \n\nIdag är det Dr Pugliese barnbarn – Michael Pugliese som är VD för företaget. \n\n \n\nCircadia är ett professionellt hudvårdsmärke vars filosofi baseras på hudens och kroppens naturliga cirkadiska rytmer. Chronobiology, tidens biologi, bygger på principerna att skydda huden från skador under dagen och stimulera reparation under sömnen och är kärnan i vårt koncept. Circadia har varit en pionjär för att föra konceptet Cirkadiska-rytmer till hälso- och skönhetsindustrin. ",
+  "image": "../../../static/img/default.jpg",
+  "brandLogo": "/img/logo_BR.svg",
+  "brandUrl": "https://www.biologique-recherche.com/en-se/",
+  "slug": "circadia",
+  "info": [],
+  "services": [
     {
-     "title": "",
-     "text": "Oxygen Rx är en unik behandling där rent syre aktiveras på huden. I denna process ökar vi näringstillförseln till huden och stimulerar kollagen- och elastinproduktionen.Syret har antibakteriella, anti-inflammatoriska och rodnadsdämpande egenskaper som lämpar sig perfekt till en aknebenägen hud, rosacea och synliga kärl.Kontraindikationer - när du inte bör göra behandlingen:Allergi mot citronsyra (citron, apelsin, grapefrukt mm)I denna behandlingen ingår rengöring, Kakao eller Rasperry Enzym Peel, anpassad ansiktsmask samt avslutande produkt.Har du fått en medicinsk diagnos för rosacea kan vi även använda oss av Cirkadias speciellt utformade rosacea serum."
-    }
-   ]
-  },
-  {
-   "id": 1629270,
-   "title": "Oxygen RX Mini",
-   "price": 950,
-   "time": 1800,
-   "slug": "oxygen-rx-mini-1629270",
-   "category": "Circadia",
-   "info": [
-    {
-     "title": "",
-     "text": "Oxygen Rx är en unik behandling där rent syre aktiveras på huden. I denna process ökar vi näringstillförseln till huden och stimulerar kollagen- och elastinproduktionen.Syret har antibakteriella, anti-inflammatoriska och rodnadsdämpande egenskaper som lämpar sig perfekt till en aknebenägen hud, rosacea och synliga kärl.Kontraindikationer: när du inte bör göra behandlingen- allegisk mot citronsyra (citroner, apelsiner, grapefrukt mm)I denna behandlingen ingår rengöring, Oxygen Rx samt avslutande produkt.Har du fått en medicinsk diagnos för rosacea kan vi även använda oss av Cirkadias speciellt utformade rosacea serum."
-    }
-   ]
-  },
-  {
-   "id": 1629271,
-   "title": "Oxygen RX Maxi",
-   "price": 1595,
-   "time": 3600,
-   "slug": "oxygen-rx-maxi-1629271",
-   "category": "Circadia",
-   "info": [
-    {
-     "title": "",
-     "text": "Oxygen Rx är en unik behandling där rent syre aktiveras på huden. I denna process ökar vi näringstillförseln till huden och stimulerar kollagen- och elastinproduktionen.Syret har antibakteriella, anti-inflammatoriska och rodnadsdämpande egenskaper som lämpar sig perfekt till en aknebenägen hud, rosacea och synliga kärl.Kontraindikationer - när du inte bör göra behandlingen:Allergi mot citronsyra (citron, apelsin, grapefrukt mm)I denna behandlingen ingår rengöring, Kakao eller Rasperry Enzym Peel och Firming Peptid Mask samt avslutande produkt."
-    }
-   ]
-  },
-  {
-   "id": 1522927,
-   "title": "SWICH",
-   "price": 1590,
-   "time": 4500,
-   "slug": "swich-1522927",
-   "category": "Circadia",
-   "info": [
-    {
-     "title": "",
-     "text": "När vi passerat 40-årsåldern minskar energiproduktionen i hudcellen. Detta visar sig i form av fina linjer, rynkor, ojämn pigmentering och brist på elasticitet i huden."
+      "id": 1522926,
+      "title": "Oxygen RX",
+      "price": 1250,
+      "time": 2700,
+      "slug": "oxygen-rx-1522926",
+      "category": "Circadia",
+      "info": [
+        {
+          "title": "",
+          "text": "Oxygen Rx är en unik behandling där rent syre aktiveras på huden. I denna process ökar vi näringstillförseln till huden och stimulerar kollagen- och elastinproduktionen.Syret har antibakteriella, anti-inflammatoriska och rodnadsdämpande egenskaper som lämpar sig perfekt till en aknebenägen hud, rosacea och synliga kärl.Kontraindikationer - när du inte bör göra behandlingen:Allergi mot citronsyra (citron, apelsin, grapefrukt mm)I denna behandlingen ingår rengöring, Kakao eller Rasperry Enzym Peel, anpassad ansiktsmask samt avslutande produkt.Har du fått en medicinsk diagnos för rosacea kan vi även använda oss av Cirkadias speciellt utformade rosacea serum."
+        }
+      ]
     },
     {
-     "title": "SWICH är en unik behandling som ger energi och bränsle till cellkärnan genom ökad ATP-syntes (cellandning) och reparerar huden inifrån och ut. SWICH reverserar synbara tecken på åldrande utan att orsaka skada, rodnad eller fjällning. Eftersom SWICH inte skapar UV-känslighet så kan behandlingen med fördel göras året om.",
-     "text": "Använder du produkter innehållande syror eller retinol behöver du sluta med dessa 14 dagar innan din Swich behandling. Detta för att behandlingen inte ska bli för kraftfull.Kontraindikationer - när du inte är lämpad för behandlingen:• Allergi mot salicylsyra• Allergi mot citrusfrukter eller citronsyra• Gravid eller försöker bli gravid• Aktiv herpes• Öppna sår• Under antibiotikabehandling• Receptbelagda A-vitamin krämer (4 veckor)• Kemiskpeeling (8 veckor)• Laserbehandling (3 månader)OBS: detta är en leave on produkt, så du får inte ha vatten i ansiktet på 12 timmar. Du kommer även att få med dig en rengöring och en kräm hem som du ska använda nästkommande 3 dagar efter behandlingen"
-    }
-   ]
-  },
-  {
-   "id": 1281443,
-   "title": "Retinol peel",
-   "price": 950,
-   "time": 1800,
-   "slug": "retinol-peel-1281443",
-   "category": "Circadia",
-   "info": [
+      "id": 1629270,
+      "title": "Oxygen RX Mini",
+      "price": 950,
+      "time": 1800,
+      "slug": "oxygen-rx-mini-1629270",
+      "category": "Circadia",
+      "info": [
+        {
+          "title": "",
+          "text": "Oxygen Rx är en unik behandling där rent syre aktiveras på huden. I denna process ökar vi näringstillförseln till huden och stimulerar kollagen- och elastinproduktionen.Syret har antibakteriella, anti-inflammatoriska och rodnadsdämpande egenskaper som lämpar sig perfekt till en aknebenägen hud, rosacea och synliga kärl.Kontraindikationer: när du inte bör göra behandlingen- allegisk mot citronsyra (citroner, apelsiner, grapefrukt mm)I denna behandlingen ingår rengöring, Oxygen Rx samt avslutande produkt.Har du fått en medicinsk diagnos för rosacea kan vi även använda oss av Cirkadias speciellt utformade rosacea serum."
+        }
+      ]
+    },
     {
-     "title": "",
-     "text": "Innehåller 2,5 % ren retinol och kan användas i de flesta ansiktsbehandlingar för att boosta huden genom ökad celldelning. Den kombineras även tillsammans med MandeliClear peel för extra hudföryngrande effekt.Passar alla som behöver ökad cellförnyelse. Fitzpatrick I - VIBehandlingen främjar cellförnyelse, ökar kollagen och elastin genom fibroblaststimulering. Flagning är att förvänta.Fördelar:ökar cellförnyelse processen, förbättrar pigmentering av ärr, förbättrar utseendet på grov hud.Kontraindikationer:Överkänslighet eller någon mycket allergisk, allergi mor vitamin A, extremt torr hud eller komprimerad lipidbarriär, Isotretinoin under det senaste året, glykolsyra eller salicylsyra senaste veckan, gravid eller ammande, herpes utbrott, öppna sår eller misstänkt lesioner, Retin-A eller Renova under den senaste veckan.Försiktighetsåtgärder:Tvätta inte ansiktet 12 timmer efter behandlingen.Undvik att duscha, bada bastu eller att svettas 12 timmar efter behandlingen. Skrubba/exfoliera ej förens läkningsprocessen är klar.Använd ej AHA, BHA eller A vitaminer förens läkningsprocessen är klar.Undvik att pilla eller dra I den fjällande huden."
-    }
-   ]
-  },
-  {
-   "id": 1564800,
-   "title": "Ultraljudsrengöring +",
-   "price": 750,
-   "time": 2400,
-   "slug": "ultraljudsrengöring--1564800",
-   "category": "Circadia",
-   "info": [
+      "id": 1629271,
+      "title": "Oxygen RX Maxi",
+      "price": 1595,
+      "time": 3600,
+      "slug": "oxygen-rx-maxi-1629271",
+      "category": "Circadia",
+      "info": [
+        {
+          "title": "",
+          "text": "Oxygen Rx är en unik behandling där rent syre aktiveras på huden. I denna process ökar vi näringstillförseln till huden och stimulerar kollagen- och elastinproduktionen.Syret har antibakteriella, anti-inflammatoriska och rodnadsdämpande egenskaper som lämpar sig perfekt till en aknebenägen hud, rosacea och synliga kärl.Kontraindikationer - när du inte bör göra behandlingen:Allergi mot citronsyra (citron, apelsin, grapefrukt mm)I denna behandlingen ingår rengöring, Kakao eller Rasperry Enzym Peel och Firming Peptid Mask samt avslutande produkt."
+        }
+      ]
+    },
     {
-     "title": "",
-     "text": "“Kläm aldrig i onödan!” Var bland det första vi fick lära oss i skolan i Bryssel. Det finns aldrig någon återvändo till den manuella portömningen om man någon gång har fått en ordentligt utförd ultraljudsrengöring hos ett proffs.I behandlingen ingår rengöring, enzymatisk peeling, ultraljudsrengöring och borttagning av milier samt avslutande produkt(er)."
-    }
-   ]
-  },
-  {
-   "id": 1618530,
-   "title": "Fokus",
-   "price": 1150,
-   "time": 2700,
-   "slug": "fokus-1618530",
-   "category": "Circadia",
-   "info": [
+      "id": 1522927,
+      "title": "SWICH",
+      "price": 1590,
+      "time": 4500,
+      "slug": "swich-1522927",
+      "category": "Circadia",
+      "info": [
+        {
+          "title": "",
+          "text": "När vi passerat 40-årsåldern minskar energiproduktionen i hudcellen. Detta visar sig i form av fina linjer, rynkor, ojämn pigmentering och brist på elasticitet i huden."
+        },
+        {
+          "title": "SWICH är en unik behandling som ger energi och bränsle till cellkärnan genom ökad ATP-syntes (cellandning) och reparerar huden inifrån och ut. SWICH reverserar synbara tecken på åldrande utan att orsaka skada, rodnad eller fjällning. Eftersom SWICH inte skapar UV-känslighet så kan behandlingen med fördel göras året om.",
+          "text": "Använder du produkter innehållande syror eller retinol behöver du sluta med dessa 14 dagar innan din Swich behandling. Detta för att behandlingen inte ska bli för kraftfull.Kontraindikationer - när du inte är lämpad för behandlingen:• Allergi mot salicylsyra• Allergi mot citrusfrukter eller citronsyra• Gravid eller försöker bli gravid• Aktiv herpes• Öppna sår• Under antibiotikabehandling• Receptbelagda A-vitamin krämer (4 veckor)• Kemiskpeeling (8 veckor)• Laserbehandling (3 månader)OBS: detta är en leave on produkt, så du får inte ha vatten i ansiktet på 12 timmar. Du kommer även att få med dig en rengöring och en kräm hem som du ska använda nästkommande 3 dagar efter behandlingen"
+        }
+      ]
+    },
     {
-     "title": "",
-     "text": "En skräddarsydd behandling där vi väljer fokus att jobba på. Det kan vara fukt, djuprengöring, antiage, lyster... Anaïs jobbar som vanligt med ett kreativt sinne för att uppnå bästa resultat för din hud med Circadias produkter."
-    }
-   ]
-  },
-  {
-   "id": 1564798,
-   "title": "Hudterapeutens val",
-   "price": 1690,
-   "time": 4500,
-   "slug": "hudterapeutens-val-1564798",
-   "category": "Circadia",
-   "info": [
+      "id": 1281443,
+      "title": "Retinol peel",
+      "price": 950,
+      "time": 1800,
+      "slug": "retinol-peel-1281443",
+      "category": "Circadia",
+      "info": [
+        {
+          "title": "",
+          "text": "Innehåller 2,5 % ren retinol och kan användas i de flesta ansiktsbehandlingar för att boosta huden genom ökad celldelning. Den kombineras även tillsammans med MandeliClear peel för extra hudföryngrande effekt.Passar alla som behöver ökad cellförnyelse. Fitzpatrick I - VIBehandlingen främjar cellförnyelse, ökar kollagen och elastin genom fibroblaststimulering. Flagning är att förvänta.Fördelar:ökar cellförnyelse processen, förbättrar pigmentering av ärr, förbättrar utseendet på grov hud.Kontraindikationer:Överkänslighet eller någon mycket allergisk, allergi mor vitamin A, extremt torr hud eller komprimerad lipidbarriär, Isotretinoin under det senaste året, glykolsyra eller salicylsyra senaste veckan, gravid eller ammande, herpes utbrott, öppna sår eller misstänkt lesioner, Retin-A eller Renova under den senaste veckan.Försiktighetsåtgärder:Tvätta inte ansiktet 12 timmer efter behandlingen.Undvik att duscha, bada bastu eller att svettas 12 timmar efter behandlingen. Skrubba/exfoliera ej förens läkningsprocessen är klar.Använd ej AHA, BHA eller A vitaminer förens läkningsprocessen är klar.Undvik att pilla eller dra I den fjällande huden."
+        }
+      ]
+    },
     {
-     "title": "",
-     "text": "En skräddarsydd behandling där vi har goda förutsättningar till att skapa bästa resultat för din hud med Circadias produkter. Här kan vi välja in en kemisk peeling eller andra trevliga hud boosters till fast pris."
-    }
-   ]
-  },
-  {
-   "id": 1564799,
-   "title": "Mästarens val",
-   "price": 2150,
-   "time": 5400,
-   "slug": "mästarens-val-1564799",
-   "category": "Circadia",
-   "info": [
+      "id": 1564800,
+      "title": "Ultraljudsrengöring +",
+      "price": 750,
+      "time": 2400,
+      "slug": "ultraljudsrengöring--1564800",
+      "category": "Circadia",
+      "info": [
+        {
+          "title": "",
+          "text": "“Kläm aldrig i onödan!” Var bland det första vi fick lära oss i skolan i Bryssel. Det finns aldrig någon återvändo till den manuella portömningen om man någon gång har fått en ordentligt utförd ultraljudsrengöring hos ett proffs.I behandlingen ingår rengöring, enzymatisk peeling, ultraljudsrengöring och borttagning av milier samt avslutande produkt(er)."
+        }
+      ]
+    },
     {
-     "title": "",
-     "text": "En skräddarsydd behandling där vi har bästa förutsättningar till att skapa kreativitet som får flöda fritt!Här kan vi bl.a lägga till dermaplanning och/eller kemisk peeling."
+      "id": 1618530,
+      "title": "Fokus",
+      "price": 1150,
+      "time": 2700,
+      "slug": "fokus-1618530",
+      "category": "Circadia",
+      "info": [
+        {
+          "title": "",
+          "text": "En skräddarsydd behandling där vi väljer fokus att jobba på. Det kan vara fukt, djuprengöring, antiage, lyster... Anaïs jobbar som vanligt med ett kreativt sinne för att uppnå bästa resultat för din hud med Circadias produkter."
+        }
+      ]
+    },
+    {
+      "id": 1564798,
+      "title": "Hudterapeutens val",
+      "price": 1690,
+      "time": 4500,
+      "slug": "hudterapeutens-val-1564798",
+      "category": "Circadia",
+      "info": [
+        {
+          "title": "",
+          "text": "En skräddarsydd behandling där vi har goda förutsättningar till att skapa bästa resultat för din hud med Circadias produkter. Här kan vi välja in en kemisk peeling eller andra trevliga hud boosters till fast pris."
+        }
+      ]
+    },
+    {
+      "id": 1564799,
+      "title": "Mästarens val",
+      "price": 2150,
+      "time": 5400,
+      "slug": "mästarens-val-1564799",
+      "category": "Circadia",
+      "info": [
+        {
+          "title": "",
+          "text": "En skräddarsydd behandling där vi har bästa förutsättningar till att skapa kreativitet som får flöda fritt!Här kan vi bl.a lägga till dermaplanning och/eller kemisk peeling."
+        }
+      ]
     }
-   ]
-  }
- ]
+  ]
 }

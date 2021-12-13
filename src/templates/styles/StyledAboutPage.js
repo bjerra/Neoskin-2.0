@@ -7,22 +7,30 @@ export const Wrapper =  styled.div`
 
 
 export const Body = styled.section`
+
+    padding-top: 1rem;
     
+    background-color: ${({ theme }) => theme.COLOR.HOVER};
+    text-align: center;
+    position: relative;
 
-    margin: 0 auto;
 
-    padding: 0 1rem;
 
-    .inner {
-        margin: 0rem auto;
-        width: 75rem;
-        max-width: calc(100% - 3rem); 
-        @media screen and (max-width: 480px) {
-          .inner {
-            max-width: calc(100% - 1rem); 
-            } 
-        }
-    }
+    .signature{
+        color: ${({ theme }) => theme.COLOR.HIGHLIGHT};
+        font-style: italic;
+        font-weight: 600;
+        float:right;
+        font-size: 1.4rem;
+        margin-right: 3rem;
+       }
 
+       .inner{
+        margin: auto;
+        max-width: 800px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+       }
 
 `

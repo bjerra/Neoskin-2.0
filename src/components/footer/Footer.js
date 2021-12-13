@@ -2,15 +2,11 @@ import React from 'react'
 import {StyledFooter} from './Footer.styled'
 import { useTheme  } from '@emotion/react'
 import {AiOutlineMail, AiOutlineInstagram, AiOutlinePhone, AiOutlineEnvironment} from 'react-icons/ai';
-import {Divider} from '../../components'
 
 const Footer = props => {
   const theme = useTheme()
   return(
     <div>
-        <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.OAK} height={15} size={20}/>
-        <Divider fillColor={theme.COLOR.OAK} color={theme.COLOR.MUSTARD} height={15} size={15}/>
-        <Divider fillColor={theme.COLOR.MUSTARD} color={theme.COLOR.FOOTER} height={30} size={50}/>
 
         <StyledFooter theme={theme}>  
 
@@ -19,15 +15,14 @@ const Footer = props => {
         <ul/> 
             <ul>      
             <li>
-                  <a rel="nofollow noopener noreferrer external" href="https://www.google.com/maps/search/?api=1&amp;query=57.7815209,14.1746004" target="_blank">
+                  <a rel="nofollow noopener noreferrer external" href="https://g.page/Neoskinse?share" target="_blank">
                   <AiOutlineEnvironment />
                     <span>
-                      Smedjegatan <br/> 38 553 20<br/> 
-                      Jönköping City  
+                       Lantmätargränd 16<br/> 553 20<br/> 
+                       Jönköping  
                     </span>
                   </a>   
                 </li>     
-              
               </ul>
               <ul/> 
               <ul>      

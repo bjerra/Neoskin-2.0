@@ -4,8 +4,7 @@ import { StyledMobile } from './MobileNavbar.styled';
 import { Logo } from '../../../components'
 import DropDown from '../dropdown/Dropdown'
 import { useTheme  } from '@emotion/react'
-import { BiNews, BiDotsVertical } from 'react-icons/bi';
-import { FaHandHoldingHeart } from 'react-icons/fa';
+import { BiDotsVertical } from 'react-icons/bi';
 import ServiceMenu from '../menus/ServiceMenu'
 import ContactMenu from '../menus/ContactMenu'
 import MoreMenu from '../menus/MoreMenu'
@@ -21,23 +20,22 @@ const Navbar = props => {
     return(
       <StyledMobile theme={theme} ref={node}> 
             <Link to="/">
-              <Logo size={50}/>
+              <Logo size={5}/>
             </Link> 
           
             <DropDown open={dropDownOpen === "Kontakt"} content={<ContactMenu />} setOpen={() => setDropDownOpen(dropDownOpen === "Kontakt" ? "": "Kontakt")}>
-              <BiNews size={25}/> 
+             
               Kontakt
             </DropDown>
 
 
             <DropDown open={dropDownOpen === "Behandlingar"} content={<ServiceMenu />} setOpen={() => setDropDownOpen(dropDownOpen === "Behandlingar" ? "": "Behandlingar")}>
-              <FaHandHoldingHeart size={25}/> 
+              
               Behandlingar
             </DropDown>
 
             <DropDown open={dropDownOpen === "Mer"} content={<MoreMenu />} setOpen={() => setDropDownOpen(dropDownOpen === "Mer" ? "": "Mer")}>
-              <BiDotsVertical size={25}/> 
-              Mer
+              <BiDotsVertical size={25}/>    
             </DropDown>
 
       </StyledMobile> 

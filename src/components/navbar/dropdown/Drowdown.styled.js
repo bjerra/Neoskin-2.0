@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   display: inline-block;
   height: 100%;
   width: 100%;
-  
+
   
 `
 
@@ -16,6 +16,7 @@ export const Content = styled.div`
   z-index: 1;
   transform: ${({ expanded }) => expanded ? 'scaleY(1)' : 'scaleY(0)'};
   transition: transform 0.2s ease-in-out;
+  padding-bottom: 1rem;
   .item {
     color: ${({ theme }) => theme.COLOR.MENU_TEXT};
     :hover{
@@ -29,28 +30,29 @@ export const Content = styled.div`
      
      
     }  
+   
 
     a {
-      :before{
-        content:'';
-        position:absolute;
-        display:block;
-        top:50%;
-        height:1px;
-        width: 10px;
-        background-color: ${({ theme }) => theme.COLOR.MENU_TEXT};
-        left:.75rem;
-        z-index:1;
 
-        
-      }    
-    
-   
       display: flex;
-      padding: 1rem 0 1rem 2rem;  
-      font-size: 1.25rem;
+      padding: .75rem 0 1rem 1.5rem;  
+      font-size: 1.1rem;
+
       flex-direction: row;
       justify-content: flex-start;
+
+      @media screen and (max-width: 980px) {
+        
+      }
+    }
+
+    .boka{
+      color: ${({ theme }) => theme.COLOR.HIGHLIGHT};
+      :before{
+       
+        background-color: ${({ theme }) => theme.COLOR.HIGHLIGHT};
+
+      }    
     }
       transform: ${({ expanded, down }) => expanded ? 'translateY(0)' : `translateY(${down ? '-100%' : '100%'})`};
       opacity: ${({ expanded }) => expanded ? '1' : '0'};
@@ -63,6 +65,7 @@ export const descending = css`
     position: absolute;
     top:60px;
     width: 100%;
+    font-weight: 200;
     transform-origin: top;
     box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.15);
   
@@ -76,6 +79,7 @@ export const  ascending = css`
     width: 100%;
     position: fixed;
     bottom: 55px;
+    font-weight: 400;
     left: 0;
     right:0;
     transform-origin: bottom;

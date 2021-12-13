@@ -1,24 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import {Layout,Banner} from '../components'
+import {Layout,Banner, Divider} from '../components'
 import Content, { HTMLContent } from '../components/Content'
 import { Wrapper, Body} from './styles/StyledMethodPage'
+import { useTheme } from '@emotion/react'
 
 const MethodPageTemplate = ({ title, image, content, contentComponent }) => {
   const PageContent = contentComponent || Content
+  const theme = useTheme()
 
   return (
         <Wrapper>
-            <Banner image={image} alt={"Anaïs"}>
+            <Banner image={image} alt={"Anaïs"} position={"50% 30%"} height={"30rem"}>
 
             </Banner>
-            <h1>
-                        {title}
-            </h1>  
+         
             <Body>
+              <h1>
+                  {title}
+              </h1>  
                 <div className="inner">   
-                   
+              
                     <PageContent content={content} />
                 </div>  
             </Body>

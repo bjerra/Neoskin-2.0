@@ -45,15 +45,25 @@ const EmailListForm = () => {
 
   const theme = useTheme();
   const [email, setEmail] = useState('');
-  const [result, setResult] = useState('');
+  const [result, setResult] = useState({result: "", msg :""});
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     addToMailchimp(email)
       .then((data) => {
-          console.log(data.result);
-          setResult(data.result)     
+
+          let msg = ""
+          if(data.result === "error"){
+            if(data.msg.includes("already"))
+              msg = "Den här adressen är redan med"
+            else if(data.msg.includes("valid"))
+              msg = "Det är något fel på adressen."   
+          }else{
+            msg = "Tack!"   
+          }
+
+          setResult({ result:data.result, msg})     
       })
       .catch((error) => {
         // Errors in here are client side
@@ -83,8 +93,8 @@ const EmailListForm = () => {
 
       </div>
     
-      {result === "success" && <p>Tack!</p>} 
-      {result === "error" && <p>Nånting gick fel</p> }
+    <p>{result.msg}</p>
+     
    
     </StyledEmailList>
   );

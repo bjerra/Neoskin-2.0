@@ -3,9 +3,8 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { useTheme  } from '@emotion/react'
 import Content, { HTMLContent } from '../components/Content'
-import { Wrapper,Intro,Highlights, CTA} from './styles/Styled.Indexpage'
-import {Banner, Logo, Divider, Layout, BokaButton} from '../components'
-import EmailList from '../components/EmailList'
+import { Wrapper,Intro} from './styles/Styled.Indexpage'
+import {Banner, Logo, Layout, BokaButton} from '../components'
 
 const IndexPageTemplate = ({
   image,
@@ -18,8 +17,8 @@ const IndexPageTemplate = ({
   const theme = useTheme();
   return(
   <Wrapper theme={theme}>
-    <Banner image = {image} alt="Neoskin">
-        <Logo size={300}/>    
+    <Banner image = {image} alt="Neoskin" position={"50% 30%"} height="30rem">
+        <Logo size={15}/>    
         {//<video autoPlay loop muted playsInline src={require("../img/banner.webm")}></video>
         }
     </Banner>
@@ -31,30 +30,18 @@ const IndexPageTemplate = ({
         <h1>{title}</h1>
        
         <h5>{subtitle}</h5>
-        <Divider fillColor={theme.COLOR.INFO} color={theme.COLOR.BACKGROUND} height={5} size={5} invert/>
-        <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.INFO} height={6} size={5} invert/>
+      
+
       </header>     
-      <PageContent content={content} />
+      <PageContent content={content} className={"body"}/>
      
       </div>  
-      <Divider fillColor={theme.COLOR.INFO} color={theme.COLOR.BACKGROUND} height={5} size={25} invert/>
-        <Divider fillColor={theme.COLOR.BACKGROUND} color={theme.COLOR.INFO} height={6} size={5} invert/>
+      
         <div className="button">
-        <BokaButton large url="https://www.bokadirekt.se/places/neoskin-33692" />
+        <BokaButton large url="https://www.bokadirekt.se/places/neoskin-33692" size={"22px"}/>
       </div>
     </Intro>
    
-
-        
-
-    <CTA theme={theme}>
-
-     <div className="inner">          
-       <EmailList />
-     </div>
-     
-    </CTA>
-
   </Wrapper>
 )}
 

@@ -9,7 +9,7 @@ export const StyledDesktop = styled.nav`
     left: 0;
     right: 0;
     height: 60px;
-    padding: 0 3rem;  
+    padding-left: 2rem;  
     display: flex;
     justify-content: space-around;
     align-items: center;    
