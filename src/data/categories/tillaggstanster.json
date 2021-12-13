@@ -1,0 +1,105 @@
+{
+ "title": "Tilläggstänster",
+ "id": 3,
+ "description": "",
+ "image": "/img/default.jpg",
+ "slug": "tillaggstanster",
+ "services": [
+  {
+   "id": 1522923,
+   "title": "Biologique Recherche: Tillägg 1 booster",
+   "price": 500,
+   "time": 900,
+   "slug": "biologique-recherche-tillägg-1-booster-1522923",
+   "category": "Tilläggstänster",
+   "info": [
+    {
+     "title": "",
+     "text": "Tillägg en eller fler Boosters i din Biologique Recherche ansiktsbehandling. Anaïs kommer att rekommendera på plats den eller de som bäst passar Dig utefter Din huds aktuella tillstånd: Skin Instant®.Exempel på boosters är- Dermaplanning med DermaplanePRO- Cold plasma med Plaxel+- LED terapi med Celluma PRO- En extra Biologique Recherche booster eller Co factor."
+    }
+   ]
+  },
+  {
+   "id": 1522924,
+   "title": "Biologique Recherche: Tillägg 2 boosters ",
+   "price": 1000,
+   "time": 1800,
+   "slug": "biologique-recherche-tillägg-2-boosters--1522924",
+   "category": "Tilläggstänster",
+   "info": [
+    {
+     "title": "",
+     "text": "Har du bokat en 60 min Biologique Recherche Ansiktsbehandling blir ett tillägg av 2 boosters sammanlagt 3 boosters eftersom det redan ingår 1 booster.Med detta tillägg av 2 boosters kan vi tillsammans välja att lägga till Dermapen4 i behandlingen före och under applicering av din cocktail av sérums authentique istället för den ursprungliga Biologique Recherche boostern, vill du ha både och krävs det ett tillägg på 3 boosters (totalt 4).Vill du inte få Dermapen4 i din behandling kan den istället innehålla tre av dessa- Dermaplanning med DermaplanePRO- Cold plasma med Plaxel+- LED terapi med Celluma PRO- En extra Biologique Recherche booster eller Co factor."
+    }
+   ]
+  },
+  {
+   "id": 1522925,
+   "title": "Biologique Recherche: Tillägg 3 boosters",
+   "price": 1500,
+   "time": 3600,
+   "slug": "biologique-recherche-tillägg-3-boosters-1522925",
+   "category": "Tilläggstänster",
+   "info": [
+    {
+     "title": "",
+     "text": "Har du bokat en 60 min Biologique Recherche Ansiktsbehandling blir ett tillägg av 3 boosters sammanlagt 4 boosters eftersom det redan ingår 1 booster.När du lägger till 3 boosters kan vi både göra en BR booster och en Dermapen4 före och under applicering av din cocktail av sérums authentique.Vill du inte få Dermapen4 i din behandling kan den istället innehålla allt detta- Dermaplanning med DermaplanePRO- Cold plasma med Plaxel+- LED terapi med Celluma PRO- En extra Biologique Recherche booster eller Co factor."
+    }
+   ]
+  },
+  {
+   "id": 1629269,
+   "title": "Biologique Recherche: Tillägg ultraljudsrengöring",
+   "price": 0,
+   "time": 900,
+   "slug": "biologique-recherche-tillägg-ultraljudsrengöring-1629269",
+   "category": "Tilläggstänster",
+   "info": [
+    {
+     "title": "",
+     "text": "I Biologique Recherche behandlingarna kan du kostnadsfritt välja att tillägga ultraljudsrengöringen, den ingår inte i BR metodiken och räknas därför inte med tidsmässigt och hinner inte göras om du inte aktivt väljer detta tillägg.Kommer du regelbundet på behandling, speciellt om du använder BR hemma så rekommenderar vi INTE att du lägger till detta mer än första gången och kanske någon gång ibland därefter.Detta för att det som sagt inte ingår i BR metodiken och därför påverkar behandlingsupplevelsen. Det blir dessutom oftast onödigt när du dagligen använder din lotion P50."
+    }
+   ]
+  },
+  {
+   "id": 1618453,
+   "title": "Dermapen 4: Tillägg über Pro Peeling",
+   "price": 500,
+   "time": 900,
+   "slug": "dermapen-4-tillägg-über-pro-peeling-1618453",
+   "category": "Tilläggstänster"
+  },
+  {
+   "id": 1618454,
+   "title": "Dermapen 4: Tillägg PRX-T33",
+   "price": 1000,
+   "time": 900,
+   "slug": "dermapen-4-tillägg-prx-t33-1618454",
+   "category": "Tilläggstänster"
+  },
+  {
+   "id": 1618450,
+   "title": "Dermapen 4: Tillägg Hals",
+   "price": 500,
+   "time": 60,
+   "slug": "dermapen-4-tillägg-hals-1618450",
+   "category": "Tilläggstänster"
+  },
+  {
+   "id": 1618451,
+   "title": "Dermapen 4: Tillägg Hals & Dekolletage",
+   "price": 900,
+   "time": 900,
+   "slug": "dermapen-4-tillägg-hals-&-dekolletage-1618451",
+   "category": "Tilläggstänster"
+  },
+  {
+   "id": 1674218,
+   "title": "Tillägg Ansiktsmassage",
+   "price": 500,
+   "time": 1800,
+   "slug": "tillägg-ansiktsmassage-1674218",
+   "category": "Tilläggstänster"
+  }
+ ]
+}
