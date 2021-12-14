@@ -2,20 +2,26 @@
 const { Octokit } = require("@octokit/core");
 const octokit = new Octokit({ auth: process.env.GIT_KEY });
 const cheerio = require('cheerio');
+const basicAuth = require('basic-auth')
 const axios = require("axios").default;
 var esprima = require('esprima');
 const uppercaseletters = /[A-ZÅÄÖ\s]{5}/;  
 const url = "https://www.bokadirekt.se/places/neoskin-jkpg-33692";
 
-export default async function postNewPersonHandler(req, res) {
+export default async function handler(req, res) {
   
-  if(req._parsedUrl.query !== "neo") 
-  res.status(500).send("Access Denied!")
-    try { 
+  if (req.method !== `POST`) 
+    res.status(500).send("...")
+    try {      
+      const auth = basicAuth(req);
+      if(auth.pass !== process.env.UPDATE_PASSWORD)
+      res.status(401).send("Incorrect password")
+      
       const html = await fetchHtml(url);
       const parsedData = await parseData(html);
       const result = await UpdateRemote(parsedData)
-      res.json(result)
+      res.status(200).send(result)
+      
     } catch (error) {
       res.status(500).send(error)
     }
@@ -48,7 +54,7 @@ const parseData = async html => {
     const categoryTitle = category.properties.find(property => property.key.value == "name").value.value;
     const slug = stringToSlug(categoryTitle);
 
-    const categoryData = {title:categoryTitle, id, description: "", image: "/img/default.jpg", slug, services: []}
+    const categoryData = {title:categoryTitle, id, description: "", image: "../../../static/img/default.jpg", slug, services: []}
 
     const services = category.properties.find(property => property.key.value == "services").value.elements;
     services.forEach(service => {

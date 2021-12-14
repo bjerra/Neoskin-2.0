@@ -2,7 +2,7 @@
  "title": "Dermapen 4",
  "id": 8,
  "description": "",
- "image": "/img/default.jpg",
+ "image": "../../../static/img/default.jpg",
  "slug": "dermapen-4",
  "services": [
   {
