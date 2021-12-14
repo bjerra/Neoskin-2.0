@@ -2,7 +2,7 @@
  "title": "Skräddarsytt & Abonnemang",
  "id": 1,
  "description": "",
- "image": "/img/default.jpg",
+ "image": "../../../static/img/default.jpg",
  "slug": "skraddarsytt-abonnemang",
  "services": [
   {
