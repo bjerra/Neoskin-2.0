@@ -1,76 +1,77 @@
 {
- "title": "Avlägsna Fläckar/Fibrom/Kärl/Xantelasma",
- "id": 11,
- "description": "",
- "image": "../../../static/img/default.jpg",
- "brandLogo": "/img/logo_BR.svg",
- "brandUrl": "https://www.biologique-recherche.com/en-se/",
- "slug": "avlagsna-flackar-fibrom-karl-xantelasma",
- "info": [],
- "services": [
-  {
-   "id": 1629229,
-   "title": "Avlägsna godartad hudförändring (1-2 fläckar). Ett återbesök ingår.",
-   "price": 600,
-   "time": 600,
-   "slug": "avlägsna-godartad-hudförändring-1-2-fläckar-ett-återbesök-ingår-1629229",
-   "category": "Avlägsna Fläckar/Fibrom/Kärl/Xantelasma",
-   "info": [
+  "brandUrl": "https://www.biologique-recherche.com/en-se/",
+  "BrandUrl": " ",
+  "slug": "avlagsna-flackar-fibrom-karl-xantelasma",
+  "info": [],
+  "brandLogo": "/img/logo_BR.svg",
+  "title": "Avlägsna Fläckar/Fibrom/Kärl/Xantelasma",
+  "id": 11,
+  "image": "/img/bg.jpg",
+  "description": " ",
+  "services": [
     {
-     "title": "VAD GÖR BEHANDLINGEN?",
-     "text": "Vi bränner bort alla typer av godartade hudförändringar: Fibrom, Skintags, Pigmentfläckar, Syringom, Xantelasma & Angiomer. Pris från 500:-"
+      "id": 1629229,
+      "title": "Avlägsna godartad hudförändring (1-2 fläckar). Ett återbesök ingår.",
+      "price": 600,
+      "time": 600,
+      "slug": "avlägsna-godartad-hudförändring-1-2-fläckar-ett-återbesök-ingår-1629229",
+      "category": "Avlägsna Fläckar/Fibrom/Kärl/Xantelasma",
+      "info": [
+        {
+          "title": "VAD GÖR BEHANDLINGEN?",
+          "text": "Vi bränner bort alla typer av godartade hudförändringar: Fibrom, Skintags, Pigmentfläckar, Syringom, Xantelasma & Angiomer. Pris från 500:-"
+        },
+        {
+          "title": "VAD INGÅR I BEHANDLINGEN?",
+          "text": "1)- Konsultation: vi går igenom önskemål och medicinsk bakgrund. Vi bestämmer vad som ska tas bort under behandlingen och du får ett anpassat prisförslag. OBS: Konsultationen bokas FÖRST under kategorin “Konsultationer”. Har du varit på konsultationen kan du gå vidare med denna bokning.2)- Behandling: Bedövning ingår vid behov men används mest om det sitter mycket under ögonen eller om det är stora pigmenteringar som ska behandlas.3)- Återbesök: Vi tänker säkerhet föst och överbehandlar aldrig, oftast räcker en behandling, men om inte så ingår återbesöket i priset. Återbesök bokas ca 6-8 veckor efter behandlingen oavsett resultat, där tittar jag på läkningen samt utför eventuella korrektioner."
+        }
+      ]
     },
     {
-     "title": "VAD INGÅR I BEHANDLINGEN?",
-     "text": "1)- Konsultation: vi går igenom önskemål och medicinsk bakgrund. Vi bestämmer vad som ska tas bort under behandlingen och du får ett anpassat prisförslag. OBS: Konsultationen bokas FÖRST under kategorin “Konsultationer”. Har du varit på konsultationen kan du gå vidare med denna bokning.2)- Behandling: Bedövning ingår vid behov men används mest om det sitter mycket under ögonen eller om det är stora pigmenteringar som ska behandlas.3)- Återbesök: Vi tänker säkerhet föst och överbehandlar aldrig, oftast räcker en behandling, men om inte så ingår återbesöket i priset. Återbesök bokas ca 6-8 veckor efter behandlingen oavsett resultat, där tittar jag på läkningen samt utför eventuella korrektioner."
-    }
-   ]
-  },
-  {
-   "id": 1629230,
-   "title": "Avlägsna godartade hudförändringar (2-4 fläckar). Ett återbesök ingår.",
-   "price": 900,
-   "time": 900,
-   "slug": "avlägsna-godartade-hudförändringar-2-4-fläckar-ett-återbesök-ingår-1629230",
-   "category": "Avlägsna Fläckar/Fibrom/Kärl/Xantelasma"
-  },
-  {
-   "id": 1629231,
-   "title": "Avlägsna många eller stora godartade hudförändringar. Ett återbesök ingår.",
-   "price": 3500,
-   "time": 3600,
-   "slug": "avlägsna-många-eller-stora-godartade-hudförändringar-ett-återbesök-ingår-1629231",
-   "category": "Avlägsna Fläckar/Fibrom/Kärl/Xantelasma"
-  },
-  {
-   "id": 1629232,
-   "title": "Avlägsna Xantelasma enstaka punkter. Ett återbesök ingår.",
-   "price": 1500,
-   "time": 900,
-   "slug": "avlägsna-xantelasma-enstaka-punkter-ett-återbesök-ingår-1629232",
-   "category": "Avlägsna Fläckar/Fibrom/Kärl/Xantelasma"
-  },
-  {
-   "id": 1629233,
-   "title": "Avlägsna Xantelasma större ansamling. Ett återbesök ingår.",
-   "price": 2500,
-   "time": 2700,
-   "slug": "avlägsna-xantelasma-större-ansamling-ett-återbesök-ingår-1629233",
-   "category": "Avlägsna Fläckar/Fibrom/Kärl/Xantelasma"
-  },
-  {
-   "id": 1629234,
-   "title": "Reducering av ytliga blodkärl/kärlbristningar. Ett återbesök ingår",
-   "price": 750,
-   "time": 1200,
-   "slug": "reducering-av-ytliga-blodkärlkärlbristningar-ett-återbesök-ingår-1629234",
-   "category": "Avlägsna Fläckar/Fibrom/Kärl/Xantelasma",
-   "info": [
+      "id": 1629230,
+      "title": "Avlägsna godartade hudförändringar (2-4 fläckar). Ett återbesök ingår.",
+      "price": 900,
+      "time": 900,
+      "slug": "avlägsna-godartade-hudförändringar-2-4-fläckar-ett-återbesök-ingår-1629230",
+      "category": "Avlägsna Fläckar/Fibrom/Kärl/Xantelasma"
+    },
     {
-     "title": "",
-     "text": "1)- Konsultation: vi går igenom önskemål och medicinsk bakgrund. Vi bestämmer vad som ska tas bort under behandlingen och du får ett anpassat prisförslag. OBS: Konsultationen bokas FÖRST under kategorin “Konsultationer”. Har du redan gått på din konsultation kan du gå vidare med denna bokning.2)- Behandling: Bedövning kan ej användas. All bedövning har en påverkan på blodkärlen som drar ihop sig, detta gör behandlingen ogenomförbar. Du kommer att känna obehag under den korta stunden som behandlingen pågår, men det är inte ohållbart. Efter behandlingen får du en saché PLC kräm.3)- Återbesök: Vi tänker säkerhet föst och överbehandlar aldrig, oftast räcker en behandling, men om inte så ingår återbesöket i priset. Återbesök bokas ca 6-8 veckor efter behandlingen oavsett resultat, där tittar jag på läkningen samt utför eventuella korrektioner."
+      "id": 1629231,
+      "title": "Avlägsna många eller stora godartade hudförändringar. Ett återbesök ingår.",
+      "price": 3500,
+      "time": 3600,
+      "slug": "avlägsna-många-eller-stora-godartade-hudförändringar-ett-återbesök-ingår-1629231",
+      "category": "Avlägsna Fläckar/Fibrom/Kärl/Xantelasma"
+    },
+    {
+      "id": 1629232,
+      "title": "Avlägsna Xantelasma enstaka punkter. Ett återbesök ingår.",
+      "price": 1500,
+      "time": 900,
+      "slug": "avlägsna-xantelasma-enstaka-punkter-ett-återbesök-ingår-1629232",
+      "category": "Avlägsna Fläckar/Fibrom/Kärl/Xantelasma"
+    },
+    {
+      "id": 1629233,
+      "title": "Avlägsna Xantelasma större ansamling. Ett återbesök ingår.",
+      "price": 2500,
+      "time": 2700,
+      "slug": "avlägsna-xantelasma-större-ansamling-ett-återbesök-ingår-1629233",
+      "category": "Avlägsna Fläckar/Fibrom/Kärl/Xantelasma"
+    },
+    {
+      "id": 1629234,
+      "title": "Reducering av ytliga blodkärl/kärlbristningar. Ett återbesök ingår",
+      "price": 750,
+      "time": 1200,
+      "slug": "reducering-av-ytliga-blodkärlkärlbristningar-ett-återbesök-ingår-1629234",
+      "category": "Avlägsna Fläckar/Fibrom/Kärl/Xantelasma",
+      "info": [
+        {
+          "title": "",
+          "text": "1)- Konsultation: vi går igenom önskemål och medicinsk bakgrund. Vi bestämmer vad som ska tas bort under behandlingen och du får ett anpassat prisförslag. OBS: Konsultationen bokas FÖRST under kategorin “Konsultationer”. Har du redan gått på din konsultation kan du gå vidare med denna bokning.2)- Behandling: Bedövning kan ej användas. All bedövning har en påverkan på blodkärlen som drar ihop sig, detta gör behandlingen ogenomförbar. Du kommer att känna obehag under den korta stunden som behandlingen pågår, men det är inte ohållbart. Efter behandlingen får du en saché PLC kräm.3)- Återbesök: Vi tänker säkerhet föst och överbehandlar aldrig, oftast räcker en behandling, men om inte så ingår återbesöket i priset. Återbesök bokas ca 6-8 veckor efter behandlingen oavsett resultat, där tittar jag på läkningen samt utför eventuella korrektioner."
+        }
+      ]
     }
-   ]
-  }
- ]
+  ]
 }
