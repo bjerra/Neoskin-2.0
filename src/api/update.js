@@ -1,5 +1,6 @@
 
 const fs = require('fs')
+import { isEqual } from 'lodash';
 import YAML from 'yaml'
 const { Octokit } = require("@octokit/core");
 const octokit = new Octokit({ auth: process.env.GIT_KEY });
@@ -92,13 +93,6 @@ const parseData = async html => {
 const UpdateRemote = async (parsedData) => {
 
     //----------------------------------------    GIT STUFF  ----------------------------------------------
-    
-    await octokit.request('POST /repos/{owner}/{repo}/merges', {
-      owner: 'bjerra',
-      repo: 'Neoskin-2.0',
-      base: 'Scrape',
-      head: 'main'
-    })
 
     const {categories, services} = parsedData
     const garbage = []
@@ -134,7 +128,6 @@ const UpdateRemote = async (parsedData) => {
          owner: 'bjerra',
          repo: 'Neoskin-2.0',
          path: item.path,
-         branch: 'Scrape',
          message: 'deleted categories',
          sha: item.sha
        })
@@ -147,7 +140,6 @@ const UpdateRemote = async (parsedData) => {
           owner: 'bjerra',
           repo: 'Neoskin-2.0',
           path: item.path,
-          branch: 'Scrape',
           message: 'updated categories',
           content: buffer,
           sha: ""
@@ -159,28 +151,30 @@ const UpdateRemote = async (parsedData) => {
     const serviceFile = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
       owner: 'bjerra',
       repo: 'Neoskin-2.0',
-      branch: 'Scrape',
       path: 'src/data/services.yaml'
     }) 
+    let remoteBuffer = Buffer.from(serviceFile.data.content, 'base64');
+    
+    var remoteObject = YAML.parse(remoteBuffer.toString())
+  
+    var equal = isEqual(services, remoteObject)
 
-    var serviceBuffer = Buffer.from(YAML.stringify(services, null, 1)).toString("base64")
-      
-    await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
-      owner: 'bjerra',
-      repo: 'Neoskin-2.0',
-      path: 'src/data/services.yaml',
-      branch: 'Scrape',
-      message: 'updated services',
-      content: serviceBuffer,
-      sha: serviceFile.data.sha
-    }) 
-   
-    await octokit.request('POST /repos/{owner}/{repo}/merges', {
-      owner: 'bjerra',
-      repo: 'Neoskin-2.0',
-      base: 'main',
-      head: 'Scrape'
-    })
+    if(!equal){
+      var serviceBuffer = Buffer.from(YAML.stringify(services, null, 1))
+      await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
+        owner: 'bjerra',
+        repo: 'Neoskin-2.0',
+        path: 'src/data/services.yaml',
+        message: 'updated services',
+        content: serviceBuffer.toString("base64"),
+        sha: serviceFile.data.sha
+      }) 
+    }
+ 
+}
+
+const IsEqual = (arr1, arr2) =>{
+  return JSON.stringify(arr1) == JSON.stringify(arr2)
 }
 
 
