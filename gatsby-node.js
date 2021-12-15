@@ -9,7 +9,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       frontmatter: Frontmatter
     }
     type Frontmatter {
-      features: [ServicesJson] @link(by: "title") 
+      features: [ServicesYaml] @link(by: "title") 
       
     }
   `
@@ -35,7 +35,7 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
       }
-      allCategoriesJson {
+      allCategoriesYaml {
         nodes {
           title
           slug
@@ -64,7 +64,7 @@ exports.createPages = ({ actions, graphql }) => {
       })
     })
 
-    const categories = result.data.allCategoriesJson.nodes
+    const categories = result.data.allCategoriesYaml.nodes
     categories.forEach(category => {
         createPage({
           path: `/${category.slug}`,

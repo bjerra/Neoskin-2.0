@@ -1,7 +1,10 @@
 
+const fs = require('fs')
+import YAML from 'yaml'
 const { Octokit } = require("@octokit/core");
 const octokit = new Octokit({ auth: process.env.GIT_KEY });
 const cheerio = require('cheerio');
+const _ = require('lodash/core');
 const basicAuth = require('basic-auth')
 const axios = require("axios").default;
 var esprima = require('esprima');
@@ -19,9 +22,9 @@ export default async function handler(req, res) {
       
       const html = await fetchHtml(url);
       const parsedData = await parseData(html);
-      const result = await UpdateRemote(parsedData)
-      res.status(200).send(result)
-      
+      await UpdateRemote(parsedData)
+      res.status(200).send("Uppdaterat!")
+
     } catch (error) {
       res.status(500).send(error)
     }
@@ -42,19 +45,21 @@ const fetchHtml = async url => {
 
 const parseData = async html => {
 
-  const data = [];
+  const data = {categories:[], services:[]}
 
   const $ = cheerio.load(html,{ normalizeWhitespace: false, xmlMode: false, decodeEntities: true });
   const rawData = esprima.parseScript($('body > script:nth-child(3)').html())
-  const categories = rawData.body[0].expression.right.properties[0].value.properties.find(p=>p.key.value == "services").value.elements;
 
+  const categories = rawData.body[0].expression.right.properties[0].value.properties.find(p=>p.key.value == "services").value.elements;
+  
   let id = 0;
   categories.forEach(category => {
     id+= 1;
     const categoryTitle = category.properties.find(property => property.key.value == "name").value.value;
     const slug = stringToSlug(categoryTitle);
 
-    const categoryData = {title:categoryTitle, id, description: "", image: "../../../static/img/default.jpg", slug, services: []}
+    const categoryObject = {title:categoryTitle, id, description: "", image: "../../../static/img/default.jpg", slug}
+    data.categories.push(categoryObject)
 
     const services = category.properties.find(property => property.key.value == "services").value.elements;
     services.forEach(service => {
@@ -62,49 +67,23 @@ const parseData = async html => {
       const title = service.properties.find(property => property.key.value == "name").value.value;
       const price = service.properties.find(property => property.key.value == "price").value.value;
       const time = service.properties.find(property => property.key.value == "duration").value.value;
-      const id = service.properties.find(property => property.key.value == "id").value.value;
-     
+      const id = service.properties.find(property => property.key.value == "id").value.value;   
       const about = service.properties.find(property => property.key.value == "about").value.properties;
-
       const description = about.find(property => property.key.value == "description").value.value;
-
-       let info = null;
-       if(description != ""){
-        info= [];
-        const temp =description.split(/\r\n/);
-       
-        if(temp.length == 1){
-          info = [{title: "", text: description}];
-        } 
-        else{
-          temp.forEach(string => {  
-            if(string != "") {
-              const s = string.trim();
-              const sub = s.substring(0, 5);
-              if(sub.match(uppercaseletters)){
-                info.push({title: s, text:[]});
-              } else{
-                if(info.length > 0)
-                info[info.length - 1].text += s
-                else
-                info.push({title: "", text: s});
-              }
-            }
-         
-          })
-        }
-       }
-      
       const slug = about.find(property => property.key.value == "slug").value.value;
 
-      const serviceData = {id, title, price: parseInt(price), time: parseInt(time), slug: slug+ "-"+id, category: categoryTitle }
-      if(info)
-      serviceData.info = info;
+      const serviceObject = {
+        id, 
+        title, 
+        price: parseInt(price), 
+        time: parseInt(time), 
+        slug: slug+ "-"+id, 
+        category: categoryTitle, 
+        info: description
+      }
 
-      categoryData.services.push(serviceData);
+      data.services.push(serviceObject);
     })
-   
-    data.push(categoryData)
   })
 
   return data;
@@ -113,7 +92,7 @@ const parseData = async html => {
 const UpdateRemote = async (parsedData) => {
 
     //----------------------------------------    GIT STUFF  ----------------------------------------------
-
+    
     await octokit.request('POST /repos/{owner}/{repo}/merges', {
       owner: 'bjerra',
       repo: 'Neoskin-2.0',
@@ -121,45 +100,34 @@ const UpdateRemote = async (parsedData) => {
       head: 'main'
     })
 
-
+    const {categories, services} = parsedData
     const garbage = []
-    const newData = []
+    const newCategoryData = []
     const remoteCategories= [] 
 
-    const remoteFolder = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
-      owner: 'bjerra',
-      repo: 'Neoskin-2.0',
-      path: 'src/data'
-    })  
 
-
-    if(remoteFolder.data.find(p=>p.name === 'categories')){
       const categoryDirectory = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
         owner: 'bjerra',
         repo: 'Neoskin-2.0',
         path: 'src/data/categories'
-      })  
+      }) 
 
       for (const file of categoryDirectory.data) {
         remoteCategories.push(file.name)
         const title = file.name.slice(0, -5);
-        if(!parsedData.find(p=>p.slug == title))
+        if(!categories.find(p=>p.slug == title))
           garbage.push({path: file.path, sha: file.sha, title})
       }   
-    }
+    
 
-      for (const category of parsedData) {
-          const title = category.slug + ".json"
+      for (const category of categories) {
+          const title = category.slug + ".yaml"
         if(!remoteCategories.includes(title))
-            newData.push({path: `src/data/categories/${title}`, data: category})     
+            newCategoryData.push({path: `src/data/categories/${title}`, data: category})     
        
       }
 
-
        //-------------UPDATE REMOTE-----------------------
-      const didChange = newData.length != 0 && garbage.length != 0;
-
-      if(!didChange) return "Already up to date";
 
        for (const item of garbage) {
         await octokit.request('DELETE /repos/{owner}/{repo}/contents/{path}', {
@@ -167,24 +135,45 @@ const UpdateRemote = async (parsedData) => {
          repo: 'Neoskin-2.0',
          path: item.path,
          branch: 'Scrape',
-         message: 'deleted data',
+         message: 'deleted categories',
          sha: item.sha
        })
      }
 
-    for(const item of newData) {
-        var buffer = Buffer.from(JSON.stringify(item.data, null, 1)).toString("base64")
+    for(const item of newCategoryData) {
+        var buffer = Buffer.from(YAML.stringify(item.data, null, 1)).toString("base64")
       
         await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
           owner: 'bjerra',
           repo: 'Neoskin-2.0',
           path: item.path,
           branch: 'Scrape',
-          message: 'updated data',
+          message: 'updated categories',
           content: buffer,
           sha: ""
         }) 
     }
+
+    //SERVICES UPDATE
+
+    const serviceFile = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
+      owner: 'bjerra',
+      repo: 'Neoskin-2.0',
+      branch: 'Scrape',
+      path: 'src/data/services.yaml'
+    }) 
+
+    var serviceBuffer = Buffer.from(YAML.stringify(services, null, 1)).toString("base64")
+      
+    await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
+      owner: 'bjerra',
+      repo: 'Neoskin-2.0',
+      path: 'src/data/services.yaml',
+      branch: 'Scrape',
+      message: 'updated services',
+      content: serviceBuffer,
+      sha: serviceFile.data.sha
+    }) 
    
     await octokit.request('POST /repos/{owner}/{repo}/merges', {
       owner: 'bjerra',
@@ -192,8 +181,6 @@ const UpdateRemote = async (parsedData) => {
       base: 'main',
       head: 'Scrape'
     })
-
-    return true;
 }
 
 
