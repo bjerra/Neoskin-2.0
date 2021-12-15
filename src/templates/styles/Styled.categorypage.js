@@ -206,6 +206,11 @@ border-radius: 10px;
  .body{
   overflow-y: scroll;
   overflow-x: hidden;
+ 
+
+  @media screen and (min-width: 980px) {
+    padding: 1rem;
+  }
   > * {
     padding-top: .5rem;
   }

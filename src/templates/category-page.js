@@ -30,7 +30,6 @@ const CategoryPageTemplate = ({
   image,
   title,
   description,
-  info,
   services,
 }) => {
 
@@ -52,16 +51,7 @@ const CategoryPageTemplate = ({
         
           <div className="body">
          
-            {
-              modalService.info.map((item) => (
-                <Fragment>
-                  <h4>{item.title}</h4>
-                  {
-                    <p>{item.text}</p>
-                  }
-                </Fragment>
-              ))
-            }
+             <p>{ modalService.info}</p>
              
           </div>
           
@@ -108,8 +98,8 @@ CategoryPageTemplate.propTypes = {
 
 const CategoryPage = ({ data }) => {
 
-  const { title, image, description, services, info } = data.categoriesJson;
-
+  const { title, image, description } = data.categoriesYaml;
+  const services = data.allServicesYaml.nodes;
   return (
     <Layout pageTitle={title} pageDescription={description}>
       <CategoryPageTemplate
@@ -117,7 +107,6 @@ const CategoryPage = ({ data }) => {
         title={title}
         description={description}
         services={services}
-        info={info}
       />
     </Layout>
   )
@@ -135,7 +124,7 @@ export default CategoryPage
 
 export const categoryPageQuery = graphql`
   query CategoryPage($id: String!) {
-    categoriesJson(title: {eq: $id}) {
+    categoriesYaml(title: {eq: $id}) {
       title
       description 
       image {
@@ -146,22 +135,16 @@ export const categoryPageQuery = graphql`
           )
         }
       } 
-      info{
-        title
-        body
-      }
-      services{
+    }
+    allServicesYaml(filter: {category: {eq: $id}}) {
+      nodes {
         title
         time
         slug
         price
         id
-        info {
-          title
-          text
-        }
+        info     
       }
-     
     }
   }
 `

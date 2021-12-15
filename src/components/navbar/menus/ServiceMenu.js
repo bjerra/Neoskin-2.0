@@ -3,10 +3,10 @@ import { Link, useStaticQuery, graphql } from 'gatsby'
 
 const ServiceMenu = () => {
 
-  const { allCategoriesJson  } = useStaticQuery(
+  const { allCategoriesYaml  } = useStaticQuery(
     graphql`
     {
-      allCategoriesJson(sort: {fields: id}) {
+      allCategoriesYaml(sort: {fields: id}) {
         nodes {
           title
           slug
@@ -18,7 +18,7 @@ const ServiceMenu = () => {
   return (
     <React.Fragment>  
           {
-            allCategoriesJson.nodes.map((category, index) => {   
+            allCategoriesYaml.nodes.map((category, index) => {   
                 return(
               <div className="item" key={index}>
                 <Link to={`/${category.slug}`}>
