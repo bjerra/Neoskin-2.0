@@ -1,7 +1,7 @@
 ---
 templateKey: info-page
 title: Om Anaïs
-image: /img/Salon.jpg
+image: /img/anaïs-diplom.jpg
 ---
 
 *“Everyone sees what you appear to be, few experience what you really are”* 
