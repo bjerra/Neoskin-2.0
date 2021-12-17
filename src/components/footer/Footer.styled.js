@@ -2,7 +2,7 @@ import styled from "@emotion/styled"
 
 
 export const StyledFooter = styled.footer`
-
+    z-index: 10;
     padding: 20px 0 20px 0;
     background-color: ${({ theme }) => theme.COLOR.FOOTER}; 
     color: ${({ theme }) => theme.COLOR.MENU_TEXT}; 

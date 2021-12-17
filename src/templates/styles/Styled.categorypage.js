@@ -2,6 +2,7 @@ import styled from "@emotion/styled"
 
 export const Wrapper =  styled.div`
 
+position: relative;
 h1{
   word-break: break-word;
 }
@@ -123,9 +124,8 @@ color: ${({ theme }) => theme.COLOR.DARK};
     }
 }
 `
-export const Body = styled.div`
-    
-  background-color: ${({ theme }) => theme.COLOR.BACKGROUND};
+export const Body = styled.section`
+  
   text-align: center;
   position: relative;
   padding: 1rem;

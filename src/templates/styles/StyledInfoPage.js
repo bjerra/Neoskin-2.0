@@ -9,7 +9,6 @@ export const Body = styled.section`
 
     padding-top: 1rem;
     
-    background-color: ${({ theme }) => theme.COLOR.BACKGROUND};
     text-align: center;
     position: relative;
 

@@ -22,7 +22,7 @@ const IndexPageTemplate = ({
         {//<video autoPlay loop muted playsInline src={require("../img/banner.webm")}></video>
         }
     </Banner>
-
+    <div className='body'>
     <Intro theme={theme}>
     
       <div className="inner">     
@@ -34,14 +34,14 @@ const IndexPageTemplate = ({
 
       </header>     
       <PageContent content={content} className={"body"}/>
-     
-      </div>  
-      
-        <div className="button">
+      <div className="button">
         <BokaButton large url="https://www.bokadirekt.se/places/neoskin-33692" size={"22px"}/>
       </div>
+      </div>  
+      
+     
     </Intro>
-   
+    </div>
   </Wrapper>
 )}
 

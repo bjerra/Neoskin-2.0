@@ -9,12 +9,10 @@ section {
 
 export const Intro = styled.section`
 
-    padding: 1rem 1rem; 6rem 1rem;
-    background-color: ${({ theme }) => theme.COLOR.BACKGROUND};
- 
+    
    
     h5 {
-        
+        font-size: 1.2rem;
     }
     
     .inner {
