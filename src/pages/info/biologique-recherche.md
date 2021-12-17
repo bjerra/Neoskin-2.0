@@ -1,7 +1,7 @@
 ---
 templateKey: info-page
 title: Biologique Recherche
-image: /img/br-cryosticks.jpg
+image: /img/blcrop5.jpg
 ---
 ### Historik
 
