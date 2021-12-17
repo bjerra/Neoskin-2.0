@@ -1,7 +1,7 @@
 ---
 templateKey: info-page
 title: Circadia
-image: /img/Salon.jpg
+image: /img/img_9544.jpg
 ---
 
 Circadia grundades av den världsberömda, och globalt erkänd, Dr. Peter T. Pugliese. Före lanseringen av Circadia 2001 spenderade Dr. Pugliese 30 år att utveckla och tillverka produkter för stora varumärken inom branschen. På 70-talet gick han med i Society of Cosmetic Chemistry för att han ville veta mer och behandla de åkommor som han ofta kom i kontakt med såsom eksem, solskador och psoriasis. Där fick han kontakt med andra kemister som tillsammans forskade och tog fram ingredienser till hudvårdsprodukter. På 70 och 80-talet var Dr Pugliese ”the go to guy” när det kom till innovativa ingredienser och produkter. Han genomförde bl.a. de första studierna på koppar peptider, topisk vitamin E och Beta Glukan. 1996 fick Dr Pugliese en utmärkelse från SCC för hans betydande roll inom kosmetisk vetenskap. 2001 grundade han, tillsammans med hans dotter och son, hudvårdsmärket Circadia. Idag är det Dr Pugliese barnbarn – Michael Pugliese som är VD för företaget. Circadia är ett professionellt hudvårdsmärke vars filosofi baseras på hudens och kroppens naturliga cirkadiska rytmer. Chronobiology, tidens biologi, bygger på principerna att skydda huden från skador under dagen och stimulera reparation under sömnen och är kärnan i vårt koncept. Circadia har varit en pionjär för att föra konceptet Cirkadiska-rytmer till hälso- och skönhetsindustrin.
