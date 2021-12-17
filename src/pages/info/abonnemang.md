@@ -1,7 +1,7 @@
 ---
 templateKey: info-page
 title: Skräddarsytt & Abonnemang
-image: /img/Salon.jpg
+image: /img/blcrop4.jpg
 ---
 
 En av de största fördelarna med abonnemangen är att du slipper försöka ta rätt beslut om vilken behandling du vill ha eller vilken kur som skulle vara bäst för dig! Allt det bästa ingår till fast pris, även hemvårdsprodukterna.  
