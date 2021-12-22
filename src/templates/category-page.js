@@ -3,24 +3,18 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Layout, Banner, BokaButton } from '../components'
 import { HTMLContent } from '../components/Content'
-import { Wrapper, ServiceCard, Body, ServiceList, StyledBokaButton, Modal } from './styles/Styled.categorypage'
+import { Wrapper, ServiceCard, Body, ServiceList, Modal } from './styles/Styled.categorypage'
 import { useTheme } from '@emotion/react'
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { useOnClickOutside } from '../utils/hooks';
 
-const serviceCard = (service, theme, onClick, clickable) => (
+const serviceCard = (service, theme, onClick, brandImg) => (
 
-  <ServiceCard key={service.id} theme={theme} clickable={clickable}>
-    <div className={service.info ? "info" : "noInfo"} onClick={service.info ? () => onClick(service.id) : () => { }}>
+  <ServiceCard key={service.id} theme={theme} onClick={() => onClick(service.id)} >
+     <GatsbyImage image={brandImg} alt={""}/>  
+         
+  
       <h3>{service.title}</h3>
-      <div className="pricing">
-        <p>{service.time / 60} minuter</p>
-        <p>{service.price} kr</p>
-        <span> {service.info ? "Mer info" : " "}</span>
-      </div>
-    </div>
-    <div className="boka">
-      <StyledBokaButton href={`https://www.bokadirekt.se/boka-tjanst/neoskin-33692/${service.slug}`}>Boka</StyledBokaButton>
-    </div>
 
   </ServiceCard>
 )
@@ -31,19 +25,26 @@ const CategoryPageTemplate = ({
   title,
   description,
   services,
+  brandLogo,
 }) => {
 
+  //const brandImg = getImage(brandLogo)
   const [expanded, setExpanded] = useState(-1);
   const [modal, setModal] = useState(null);
   const theme = useTheme()
-  const node = useRef();
-  useOnClickOutside(node, () => setModal(null));
   const modalService = services.find(p => p.id === modal) || { title: "", info: [] };
+  const node = useRef(); 
+  useOnClickOutside(node, () => setModal(null));
+  const brandImg = getImage(brandLogo)
 
   return (
     <Wrapper>
-      <Modal ref={node} theme={theme} open={modal !== null}>
-        <div>  
+     
+      <Modal theme={theme} open={modal !== null}>
+     
+      <div className='content' ref={node}>
+      <div className="close" onClick={() => setModal(null)}/>
+       
         <div className="header">  
           <h2>{modalService.title}</h2>
          
@@ -56,14 +57,16 @@ const CategoryPageTemplate = ({
           </div>
           
           <div className="footer">
-         
-            <BokaButton slug={modalService.slug} large size={"22px"} />
+            <div className="timeprice">
+            <p>{modalService.time / 60} minuter</p>
+            <p>{modalService.price} kr</p>
+            </div>
+            <BokaButton slug={modalService.slug} large size={"20px"} />
           </div>
 
         </div>
-
       </Modal>
-      <Banner image={image} alt="Neoskin" position={"50% 50%"} height={"20rem"}>
+      <Banner image={image} alt="Neoskin" position={"50% 50%"} height={"35rem"}>
          
       </Banner>
       <Body>
@@ -78,7 +81,7 @@ const CategoryPageTemplate = ({
           <ServiceList theme={theme}>
             {
               services.map((service) => (
-                serviceCard(service, theme, setModal, modal == null)
+                serviceCard(service, theme, setModal, brandImg)
               ))
             }
           </ServiceList>
@@ -98,7 +101,7 @@ CategoryPageTemplate.propTypes = {
 
 const CategoryPage = ({ data }) => {
 
-  const { title, image, description } = data.categoriesYaml;
+  const { title, image, description, brandLogo } = data.categoriesYaml;
   const services = data.allServicesYaml.nodes;
   return (
     <Layout pageTitle={title} pageDescription={description}>
@@ -107,6 +110,7 @@ const CategoryPage = ({ data }) => {
         title={title}
         description={description}
         services={services}
+        brandLogo={brandLogo}
       />
     </Layout>
   )
@@ -134,6 +138,16 @@ export const categoryPageQuery = graphql`
             placeholder: BLURRED
           )
         }
+      } 
+      brandLogo{
+        childImageSharp {
+          gatsbyImageData(
+            width: 200
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+          )
+        }
+        publicURL
       } 
     }
     allServicesYaml(filter: {category: {eq: $id}}) {

@@ -9,8 +9,10 @@ h1{
 `
 
 export const ServiceCard = styled.li`
-box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.25);
-pointer-events: ${({ clickable }) => clickable ? 'all' : 'none'};
+
+background-color: ${({ theme }) => theme.COLOR.LIGHT};
+margin: .5rem;
+box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
 -webkit-tap-highlight-color: transparent;
 -webkit-touch-callout: none;
 -webkit-user-select: none;
@@ -19,110 +21,55 @@ pointer-events: ${({ clickable }) => clickable ? 'all' : 'none'};
 -ms-user-select: none;
 user-select: none;
 cursor: pointer;
-height: 100px;
-padding-left: 1rem;
-transition: transform .2s ease;
+transition: transform .1s ease;
 position: relative;
-background: ${({ theme }) => theme.COLOR.LIGHT};
-
-.pricing {
-  display:flex;
-  justify-content: space-between;
-  margin-right: 2rem;
-  color: ${({ theme }) => theme.COLOR.MUSTARD};
-  p{
-    flex: 1;
+width: 250px;
+height: 125px;
+:hover{
+  transform: scale(1.05);
+  h3{
+    
+    color: ${({ theme }) => theme.COLOR.MUSTARD};
   }
-  span{
-    flex: 1;
-  }
+  .gatsby-image-wrapper{
+  
+    filter: grayscale(0%) opacity(1);
+ }
 }
+
+
+.gatsby-image-wrapper{
+   width: 100px;
+   position: absolute;
+   bottom:0;
+   right: 0;
+   filter: grayscale(100%) opacity(.6);
+   transition: filter 1s ease-in-out 
+}
+
 
 h3{
-  color: ${({ theme }) => theme.COLOR.DARK};
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  font-size: 1.4rem;
+  margin-right: 30%;
+  color: ${({ theme }) => theme.COLOR.MUSTARD};
   text-align: left;
-  font-weight: 500; 
+  font-weight: 300; 
+  position: absolute;
+  transition: all ease .3s 
  }
 
-display: flex;
-flex-direction: row;
-align-items: center;
 text-align: left;
-justify-content: space-between;
-margin-top: 2px;
-border-bottom: 1px solid #bbb;
-border-radius: 5px;
-width: 100%;
 
-color: ${({ theme }) => theme.COLOR.DARK};
-
-.noInfo, .info{
-  height: 100%; 
-  text-decoration: none;
-  padding: 1rem .75rem;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  position: relative;
-  flex: 1;
-  border-right: 2px dotted ${({ theme }) => theme.COLOR.BACKGROUND};;
-
-}
-  p {
-     
-      font-size: 1.1rem;
-      @media screen and (max-width: 980px) {
-          font-size: 1rem;
-        }
-  }
-
-  h3 {
-    word-break: break-word;
-    @media screen and (min-width: 980px) {
-      font-size: 1.1rem;
-      }
-}
-
-  span {
-    transform-origin: left;
-    transition: transform .2s ease;
-    color: ${({ theme }) => theme.COLOR.DIM_BLUE};
-    font-size: 1.1rem;
-}
-
- .info{
-  
- 
-   :hover{     
-      span{
-        color: ${({ theme }) => theme.COLOR.INFO};
-          transform: scale(1.2, 1.2); 
-    }
-   }
- }
 
 @media screen and (min-width: 980px) {
-  max-width: 500px;
-  min-width: 400px;
-  height: 120px;
+  width: 275px;
+  height: 150px;
+  h3{
+    color: ${({ theme }) => theme.COLOR.DARK};
   }
-
- .boka{
-        width: 60px;
-        height: 100%;
-        font-size: 1.4rem;
-        
-       @media screen and (min-width: 980px) {
-        width: 120px;
-        font-size: 1.75rem;
-
-        :hover {
-          opacity : .7;
-         
-         }
-      }
-    }
-}
+  }
 `
 export const Body = styled.section`
   
@@ -138,9 +85,6 @@ export const Body = styled.section`
     flex-direction: column;
   }
 
-  ui{
-    padding-top: 2rem;
-  }
 
   .description{
     
@@ -162,82 +106,121 @@ export const ServiceList = styled.ul`
     
   margin: .5rem 0;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
   display: flex;
 
 `
 
 export const Modal = styled.div`
-max-height: 80%;
-height: fit-content;
 
-::-webkit-scrollbar {
-  display: none;
-}
-border-radius: 10px;
- transition: transform .2s ease;
- transform:  scaleY(${({ open }) => open ? '1' : '0'});  
-  position: fixed;
-  top: 50px;
-  left: 50px;
-  right: 50px;
-  bottom: 100px;
-  z-index: 100;
-  background-color: ${({ theme }) => theme.COLOR.INFO};;
- display: flex;
- max-width: 600px;
- margin: auto;
+transition: all .001s ease;
+transform:  translate(${({ open }) => open ? '0%' : '100%'});   
+transition-delay: ${({ open }) => open ? '0s' : '.15s'};
+opacity: ${({ open }) => open ? '1' : '0'};  
+background-color: #b2c9d6cc;
+z-index: 100;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+display: flex;
+justify-content: center;
+align-items: center;
 
- > div{
-  
+ .content{
+  width: 100%;
+  padding-top: 1rem;
+  transform:  translateY(${({ open }) => open ? '0%' : '100%'});  
+  transition: transform .2s ease;
+  transition-delay: ${({ open }) => open ? '.1s' : '0s'};
+  max-height: 80%;
+  height: fit-content;
   flex-direction: column;
   display: flex;
   max-width: -webkit-fill-available;
    justify-content:center;
    align-items: center;
-  margin: 1rem 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+    background-color: ${({ theme }) => theme.COLOR.LIGHT};
 
+   max-width: 90%;
+
+   @media screen and (min-width: 980px) {
+    max-width: 500px;
+  }
  }
+
  .header {
+   h2{
+    color: ${({ theme }) => theme.COLOR.MUSTARD};
+   }
   width: 100%;
  }
-
- .body{
-  overflow-y: scroll;
-  overflow-x: hidden;
  
 
-  @media screen and (min-width: 980px) {
-    padding: 1rem;
-  }
-  > * {
-    padding-top: .5rem;
-  }
+ .body{
+  padding: 1rem;
+  width: 100%;
+  overflow-x: hidden;
+ 
 }
 
  .footer{
+  background-color: ${({ theme }) => theme.COLOR.INFO};
+  border-top: 1px solid ${({ theme }) => theme.COLOR.DARK};
+  border-bottom: 1px solid ${({ theme }) => theme.COLOR.DARK};
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
    width: 100%;
+  
    a{
-     margin: auto;
-     margin-top: .5rem
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
    }
  
  }
 
-`
+ .timeprice{
+    p{
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+   display: flex;
+   flex-direction: column;
 
-export const StyledBokaButton = styled.a`
-    transition: all .2s ease;
+ }
 
-    background-color:  ${({ theme }) => theme.COLOR.LIGHT};
-    color:  ${({ theme }) => theme.COLOR.HIGHLIGHT};
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
-    font-size: 1.25rem;
-    border-radius: 5px;
+ .close {
+  position: absolute;
+  right: 0px;
+  top: -50px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.7;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #fff;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
 `

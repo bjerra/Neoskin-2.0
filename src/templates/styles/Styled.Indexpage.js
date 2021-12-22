@@ -5,6 +5,14 @@ export const Wrapper =  styled.div`
 section {
     position: relative;
 }
+
+.logo{
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    right: 0;
+    display: flex;
+}
 `
 
 export const Intro = styled.section`

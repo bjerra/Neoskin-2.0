@@ -18,6 +18,9 @@ export const Content = styled.div`
   transition: transform 0.2s ease-in-out;
   .item {
     color: ${({ theme }) => theme.COLOR.MENU_TEXT};
+   
+
+
     :hover{
      
       a{
@@ -65,7 +68,7 @@ export const descending = css`
     padding-top: .5rem;
     top:60px;
     width: 100%;
-    font-weight: 200;
+    font-weight: 300;
     transform-origin: top;
     box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.15), 2px 16px 4px -14px rgba(0,0,0,0.5) inset;
   
@@ -80,7 +83,7 @@ export const  ascending = css`
     padding-bottom: .5rem;
     position: fixed;
     bottom: 55px;
-    font-weight: 400;
+    font-weight: 300;
     left: 0;
     right:0;
     transform-origin: bottom;

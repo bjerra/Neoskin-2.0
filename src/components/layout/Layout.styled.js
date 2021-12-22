@@ -48,7 +48,7 @@ export const Body = styled.div`
 
  
  section{
-    background-color: ${({ theme }) => theme.COLOR.BACKGROUND}; 
+    margin-top: 20rem;
     z-index:1;
    
     ::before {
@@ -63,6 +63,10 @@ export const Body = styled.div`
         radial-gradient(circle farthest-side at bottom right, #fffdf6aa, #e4d8becc), radial-gradient(ellipse farthest-corner at 0% 100%, #fffdf6aa, #e4d8becc);
         animation:bg-change 10s infinite;
     }
+
+    @media screen and (min-width: 980px) {
+        margin-top: 35rem;
+      }
     
     @keyframes bg-change {
     0%, 100% {

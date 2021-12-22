@@ -7,7 +7,7 @@ import { css } from "@emotion/react"
 const Off_WHITE = "#fffdf6"
 const CREAMY = "#e4d8be"
 const OAK = "#d6c796"
-const MUSTARD = "#d6c796"
+const MUSTARD = "#a18a5b"
 const TOBACCO = "#363330"
 const APRICOT_STING = "#fe9a66"
 const SOFT_BLUE = "#b2c9d6"
@@ -27,7 +27,7 @@ const COLOR = {
   FEATURE: OAK,
   TEXT: TOBACCO,
   BACKGROUND: CREAMY,
-  FOOTER: SOFT_BLUE,
+  FOOTER: DIM_BLUE,
   DIM_BLUE: DIM_BLUE,
   MISTY_BLUE: MISTY_BLUE,
   OAK: OAK,
@@ -85,7 +85,7 @@ const H2 = css`
 
 const H3 = css`
 
-  font-size: 1.469em;
+  font-size: 1.369em;
   margin-bottom: 0.4em;
 
   @media screen and (max-width: ${BREAKPOINTS.MOBILE}) {

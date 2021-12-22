@@ -12,7 +12,7 @@ const InfoPageTemplate = ({ title, image, content, contentComponent }) => {
 
   return (
         <Wrapper>
-            <Banner image={image} alt={title} position={"50% 30%"} height={"30rem"}>
+            <Banner image={image} alt={title} position={"50% 30%"} height={"35rem"}>
 
             </Banner>
          
