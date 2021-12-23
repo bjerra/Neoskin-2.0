@@ -26,12 +26,16 @@ collections:
       - {label: "BrandUrl", name: "brandUrl", widget: "string"}
       - {label: "Services", name: "services", widget: list, fields: [{label: Title, name: title, widget: hidden}]}
   - name: "services"
-    create: false
-    delete: false
-    file: "src/data/services.yaml"
-    fields:
-      - {label: Title, name: title, widget: string}
-      - {label: "BrandLogo", name: "brandLogo", widget: image}         
+    label: "Services"
+    files:
+     -  file: "src/data/services.yaml"
+        label: "Services"
+        name: "services"
+        create: false
+        delete: false
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: "BrandOverride", name: "brandOverride", widget: image}         
   - name: "info"
     label: "Info"
     folder: "src/pages/info"

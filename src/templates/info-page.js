@@ -11,7 +11,7 @@ const InfoPageTemplate = ({ title, image, content, contentComponent }) => {
   const theme = useTheme()
 
   return (
-        <Wrapper>
+        <Wrapper theme={theme}>
             <Banner image={image} alt={title} position={"50% 30%"} height={"35rem"}>
 
             </Banner>

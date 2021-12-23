@@ -16,6 +16,7 @@ module.exports = {
     },
   plugins: [
     'gatsby-plugin-react-helmet',
+    `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-plugin-emotion`,
       options: {
@@ -65,15 +66,8 @@ module.exports = {
         name: 'data',
       },
     },
-    {
-      resolve: 'gatsby-plugin-mailchimp',
-      options: {
-        endpoint: MAILCHIMP_ENDPOINT,
-      },
-    },
-    `gatsby-plugin-image`,
-    `gatsby-transformer-yaml`,
     `gatsby-transformer-json`,
+    `gatsby-plugin-image`,
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {

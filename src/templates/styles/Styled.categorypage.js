@@ -53,7 +53,7 @@ h3{
   margin-top: 1.5rem;
   margin-left: 1.5rem;
   font-size: 1.4rem;
-  margin-right: 30%;
+  margin-right: 10%;
   color: ${({ theme }) => theme.COLOR.MUSTARD};
   text-align: left;
   font-weight: 300; 

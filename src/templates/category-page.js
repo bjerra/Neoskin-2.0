@@ -1,8 +1,7 @@
-import React, { Fragment, useState, useRef } from 'react'
+import React, { useState, useRef } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Layout, Banner, BokaButton } from '../components'
-import { HTMLContent } from '../components/Content'
 import { Wrapper, ServiceCard, Body, ServiceList, Modal } from './styles/Styled.categorypage'
 import { useTheme } from '@emotion/react'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
@@ -18,7 +17,6 @@ const CategoryPageTemplate = ({
 }) => {
 
   //const brandImg = getImage(brandLogo)
-  const [expanded, setExpanded] = useState(-1);
   const [modal, setModal] = useState(null);
   const theme = useTheme()
   const modalService = services.find(p => p.id === modal) || { title: "", info: [] };
@@ -70,7 +68,9 @@ const CategoryPageTemplate = ({
             {
               services.map((service) => (
                 <ServiceCard key={service.id} theme={theme} onClick={() => setModal(service.id)} >
-                  <GatsbyImage image={getImage(service.brandLogo || brandLogo)} alt={""}/>  
+                  {brandLogo &&
+                   <GatsbyImage image={getImage(brandLogo)} alt={""}/>
+                  }     
                   <h3>{service.title}</h3>
                 </ServiceCard>
               ))
@@ -86,6 +86,7 @@ const CategoryPageTemplate = ({
 
 CategoryPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  brandLogo: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   info: PropTypes.array
 }
@@ -130,12 +131,11 @@ export const categoryPageQuery = graphql`
           )
         }
       } 
-      brandLogo{
+      brandLogo {
         childImageSharp {
           gatsbyImageData(
             width: 200
-            placeholder: BLURRED
-            formats: [AUTO, WEBP, AVIF]
+            placeholder: TRACED_SVG
           )
         }
       } 
@@ -148,15 +148,6 @@ export const categoryPageQuery = graphql`
         price
         id
         info    
-        brandLogo{
-          childImageSharp {
-            gatsbyImageData(
-              width: 200
-              placeholder: BLURRED
-              formats: [AUTO, WEBP, AVIF]
-            )
-          }
-        }  
       }
     }
   }

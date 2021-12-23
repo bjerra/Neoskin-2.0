@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby'
 import {AiOutlineMail, AiOutlineInstagram, AiOutlinePhone, AiOutlineEnvironment} from 'react-icons/ai';
 
 const MoreMenu = () => {
@@ -10,7 +9,7 @@ const MoreMenu = () => {
        <div className="item">
         
         <a className="boka" href={'https://www.bokadirekt.se/places/neoskin-33692'} target="_blank" rel="noopener noreferrer">
-        <img id="bd" src="https://www.bokadirekt.se/images/logo.svg" ></img>
+        <img id="bd" alt="BokaDirekt" src="https://www.bokadirekt.se/images/logo.svg" ></img>
         </a>  
       </div>
       <div className="item">

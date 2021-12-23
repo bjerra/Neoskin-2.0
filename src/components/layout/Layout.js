@@ -1,5 +1,5 @@
 import React from 'react';
-import SEO from '../SEO'
+import Seo from '../SEO'
 import {Wrapper, Body} from './Layout.styled'
 import Footer from '../footer/Footer'
 import Navbar from '../navbar/Navbar'
@@ -14,7 +14,7 @@ const TemplateWrapper = ({ pageTitle, pageDescription, children }) => {
   return (
       <Wrapper theme={theme}>    
         
-        <SEO title={pageTitle || title} description={pageDescription || description}/>   
+        <Seo title={pageTitle || title} description={pageDescription || description}/>   
         <Navbar />
         <Body>
           {children}
