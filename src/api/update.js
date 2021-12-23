@@ -14,13 +14,15 @@ const url = "https://www.bokadirekt.se/places/neoskin-jkpg-33692";
 
 export default async function handler(req, res) {
   
-  if (req.method !== `POST`) 
-    res.status(500).send("...")
     try {      
+      if (req.method !== `POST`) 
+      res.status(500).send("...")
       const auth = basicAuth(req);
+     
       if(auth.pass !== process.env.UPDATE_PASSWORD)
       res.status(401).send("Incorrect password")
       
+     
       const html = await fetchHtml(url);
       const parsedData = await parseData(html);
       await UpdateRemote(parsedData)
@@ -103,7 +105,7 @@ const UpdateRemote = async (parsedData) => {
       const categoryDirectory = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
         owner: 'bjerra',
         repo: 'Neoskin-2.0',
-        path: 'src/data/categories'
+        path: 'src/pages/behandlingar'
       }) 
 
       for (const file of categoryDirectory.data) {
@@ -115,9 +117,9 @@ const UpdateRemote = async (parsedData) => {
     
 
       for (const category of categories) {
-          const title = category.slug + ".yaml"
+          const title = category.slug + ".md"
         if(!remoteCategories.includes(title))
-            newCategoryData.push({path: `src/data/categories/${title}`, data: category})     
+            newCategoryData.push({path: `src/pages/behandlingar/${title}`, data: category})     
        
       }
 

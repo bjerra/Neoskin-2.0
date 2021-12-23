@@ -16,7 +16,6 @@ module.exports = {
     },
   plugins: [
     'gatsby-plugin-react-helmet',
-    `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-plugin-emotion`,
       options: {
@@ -66,16 +65,17 @@ module.exports = {
         name: 'data',
       },
     },
-    `gatsby-transformer-json`,
-    `gatsby-plugin-image`,
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
     {
       resolve: `gatsby-plugin-netlify-cms-paths`,
       options: {
         cmsConfig: `/static/admin/config.yml`,
       },
     },
+    `gatsby-plugin-image`,
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    `gatsby-transformer-yaml`,
+  
     {
       resolve: 'gatsby-transformer-remark',
       options: {

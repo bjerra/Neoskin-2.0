@@ -3,13 +3,17 @@ import { Link, useStaticQuery, graphql } from 'gatsby'
 
 const ServiceMenu = () => {
 
-  const { allCategoriesYaml  } = useStaticQuery(
+  const { allMarkdownRemark  } = useStaticQuery(
     graphql`
     {
-      allCategoriesYaml(sort: {fields: id}) {
+      allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "category-page"}}}) {
         nodes {
-          title
-          slug
+          frontmatter {
+            title
+          }
+          fields {
+            slug
+          }
         }
       }
     } 
@@ -18,11 +22,12 @@ const ServiceMenu = () => {
   return (
     <React.Fragment>  
           {
-            allCategoriesYaml.nodes.map((category, index) => {   
+            allMarkdownRemark.nodes.map((item, index) => {  
+              const {frontmatter, fields} = item; 
                 return(
               <div className="item" key={index}>
-                <Link to={`/${category.slug}`}>
-                    {category.title}
+                <Link to={`${fields.slug}`}>
+                    {frontmatter.title}
                 </Link>
                </div>
             )})

@@ -11,7 +11,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       frontmatter: Frontmatter
     }
     type Frontmatter {
-      features: [ServicesYaml] @link(by: "title") 
+      services: [ServicesYaml] @link(by: "category", from: "title")
       
     }   
    
@@ -38,12 +38,6 @@ exports.createPages = ({ actions, graphql }) => {
             }
           }
         }
-      }
-      allCategoriesYaml {
-        nodes {
-          title
-          slug
-        }
       } 
     }
   `).then(result => {
@@ -66,17 +60,6 @@ exports.createPages = ({ actions, graphql }) => {
           id,
         },
       })
-    })
-
-    const categories = result.data.allCategoriesYaml.nodes
-    categories.forEach(category => {
-        createPage({
-          path: `/${category.slug}`,
-          component: path.resolve("./src/templates/category-page.js"),
-          context: {
-            id: category.title,
-          },
-        })
     })
   })
 }

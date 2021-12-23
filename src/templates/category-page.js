@@ -93,8 +93,7 @@ CategoryPageTemplate.propTypes = {
 
 const CategoryPage = ({ data }) => {
 
-  const { title, image, description, brandLogo } = data.categoriesYaml;
-  const services = data.allServicesYaml.nodes;
+  const { title, image, description, brandLogo, services } = data.markdownRemark.frontmatter;
   return (
     <Layout pageTitle={title} pageDescription={description}>
       <CategoryPageTemplate
@@ -120,34 +119,34 @@ export default CategoryPage
 
 export const categoryPageQuery = graphql`
   query CategoryPage($id: String!) {
-    categoriesYaml(title: {eq: $id}) {
-      title
-      description 
-      image {
-        childImageSharp {
-          gatsbyImageData(
-            layout: FULL_WIDTH
-            placeholder: BLURRED
-          )
-        }
-      } 
-      brandLogo {
-        childImageSharp {
-          gatsbyImageData(
-            width: 200
-            placeholder: TRACED_SVG
-          )
-        }
-      } 
-    }
-    allServicesYaml(filter: {category: {eq: $id}}) {
-      nodes {
+    markdownRemark(id: { eq: $id }) {
+      frontmatter {
         title
-        time
-        slug
-        price
-        id
-        info    
+        description 
+        image {
+          childImageSharp {
+            gatsbyImageData(
+              layout: FULL_WIDTH
+              placeholder: BLURRED
+            )
+          }
+        } 
+        brandLogo {
+          childImageSharp {
+            gatsbyImageData(
+              width: 200
+              placeholder: TRACED_SVG
+            )
+          }
+        } 
+        services {
+          title
+          time
+          slug
+          price
+          id
+          info    
+        }
       }
     }
   }
