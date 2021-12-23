@@ -8,17 +8,6 @@ import { useTheme } from '@emotion/react'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { useOnClickOutside } from '../utils/hooks';
 
-const serviceCard = (service, theme, onClick, brandImg) => (
-
-  <ServiceCard key={service.id} theme={theme} onClick={() => onClick(service.id)} >
-     <GatsbyImage image={brandImg} alt={""}/>  
-         
-  
-      <h3>{service.title}</h3>
-
-  </ServiceCard>
-)
-
 
 const CategoryPageTemplate = ({
   image,
@@ -35,7 +24,6 @@ const CategoryPageTemplate = ({
   const modalService = services.find(p => p.id === modal) || { title: "", info: [] };
   const node = useRef(); 
   useOnClickOutside(node, () => setModal(null));
-  const brandImg = getImage(brandLogo)
 
   return (
     <Wrapper>
@@ -81,7 +69,10 @@ const CategoryPageTemplate = ({
           <ServiceList theme={theme}>
             {
               services.map((service) => (
-                serviceCard(service, theme, setModal, brandImg)
+                <ServiceCard key={service.id} theme={theme} onClick={() => setModal(service.id)} >
+                  <GatsbyImage image={getImage(service.brandLogo || brandLogo)} alt={""}/>  
+                  <h3>{service.title}</h3>
+                </ServiceCard>
               ))
             }
           </ServiceList>
@@ -147,7 +138,6 @@ export const categoryPageQuery = graphql`
             formats: [AUTO, WEBP, AVIF]
           )
         }
-        publicURL
       } 
     }
     allServicesYaml(filter: {category: {eq: $id}}) {
@@ -157,7 +147,16 @@ export const categoryPageQuery = graphql`
         slug
         price
         id
-        info     
+        info    
+        brandLogo{
+          childImageSharp {
+            gatsbyImageData(
+              width: 200
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+        }  
       }
     }
   }

@@ -1,5 +1,7 @@
 title: KAMPANJ
 id: 1
 description: ""
-image: ../../../static/img/default.jpg
+image: /img/hemsida-1.png
 slug: kampanj
+brandLogo: /img/brand_Default.png
+brandUrl: " "

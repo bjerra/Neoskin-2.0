@@ -41,10 +41,11 @@ height: 125px;
 .gatsby-image-wrapper{
    width: 100px;
    position: absolute;
-   bottom:0;
-   right: 0;
+   bottom:5px;
+   right: 5px;
    filter: grayscale(100%) opacity(.6);
-   transition: filter 1s ease-in-out 
+   transition: filter .5s ease-in-out ;
+   transition-delay: .1s;
 }
 
 
@@ -176,6 +177,7 @@ align-items: center;
   border-top: 1px solid ${({ theme }) => theme.COLOR.DARK};
   border-bottom: 1px solid ${({ theme }) => theme.COLOR.DARK};
   padding: 1rem 0;
+  margin-bottom: 1rem;
   display: flex;
   justify-content: space-around;
   align-items:center;

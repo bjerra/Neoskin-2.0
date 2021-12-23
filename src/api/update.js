@@ -59,7 +59,7 @@ const parseData = async html => {
     const categoryTitle = category.properties.find(property => property.key.value == "name").value.value;
     const slug = stringToSlug(categoryTitle);
 
-    const categoryObject = {title:categoryTitle, id, description: "", image: "../../../static/img/default.jpg", slug}
+    const categoryObject = {title:categoryTitle, id, description: "", image: "/img/default.jpg", slug, brandLogo: "/img/brand_Default.png", brandUrl: " "}
     data.categories.push(categoryObject)
 
     const services = category.properties.find(property => property.key.value == "services").value.elements;
