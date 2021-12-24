@@ -161,7 +161,8 @@ const UpdateRemote = async (parsedData) => {
     var equal = isEqual(services, remoteObject)
 
     if(!equal){
-      var serviceBuffer = Buffer.from(YAML.stringify(services, null, 1))
+      var string = "---\n" + YAML.stringify(services, null, 1) +"\n---";
+      var serviceBuffer = Buffer.from(string)
       await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
         owner: 'bjerra',
         repo: 'Neoskin-2.0',
