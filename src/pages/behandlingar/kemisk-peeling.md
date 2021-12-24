@@ -3,7 +3,7 @@ title: Kemisk peeling
 templateKey: category-page
 id: 10
 description: ""
-image: /img/default.jpg
+image: /img/circadia-pensel.jpg
 slug: kemisk-peeling
 brandLogo: /img/brand_Default.png
 brandUrl: " "

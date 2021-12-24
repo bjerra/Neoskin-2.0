@@ -3,8 +3,8 @@ templateKey: category-page
 title: Biologique Recherche
 id: 3
 description: ""
-image: /img/default.jpg
+image: /img/blcrop4.jpg
 slug: biologique-recherche
-brandLogo: /img/brand_Default.png
+brandLogo: /img/logo_BR.png
 brandUrl: " "
 ---
