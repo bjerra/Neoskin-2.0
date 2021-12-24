@@ -68,9 +68,7 @@ const CategoryPageTemplate = ({
             {
               services.map((service) => (
                 <ServiceCard key={service.id} theme={theme} onClick={() => setModal(service.id)} >
-                  {brandLogo &&
-                   <GatsbyImage image={getImage(brandLogo)} alt={""}/>
-                  }     
+                   <GatsbyImage image={getImage(service.brandLogo || brandLogo)} alt={""}/>  
                   <h3>{service.title}</h3>
                 </ServiceCard>
               ))
@@ -146,6 +144,14 @@ export const categoryPageQuery = graphql`
           price
           id
           info    
+          brandLogo {
+            childImageSharp {
+              gatsbyImageData(
+                width: 200
+                placeholder: TRACED_SVG
+              )
+            }
+          } 
         }
       }
     }
