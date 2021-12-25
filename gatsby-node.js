@@ -13,8 +13,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     type Frontmatter {
       services: [ServicesYaml] @link(by: "category", from: "title")
       
-    }   
-   
+    }      
  
   `
   createTypes(typeDefs)

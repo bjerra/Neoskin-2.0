@@ -39,12 +39,12 @@ height: 125px;
 
 
 .gatsby-image-wrapper{
-   width: 100px;
+   width: 75px;
    position: absolute;
    bottom:5px;
    right: 5px;
-   filter: grayscale(100%) opacity(.6);
-   transition: filter .5s ease-in-out ;
+   filter: grayscale(100%) opacity(.5);
+   transition: filter .3s ease-in-out ;
    transition-delay: .1s;
 }
 
@@ -116,9 +116,9 @@ export const ServiceList = styled.ul`
 
 export const Modal = styled.div`
 
-transition: all .001s ease;
+transition: opacity .1s ease;
 transform:  translate(${({ open }) => open ? '0%' : '100%'});   
-transition-delay: ${({ open }) => open ? '0s' : '.15s'};
+transition-delay: ${({ open }) => open ? '.1s' : '.15s'};
 opacity: ${({ open }) => open ? '1' : '0'};  
 background-color: #b2c9d6cc;
 z-index: 100;
@@ -132,10 +132,11 @@ justify-content: center;
 align-items: center;
 
  .content{
+  position: relative;
   width: 100%;
   padding-top: 1rem;
-  transform:  translateY(${({ open }) => open ? '0%' : '100%'});  
-  transition: transform .2s ease;
+  opacity: ${({ open }) => open ? '1' : '0'};  
+  transition: opacity .25s ease;
   transition-delay: ${({ open }) => open ? '.1s' : '0s'};
   max-height: 80%;
   height: fit-content;
@@ -174,8 +175,6 @@ align-items: center;
 
  .footer{
   background-color: ${({ theme }) => theme.COLOR.INFO};
-  border-top: 1px solid ${({ theme }) => theme.COLOR.DARK};
-  border-bottom: 1px solid ${({ theme }) => theme.COLOR.DARK};
   padding: 1rem 0;
   margin-bottom: 1rem;
   display: flex;
