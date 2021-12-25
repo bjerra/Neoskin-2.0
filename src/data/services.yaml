@@ -5,7 +5,6 @@
   time: 2700
   slug: cold-plasma-rek-1400--1364773
   category: KAMPANJ
-  brand: /img/logo.png
   info: "En behaglig behandling som öppnar upp hudens kanaler och förbättrar
     upptaget av aktiva ingredienser. Den reducerar fina linjer och rynkor, ger
     en allmän revitaliserande, återfuktande och lystergivande effekt.\r
@@ -31,7 +30,6 @@
   title: Plasmalift ögonlockslyft ORD.4500
   price: 2500
   time: 4500
-  
   slug: plasmalift-ögonlockslyft-ord4500-1364784
   category: KAMPANJ
   info: "VAD GÖR BEHANDLINGEN?\r
@@ -81,7 +79,6 @@
   title: Plasmalift ögonlockslyft över & under ögonen. ORD.5950
   price: 4500
   time: 5400
-  
   slug: plasmalift-ögonlockslyft-över-&-under-ögonen-ord5950-1364785
   category: KAMPANJ
   info: "VAD GÖR BEHANDLINGEN?\r
@@ -131,7 +128,6 @@
   title: Öppen tid 30min. Pris från
   price: 500
   time: 1800
-  
   slug: öppen-tid-30min-pris-från-1629009
   category: Skräddarsytt & Abonnemang
   info: "För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
@@ -145,7 +141,6 @@
   title: Öppen tid 45min. Pris från
   price: 950
   time: 2700
-  
   slug: öppen-tid-45min-pris-från-1628692
   category: Skräddarsytt & Abonnemang
   info: "För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
@@ -157,7 +152,6 @@
   title: Öppen tid 60min. Pris från
   price: 1200
   time: 3600
-  
   slug: öppen-tid-60min-pris-från-1628693
   category: Skräddarsytt & Abonnemang
   info: "För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
@@ -169,7 +163,6 @@
   title: Öppen tid 75min. Pris från
   price: 1500
   time: 4500
-  
   slug: öppen-tid-75min-pris-från-1628694
   category: Skräddarsytt & Abonnemang
   info: "För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
@@ -181,7 +174,6 @@
   title: Öppen tid 90min. Pris från
   price: 1950
   time: 5400
-  
   slug: öppen-tid-90min-pris-från-1628695
   category: Skräddarsytt & Abonnemang
   info: "För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
@@ -193,7 +185,6 @@
   title: Öppen tid 120min Superlyx
   price: 2950
   time: 7200
-  
   slug: öppen-tid-120min-superlyx-1629010
   category: Skräddarsytt & Abonnemang
   info: "För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
@@ -207,7 +198,6 @@
   title: Celluma PRO LED Panel x10
   price: 6990
   time: 1800
-  
   slug: celluma-pro-led-panel-x10-1379356
   category: Skräddarsytt & Abonnemang
   info: "VAD GÖR BEHANDLINGEN?\r
@@ -261,7 +251,6 @@
   title: Soin Booster VIP O2
   price: 1950
   time: 3600
-  
   slug: soin-booster-vip-o2-1629249
   category: Biologique Recherche
   info: "Bubblar, sprakar och syresätter huden till nytt liv! \r
@@ -289,7 +278,6 @@
   title: "Soin Booster Lissant "
   price: 1950
   time: 3600
-  
   slug: soin-booster-lissant--1629248
   category: Biologique Recherche
   info: "En reparerande fuktboost med bidrottninggelé, hyaluronsyra, mjölksyra,
@@ -312,7 +300,6 @@
   title: B.R Methodology (Utan booster)
   price: 1450
   time: 2700
-  
   slug: br-methodology-utan-booster-1522922
   category: Biologique Recherche
   info: "En något förenklad indroduktionsbehandling till Biologique Recherche för
@@ -333,7 +320,6 @@
   title: "Biologique Recherche: Tillägg 1 booster"
   price: 500
   time: 900
-  brand: /img/img/logo_BR.png
   slug: biologique-recherche-tillägg-1-booster-1522923
   category: Tilläggstänster
   info: "Tillägg en eller fler Boosters i din Biologique Recherche
@@ -355,7 +341,6 @@
   title: "Biologique Recherche: Tillägg 2 boosters "
   price: 1000
   time: 1800
-  brand: /img/logo_BR.png
   slug: biologique-recherche-tillägg-2-boosters--1522924
   category: Tilläggstänster
   info: "Har du bokat en 60 min Biologique Recherche Ansiktsbehandling blir ett
@@ -388,7 +373,6 @@
   title: "Biologique Recherche: Tillägg 3 boosters"
   price: 1500
   time: 3600
-  brand: /img/logo_BR.png
   slug: biologique-recherche-tillägg-3-boosters-1522925
   category: Tilläggstänster
   info: "Har du bokat en 60 min Biologique Recherche Ansiktsbehandling blir ett
@@ -419,7 +403,6 @@
   title: "Biologique Recherche: Tillägg ultraljudsrengöring"
   price: 0
   time: 900
-  brand: /img/logo_BR.png
   slug: biologique-recherche-tillägg-ultraljudsrengöring-1629269
   category: Tilläggstänster
   info: "I Biologique Recherche behandlingarna kan du kostnadsfritt välja att
@@ -442,7 +425,6 @@
   title: "Dermapen 4: Tillägg über Pro Peeling"
   price: 500
   time: 900
-  
   slug: dermapen-4-tillägg-über-pro-peeling-1618453
   category: Tilläggstänster
   info: ""
@@ -450,7 +432,6 @@
   title: "Dermapen 4: Tillägg PRX-T33"
   price: 1000
   time: 900
-  
   slug: dermapen-4-tillägg-prx-t33-1618454
   category: Tilläggstänster
   info: ""
@@ -458,7 +439,6 @@
   title: "Dermapen 4: Tillägg Hals"
   price: 500
   time: 60
-  
   slug: dermapen-4-tillägg-hals-1618450
   category: Tilläggstänster
   info: ""
@@ -466,7 +446,6 @@
   title: "Dermapen 4: Tillägg Hals & Dekolletage"
   price: 900
   time: 900
-  
   slug: dermapen-4-tillägg-hals-&-dekolletage-1618451
   category: Tilläggstänster
   info: ""
@@ -474,7 +453,6 @@
   title: Tillägg Ansiktsmassage
   price: 500
   time: 1800
-  
   slug: tillägg-ansiktsmassage-1674218
   category: Tilläggstänster
   info: ""
@@ -482,7 +460,6 @@
   title: Oxygen RX
   price: 1250
   time: 2700
-  
   slug: oxygen-rx-1522926
   category: Circadia
   info: "Oxygen Rx är en unik behandling där rent syre aktiveras på huden. I denna
@@ -514,7 +491,6 @@
   title: Oxygen RX Mini
   price: 950
   time: 1800
-  
   slug: oxygen-rx-mini-1629270
   category: Circadia
   info: "Oxygen Rx är en unik behandling där rent syre aktiveras på huden. I denna
@@ -546,7 +522,6 @@
   title: Oxygen RX Maxi
   price: 1595
   time: 3600
-  
   slug: oxygen-rx-maxi-1629271
   category: Circadia
   info: "Oxygen Rx är en unik behandling där rent syre aktiveras på huden. I denna
@@ -626,7 +601,6 @@
   title: Retinol peel
   price: 950
   time: 1800
-  
   slug: retinol-peel-1281443
   category: Circadia
   info: "Innehåller 2,5 % ren retinol och kan användas i de flesta
@@ -674,7 +648,6 @@
   title: Ultraljudsrengöring +
   price: 750
   time: 2400
-  
   slug: ultraljudsrengöring--1564800
   category: Circadia
   info: "“Kläm aldrig i onödan!” Var bland det första vi fick lära oss i skolan i
@@ -690,7 +663,6 @@
   title: Fokus
   price: 1150
   time: 2700
-  
   slug: fokus-1618530
   category: Circadia
   info: "En skräddarsydd behandling där vi väljer fokus att jobba på. Det kan vara
@@ -701,7 +673,6 @@
   title: Hudterapeutens val
   price: 1690
   time: 4500
-  
   slug: hudterapeutens-val-1564798
   category: Circadia
   info: "En skräddarsydd behandling där vi har goda förutsättningar till att skapa
@@ -711,7 +682,6 @@
   title: Mästarens val
   price: 2150
   time: 5400
-  
   slug: mästarens-val-1564799
   category: Circadia
   info: "En skräddarsydd behandling där vi har bästa förutsättningar till att
@@ -722,7 +692,6 @@
   title: Dermaplane PRO & Ultraljudsrengöring
   price: 1450
   time: 2700
-  
   slug: dermaplane-pro-&-ultraljudsrengöring-1564764
   category: Dermaplanning
   info: "Dermaplanning utförs av speciellt utbildad hudterapeut med en särskild
@@ -747,7 +716,6 @@
   title: Dermaplane PRO Mini
   price: 990
   time: 1800
-  
   slug: dermaplane-pro-mini-1629272
   category: Dermaplanning
   info: "Dermaplanning utförs av speciellt utbildad hudterapeut med en särskild
@@ -771,7 +739,6 @@
   title: Dermaplane PRO Maxi
   price: 2150
   time: 5400
-  
   slug: dermaplane-pro-maxi-1522929
   category: Dermaplanning
   info: "Dermaplanning utförs av speciellt utbildad hudterapeut med en särskild
@@ -795,7 +762,6 @@
   title: DermaFirming
   price: 1750
   time: 3600
-  
   slug: dermafirming-1362854
   category: Dermaplanning
   info: "Dermaplanning utförs av speciellt utbildad hudterapeut med en särskild
@@ -824,7 +790,6 @@
   title: Avlägsna godartad hudförändring (1-2 små fläckar). Ett återbesök ingår.
   price: 600
   time: 600
-  
   slug: avlägsna-godartad-hudförändring-1-2-små-fläckar-ett-återbesök-ingår-1629229
   category: Avlägsna Fläckar/Fibrom/Kärl/Xantelasma
   info: "VAD GÖR BEHANDLINGEN?\r
@@ -862,7 +827,6 @@
   title: Avlägsna godartade hudförändringar. Pris från
   price: 900
   time: 600
-  
   slug: avlägsna-godartade-hudförändringar-pris-från-1629230
   category: Avlägsna Fläckar/Fibrom/Kärl/Xantelasma
   info: Har du stora eller mer än 5-7 fläckar brukar det ta mer än 10min, då
@@ -874,7 +838,6 @@
   title: Avlägsna många och/eller stora godartade hudförändringar
   price: 3500
   time: 3600
-  
   slug: avlägsna-många-ocheller-stora-godartade-hudförändringar-1629231
   category: Avlägsna Fläckar/Fibrom/Kärl/Xantelasma
   info: ""
@@ -882,7 +845,6 @@
   title: Avlägsna Xantelasma enstaka punkter. Ett återbesök ingår.
   price: 1200
   time: 900
-  
   slug: avlägsna-xantelasma-enstaka-punkter-ett-återbesök-ingår-1629232
   category: Avlägsna Fläckar/Fibrom/Kärl/Xantelasma
   info: ""
@@ -890,7 +852,6 @@
   title: Avlägsna Xantelasma större ansamling. Ett återbesök ingår.
   price: 1700
   time: 2700
-  
   slug: avlägsna-xantelasma-större-ansamling-ett-återbesök-ingår-1629233
   category: Avlägsna Fläckar/Fibrom/Kärl/Xantelasma
   info: ""
@@ -898,7 +859,6 @@
   title: Plasmalift öra
   price: 2450
   time: 2700
-  
   slug: plasmalift-öra-1364889
   category: Plasmapen Plaxel+ Senaste tekniken med eller utan prickar
   info: "VAD GÖR BEHANDLINGEN?\r
@@ -937,7 +897,6 @@
   title: Plasmalift Pusslinjer
   price: 2450
   time: 2700
-  
   slug: plasmalift-pusslinjer-1364786
   category: Plasmapen Plaxel+ Senaste tekniken med eller utan prickar
   info: "VAD GÖR BEHANDLINGEN?\r
@@ -975,7 +934,6 @@
   title: Plasmalift ledsen navel
   price: 7450
   time: 7200
-  
   slug: plasmalift-ledsen-navel-1364787
   category: Plasmapen Plaxel+ Senaste tekniken med eller utan prickar
   info: "VAD GÖR BEHANDLINGEN?\r
@@ -1013,7 +971,6 @@
   title: Dermapen 4 Parti
   price: 1650
   time: 2400
-  
   slug: dermapen-4-parti-1618452
   category: Dermapen 4
   info: ""
@@ -1021,7 +978,6 @@
   title: Dermapen 4 Ansikte
   price: 2250
   time: 3000
-  
   slug: dermapen-4-ansikte-1618449
   category: Dermapen 4
   info: ""
@@ -1029,7 +985,6 @@
   title: Über PRO peeling
   price: 950
   time: 2700
-  
   slug: über-pro-peeling-1629008
   category: Kemisk peeling
   info: ""
@@ -1037,7 +992,6 @@
   title: PRX-T33 Ansikte
   price: 1990
   time: 1800
-  
   slug: prx-t33-ansikte-1364895
   category: Kemisk peeling
   info: "VAD GÖR BEHANDLINGEN?\r
@@ -1068,7 +1022,6 @@
   title: PRX-T33 Ansikte & Hals
   price: 2490
   time: 2700
-  
   slug: prx-t33-ansikte-&-hals-1364896
   category: Kemisk peeling
   info: "VAD GÖR BEHANDLINGEN?\r
@@ -1099,7 +1052,6 @@
   title: PRX-T33 Ansikte, Hals & Decolletage
   price: 3490
   time: 2700
-  
   slug: prx-t33-ansikte-hals-&-decolletage-1364897
   category: Kemisk peeling
   info: "VAD GÖR BEHANDLINGEN?\r
@@ -1130,7 +1082,6 @@
   title: MandeliClear peel inkl. Vitamin A accelerator (1 lager)
   price: 1650
   time: 1800
-  
   slug: mandeliclear-peel-inkl-vitamin-a-accelerator-1-lager-1618411
   category: Kemisk peeling
   info: ""
@@ -1138,7 +1089,6 @@
   title: Dermafrost (1 lager)
   price: 1250
   time: 1800
-  
   slug: dermafrost-1-lager-1629273
   category: Kemisk peeling
   info: ""
@@ -1146,7 +1096,6 @@
   title: Jessners peel - originalet (1 lager)
   price: 1650
   time: 1800
-  
   slug: jessners-peel-originalet-1-lager-1522938
   category: Kemisk peeling
   info: En klassisk kombination av 14% salicylsyra, 14% mjölksyra och 14%
@@ -1158,7 +1107,6 @@
   title: Soft TCA 20% + Mjölksyra och Kojic acid
   price: 2490
   time: 1800
-  
   slug: soft-tca-20-mjölksyra-och-kojic-acid-1364893
   category: Kemisk peeling
   info: "VAD GÖR BEHANDLINGEN?\r
@@ -1190,7 +1138,6 @@
   title: Yumi Brows
   price: 600
   time: 2700
-  
   slug: yumi-brows-1364914
   category: Ögon-Blick
   info: "VAD GÖR BEHANDLINGEN?\r
@@ -1217,7 +1164,6 @@
   title: Yumi Lashes
   price: 1000
   time: 4500
-  
   slug: yumi-lashes-1364915
   category: Ögon-Blick
   info: "VAD GÖR BEHANDLINGEN?\r
@@ -1242,7 +1188,6 @@
   title: Yumi Total Makeover
   price: 1500
   time: 5400
-  
   slug: yumi-total-makeover-1364916
   category: Ögon-Blick
   info: "VAD GÖR BEHANDLINGEN?\r
@@ -1276,7 +1221,6 @@
   title: Brynform
   price: 250
   time: 900
-  
   slug: brynform-1364909
   category: Ögon-Blick
   info: "VAD GÖR BEHANDLINGEN?\r
@@ -1298,7 +1242,6 @@
   title: Brynform & Färg
   price: 300
   time: 1200
-  
   slug: brynform-&-färg-1364910
   category: Ögon-Blick
   info: "VAD GÖR BEHANDLINGEN?\r
@@ -1321,7 +1264,6 @@
   title: Fransfärg
   price: 300
   time: 1200
-  
   slug: fransfärg-1364912
   category: Ögon-Blick
   info: "VAD GÖR BEHANDLINGEN?\r
@@ -1349,7 +1291,6 @@
   title: Fransfärg & Formning av bryn
   price: 350
   time: 1500
-  
   slug: fransfärg-&-formning-av-bryn-1364913
   category: Ögon-Blick
   info: "VAD GÖR BEHANDLINGEN?\r
@@ -1376,7 +1317,6 @@
   title: Frans-Brynfärg & Formning
   price: 450
   time: 1800
-  
   slug: frans-brynfärg-&-formning-1364911
   category: Ögon-Blick
   info: "VAD GÖR BEHANDLINGEN?\r
@@ -1403,7 +1343,6 @@
   title: "Köp av produkter/presentkort "
   price: 0
   time: 900
-  
   slug: köp-av-produkterpresentkort--1180811
   category: Konsultationer
   info: ""
@@ -1411,7 +1350,6 @@
   title: Hudvårdskonsultation
   price: 450
   time: 1800
-  
   slug: hudvårdskonsultation-1379572
   category: Konsultationer
   info: "Vid konsultationstillfället har du möjlighet att dra av 450 kr på köp av
@@ -1425,7 +1363,8 @@
   title: Återbesök
   price: 0
   time: 1200
-  
   slug: återbesök-1180812
   category: Konsultationer
   info: ""
+
+---
