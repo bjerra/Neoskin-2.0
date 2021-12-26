@@ -135,7 +135,8 @@ const UpdateRemote = async (parsedData) => {
      }
 
     for(const item of newCategoryData) {
-        var buffer = Buffer.from(YAML.stringify(item.data, null, 1)).toString("base64")
+        var string = "---\n" + YAML.stringify(item.data, null, 1) +"\n---";
+        var buffer = Buffer.from(string).toString("base64")
       
         await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
           owner: 'bjerra',
@@ -161,7 +162,7 @@ const UpdateRemote = async (parsedData) => {
     var equal = isEqual(services, remoteObject)
 
     if(!equal){
-      var string = "---\n" + YAML.stringify(services, null, 1) +"\n---";
+      var string = YAML.stringify(services, null, 1);
       var serviceBuffer = Buffer.from(string)
       await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
         owner: 'bjerra',
