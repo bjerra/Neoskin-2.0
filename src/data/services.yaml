@@ -5,7 +5,6 @@
   time: 2700
   slug: cold-plasma-rek-1400--1364773
   category: KAMPANJ
-  brand: /img/logo.png
   info: "En behaglig behandling som öppnar upp hudens kanaler och förbättrar
     upptaget av aktiva ingredienser. Den reducerar fina linjer och rynkor, ger
     en allmän revitaliserande, återfuktande och lystergivande effekt.\r
@@ -333,7 +332,6 @@
   title: "Biologique Recherche: Tillägg 1 booster"
   price: 500
   time: 900
-  brand: /img/img/logo_BR.png
   slug: biologique-recherche-tillägg-1-booster-1522923
   category: Tilläggstänster
   info: "Tillägg en eller fler Boosters i din Biologique Recherche
@@ -355,7 +353,6 @@
   title: "Biologique Recherche: Tillägg 2 boosters "
   price: 1000
   time: 1800
-  brand: /img/logo_BR.png
   slug: biologique-recherche-tillägg-2-boosters--1522924
   category: Tilläggstänster
   info: "Har du bokat en 60 min Biologique Recherche Ansiktsbehandling blir ett
@@ -388,7 +385,6 @@
   title: "Biologique Recherche: Tillägg 3 boosters"
   price: 1500
   time: 3600
-  brand: /img/logo_BR.png
   slug: biologique-recherche-tillägg-3-boosters-1522925
   category: Tilläggstänster
   info: "Har du bokat en 60 min Biologique Recherche Ansiktsbehandling blir ett
@@ -419,7 +415,6 @@
   title: "Biologique Recherche: Tillägg ultraljudsrengöring"
   price: 0
   time: 900
-  brand: /img/logo_BR.png
   slug: biologique-recherche-tillägg-ultraljudsrengöring-1629269
   category: Tilläggstänster
   info: "I Biologique Recherche behandlingarna kan du kostnadsfritt välja att

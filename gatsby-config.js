@@ -65,6 +65,7 @@ module.exports = {
         name: 'data',
       },
     },
+    `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-plugin-netlify-cms-paths`,
       options: {
@@ -74,8 +75,6 @@ module.exports = {
     `gatsby-plugin-image`,
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
-    `gatsby-transformer-yaml`,
-  
     {
       resolve: 'gatsby-transformer-remark',
       options: {
