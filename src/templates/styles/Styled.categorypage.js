@@ -117,7 +117,7 @@ export const ServiceList = styled.ul`
 
 export const Modal = styled.div`
 
-transition: opacity .1s ease;
+transition: opacity .01s ease;
 transform:  translate(${({ open }) => open ? '0%' : '100%'});   
 transition-delay: ${({ open }) => open ? '0' : '.15s'};
 opacity: ${({ open }) => open ? '1' : '0'};  
@@ -137,8 +137,8 @@ align-items: center;
   width: 100%;
   padding-top: 1rem;
   opacity: ${({ open }) => open ? '1' : '0'};  
-  transition: opacity .25s ease;
-  transition-delay: ${({ open }) => open ? '.1s' : '0s'};
+  transition: opacity .1s ease;
+  transition-delay: ${({ open }) => open ? '0s' : '0s'};
   max-height: 80%;
   height: fit-content;
   flex-direction: column;
