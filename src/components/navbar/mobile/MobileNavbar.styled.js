@@ -3,7 +3,7 @@ import styled from "@emotion/styled"
 export const StyledMobile = styled.nav`
    
     overflow: hidden;
-    background: ${({ theme }) => theme.COLOR.BACKGROUND};
+    background: ${({ theme }) => theme.COLOR.LIGHT};
     color: ${({ theme }) => theme.COLOR.MENU_TEXT};
     z-index: 100;
     position: fixed;

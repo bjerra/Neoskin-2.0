@@ -184,7 +184,7 @@ align-items: center;
    width: 100%;
   
    a{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
    }
  
  }
@@ -196,6 +196,7 @@ align-items: center;
     }
    display: flex;
    flex-direction: column;
+   color: ${({ theme }) => theme.COLOR.LIGHT};
 
  }
 

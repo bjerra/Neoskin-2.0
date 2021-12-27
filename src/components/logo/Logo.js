@@ -19,7 +19,7 @@ const Logo = ({size}) => {
 
   return (   
     <StyledLogo theme={theme} size={size} to="/" title="Logo" >
-        <StaticImage src="../../img/logo.png" alt="Logo" placeholder="blurred"/>
+        <StaticImage src="../../img/logo_Dark.png" alt="Logo" placeholder="blurred"/>
     </StyledLogo>
   )
 }

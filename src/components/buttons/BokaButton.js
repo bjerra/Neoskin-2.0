@@ -14,6 +14,19 @@ export const StyledButton = styled.a`
     text-decoration: none;
     border-radius: ${({ large }) => large ? '30' : '20' }px;
     font-size:  ${({ size }) => size ? size : '1.25rem' };
+
+    animation:bg-change 10s infinite;
+    animation-timing-function: ease-in-out;
+
+    @keyframes bg-change {
+    0%, 100% {
+        filter:grayscale(0%);
+    }
+    50% {
+        filter:grayscale(10%);
+    }
+    }
+
 `
 
 const Button = ({ url, slug, size, large }) => (
