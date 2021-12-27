@@ -53,7 +53,8 @@ collections:
           fields:
             [
               {label: "Header", name: "header", widget: "string"},
-              {label: "Images", name: "images", widget: list, fields: [{label: Image, name: image, widget: image}]},
+              {label: "Image", name: "image", widget: image},
+              {label: "Image2", name: "image2", widget: image}
               {label: "Body", name: "body", widget: "markdown"}, 
             ]
         }
