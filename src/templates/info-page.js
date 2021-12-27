@@ -16,12 +16,11 @@ const InfoPageTemplate = ({ title, image, content, contentComponent }) => {
 
             </Banner>
          
-            <Body>
+            <Body theme={theme}>
               <h1>
                   {title}
               </h1>  
                 <div className="inner">   
-              
                    <PageContent content={content} />
                 </div>  
             </Body>
