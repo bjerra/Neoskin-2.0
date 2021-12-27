@@ -52,8 +52,8 @@ collections:
           widget: list,
           fields:
             [
-              {label: "Header", name: "header", widget: "string"}
-              {label: "Images", name: "images", widget: list, fields: [{label: Image, name: image, widget: image}]}
+              {label: "Header", name: "header", widget: "string"},
+              {label: "Images", name: "images", widget: list, fields: [{label: Image, name: image, widget: image}]},
               {label: "Body", name: "body", widget: "markdown"}, 
             ]
         }
