@@ -54,8 +54,8 @@ collections:
             [
               {label: "Header", name: "header", widget: "string"},
               {label: "Image", name: "image", widget: image},
-              {label: "Image2", name: "image2", widget: image}
-              {label: "Body", name: "body", widget: "markdown"}, 
+              {label: "Image2", name: "image2", widget: image},
+              {label: "Body", name: "body", widget: "markdown"}
             ]
         }
  
