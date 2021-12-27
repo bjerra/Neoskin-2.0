@@ -2,15 +2,6 @@
 templateKey: info-page
 title: Biologique Recherche
 image: /img/blcrop5.jpg
-sections:
-  - header: Historik
-    body: >-
-      40 ÅR AV PASSION… 
-
-
-      Märket grundades för över 40 år sedan av Yvan och Josette Allouche i Paris. Paret kombinerade deras kunskaper som biolog och sjukgymnast för att skapa något som saknades och efterfrågades på marknaden: resultatinriktad hudvård. De skapade hudvård i ett helhetstänk med innovativa, högkoncentrerade, rena och kallpressade råvaror som kombineras med resultatinriktade, metikulösa massagetekniker som dränerar och stramar upp huden.  Produkterna framställs och utvecklas än idag i deras egna laboratorium i Paris och skickas sedan ut över hela världen – till över 75 länder. Biologique Recherche behåller samma vision som i början efter alla år: att erbjuda de bästa produkterna och behandlingarna till varje individ med en skräddarsydd metodik på “haute couture” nivå tack vare hudterapeutens expertis och handlag för att uppnå synliga och långvariga resultat för alla skin instants©. I början av 2000-talet tog sonen Philippe över den kreativa-innoverande sidan av verksamheten efter sin far Yvan. Med ett tidigt intresse för föräldrarnas annorlunda synsätt på huden och hans egna kunskap som läkare gav det Philippe en holistisk syn på huden som han tar hänsyn till i Biologique Recherche’s speciellt utformade produkter och tekniker som numera kan konkurrera mot injektionsbehandlingar eller invasiva procedurer.  Ambassade de la Beauté – Biologique Recherche’s ursprungliga skönhetsinstitut och flaggskepp ligger på den prestigefyllda 32 Avenue des Champs-Elysées i Paris.
-    image: /img/ambassade-biologique-recherche-paris.jpg
-    image2: /img/logo_BR.png
 ---
 ### Historik
 
