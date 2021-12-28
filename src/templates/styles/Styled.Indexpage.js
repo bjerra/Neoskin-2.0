@@ -12,6 +12,23 @@ section {
     left: 0;
     right: 0;
     display: flex;
+
+    .gatsby-image-wrapper {
+        margin: auto;
+        width: 15rem; 
+
+       
+   }
+
+   @media screen and (min-width: ${({ theme }) => theme.BREAKPOINTS.DESKTOP}) {
+
+    top: 10rem;
+    .gatsby-image-wrapper {
+        width: 25rem; 
+   }
+   
+}
+    
 }
 `
 

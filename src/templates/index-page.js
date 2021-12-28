@@ -5,6 +5,7 @@ import { useTheme  } from '@emotion/react'
 import Content, { HTMLContent } from '../components/Content'
 import { Wrapper,Intro} from './styles/Styled.Indexpage'
 import {Banner, Logo, Layout, BokaButton} from '../components'
+import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPageTemplate = ({
   image,
@@ -23,7 +24,7 @@ const IndexPageTemplate = ({
         }
     </Banner>
     <div className='logo'>
-    <Logo size={15}/> 
+    <StaticImage src="../img/logo.png" alt="Logo" placeholder="blurred"/>
     </div>
       
     <div className='body'>
