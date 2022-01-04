@@ -1,128 +1,3 @@
-- id: 1364773
-  title: Cold plasma Rek 1400:-
-  price: 990
-  time: 2700
-  slug: cold-plasma-rek-1400--1364773
-  category: KAMPANJ
-  info: "En behaglig behandling som öppnar upp hudens kanaler och förbättrar
-    upptaget av aktiva ingredienser. Den reducerar fina linjer och rynkor, ger
-    en allmän revitaliserande, återfuktande och lystergivande effekt.\r
-
-    \r
-
-    Behandlingen börjar med rengöring, peeling och Cold plasma
-    keramikmunstycket som är en helt ny och unik teknik för Plaxel+. Cold
-    plasman jobbas över hela ansiktet men kan även användas på hals, dekolletage
-    och övriga kroppsdelar.\r
-
-    Behandlingen fortsätter med lift & tight serum från Dermapro medical
-    innan avslutande mask och kräm från Circadia.\r
-
-    \r
-
-    Behandlingen passar alla hudtyper och årstider,  den ger inga oönskade
-    sidoeffekter och kan med fördel läggas till som en booster i din BR
-    behandling där den öppnar upp kanaler i huden på ett skonsamt och smärtfritt
-    sätt som förbereder inför applicering av din cocktail av sérums
-    authentiques, krämer, masker och avslutningsserum.\r\n"
-- id: 1364784
-  title: Plasmalift ögonlockslyft ORD.4500
-  price: 2500
-  time: 4500
-  slug: plasmalift-ögonlockslyft-ord4500-1364784
-  category: KAMPANJ
-  info: "VAD GÖR BEHANDLINGEN?\r
-
-    \r
-
-    Behandlar hängande ögonlock till snarlika resultat med kirugiska
-    ingrepp.\r
-
-    Vi kan även förbättra kråksparkar och andra rynkor i ögonområdet i samma
-    behandling.\r
-
-    \r
-
-    VAD INGÅR I BEHANDLINGEN?\r
-
-    \r
-
-    1)- Konsultation: vi går igenom önskemål och medicinsk bakgrund.
-    Beroende på omfattning kan det behövas upp till 3 behandlingar med ca 3
-    månaders mellanrum, du får veta vad jag uppskattar behövs i ditt fall samt
-    om du är en lämplig kandidat till denna behandling. Vi behandlar inte alla
-    typer av hängande ögonlock utan bara dem som kan bli riktigt bra. Behöver Du
-    tänka på att göra ett kirurgiskt ögonlockslyft istället får du veta det på
-    konsultationen.\r
-
-    \r
-
-    Vi tar “före-bilder” och du får ett anpassat prisförslag. \r
-
-    \r
-
-    OBS: Konsultationen bokas FÖRST under kategorin “Konsultationer”. Har du
-    redan gått på din konsultation kan du gå vidare med denna bokning.\r
-
-    \r
-
-    2)- Behandling: Bedövning ingår alltid. Efter behandlingen får en burk
-    ögonkräm kräm att använda på natten tills skorporna fallit av.\r
-
-    \r
-
-    3)- Återbesök: Bokas ca 12 veckor efter behandlingen för att ta
-    “efter-bilder” och jämföra resultatet. Inga bilder läggs upp någonstans utan
-    ditt godkännande. Bilderna är först och främst till för Dig.\r\n"
-- id: 1364785
-  title: Plasmalift ögonlockslyft över & under ögonen. ORD.5950
-  price: 4500
-  time: 5400
-  slug: plasmalift-ögonlockslyft-över-&-under-ögonen-ord5950-1364785
-  category: KAMPANJ
-  info: "VAD GÖR BEHANDLINGEN?\r
-
-    \r
-
-    Behandlar hängande ögonlock till snarlika resultat med kirugiska
-    ingrepp.\r
-
-    Vi kan förbättra assymetri vid ögonområdet, påsar under ögonen,
-    kråksparkar och andra rynkor.\r
-
-    \r
-
-    VAD INGÅR I BEHANDLINGEN?\r
-
-    \r
-
-    1)- Konsultation: vi går igenom önskemål och medicinsk bakgrund.
-    Beroende på omfattning kan det behövas upp till 3 behandlingar med ca 3
-    månaders mellanrum, du får veta vad jag uppskattar behövs i ditt fall samt
-    om du är en lämplig kandidat till denna behandling. Vi behandlar inte alla
-    typer av hängande ögonlock eller påsar under ögonen, utan bara dem som kan
-    bli riktigt bra. Behöver Du tänka på att göra ett kirurgiskt ingrepp
-    istället får du veta det på konsultationen.\r
-
-    \r
-
-    Vi tar “före-bilder” och du får ett anpassat prisförslag. \r
-
-    \r
-
-    OBS: Konsultationen bokas FÖRST under kategorin “Konsultationer”. Har du
-    redan gått på din konsultation kan du gå vidare med denna bokning.\r
-
-    \r
-
-    2)- Behandling: Bedövning ingår alltid. Efter behandlingen får en burk
-    ögonkräm kräm att använda på natten tills skorporna fallit av.\r
-
-    \r
-
-    3)- Återbesök: Bokas ca 12 veckor efter behandlingen för att ta
-    “efter-bilder” och jämföra resultatet. Inga bilder läggs upp någonstans utan
-    ditt godkännande. Bilderna är först och främst till för Dig.\r\n"
 - id: 1629009
   title: Öppen tid 30min. Pris från
   price: 500
@@ -892,6 +767,33 @@
 
     3)- Återbesök: Bokas ca 6-8 veckor efter behandlingen oavsett resultat,
     där tittar jag på läkningen och vi diskuterar nästa steg."
+- id: 1364773
+  title: "Cold plasma "
+  price: 1400
+  time: 2700
+  slug: cold-plasma--1364773
+  category: Plasmapen Plaxel+ Senaste tekniken med eller utan prickar
+  info: "En behaglig behandling som öppnar upp hudens kanaler och förbättrar
+    upptaget av aktiva ingredienser. Den reducerar fina linjer och rynkor, ger
+    en allmän revitaliserande, återfuktande och lystergivande effekt.\r
+
+    \r
+
+    Behandlingen börjar med rengöring, peeling och Cold plasma
+    keramikmunstycket som är en helt ny och unik teknik för Plaxel+. Cold
+    plasman jobbas över hela ansiktet men kan även användas på hals, dekolletage
+    och övriga kroppsdelar.\r
+
+    Behandlingen fortsätter med lift & tight serum från Dermapro medical
+    innan avslutande mask och kräm från Circadia.\r
+
+    \r
+
+    Behandlingen passar alla hudtyper och årstider,  den ger inga oönskade
+    sidoeffekter och kan med fördel läggas till som en booster i din BR
+    behandling där den öppnar upp kanaler i huden på ett skonsamt och smärtfritt
+    sätt som förbereder inför applicering av din cocktail av sérums
+    authentiques, krämer, masker och avslutningsserum.\r\n"
 - id: 1364786
   title: Plasmalift Pusslinjer
   price: 2450
@@ -929,6 +831,104 @@
 
     3)- Återbesök: Bokas ca 6-8 veckor efter behandlingen oavsett resultat,
     där tittar jag på läkningen och vi diskuterar nästa steg."
+- id: 1364784
+  title: "Plasmalift ögonlockslyft "
+  price: 4500
+  time: 4500
+  slug: plasmalift-ögonlockslyft--1364784
+  category: Plasmapen Plaxel+ Senaste tekniken med eller utan prickar
+  info: "VAD GÖR BEHANDLINGEN?\r
+
+    \r
+
+    Behandlar hängande ögonlock till snarlika resultat med kirugiska
+    ingrepp.\r
+
+    Vi kan även förbättra kråksparkar och andra rynkor i ögonområdet i samma
+    behandling.\r
+
+    \r
+
+    VAD INGÅR I BEHANDLINGEN?\r
+
+    \r
+
+    1)- Konsultation: vi går igenom önskemål och medicinsk bakgrund.
+    Beroende på omfattning kan det behövas upp till 3 behandlingar med ca 3
+    månaders mellanrum, du får veta vad jag uppskattar behövs i ditt fall samt
+    om du är en lämplig kandidat till denna behandling. Vi behandlar inte alla
+    typer av hängande ögonlock utan bara dem som kan bli riktigt bra. Behöver Du
+    tänka på att göra ett kirurgiskt ögonlockslyft istället får du veta det på
+    konsultationen.\r
+
+    \r
+
+    Vi tar “före-bilder” och du får ett anpassat prisförslag. \r
+
+    \r
+
+    OBS: Konsultationen bokas FÖRST under kategorin “Konsultationer”. Har du
+    redan gått på din konsultation kan du gå vidare med denna bokning.\r
+
+    \r
+
+    2)- Behandling: Bedövning ingår alltid. Efter behandlingen får en burk
+    ögonkräm kräm att använda på natten tills skorporna fallit av.\r
+
+    \r
+
+    3)- Återbesök: Bokas ca 12 veckor efter behandlingen för att ta
+    “efter-bilder” och jämföra resultatet. Inga bilder läggs upp någonstans utan
+    ditt godkännande. Bilderna är först och främst till för Dig.\r\n"
+- id: 1364785
+  title: "Plasmalift ögonlockslyft över & under ögonen. "
+  price: 5950
+  time: 5400
+  slug: plasmalift-ögonlockslyft-över-&-under-ögonen--1364785
+  category: Plasmapen Plaxel+ Senaste tekniken med eller utan prickar
+  info: "VAD GÖR BEHANDLINGEN?\r
+
+    \r
+
+    Behandlar hängande ögonlock till snarlika resultat med kirugiska
+    ingrepp.\r
+
+    Vi kan förbättra assymetri vid ögonområdet, påsar under ögonen,
+    kråksparkar och andra rynkor.\r
+
+    \r
+
+    VAD INGÅR I BEHANDLINGEN?\r
+
+    \r
+
+    1)- Konsultation: vi går igenom önskemål och medicinsk bakgrund.
+    Beroende på omfattning kan det behövas upp till 3 behandlingar med ca 3
+    månaders mellanrum, du får veta vad jag uppskattar behövs i ditt fall samt
+    om du är en lämplig kandidat till denna behandling. Vi behandlar inte alla
+    typer av hängande ögonlock eller påsar under ögonen, utan bara dem som kan
+    bli riktigt bra. Behöver Du tänka på att göra ett kirurgiskt ingrepp
+    istället får du veta det på konsultationen.\r
+
+    \r
+
+    Vi tar “före-bilder” och du får ett anpassat prisförslag. \r
+
+    \r
+
+    OBS: Konsultationen bokas FÖRST under kategorin “Konsultationer”. Har du
+    redan gått på din konsultation kan du gå vidare med denna bokning.\r
+
+    \r
+
+    2)- Behandling: Bedövning ingår alltid. Efter behandlingen får en burk
+    ögonkräm kräm att använda på natten tills skorporna fallit av.\r
+
+    \r
+
+    3)- Återbesök: Bokas ca 12 veckor efter behandlingen för att ta
+    “efter-bilder” och jämföra resultatet. Inga bilder läggs upp någonstans utan
+    ditt godkännande. Bilderna är först och främst till för Dig.\r\n"
 - id: 1364787
   title: Plasmalift ledsen navel
   price: 7450
