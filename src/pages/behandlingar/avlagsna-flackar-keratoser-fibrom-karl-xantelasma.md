@@ -1,4 +1,5 @@
 ---
+templateKey: category-page
 title: Avlägsna Fläckar/Keratoser/Fibrom/Kärl/Xantelasma
 id: 1
 description: ""

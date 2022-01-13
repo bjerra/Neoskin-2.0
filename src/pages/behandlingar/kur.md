@@ -6,5 +6,5 @@ image: /img/default.jpg
 slug: kur
 brandLogo: /img/brand_Default.png
 brandUrl: " "
-
+templateKey: category-page
 ---

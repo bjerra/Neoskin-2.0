@@ -25,6 +25,7 @@ export default async function handler(req, res) {
      
       const html = await fetchHtml(url);
       const parsedData = await parseData(html);
+    
       await UpdateRemote(parsedData)
       res.status(200).send("Uppdaterat!")
 
@@ -48,33 +49,40 @@ const fetchHtml = async url => {
 
 const parseData = async html => {
 
+  
   const data = {categories:[], services:[]}
 
   const $ = cheerio.load(html,{ normalizeWhitespace: false, xmlMode: false, decodeEntities: true });
   const rawData = esprima.parseScript($('body > script:nth-child(3)').html())
 
   const categories = rawData.body[0].expression.right.properties[0].value.properties.find(p=>p.key.value == "services").value.elements;
-  
+ 
   let id = 0;
+  
   categories.forEach(category => {
+  
     id+= 1;
+   
     const categoryTitle = category.properties.find(property => property.key.value == "name").value.value;
+   
     const slug = stringToSlug(categoryTitle);
 
-    const categoryObject = {title:categoryTitle, id, description: "", image: "/img/default.jpg", slug, brandLogo: "/img/brand_Default.png", brandUrl: " "}
+    const categoryObject = {title:categoryTitle, id, description: "", image: "/img/default.jpg", slug, brandLogo: "/img/brand_Default.png", brandUrl: " ", templateKey: "category-page"}
     data.categories.push(categoryObject)
 
     const services = category.properties.find(property => property.key.value == "services").value.elements;
     services.forEach(service => {
-
+     
       const title = service.properties.find(property => property.key.value == "name").value.value;
+    
       const price = service.properties.find(property => property.key.value == "price").value.value;
       const time = service.properties.find(property => property.key.value == "duration").value.value;
       const id = service.properties.find(property => property.key.value == "id").value.value;   
       const about = service.properties.find(property => property.key.value == "about").value.properties;
-      const description = about.find(property => property.key.value == "description").value.value;
+      const description = about.find(property => property.key.value == "description")?.value?.value;
+    
       const slug = about.find(property => property.key.value == "slug").value.value;
-
+ 
       const serviceObject = {
         id, 
         title, 
@@ -84,11 +92,11 @@ const parseData = async html => {
         category: categoryTitle, 
         info: description
       }
-
+    
       data.services.push(serviceObject);
     })
-  })
 
+  })
   return data;
 }
 
