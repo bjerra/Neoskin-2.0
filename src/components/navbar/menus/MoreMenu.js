@@ -8,7 +8,7 @@ const MoreMenu = () => {
         
        <div className="item">
         
-        <a className="boka" href={'https://www.bokadirekt.se/places/neoskin-33692'} target="_blank" rel="noopener noreferrer">
+        <a className="boka" href={'https://www.bokadirekt.se/places/neoskin-39252'} target="_blank" rel="noopener noreferrer">
         <img id="bd" alt="BokaDirekt" src="https://www.bokadirekt.se/images/logo.svg" ></img>
         </a>  
       </div>

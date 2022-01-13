@@ -10,7 +10,7 @@ const basicAuth = require('basic-auth')
 const axios = require("axios").default;
 var esprima = require('esprima');
 const uppercaseletters = /[A-ZÅÄÖ\s]{5}/;  
-const url = "https://www.bokadirekt.se/places/neoskin-jkpg-33692";
+const url = "https://www.bokadirekt.se/places/neoskin-39252";
 
 export default async function handler(req, res) {
   
