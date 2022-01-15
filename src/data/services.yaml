@@ -1,61 +1,97 @@
-- id: 1630584
-  title: Avlägsna godartad hudförändring (1-2 fläckar). Ett återbesök ingår.
-  price: 600
-  time: 600
-  slug: avlagsna-godartad-hudforandring-1-2-flackar-ett-aterbesok-ingar-1630584
-  category: Avlägsna Fläckar/Keratoser/Fibrom/Kärl/Xantelasma
-  info: >-
-    VAD GÖR BEHANDLINGEN?
-
-
-    Vi bränner bort alla typer av godartade hudförändringar: Fibrom, Skintags, Pigmentfläckar, Syringom, Xantelasma & Angiomer. 
-
-
-    VAD INGÅR I BEHANDLINGEN?
-
-
-    1)- Konsultation: vi går igenom önskemål och medicinsk bakgrund. Vi bestämmer vad som ska tas bort under behandlingen och du får ett anpassat prisförslag. OBS: Konsultationen bokas FÖRST under kategorin “Konsultationer”. Har du varit på konsultationen kan du gå vidare med denna bokning.
-
-
-    2)- Behandling: Bedövning ingår vid behov men används mest om det sitter mycket under ögonen eller om det är stora pigmenteringar som ska behandlas.
-
-
-    3)- Återbesök: Vi tänker säkerhet föst och överbehandlar aldrig, oftast räcker en behandling, men om inte så ingår återbesöket i priset. Återbesök bokas ca 6-8 veckor efter behandlingen oavsett resultat, där tittar jag på läkningen samt utför eventuella korrektioner.
-- id: 1630585
-  title: Avlägsna godartade hudförändringar (2-4 fläckar). Ett återbesök ingår.
-  price: 900
-  time: 300
-  slug: avlagsna-godartade-hudforandringar-2-4-flackar-ett-aterbesok-ingar-1630585
-  category: Avlägsna Fläckar/Keratoser/Fibrom/Kärl/Xantelasma
-  info: null
-- id: 1630586
-  title: Avlägsna många eller stora godartade hudförändringar. Ett återbesök ingår.
-  price: 3500
-  time: 3600
-  slug: avlagsna-manga-eller-stora-godartade-hudforandringar-ett-aterbesok-ingar-1630586
-  category: Avlägsna Fläckar/Keratoser/Fibrom/Kärl/Xantelasma
-  info: null
-- id: 1630587
-  title: Avlägsna Xantelasma enstaka punkter. Ett återbesök ingår.
-  price: 1500
-  time: 900
-  slug: avlagsna-xantelasma-enstaka-punkter-ett-aterbesok-ingar-1630587
-  category: Avlägsna Fläckar/Keratoser/Fibrom/Kärl/Xantelasma
-  info: null
-- id: 1630588
-  title: Avlägsna Xantelasma större ansamling. Ett återbesök ingår.
-  price: 2500
+- id: 1630451
+  title: Öppen tid 30min
+  price: 500
+  time: 1800
+  slug: oppen-tid-30min-1630451
+  category: Skräddarsytt & Abonnemang
+  info: För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
+    anpassad behandling till proffset. Behandlingen utformas efter antal minuter
+    du valt, budget och självklart din huds aktuella tillstånd. Du får en 100%
+    personnaliserad behandling, skapad av vår Auktoriserade, specialiserade
+    hudterapeutmästare Anaïs för just Dig.
+- id: 1630452
+  title: Öppen tid 45min
+  price: 950
   time: 2700
-  slug: avlagsna-xantelasma-storre-ansamling-ett-aterbesok-ingar-1630588
-  category: Avlägsna Fläckar/Keratoser/Fibrom/Kärl/Xantelasma
-  info: null
-- id: 1630589
-  title: Reducering av ytliga blodkärl/kärlbristningar. Ett återbesök ingår
-  price: 750
-  time: 300
-  slug: reducering-av-ytliga-blodkarl-karlbristningar-ett-aterbesok-ingar-1630589
-  category: Avlägsna Fläckar/Keratoser/Fibrom/Kärl/Xantelasma
-  info: null
+  slug: oppen-tid-45min-1630452
+  category: Skräddarsytt & Abonnemang
+  info: För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
+    anpassad behandling till proffset. Behandlingen utformas efter antal minuter
+    du valt, budget och självklart din huds aktuella tillstånd. Du får en 100%
+    personnaliserad behandling, skapad av vår Auktoriserade, specialiserade
+    hudterapeutmästare Anaïs för just Dig.
+- id: 1630453
+  title: Öppen tid 60min
+  price: 1200
+  time: 3600
+  slug: oppen-tid-60min-1630453
+  category: Skräddarsytt & Abonnemang
+  info: För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
+    anpassad behandling till proffset. Behandlingen utformas efter antal minuter
+    du valt, budget och självklart din huds aktuella tillstånd. Du får en 100%
+    personnaliserad behandling, skapad av vår Auktoriserade, specialiserade
+    hudterapeutmästare Anaïs för just Dig.
+- id: 1630456
+  title: Öppen tid 75min
+  price: 1500
+  time: 4500
+  slug: oppen-tid-75min-1630456
+  category: Skräddarsytt & Abonnemang
+  info: För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
+    anpassad behandling till proffset. Behandlingen utformas efter antal minuter
+    du valt, budget och självklart din huds aktuella tillstånd. Du får en 100%
+    personnaliserad behandling, skapad av vår Auktoriserade, specialiserade
+    hudterapeutmästare Anaïs för just Dig.
+- id: 1630457
+  title: Öppen tid 90min
+  price: 1950
+  time: 5400
+  slug: oppen-tid-90min-1630457
+  category: Skräddarsytt & Abonnemang
+  info: För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
+    anpassad behandling till proffset. Behandlingen utformas efter antal minuter
+    du valt, budget och självklart din huds aktuella tillstånd. Du får en 100%
+    personnaliserad behandling, skapad av vår Auktoriserade, specialiserade
+    hudterapeutmästare Anaïs för just Dig.
+- id: 1630458
+  title: Öppen tid 120min
+  price: 2950
+  time: 7200
+  slug: oppen-tid-120min-1630458
+  category: Skräddarsytt & Abonnemang
+  info: För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
+    anpassad behandling till proffset. Behandlingen utformas efter antal minuter
+    du valt, budget och självklart din huds aktuella tillstånd. Du får en 100%
+    personnaliserad behandling, skapad av vår Auktoriserade, specialiserade
+    hudterapeutmästare Anaïs för just Dig.
+- id: 1716528
+  title: Biologique Recherche Signaturbehandling
+  price: 1950
+  time: 3600
+  slug: biologique-recherche-signaturbehandling-1716528
+  category: Biologique Recherche
+  info: >-
+    Behandlingarna bygger på tre faser i sju etapper där du som kund blir
+    omhändertagen av din Auktoriserade hudterapeut och Biologique Recherche
+    expert. 
+
+
+    Upp till 25 olika produkter väljs ut grundat på din skin instant och arbetas in i huden med exakta rörelser och massagetekniker. Vi kan även arbeta med Cold Plasma som tack vare den bio-elektroniska effekten både hjälper att slussa in de aktiva ingredienserna. 
+
+
+    Förutom BR´s egna underbara boosters kan även Dermapen 4, Dermaplane PRO eller Celluma PRO väljas som extra boosters. Din Biologique Recherche Expert väljer i första hand ut den B.R boostern som bäst svarar på behoven av ditt aktuella hudtillstånd, därefter är det upp till dig att tilläga en eller fler boosters om du vill. Du kan läsa mer om alla olika boosters i tilläggstjänsterna om du trycker på "boka-knappen".
+
+
+    FAS 1: ANALYS Djupgående hudanalys som bygger på en fysiologisk, beteendemässig och taktil analysmetod för att förstå kundens skin Instant© och skräddarsy behandlingen och hudvårdsrutinen efter individuella, specifika behov på bästa sätt. 
+
+
+    FAS 2: INITIALISERING Fasen består av tre ofrånkomliga etapper hos Biologique Recherche: Avkoppling med djupsensorisk massage och rengöring av huden. Förberedelse av huden med anpassad mikro-exfolierande Lotion P50 som respekterar hudens syrliga PH värde. Booster och mask som förberedelse och stimulering av huden för bästa förutsättningarna inför behandlingsfasen. 
+
+
+    FAS 3: BEHANDLING Detta är fasen där de mest koncentrerade och komplexa produkterna används för att hjälpa Epidermis att optimera och uttrycka sin förmåga till självförnyelse och läkning. När huden på detta sätt återuppbyggs kommer elasticiteten tillbaka, musklerna återlivas och ansiktet får tillbaka sin naturliga oval och former. Din Auktoriserade hudterapeut applicerar en cocktail av rena “Essentiella serum” som noga väljs utifrån din skin instant och blandas speciellt för Dig under behandlingen. 
+
+
+    Här kan vi bl.a arbeta med Cold Plasma, dermaplanning eller micronålning som extra booster för ytterligare förbättrad effekt. Behandlingen avslutas med utvald komplettering av aktiva ingredienser i specifika krämer och de högst koncentrerade och komplexa avslutningsserumen som binder ihop och lägger grädden på mosen i behandlingen.
 - id: 1630464
   title: B.R Methodology
   price: 1450
@@ -63,51 +99,6 @@
   slug: br-methodology-1630464
   category: Biologique Recherche
   info: B.R Methodology (Utan booster)
-- id: 1692308
-  title: Soin booster Toleskin
-  price: 1950
-  time: 3600
-  slug: soin-booster-toleskin-1692308
-  category: Biologique Recherche
-  info: null
-- id: 1630460
-  title: Soin Booster VIP O2
-  price: 1950
-  time: 3600
-  slug: soin-booster-vip-o2-1630460
-  category: Biologique Recherche
-  info: >-
-    Bubblar, sprakar och syresätter huden till nytt liv! 
-
-
-    Denna behandling tar renhet, lyster  och glow till en ny nivå. 
-
-
-    Som vanligt bjuder BR på en unik behandlingupplevelse. 
-
-    Inleds med akupressurmassage för ansikte, rengöringsrutin med masssagehandske och syresättande massage med VIP O2 Booster. Avslutas med komplett upplevelse med masker och produkter tillhörande hela VIP O2 konceptet. 
-
-
-    Du kan boka vilken BR "Soin" som helst, som du ser är priset alltid 1950:-. Valet av booster är en indikation men märker jag att din hud behöver den ena hellre än den andra säger jag till och vi kan anpassa behandlingen utefter Din hud.
-- id: 1630461
-  title: Soin Lissant
-  price: 1950
-  time: 3600
-  slug: soin-lissant-1630461
-  category: Biologique Recherche
-  info: >-
-    En reparerande fuktboost med bidrottninggelé, hyaluronsyra, mjölksyra,
-    silkextrakt och naturliga aminosyror. De aktiva ingredienserna kombineras
-    med dränerande, formande och pulserande tekniker i en unik massage med
-    Biologique Recherche. Huden får en jämn färg och struktur. Kindbenen blir
-    definierade, ögonen öppnas upp, torrhetslinjer suddas ut och huden får
-    glödande lyster! Du både ser och känner skillnaden efter endast en
-    behandling!
-
-    Soin Lissant passar alla, även den känsligaste huden.
-
-
-    Du kan boka vilken BR "Soin" som helst, som du ser är priset alltid 1950:-. Valet av booster är en indikation men märker jag att din hud behöver den ena hellre än den andra säger jag till och vi kan anpassa behandlingen utefter Din hud.
 - id: 1630465
   title: Tillägg 1 booster
   price: 500
@@ -170,36 +161,13 @@
 
 
     Vill du inte få Dermapen4 i din behandling kan den istället innehålla allt detta
-- id: 1630477
-  title: Fokus
-  price: 1150
-  time: 2700
-  slug: fokus-1630477
-  category: Circadia
-  info: En skräddarsydd behandling där vi väljer fokus att jobba på. Det kan vara
-    fukt, djuprengöring, antiage, lyster... Anaïs jobbar som vanligt med ett
-    kreativt sinne för att uppnå bästa resultat för din hud med Circadias
-    produkter.
-- id: 1630478
-  title: Hudterapeutens val
-  price: 1690
-  time: 4500
-  slug: hudterapeutens-val-1630478
-  category: Circadia
-  info: En skräddarsydd behandling där vi har goda förutsättningar till att skapa
-    bästa resultat för din hud med Circadias produkter. Här kan vi välja in en
-    kemisk peeling eller andra trevliga hud boosters till fast pris.
-- id: 1630479
-  title: Mästarens val
-  price: 2150
-  time: 5400
-  slug: mastarens-val-1630479
-  category: Circadia
-  info: >-
-    En skräddarsydd behandling där vi har bästa förutsättningar till att skapa
-    kreativitet som får flöda fritt! 
-
-    Här kan vi bl.a lägga till dermaplanning och/eller kemisk peeling.
+- id: 1692308
+  title: Soin booster Toleskin
+  price: 1950
+  time: 3600
+  slug: soin-booster-toleskin-1692308
+  category: Biologique Recherche
+  info: null
 - id: 1630469
   title: Oxygen RX
   price: 1250
@@ -224,27 +192,6 @@
 
 
     Har du fått en medicinsk diagnos för rosacea kan vi även använda oss av Cirkadias speciellt utformade rosacea serum.
-- id: 1630471
-  title: Oxygen RX Maxi
-  price: 1595
-  time: 3600
-  slug: oxygen-rx-maxi-1630471
-  category: Circadia
-  info: >-
-    Oxygen Rx är en unik behandling där rent syre aktiveras på huden. I denna
-    process ökar vi näringstillförseln till huden och stimulerar kollagen- och
-    elastinproduktionen.
-
-
-    Syret har antibakteriella, anti-inflammatoriska och rodnadsdämpande egenskaper som lämpar sig perfekt till en aknebenägen hud, rosacea och synliga kärl.
-
-
-    Kontraindikationer - när du inte bör göra behandlingen:
-
-    Allergi mot citronsyra (citron, apelsin, grapefrukt mm)
-
-
-    I denna behandlingen ingår rengöring, Kakao eller Rasperry Enzym Peel och Firming Peptid Mask samt avslutande produkt.
 - id: 1630470
   title: Oxygen RX Mini
   price: 950
@@ -269,43 +216,27 @@
 
 
     Har du fått en medicinsk diagnos för rosacea kan vi även använda oss av Cirkadias speciellt utformade rosacea serum.
-- id: 1630475
-  title: Retinol peel
-  price: 950
-  time: 1800
-  slug: retinol-peel-1630475
+- id: 1630471
+  title: Oxygen RX Maxi
+  price: 1595
+  time: 3600
+  slug: oxygen-rx-maxi-1630471
   category: Circadia
   info: >-
-    Innehåller 2,5 % ren retinol och kan användas i de flesta
-    ansiktsbehandlingar för att boosta huden genom ökad celldelning. Den
-    kombineras även tillsammans med MandeliClear peel för extra hudföryngrande
-    effekt. 
+    Oxygen Rx är en unik behandling där rent syre aktiveras på huden. I denna
+    process ökar vi näringstillförseln till huden och stimulerar kollagen- och
+    elastinproduktionen.
 
 
-    Passar alla som behöver ökad cellförnyelse. Fitzpatrick I - VI
-
-    Behandlingen främjar cellförnyelse, ökar kollagen och elastin genom fibroblaststimulering. Flagning är att förvänta.
+    Syret har antibakteriella, anti-inflammatoriska och rodnadsdämpande egenskaper som lämpar sig perfekt till en aknebenägen hud, rosacea och synliga kärl.
 
 
-    Fördelar:
+    Kontraindikationer - när du inte bör göra behandlingen:
 
-    ökar cellförnyelse processen, förbättrar pigmentering av ärr, förbättrar utseendet på grov hud.
-
-
-    Kontraindikationer:
-
-    Överkänslighet eller någon mycket allergisk, allergi mor vitamin A, extremt torr hud eller komprimerad lipidbarriär, Isotretinoin under det senaste året, glykolsyra eller salicylsyra senaste veckan, gravid eller ammande, herpes utbrott, öppna sår eller misstänkt lesioner, Retin-A eller Renova under den senaste veckan.
+    Allergi mot citronsyra (citron, apelsin, grapefrukt mm)
 
 
-    Försiktighetsåtgärder:
-
-    Tvätta inte ansiktet 12 timmer efter behandlingen.
-
-    Undvik att duscha, bada bastu eller att svettas 12 timmar efter behandlingen. Skrubba/exfoliera ej förens läkningsprocessen är klar.
-
-    Använd ej AHA, BHA eller A vitaminer förens läkningsprocessen är klar.
-
-    Undvik att pilla eller dra I den fjällande huden.
+    I denna behandlingen ingår rengöring, Kakao eller Rasperry Enzym Peel och Firming Peptid Mask samt avslutande produkt.
 - id: 1630474
   title: SWICH
   price: 1590
@@ -347,6 +278,43 @@
 
 
     OBS: detta är en leave on produkt, så du får inte ha vatten i ansiktet på 12 timmar. Du kommer även att få med dig en rengöring och en kräm hem som du ska använda nästkommande 3 dagar efter behandlingen
+- id: 1630475
+  title: Retinol peel
+  price: 950
+  time: 1800
+  slug: retinol-peel-1630475
+  category: Circadia
+  info: >-
+    Innehåller 2,5 % ren retinol och kan användas i de flesta
+    ansiktsbehandlingar för att boosta huden genom ökad celldelning. Den
+    kombineras även tillsammans med MandeliClear peel för extra hudföryngrande
+    effekt. 
+
+
+    Passar alla som behöver ökad cellförnyelse. Fitzpatrick I - VI
+
+    Behandlingen främjar cellförnyelse, ökar kollagen och elastin genom fibroblaststimulering. Flagning är att förvänta.
+
+
+    Fördelar:
+
+    ökar cellförnyelse processen, förbättrar pigmentering av ärr, förbättrar utseendet på grov hud.
+
+
+    Kontraindikationer:
+
+    Överkänslighet eller någon mycket allergisk, allergi mor vitamin A, extremt torr hud eller komprimerad lipidbarriär, Isotretinoin under det senaste året, glykolsyra eller salicylsyra senaste veckan, gravid eller ammande, herpes utbrott, öppna sår eller misstänkt lesioner, Retin-A eller Renova under den senaste veckan.
+
+
+    Försiktighetsåtgärder:
+
+    Tvätta inte ansiktet 12 timmer efter behandlingen.
+
+    Undvik att duscha, bada bastu eller att svettas 12 timmar efter behandlingen. Skrubba/exfoliera ej förens läkningsprocessen är klar.
+
+    Använd ej AHA, BHA eller A vitaminer förens läkningsprocessen är klar.
+
+    Undvik att pilla eller dra I den fjällande huden.
 - id: 1630476
   title: Ultraljudsrengöring +
   price: 750
@@ -361,430 +329,99 @@
 
 
     I behandlingen ingår rengöring, enzymatisk peeling, ultraljudsrengöring och borttagning av milier samt avslutande produkt(er).
-- id: 1630504
-  title: Dermapen 4 Ansikte
-  price: 2250
-  time: 3000
-  slug: dermapen-4-ansikte-1630504
-  category: Dermapen 4
-  info: null
-- id: 1630502
-  title: Dermapen 4 Parti
-  price: 1650
-  time: 2400
-  slug: dermapen-4-parti-1630502
-  category: Dermapen 4
-  info: null
-- id: 1630505
-  title: Tillägg über Pro Peeling
-  price: 500
-  time: 900
-  slug: tillagg-uber-pro-peeling-1630505
-  category: Dermapen 4
-  info: null
-- id: 1630485
-  title: DermaFirming
-  price: 1750
-  time: 3600
-  slug: dermafirming-1630485
-  category: Dermaplanning
-  info: >-
-    Dermaplanning utförs av speciellt utbildad hudterapeut med en särskild
-    scalpell ifrån Dermaplane Pro och är en antiage-behandling som exfolierar
-    huden och tar bort vellushår (fjun). 
-
-
-    Resultatet blir en jämnare hudton, mindre synliga linjer och acneärr, lyster, mjuk och len hud.
-
-    Behandlingen är skapad till att på en gång förbättra hudens utseende, men också maximera upptag av följande produkter eller kombinationsbehandlingar. 
-
-
-    Ultraljudsrengöringen tömmer skonsamt porerna på pormaskar, smuts och sebum utan att skada eller klämma huden.
-
-
-    Behandlingen avslutas med lugnande och uppstramande firming peptidmask och post peel balm.
-- id: 1630480
-  title: Dermaplane PRO & Ultraljudsrengöring
-  price: 1450
+- id: 1630477
+  title: Fokus
+  price: 1150
   time: 2700
-  slug: dermaplane-pro-ultraljudsrengoring-1630480
-  category: Dermaplanning
-  info: >-
-    Dermaplanning utförs av speciellt utbildad hudterapeut med en särskild
-    scalpell ifrån Dermaplane Pro och är en antiage-behandling som exfolierar
-    huden och tar bort vellushår (fjun). 
-
-
-    Resultatet blir en jämnare hudton, mindre synliga linjer och acneärr, lyster, mjuk och len hud.
-
-    Behandlingen är skapad till att på en gång förbättra hudens utseende, men också maximera upptag av följande produkter eller kombinationsbehandlingar. 
-
-
-    I denna behandling ingår rengöring, dermaplanning av hela ansiktet, ultraljudsrengöring och avslutande produkt(er). Mask ingår om tiden tillåter.
-- id: 1630484
-  title: Dermaplane PRO Maxi
+  slug: fokus-1630477
+  category: Circadia
+  info: En skräddarsydd behandling där vi väljer fokus att jobba på. Det kan vara
+    fukt, djuprengöring, antiage, lyster... Anaïs jobbar som vanligt med ett
+    kreativt sinne för att uppnå bästa resultat för din hud med Circadias
+    produkter.
+- id: 1630478
+  title: Hudterapeutens val
+  price: 1690
+  time: 4500
+  slug: hudterapeutens-val-1630478
+  category: Circadia
+  info: En skräddarsydd behandling där vi har goda förutsättningar till att skapa
+    bästa resultat för din hud med Circadias produkter. Här kan vi välja in en
+    kemisk peeling eller andra trevliga hud boosters till fast pris.
+- id: 1630479
+  title: Mästarens val
   price: 2150
   time: 5400
-  slug: dermaplane-pro-maxi-1630484
-  category: Dermaplanning
+  slug: mastarens-val-1630479
+  category: Circadia
   info: >-
-    Dermaplanning utförs av speciellt utbildad hudterapeut med en särskild
-    scalpell ifrån Dermaplane Pro och är en antiage-behandling som exfolierar
-    huden och tar bort vellushår (fjun). 
+    En skräddarsydd behandling där vi har bästa förutsättningar till att skapa
+    kreativitet som får flöda fritt! 
 
-
-    Resultatet blir en jämnare hudton, mindre synliga linjer och acneärr, lyster, mjuk och len hud.
-
-    Behandlingen är skapad till att på en gång förbättra hudens utseende, men också maximera upptag av följande produkter eller kombinationsbehandlingar. 
-
-
-    I denna behandling ingår allt som Anaïs hinner med i det som är lämpligast för din hud och dina önskemål.
-- id: 1630481
-  title: Dermaplane PRO Mini
-  price: 990
-  time: 1800
-  slug: dermaplane-pro-mini-1630481
-  category: Dermaplanning
-  info: >-
-    Dermaplanning utförs av speciellt utbildad hudterapeut med en särskild
-    scalpell ifrån Dermaplane Pro och är en antiage-behandling som exfolierar
-    huden och tar bort vellushår (fjun). 
-
-
-    Resultatet blir en jämnare hudton, mindre synliga linjer och acneärr, lyster, mjuk och len hud.
-
-    Behandlingen är skapad till att på en gång förbättra hudens utseende, men också maximera upptag av följande produkter eller kombinationsbehandlingar. 
-
-
-    I denna behandling ingår rengöring, dermaplanning av hela ansiktet samt avslutande mask.
-- id: 1630498
-  title: Dermafrost (1 lager)
-  price: 1250
-  time: 1800
-  slug: dermafrost-1-lager-1630498
-  category: Kemisk Peeling
-  info: null
-- id: 1630500
-  title: Jessners peel - originalet (1 lager)
-  price: 1650
-  time: 1800
-  slug: jessners-peel-originalet-1-lager-1630500
-  category: Kemisk Peeling
-  info: En klassisk kombination av 14% salicylsyra, 14% mjölksyra och 14%
-    resorcinol. En medeldjup peel som jämnar ut hudtonen, reducerar
-    pigmentering, reducerar ärr vävnad, djupare linjer och rynkor. Denna peel
-    ger en fjällning ca 3-4 dagar efter behandlingen som resultaterar i en klar
-    och jämn hud. Passar upp till Fitzpatrick III.
-- id: 1630493
-  title: MandeliClear peel inkl. Vitamin A accelerator (1 lager)
-  price: 1650
-  time: 1800
-  slug: mandeliclear-peel-inkl-vitamin-a-accelerator-1-lager-1630493
-  category: Kemisk Peeling
-  info: null
-- id: 1630490
-  title: PRX-T33 Ansikte
-  price: 1990
-  time: 1800
-  slug: prx-t33-ansikte-1630490
-  category: Kemisk Peeling
-  info: >-
-    VAD GÖR BEHANDLINGEN?
-
-
-    Nålfri biorevitaliserande antiage-behandling som definieras som en hybrid teknik mellan kemisk peeling och fillers. Vi plumpar upp fina linjer och rynkor samt ger en ungdomlig glow och lyster till ansiktet. Även hudtonen jämnas ut.
-
-
-    VAD INGÅR I BEHANDLINGEN?
-
-
-    Kort konsultation, dubbelrengöring och avfettning av huden. Applicering i ansiktet av 1-5 lager PRX-T33 som görs i form av en manuell massage med ett behagligt tryck. Vi avslutar med kräm, Ice Mask eller Celluma fototerapi för att maximera effekten! 
-
-
-    Vid varje behandlingstillfälle får du hem en veckas specifik tillhörande dag- och nattkräm som ersätter ordinarie hudvård.
-- id: 1630491
-  title: PRX-T33 Ansikte & Hals
-  price: 2490
-  time: 2700
-  slug: prx-t33-ansikte-hals-1630491
-  category: Kemisk Peeling
-  info: >-
-    VAD GÖR BEHANDLINGEN?
-
-
-    Nålfri biorevitaliserande antiage-behandling som definieras som en hybrid teknik mellan kemisk peeling och fillers. Vi plumpar upp fina linjer och rynkor samt ger en ungdomlig glow och lyster till ansiktet. Även hudtonen jämnas ut.
-
-
-    VAD INGÅR I BEHANDLINGEN?
-
-
-    Kort konsultation, dubbelrengöring och avfettning av huden. Applicering i ansiktet och hals av 1-5 lager PRX-T33 som görs i form av en manuell massage med ett behagligt tryck. Vi avslutar med kräm, Ice Mask eller Celluma fototerapi för att maximera effekten! 
-
-
-    Vid varje behandlingstillfälle får du hem en veckas specifik tillhörande dag- och nattkräm som ersätter ordinarie hudvård.
-- id: 1630492
-  title: PRX-T33 Ansikte, Hals & Decolletage
-  price: 3490
-  time: 2700
-  slug: prx-t33-ansikte-hals-decolletage-1630492
-  category: Kemisk Peeling
-  info: >-
-    VAD GÖR BEHANDLINGEN?
-
-
-    Nålfri biorevitaliserande antiage-behandling som definieras som en hybrid teknik mellan kemisk peeling och fillers. Vi plumpar upp fina linjer och rynkor samt ger en ungdomlig glow och lyster till ansiktet. Även hudtonen jämnas ut.
-
-
-    VAD INGÅR I BEHANDLINGEN?
-
-
-    Kort konsultation, dubbelrengöring och avfettning av huden. Applicering i ansiktet, hals och dekolletaget av 1-5 lager PRX-T33 som görs i form av en manuell massage med ett behagligt tryck. Vi avslutar med kräm, Ice Mask eller Celluma fototerapi för att maximera effekten! 
-
-
-    Vid varje behandlingstillfälle får du hem en veckas specifik tillhörande dag- och nattkräm som ersätter ordinarie hudvård.
-- id: 1630501
-  title: Soft TCA 20% + Mjölksyra och Kojic acid
-  price: 2490
-  time: 1800
-  slug: soft-tca-20-mjolksyra-och-kojic-acid-1630501
-  category: Kemisk Peeling
-  info: >-
-    VAD GÖR BEHANDLINGEN?
-
-
-    Exfolierande behandling som korrigerar pigmenteringar och ålderstecken. Används på pigmentfläckar, utvalda rynkor eller i hela ansiktet beroende på tillsånd, önskemål och indikation.
-
-
-    VAD INGÅR I BEHANDLINGEN?
-
-
-    Kort konsultation om önskemål och behov, dubbelrengöring och avfettning innan applicering av den syrafrätande kombinationspeelen som består av 20% TCA, 10% Mjölksyra och Kojic acid. Soft TCA är en snällare variant än ren TCA tack vare  Mjölksyran som förvandlar TCA egenskaperna till mindre aggressiva mot huden.
-
-
-    Peelingen läggs i lager som tas upp av huden på ca 1-2 min var. När huden är mättad sveper vi av överflödet och smörjer in huden med anpassad kräm.
-- id: 1630489
-  title: Über PRO peeling
+    Här kan vi bl.a lägga till dermaplanning och/eller kemisk peeling.
+- id: 1630584
+  title: "*Avlägsna godartade hudförändringar. Ett återbesök ingår."
   price: 950
-  time: 2700
-  slug: uber-pro-peeling-1630489
-  category: Kemisk Peeling
-  info: null
-- id: 1630543
-  title: Återbesök
-  price: 0
-  time: 1200
-  slug: aterbesok-1630543
-  category: Konsultationer
-  info: null
-- id: 1630541
-  title: Hudvårdskonsultation
-  price: 450
-  time: 1800
-  slug: hudvardskonsultation-1630541
-  category: Konsultationer
-  info: >-
-    Vid konsultationstillfället har du möjlighet att dra av 450 kr på köp av
-    valfri produkt.
-
-
-    - Boka denna konsultation om du vill ha hjälp med din hud utan att gå på behandling.
-- id: 1630540
-  title: Köp av produkter/presentkort
-  price: 0
-  time: 300
-  slug: kop-av-produkter-presentkort-1630540
-  category: Konsultationer
-  info: null
-- id: 1630529
-  title: Celluma PRO LED Panel x10
-  price: 6990
-  time: 1800
-  slug: celluma-pro-led-panel-x10-1630529
-  category: Kur
-  info: >-
-    VAD GÖR BEHANDLINGEN?
-
-
-    LED fototerapi är en beprövad teknologi med många år av forskning som bevisar effektiviteten på att dämpa inflammationer i huden, förbättra och påskynda läkningsprocessen, öka produktionen av fibroblaster och därmed kollagen & elastinproduktionen. Vi behandlar acnesymptom, torr och känslig hud, rosacea, pigmenteringar, åldrad hud, röda acneärr, läkning efter sår eller ingrepp, hårväxt och även smärta på kroppen.
-
-
-    VAD INGÅR I BEHANDLINGEN?
-
-
-    Rengöring, Celluma LED, ögonkräm, kräm, SPF vid behov.
-- id: 1630563
-  title: Brynform
-  price: 250
   time: 900
-  slug: brynform-1630563
-  category: Ögon-Blick
+  slug: avlagsna-godartade-hudforandringar-ett-aterbesok-ingar-1630584
+  category: Avlägsna Fläckar/Keratoser/Fibrom/Kärl/Xantelasma
   info: >-
     VAD GÖR BEHANDLINGEN?
 
 
-    Piggar upp dina ögon med en prydlig form.
+    Vi bränner bort alla typer av godartade hudförändringar: Fibrom, Skintags, Pigmentfläckar, Syringom, Xantelasma & Angiomer. 
 
 
     VAD INGÅR I BEHANDLINGEN?
 
 
-    Formning av bryn görs med vax, pincnett och sax. Jag rådgiver Dig om form och teknik som bäst lämpar sig till dina önskemål, men det är Du som får bestämma precis hur du vill ha dem.
-- id: 1630564
-  title: Brynform & Färg
-  price: 300
-  time: 1200
-  slug: brynform-farg-1630564
-  category: Ögon-Blick
-  info: >-
-    VAD GÖR BEHANDLINGEN?
+    1)- Konsultation: vi går igenom önskemål och medicinsk bakgrund. Vi bestämmer vad som ska tas bort under behandlingen. Kom gärna förberedd, dvs med eventuell kopia på journalen efter läkarbesök. Har du inte varit hos läkare som antecknat diagnos i din journal ber vi Dig först kontakta Anaïs för att klargöra om vi riskfritt kan bränna bort dina dyskromier eller om du behöver se en läkare för godkännande först. 
 
 
-    Ramar in dina ögon med en prydlig form och färg på brynen för att pigga upp blicken.
-
-
-    VAD INGÅR I BEHANDLINGEN?
-
-
-    Formning av bryn görs med vax, pincnett och sax. Jag rådgiver Dig om färg, form och teknik som bäst lämpar sig till dina önskemål, men det är Du som får bestämma precis hur du vill ha dem.
-- id: 1630573
-  title: Frans-Brynfärg & Formning
-  price: 450
-  time: 1800
-  slug: frans-brynfarg-formning-1630573
-  category: Ögon-Blick
-  info: >-
-    VAD GÖR BEHANDLINGEN?
-
-    Rama in dina ögon med färg på fransar och bryn och en prydlig form som piggar upp blicken.
-
-
-    VAD INGÅR I BEHANDLINGEN?
-
-
-    Formning av bryn görs med vax, pincnett och sax. Jag rådgiver Dig om form och teknik som bäst lämpar sig till dina önskemål, men det är Du som får bestämma precis hur du vill ha dem.
-
-
-    Angående brynfärgen rekommenderar jag att utgå ifrån dina egna toner för att uppnå ett naturligt resultat, men jag frågar dig alltid först innan att lägga på färgen.
-- id: 1630566
-  title: Fransfärg
-  price: 300
-  time: 1200
-  slug: fransfarg-1630566
-  category: Ögon-Blick
-  info: >-
-    VAD GÖR BEHANDLINGEN?
-
-
-    Ramar in dina ögon med färg på fransarna vilket piggar upp blicken.
-
-
-    TIPS & RÅD
-
-
-    Kom gärna utan maskara om du har möjlighet då färgen kan ha lättare att fästa när fransarna har fått “andas” innan. Har du maskara på dig inför besöket behöver du inte ta bort den själv, det gör jag.
-
-
-    Xlash fransserum förlänger dina fransar och passar perfekt som extra hemvård till denna typen av behandling. Rabatterat pris i samband med din bokning.
-- id: 1630572
-  title: Fransfärg & Formning av bryn
-  price: 350
-  time: 1500
-  slug: fransfarg-formning-av-bryn-1630572
-  category: Ögon-Blick
-  info: >-
-    VAD GÖR BEHANDLINGEN?
-
-
-    Ramar in dina ögon med färg på fransar och en prydlig form på brynen som piggar upp blicken. För dig som är nöjd med din naturliga brynfärg men som vill forma dem och få mörkare fransar. 
-
-
-    VAD INGÅR I BEHANDLINGEN?
-
-
-    Formning av bryn görs med vax, pincnett och sax. Jag rådgiver Dig om form och teknik som bäst lämpar sig till dina önskemål, men det är Du som får bestämma precis hur du vill ha dem.
-
-    Fransfärg görs enligt önskemål med eller utan att inkludera underfransarna.
-- id: 1630547
-  title: Yumi Brows
-  price: 600
+    2) Återbesök: Vi tänker säkerhet föst och överbehandlar aldrig, oftast räcker en behandling, men om inte så ingår återbesöket i priset. Återbesök bokas ca 4-6 veckor efter behandlingen oavsett resultat, där tittar jag på läkningen samt utför eventuella korrektioner.
+- id: 1630524
+  title: Plasmalift öra
+  price: 2450
   time: 2700
-  slug: yumi-brows-1630547
-  category: Ögon-Blick
-  info: >-
-    VAD GÖR BEHANDLINGEN?
-
-
-    Brynen lamineras och färgas med browlift-tekniken som gör brynen formbara, du kan få ett bredare & tjockare utseende på dina bryn.
-
-
-    VAD INGÅR I BEHANDLINGEN?
-
-
-    Bryn-laminering, färgning, formning med vax, pincett och sax samt styling efter önskemål och behov. 
-
-
-    Jag rådgiver Dig om färg, form och teknik som bäst lämpar sig till dina önskemål, men det är Du som får bestämma precis hur Du vill ha dem.
-- id: 1630555
-  title: Yumi Lashes
-  price: 1000
-  time: 4500
-  slug: yumi-lashes-1630555
-  category: Ögon-Blick
-  info: >-
-    VAD GÖR BEHANDLINGEN?
-
-
-    Lyfter fransarna ifrån roten, vårdar och färgar för att uppnå till synes längre och mörka fransar.
-
-
-    VAD INGÅR I BEHANDLINGEN?
-
-
-    Fransarnas lyfts, vårdas och färgas med prisbelönta Yumi lashes tekniken. 
-
-    Fransfärg görs enligt önskemål med eller utan att inkludera underfransarna.
-- id: 1630559
-  title: Yumi Total Makeover
-  price: 1500
-  time: 5400
-  slug: yumi-total-makeover-1630559
-  category: Ögon-Blick
-  info: >-
-    VAD GÖR BEHANDLINGEN?
-
-
-    Lyfter fransarna ifrån roten, vårdar och färgar för att uppnå till synes längre och mörka fransar.
-
-    Brynen lamineras och färgas med browlift-tekniken som gör brynen formbara, du kan få ett bredare & tjockare utseende på dina bryn.
-
-
-    VAD INGÅR I BEHANDLINGEN?
-
-
-    Det ingår både Yumi Lashes och Yumi brows. Du får en riktig makeover av ögonregionen med lyft och färg! Fransarnas lyfts, vårdas och färgas med prisbelönta Yumi lashes tekniken, brynen lamineras, vårdas, färgas och formas med vax, pincett och sax efter önskemål och behov. 
-
-
-    Jag rådgiver Dig om färg, form och teknik som bäst lämpar sig till dina önskemål, men det är Du som får bestämma precis hur du vill ha dem. Fransfärg görs enligt önskemål med eller utan att inkludera underfransarna.
-- id: 1630528
-  title: Plasmalift ledsen navel
-  price: 7450
-  time: 7200
-  slug: plasmalift-ledsen-navel-1630528
+  slug: plasmalift-ora-1630524
   category: Plasmapen
   info: >-
     VAD GÖR BEHANDLINGEN?
 
 
-    Vi gör en ytslipning och punktbehandling av naveln och omkringliggande hud för att strama åt förminska överflödet som skrynklar ihop sig. Permanenta resultat som kan kräva mellan 1-3 behandlingar med ca 3 månaders mellanrum beroende på tillstånd och önskemål. Behandlingen KAN upprepas ända tills önskat resultat uppnås.
+    Vi gör en ytslipning och punktbehandling av omkringliggande hud vid örfästet för att strama åt och reducera rynkornas utseende. Permanenta resultat som kan kräva mellan 1-4 behandlingar med ca 3 månaders mellanrum beroende på tillstånd och önskemål. Behandlingen KAN upprepas ända tills önskat resultat uppnås. Naturligt åldrande stoppas inte, rynkorna kommer så småningom tillbaka.
 
 
     VAD INGÅR I BEHANDLINGEN?
 
 
-    1)- Konsultation: vi går igenom önskemål och medicinsk bakgrund. Vi bestämmer storlek och form på området som ska behandlas och du får ett anpassat prisförslag. OBS: Konsultationen bokas FÖRST under kategorin “Konsultationer”. Har du redan gått på din konsultation kan du gå vidare med denna bokning.
+    1)- Konsultation: vi går igenom önskemål och medicinsk bakgrund. Beroende på tillstånd och andra påverkande faktorer får Du ett anpassat prisförslag. OBS: Konsultationen bokas FÖRST under kategorin “Konsultationer”. Har du redan gått på din konsultation kan du gå vidare med denna bokning.
 
 
     2)- Behandling: Bedövning ingår. Efter behandlingen får du en eller två sachéer PLC kräm att använda dagligen tills skorporna fallit av.
+
+
+    3)- Återbesök: Bokas ca 6-8 veckor efter behandlingen oavsett resultat, där tittar jag på läkningen och vi diskuterar nästa steg.
+- id: 1630525
+  title: Plasmalift Pusslinjer
+  price: 2450
+  time: 2700
+  slug: plasmalift-pusslinjer-1630525
+  category: Plasmapen
+  info: >-
+    VAD GÖR BEHANDLINGEN?
+
+
+    Vi gör en ytslipning och punktbehandling av överläppen för att strama åt förminska rynkornas utseende. Permanenta resultat som kan kräva mellan 1-4 behandlingar med ca 3 månaders mellanrum beroende på tillstånd och önskemål. Behandlingen KAN upprepas ända tills önskat resultat uppnås. Naturligt åldrande stoppas inte, rynkorna kommer så småningom tillbaka.
+
+
+    VAD INGÅR I BEHANDLINGEN?
+
+
+    1)- Konsultation: vi går igenom önskemål och medicinsk bakgrund. Beroende på tillstånd och andra påverkande faktorer får Du ett anpassat prisförslag. OBS: Konsultationen bokas FÖRST under kategorin “Konsultationer”. Har du redan gått på din konsultation kan du gå vidare med denna bokning.
+
+
+    2)- Behandling: Bedövning ingår. Efter behandlingen får du en saché PLC kräm att använda dagligen tills skorporna fallit av.
 
 
     3)- Återbesök: Bokas ca 6-8 veckor efter behandlingen oavsett resultat, där tittar jag på läkningen och vi diskuterar nästa steg.
@@ -850,115 +487,326 @@
 
 
     3)- Återbesök: Bokas ca 12 veckor efter behandlingen för att ta “efter-bilder” och jämföra resultatet. Inga bilder läggs upp någonstans utan ditt godkännande. Bilderna är först och främst till för Dig.
-- id: 1630524
-  title: Plasmalift öra
-  price: 2450
-  time: 2700
-  slug: plasmalift-ora-1630524
+- id: 1630528
+  title: Plasmalift ledsen navel
+  price: 7450
+  time: 7200
+  slug: plasmalift-ledsen-navel-1630528
   category: Plasmapen
   info: >-
     VAD GÖR BEHANDLINGEN?
 
 
-    Vi gör en ytslipning och punktbehandling av omkringliggande hud vid örfästet för att strama åt och reducera rynkornas utseende. Permanenta resultat som kan kräva mellan 1-4 behandlingar med ca 3 månaders mellanrum beroende på tillstånd och önskemål. Behandlingen KAN upprepas ända tills önskat resultat uppnås. Naturligt åldrande stoppas inte, rynkorna kommer så småningom tillbaka.
+    Vi gör en ytslipning och punktbehandling av naveln och omkringliggande hud för att strama åt förminska överflödet som skrynklar ihop sig. Permanenta resultat som kan kräva mellan 1-3 behandlingar med ca 3 månaders mellanrum beroende på tillstånd och önskemål. Behandlingen KAN upprepas ända tills önskat resultat uppnås.
 
 
     VAD INGÅR I BEHANDLINGEN?
 
 
-    1)- Konsultation: vi går igenom önskemål och medicinsk bakgrund. Beroende på tillstånd och andra påverkande faktorer får Du ett anpassat prisförslag. OBS: Konsultationen bokas FÖRST under kategorin “Konsultationer”. Har du redan gått på din konsultation kan du gå vidare med denna bokning.
+    1)- Konsultation: vi går igenom önskemål och medicinsk bakgrund. Vi bestämmer storlek och form på området som ska behandlas och du får ett anpassat prisförslag. OBS: Konsultationen bokas FÖRST under kategorin “Konsultationer”. Har du redan gått på din konsultation kan du gå vidare med denna bokning.
 
 
     2)- Behandling: Bedövning ingår. Efter behandlingen får du en eller två sachéer PLC kräm att använda dagligen tills skorporna fallit av.
 
 
     3)- Återbesök: Bokas ca 6-8 veckor efter behandlingen oavsett resultat, där tittar jag på läkningen och vi diskuterar nästa steg.
-- id: 1630525
-  title: Plasmalift Pusslinjer
-  price: 2450
+- id: 1630481
+  title: "*Dermaplane PRO"
+  price: 990
+  time: 1800
+  slug: dermaplane-pro-1630481
+  category: Dermaplanning
+  info: >-
+    Dermaplanning utförs av speciellt utbildad hudterapeut med en särskild
+    scalpell ifrån Dermaplane Pro och är en antiage-behandling som exfolierar
+    huden och tar bort vellushår (fjun). 
+
+
+    Resultatet blir en jämnare hudton, mindre synliga linjer och acneärr, lyster, mjuk och len hud.
+
+    Behandlingen är skapad till att på en gång förbättra hudens utseende, men också maximera upptag av följande produkter eller kombinationsbehandlingar. 
+
+
+    I denna behandling ingår rengöring, dermaplanning av hela ansiktet samt avslutande mask. Kika på våra rekommenderade tilläggstjänster som passar suveränt med Din Dermaplane PRO.
+- id: 1630489
+  title: Über PRO peeling
+  price: 950
   time: 2700
-  slug: plasmalift-pusslinjer-1630525
-  category: Plasmapen
+  slug: uber-pro-peeling-1630489
+  category: Kemisk Peeling
+  info: null
+- id: 1630490
+  title: "*PRX-T33 "
+  price: 1990
+  time: 1800
+  slug: prx-t33-1630490
+  category: Kemisk Peeling
   info: >-
     VAD GÖR BEHANDLINGEN?
 
 
-    Vi gör en ytslipning och punktbehandling av överläppen för att strama åt förminska rynkornas utseende. Permanenta resultat som kan kräva mellan 1-4 behandlingar med ca 3 månaders mellanrum beroende på tillstånd och önskemål. Behandlingen KAN upprepas ända tills önskat resultat uppnås. Naturligt åldrande stoppas inte, rynkorna kommer så småningom tillbaka.
+    Nålfri biorevitaliserande antiage-behandling som definieras som en hybrid teknik mellan kemisk peeling och fillers. Vi plumpar upp fina linjer och rynkor samt ger en ungdomlig glow och lyster till ansiktet. Även hudtonen jämnas ut.
 
 
     VAD INGÅR I BEHANDLINGEN?
 
 
-    1)- Konsultation: vi går igenom önskemål och medicinsk bakgrund. Beroende på tillstånd och andra påverkande faktorer får Du ett anpassat prisförslag. OBS: Konsultationen bokas FÖRST under kategorin “Konsultationer”. Har du redan gått på din konsultation kan du gå vidare med denna bokning.
+    Kort konsultation, dubbelrengöring och avfettning av huden. Applicering i ansiktet av 1-5 lager PRX-T33 som görs i form av en manuell massage med ett behagligt tryck. Vi avslutar med kräm, Ice Mask eller Celluma fototerapi för att maximera effekten! 
 
 
-    2)- Behandling: Bedövning ingår. Efter behandlingen får du en saché PLC kräm att använda dagligen tills skorporna fallit av.
-
-
-    3)- Återbesök: Bokas ca 6-8 veckor efter behandlingen oavsett resultat, där tittar jag på läkningen och vi diskuterar nästa steg.
-- id: 1630458
-  title: Öppen tid 120min
-  price: 2950
-  time: 7200
-  slug: oppen-tid-120min-1630458
-  category: Skräddarsytt & Abonnemang
-  info: För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
-    anpassad behandling till proffset. Behandlingen utformas efter antal minuter
-    du valt, budget och självklart din huds aktuella tillstånd. Du får en 100%
-    personnaliserad behandling, skapad av vår Auktoriserade, specialiserade
-    hudterapeutmästare Anaïs för just Dig.
-- id: 1630451
-  title: Öppen tid 30min
-  price: 500
+    Vid varje behandlingstillfälle får du hem en veckas specifik tillhörande dag- och nattkräm som ersätter ordinarie hudvård.
+- id: 1630493
+  title: MandeliClear peel inkl. Vitamin A accelerator (1 lager)
+  price: 1650
   time: 1800
-  slug: oppen-tid-30min-1630451
-  category: Skräddarsytt & Abonnemang
-  info: För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
-    anpassad behandling till proffset. Behandlingen utformas efter antal minuter
-    du valt, budget och självklart din huds aktuella tillstånd. Du får en 100%
-    personnaliserad behandling, skapad av vår Auktoriserade, specialiserade
-    hudterapeutmästare Anaïs för just Dig.
-- id: 1630452
-  title: Öppen tid 45min
-  price: 950
+  slug: mandeliclear-peel-inkl-vitamin-a-accelerator-1-lager-1630493
+  category: Kemisk Peeling
+  info: null
+- id: 1630498
+  title: Dermafrost (1 lager)
+  price: 1250
+  time: 1800
+  slug: dermafrost-1-lager-1630498
+  category: Kemisk Peeling
+  info: null
+- id: 1630500
+  title: Jessners peel - originalet (1 lager)
+  price: 1650
+  time: 1800
+  slug: jessners-peel-originalet-1-lager-1630500
+  category: Kemisk Peeling
+  info: En klassisk kombination av 14% salicylsyra, 14% mjölksyra och 14%
+    resorcinol. En medeldjup peel som jämnar ut hudtonen, reducerar
+    pigmentering, reducerar ärr vävnad, djupare linjer och rynkor. Denna peel
+    ger en fjällning ca 3-4 dagar efter behandlingen som resultaterar i en klar
+    och jämn hud. Passar upp till Fitzpatrick III.
+- id: 1630501
+  title: Soft TCA 20% + Mjölksyra och Kojic acid
+  price: 2490
+  time: 1800
+  slug: soft-tca-20-mjolksyra-och-kojic-acid-1630501
+  category: Kemisk Peeling
+  info: >-
+    VAD GÖR BEHANDLINGEN?
+
+
+    Exfolierande behandling som korrigerar pigmenteringar och ålderstecken. Används på pigmentfläckar, utvalda rynkor eller i hela ansiktet beroende på tillsånd, önskemål och indikation.
+
+
+    VAD INGÅR I BEHANDLINGEN?
+
+
+    Kort konsultation om önskemål och behov, dubbelrengöring och avfettning innan applicering av den syrafrätande kombinationspeelen som består av 20% TCA, 10% Mjölksyra och Kojic acid. Soft TCA är en snällare variant än ren TCA tack vare  Mjölksyran som förvandlar TCA egenskaperna till mindre aggressiva mot huden.
+
+
+    Peelingen läggs i lager som tas upp av huden på ca 1-2 min var. När huden är mättad sveper vi av överflödet och smörjer in huden med anpassad kräm.
+- id: 1630502
+  title: "*Dermapen 4 Parti"
+  price: 1650
+  time: 2400
+  slug: dermapen-4-parti-1630502
+  category: Dermapen 4
+  info: null
+- id: 1630504
+  title: "*Dermapen 4 Ansikte"
+  price: 2250
+  time: 3000
+  slug: dermapen-4-ansikte-1630504
+  category: Dermapen 4
+  info: null
+- id: 1630529
+  title: Celluma PRO LED Panel x10
+  price: 6990
+  time: 1800
+  slug: celluma-pro-led-panel-x10-1630529
+  category: Konsultationer
+  info: >-
+    VAD GÖR BEHANDLINGEN?
+
+
+    LED fototerapi är en beprövad teknologi med många år av forskning som bevisar effektiviteten på att dämpa inflammationer i huden, förbättra och påskynda läkningsprocessen, öka produktionen av fibroblaster och därmed kollagen & elastinproduktionen. Vi behandlar acnesymptom, torr och känslig hud, rosacea, pigmenteringar, åldrad hud, röda acneärr, läkning efter sår eller ingrepp, hårväxt och även smärta på kroppen.
+
+
+    VAD INGÅR I BEHANDLINGEN?
+
+
+    Rengöring, Celluma LED, ögonkräm, kräm, SPF vid behov.
+- id: 1630540
+  title: Köp av produkter/presentkort
+  price: 0
+  time: 300
+  slug: kop-av-produkter-presentkort-1630540
+  category: Konsultationer
+  info: null
+- id: 1630541
+  title: Hudvårdskonsultation
+  price: 450
+  time: 1800
+  slug: hudvardskonsultation-1630541
+  category: Konsultationer
+  info: >-
+    Vid konsultationstillfället har du möjlighet att dra av 450 kr på köp av
+    valfri produkt.
+
+
+    - Boka denna konsultation om du vill ha hjälp med din hud utan att gå på behandling.
+- id: 1630543
+  title: Återbesök
+  price: 0
+  time: 1200
+  slug: aterbesok-1630543
+  category: Konsultationer
+  info: null
+- id: 1630547
+  title: Yumi Brows
+  price: 600
   time: 2700
-  slug: oppen-tid-45min-1630452
-  category: Skräddarsytt & Abonnemang
-  info: För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
-    anpassad behandling till proffset. Behandlingen utformas efter antal minuter
-    du valt, budget och självklart din huds aktuella tillstånd. Du får en 100%
-    personnaliserad behandling, skapad av vår Auktoriserade, specialiserade
-    hudterapeutmästare Anaïs för just Dig.
-- id: 1630453
-  title: Öppen tid 60min
-  price: 1200
-  time: 3600
-  slug: oppen-tid-60min-1630453
-  category: Skräddarsytt & Abonnemang
-  info: För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
-    anpassad behandling till proffset. Behandlingen utformas efter antal minuter
-    du valt, budget och självklart din huds aktuella tillstånd. Du får en 100%
-    personnaliserad behandling, skapad av vår Auktoriserade, specialiserade
-    hudterapeutmästare Anaïs för just Dig.
-- id: 1630456
-  title: Öppen tid 75min
-  price: 1500
+  slug: yumi-brows-1630547
+  category: Ögon-Blick
+  info: >-
+    VAD GÖR BEHANDLINGEN?
+
+
+    Brynen lamineras och färgas med browlift-tekniken som gör brynen formbara, du kan få ett bredare & tjockare utseende på dina bryn.
+
+
+    VAD INGÅR I BEHANDLINGEN?
+
+
+    Bryn-laminering, färgning, formning med vax, pincett och sax samt styling efter önskemål och behov. 
+
+
+    Jag rådgiver Dig om färg, form och teknik som bäst lämpar sig till dina önskemål, men det är Du som får bestämma precis hur Du vill ha dem.
+- id: 1630555
+  title: Yumi Lashes
+  price: 1000
   time: 4500
-  slug: oppen-tid-75min-1630456
-  category: Skräddarsytt & Abonnemang
-  info: För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
-    anpassad behandling till proffset. Behandlingen utformas efter antal minuter
-    du valt, budget och självklart din huds aktuella tillstånd. Du får en 100%
-    personnaliserad behandling, skapad av vår Auktoriserade, specialiserade
-    hudterapeutmästare Anaïs för just Dig.
-- id: 1630457
-  title: Öppen tid 90min
-  price: 1950
+  slug: yumi-lashes-1630555
+  category: Ögon-Blick
+  info: >-
+    VAD GÖR BEHANDLINGEN?
+
+
+    Lyfter fransarna ifrån roten, vårdar och färgar för att uppnå till synes längre och mörka fransar.
+
+
+    VAD INGÅR I BEHANDLINGEN?
+
+
+    Fransarnas lyfts, vårdas och färgas med prisbelönta Yumi lashes tekniken. 
+
+    Fransfärg görs enligt önskemål med eller utan att inkludera underfransarna.
+- id: 1630559
+  title: Yumi Total Makeover
+  price: 1500
   time: 5400
-  slug: oppen-tid-90min-1630457
-  category: Skräddarsytt & Abonnemang
-  info: För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
-    anpassad behandling till proffset. Behandlingen utformas efter antal minuter
-    du valt, budget och självklart din huds aktuella tillstånd. Du får en 100%
-    personnaliserad behandling, skapad av vår Auktoriserade, specialiserade
-    hudterapeutmästare Anaïs för just Dig.
+  slug: yumi-total-makeover-1630559
+  category: Ögon-Blick
+  info: >-
+    VAD GÖR BEHANDLINGEN?
+
+
+    Lyfter fransarna ifrån roten, vårdar och färgar för att uppnå till synes längre och mörka fransar.
+
+    Brynen lamineras och färgas med browlift-tekniken som gör brynen formbara, du kan få ett bredare & tjockare utseende på dina bryn.
+
+
+    VAD INGÅR I BEHANDLINGEN?
+
+
+    Det ingår både Yumi Lashes och Yumi brows. Du får en riktig makeover av ögonregionen med lyft och färg! Fransarnas lyfts, vårdas och färgas med prisbelönta Yumi lashes tekniken, brynen lamineras, vårdas, färgas och formas med vax, pincett och sax efter önskemål och behov. 
+
+
+    Jag rådgiver Dig om färg, form och teknik som bäst lämpar sig till dina önskemål, men det är Du som får bestämma precis hur du vill ha dem. Fransfärg görs enligt önskemål med eller utan att inkludera underfransarna.
+- id: 1630563
+  title: Brynform
+  price: 250
+  time: 900
+  slug: brynform-1630563
+  category: Ögon-Blick
+  info: >-
+    VAD GÖR BEHANDLINGEN?
+
+
+    Piggar upp dina ögon med en prydlig form.
+
+
+    VAD INGÅR I BEHANDLINGEN?
+
+
+    Formning av bryn görs med vax, pincnett och sax. Jag rådgiver Dig om form och teknik som bäst lämpar sig till dina önskemål, men det är Du som får bestämma precis hur du vill ha dem.
+- id: 1630564
+  title: Brynform & Färg
+  price: 300
+  time: 1200
+  slug: brynform-farg-1630564
+  category: Ögon-Blick
+  info: >-
+    VAD GÖR BEHANDLINGEN?
+
+
+    Ramar in dina ögon med en prydlig form och färg på brynen för att pigga upp blicken.
+
+
+    VAD INGÅR I BEHANDLINGEN?
+
+
+    Formning av bryn görs med vax, pincnett och sax. Jag rådgiver Dig om färg, form och teknik som bäst lämpar sig till dina önskemål, men det är Du som får bestämma precis hur du vill ha dem.
+- id: 1630566
+  title: Fransfärg
+  price: 300
+  time: 1200
+  slug: fransfarg-1630566
+  category: Ögon-Blick
+  info: >-
+    VAD GÖR BEHANDLINGEN?
+
+
+    Ramar in dina ögon med färg på fransarna vilket piggar upp blicken.
+
+
+    TIPS & RÅD
+
+
+    Kom gärna utan maskara om du har möjlighet då färgen kan ha lättare att fästa när fransarna har fått “andas” innan. Har du maskara på dig inför besöket behöver du inte ta bort den själv, det gör jag.
+
+
+    Xlash fransserum förlänger dina fransar och passar perfekt som extra hemvård till denna typen av behandling. Rabatterat pris i samband med din bokning.
+- id: 1630572
+  title: Fransfärg & Formning av bryn
+  price: 350
+  time: 1500
+  slug: fransfarg-formning-av-bryn-1630572
+  category: Ögon-Blick
+  info: >-
+    VAD GÖR BEHANDLINGEN?
+
+
+    Ramar in dina ögon med färg på fransar och en prydlig form på brynen som piggar upp blicken. För dig som är nöjd med din naturliga brynfärg men som vill forma dem och få mörkare fransar. 
+
+
+    VAD INGÅR I BEHANDLINGEN?
+
+
+    Formning av bryn görs med vax, pincnett och sax. Jag rådgiver Dig om form och teknik som bäst lämpar sig till dina önskemål, men det är Du som får bestämma precis hur du vill ha dem.
+
+    Fransfärg görs enligt önskemål med eller utan att inkludera underfransarna.
+- id: 1630573
+  title: Frans-Brynfärg & Formning
+  price: 450
+  time: 1800
+  slug: frans-brynfarg-formning-1630573
+  category: Ögon-Blick
+  info: >-
+    VAD GÖR BEHANDLINGEN?
+
+    Rama in dina ögon med färg på fransar och bryn och en prydlig form som piggar upp blicken.
+
+
+    VAD INGÅR I BEHANDLINGEN?
+
+
+    Formning av bryn görs med vax, pincnett och sax. Jag rådgiver Dig om form och teknik som bäst lämpar sig till dina önskemål, men det är Du som får bestämma precis hur du vill ha dem.
+
+
+    Angående brynfärgen rekommenderar jag att utgå ifrån dina egna toner för att uppnå ett naturligt resultat, men jag frågar dig alltid först innan att lägga på färgen.
