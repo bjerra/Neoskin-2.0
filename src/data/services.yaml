@@ -65,10 +65,10 @@
     personnaliserad behandling, skapad av vår Auktoriserade, specialiserade
     hudterapeutmästare Anaïs för just Dig.
 - id: 1716528
-  title: Biologique Recherche Signaturbehandling
+  title: B.R Signaturbehandling
   price: 1950
   time: 3600
-  slug: biologique-recherche-signaturbehandling-1716528
+  slug: br-signaturbehandling-1716528
   category: Biologique Recherche
   info: >-
     Behandlingarna bygger på tre faser i sju etapper där du som kund blir
@@ -99,104 +99,11 @@
   slug: br-methodology-1630464
   category: Biologique Recherche
   info: B.R Methodology (Utan booster)
-- id: 1630465
-  title: Tillägg 1 booster
-  price: 500
-  time: 900
-  slug: tillagg-1-booster-1630465
-  category: Biologique Recherche
-  info: >-
-    Tillägg en eller fler Boosters i din Biologique Recherche ansiktsbehandling.
-    Anaïs kommer att rekommendera på plats den eller de som bäst passar Dig
-    utefter Din huds aktuella tillstånd: Skin Instant®. 
-
-
-    Exempel på boosters är
-
-    - Dermaplanning med DermaplanePRO
-
-    - Cold plasma med Plaxel+
-
-    - LED terapi med Celluma PRO
-
-    - En extra Biologique Recherche booster eller Co factor.
-- id: 1630467
-  title: Tillägg 2 boosters
-  price: 1000
-  time: 1800
-  slug: tillagg-2-boosters-1630467
-  category: Biologique Recherche
-  info: >-
-    Har du bokat en 60 min Biologique Recherche Ansiktsbehandling blir ett
-    tillägg av 2 boosters sammanlagt 3 boosters eftersom det redan ingår 1
-    booster. 
-
-
-    Med detta tillägg av 2 boosters kan vi tillsammans välja att lägga till Dermapen4 i behandlingen före och under applicering av din cocktail av sérums authentique istället för den ursprungliga Biologique Recherche boostern, vill du ha både och krävs det ett tillägg på 3 boosters (totalt 4).
-
-
-    Vill du inte få Dermapen4 i din behandling kan den istället innehålla tre av dessa
-
-
-    - Dermaplanning med DermaplanePRO
-
-    - Cold plasma med Plaxel+
-
-    - LED terapi med Celluma PRO
-
-    - En extra Biologique Recherche booster eller Co factor.
-- id: 1630468
-  title: Tillägg 3 boosters
-  price: 1500
-  time: 3600
-  slug: tillagg-3-boosters-1630468
-  category: Biologique Recherche
-  info: >-
-    Har du bokat en 60 min Biologique Recherche Ansiktsbehandling blir ett
-    tillägg av 3 boosters sammanlagt 4 boosters eftersom det redan ingår 1
-    booster. 
-
-
-    När du lägger till 3 boosters kan vi både göra en BR booster och en Dermapen4 före och under applicering av din cocktail av sérums authentique.
-
-
-    Vill du inte få Dermapen4 i din behandling kan den istället innehålla allt detta
-- id: 1692308
-  title: Soin booster Toleskin
-  price: 1950
-  time: 3600
-  slug: soin-booster-toleskin-1692308
-  category: Biologique Recherche
-  info: null
-- id: 1630469
-  title: Oxygen RX
-  price: 1250
-  time: 2700
-  slug: oxygen-rx-1630469
-  category: Circadia
-  info: >-
-    Oxygen Rx är en unik behandling där rent syre aktiveras på huden. I denna
-    process ökar vi näringstillförseln till huden och stimulerar kollagen- och
-    elastinproduktionen.
-
-
-    Syret har antibakteriella, anti-inflammatoriska och rodnadsdämpande egenskaper som lämpar sig perfekt till en aknebenägen hud, rosacea och synliga kärl.
-
-
-    Kontraindikationer - när du inte bör göra behandlingen:
-
-    Allergi mot citronsyra (citron, apelsin, grapefrukt mm)
-
-
-    I denna behandlingen ingår rengöring, Kakao eller Rasperry Enzym Peel, anpassad ansiktsmask samt avslutande produkt.
-
-
-    Har du fått en medicinsk diagnos för rosacea kan vi även använda oss av Cirkadias speciellt utformade rosacea serum.
 - id: 1630470
-  title: Oxygen RX Mini
+  title: Oxygen RX
   price: 950
   time: 1800
-  slug: oxygen-rx-mini-1630470
+  slug: oxygen-rx-1630470
   category: Circadia
   info: >-
     Oxygen Rx är en unik behandling där rent syre aktiveras på huden. I denna
@@ -212,31 +119,10 @@
     - allegisk mot citronsyra (citroner, apelsiner, grapefrukt mm)
 
 
-    I denna behandlingen ingår rengöring, Oxygen Rx samt avslutande produkt.
+    I denna behandlingen ingår rengöring, Oxygen Rx samt avslutande produkt. Titta gärna på tilläggstjänsterna om du vill lägga till ultraljudsrengöring eller firming peptide mask.
 
 
     Har du fått en medicinsk diagnos för rosacea kan vi även använda oss av Cirkadias speciellt utformade rosacea serum.
-- id: 1630471
-  title: Oxygen RX Maxi
-  price: 1595
-  time: 3600
-  slug: oxygen-rx-maxi-1630471
-  category: Circadia
-  info: >-
-    Oxygen Rx är en unik behandling där rent syre aktiveras på huden. I denna
-    process ökar vi näringstillförseln till huden och stimulerar kollagen- och
-    elastinproduktionen.
-
-
-    Syret har antibakteriella, anti-inflammatoriska och rodnadsdämpande egenskaper som lämpar sig perfekt till en aknebenägen hud, rosacea och synliga kärl.
-
-
-    Kontraindikationer - när du inte bör göra behandlingen:
-
-    Allergi mot citronsyra (citron, apelsin, grapefrukt mm)
-
-
-    I denna behandlingen ingår rengöring, Kakao eller Rasperry Enzym Peel och Firming Peptid Mask samt avslutande produkt.
 - id: 1630474
   title: SWICH
   price: 1590
