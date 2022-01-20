@@ -1,5 +1,5 @@
 ---
-title: Kemisk peeling
+title: Kemisk Peeling
 templateKey: category-page
 id: 10
 description: ""
