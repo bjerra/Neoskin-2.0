@@ -119,7 +119,7 @@ const UpdateRemote = async (parsedData) => {
       for (const file of categoryDirectory.data) {
         remoteCategories.push(file.name)
         const title = file.name.slice(0, -3);
-        if(!categories.find(p=>p.slug == title))
+        if(!categories.find(p=>p.slug === title))
           garbage.push({path: file.path, sha: file.sha, title})
       }   
 

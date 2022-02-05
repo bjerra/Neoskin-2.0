@@ -40,7 +40,7 @@ const IndexPageTemplate = ({
       </header>     
       <PageContent content={content} className={"body"}/>
       <div className="button">
-        <BokaButton large url="https://www.bokadirekt.se/places/neoskin-33692" size={"22px"}/>
+        <BokaButton large url="https://www.bokadirekt.se/places/neoskin-39252" size={"22px"}/>
       </div>
       </div>  
       
