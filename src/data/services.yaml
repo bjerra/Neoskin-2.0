@@ -1,8 +1,8 @@
 - id: 1630451
-  title: Öppen tid 30min
+  title: Öppen tid XS
   price: 500
   time: 3000
-  slug: oppen-tid-30min-1630451
+  slug: oppen-tid-xs-1630451
   category: Skräddarsytt & Abonnemang
   info: För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
     anpassad behandling till proffset. Behandlingen utformas efter antal minuter
@@ -10,10 +10,10 @@
     personnaliserad behandling, skapad av vår Auktoriserade, specialiserade
     hudterapeutmästare Anaïs för just Dig.
 - id: 1630452
-  title: Öppen tid 45min
+  title: Öppen tid S
   price: 950
   time: 4500
-  slug: oppen-tid-45min-1630452
+  slug: oppen-tid-s-1630452
   category: Skräddarsytt & Abonnemang
   info: För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
     anpassad behandling till proffset. Behandlingen utformas efter antal minuter
@@ -21,10 +21,10 @@
     personnaliserad behandling, skapad av vår Auktoriserade, specialiserade
     hudterapeutmästare Anaïs för just Dig.
 - id: 1630453
-  title: Öppen tid 60min
+  title: Öppen tid M
   price: 1200
   time: 5400
-  slug: oppen-tid-60min-1630453
+  slug: oppen-tid-m-1630453
   category: Skräddarsytt & Abonnemang
   info: För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
     anpassad behandling till proffset. Behandlingen utformas efter antal minuter
@@ -32,10 +32,10 @@
     personnaliserad behandling, skapad av vår Auktoriserade, specialiserade
     hudterapeutmästare Anaïs för just Dig.
 - id: 1630456
-  title: Öppen tid 75min
+  title: Öppen tid L
   price: 1500
   time: 6300
-  slug: oppen-tid-75min-1630456
+  slug: oppen-tid-l-1630456
   category: Skräddarsytt & Abonnemang
   info: För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
     anpassad behandling till proffset. Behandlingen utformas efter antal minuter
@@ -43,10 +43,10 @@
     personnaliserad behandling, skapad av vår Auktoriserade, specialiserade
     hudterapeutmästare Anaïs för just Dig.
 - id: 1630457
-  title: Öppen tid 90min
+  title: Öppen tid XL
   price: 1950
   time: 7200
-  slug: oppen-tid-90min-1630457
+  slug: oppen-tid-xl-1630457
   category: Skräddarsytt & Abonnemang
   info: För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
     anpassad behandling till proffset. Behandlingen utformas efter antal minuter
@@ -54,10 +54,10 @@
     personnaliserad behandling, skapad av vår Auktoriserade, specialiserade
     hudterapeutmästare Anaïs för just Dig.
 - id: 1630458
-  title: Öppen tid 120min
+  title: Öppen tid XXL
   price: 2950
   time: 9000
-  slug: oppen-tid-120min-1630458
+  slug: oppen-tid-xxl-1630458
   category: Skräddarsytt & Abonnemang
   info: För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
     anpassad behandling till proffset. Behandlingen utformas efter antal minuter
@@ -65,10 +65,10 @@
     personnaliserad behandling, skapad av vår Auktoriserade, specialiserade
     hudterapeutmästare Anaïs för just Dig.
 - id: 1716528
-  title: B.R Signaturbehandling 60´
+  title: B.R Signaturbehandling
   price: 1950
   time: 5400
-  slug: br-signaturbehandling-60-1716528
+  slug: br-signaturbehandling-1716528
   category: Biologique Recherche
   info: >-
     Behandlingarna bygger på tre faser i sju etapper där du som kund blir
@@ -93,17 +93,17 @@
 
     Här kan vi bl.a arbeta med Cold Plasma, dermaplanning eller micronålning som extra booster för ytterligare förbättrad effekt. Behandlingen avslutas med utvald komplettering av aktiva ingredienser i specifika krämer och de högst koncentrerade och komplexa avslutningsserumen som binder ihop och lägger grädden på mosen i behandlingen.
 - id: 1630464
-  title: B.R Methodology 45´
+  title: B.R Methodology
   price: 1450
   time: 4500
-  slug: br-methodology-45-1630464
+  slug: br-methodology-1630464
   category: Biologique Recherche
   info: B.R Methodology (Utan booster)
 - id: 1630470
-  title: Oxygen RX 30´
+  title: "*Oxygen RX "
   price: 950
   time: 3000
-  slug: oxygen-rx-30-1630470
+  slug: oxygen-rx-1630470
   category: Circadia
   info: >-
     Oxygen Rx är en unik behandling där rent syre aktiveras på huden. I denna
@@ -124,10 +124,10 @@
 
     Har du fått en medicinsk diagnos för rosacea kan vi även använda oss av Cirkadias speciellt utformade rosacea serum.
 - id: 1630474
-  title: SWICH 75´
+  title: "SWICH "
   price: 1590
   time: 6300
-  slug: swich-75-1630474
+  slug: swich-1630474
   category: Circadia
   info: >-
     När vi passerat 40-årsåldern minskar energiproduktionen i hudcellen. Detta
@@ -165,10 +165,10 @@
 
     OBS: detta är en leave on produkt, så du får inte ha vatten i ansiktet på 12 timmar. Du kommer även att få med dig en rengöring och en kräm hem som du ska använda nästkommande 3 dagar efter behandlingen
 - id: 1630475
-  title: Retinol peel 20´
+  title: "*Retinol peel (1 lager)"
   price: 950
   time: 3000
-  slug: retinol-peel-20-1630475
+  slug: retinol-peel-1-lager-1630475
   category: Circadia
   info: >-
     Innehåller 2,5 % ren retinol och kan användas i de flesta
@@ -202,10 +202,10 @@
 
     Undvik att pilla eller dra I den fjällande huden.
 - id: 1630476
-  title: Ultraljudsrengöring + 40´
+  title: "*Ultraljudsrengöring Plus+ "
   price: 750
   time: 3600
-  slug: ultraljudsrengoring-40-1630476
+  slug: ultraljudsrengoring-plus-1630476
   category: Circadia
   info: >-
     “Kläm aldrig i onödan!” Var bland det första vi fick lära oss i skolan i
@@ -216,39 +216,19 @@
 
     I behandlingen ingår rengöring, enzymatisk peeling, ultraljudsrengöring och borttagning av milier samt avslutande produkt(er).
 - id: 1630477
-  title: Fokus 45´
+  title: Fokus
   price: 1150
   time: 4500
-  slug: fokus-45-1630477
+  slug: fokus-1630477
   category: Circadia
   info: En skräddarsydd behandling där vi väljer fokus att jobba på. Det kan vara
     fukt, djuprengöring, antiage, lyster... Anaïs jobbar som vanligt med ett
     kreativt sinne för att uppnå bästa resultat för din hud med Circadias
     produkter.
-- id: 1630478
-  title: Hudterapeutens val 75´
-  price: 1690
-  time: 6300
-  slug: hudterapeutens-val-75-1630478
-  category: Circadia
-  info: En skräddarsydd behandling där vi har goda förutsättningar till att skapa
-    bästa resultat för din hud med Circadias produkter. Här kan vi välja in en
-    kemisk peeling eller andra trevliga hud boosters till fast pris.
-- id: 1630479
-  title: Mästarens val 90´
-  price: 2150
-  time: 7200
-  slug: mastarens-val-90-1630479
-  category: Circadia
-  info: >-
-    En skräddarsydd behandling där vi har bästa förutsättningar till att skapa
-    kreativitet som får flöda fritt! 
-
-    Här kan vi bl.a lägga till dermaplanning och/eller kemisk peeling.
 - id: 1630584
   title: "*Avlägsna godartade hudförändringar. Ett återbesök ingår."
   price: 950
-  time: 900
+  time: 1800
   slug: avlagsna-godartade-hudforandringar-ett-aterbesok-ingar-1630584
   category: Avlägsna Fläckar/Keratoser/Fibrom/Kärl/Xantelasma
   info: >-
@@ -278,7 +258,7 @@
 - id: 1630524
   title: Plasmalift öra
   price: 2450
-  time: 2700
+  time: 3900
   slug: plasmalift-ora-1630524
   category: Plasmapen Plaxel+
   info: >-
@@ -299,10 +279,10 @@
 
     3)- Återbesök: Bokas ca 6-8 veckor efter behandlingen oavsett resultat, där tittar jag på läkningen och vi diskuterar nästa steg.
 - id: 1630525
-  title: Plasmalift Pusslinjer
+  title: Plasmalift Pusslinjer/Överläpp
   price: 2450
-  time: 2700
-  slug: plasmalift-pusslinjer-1630525
+  time: 3600
+  slug: plasmalift-pusslinjer-overlapp-1630525
   category: Plasmapen Plaxel+
   info: >-
     VAD GÖR BEHANDLINGEN?
@@ -324,7 +304,7 @@
 - id: 1630526
   title: Plasmalift ögonlockslyft
   price: 4500
-  time: 4500
+  time: 5400
   slug: plasmalift-ogonlockslyft-1630526
   category: Plasmapen Plaxel+
   info: >-
@@ -355,7 +335,7 @@
 - id: 1630527
   title: Plasmalift ögonlockslyft över & under ögonen.
   price: 9000
-  time: 5400
+  time: 7200
   slug: plasmalift-ogonlockslyft-over-under-ogonen-1630527
   category: Plasmapen Plaxel+
   info: >-
@@ -407,10 +387,10 @@
 
     3)- Återbesök: Bokas ca 6-8 veckor efter behandlingen oavsett resultat, där tittar jag på läkningen och vi diskuterar nästa steg.
 - id: 1630481
-  title: "*Dermaplane PRO 30´"
+  title: "*Dermaplane PRO"
   price: 990
   time: 3600
-  slug: dermaplane-pro-30-1630481
+  slug: dermaplane-pro-1630481
   category: Dermaplanning
   info: >-
     Dermaplanning utförs av speciellt utbildad hudterapeut med en särskild
@@ -425,17 +405,17 @@
 
     I denna behandling ingår rengöring, dermaplanning av hela ansiktet samt avslutande mask. Kika på våra rekommenderade tilläggstjänster som passar suveränt med Din Dermaplane PRO.
 - id: 1630489
-  title: Über PRO peeling 30´
+  title: Über PRO peeling
   price: 950
-  time: 2700
-  slug: uber-pro-peeling-30-1630489
+  time: 3000
+  slug: uber-pro-peeling-1630489
   category: Kemisk Peeling
   info: null
 - id: 1630490
-  title: "*PRX-T33 30´"
+  title: "*PRX-T33"
   price: 1990
   time: 3600
-  slug: prx-t33-30-1630490
+  slug: prx-t33-1630490
   category: Kemisk Peeling
   info: >-
     VAD GÖR BEHANDLINGEN?
@@ -452,24 +432,24 @@
 
     Vid varje behandlingstillfälle får du hem en veckas specifik tillhörande dag- och nattkräm som ersätter ordinarie hudvård.
 - id: 1630493
-  title: MandeliClear peel inkl. Vitamin A accelerator (1 lager) 20´
+  title: "*Mandeliclear peel inkl. Vitamin A accelerator (1 lager) "
   price: 1650
   time: 3000
-  slug: mandeliclear-peel-inkl-vitamin-a-accelerator-1-lager-20-1630493
+  slug: mandeliclear-peel-inkl-vitamin-a-accelerator-1-lager-1630493
   category: Kemisk Peeling
   info: null
 - id: 1630498
-  title: Dermafrost (1 lager) 20´
+  title: "*Dermafrost (1 lager) 20´"
   price: 1250
   time: 3000
   slug: dermafrost-1-lager-20-1630498
   category: Kemisk Peeling
   info: null
 - id: 1630500
-  title: Jessners peel - originalet (1 lager) 20´
+  title: "*Jessners peel - originalet (1 lager) "
   price: 1650
   time: 3000
-  slug: jessners-peel-originalet-1-lager-20-1630500
+  slug: jessners-peel-originalet-1-lager-1630500
   category: Kemisk Peeling
   info: En klassisk kombination av 14% salicylsyra, 14% mjölksyra och 14%
     resorcinol. En medeldjup peel som jämnar ut hudtonen, reducerar
@@ -477,10 +457,10 @@
     ger en fjällning ca 3-4 dagar efter behandlingen som resultaterar i en klar
     och jämn hud. Passar upp till Fitzpatrick III.
 - id: 1630501
-  title: Soft TCA 20% + Mjölksyra och Kojic acid 20´
+  title: "Soft TCA 20% + Mjölksyra och Kojic acid "
   price: 2490
   time: 3000
-  slug: soft-tca-20-mjolksyra-och-kojic-acid-20-1630501
+  slug: soft-tca-20-mjolksyra-och-kojic-acid-1630501
   category: Kemisk Peeling
   info: >-
     VAD GÖR BEHANDLINGEN?
@@ -497,17 +477,17 @@
 
     Peelingen läggs i lager som tas upp av huden på ca 1-2 min var. När huden är mättad sveper vi av överflödet och smörjer in huden med anpassad kräm.
 - id: 1630502
-  title: "*Dermapen 4 Parti 40´"
+  title: "*Dermapen 4 Parti "
   price: 1650
   time: 4200
-  slug: dermapen-4-parti-40-1630502
+  slug: dermapen-4-parti-1630502
   category: Dermapen 4
   info: null
 - id: 1630504
-  title: "*Dermapen 4 Ansikte 50´"
+  title: "*Dermapen 4 Ansikte"
   price: 2250
   time: 4800
-  slug: dermapen-4-ansikte-50-1630504
+  slug: dermapen-4-ansikte-1630504
   category: Dermapen 4
   info: null
 - id: 1630529
@@ -530,15 +510,15 @@
 - id: 1630540
   title: Köp av produkter/presentkort
   price: 0
-  time: 300
+  time: 900
   slug: kop-av-produkter-presentkort-1630540
   category: Konsultationer
   info: null
 - id: 1630541
-  title: Hudvårdskonsultation 30´
+  title: "Hudvårdskonsultation "
   price: 450
   time: 3000
-  slug: hudvardskonsultation-30-1630541
+  slug: hudvardskonsultation-1630541
   category: Konsultationer
   info: >-
     Vid konsultationstillfället har du möjlighet att dra av 450 kr på köp av
@@ -547,11 +527,18 @@
 
     - Boka denna konsultation om du vill ha hjälp med din hud utan att gå på behandling.
 - id: 1630543
-  title: Återbesök 20´
+  title: "Återbesök "
   price: 0
   time: 2100
-  slug: aterbesok-20-1630543
+  slug: aterbesok-1630543
   category: Konsultationer
+  info: null
+- id: 1660331
+  title: "Ansiktsmassage "
+  price: 500
+  time: 2700
+  slug: ansiktsmassage-1660331
+  category: Massage
   info: null
 - id: 1630547
   title: Yumi Brows
@@ -595,7 +582,7 @@
 - id: 1630559
   title: Yumi Total Makeover
   price: 1500
-  time: 6300
+  time: 6000
   slug: yumi-total-makeover-1630559
   category: Ögon-Blick
   info: >-
@@ -617,7 +604,7 @@
 - id: 1630563
   title: Brynform
   price: 250
-  time: 1200
+  time: 1800
   slug: brynform-1630563
   category: Ögon-Blick
   info: >-
@@ -634,7 +621,7 @@
 - id: 1630564
   title: Brynform & Färg
   price: 300
-  time: 1500
+  time: 1800
   slug: brynform-farg-1630564
   category: Ögon-Blick
   info: >-
@@ -651,7 +638,7 @@
 - id: 1630566
   title: Fransfärg
   price: 300
-  time: 1200
+  time: 1500
   slug: fransfarg-1630566
   category: Ögon-Blick
   info: >-
@@ -671,7 +658,7 @@
 - id: 1630572
   title: Fransfärg & Formning av bryn
   price: 350
-  time: 1500
+  time: 1800
   slug: fransfarg-formning-av-bryn-1630572
   category: Ögon-Blick
   info: >-
