@@ -44,8 +44,8 @@ const CategoryPageTemplate = ({
           
           <div className="footer">
             <div className="timeprice">
-            <p>{modalService.time / 60} minuter</p>
-            <p>{modalService.price} kr</p>
+            <p>{modalService.time}</p>
+            <p>{modalService.price}</p>
             </div>
             <BokaButton slug={modalService.slug} large size={"20px"} />
           </div>

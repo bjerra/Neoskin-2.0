@@ -72,11 +72,9 @@ const parseData = async html => {
 
     const services = category.properties.find(property => property.key.value == "services").value.elements;
     services.forEach(service => {
-     
       const title = service.properties.find(property => property.key.value == "name").value.value;
-    
-      const price = service.properties.find(property => property.key.value == "price").value.value;
-      const time = service.properties.find(property => property.key.value == "duration").value.value;
+      const price = service.properties.find(property => property.key.value == "priceLabel").value.value;
+      const time = service.properties.find(property => property.key.value == "durationLabel").value.value;
       const id = service.properties.find(property => property.key.value == "id").value.value;   
       const about = service.properties.find(property => property.key.value == "about").value.properties;
       const description = about.find(property => property.key.value == "description")?.value?.value;
@@ -86,8 +84,8 @@ const parseData = async html => {
       const serviceObject = {
         id, 
         title, 
-        price: parseInt(price), 
-        time: parseInt(time), 
+        price, 
+        time, 
         slug: slug+ "-"+id, 
         category: categoryTitle, 
         info: description
