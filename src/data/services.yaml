@@ -1,14 +1,3 @@
-- id: 1630451
-  title: Öppen tid XS
-  price: Från 500 kr
-  time: 30 minuter
-  slug: oppen-tid-xs-1630451
-  category: Skräddarsytt & Abonnemang
-  info: För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
-    anpassad behandling till proffset. Behandlingen utformas efter antal minuter
-    du valt, budget och självklart din huds aktuella tillstånd. Du får en 100%
-    personnaliserad behandling, skapad av vår Auktoriserade, specialiserade
-    hudterapeutmästare Anaïs för just Dig.
 - id: 1630452
   title: Öppen tid S
   price: Från 950 kr
@@ -53,17 +42,6 @@
     du valt, budget och självklart din huds aktuella tillstånd. Du får en 100%
     personnaliserad behandling, skapad av vår Auktoriserade, specialiserade
     hudterapeutmästare Anaïs för just Dig.
-- id: 1630458
-  title: Öppen tid XXL
-  price: 2,950 kr
-  time: 120 minuter
-  slug: oppen-tid-xxl-1630458
-  category: Skräddarsytt & Abonnemang
-  info: För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
-    anpassad behandling till proffset. Behandlingen utformas efter antal minuter
-    du valt, budget och självklart din huds aktuella tillstånd. Du får en 100%
-    personnaliserad behandling, skapad av vår Auktoriserade, specialiserade
-    hudterapeutmästare Anaïs för just Dig.
 - id: 1716528
   title: B.R Signaturbehandling
   price: 1,950 kr
@@ -99,12 +77,59 @@
   slug: br-methodology-1630464
   category: Biologique Recherche
   info: B.R Methodology (Utan booster)
+- id: 1850096
+  title: Nannic NBE Ansikte & hals
+  price: 1,490 kr
+  time: 75 minuter
+  slug: nannic-nbe-ansikte-hals-1850096
+  category: Nannic NBE Radiofrekvens
+  info: >-
+    Nannic NBE är ett bra val till alla som vill uppnå ett synligt lyft med
+    större, klarare ögon och definierade kindben. Tack vare det
+    elektromagnetiska fältet arbetar vi med hudförbättring av rosacea och
+    färgade acneärr, eller hudföryngring på slapp hud och rynkor. 
+
+
+    En avancerad ansiktsbehandling som snabbt ger resultat tack vare den sköna värmeutvecklingen och inslussningen av aktiva ingredienser.
+
+
+    I denna ansiktsbehandling arbetar vi med NBE radiofrekvens som ökar näringsupptaget och syretillförseln till cellerna och kan på så sätt lättare gå till botten med olika hudproblem. 
+
+
+    Behandlingen inleds med en avslappnande och grundlig ansiktsrengöring samt en mjuk men effektiv peeling. Därefter genomförs eventuellt en manuell portömning av enstaka pormaskar (önskar du en ordentlig duprengöring finns ultraljudsrengöring+ i tilläggstänsterna). 
+
+
+    Själva behandlingen utförs med ett lent och skönt munstycke som masserar ansiktet i långsamma, varma rörelser. När halva ansiktet behandlats jämförs det med andra halvan för att du som kund ska få uppleva resultatet innan vi lyfter andra halvan också. 
+
+
+    Behandlingen avslutas med en av de olika sköna alginatmaskerna som Nannic har att erbjuda.
+
+
+    I behandlingen ingår: Rengöring, peeling, manuell potömning av enstaka pormaskar och milier, behandling med NBE-maskinen, avslutande mask samt avslutande serum och kräm.
+- id: 1850173
+  title: Nannic NBE Dekolletage
+  price: 950 kr
+  time: 45 minuter
+  slug: nannic-nbe-dekolletage-1850173
+  category: Nannic NBE Radiofrekvens
+  info: >-
+    Välj denna behandling för en skön och resultatinriktad upplevelse av
+    dekolletaget som ofta inte får den vård det behöver.
+
+
+    I behandlingen ingår en avslappnande rengöring, en mjuk men effektiv peeling, NBE radiofrekvens för huduppstramning och kollagenstimulering samt lymfatisk dränage tillsammans med inslussning av aktiva ingredienser.
+
+
+    Behandlingen avslutas med en av Nannics sköna alginatmasker, avslutande serum och kräm.
+
+
+    Du kan även lägga till dekolletaget i en NBE klassisk (ansikte och hals) för 500:- under tilläggstjänsterna.
 - id: 1630470
-  title: "*Oxygen RX "
+  title: "Oxygen RX "
   price: 950 kr
   time: 30 minuter
   slug: oxygen-rx-1630470
-  category: Circadia
+  category: Ansiktsbehandling Circadia
   info: >-
     Oxygen Rx är en unik behandling där rent syre aktiveras på huden. I denna
     process ökar vi näringstillförseln till huden och stimulerar kollagen- och
@@ -123,12 +148,22 @@
 
 
     Har du fått en medicinsk diagnos för rosacea kan vi även använda oss av Cirkadias speciellt utformade rosacea serum.
+- id: 1850028
+  title: Klassisk A.B med ultraljud
+  price: 1,200 kr
+  time: 60 minuter
+  slug: klassisk-ab-med-ultraljud-1850028
+  category: Ansiktsbehandling Circadia
+  info: En klassisk ansiktsbehandling för dig som vill ha rengöring, peeling,
+    ultraljudsrengöring och borttagning av malier, massage, mask och avslutande
+    serum och kräm. Givetvis anpassas valet av Circadias professionella
+    produkter till Din hud och tillstånd.
 - id: 1630474
   title: "SWICH "
   price: 1,590 kr
   time: 75 minuter
   slug: swich-1630474
-  category: Circadia
+  category: Ansiktsbehandling Circadia
   info: >-
     När vi passerat 40-årsåldern minskar energiproduktionen i hudcellen. Detta
     visar sig i form av fina linjer, rynkor, ojämn pigmentering och brist på
@@ -165,11 +200,11 @@
 
     OBS: detta är en leave on produkt, så du får inte ha vatten i ansiktet på 12 timmar. Du kommer även att få med dig en rengöring och en kräm hem som du ska använda nästkommande 3 dagar efter behandlingen
 - id: 1630475
-  title: "*Retinol peel (1 lager)"
+  title: Retinol peel (1 lager)
   price: 950 kr
-  time: 20 minuter
+  time: 30 minuter
   slug: retinol-peel-1-lager-1630475
-  category: Circadia
+  category: Ansiktsbehandling Circadia
   info: >-
     Innehåller 2,5 % ren retinol och kan användas i de flesta
     ansiktsbehandlingar för att boosta huden genom ökad celldelning. Den
@@ -202,11 +237,11 @@
 
     Undvik att pilla eller dra I den fjällande huden.
 - id: 1630476
-  title: "*Ultraljudsrengöring Plus+ "
+  title: "Ultraljudsrengöring Plus+ "
   price: 750 kr
   time: 40 minuter
   slug: ultraljudsrengoring-plus-1630476
-  category: Circadia
+  category: Ansiktsbehandling Circadia
   info: >-
     “Kläm aldrig i onödan!” Var bland det första vi fick lära oss i skolan i
     Bryssel. Det finns aldrig någon återvändo till den manuella portömningen om
@@ -214,19 +249,133 @@
     proffs. 
 
 
-    I behandlingen ingår rengöring, enzymatisk peeling, ultraljudsrengöring och borttagning av milier samt avslutande produkt(er).
+    I behandlingen ingår rengöring, enzymatisk peeling, ultraljudsrengöring och borttagning av milier samt avslutande serum och kräm.
 - id: 1630477
   title: Fokus
   price: 1,150 kr
   time: 45 minuter
   slug: fokus-1630477
-  category: Circadia
-  info: En skräddarsydd behandling där vi väljer fokus att jobba på. Det kan vara
-    fukt, djuprengöring, antiage, lyster... Anaïs jobbar som vanligt med ett
-    kreativt sinne för att uppnå bästa resultat för din hud med Circadias
-    produkter.
+  category: Ansiktsbehandling Circadia
+  info: >-
+    En skräddarsydd behandling där vi väljer fokus att jobba på. I denna
+    behandling ingår alltid minst en av följande "boosters":
+
+    -NBE radiofrekvens (fokusområde, ej hela ansiktet)
+
+    -Retinol Peel
+
+    -Über PRO
+
+    -Dermaplane PRO
+
+
+    Anaïs jobbar här med ett extra kreativt sinne och lyxig känsla för att uppnå bästa resultat med utvald booster. Mervärdet du betalar jämfört med ord.pris känns av i valet på lyxigare alginatemasker, extra lyxiga avsultningsprodukter och/eller förberedande ritualer för optimalt resultat och upplevelse.
+- id: 1630481
+  title: Dermaplane PRO
+  price: 990 kr
+  time: 30 minuter
+  slug: dermaplane-pro-1630481
+  category: Dermaplanning
+  info: >-
+    Dermaplanning utförs av speciellt utbildad hudterapeut med en särskild
+    scalpell ifrån Dermaplane Pro och är en antiage-behandling som exfolierar
+    huden och tar bort vellushår (fjun). 
+
+
+    Resultatet blir en jämnare hudton, mindre synliga linjer och acneärr, lyster, mjuk och len hud.
+
+    Behandlingen är skapad till att på en gång förbättra hudens utseende, men också maximera upptag av följande produkter eller kombinationsbehandlingar. 
+
+
+    I denna behandling ingår rengöring, dermaplanning av hela ansiktet samt avslutande mask. Kika på våra rekommenderade tilläggstjänster som passar suveränt med Din Dermaplane PRO.
+- id: 1630502
+  title: "Dermapen4™ Parti "
+  price: 1,650 kr
+  time: 40 minuter
+  slug: dermapen4-parti-1630502
+  category: Dermapen4™
+  info: null
+- id: 1630504
+  title: Dermapen4™ Ansikte
+  price: 2,250 kr
+  time: 50 minuter
+  slug: dermapen4-ansikte-1630504
+  category: Dermapen4™
+  info: null
+- id: 1630489
+  title: Über PRO peeling
+  price: 950 kr
+  time: 30 minuter
+  slug: uber-pro-peeling-1630489
+  category: Kemisk Peeling
+  info: null
+- id: 1630490
+  title: PRX-T33
+  price: 1,990 kr
+  time: 30 minuter
+  slug: prx-t33-1630490
+  category: Kemisk Peeling
+  info: >-
+    VAD GÖR BEHANDLINGEN?
+
+
+    Nålfri biorevitaliserande antiage-behandling som definieras som en hybrid teknik mellan kemisk peeling och fillers. Vi plumpar upp fina linjer och rynkor samt ger en ungdomlig glow och lyster till ansiktet. Även hudtonen jämnas ut.
+
+
+    VAD INGÅR I BEHANDLINGEN?
+
+
+    Kort konsultation, dubbelrengöring och avfettning av huden. Applicering i ansiktet av 1-5 lager PRX-T33 som görs i form av en manuell massage med ett behagligt tryck. Vi avslutar med kräm, Ice Mask eller Celluma fototerapi för att maximera effekten! 
+
+
+    Vid varje behandlingstillfälle får du hem en veckas specifik tillhörande dag- och nattkräm som ersätter ordinarie hudvård.
+- id: 1630493
+  title: "Mandeliclear peel inkl. Vitamin A accelerator (1 lager) "
+  price: 1,650 kr
+  time: 20 minuter
+  slug: mandeliclear-peel-inkl-vitamin-a-accelerator-1-lager-1630493
+  category: Kemisk Peeling
+  info: null
+- id: 1630498
+  title: Dermafrost (1 lager) 20´
+  price: 1,250 kr
+  time: 50 minuter
+  slug: dermafrost-1-lager-20-1630498
+  category: Kemisk Peeling
+  info: null
+- id: 1630500
+  title: "Jessners peel - originalet (1 lager) "
+  price: 1,650 kr
+  time: 20 minuter
+  slug: jessners-peel-originalet-1-lager-1630500
+  category: Kemisk Peeling
+  info: En klassisk kombination av 14% salicylsyra, 14% mjölksyra och 14%
+    resorcinol. En medeldjup peel som jämnar ut hudtonen, reducerar
+    pigmentering, reducerar ärr vävnad, djupare linjer och rynkor. Denna peel
+    ger en fjällning ca 3-4 dagar efter behandlingen som resultaterar i en klar
+    och jämn hud. Passar upp till Fitzpatrick III.
+- id: 1630501
+  title: "Soft TCA 20% + Mjölksyra och Kojic acid "
+  price: 2,490 kr
+  time: 20 minuter
+  slug: soft-tca-20-mjolksyra-och-kojic-acid-1630501
+  category: Kemisk Peeling
+  info: >-
+    VAD GÖR BEHANDLINGEN?
+
+
+    Exfolierande behandling som korrigerar pigmenteringar och ålderstecken. Används på pigmentfläckar, utvalda rynkor eller i hela ansiktet beroende på tillsånd, önskemål och indikation.
+
+
+    VAD INGÅR I BEHANDLINGEN?
+
+
+    Kort konsultation om önskemål och behov, dubbelrengöring och avfettning innan applicering av den syrafrätande kombinationspeelen som består av 20% TCA, 10% Mjölksyra och Kojic acid. Soft TCA är en snällare variant än ren TCA tack vare  Mjölksyran som förvandlar TCA egenskaperna till mindre aggressiva mot huden.
+
+
+    Peelingen läggs i lager som tas upp av huden på ca 1-2 min var. När huden är mättad sveper vi av överflödet och smörjer in huden med anpassad kräm.
 - id: 1630584
-  title: "*Avlägsna godartade hudförändringar. Ett återbesök ingår."
+  title: Avlägsna godartade hudförändringar. Ett återbesök ingår.
   price: Från 950 kr
   time: 15 minuter
   slug: avlagsna-godartade-hudforandringar-ett-aterbesok-ingar-1630584
@@ -235,17 +384,18 @@
     VAD GÖR BEHANDLINGEN?
 
 
-    Vi bränner bort alla typer av godartade hudförändringar: Fibrom, Skintags, Pigmentfläckar, Syringom, Xantelasma & Angiomer. 
+    Vi bränner bort alla typer av godartade hudförändringar som läkare inte vill ta bort på grund av att de är: "estetiska åkommor" och ej medicinskt relevanta.
 
 
-    VAD INGÅR I BEHANDLINGEN?
+    ATT TÄNKA PÅ INNAN DU BOKAR!
 
 
-    1)- Konsultation: vi går igenom önskemål och medicinsk bakgrund. Vi bestämmer vad som ska tas bort under behandlingen. Kom gärna förberedd, dvs med eventuell kopia på journalen efter läkarbesök. Har du inte varit hos läkare som antecknat diagnos i din journal ber vi Dig först kontakta Anaïs för att klargöra om vi riskfritt kan bränna bort dina dyskromier eller om du behöver se en läkare för godkännande först. 
+    Var gärna förberedd, skicka en kopia på din journal med relevant information om fläckarna du vill ta bort. 
+
+    Har du inte varit hos någon läkare som antecknat en diagnos i din journal ber vi Dig först kontakta Anaïs för att klargöra om vi riskfritt kan bränna bort dina dyskromier eller om du behöver se en läkare för godkännande först. 
 
 
-    2) Återbesök: Vi tänker säkerhet föst och överbehandlar aldrig, oftast räcker en behandling, men om inte så ingår återbesöket i priset. Återbesök bokas ca 4-6 veckor efter behandlingen oavsett resultat, där tittar jag på läkningen samt utför eventuella korrektioner.
-
+    ATT TÄNKA PÅ NÄR DU BOKAR:
 
     För tillägg av tid i förhållande till antal och storlek som ska behandlas ska du tänka på:
 
@@ -254,7 +404,17 @@
 
     Vi debiterar 250:- för varje påbörjad 5 min efter avslutad 15min i grundtjänsten. Boka tillägg av tid om du vet av att det är mer du vill behandla så att vi säkert hinner med.
 
-    Skriv gärna i rutan för meddelanden till salongen hur många tillägg du uppskattar behövs. Det är inte bindande utan bara en uppskattning som planeringshjälp.
+
+    Skriv i hur mycket du uppskattar behövs. Det är inte bindande utan bara en uppskattning som används som planeringshjälp för oss på kliniken.
+
+
+    VAD INGÅR I BEHANDLINGEN?
+
+
+    1)- Konsultation: vi går igenom önskemål och medicinsk bakgrund. Vi bestämmer vad som ska tas bort under behandlingen. 
+
+
+    2) Återbesök: Vi tänker säkerhet föst och överbehandlar aldrig, oftast räcker en behandling, men om inte så ingår återbesöket i priset. Återbesök bokas ca 6-10 veckor efter behandlingen för eventuella korrektioner.
 - id: 1630524
   title: Plasmalift öra
   price: 2,450 kr
@@ -386,110 +546,6 @@
 
 
     3)- Återbesök: Bokas ca 6-8 veckor efter behandlingen oavsett resultat, där tittar jag på läkningen och vi diskuterar nästa steg.
-- id: 1630481
-  title: "*Dermaplane PRO"
-  price: 990 kr
-  time: 30 minuter
-  slug: dermaplane-pro-1630481
-  category: Dermaplanning
-  info: >-
-    Dermaplanning utförs av speciellt utbildad hudterapeut med en särskild
-    scalpell ifrån Dermaplane Pro och är en antiage-behandling som exfolierar
-    huden och tar bort vellushår (fjun). 
-
-
-    Resultatet blir en jämnare hudton, mindre synliga linjer och acneärr, lyster, mjuk och len hud.
-
-    Behandlingen är skapad till att på en gång förbättra hudens utseende, men också maximera upptag av följande produkter eller kombinationsbehandlingar. 
-
-
-    I denna behandling ingår rengöring, dermaplanning av hela ansiktet samt avslutande mask. Kika på våra rekommenderade tilläggstjänster som passar suveränt med Din Dermaplane PRO.
-- id: 1630489
-  title: Über PRO peeling
-  price: 950 kr
-  time: 30 minuter
-  slug: uber-pro-peeling-1630489
-  category: Kemisk Peeling
-  info: null
-- id: 1630490
-  title: "*PRX-T33"
-  price: 1,990 kr
-  time: 30 minuter
-  slug: prx-t33-1630490
-  category: Kemisk Peeling
-  info: >-
-    VAD GÖR BEHANDLINGEN?
-
-
-    Nålfri biorevitaliserande antiage-behandling som definieras som en hybrid teknik mellan kemisk peeling och fillers. Vi plumpar upp fina linjer och rynkor samt ger en ungdomlig glow och lyster till ansiktet. Även hudtonen jämnas ut.
-
-
-    VAD INGÅR I BEHANDLINGEN?
-
-
-    Kort konsultation, dubbelrengöring och avfettning av huden. Applicering i ansiktet av 1-5 lager PRX-T33 som görs i form av en manuell massage med ett behagligt tryck. Vi avslutar med kräm, Ice Mask eller Celluma fototerapi för att maximera effekten! 
-
-
-    Vid varje behandlingstillfälle får du hem en veckas specifik tillhörande dag- och nattkräm som ersätter ordinarie hudvård.
-- id: 1630493
-  title: "*Mandeliclear peel inkl. Vitamin A accelerator (1 lager) "
-  price: 1,650 kr
-  time: 20 minuter
-  slug: mandeliclear-peel-inkl-vitamin-a-accelerator-1-lager-1630493
-  category: Kemisk Peeling
-  info: null
-- id: 1630498
-  title: "*Dermafrost (1 lager) 20´"
-  price: 1,250 kr
-  time: 50 minuter
-  slug: dermafrost-1-lager-20-1630498
-  category: Kemisk Peeling
-  info: null
-- id: 1630500
-  title: "*Jessners peel - originalet (1 lager) "
-  price: 1,650 kr
-  time: 20 minuter
-  slug: jessners-peel-originalet-1-lager-1630500
-  category: Kemisk Peeling
-  info: En klassisk kombination av 14% salicylsyra, 14% mjölksyra och 14%
-    resorcinol. En medeldjup peel som jämnar ut hudtonen, reducerar
-    pigmentering, reducerar ärr vävnad, djupare linjer och rynkor. Denna peel
-    ger en fjällning ca 3-4 dagar efter behandlingen som resultaterar i en klar
-    och jämn hud. Passar upp till Fitzpatrick III.
-- id: 1630501
-  title: "Soft TCA 20% + Mjölksyra och Kojic acid "
-  price: 2,490 kr
-  time: 20 minuter
-  slug: soft-tca-20-mjolksyra-och-kojic-acid-1630501
-  category: Kemisk Peeling
-  info: >-
-    VAD GÖR BEHANDLINGEN?
-
-
-    Exfolierande behandling som korrigerar pigmenteringar och ålderstecken. Används på pigmentfläckar, utvalda rynkor eller i hela ansiktet beroende på tillsånd, önskemål och indikation.
-
-
-    VAD INGÅR I BEHANDLINGEN?
-
-
-    Kort konsultation om önskemål och behov, dubbelrengöring och avfettning innan applicering av den syrafrätande kombinationspeelen som består av 20% TCA, 10% Mjölksyra och Kojic acid. Soft TCA är en snällare variant än ren TCA tack vare  Mjölksyran som förvandlar TCA egenskaperna till mindre aggressiva mot huden.
-
-
-    Peelingen läggs i lager som tas upp av huden på ca 1-2 min var. När huden är mättad sveper vi av överflödet och smörjer in huden med anpassad kräm.
-- id: 1630502
-  title: "*Dermapen 4 Parti "
-  price: 1,650 kr
-  time: 40 minuter
-  slug: dermapen-4-parti-1630502
-  category: Dermapen 4
-  info: null
-- id: 1630504
-  title: "*Dermapen 4 Ansikte"
-  price: 2,250 kr
-  time: 50 minuter
-  slug: dermapen-4-ansikte-1630504
-  category: Dermapen 4
-  info: null
 - id: 1630529
   title: Celluma PRO LED Panel x10
   price: 6,990 kr
@@ -602,10 +658,10 @@
 
     Jag rådgiver Dig om färg, form och teknik som bäst lämpar sig till dina önskemål, men det är Du som får bestämma precis hur du vill ha dem. Fransfärg görs enligt önskemål med eller utan att inkludera underfransarna.
 - id: 1630563
-  title: Brynform
+  title: Brynform eller Färg
   price: 250 kr
   time: 15 minuter
-  slug: brynform-1630563
+  slug: brynform-eller-farg-1630563
   category: Ögon-Blick
   info: >-
     VAD GÖR BEHANDLINGEN?
