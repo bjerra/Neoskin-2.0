@@ -78,10 +78,10 @@
   category: Biologique Recherche
   info: B.R Methodology (Utan booster)
 - id: 1850096
-  title: Nannic NBE Ansikte & hals
-  price: 1,490 kr
+  title: Nannic NBE Ansikte & hals ERBJUDANDE INKL Dekolletage
+  price: 1,990 kr
   time: 75 minuter
-  slug: nannic-nbe-ansikte-hals-1850096
+  slug: nannic-nbe-ansikte-hals-erbjudande-inkl-dekolletage-1850096
   category: Nannic NBE Radiofrekvens
   info: >-
     Nannic NBE är ett bra val till alla som vill uppnå ett synligt lyft med
@@ -199,57 +199,6 @@
 
 
     OBS: detta är en leave on produkt, så du får inte ha vatten i ansiktet på 12 timmar. Du kommer även att få med dig en rengöring och en kräm hem som du ska använda nästkommande 3 dagar efter behandlingen
-- id: 1630475
-  title: Retinol peel (1 lager)
-  price: 950 kr
-  time: 30 minuter
-  slug: retinol-peel-1-lager-1630475
-  category: Ansiktsbehandling Circadia
-  info: >-
-    Innehåller 2,5 % ren retinol och kan användas i de flesta
-    ansiktsbehandlingar för att boosta huden genom ökad celldelning. Den
-    kombineras även tillsammans med MandeliClear peel för extra hudföryngrande
-    effekt. 
-
-
-    Passar alla som behöver ökad cellförnyelse. Fitzpatrick I - VI
-
-    Behandlingen främjar cellförnyelse, ökar kollagen och elastin genom fibroblaststimulering. Flagning är att förvänta.
-
-
-    Fördelar:
-
-    ökar cellförnyelse processen, förbättrar pigmentering av ärr, förbättrar utseendet på grov hud.
-
-
-    Kontraindikationer:
-
-    Överkänslighet eller någon mycket allergisk, allergi mor vitamin A, extremt torr hud eller komprimerad lipidbarriär, Isotretinoin under det senaste året, glykolsyra eller salicylsyra senaste veckan, gravid eller ammande, herpes utbrott, öppna sår eller misstänkt lesioner, Retin-A eller Renova under den senaste veckan.
-
-
-    Försiktighetsåtgärder:
-
-    Tvätta inte ansiktet 12 timmer efter behandlingen.
-
-    Undvik att duscha, bada bastu eller att svettas 12 timmar efter behandlingen. Skrubba/exfoliera ej förens läkningsprocessen är klar.
-
-    Använd ej AHA, BHA eller A vitaminer förens läkningsprocessen är klar.
-
-    Undvik att pilla eller dra I den fjällande huden.
-- id: 1630476
-  title: "Ultraljudsrengöring Plus+ "
-  price: 750 kr
-  time: 40 minuter
-  slug: ultraljudsrengoring-plus-1630476
-  category: Ansiktsbehandling Circadia
-  info: >-
-    “Kläm aldrig i onödan!” Var bland det första vi fick lära oss i skolan i
-    Bryssel. Det finns aldrig någon återvändo till den manuella portömningen om
-    man någon gång har fått en ordentligt utförd ultraljudsrengöring hos ett
-    proffs. 
-
-
-    I behandlingen ingår rengöring, enzymatisk peeling, ultraljudsrengöring och borttagning av milier samt avslutande serum och kräm.
 - id: 1630477
   title: Fokus
   price: 1,150 kr
@@ -302,6 +251,57 @@
   slug: dermapen4-ansikte-1630504
   category: Dermapen4™
   info: null
+- id: 1630475
+  title: Retinol peel (1 lager)
+  price: 950 kr
+  time: 30 minuter
+  slug: retinol-peel-1-lager-1630475
+  category: Quick Fix
+  info: >-
+    Innehåller 2,5 % ren retinol och kan användas i de flesta
+    ansiktsbehandlingar för att boosta huden genom ökad celldelning. Den
+    kombineras även tillsammans med MandeliClear peel för extra hudföryngrande
+    effekt. 
+
+
+    Passar alla som behöver ökad cellförnyelse. Fitzpatrick I - VI
+
+    Behandlingen främjar cellförnyelse, ökar kollagen och elastin genom fibroblaststimulering. Flagning är att förvänta.
+
+
+    Fördelar:
+
+    ökar cellförnyelse processen, förbättrar pigmentering av ärr, förbättrar utseendet på grov hud.
+
+
+    Kontraindikationer:
+
+    Överkänslighet eller någon mycket allergisk, allergi mor vitamin A, extremt torr hud eller komprimerad lipidbarriär, Isotretinoin under det senaste året, glykolsyra eller salicylsyra senaste veckan, gravid eller ammande, herpes utbrott, öppna sår eller misstänkt lesioner, Retin-A eller Renova under den senaste veckan.
+
+
+    Försiktighetsåtgärder:
+
+    Tvätta inte ansiktet 12 timmer efter behandlingen.
+
+    Undvik att duscha, bada bastu eller att svettas 12 timmar efter behandlingen. Skrubba/exfoliera ej förens läkningsprocessen är klar.
+
+    Använd ej AHA, BHA eller A vitaminer förens läkningsprocessen är klar.
+
+    Undvik att pilla eller dra I den fjällande huden.
+- id: 1630476
+  title: "Ultraljudsrengöring Plus+ "
+  price: 750 kr
+  time: 40 minuter
+  slug: ultraljudsrengoring-plus-1630476
+  category: Quick Fix
+  info: >-
+    “Kläm aldrig i onödan!” Var bland det första vi fick lära oss i skolan i
+    Bryssel. Det finns aldrig någon återvändo till den manuella portömningen om
+    man någon gång har fått en ordentligt utförd ultraljudsrengöring hos ett
+    proffs. 
+
+
+    I behandlingen ingår rengöring, enzymatisk peeling, ultraljudsrengöring och borttagning av milier samt avslutande serum och kräm.
 - id: 1630489
   title: Über PRO peeling
   price: 950 kr
