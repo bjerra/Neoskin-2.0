@@ -79,7 +79,7 @@
   info: B.R Methodology (Utan booster)
 - id: 1850096
   title: Nannic NBE Ansikte & hals
-  price: 1,990 kr
+  price: 1,490 kr
   time: 75 minuter
   slug: nannic-nbe-ansikte-hals-1850096
   category: Nannic NBE Radiofrekvens
@@ -107,14 +107,18 @@
 
     I behandlingen ingår: Rengöring, peeling, manuell potömning av enstaka pormaskar och milier, behandling med NBE-maskinen, avslutande mask samt avslutande serum och kräm.
 - id: 1850173
-  title: Nannic NBE Dekolletage
+  title: Nannic NBE Parti
   price: 950 kr
   time: 45 minuter
-  slug: nannic-nbe-dekolletage-1850173
+  slug: nannic-nbe-parti-1850173
   category: Nannic NBE Radiofrekvens
   info: >-
-    Välj denna behandling för en skön och resultatinriktad upplevelse av
-    dekolletaget som ofta inte får den vård det behöver.
+    Välj denna behandling för en skön och resultatinriktad upplevelse av t.ex
+    dekolletaget som ofta inte får den vård den behöver. Kanske vill du hellre
+    intensifiera arbetet med jämna mellanrum för ögonen eller käklinken? Vi
+    jobbar på ditt fokus i 20min och anslutar med alginatmask över det arbetade
+    området och lägger sedan ett serum och en kräm ifrån Nannic i hela ansiktet,
+    halsen och dekolletaget.
 
 
     I behandlingen ingår en avslappnande rengöring, en mjuk men effektiv peeling, NBE radiofrekvens för huduppstramning och kollagenstimulering samt lymfatisk dränage tillsammans med inslussning av aktiva ingredienser.
@@ -123,7 +127,7 @@
     Behandlingen avslutas med en av Nannics sköna alginatmasker, avslutande serum och kräm.
 
 
-    Du kan även lägga till dekolletaget i en NBE klassisk (ansikte och hals) för 500:- under tilläggstjänsterna.
+    Tips! Du kan lägga till dekolletaget i en NBE klassisk (ansikte och hals) för 500:- under tilläggstjänsterna.
 - id: 1630470
   title: "Oxygen RX "
   price: 950 kr
