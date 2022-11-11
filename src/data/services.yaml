@@ -1,85 +1,143 @@
-- id: 1920685
-  title: Nannic NBE Ansikte hals och dekolletage
-  price: 1,990 kr
-  time: 75 minuter
-  slug: nannic-nbe-ansikte-hals-och-dekolletage-1920685
-  category: Ansikte
+- id: 1630541
+  title: "Hudvårdskonsultation "
+  price: 250 kr
+  time: 30 minuter
+  slug: hudvardskonsultation-1630541
+  category: NY KUND
   info: >-
-    Nannic NBE är ett bra val till alla som vill uppnå ett synligt lyft med
-    större, klarare ögon och definierade kindben. Tack vare det
-    elektromagnetiska fältet arbetar vi med hudförbättring av rosacea och
-    färgade acneärr, eller hudföryngring på slapp hud och rynkor. 
+    Boka denna konsultation om du behöver fördjupa förståelsen i specifika
+    hudtillstånd och problem som du vill ha hjälp med. 
+
+    Konsultationen ska även bokas före en eventuell fraktionerad CO2 laser behandling - Neofrax.
 
 
-    En avancerad ansiktsbehandling som snabbt ger resultat tack vare den sköna värmeutvecklingen och inslussningen av aktiva ingredienser.
+    kostnaden på 250:- dras av vid köp av produkter eller bokad behandling och blir därmed kostnadsfri.
 
 
-    I denna ansiktsbehandling arbetar vi med NBE radiofrekvens som ökar näringsupptaget och syretillförseln till cellerna och kan på så sätt lättare gå till botten med olika hudproblem. 
-
-
-    Behandlingen inleds med en avslappnande och grundlig ansiktsrengöring samt en mjuk men effektiv peeling. Därefter genomförs eventuellt en manuell portömning av enstaka pormaskar (önskar du en ordentlig duprengöring finns ultraljudsrengöring+ i tilläggstänsterna). 
-
-
-    Själva behandlingen utförs med ett lent och skönt munstycke som masserar ansiktet i långsamma, varma rörelser. När halva ansiktet behandlats jämförs det med andra halvan för att du som kund ska få uppleva resultatet innan vi lyfter andra halvan också. 
-
-
-    Behandlingen avslutas med en av de olika sköna alginatmaskerna som Nannic har att erbjuda.
-
-
-    I behandlingen ingår: Rengöring, peeling, manuell potömning av enstaka pormaskar och milier, behandling med NBE-maskinen, avslutande mask samt avslutande serum och kräm.
-- id: 1920687
-  title: Nannic NBE - Kur på 5ggr
-  price: 7,450 kr
-  time: 60 minuter
-  slug: nannic-nbe-kur-pa-5ggr-1920687
-  category: Ansikte
-  info: För långvariga resultat rekommenderas en kur på 5 gånger som görs
-    intensivt, 2-3 gånger i veckan i 2-3 veckor. Sedan kan behandlingen med
-    fördel göras var 4-6e vecka.
+    Vill du gå på en behandling men inte vet exakt vad du behöver rekommenderar vi att du bokar en "öppen tid" istället.
+- id: 1630540
+  title: Köp i butiken
+  price: ""
+  time: 15 minuter
+  slug: kop-i-butiken-1630540
+  category: Kostnadsfria tider
+  info: null
+- id: 1630543
+  title: "Återbesök "
+  price: ""
+  time: 20 minuter
+  slug: aterbesok-1630543
+  category: Kostnadsfria tider
+  info: null
 - id: 1630452
   title: Öppen tid S
   price: Från 950 kr
   time: 45 minuter
   slug: oppen-tid-s-1630452
-  category: Skräddarsytt & Abonnemang
-  info: För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
-    anpassad behandling till proffset. Behandlingen utformas efter antal minuter
-    du valt, budget och självklart din huds aktuella tillstånd. Du får en 100%
-    personnaliserad behandling, skapad av vår Auktoriserade, specialiserade
-    hudterapeutmästare Anaïs för just Dig.
+  category: Öppen tid - konsultation och behandling på plats
+  info: >-
+    Öppen tiderna är till för att inte Du som kund ska försöka välja rätt
+    behandling. 
+
+    Anaïs är Auktoriserad, specialiserad och innehar mästarbrev i hudterapeutyrket. 
+
+    Vi anser att en stor del av jobbet för att kunna hjälpa på riktigt är just att bedöma vilket/vilka verktyg i vår stora verktygslåda som bäst passar kundens hudtillstånd, önskemål och budget. 
+
+    Du behöver altså inte själv veta och välja vad du behöver, det diskuterar vi tillsammans på plats!
 - id: 1630453
   title: Öppen tid M
   price: Från 1,200 kr
   time: 60 minuter
   slug: oppen-tid-m-1630453
-  category: Skräddarsytt & Abonnemang
-  info: För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
-    anpassad behandling till proffset. Behandlingen utformas efter antal minuter
-    du valt, budget och självklart din huds aktuella tillstånd. Du får en 100%
-    personnaliserad behandling, skapad av vår Auktoriserade, specialiserade
-    hudterapeutmästare Anaïs för just Dig.
+  category: Öppen tid - konsultation och behandling på plats
+  info: >-
+    Öppen tiderna är till för att inte Du som kund ska försöka välja rätt
+    behandling. 
+
+    Anaïs är Auktoriserad, specialiserad och innehar mästarbrev i hudterapeutyrket. 
+
+    Vi anser att en stor del av jobbet för att kunna hjälpa på riktigt är just att bedöma vilket/vilka verktyg i vår stora verktygslåda som bäst passar kundens hudtillstånd, önskemål och budget. 
+
+    Du behöver altså inte själv veta och välja vad du behöver, det diskuterar vi tillsammans på plats!
 - id: 1630456
   title: Öppen tid L
   price: Från 1,500 kr
   time: 75 minuter
   slug: oppen-tid-l-1630456
-  category: Skräddarsytt & Abonnemang
-  info: För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
-    anpassad behandling till proffset. Behandlingen utformas efter antal minuter
-    du valt, budget och självklart din huds aktuella tillstånd. Du får en 100%
-    personnaliserad behandling, skapad av vår Auktoriserade, specialiserade
-    hudterapeutmästare Anaïs för just Dig.
+  category: Öppen tid - konsultation och behandling på plats
+  info: >-
+    Öppen tiderna är till för att inte Du som kund ska försöka välja rätt
+    behandling. 
+
+    Anaïs är Auktoriserad, specialiserad och innehar mästarbrev i hudterapeutyrket. 
+
+    Vi anser att en stor del av jobbet för att kunna hjälpa på riktigt är just att bedöma vilket/vilka verktyg i vår stora verktygslåda som bäst passar kundens hudtillstånd, önskemål och budget. 
+
+    Du behöver altså inte själv veta och välja vad du behöver, det diskuterar vi tillsammans på plats!
 - id: 1630457
   title: Öppen tid XL
   price: Från 1,950 kr
   time: 90 minuter
   slug: oppen-tid-xl-1630457
-  category: Skräddarsytt & Abonnemang
-  info: För Dig med abonnemang eller för Dig som vill överlåta valet av bäst
-    anpassad behandling till proffset. Behandlingen utformas efter antal minuter
-    du valt, budget och självklart din huds aktuella tillstånd. Du får en 100%
-    personnaliserad behandling, skapad av vår Auktoriserade, specialiserade
-    hudterapeutmästare Anaïs för just Dig.
+  category: Öppen tid - konsultation och behandling på plats
+  info: >-
+    Öppen tiderna är till för att inte Du som kund ska försöka välja rätt
+    behandling. 
+
+    Anaïs är Auktoriserad, specialiserad och innehar mästarbrev i hudterapeutyrket. 
+
+    Vi anser att en stor del av jobbet för att kunna hjälpa på riktigt är just att bedöma vilket/vilka verktyg i vår stora verktygslåda som bäst passar kundens hudtillstånd, önskemål och budget. 
+
+    Du behöver altså inte själv veta och välja vad du behöver, det diskuterar vi tillsammans på plats!
+- id: 1977358
+  title: "MODELLPRIS: Neofrax - Ansikte"
+  price: 8,500 kr
+  time: 60 minuter
+  slug: modellpris-neofrax-ansikte-1977358
+  category: Neofrax - Fraktionerad Co2 laser
+  info: null
+- id: 1978674
+  title: "MODELLPRIS: Neofrax - Acneärr; gropar på kindområdet"
+  price: 4,500 kr
+  time: 60 minuter
+  slug: modellpris-neofrax-acnearr-gropar-pa-kindomradet-1978674
+  category: Neofrax - Fraktionerad Co2 laser
+  info: null
+- id: 1978704
+  title: "MODELLPRIS: Neofrax - små ärr. Tinningar"
+  price: 2,500 kr
+  time: 45 minuter
+  slug: modellpris-neofrax-sma-arr-tinningar-1978704
+  category: Neofrax - Fraktionerad Co2 laser
+  info: null
+- id: 1978703
+  title: "MODELLPRIS: Neofrax - runt mun och haka"
+  price: 3,500 kr
+  time: 60 minuter
+  slug: modellpris-neofrax-runt-mun-och-haka-1978703
+  category: Neofrax - Fraktionerad Co2 laser
+  info: null
+- id: 1978676
+  title: "MODELLPRIS: Neofrax - Bristningar"
+  price: 5,500 kr
+  time: 60 minuter
+  slug: modellpris-neofrax-bristningar-1978676
+  category: Neofrax - Fraktionerad Co2 laser
+  info: null
+- id: 1978679
+  title: "MODELLPRIS: Neofrax - Dekolletage"
+  price: 7,500 kr
+  time: 60 minuter
+  slug: modellpris-neofrax-dekolletage-1978679
+  category: Neofrax - Fraktionerad Co2 laser
+  info: null
+- id: 1978682
+  title: "MODELLPRIS: Neofrax - Mage. Slapp hud"
+  price: 9,500 kr
+  time: 75 minuter
+  slug: modellpris-neofrax-mage-slapp-hud-1978682
+  category: Neofrax - Fraktionerad Co2 laser
+  info: null
 - id: 1716528
   title: B.R Signaturbehandling
   price: 1,950 kr
@@ -144,28 +202,44 @@
 
 
     I behandlingen ingår: Rengöring, peeling, manuell potömning av enstaka pormaskar och milier, behandling med NBE-maskinen, avslutande mask samt avslutande serum och kräm.
-- id: 1850173
-  title: Nannic NBE Parti
-  price: 950 kr
-  time: 45 minuter
-  slug: nannic-nbe-parti-1850173
+- id: 1920685
+  title: Nannic NBE Ansikte hals och dekolletage
+  price: 1,990 kr
+  time: 75 minuter
+  slug: nannic-nbe-ansikte-hals-och-dekolletage-1920685
   category: Nannic NBE Radiofrekvens
   info: >-
-    Välj denna behandling för en skön och resultatinriktad upplevelse av t.ex
-    dekolletaget som ofta inte får den vård den behöver. Kanske vill du hellre
-    intensifiera arbetet med jämna mellanrum för ögonen eller käklinken? Vi
-    jobbar på ditt fokus i 20min och anslutar med alginatmask över det arbetade
-    området och lägger sedan ett serum och en kräm ifrån Nannic i hela ansiktet,
-    halsen och dekolletaget.
+    Nannic NBE är ett bra val till alla som vill uppnå ett synligt lyft med
+    större, klarare ögon och definierade kindben. Tack vare det
+    elektromagnetiska fältet arbetar vi med hudförbättring av rosacea och
+    färgade acneärr, eller hudföryngring på slapp hud och rynkor. 
 
 
-    I behandlingen ingår en avslappnande rengöring, en mjuk men effektiv peeling, NBE radiofrekvens för huduppstramning och kollagenstimulering samt lymfatisk dränage tillsammans med inslussning av aktiva ingredienser.
+    En avancerad ansiktsbehandling som snabbt ger resultat tack vare den sköna värmeutvecklingen och inslussningen av aktiva ingredienser.
 
 
-    Behandlingen avslutas med en av Nannics sköna alginatmasker, avslutande serum och kräm.
+    I denna ansiktsbehandling arbetar vi med NBE radiofrekvens som ökar näringsupptaget och syretillförseln till cellerna och kan på så sätt lättare gå till botten med olika hudproblem. 
 
 
-    Tips! Du kan lägga till dekolletaget i en NBE klassisk (ansikte och hals) för 500:- under tilläggstjänsterna.
+    Behandlingen inleds med en avslappnande och grundlig ansiktsrengöring samt en mjuk men effektiv peeling. Därefter genomförs eventuellt en manuell portömning av enstaka pormaskar (önskar du en ordentlig duprengöring finns ultraljudsrengöring+ i tilläggstänsterna). 
+
+
+    Själva behandlingen utförs med ett lent och skönt munstycke som masserar ansiktet i långsamma, varma rörelser. När halva ansiktet behandlats jämförs det med andra halvan för att du som kund ska få uppleva resultatet innan vi lyfter andra halvan också. 
+
+
+    Behandlingen avslutas med en av de olika sköna alginatmaskerna som Nannic har att erbjuda.
+
+
+    I behandlingen ingår: Rengöring, peeling, manuell potömning av enstaka pormaskar och milier, behandling med NBE-maskinen, avslutande mask samt avslutande serum och kräm.
+- id: 1920687
+  title: Nannic NBE - Kur på 5ggr
+  price: 7,450 kr
+  time: 60 minuter
+  slug: nannic-nbe-kur-pa-5ggr-1920687
+  category: Nannic NBE Radiofrekvens
+  info: För långvariga resultat rekommenderas en kur på 5 gånger som görs
+    intensivt, 2-3 gånger i veckan i 2-3 veckor. Sedan kan behandlingen med
+    fördel göras var 4-6e vecka.
 - id: 1630470
   title: "Oxygen RX "
   price: 950 kr
@@ -241,26 +315,6 @@
 
 
     OBS: detta är en leave on produkt, så du får inte ha vatten i ansiktet på 12 timmar. Du kommer även att få med dig en rengöring och en kräm hem som du ska använda nästkommande 3 dagar efter behandlingen
-- id: 1630477
-  title: Fokus
-  price: 1,150 kr
-  time: 45 minuter
-  slug: fokus-1630477
-  category: Ansiktsbehandling Circadia
-  info: >-
-    En skräddarsydd behandling där vi väljer fokus att jobba på. I denna
-    behandling ingår alltid minst en av följande "boosters":
-
-    -NBE radiofrekvens (fokusområde, ej hela ansiktet)
-
-    -Retinol Peel
-
-    -Über PRO
-
-    -Dermaplane PRO
-
-
-    Anaïs jobbar här med ett extra kreativt sinne och lyxig känsla för att uppnå bästa resultat med utvald booster. Mervärdet du betalar jämfört med ord.pris känns av i valet på lyxigare alginatemasker, extra lyxiga avsultningsprodukter och/eller förberedande ritualer för optimalt resultat och upplevelse.
 - id: 1630481
   title: Dermaplane PRO
   price: 990 kr
@@ -457,29 +511,6 @@
 
 
     2) Återbesök: Vi tänker säkerhet föst och överbehandlar aldrig, oftast räcker en behandling, men om inte så ingår återbesöket i priset. Återbesök bokas ca 6-10 veckor efter behandlingen för eventuella korrektioner.
-- id: 1630524
-  title: Plasmalift öra
-  price: 2,450 kr
-  time: 45 minuter
-  slug: plasmalift-ora-1630524
-  category: Plasmapen Plaxel+
-  info: >-
-    VAD GÖR BEHANDLINGEN?
-
-
-    Vi gör en ytslipning och punktbehandling av omkringliggande hud vid örfästet för att strama åt och reducera rynkornas utseende. Permanenta resultat som kan kräva mellan 1-4 behandlingar med ca 3 månaders mellanrum beroende på tillstånd och önskemål. Behandlingen KAN upprepas ända tills önskat resultat uppnås. Naturligt åldrande stoppas inte, rynkorna kommer så småningom tillbaka.
-
-
-    VAD INGÅR I BEHANDLINGEN?
-
-
-    1)- Konsultation: vi går igenom önskemål och medicinsk bakgrund. Beroende på tillstånd och andra påverkande faktorer får Du ett anpassat prisförslag. OBS: Konsultationen bokas FÖRST under kategorin “Konsultationer”. Har du redan gått på din konsultation kan du gå vidare med denna bokning.
-
-
-    2)- Behandling: Bedövning ingår. Efter behandlingen får du en eller två sachéer PLC kräm att använda dagligen tills skorporna fallit av.
-
-
-    3)- Återbesök: Bokas ca 6-8 veckor efter behandlingen oavsett resultat, där tittar jag på läkningen och vi diskuterar nästa steg.
 - id: 1630525
   title: Plasmalift Pusslinjer/Överläpp
   price: 2,450 kr
@@ -565,35 +596,12 @@
 
 
     3)- Återbesök: Bokas ca 12 veckor efter behandlingen för att ta “efter-bilder” och jämföra resultatet. Inga bilder läggs upp någonstans utan ditt godkännande. Bilderna är först och främst till för Dig.
-- id: 1630528
-  title: Plasmalift ledsen navel
-  price: 7,450 kr
-  time: 90 minuter
-  slug: plasmalift-ledsen-navel-1630528
-  category: Plasmapen Plaxel+
-  info: >-
-    VAD GÖR BEHANDLINGEN?
-
-
-    Vi gör en ytslipning och punktbehandling av naveln och omkringliggande hud för att strama åt förminska överflödet som skrynklar ihop sig. Permanenta resultat som kan kräva mellan 1-3 behandlingar med ca 3 månaders mellanrum beroende på tillstånd och önskemål. Behandlingen KAN upprepas ända tills önskat resultat uppnås.
-
-
-    VAD INGÅR I BEHANDLINGEN?
-
-
-    1)- Konsultation: vi går igenom önskemål och medicinsk bakgrund. Vi bestämmer storlek och form på området som ska behandlas och du får ett anpassat prisförslag. OBS: Konsultationen bokas FÖRST under kategorin “Konsultationer”. Har du redan gått på din konsultation kan du gå vidare med denna bokning.
-
-
-    2)- Behandling: Bedövning ingår. Efter behandlingen får du en eller två sachéer PLC kräm att använda dagligen tills skorporna fallit av.
-
-
-    3)- Återbesök: Bokas ca 6-8 veckor efter behandlingen oavsett resultat, där tittar jag på läkningen och vi diskuterar nästa steg.
 - id: 1630529
   title: Celluma PRO LED Panel x10
   price: 6,990 kr
   time: 30 minuter
   slug: celluma-pro-led-panel-x10-1630529
-  category: Konsultationer
+  category: LED Ljusterapi
   info: >-
     VAD GÖR BEHANDLINGEN?
 
@@ -605,32 +613,6 @@
 
 
     Rengöring, Celluma LED, ögonkräm, kräm, SPF vid behov.
-- id: 1630540
-  title: Köp av produkter/presentkort
-  price: ""
-  time: 15 minuter
-  slug: kop-av-produkter-presentkort-1630540
-  category: Konsultationer
-  info: null
-- id: 1630541
-  title: "Hudvårdskonsultation "
-  price: 250 kr
-  time: 30 minuter
-  slug: hudvardskonsultation-1630541
-  category: Konsultationer
-  info: >-
-    Vid konsultationstillfället har du möjlighet att dra av 450 kr på köp av
-    valfri produkt.
-
-
-    - Boka denna konsultation om du vill ha hjälp med din hud utan att gå på behandling.
-- id: 1630543
-  title: "Återbesök "
-  price: ""
-  time: 20 minuter
-  slug: aterbesok-1630543
-  category: Konsultationer
-  info: null
 - id: 1660331
   title: "Ansiktsmassage "
   price: 500 kr
@@ -791,52 +773,3 @@
 
 
     Angående brynfärgen rekommenderar jag att utgå ifrån dina egna toner för att uppnå ett naturligt resultat, men jag frågar dig alltid först innan att lägga på färgen.
-- id: 1977358
-  title: "MODELLPRIS: Neofrax - Ansikte"
-  price: 8,500 kr
-  time: 60 minuter
-  slug: modellpris-neofrax-ansikte-1977358
-  category: Neofrax - Fraktionerad Co2 laser
-  info: null
-- id: 1978674
-  title: "MODELLPRIS: Neofrax - Acneärr; gropar på kindområdet"
-  price: 4,500 kr
-  time: 60 minuter
-  slug: modellpris-neofrax-acnearr-gropar-pa-kindomradet-1978674
-  category: Neofrax - Fraktionerad Co2 laser
-  info: null
-- id: 1978676
-  title: "MODELLPRIS: Neofrax - Bristningar"
-  price: 5,500 kr
-  time: 60 minuter
-  slug: modellpris-neofrax-bristningar-1978676
-  category: Neofrax - Fraktionerad Co2 laser
-  info: null
-- id: 1978679
-  title: "MODELLPRIS: Neofrax - Dekolletage"
-  price: 7,500 kr
-  time: 60 minuter
-  slug: modellpris-neofrax-dekolletage-1978679
-  category: Neofrax - Fraktionerad Co2 laser
-  info: null
-- id: 1978682
-  title: "MODELLPRIS: Neofrax - Mage. Slapp hud"
-  price: 9,500 kr
-  time: 75 minuter
-  slug: modellpris-neofrax-mage-slapp-hud-1978682
-  category: Neofrax - Fraktionerad Co2 laser
-  info: null
-- id: 1978703
-  title: "MODELLPRIS: Neofrax - runt mun och haka"
-  price: 3,500 kr
-  time: 60 minuter
-  slug: modellpris-neofrax-runt-mun-och-haka-1978703
-  category: Neofrax - Fraktionerad Co2 laser
-  info: null
-- id: 1978704
-  title: "MODELLPRIS: Neofrax - små ärr. Tinningar"
-  price: 2,500 kr
-  time: 45 minuter
-  slug: modellpris-neofrax-sma-arr-tinningar-1978704
-  category: Neofrax - Fraktionerad Co2 laser
-  info: null
