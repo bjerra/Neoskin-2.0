@@ -43,7 +43,9 @@
 
     Vi anser att en stor del av jobbet för att kunna hjälpa på riktigt är just att bedöma vilket/vilka verktyg i vår stora verktygslåda som bäst passar kundens hudtillstånd, önskemål och budget. 
 
-    Du behöver altså inte själv veta och välja vad du behöver, det diskuterar vi tillsammans på plats!
+    Du behöver altså inte själv veta och välja vad du behöver, det diskuterar vi tillsammans på plats! 
+
+    Du behöver inte stressa, 30min avsätts automatiskt till varje öppentid vilket betyder att längden du väljer blir den aktiva behandlingstiden och inte tiden för både konsultation och behandling.
 - id: 1630453
   title: Öppen tid M
   price: Från 1,200 kr
@@ -58,7 +60,9 @@
 
     Vi anser att en stor del av jobbet för att kunna hjälpa på riktigt är just att bedöma vilket/vilka verktyg i vår stora verktygslåda som bäst passar kundens hudtillstånd, önskemål och budget. 
 
-    Du behöver altså inte själv veta och välja vad du behöver, det diskuterar vi tillsammans på plats!
+    Du behöver altså inte själv veta och välja vad du behöver, det diskuterar vi tillsammans på plats! 
+
+    Du behöver inte stressa, 30min avsätts automatiskt till varje öppentid vilket betyder att längden du väljer blir den aktiva behandlingstiden och inte tiden för både konsultation och behandling.
 - id: 1630456
   title: Öppen tid L
   price: Från 1,500 kr
@@ -73,7 +77,9 @@
 
     Vi anser att en stor del av jobbet för att kunna hjälpa på riktigt är just att bedöma vilket/vilka verktyg i vår stora verktygslåda som bäst passar kundens hudtillstånd, önskemål och budget. 
 
-    Du behöver altså inte själv veta och välja vad du behöver, det diskuterar vi tillsammans på plats!
+    Du behöver altså inte själv veta och välja vad du behöver, det diskuterar vi tillsammans på plats! 
+
+    Du behöver inte stressa, 30min avsätts automatiskt till varje öppentid vilket betyder att längden du väljer blir den aktiva behandlingstiden och inte tiden för både konsultation och behandling.
 - id: 1630457
   title: Öppen tid XL
   price: Från 1,950 kr
@@ -88,54 +94,57 @@
 
     Vi anser att en stor del av jobbet för att kunna hjälpa på riktigt är just att bedöma vilket/vilka verktyg i vår stora verktygslåda som bäst passar kundens hudtillstånd, önskemål och budget. 
 
-    Du behöver altså inte själv veta och välja vad du behöver, det diskuterar vi tillsammans på plats!
+    Du behöver altså inte själv veta och välja vad du behöver, det diskuterar vi tillsammans på plats! 
+
+    Du behöver inte stressa, 30min avsätts automatiskt till varje öppentid vilket betyder att längden du väljer blir den aktiva behandlingstiden och inte tiden för både konsultation och behandling.
 - id: 1977358
-  title: "MODELLPRIS: Neofrax - Ansikte"
+  title: "MODELLPRIS: Neofrax - Fraktionerad Co2 laser: Ansikte"
   price: 8,500 kr
   time: 60 minuter
-  slug: modellpris-neofrax-ansikte-1977358
+  slug: modellpris-neofrax-fraktionerad-co2-laser-ansikte-1977358
   category: Neofrax - Fraktionerad Co2 laser
   info: null
 - id: 1978674
-  title: "MODELLPRIS: Neofrax - Acneärr; gropar på kindområdet"
+  title: "MODELLPRIS: Neofrax - Fraktionerad Co2 laser: Acneärr; gropar på
+    kindområdet"
   price: 4,500 kr
   time: 60 minuter
-  slug: modellpris-neofrax-acnearr-gropar-pa-kindomradet-1978674
+  slug: modellpris-neofrax-fraktionerad-co2-laser-acnearr-gropar-pa-kindomradet-1978674
   category: Neofrax - Fraktionerad Co2 laser
   info: null
 - id: 1978704
-  title: "MODELLPRIS: Neofrax - små ärr. Tinningar"
+  title: "MODELLPRIS Neofrax - Fraktionerad Co2 laser: små ärr. Tinningar"
   price: 2,500 kr
   time: 45 minuter
-  slug: modellpris-neofrax-sma-arr-tinningar-1978704
+  slug: modellpris-neofrax-fraktionerad-co2-laser-sma-arr-tinningar-1978704
   category: Neofrax - Fraktionerad Co2 laser
   info: null
 - id: 1978703
-  title: "MODELLPRIS: Neofrax - runt mun och haka"
+  title: "MODELLPRIS: Neofrax - Fraktionerad Co2 laser: runt mun och haka"
   price: 3,500 kr
   time: 60 minuter
-  slug: modellpris-neofrax-runt-mun-och-haka-1978703
+  slug: modellpris-neofrax-fraktionerad-co2-laser-runt-mun-och-haka-1978703
   category: Neofrax - Fraktionerad Co2 laser
   info: null
 - id: 1978676
-  title: "MODELLPRIS: Neofrax - Bristningar"
+  title: "MODELLPRIS: Neofrax - Fraktionerad Co2 laser: Bristningar"
   price: 5,500 kr
   time: 60 minuter
-  slug: modellpris-neofrax-bristningar-1978676
+  slug: modellpris-neofrax-fraktionerad-co2-laser-bristningar-1978676
   category: Neofrax - Fraktionerad Co2 laser
   info: null
 - id: 1978679
-  title: "MODELLPRIS: Neofrax - Dekolletage"
+  title: "MODELLPRIS: Neofrax - Fraktionerad Co2 laser: Dekolletage"
   price: 7,500 kr
   time: 60 minuter
-  slug: modellpris-neofrax-dekolletage-1978679
+  slug: modellpris-neofrax-fraktionerad-co2-laser-dekolletage-1978679
   category: Neofrax - Fraktionerad Co2 laser
   info: null
 - id: 1978682
-  title: "MODELLPRIS: Neofrax - Mage. Slapp hud"
+  title: "MODELLPRIS: Neofrax - Fraktionerad Co2 laser: Mage. Slapp hud"
   price: 9,500 kr
   time: 75 minuter
-  slug: modellpris-neofrax-mage-slapp-hud-1978682
+  slug: modellpris-neofrax-fraktionerad-co2-laser-mage-slapp-hud-1978682
   category: Neofrax - Fraktionerad Co2 laser
   info: null
 - id: 1716528
