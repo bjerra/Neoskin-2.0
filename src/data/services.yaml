@@ -1,40 +1,9 @@
-- id: 1630541
-  title: "Hudvårdskonsultation "
-  price: 250 kr
-  time: 30 minuter
-  slug: hudvardskonsultation-1630541
-  category: NY KUND
-  info: >-
-    Boka denna konsultation om du behöver fördjupa förståelsen i specifika
-    hudtillstånd och problem som du vill ha hjälp med. 
-
-    Konsultationen ska även bokas före en eventuell fraktionerad CO2 laser behandling - Neofrax.
-
-
-    kostnaden på 250:- dras av vid köp av produkter eller bokad behandling och blir därmed kostnadsfri.
-
-
-    Vill du gå på en behandling men inte vet exakt vad du behöver rekommenderar vi att du bokar en "öppen tid" istället.
-- id: 1630540
-  title: Köp i butiken
-  price: ""
-  time: 15 minuter
-  slug: kop-i-butiken-1630540
-  category: Kostnadsfria tider
-  info: null
-- id: 1630543
-  title: "Återbesök "
-  price: ""
-  time: 20 minuter
-  slug: aterbesok-1630543
-  category: Kostnadsfria tider
-  info: null
 - id: 1630452
   title: Öppen tid S
   price: Från 950 kr
   time: 45 minuter
   slug: oppen-tid-s-1630452
-  category: Öppen tid - konsultation och behandling på plats
+  category: Öppen tid
   info: >-
     Öppen tiderna är till för att inte Du som kund ska försöka välja rätt
     behandling. 
@@ -51,7 +20,7 @@
   price: Från 1,200 kr
   time: 60 minuter
   slug: oppen-tid-m-1630453
-  category: Öppen tid - konsultation och behandling på plats
+  category: Öppen tid
   info: >-
     Öppen tiderna är till för att inte Du som kund ska försöka välja rätt
     behandling. 
@@ -68,7 +37,7 @@
   price: Från 1,500 kr
   time: 75 minuter
   slug: oppen-tid-l-1630456
-  category: Öppen tid - konsultation och behandling på plats
+  category: Öppen tid
   info: >-
     Öppen tiderna är till för att inte Du som kund ska försöka välja rätt
     behandling. 
@@ -85,7 +54,7 @@
   price: Från 1,950 kr
   time: 90 minuter
   slug: oppen-tid-xl-1630457
-  category: Öppen tid - konsultation och behandling på plats
+  category: Öppen tid
   info: >-
     Öppen tiderna är till för att inte Du som kund ska försöka välja rätt
     behandling. 
@@ -97,69 +66,94 @@
     Du behöver altså inte själv veta och välja vad du behöver, det diskuterar vi tillsammans på plats! 
 
     Du behöver inte stressa, 30min avsätts automatiskt till varje öppentid vilket betyder att längden du väljer blir den aktiva behandlingstiden och inte tiden för både konsultation och behandling.
+- id: 1630540
+  title: Köp i butiken
+  price: ""
+  time: 15 minuter
+  slug: kop-i-butiken-1630540
+  category: Kostnadsfria tider
+  info: null
+- id: 2048714
+  title: Återbesök
+  price: ""
+  time: 30 minuter
+  slug: aterbesok-2048714
+  category: Kostnadsfria tider
+  info: null
+- id: 1630543
+  title: Konsultation
+  price: ""
+  time: 30 minuter
+  slug: konsultation-1630543
+  category: Kostnadsfria tider
+  info: null
 - id: 1977358
-  title: "MODELLPRIS: Neofrax - Fraktionerad Co2 laser: Ansikte"
+  title: "Fraktionerad Co2 laser: Ansikte"
   price: 8,500 kr
   time: 60 minuter
-  slug: modellpris-neofrax-fraktionerad-co2-laser-ansikte-1977358
-  category: Neofrax - Fraktionerad Co2 laser
+  slug: fraktionerad-co2-laser-ansikte-1977358
+  category: Fraktionerad Co2 laser
   info: null
 - id: 1978674
-  title: "MODELLPRIS: Neofrax - Fraktionerad Co2 laser: Acneärr; gropar på
-    kindområdet"
+  title: "Fraktionerad Co2 laser: Acneärr"
   price: 4,500 kr
   time: 60 minuter
-  slug: modellpris-neofrax-fraktionerad-co2-laser-acnearr-gropar-pa-kindomradet-1978674
-  category: Neofrax - Fraktionerad Co2 laser
-  info: null
+  slug: fraktionerad-co2-laser-acnearr-1978674
+  category: Fraktionerad Co2 laser
+  info: Vi behandlar inte hela ansiktet utan bara området med acneärr. Vanigtvis
+    handlar det om kinder.
 - id: 1978704
-  title: "MODELLPRIS Neofrax - Fraktionerad Co2 laser: små ärr. Tinningar"
+  title: "Fraktionerad Co2 laser: Ärr på litet område"
   price: 2,500 kr
-  time: 45 minuter
-  slug: modellpris-neofrax-fraktionerad-co2-laser-sma-arr-tinningar-1978704
-  category: Neofrax - Fraktionerad Co2 laser
-  info: null
+  time: 40 minuter
+  slug: fraktionerad-co2-laser-arr-pa-litet-omrade-1978704
+  category: Fraktionerad Co2 laser
+  info: Om du t.ex enbart vill behandla acneärr på tinningarna eller har ett
+    kirurgiskt ärr som du vill förbättra.
 - id: 1978703
-  title: "MODELLPRIS: Neofrax - Fraktionerad Co2 laser: runt mun och haka"
+  title: "Fraktionerad Co2 laser: runt mun och haka"
   price: 3,500 kr
-  time: 60 minuter
-  slug: modellpris-neofrax-fraktionerad-co2-laser-runt-mun-och-haka-1978703
-  category: Neofrax - Fraktionerad Co2 laser
-  info: null
+  time: 45 minuter
+  slug: fraktionerad-co2-laser-runt-mun-och-haka-1978703
+  category: Fraktionerad Co2 laser
+  info: Om du enbart vill behandla pusslinjer, nasolabiala veck och rynkor på hakan.
 - id: 1978676
-  title: "MODELLPRIS: Neofrax - Fraktionerad Co2 laser: Bristningar"
+  title: "Fraktionerad Co2 laser: Bristningar"
   price: 5,500 kr
   time: 60 minuter
-  slug: modellpris-neofrax-fraktionerad-co2-laser-bristningar-1978676
-  category: Neofrax - Fraktionerad Co2 laser
-  info: null
+  slug: fraktionerad-co2-laser-bristningar-1978676
+  category: Fraktionerad Co2 laser
+  info: Om du har fullt med bristningar på magen, benen  eller ryggen
 - id: 1978679
-  title: "MODELLPRIS: Neofrax - Fraktionerad Co2 laser: Dekolletage"
+  title: "Fraktionerad Co2 laser: Dekolletage"
   price: 7,500 kr
-  time: 60 minuter
-  slug: modellpris-neofrax-fraktionerad-co2-laser-dekolletage-1978679
-  category: Neofrax - Fraktionerad Co2 laser
+  time: 75 minuter
+  slug: fraktionerad-co2-laser-dekolletage-1978679
+  category: Fraktionerad Co2 laser
   info: null
 - id: 1978682
-  title: "MODELLPRIS: Neofrax - Fraktionerad Co2 laser: Mage. Slapp hud"
+  title: 'Fraktionerad Co2 laser: "Mamma-mage"'
   price: 9,500 kr
   time: 75 minuter
-  slug: modellpris-neofrax-fraktionerad-co2-laser-mage-slapp-hud-1978682
-  category: Neofrax - Fraktionerad Co2 laser
-  info: null
+  slug: fraktionerad-co2-laser-mamma-mage-1978682
+  category: Fraktionerad Co2 laser
+  info: Om du har varit med om stor viktuppgång följt av en stor viktnergång (t.ex
+    graviditet) kan du ha slapp hud kvar med mer eller mindre bristningar. Denna
+    behandling arbetar på intensivt på hela området för att uppnå en mycket
+    effektiv huduppstramning och förbättring av bristningarna.
 - id: 1716528
-  title: B.R Signaturbehandling
+  title: Biologique Recherche Signaturbehandling
   price: 1,950 kr
   time: 60 minuter
-  slug: br-signaturbehandling-1716528
-  category: Biologique Recherche
+  slug: biologique-recherche-signaturbehandling-1716528
+  category: Ansiktsbehandlingar
   info: >-
     Behandlingarna bygger på tre faser i sju etapper där du som kund blir
     omhändertagen av din Auktoriserade hudterapeut och Biologique Recherche
     expert. 
 
 
-    Upp till 25 olika produkter väljs ut grundat på din skin instant och arbetas in i huden med exakta rörelser och massagetekniker. Vi kan även arbeta med Cold Plasma som tack vare den bio-elektroniska effekten både hjälper att slussa in de aktiva ingredienserna. 
+    Upp till 25 olika produkter väljs ut grundat på din skin instant och arbetas in i huden med exakta rörelser och massagetekniker. 
 
 
     Förutom BR´s egna underbara boosters kan även Dermapen 4, Dermaplane PRO eller Celluma PRO väljas som extra boosters. Din Biologique Recherche Expert väljer i första hand ut den B.R boostern som bäst svarar på behoven av ditt aktuella hudtillstånd, därefter är det upp till dig att tilläga en eller fler boosters om du vill. Du kan läsa mer om alla olika boosters i tilläggstjänsterna om du trycker på "boka-knappen".
@@ -174,121 +168,78 @@
     FAS 3: BEHANDLING Detta är fasen där de mest koncentrerade och komplexa produkterna används för att hjälpa Epidermis att optimera och uttrycka sin förmåga till självförnyelse och läkning. När huden på detta sätt återuppbyggs kommer elasticiteten tillbaka, musklerna återlivas och ansiktet får tillbaka sin naturliga oval och former. Din Auktoriserade hudterapeut applicerar en cocktail av rena “Essentiella serum” som noga väljs utifrån din skin instant och blandas speciellt för Dig under behandlingen. 
 
 
-    Här kan vi bl.a arbeta med Cold Plasma, dermaplanning eller micronålning som extra booster för ytterligare förbättrad effekt. Behandlingen avslutas med utvald komplettering av aktiva ingredienser i specifika krämer och de högst koncentrerade och komplexa avslutningsserumen som binder ihop och lägger grädden på mosen i behandlingen.
+    Behandlingen avslutas med utvald komplettering av aktiva ingredienser i specifika krämer och de högst koncentrerade och komplexa avslutningsserumen som binder ihop och lägger grädden på mosen i behandlingen.
+- id: 2017805
+  title: Januari magi
+  price: 2,250 kr
+  time: 90 minuter
+  slug: januari-magi-2017805
+  category: Ansiktsbehandlingar
+  info: >-
+    Välkommen till en ny och avslappnande upplevelse - Januari 2023: Detoxa,
+    återfukta och njut!
+
+
+    I denna behandling ingår
+
+
+    * Ultraljudsrengöring
+
+    * Ice Peel
+
+    * Celluma PRO LED Panel
 - id: 1630464
-  title: B.R Methodology
+  title: Biologique Recherche Methodology
   price: 1,450 kr
-  time: 45 minuter
-  slug: br-methodology-1630464
-  category: Biologique Recherche
+  time: 40 minuter
+  slug: biologique-recherche-methodology-1630464
+  category: Ansiktsbehandlingar
   info: B.R Methodology (Utan booster)
-- id: 1850096
-  title: Nannic NBE Ansikte & hals
-  price: 1,490 kr
-  time: 75 minuter
-  slug: nannic-nbe-ansikte-hals-1850096
-  category: Nannic NBE Radiofrekvens
-  info: >-
-    Nannic NBE är ett bra val till alla som vill uppnå ett synligt lyft med
-    större, klarare ögon och definierade kindben. Tack vare det
-    elektromagnetiska fältet arbetar vi med hudförbättring av rosacea och
-    färgade acneärr, eller hudföryngring på slapp hud och rynkor. 
-
-
-    En avancerad ansiktsbehandling som snabbt ger resultat tack vare den sköna värmeutvecklingen och inslussningen av aktiva ingredienser.
-
-
-    I denna ansiktsbehandling arbetar vi med NBE radiofrekvens som ökar näringsupptaget och syretillförseln till cellerna och kan på så sätt lättare gå till botten med olika hudproblem. 
-
-
-    Behandlingen inleds med en avslappnande och grundlig ansiktsrengöring samt en mjuk men effektiv peeling. Därefter genomförs eventuellt en manuell portömning av enstaka pormaskar (önskar du en ordentlig duprengöring finns ultraljudsrengöring+ i tilläggstänsterna). 
-
-
-    Själva behandlingen utförs med ett lent och skönt munstycke som masserar ansiktet i långsamma, varma rörelser. När halva ansiktet behandlats jämförs det med andra halvan för att du som kund ska få uppleva resultatet innan vi lyfter andra halvan också. 
-
-
-    Behandlingen avslutas med en av de olika sköna alginatmaskerna som Nannic har att erbjuda.
-
-
-    I behandlingen ingår: Rengöring, peeling, manuell potömning av enstaka pormaskar och milier, behandling med NBE-maskinen, avslutande mask samt avslutande serum och kräm.
-- id: 1920685
-  title: Nannic NBE Ansikte hals och dekolletage
-  price: 1,990 kr
-  time: 75 minuter
-  slug: nannic-nbe-ansikte-hals-och-dekolletage-1920685
-  category: Nannic NBE Radiofrekvens
-  info: >-
-    Nannic NBE är ett bra val till alla som vill uppnå ett synligt lyft med
-    större, klarare ögon och definierade kindben. Tack vare det
-    elektromagnetiska fältet arbetar vi med hudförbättring av rosacea och
-    färgade acneärr, eller hudföryngring på slapp hud och rynkor. 
-
-
-    En avancerad ansiktsbehandling som snabbt ger resultat tack vare den sköna värmeutvecklingen och inslussningen av aktiva ingredienser.
-
-
-    I denna ansiktsbehandling arbetar vi med NBE radiofrekvens som ökar näringsupptaget och syretillförseln till cellerna och kan på så sätt lättare gå till botten med olika hudproblem. 
-
-
-    Behandlingen inleds med en avslappnande och grundlig ansiktsrengöring samt en mjuk men effektiv peeling. Därefter genomförs eventuellt en manuell portömning av enstaka pormaskar (önskar du en ordentlig duprengöring finns ultraljudsrengöring+ i tilläggstänsterna). 
-
-
-    Själva behandlingen utförs med ett lent och skönt munstycke som masserar ansiktet i långsamma, varma rörelser. När halva ansiktet behandlats jämförs det med andra halvan för att du som kund ska få uppleva resultatet innan vi lyfter andra halvan också. 
-
-
-    Behandlingen avslutas med en av de olika sköna alginatmaskerna som Nannic har att erbjuda.
-
-
-    I behandlingen ingår: Rengöring, peeling, manuell potömning av enstaka pormaskar och milier, behandling med NBE-maskinen, avslutande mask samt avslutande serum och kräm.
-- id: 1920687
-  title: Nannic NBE - Kur på 5ggr
-  price: 7,450 kr
-  time: 60 minuter
-  slug: nannic-nbe-kur-pa-5ggr-1920687
-  category: Nannic NBE Radiofrekvens
-  info: För långvariga resultat rekommenderas en kur på 5 gånger som görs
-    intensivt, 2-3 gånger i veckan i 2-3 veckor. Sedan kan behandlingen med
-    fördel göras var 4-6e vecka.
-- id: 1630470
-  title: "Oxygen RX "
-  price: 950 kr
-  time: 30 minuter
-  slug: oxygen-rx-1630470
-  category: Ansiktsbehandling Circadia
-  info: >-
-    Oxygen Rx är en unik behandling där rent syre aktiveras på huden. I denna
-    process ökar vi näringstillförseln till huden och stimulerar kollagen- och
-    elastinproduktionen.
-
-
-    Syret har antibakteriella, anti-inflammatoriska och rodnadsdämpande egenskaper som lämpar sig perfekt till en aknebenägen hud, rosacea och synliga kärl.
-
-
-    Kontraindikationer: när du inte bör göra behandlingen
-
-    - allegisk mot citronsyra (citroner, apelsiner, grapefrukt mm)
-
-
-    I denna behandlingen ingår rengöring, Oxygen Rx samt avslutande produkt. Titta gärna på tilläggstjänsterna om du vill lägga till ultraljudsrengöring eller firming peptide mask.
-
-
-    Har du fått en medicinsk diagnos för rosacea kan vi även använda oss av Cirkadias speciellt utformade rosacea serum.
 - id: 1850028
-  title: Klassisk A.B med ultraljud
+  title: Klassisk ansiktsbehandling inkl. ultraljudsrengöring
   price: 1,200 kr
   time: 60 minuter
-  slug: klassisk-ab-med-ultraljud-1850028
-  category: Ansiktsbehandling Circadia
+  slug: klassisk-ansiktsbehandling-inkl-ultraljudsrengoring-1850028
+  category: Ansiktsbehandlingar
   info: En klassisk ansiktsbehandling för dig som vill ha rengöring, peeling,
     ultraljudsrengöring och borttagning av malier, massage, mask och avslutande
     serum och kräm. Givetvis anpassas valet av Circadias professionella
     produkter till Din hud och tillstånd.
+- id: 1630476
+  title: "Ultraljudsrengöring Plus+ "
+  price: 750 kr
+  time: 40 minuter
+  slug: ultraljudsrengoring-plus-1630476
+  category: Ansiktsbehandlingar
+  info: >-
+    “Kläm aldrig i onödan!” Var bland det första vi fick lära oss i skolan i
+    Bryssel. Det finns aldrig någon återvändo till den manuella portömningen om
+    man någon gång har fått en ordentligt utförd ultraljudsrengöring hos ett
+    proffs. 
+
+
+    I behandlingen ingår rengöring, enzymatisk peeling, ultraljudsrengöring och borttagning av milier samt avslutande serum och kräm.
+- id: 1630470
+  title: "Ansiktsbehandling Oxygen RX "
+  price: 950 kr
+  time: 30 minuter
+  slug: ansiktsbehandling-oxygen-rx-1630470
+  category: Ansiktsbehandlingar
+  info: Oxygen Rx är en behandling där rent syre aktiveras på huden för att öka
+    näringstillförseln och stimulera kollagen- och elastinproduktionen. Det har
+    antibakteriella, anti-inflammatoriska och rodnadsdämpande egenskaper som
+    passar aknebenägen hud, rosacea och/eller synliga blodkärl. Du ska inte göra
+    behandlingen om du är allergisk mot citronsyra (finns i citroner, apelsiner,
+    grapefrukt mm). I behandlingen ingår rengöring, Oxygen Rx protokollet samt
+    avslutande produkter. Du kan komplettera med ultraljudsrengöring, syra
+    peeling, firming peptide mask och/eller Celluma PRO LED panel i
+    tilläggstjänsterna.
 - id: 1630474
-  title: "SWICH "
+  title: "Ansiktsbehandling SWICH "
   price: 1,590 kr
   time: 75 minuter
-  slug: swich-1630474
-  category: Ansiktsbehandling Circadia
+  slug: ansiktsbehandling-swich-1630474
+  category: Ansiktsbehandlingar
   info: >-
     När vi passerat 40-årsåldern minskar energiproduktionen i hudcellen. Detta
     visar sig i form av fina linjer, rynkor, ojämn pigmentering och brist på
@@ -324,12 +275,83 @@
 
 
     OBS: detta är en leave on produkt, så du får inte ha vatten i ansiktet på 12 timmar. Du kommer även att få med dig en rengöring och en kräm hem som du ska använda nästkommande 3 dagar efter behandlingen
+- id: 1823321
+  title: Ansiktsmassage inkl. hals, dekolletage, nacke, hudud och axlar
+  price: 600 kr
+  time: 40 minuter
+  slug: ansiktsmassage-inkl-hals-dekolletage-nacke-hudud-och-axlar-1823321
+  category: Ansiktsbehandlingar
+  info: null
+- id: 1850096
+  title: Nannic NBE Ansikte & hals
+  price: 1,490 kr
+  time: 75 minuter
+  slug: nannic-nbe-ansikte-hals-1850096
+  category: Avancerad hudvård
+  info: >-
+    Nannic NBE är ett bra val till alla som vill uppnå ett synligt lyft med
+    större, klarare ögon och definierade kindben. Tack vare det
+    elektromagnetiska fältet arbetar vi med hudförbättring av rosacea och
+    färgade acneärr, eller hudföryngring på slapp hud och rynkor. 
+
+
+    En avancerad ansiktsbehandling som snabbt ger resultat tack vare den sköna värmeutvecklingen och inslussningen av aktiva ingredienser.
+
+
+    I denna ansiktsbehandling arbetar vi med NBE radiofrekvens som ökar näringsupptaget och syretillförseln till cellerna och kan på så sätt lättare gå till botten med olika hudproblem. 
+
+
+    Behandlingen inleds med en avslappnande och grundlig ansiktsrengöring samt en mjuk men effektiv peeling. Därefter genomförs eventuellt en manuell portömning av enstaka pormaskar (önskar du en ordentlig duprengöring finns ultraljudsrengöring+ i tilläggstänsterna). 
+
+
+    Själva behandlingen utförs med ett lent och skönt munstycke som masserar ansiktet i långsamma, varma rörelser. När halva ansiktet behandlats jämförs det med andra halvan för att du som kund ska få uppleva resultatet innan vi lyfter andra halvan också. 
+
+
+    Behandlingen avslutas med en av de olika sköna alginatmaskerna som Nannic har att erbjuda.
+
+
+    I behandlingen ingår: Rengöring, peeling, manuell potömning av enstaka pormaskar och milier, behandling med NBE-maskinen, avslutande mask samt avslutande serum och kräm.
+
+
+    För långvariga resultat rekommenderas en kur på 5 gånger som görs intensivt, 2-3 gånger i veckan i 2-3 veckor. Sedan kan behandlingen med fördel göras var 4-6e vecka.
+- id: 1920685
+  title: Nannic NBE Ansikte hals och dekolletage
+  price: 1,990 kr
+  time: 75 minuter
+  slug: nannic-nbe-ansikte-hals-och-dekolletage-1920685
+  category: Avancerad hudvård
+  info: >-
+    Nannic NBE är ett bra val till alla som vill uppnå ett synligt lyft med
+    större, klarare ögon och definierade kindben. Tack vare det
+    elektromagnetiska fältet arbetar vi med hudförbättring av rosacea och
+    färgade acneärr, eller hudföryngring på slapp hud och rynkor. 
+
+
+    En avancerad ansiktsbehandling som snabbt ger resultat tack vare den sköna värmeutvecklingen och inslussningen av aktiva ingredienser.
+
+
+    I denna ansiktsbehandling arbetar vi med NBE radiofrekvens som ökar näringsupptaget och syretillförseln till cellerna och kan på så sätt lättare gå till botten med olika hudproblem. 
+
+
+    Behandlingen inleds med en avslappnande och grundlig ansiktsrengöring samt en mjuk men effektiv peeling. Därefter genomförs eventuellt en manuell portömning av enstaka pormaskar (önskar du en ordentlig duprengöring finns ultraljudsrengöring+ i tilläggstänsterna). 
+
+
+    Själva behandlingen utförs med ett lent och skönt munstycke som masserar ansiktet i långsamma, varma rörelser. När halva ansiktet behandlats jämförs det med andra halvan för att du som kund ska få uppleva resultatet innan vi lyfter andra halvan också. 
+
+
+    Behandlingen avslutas med en av de olika sköna alginatmaskerna som Nannic har att erbjuda.
+
+
+    I behandlingen ingår: Rengöring, peeling, manuell potömning av enstaka pormaskar och milier, behandling med NBE-maskinen, avslutande mask samt avslutande serum och kräm.
+
+
+    För långvariga resultat rekommenderas en kur på 5 gånger som görs intensivt, 2-3 gånger i veckan i 2-3 veckor. Sedan kan behandlingen med fördel göras var 4-6e vecka.
 - id: 1630481
-  title: Dermaplane PRO
+  title: Dermaplane PRO Ansikte
   price: 990 kr
   time: 30 minuter
-  slug: dermaplane-pro-1630481
-  category: Dermaplanning
+  slug: dermaplane-pro-ansikte-1630481
+  category: Avancerad hudvård
   info: >-
     Dermaplanning utförs av speciellt utbildad hudterapeut med en särskild
     scalpell ifrån Dermaplane Pro och är en antiage-behandling som exfolierar
@@ -342,26 +364,66 @@
 
 
     I denna behandling ingår rengöring, dermaplanning av hela ansiktet samt avslutande mask. Kika på våra rekommenderade tilläggstjänster som passar suveränt med Din Dermaplane PRO.
+- id: 2048721
+  title: Dermaplane PRO överläpp och/eller haka
+  price: 295 kr
+  time: 10 minuter
+  slug: dermaplane-pro-overlapp-och-eller-haka-2048721
+  category: Avancerad hudvård
+  info: null
 - id: 1630502
   title: "Dermapen4™ Parti "
   price: 1,650 kr
   time: 40 minuter
   slug: dermapen4-parti-1630502
-  category: Dermapen4™
+  category: Avancerad hudvård
   info: null
 - id: 1630504
   title: Dermapen4™ Ansikte
   price: 2,250 kr
   time: 50 minuter
   slug: dermapen4-ansikte-1630504
-  category: Dermapen4™
+  category: Avancerad hudvård
   info: null
+- id: 1630490
+  title: PRX-T33
+  price: 1,990 kr
+  time: 30 minuter
+  slug: prx-t33-1630490
+  category: Avancerad hudvård
+  info: >-
+    VAD GÖR BEHANDLINGEN?
+
+
+    Nålfri biorevitaliserande antiage-behandling som definieras som en hybrid teknik mellan kemisk peeling och fillers. Vi plumpar upp fina linjer och rynkor samt ger en ungdomlig glow och lyster till ansiktet. Även hudtonen jämnas ut.
+
+
+    VAD INGÅR I BEHANDLINGEN?
+
+
+    Kort konsultation, dubbelrengöring och avfettning av huden. Applicering i ansiktet av 1-5 lager PRX-T33 som görs i form av en manuell massage med ett behagligt tryck. Vi avslutar med kräm, Ice Mask eller Celluma fototerapi för att maximera effekten! 
+
+
+    Vid varje behandlingstillfälle får du hem en veckas specifik tillhörande dag- och nattkräm som ersätter ordinarie hudvård.
+- id: 2035785
+  title: Kemisk peeling Ice Peel
+  price: 1,250 kr
+  time: 30 minuter
+  slug: kemisk-peeling-ice-peel-2035785
+  category: Avancerad hudvård
+  info: Ice Peel är en kombination at Enerpeel Mandelsyra peeling och Ice mask
+    Kryomask. Behandlingen är snabb och effektiv, en sann "quick-fix".
+    Behandlingen ger lyster, fukt, exfoliering och stimulering av kollagen och
+    elastin-produktionen. Ice peel lämpar sig bra till alla hudtyper och
+    tillstånd tack vare mandelsyrans lugnande och antibakteriella egenskaper.
+    Kryomasken blir grädden på mosen när den tillför en skön och intensiv kyla
+    som verkar extra stimulerande på cellförnyelsen.
 - id: 1630475
   title: Retinol peel (1 lager)
   price: 950 kr
   time: 30 minuter
   slug: retinol-peel-1-lager-1630475
-  category: Quick Fix
+  category: Avancerad hudvård
   info: >-
     Innehåller 2,5 % ren retinol och kan användas i de flesta
     ansiktsbehandlingar för att boosta huden genom ökad celldelning. Den
@@ -393,116 +455,59 @@
     Använd ej AHA, BHA eller A vitaminer förens läkningsprocessen är klar.
 
     Undvik att pilla eller dra I den fjällande huden.
-- id: 1630476
-  title: "Ultraljudsrengöring Plus+ "
-  price: 750 kr
-  time: 40 minuter
-  slug: ultraljudsrengoring-plus-1630476
-  category: Quick Fix
-  info: >-
-    “Kläm aldrig i onödan!” Var bland det första vi fick lära oss i skolan i
-    Bryssel. Det finns aldrig någon återvändo till den manuella portömningen om
-    man någon gång har fått en ordentligt utförd ultraljudsrengöring hos ett
-    proffs. 
-
-
-    I behandlingen ingår rengöring, enzymatisk peeling, ultraljudsrengöring och borttagning av milier samt avslutande serum och kräm.
-- id: 1630489
-  title: Über PRO peeling
-  price: 950 kr
-  time: 30 minuter
-  slug: uber-pro-peeling-1630489
-  category: Kemisk Peeling
-  info: null
-- id: 2035785
-  title: Ice Peel
+- id: 1630498
+  title: Kemisk peeling Dermafrost (1 lager)
   price: 1,250 kr
-  time: 30 minuter
-  slug: ice-peel-2035785
-  category: Kemisk Peeling
-  info: Ice Peel är en kombination at Enerpeel Mandelsyra peeling och Ice mask
-    Kryomask. Behandlingen är snabb och effektiv, en sann "quick-fix".
-    Behandlingen ger lyster, fukt, exfoliering och stimulering av kollagen och
-    elastin-produktionen. Ice peel lämpar sig bra till alla hudtyper och
-    tillstånd tack vare mandelsyrans lugnande och antibakteriella egenskaper.
-    Kryomasken blir grädden på mosen när den tillför en skön och intensiv kyla
-    som verkar extra stimulerande på cellförnyelsen.
-- id: 1630490
-  title: PRX-T33
-  price: 1,990 kr
-  time: 30 minuter
-  slug: prx-t33-1630490
-  category: Kemisk Peeling
-  info: >-
-    VAD GÖR BEHANDLINGEN?
-
-
-    Nålfri biorevitaliserande antiage-behandling som definieras som en hybrid teknik mellan kemisk peeling och fillers. Vi plumpar upp fina linjer och rynkor samt ger en ungdomlig glow och lyster till ansiktet. Även hudtonen jämnas ut.
-
-
-    VAD INGÅR I BEHANDLINGEN?
-
-
-    Kort konsultation, dubbelrengöring och avfettning av huden. Applicering i ansiktet av 1-5 lager PRX-T33 som görs i form av en manuell massage med ett behagligt tryck. Vi avslutar med kräm, Ice Mask eller Celluma fototerapi för att maximera effekten! 
-
-
-    Vid varje behandlingstillfälle får du hem en veckas specifik tillhörande dag- och nattkräm som ersätter ordinarie hudvård.
+  time: 20 minuter
+  slug: kemisk-peeling-dermafrost-1-lager-1630498
+  category: Avancerad hudvård
+  info: null
 - id: 1630493
-  title: "Mandeliclear peel inkl. Vitamin A accelerator (1 lager) "
+  title: "Kemisk peeling Mandeliclear peel inkl. Vitamin A accelerator (1 lager) "
   price: 1,650 kr
   time: 20 minuter
-  slug: mandeliclear-peel-inkl-vitamin-a-accelerator-1-lager-1630493
-  category: Kemisk Peeling
-  info: null
-- id: 1630498
-  title: Dermafrost (1 lager) 20´
-  price: 1,250 kr
-  time: 50 minuter
-  slug: dermafrost-1-lager-20-1630498
-  category: Kemisk Peeling
+  slug: kemisk-peeling-mandeliclear-peel-inkl-vitamin-a-accelerator-1-lager-1630493
+  category: Avancerad hudvård
   info: null
 - id: 1630500
-  title: "Jessners peel - originalet (1 lager) "
+  title: "Kemisk peeling Jessner (1 lager) "
   price: 1,650 kr
   time: 20 minuter
-  slug: jessners-peel-originalet-1-lager-1630500
-  category: Kemisk Peeling
+  slug: kemisk-peeling-jessner-1-lager-1630500
+  category: Avancerad hudvård
   info: En klassisk kombination av 14% salicylsyra, 14% mjölksyra och 14%
     resorcinol. En medeldjup peel som jämnar ut hudtonen, reducerar
     pigmentering, reducerar ärr vävnad, djupare linjer och rynkor. Denna peel
     ger en fjällning ca 3-4 dagar efter behandlingen som resultaterar i en klar
     och jämn hud. Passar upp till Fitzpatrick III.
-- id: 1630501
-  title: "Soft TCA 20% + Mjölksyra och Kojic acid "
-  price: 2,490 kr
-  time: 20 minuter
-  slug: soft-tca-20-mjolksyra-och-kojic-acid-1630501
-  category: Kemisk Peeling
+- id: 1630529
+  title: Celluma PRO LED Panel x10
+  price: 6,990 kr
+  time: 30 minuter
+  slug: celluma-pro-led-panel-x10-1630529
+  category: Avancerad hudvård
   info: >-
     VAD GÖR BEHANDLINGEN?
 
 
-    Exfolierande behandling som korrigerar pigmenteringar och ålderstecken. Används på pigmentfläckar, utvalda rynkor eller i hela ansiktet beroende på tillsånd, önskemål och indikation.
+    LED fototerapi är en beprövad teknologi med många år av forskning som bevisar effektiviteten på att dämpa inflammationer i huden, förbättra och påskynda läkningsprocessen, öka produktionen av fibroblaster och därmed kollagen & elastinproduktionen. Vi behandlar acnesymptom, torr och känslig hud, rosacea, pigmenteringar, åldrad hud, röda acneärr, läkning efter sår eller ingrepp, hårväxt och även smärta på kroppen.
 
 
     VAD INGÅR I BEHANDLINGEN?
 
 
-    Kort konsultation om önskemål och behov, dubbelrengöring och avfettning innan applicering av den syrafrätande kombinationspeelen som består av 20% TCA, 10% Mjölksyra och Kojic acid. Soft TCA är en snällare variant än ren TCA tack vare  Mjölksyran som förvandlar TCA egenskaperna till mindre aggressiva mot huden.
-
-
-    Peelingen läggs i lager som tas upp av huden på ca 1-2 min var. När huden är mättad sveper vi av överflödet och smörjer in huden med anpassad kräm.
+    Rengöring, Celluma LED, ögonkräm, kräm, SPF vid behov.
 - id: 1630584
-  title: Avlägsna godartade hudförändringar. Ett återbesök ingår.
+  title: Bortbränning av godartade hudförändringar och kärl
   price: Från 950 kr
   time: 15 minuter
-  slug: avlagsna-godartade-hudforandringar-ett-aterbesok-ingar-1630584
-  category: Bränna bort hudflikar
+  slug: bortbranning-av-godartade-hudforandringar-och-karl-1630584
+  category: Estetiska åkommor
   info: >-
     VAD GÖR BEHANDLINGEN?
 
 
-    Vi bränner bort alla typer av godartade hudförändringar som läkare inte vill ta bort på grund av att de är: "estetiska åkommor" och ej medicinskt relevanta.
+    Vi bränner bort godartade hudförändringar som läkare inte vill ta bort på grund av att de är: "estetiska åkommor" och ej medicinskt relevanta.
 
 
     ATT TÄNKA PÅ INNAN DU BOKAR!
@@ -533,142 +538,36 @@
 
 
     2) Återbesök: Vi tänker säkerhet föst och överbehandlar aldrig, oftast räcker en behandling, men om inte så ingår återbesöket i priset. Återbesök bokas ca 6-10 veckor efter behandlingen för eventuella korrektioner.
-- id: 1630525
-  title: Plasmalift Pusslinjer/Överläpp
-  price: 2,450 kr
-  time: 30 minuter
-  slug: plasmalift-pusslinjer-overlapp-1630525
-  category: Plasmapen Plaxel+
-  info: >-
-    VAD GÖR BEHANDLINGEN?
-
-
-    Vi gör en ytslipning och punktbehandling av överläppen för att strama åt förminska rynkornas utseende. Permanenta resultat som kan kräva mellan 1-4 behandlingar med ca 3 månaders mellanrum beroende på tillstånd och önskemål. Behandlingen KAN upprepas ända tills önskat resultat uppnås. Naturligt åldrande stoppas inte, rynkorna kommer så småningom tillbaka.
-
-
-    VAD INGÅR I BEHANDLINGEN?
-
-
-    1)- Konsultation: vi går igenom önskemål och medicinsk bakgrund. Beroende på tillstånd och andra påverkande faktorer får Du ett anpassat prisförslag. OBS: Konsultationen bokas FÖRST under kategorin “Konsultationer”. Har du redan gått på din konsultation kan du gå vidare med denna bokning.
-
-
-    2)- Behandling: Bedövning ingår. Efter behandlingen får du en saché PLC kräm att använda dagligen tills skorporna fallit av.
-
-
-    3)- Återbesök: Bokas ca 6-8 veckor efter behandlingen oavsett resultat, där tittar jag på läkningen och vi diskuterar nästa steg.
 - id: 1630526
-  title: Plasmalift ögonlockslyft
+  title: "Plasmalift av övre eller nedre ögonlock med Plaxel+ "
   price: 4,900 kr
   time: 60 minuter
-  slug: plasmalift-ogonlockslyft-1630526
-  category: Plasmapen Plaxel+
-  info: >-
-    VAD GÖR BEHANDLINGEN?
-
-
-    Behandlar hängande ögonlock till snarlika resultat med kirugiska ingrepp.
-
-    Vi kan även förbättra kråksparkar och andra rynkor i ögonområdet i samma behandling.
-
-
-    VAD INGÅR I BEHANDLINGEN?
-
-
-    1)- Konsultation: vi går igenom önskemål och medicinsk bakgrund. Beroende på omfattning kan det behövas upp till 3 behandlingar med ca 3 månaders mellanrum, du får veta vad jag uppskattar behövs i ditt fall samt om du är en lämplig kandidat till denna behandling. Vi behandlar inte alla typer av hängande ögonlock utan bara dem som kan bli riktigt bra. Behöver Du tänka på att göra ett kirurgiskt ögonlockslyft istället får du veta det på konsultationen.
-
-
-    Vi tar “före-bilder” och du får ett anpassat prisförslag. 
-
-
-    OBS: Konsultationen bokas FÖRST under kategorin “Konsultationer”. Har du redan gått på din konsultation kan du gå vidare med denna bokning.
-
-
-    2)- Behandling: Bedövning ingår alltid. Efter behandlingen får en burk ögonkräm kräm att använda på natten tills skorporna fallit av.
-
-
-    3)- Återbesök: Bokas ca 12 veckor efter behandlingen för att ta “efter-bilder” och jämföra resultatet. Inga bilder läggs upp någonstans utan ditt godkännande. Bilderna är först och främst till för Dig.
+  slug: plasmalift-av-ovre-eller-nedre-ogonlock-med-plaxel-1630526
+  category: Icke-kirurgiska ögonlockslyft
+  info: Du ska ha varit en konsultation innan du kommer på denna behandling. Här
+    behandlar vi hängde ögonlock ELLER det som kallas för "nedre ögonlock" som
+    är slapp hud, rynkor och/eller påsar under ögonen.
 - id: 1630527
-  title: Plasmalift ögonlockslyft över & under ögonen.
+  title: "Plasmalift av övre och nedre ögonlock med Plaxel+ "
   price: 9,000 kr
   time: 90 minuter
-  slug: plasmalift-ogonlockslyft-over-under-ogonen-1630527
-  category: Plasmapen Plaxel+
+  slug: plasmalift-av-ovre-och-nedre-ogonlock-med-plaxel-1630527
+  category: Icke-kirurgiska ögonlockslyft
   info: >-
-    VAD GÖR BEHANDLINGEN?
+    Du ska ha varit en konsultation innan du kommer på denna behandling. Här
+    behandlar vi hängde ögonlock ELLER det som kallas för "nedre ögonlock" som
+    är slapp hud, rynkor och/eller påsar under ögonen.
 
 
     Behandlar hängande ögonlock till snarlika resultat med kirugiska ingrepp.
 
     Vi kan förbättra assymetri vid ögonområdet, påsar under ögonen, kråksparkar och andra rynkor.
-
-
-    VAD INGÅR I BEHANDLINGEN?
-
-
-    1)- Konsultation: vi går igenom önskemål och medicinsk bakgrund. Beroende på omfattning kan det behövas upp till 3 behandlingar med ca 3 månaders mellanrum, du får veta vad jag uppskattar behövs i ditt fall samt om du är en lämplig kandidat till denna behandling. Vi behandlar inte alla typer av hängande ögonlock eller påsar under ögonen, utan bara dem som kan bli riktigt bra. Behöver Du tänka på att göra ett kirurgiskt ingrepp istället får du veta det på konsultationen.
-
-
-    Vi tar “före-bilder” och du får ett anpassat prisförslag. 
-
-
-    OBS: Konsultationen bokas FÖRST under kategorin “Konsultationer”. Har du redan gått på din konsultation kan du gå vidare med denna bokning.
-
-
-    2)- Behandling: Bedövning ingår alltid. Efter behandlingen får en burk ögonkräm kräm att använda på natten tills skorporna fallit av.
-
-
-    3)- Återbesök: Bokas ca 12 veckor efter behandlingen för att ta “efter-bilder” och jämföra resultatet. Inga bilder läggs upp någonstans utan ditt godkännande. Bilderna är först och främst till för Dig.
-- id: 2017805
-  title: "Neoskin Julspecial "
-  price: 2,290 kr
-  time: 90 minuter
-  slug: neoskin-julspecial-2017805
-  category: Ansiktsbehandlingar
-  info: >-
-    Tillfällig vinterspecial som passar de flesta (utom dig med aktiv akne eller
-    rosacea utbrott). Allt för att vara fin till jul och nyår ingår i denna
-    kombinationsbehandling.
-
-
-    *Dermaplane PRO
-
-    *Ultraljudsrengöring
-
-    *Circadia Lactic peel (återfuktande och antiinflammatorisk).
-
-    *Återfuktande mask
-
-    *Färgning av fransar och bryn samt formning.
-- id: 1630529
-  title: Celluma PRO LED Panel x10
-  price: 6,990 kr
-  time: 30 minuter
-  slug: celluma-pro-led-panel-x10-1630529
-  category: LED Ljusterapi
-  info: >-
-    VAD GÖR BEHANDLINGEN?
-
-
-    LED fototerapi är en beprövad teknologi med många år av forskning som bevisar effektiviteten på att dämpa inflammationer i huden, förbättra och påskynda läkningsprocessen, öka produktionen av fibroblaster och därmed kollagen & elastinproduktionen. Vi behandlar acnesymptom, torr och känslig hud, rosacea, pigmenteringar, åldrad hud, röda acneärr, läkning efter sår eller ingrepp, hårväxt och även smärta på kroppen.
-
-
-    VAD INGÅR I BEHANDLINGEN?
-
-
-    Rengöring, Celluma LED, ögonkräm, kräm, SPF vid behov.
-- id: 1660331
-  title: "Ansiktsmassage "
-  price: 500 kr
-  time: 30 minuter
-  slug: ansiktsmassage-1660331
-  category: Massage
-  info: null
 - id: 1630547
   title: Yumi Brows
   price: 600 kr
   time: 35 minuter
   slug: yumi-brows-1630547
-  category: Ögon-Blick
+  category: Fransar och bryn
   info: >-
     VAD GÖR BEHANDLINGEN?
 
@@ -688,7 +587,7 @@
   price: 1,000 kr
   time: 60 minuter
   slug: yumi-lashes-1630555
-  category: Ögon-Blick
+  category: Fransar och bryn
   info: >-
     VAD GÖR BEHANDLINGEN?
 
@@ -707,7 +606,7 @@
   price: 1,500 kr
   time: 85 minuter
   slug: yumi-total-makeover-1630559
-  category: Ögon-Blick
+  category: Fransar och bryn
   info: >-
     VAD GÖR BEHANDLINGEN?
 
@@ -729,7 +628,7 @@
   price: 250 kr
   time: 15 minuter
   slug: brynform-eller-farg-1630563
-  category: Ögon-Blick
+  category: Fransar och bryn
   info: >-
     VAD GÖR BEHANDLINGEN?
 
@@ -746,7 +645,7 @@
   price: 300 kr
   time: 20 minuter
   slug: brynform-farg-1630564
-  category: Ögon-Blick
+  category: Fransar och bryn
   info: >-
     VAD GÖR BEHANDLINGEN?
 
@@ -763,7 +662,7 @@
   price: 300 kr
   time: 15 minuter
   slug: fransfarg-1630566
-  category: Ögon-Blick
+  category: Fransar och bryn
   info: >-
     VAD GÖR BEHANDLINGEN?
 
@@ -783,7 +682,7 @@
   price: 350 kr
   time: 20 minuter
   slug: fransfarg-formning-av-bryn-1630572
-  category: Ögon-Blick
+  category: Fransar och bryn
   info: >-
     VAD GÖR BEHANDLINGEN?
 
@@ -800,9 +699,9 @@
 - id: 1630573
   title: Frans-Brynfärg & Formning
   price: 450 kr
-  time: 20 minuter
+  time: 30 minuter
   slug: frans-brynfarg-formning-1630573
-  category: Ögon-Blick
+  category: Fransar och bryn
   info: >-
     VAD GÖR BEHANDLINGEN?
 
