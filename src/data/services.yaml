@@ -66,6 +66,41 @@
     Du behöver altså inte själv veta och välja vad du behöver, det diskuterar vi tillsammans på plats! 
 
     Du behöver inte stressa, 30min avsätts automatiskt till varje öppentid vilket betyder att längden du väljer blir den aktiva behandlingstiden och inte tiden för både konsultation och behandling.
+- id: 1630464
+  title: Biologique Recherche Methodology
+  price: 1,450 kr
+  time: 40 minuter
+  slug: biologique-recherche-methodology-1630464
+  category: Biologique Recherche
+  info: B.R Methodology (Utan booster)
+- id: 1716528
+  title: Biologique Recherche Signaturbehandling
+  price: 1,950 kr
+  time: 60 minuter
+  slug: biologique-recherche-signaturbehandling-1716528
+  category: Biologique Recherche
+  info: >-
+    Behandlingarna bygger på tre faser i sju etapper där du som kund blir
+    omhändertagen av din Auktoriserade hudterapeut och Biologique Recherche
+    expert. 
+
+
+    Upp till 25 olika produkter väljs ut grundat på din skin instant och arbetas in i huden med exakta rörelser och massagetekniker. 
+
+
+    Förutom BR´s egna underbara boosters kan även Dermapen 4, Dermaplane PRO eller Celluma PRO väljas som extra boosters. Din Biologique Recherche Expert väljer i första hand ut den B.R boostern som bäst svarar på behoven av ditt aktuella hudtillstånd, därefter är det upp till dig att tilläga en eller fler boosters om du vill. Du kan läsa mer om alla olika boosters i tilläggstjänsterna om du trycker på "boka-knappen".
+
+
+    FAS 1: ANALYS Djupgående hudanalys som bygger på en fysiologisk, beteendemässig och taktil analysmetod för att förstå kundens skin Instant© och skräddarsy behandlingen och hudvårdsrutinen efter individuella, specifika behov på bästa sätt. 
+
+
+    FAS 2: INITIALISERING Fasen består av tre ofrånkomliga etapper hos Biologique Recherche: Avkoppling med djupsensorisk massage och rengöring av huden. Förberedelse av huden med anpassad mikro-exfolierande Lotion P50 som respekterar hudens syrliga PH värde. Booster och mask som förberedelse och stimulering av huden för bästa förutsättningarna inför behandlingsfasen. 
+
+
+    FAS 3: BEHANDLING Detta är fasen där de mest koncentrerade och komplexa produkterna används för att hjälpa Epidermis att optimera och uttrycka sin förmåga till självförnyelse och läkning. När huden på detta sätt återuppbyggs kommer elasticiteten tillbaka, musklerna återlivas och ansiktet får tillbaka sin naturliga oval och former. Din Auktoriserade hudterapeut applicerar en cocktail av rena “Essentiella serum” som noga väljs utifrån din skin instant och blandas speciellt för Dig under behandlingen. 
+
+
+    Behandlingen avslutas med utvald komplettering av aktiva ingredienser i specifika krämer och de högst koncentrerade och komplexa avslutningsserumen som binder ihop och lägger grädden på mosen i behandlingen.
 - id: 1630540
   title: Köp i butiken
   price: ""
@@ -141,34 +176,6 @@
     graviditet) kan du ha slapp hud kvar med mer eller mindre bristningar. Denna
     behandling arbetar på intensivt på hela området för att uppnå en mycket
     effektiv huduppstramning och förbättring av bristningarna.
-- id: 1716528
-  title: Biologique Recherche Signaturbehandling
-  price: 1,950 kr
-  time: 60 minuter
-  slug: biologique-recherche-signaturbehandling-1716528
-  category: Ansiktsbehandlingar
-  info: >-
-    Behandlingarna bygger på tre faser i sju etapper där du som kund blir
-    omhändertagen av din Auktoriserade hudterapeut och Biologique Recherche
-    expert. 
-
-
-    Upp till 25 olika produkter väljs ut grundat på din skin instant och arbetas in i huden med exakta rörelser och massagetekniker. 
-
-
-    Förutom BR´s egna underbara boosters kan även Dermapen 4, Dermaplane PRO eller Celluma PRO väljas som extra boosters. Din Biologique Recherche Expert väljer i första hand ut den B.R boostern som bäst svarar på behoven av ditt aktuella hudtillstånd, därefter är det upp till dig att tilläga en eller fler boosters om du vill. Du kan läsa mer om alla olika boosters i tilläggstjänsterna om du trycker på "boka-knappen".
-
-
-    FAS 1: ANALYS Djupgående hudanalys som bygger på en fysiologisk, beteendemässig och taktil analysmetod för att förstå kundens skin Instant© och skräddarsy behandlingen och hudvårdsrutinen efter individuella, specifika behov på bästa sätt. 
-
-
-    FAS 2: INITIALISERING Fasen består av tre ofrånkomliga etapper hos Biologique Recherche: Avkoppling med djupsensorisk massage och rengöring av huden. Förberedelse av huden med anpassad mikro-exfolierande Lotion P50 som respekterar hudens syrliga PH värde. Booster och mask som förberedelse och stimulering av huden för bästa förutsättningarna inför behandlingsfasen. 
-
-
-    FAS 3: BEHANDLING Detta är fasen där de mest koncentrerade och komplexa produkterna används för att hjälpa Epidermis att optimera och uttrycka sin förmåga till självförnyelse och läkning. När huden på detta sätt återuppbyggs kommer elasticiteten tillbaka, musklerna återlivas och ansiktet får tillbaka sin naturliga oval och former. Din Auktoriserade hudterapeut applicerar en cocktail av rena “Essentiella serum” som noga väljs utifrån din skin instant och blandas speciellt för Dig under behandlingen. 
-
-
-    Behandlingen avslutas med utvald komplettering av aktiva ingredienser i specifika krämer och de högst koncentrerade och komplexa avslutningsserumen som binder ihop och lägger grädden på mosen i behandlingen.
 - id: 2017805
   title: Januari magi
   price: 2,250 kr
@@ -187,13 +194,19 @@
     * Ice Peel
 
     * Celluma PRO LED Panel
-- id: 1630464
-  title: Biologique Recherche Methodology
-  price: 1,450 kr
-  time: 40 minuter
-  slug: biologique-recherche-methodology-1630464
+- id: 2085225
+  title: Vabruari Special
+  price: 2,490 kr
+  time: 90 minuter
+  slug: vabruari-special-2085225
   category: Ansiktsbehandlingar
-  info: B.R Methodology (Utan booster)
+  info: >-
+    Rengöring, skonsam enzympeeling följt av Nannic NBE Ansikte, hals och
+    dekolletage med tillägg av Firming peptide mask innan avslutande
+    alginatmask, serum och kräm.
+
+
+    En riktig lysterbomb som ökar cellförnyelsen, sänker kortisolhalterna i blodet, dränerar och stramar upp! Du får ett ordentligt lyft i ansiktet och förminskade ålderstecken på en gång.
 - id: 1850028
   title: Klassisk ansiktsbehandling inkl. ultraljudsrengöring
   price: 1,200 kr
@@ -275,10 +288,10 @@
 
     OBS: detta är en leave on produkt, så du får inte ha vatten i ansiktet på 12 timmar. Du kommer även att få med dig en rengöring och en kräm hem som du ska använda nästkommande 3 dagar efter behandlingen
 - id: 1823321
-  title: Ansiktsmassage inkl. hals, dekolletage, nacke, hudud och axlar
+  title: Ansiktsmassage inkl. hals, dekolletage, nacke, huvud och axlar
   price: 600 kr
   time: 40 minuter
-  slug: ansiktsmassage-inkl-hals-dekolletage-nacke-hudud-och-axlar-1823321
+  slug: ansiktsmassage-inkl-hals-dekolletage-nacke-huvud-och-axlar-1823321
   category: Ansiktsbehandlingar
   info: null
 - id: 1850096
