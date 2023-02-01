@@ -1,3 +1,38 @@
+- id: 1630464
+  title: Biologique Recherche Methodology
+  price: 1,450 kr
+  time: 40 minuter
+  slug: biologique-recherche-methodology-1630464
+  category: Biologique Recherche
+  info: B.R Methodology (Utan booster)
+- id: 1716528
+  title: Biologique Recherche Signaturbehandling
+  price: 1,950 kr
+  time: 60 minuter
+  slug: biologique-recherche-signaturbehandling-1716528
+  category: Biologique Recherche
+  info: >-
+    Behandlingarna bygger på tre faser i sju etapper där du som kund blir
+    omhändertagen av din Auktoriserade hudterapeut och Biologique Recherche
+    expert. 
+
+
+    Upp till 25 olika produkter väljs ut grundat på din skin instant och arbetas in i huden med exakta rörelser och massagetekniker. 
+
+
+    Förutom BR´s egna underbara boosters kan även Dermapen 4, Dermaplane PRO eller Celluma PRO väljas som extra boosters. Din Biologique Recherche Expert väljer i första hand ut den B.R boostern som bäst svarar på behoven av ditt aktuella hudtillstånd, därefter är det upp till dig att tilläga en eller fler boosters om du vill. Du kan läsa mer om alla olika boosters i tilläggstjänsterna om du trycker på "boka-knappen".
+
+
+    FAS 1: ANALYS Djupgående hudanalys som bygger på en fysiologisk, beteendemässig och taktil analysmetod för att förstå kundens skin Instant© och skräddarsy behandlingen och hudvårdsrutinen efter individuella, specifika behov på bästa sätt. 
+
+
+    FAS 2: INITIALISERING Fasen består av tre ofrånkomliga etapper hos Biologique Recherche: Avkoppling med djupsensorisk massage och rengöring av huden. Förberedelse av huden med anpassad mikro-exfolierande Lotion P50 som respekterar hudens syrliga PH värde. Booster och mask som förberedelse och stimulering av huden för bästa förutsättningarna inför behandlingsfasen. 
+
+
+    FAS 3: BEHANDLING Detta är fasen där de mest koncentrerade och komplexa produkterna används för att hjälpa Epidermis att optimera och uttrycka sin förmåga till självförnyelse och läkning. När huden på detta sätt återuppbyggs kommer elasticiteten tillbaka, musklerna återlivas och ansiktet får tillbaka sin naturliga oval och former. Din Auktoriserade hudterapeut applicerar en cocktail av rena “Essentiella serum” som noga väljs utifrån din skin instant och blandas speciellt för Dig under behandlingen. 
+
+
+    Behandlingen avslutas med utvald komplettering av aktiva ingredienser i specifika krämer och de högst koncentrerade och komplexa avslutningsserumen som binder ihop och lägger grädden på mosen i behandlingen.
 - id: 1630452
   title: Öppen tid S
   price: Från 950 kr
@@ -66,234 +101,6 @@
     Du behöver altså inte själv veta och välja vad du behöver, det diskuterar vi tillsammans på plats! 
 
     Du behöver inte stressa, 30min avsätts automatiskt till varje öppentid vilket betyder att längden du väljer blir den aktiva behandlingstiden och inte tiden för både konsultation och behandling.
-- id: 1630464
-  title: Biologique Recherche Methodology
-  price: 1,450 kr
-  time: 40 minuter
-  slug: biologique-recherche-methodology-1630464
-  category: Biologique Recherche
-  info: B.R Methodology (Utan booster)
-- id: 1716528
-  title: Biologique Recherche Signaturbehandling
-  price: 1,950 kr
-  time: 60 minuter
-  slug: biologique-recherche-signaturbehandling-1716528
-  category: Biologique Recherche
-  info: >-
-    Behandlingarna bygger på tre faser i sju etapper där du som kund blir
-    omhändertagen av din Auktoriserade hudterapeut och Biologique Recherche
-    expert. 
-
-
-    Upp till 25 olika produkter väljs ut grundat på din skin instant och arbetas in i huden med exakta rörelser och massagetekniker. 
-
-
-    Förutom BR´s egna underbara boosters kan även Dermapen 4, Dermaplane PRO eller Celluma PRO väljas som extra boosters. Din Biologique Recherche Expert väljer i första hand ut den B.R boostern som bäst svarar på behoven av ditt aktuella hudtillstånd, därefter är det upp till dig att tilläga en eller fler boosters om du vill. Du kan läsa mer om alla olika boosters i tilläggstjänsterna om du trycker på "boka-knappen".
-
-
-    FAS 1: ANALYS Djupgående hudanalys som bygger på en fysiologisk, beteendemässig och taktil analysmetod för att förstå kundens skin Instant© och skräddarsy behandlingen och hudvårdsrutinen efter individuella, specifika behov på bästa sätt. 
-
-
-    FAS 2: INITIALISERING Fasen består av tre ofrånkomliga etapper hos Biologique Recherche: Avkoppling med djupsensorisk massage och rengöring av huden. Förberedelse av huden med anpassad mikro-exfolierande Lotion P50 som respekterar hudens syrliga PH värde. Booster och mask som förberedelse och stimulering av huden för bästa förutsättningarna inför behandlingsfasen. 
-
-
-    FAS 3: BEHANDLING Detta är fasen där de mest koncentrerade och komplexa produkterna används för att hjälpa Epidermis att optimera och uttrycka sin förmåga till självförnyelse och läkning. När huden på detta sätt återuppbyggs kommer elasticiteten tillbaka, musklerna återlivas och ansiktet får tillbaka sin naturliga oval och former. Din Auktoriserade hudterapeut applicerar en cocktail av rena “Essentiella serum” som noga väljs utifrån din skin instant och blandas speciellt för Dig under behandlingen. 
-
-
-    Behandlingen avslutas med utvald komplettering av aktiva ingredienser i specifika krämer och de högst koncentrerade och komplexa avslutningsserumen som binder ihop och lägger grädden på mosen i behandlingen.
-- id: 1630540
-  title: Köp i butiken
-  price: ""
-  time: 15 minuter
-  slug: kop-i-butiken-1630540
-  category: Kostnadsfria tider
-  info: null
-- id: 2048714
-  title: Återbesök
-  price: ""
-  time: 30 minuter
-  slug: aterbesok-2048714
-  category: Kostnadsfria tider
-  info: null
-- id: 1630543
-  title: Konsultation
-  price: ""
-  time: 30 minuter
-  slug: konsultation-1630543
-  category: Kostnadsfria tider
-  info: null
-- id: 1977358
-  title: "Fraktionerad Co2 laser: Ansikte"
-  price: 8,500 kr
-  time: 60 minuter
-  slug: fraktionerad-co2-laser-ansikte-1977358
-  category: Fraktionerad Co2 laser
-  info: null
-- id: 1978674
-  title: "Fraktionerad Co2 laser: Acneärr"
-  price: 4,500 kr
-  time: 60 minuter
-  slug: fraktionerad-co2-laser-acnearr-1978674
-  category: Fraktionerad Co2 laser
-  info: Vi behandlar inte hela ansiktet utan bara området med acneärr. Vanigtvis
-    handlar det om kinder.
-- id: 1978704
-  title: "Fraktionerad Co2 laser: Ärr på litet område"
-  price: 2,500 kr
-  time: 40 minuter
-  slug: fraktionerad-co2-laser-arr-pa-litet-omrade-1978704
-  category: Fraktionerad Co2 laser
-  info: Om du t.ex enbart vill behandla acneärr på tinningarna eller har ett
-    kirurgiskt ärr som du vill förbättra.
-- id: 1978703
-  title: "Fraktionerad Co2 laser: runt mun och haka"
-  price: 3,500 kr
-  time: 45 minuter
-  slug: fraktionerad-co2-laser-runt-mun-och-haka-1978703
-  category: Fraktionerad Co2 laser
-  info: Om du enbart vill behandla pusslinjer, nasolabiala veck och rynkor på hakan.
-- id: 1978676
-  title: "Fraktionerad Co2 laser: Bristningar"
-  price: 5,500 kr
-  time: 60 minuter
-  slug: fraktionerad-co2-laser-bristningar-1978676
-  category: Fraktionerad Co2 laser
-  info: Om du har fullt med bristningar på magen, benen  eller ryggen
-- id: 1978679
-  title: "Fraktionerad Co2 laser: Dekolletage"
-  price: 7,500 kr
-  time: 75 minuter
-  slug: fraktionerad-co2-laser-dekolletage-1978679
-  category: Fraktionerad Co2 laser
-  info: null
-- id: 1978682
-  title: 'Fraktionerad Co2 laser: "Mamma-mage"'
-  price: 9,500 kr
-  time: 75 minuter
-  slug: fraktionerad-co2-laser-mamma-mage-1978682
-  category: Fraktionerad Co2 laser
-  info: Om du har varit med om stor viktuppgång följt av en stor viktnergång (t.ex
-    graviditet) kan du ha slapp hud kvar med mer eller mindre bristningar. Denna
-    behandling arbetar på intensivt på hela området för att uppnå en mycket
-    effektiv huduppstramning och förbättring av bristningarna.
-- id: 2017805
-  title: Januari magi
-  price: 2,250 kr
-  time: 90 minuter
-  slug: januari-magi-2017805
-  category: Ansiktsbehandlingar
-  info: >-
-    Välkommen till en ny och avslappnande upplevelse - rengöra, detoxa,
-    exfoliera, stimulera, återfukta och njuta!
-
-    I denna behandling ingår
-
-
-    * Ultraljudsrengöring
-
-    * Ice Peel
-
-    * Celluma PRO LED Panel
-- id: 2085225
-  title: Vabruari Special
-  price: 2,490 kr
-  time: 90 minuter
-  slug: vabruari-special-2085225
-  category: Ansiktsbehandlingar
-  info: >-
-    Rengöring, skonsam enzympeeling följt av Nannic NBE Ansikte, hals och
-    dekolletage med tillägg av Firming peptide mask innan avslutande
-    alginatmask, serum och kräm.
-
-
-    En riktig lysterbomb som ökar cellförnyelsen, sänker kortisolhalterna i blodet, dränerar och stramar upp! Du får ett ordentligt lyft i ansiktet och förminskade ålderstecken på en gång.
-- id: 1850028
-  title: Klassisk ansiktsbehandling inkl. ultraljudsrengöring
-  price: 1,200 kr
-  time: 60 minuter
-  slug: klassisk-ansiktsbehandling-inkl-ultraljudsrengoring-1850028
-  category: Ansiktsbehandlingar
-  info: En klassisk ansiktsbehandling för dig som vill ha rengöring, peeling,
-    ultraljudsrengöring och borttagning av malier, massage, mask och avslutande
-    serum och kräm. Givetvis anpassas valet av Circadias professionella
-    produkter till Din hud och tillstånd.
-- id: 1630476
-  title: "Ultraljudsrengöring Plus+ "
-  price: 750 kr
-  time: 40 minuter
-  slug: ultraljudsrengoring-plus-1630476
-  category: Ansiktsbehandlingar
-  info: >-
-    “Kläm aldrig i onödan!” Var bland det första vi fick lära oss i skolan i
-    Bryssel. Det finns aldrig någon återvändo till den manuella portömningen om
-    man någon gång har fått en ordentligt utförd ultraljudsrengöring hos ett
-    proffs. 
-
-
-    I behandlingen ingår rengöring, enzymatisk peeling, ultraljudsrengöring och borttagning av milier samt avslutande serum och kräm.
-- id: 1630470
-  title: "Ansiktsbehandling Oxygen RX "
-  price: 950 kr
-  time: 30 minuter
-  slug: ansiktsbehandling-oxygen-rx-1630470
-  category: Ansiktsbehandlingar
-  info: Oxygen Rx är en behandling där rent syre aktiveras på huden för att öka
-    näringstillförseln och stimulera kollagen- och elastinproduktionen. Det har
-    antibakteriella, anti-inflammatoriska och rodnadsdämpande egenskaper som
-    passar aknebenägen hud, rosacea och/eller synliga blodkärl. Du ska inte göra
-    behandlingen om du är allergisk mot citronsyra (finns i citroner, apelsiner,
-    grapefrukt mm). I behandlingen ingår rengöring, Oxygen Rx protokollet samt
-    avslutande produkter. Du kan komplettera med ultraljudsrengöring, syra
-    peeling, firming peptide mask och/eller Celluma PRO LED panel i
-    tilläggstjänsterna.
-- id: 1630474
-  title: "Ansiktsbehandling SWICH "
-  price: 1,590 kr
-  time: 75 minuter
-  slug: ansiktsbehandling-swich-1630474
-  category: Ansiktsbehandlingar
-  info: >-
-    När vi passerat 40-årsåldern minskar energiproduktionen i hudcellen. Detta
-    visar sig i form av fina linjer, rynkor, ojämn pigmentering och brist på
-    elasticitet i huden.
-
-
-    SWICH är en unik behandling som ger energi och bränsle till cellkärnan genom ökad ATP-syntes (cellandning) och reparerar huden inifrån och ut. SWICH reverserar synbara tecken på åldrande utan att orsaka skada, rodnad eller fjällning. Eftersom SWICH inte skapar UV-känslighet så kan behandlingen med fördel göras året om.
-
-
-    Använder du produkter innehållande syror eller retinol behöver du sluta med dessa 14 dagar innan din Swich behandling. Detta för att behandlingen inte ska bli för kraftfull. 
-
-
-    Kontraindikationer - när du inte är lämpad för behandlingen: 
-
-
-    • Allergi mot salicylsyra
-
-    • Allergi mot citrusfrukter eller citronsyra
-
-    • Gravid eller försöker bli gravid
-
-    • Aktiv herpes
-
-    • Öppna sår
-
-    • Under antibiotikabehandling
-
-    • Receptbelagda A-vitamin krämer (4 veckor)
-
-    • Kemiskpeeling (8 veckor)
-
-    • Laserbehandling (3 månader) 
-
-
-    OBS: detta är en leave on produkt, så du får inte ha vatten i ansiktet på 12 timmar. Du kommer även att få med dig en rengöring och en kräm hem som du ska använda nästkommande 3 dagar efter behandlingen
-- id: 1823321
-  title: Ansiktsmassage inkl. hals, dekolletage, nacke, huvud och axlar
-  price: 600 kr
-  time: 40 minuter
-  slug: ansiktsmassage-inkl-hals-dekolletage-nacke-huvud-och-axlar-1823321
-  category: Ansiktsbehandlingar
-  info: null
 - id: 1850096
   title: Nannic NBE Ansikte & hals
   price: 1,490 kr
@@ -509,6 +316,60 @@
 
 
     Rengöring, Celluma LED, ögonkräm, kräm, SPF vid behov.
+- id: 1977358
+  title: "Fraktionerad Co2 laser: Ansikte"
+  price: 8,500 kr
+  time: 60 minuter
+  slug: fraktionerad-co2-laser-ansikte-1977358
+  category: Fraktionerad Co2 laser
+  info: null
+- id: 1978674
+  title: "Fraktionerad Co2 laser: Acneärr"
+  price: 4,500 kr
+  time: 60 minuter
+  slug: fraktionerad-co2-laser-acnearr-1978674
+  category: Fraktionerad Co2 laser
+  info: Vi behandlar inte hela ansiktet utan bara området med acneärr. Vanigtvis
+    handlar det om kinder.
+- id: 1978704
+  title: "Fraktionerad Co2 laser: Ärr på litet område"
+  price: 2,500 kr
+  time: 40 minuter
+  slug: fraktionerad-co2-laser-arr-pa-litet-omrade-1978704
+  category: Fraktionerad Co2 laser
+  info: Om du t.ex enbart vill behandla acneärr på tinningarna eller har ett
+    kirurgiskt ärr som du vill förbättra.
+- id: 1978703
+  title: "Fraktionerad Co2 laser: runt mun och haka"
+  price: 3,500 kr
+  time: 45 minuter
+  slug: fraktionerad-co2-laser-runt-mun-och-haka-1978703
+  category: Fraktionerad Co2 laser
+  info: Om du enbart vill behandla pusslinjer, nasolabiala veck och rynkor på hakan.
+- id: 1978676
+  title: "Fraktionerad Co2 laser: Bristningar"
+  price: 5,500 kr
+  time: 60 minuter
+  slug: fraktionerad-co2-laser-bristningar-1978676
+  category: Fraktionerad Co2 laser
+  info: Om du har fullt med bristningar på magen, benen  eller ryggen
+- id: 1978679
+  title: "Fraktionerad Co2 laser: Dekolletage"
+  price: 7,500 kr
+  time: 75 minuter
+  slug: fraktionerad-co2-laser-dekolletage-1978679
+  category: Fraktionerad Co2 laser
+  info: null
+- id: 1978682
+  title: 'Fraktionerad Co2 laser: "Mamma-mage"'
+  price: 9,500 kr
+  time: 75 minuter
+  slug: fraktionerad-co2-laser-mamma-mage-1978682
+  category: Fraktionerad Co2 laser
+  info: Om du har varit med om stor viktuppgång följt av en stor viktnergång (t.ex
+    graviditet) kan du ha slapp hud kvar med mer eller mindre bristningar. Denna
+    behandling arbetar på intensivt på hela området för att uppnå en mycket
+    effektiv huduppstramning och förbättring av bristningarna.
 - id: 1630584
   title: Bortbränning av godartade hudförändringar och kärl
   price: Från 950 kr
@@ -574,6 +435,127 @@
     Behandlar hängande ögonlock till snarlika resultat med kirugiska ingrepp.
 
     Vi kan förbättra assymetri vid ögonområdet, påsar under ögonen, kråksparkar och andra rynkor.
+- id: 2085225
+  title: Vabruari Special
+  price: 2,490 kr
+  time: 90 minuter
+  slug: vabruari-special-2085225
+  category: Ansiktsbehandlingar
+  info: >-
+    Rengöring, skonsam enzympeeling följt av Nannic NBE Ansikte, hals och
+    dekolletage med tillägg av Firming peptide mask innan avslutande
+    alginatmask, serum och kräm.
+
+
+    En riktig lysterbomb som ökar cellförnyelsen, sänker kortisolhalterna i blodet, dränerar och stramar upp! Du får ett ordentligt lyft i ansiktet och förminskade ålderstecken på en gång.
+- id: 1850028
+  title: Klassisk ansiktsbehandling inkl. ultraljudsrengöring
+  price: 1,200 kr
+  time: 60 minuter
+  slug: klassisk-ansiktsbehandling-inkl-ultraljudsrengoring-1850028
+  category: Ansiktsbehandlingar
+  info: En klassisk ansiktsbehandling för dig som vill ha rengöring, peeling,
+    ultraljudsrengöring och borttagning av malier, massage, mask och avslutande
+    serum och kräm. Givetvis anpassas valet av Circadias professionella
+    produkter till Din hud och tillstånd.
+- id: 1630476
+  title: "Ultraljudsrengöring Plus+ "
+  price: 750 kr
+  time: 40 minuter
+  slug: ultraljudsrengoring-plus-1630476
+  category: Ansiktsbehandlingar
+  info: >-
+    “Kläm aldrig i onödan!” Var bland det första vi fick lära oss i skolan i
+    Bryssel. Det finns aldrig någon återvändo till den manuella portömningen om
+    man någon gång har fått en ordentligt utförd ultraljudsrengöring hos ett
+    proffs. 
+
+
+    I behandlingen ingår rengöring, enzymatisk peeling, ultraljudsrengöring och borttagning av milier samt avslutande serum och kräm.
+- id: 1630470
+  title: "Ansiktsbehandling Oxygen RX "
+  price: 950 kr
+  time: 30 minuter
+  slug: ansiktsbehandling-oxygen-rx-1630470
+  category: Ansiktsbehandlingar
+  info: Oxygen Rx är en behandling där rent syre aktiveras på huden för att öka
+    näringstillförseln och stimulera kollagen- och elastinproduktionen. Det har
+    antibakteriella, anti-inflammatoriska och rodnadsdämpande egenskaper som
+    passar aknebenägen hud, rosacea och/eller synliga blodkärl. Du ska inte göra
+    behandlingen om du är allergisk mot citronsyra (finns i citroner, apelsiner,
+    grapefrukt mm). I behandlingen ingår rengöring, Oxygen Rx protokollet samt
+    avslutande produkter. Du kan komplettera med ultraljudsrengöring, syra
+    peeling, firming peptide mask och/eller Celluma PRO LED panel i
+    tilläggstjänsterna.
+- id: 1630474
+  title: "Ansiktsbehandling SWICH "
+  price: 1,590 kr
+  time: 75 minuter
+  slug: ansiktsbehandling-swich-1630474
+  category: Ansiktsbehandlingar
+  info: >-
+    När vi passerat 40-årsåldern minskar energiproduktionen i hudcellen. Detta
+    visar sig i form av fina linjer, rynkor, ojämn pigmentering och brist på
+    elasticitet i huden.
+
+
+    SWICH är en unik behandling som ger energi och bränsle till cellkärnan genom ökad ATP-syntes (cellandning) och reparerar huden inifrån och ut. SWICH reverserar synbara tecken på åldrande utan att orsaka skada, rodnad eller fjällning. Eftersom SWICH inte skapar UV-känslighet så kan behandlingen med fördel göras året om.
+
+
+    Använder du produkter innehållande syror eller retinol behöver du sluta med dessa 14 dagar innan din Swich behandling. Detta för att behandlingen inte ska bli för kraftfull. 
+
+
+    Kontraindikationer - när du inte är lämpad för behandlingen: 
+
+
+    • Allergi mot salicylsyra
+
+    • Allergi mot citrusfrukter eller citronsyra
+
+    • Gravid eller försöker bli gravid
+
+    • Aktiv herpes
+
+    • Öppna sår
+
+    • Under antibiotikabehandling
+
+    • Receptbelagda A-vitamin krämer (4 veckor)
+
+    • Kemiskpeeling (8 veckor)
+
+    • Laserbehandling (3 månader) 
+
+
+    OBS: detta är en leave on produkt, så du får inte ha vatten i ansiktet på 12 timmar. Du kommer även att få med dig en rengöring och en kräm hem som du ska använda nästkommande 3 dagar efter behandlingen
+- id: 1823321
+  title: Ansiktsmassage inkl. hals, dekolletage, nacke, huvud och axlar
+  price: 600 kr
+  time: 40 minuter
+  slug: ansiktsmassage-inkl-hals-dekolletage-nacke-huvud-och-axlar-1823321
+  category: Ansiktsbehandlingar
+  info: null
+- id: 1630540
+  title: Köp i butiken
+  price: ""
+  time: 15 minuter
+  slug: kop-i-butiken-1630540
+  category: Kostnadsfria tider
+  info: null
+- id: 2048714
+  title: Återbesök
+  price: ""
+  time: 30 minuter
+  slug: aterbesok-2048714
+  category: Kostnadsfria tider
+  info: null
+- id: 1630543
+  title: Konsultation
+  price: ""
+  time: 30 minuter
+  slug: konsultation-1630543
+  category: Kostnadsfria tider
+  info: null
 - id: 1630547
   title: Yumi Brows
   price: 600 kr
